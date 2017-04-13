@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/*--------------  공통 시작  ------------*/
+
+.table_default td.gray {color:#888;}
+.table_default td.score {font-weight:bold;letter-spacing:7px;font-size:15px;}
+
+.table_default td.data > div.data {display:block;height:22px;padding-right:10px;float:right;}
+.table_default td.data > div.data span {display:block;float:left;margin:0 2px;}
+.table_default td.data > div.data span a {width:100%;height:22px;display:block;}
+table.table_default td.graybox {text-align:right;}
+table.table_default td.graybox span {color:#888;}
+table.table_default a:hover {text-decoration:underline;}
+table.gametable tr th:nth-of-type(1),table.gametable tr td:nth-of-type(1) {text-align:right;}
+table.gametable tr td:nth-of-type(1) {padding-right:5px;}
+table.gametable th:nth-of-type(2) {text-align:left;padding-left:30px;}
+table.gametable td:nth-of-type(2) {text-align:left;padding-left:20px;}
+
+b.score {letter-spacing:5px; padding:0 10px;}
+b.score span.red {color:#ff386b;}
+
+.r_view > li {display:none;}
+.r_view > li.active {display:block;}
+
+.l_b {border-left:1px solid #f1f1f1;}
+
+.left_t {text-align:left !important;padding-left:15px;}
+
+/*h4 style*/
+h4.h4_02 {background:#eee url("../image/game/bg_h4f.jpg") no-repeat ;height:27px;line-height:26px;font-size:14px;color:#999;padding-left:17px;display:inline-block;font-weight:bold;margin-bottom:10px;}
+h4.h4_02 span {display:inline-block; width:18px;height:100%;background:url("../image/game/bg_h4b.jpg") no-repeat;vertical-align:top;}
+
+
+
+/* common 변경 */
+h3.h3_01 {margin-top:-37px;}
+.select_p01 {top:40px;}
+
+
+
+/*  게임 상단/메뉴부분  */
+.topTitle {line-height:1;position:relative;}
+.topTitle > p {background:url("../image/game/bg_title.jpg") repeat-x;height:30px;line-height:28px;}
+.topTitle > p span {color:#fff; font-size:14px;padding-left:40px;}
+.topTitle > p span.sentence {color:#989898;font-size:12px;float:right;}
+.topTitle > p span.sentence > span {color:#a4a4a4;font-size:12px;padding:0 40px 0 0;font-weight:bold;}
+.topTitle ul.leaguebox {position:absolute;background:#fff;top:89px;left:40px;border:1px solid #ccc;z-index:1;width:300px;}
+.topTitle ul.leaguebox li {}
+.topTitle ul.leaguebox li a {display:block;padding:8px 10px;}
+.topTitle ul.leaguebox li a:hover {background:#eee;}
+.game_w {position:relative;margin:0px 40px;}
+.game_w > h3 {font-size:20px;font-weight:bold;color:#222;margin-top:50px;border-bottom:1px solid #ccc;line-height:1;padding-bottom:10px;}
+.game_w > h3.h3_02 {border:none;}
+.btn_arrow01 {font-size:0; cursor:pointer; margin:0 0 0 5px;vertical-align:sub;display:inline-block; width:14px; height:14px; background:url("../image/base/icon.png") no-repeat -181px 0px;}
+p.more {position:absolute; top:13px;left:263px;color:#888;font-family:Dotum;}
+
+
+
+
+.livetable_w {margin-top:20px;}
+.livetable_w .tab2_w,.livetable_w .date {float:left;}
+.livetable_w .livetable_top .tab2_w {padding-top:7px;}
+.livetable_top {margin-bottom:5px;height:30px;}
+
+
+
+/*--------------  공통 끝  ------------*/
+
+
+
+
+.livescore {position:relative; background:#fff;}
+.liveTable {margin-top:20px;}
+
+
+.leagueChoice {position:absolute; right:0; top:0px; text-align:center;}
+.leagueChoice>a {padding:0 13px ; height:28px; line-height:25px; display:block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+.leagueChoice .choice_w {display:none;background:#fff; border:6px solid #ccc; border-right:5px solid #ccc; position:absolute; top:38px; right:0px;z-index:1; width:400px; }
+.leagueChoice .choice {z-index:9;position:relative;}
+.leagueChoice .choice > span {position:absolute; top:-13px; right:37px; display:block; width:13px; height:7px; background:url("../image/base/icon.png") no-repeat -133px -26px;}
+.leagueChoice .choice > div:nth-of-type(1), .leagueChoice .choice > div:nth-of-type(2) {float:left; width:199px; border-right:1px solid #ccc; overflow: hidden; border-bottom:1px solid #ccc;}
+.leagueChoice .choice > div:nth-of-type(2) {background:#f2f2f2;}
+.leagueChoice .choice > div:nth-of-type(2) ul li {background:#f2f2f2;}
+.leagueChoice .choice > div h3 {font-weight:bold; background:#f2f2f2; height:40px; line-height:40px; font-size:15px;border-bottom:1px solid #ccc;margin-bottom:0;}
+.leagueChoice .choice > div .scroll_w {width:199px; overflow:hidden; height:368px; position:relative;}
+.leagueChoice .choice > div ul {text-align:left;overflow-y:scroll;height:368px;width:250px;}
+.leagueChoice .choice > div ul li {border-bottom:1px solid #ccc;height:40px; line-height:40px;}
+.leagueChoice .choice > div ul li input {margin-left:10px;}
+.leagueChoice .choice > div ul li span {margin:9px 7px 0 10px;}
+.leagueChoice .choice > div ul li a {font-size:14px; display:inline-block; width:199px;}
+.leagueChoice .choice > div:nth-of-type(1) ul li label {background:url("../image/base/icon.png") no-repeat scroll 174px -138px;}
+.leagueChoice .choice > div ul li label {font-size:14px; display:inline-block; width:199px;}
+.leagueChoice .choice > div ul.allview {display:none; position:absolute;top:0px;left:0;background:#fff;}
+.leagueChoice .choice > div ul.allview li {}
+.leagueChoice .choice > div ul li span.amount {margin-left:5px;background:#ff225b; border-radius:10px; display:inline-block; color:#fff; font-weight:bold; font-size:13px; width:25px; height:15px; line-height:14px; text-align:center;}
+.leagueChoice .choice > div:nth-of-type(3) {height:40px;display:block; content:""; clear:both;text-align:left;}
+.leagueChoice .choice > div:nth-of-type(3) p {float:left;color:#999;font-size:11px;font-family:Dotum;line-height:1.3;padding:6px 0 0 5px;}
+.leagueChoice .choice > div:nth-of-type(3) a {text-align:center;width:30px; padding:0 10px; margin:5px 5px 0 43px ;  height:28px; line-height:28px; display:inline-block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+.leagueChoice .choice > div:nth-of-type(3) a:nth-of-type(2) {color:#ff225b; width:60px; margin:5px 5px 0 0 ;}
+
+
+
+
+
+/* 축구 */
+
+.soccer_table_w {border-bottom:1px solid #ddd; }
+.soccer_table_w:nth-of-type(1) {border:none;}
+.soccer_table th:nth-of-type(6) {text-align:right;padding-right:50px;}
+.soccer_table th:nth-of-type(8) {text-align:left;padding-left:50px;}
+
+table.soccer_table td {border-bottom:none;}
+.soccer_table td:nth-of-type(6) {text-align:right;}
+.soccer_table td:nth-of-type(7) > span {display:inline-block;height:28px;line-height:25px;text-align:center;width:65px;font-weight:bold;font-size:16px;}
+.soccer_table td:nth-of-type(7) span.graybox {background:#eee;color:#999;}
+.soccer_table td:nth-of-type(7) span.redbox {background:#ff225b;color:#fff;}
+.soccer_table td:nth-of-type(7) span.redbox.open {background:url("../image/livescore/bg_redopen.jpg") no-repeat;color:#fff;height:33px;margin-top:5px;}
+.soccer_table td:nth-of-type(8) {text-align:left;}
+
+.liveView {display:none;}
+.dataview {width:960px;position:relative;height:370px;}
+.dataview .live {width:960px; height:65px;background:url("../image/livescore/bg_soccerlive.jpg") no-repeat -4px 0;position:relative;}
+.dataview .live .team {position:absolute; left:7px;}
+.dataview .live .team li {height:20px; margin-bottom:25px;}
+.dataview .live div.event_line1 {width:892px; height:65px; position:absolute; left:29px; top:0;}
+.dataview .live div.event {position:absolute; top:2px; width:20px; height:65px; text-align:center; margin-left:-10px;}
+.dataview .live div.event span {display:block; height:21px; line-height:21px; font-weight:bold; font-size:13px; width:20px;}
+.dataview .live div.event span.time {height:17px; line-height:17px;}
+.dataview .live div.now {position:absolute; width:15px; height:15px; top:25px;background:url("../image/livescore/icon_now.gif") no-repeat;}
+.dataview .view {}
+.dataview .view>div {float:left;}
+.dataview .view>div.stadium {margin:33px 0 0 9px;width:410px; height:255px; overflow:hidden; background:url("../image/livescore/soccer_l_go.jpg") no-repeat; position:relative;}
+.dataview .view>div.stadium .left_attack {background:url("../image/livescore/soccer_arro_left.png") no-repeat; width:298px; height:186px; position:absolute; left:-48px; top:50%; margin-top:-93px;}
+.dataview .view>div.stadium .left_attack span {color:#fff; font-size:14px;text-align:center;line-height:18px;position:absolute; left:23%; top:50%; width:90px; margin-top:-20px;}
+.dataview .view>div.stadium .left_attack span b {font-size:18px;}
+.dataview .view .table {margin:33px 0 0 32px;}
+.dataview .view .table>div>span {border:1px solid #ccc; border-right:none; display:block; float:left; }
+.dataview .view .table > div:nth-of-type(1) {background-color:#fff;height:40px;}
+.dataview .view .table > div:nth-of-type(1) > span:nth-of-type(4) {border-right:1px solid #ccc;}
+.dataview .view .table > div:nth-of-type(1) > span:nth-of-type(1),.dataview .view .table > div:nth-of-type(1) > span:nth-of-type(4) {width:202px;height:40px;line-height:40px;font-weight:bold;text-align:center;font-size:14px;}
+.dataview .view .table > div:nth-of-type(1) > span:nth-of-type(2),.dataview .view .table > div:nth-of-type(1) > span:nth-of-type(3) {height:40px;line-height:40px;width:46px;text-align:center; background-color:#f6f6f6; font-weight:bold; font-size:15px;}
+.dataview .view .table .graphDiv {margin-top:10px;}
+.dataview .view .table .graphDiv>div {position:relative; left:2px;}
+.dataview .view .table .graphDiv>div .title {text-align:center;font-size:12px;width:480px; height:15px; line-height:15px; margin-bottom:6px;font-weight:bold;}
+.dataview .view .table .graphDiv>div>div:nth-of-type(2) {position:absolute;left:0;top:1px;width:500px; height:15px;}
+.dataview .view .table .graphDiv>div .left {float:left; font-size:11px; font-weight:bold; height:15px; line-height:15px;}
+.dataview .view .table .graphDiv>div .right {float:right; font-size:11px; font-weight:bold; height:15px; line-height:15px;}
+.dataview .view .table .graphDiv>div .graph {margin-bottom:10px;}
+.dataview .graph_g {display:block;width:500px;height:10px; background-color:#444;}
+.dataview .bar_g {display:block;height:10px; background-color:#ff225b;}
+.dataview .view .table .text {border:1px solid #ccc;background:#fff;height:30px; line-height:30px; text-align:left; letter-spacing:-0.5px; margin-top:19px;}
+.dataview .view .table .text span {border:none; border-right:1px solid #ccc;background:#f6f6f6; height:30px; line-height:30px; width:96px; text-align:center; display:inline-block; margin-right:10px; font-weight:bold;}
+
+
+
+/*야구*/
+.livetable.base  > div > table { margin-bottom:19px;}
+.livetable.base td {border:1px solid #ccc;}
+.livetable.base td.first {border-left:none;border-right:none;}
+.livetable.base td.first input[type="checkbox"] {margin:0;}
+.livetable.base td.last {border-right:none;border-left:none;}
+.livetable.base td.left {text-align:left;border-left:none;}
+.livetable.base td.bg_gray {background:#f9f9f9;}
+.livetable.base td b.red {color:#ff225b;}
+.livetable.base > div > table > tbody > tr > td:nth-of-type(2) b {float:left;}
+.livetable.base > div > table > tbody > tr > td:nth-of-type(2) span.home_icon {float:none; margin:16px 0px 0 5px;}
+.livetable.base > div > table > tbody > tr > td:nth-of-type(2) span {float:right;margin-right:10px;}
+.livetable.base td.bn {border-left:none;border-right:none;text-align:left;}
+.livetable.base td ul.BSO {float:left;font-size:13px;margin-left:20px;}
+.livetable.base td ul.BSO li {height:15px; line-height:15px;}
+.livetable.base td ul li span.base_icon {margin-left:-6px;margin-top:-2px;}
+.livetable.base td ul.BSO li:nth-of-type(1) {color:#52ac0e;}
+.livetable.base td ul.BSO li:nth-of-type(2) {color:#fc9202;}
+.livetable.base td ul.BSO li:nth-of-type(3) {color:#c80002;}
+.livetable.base td ul.BSO li span {display:inline-block; background:url("../image/livescore/base_BSO.png") no-repeat; height:7px; margin-left:5px;}
+.livetable.base td ul.BSO li:nth-of-type(1) span.n1 {width:6px; background-position:0 0;}
+.livetable.base td ul.BSO li:nth-of-type(1) span.n2 {width:15px; background-position:0 0;}
+.livetable.base td ul.BSO li:nth-of-type(1) span.n3 {width:24px; background-position:0 0;}
+.livetable.base td ul.BSO li:nth-of-type(2) span.n1 {width:6px; background-position:0 -15px;}
+.livetable.base td ul.BSO li:nth-of-type(2) span.n2 {width:15px; background-position:0 -15px;}
+.livetable.base td ul.BSO li:nth-of-type(3) span.n1 {width:6px; background-position:0 -30px;}
+.livetable.base td ul.BSO li:nth-of-type(3) span.n2 {width:15px; background-position:0 -30px;}
+.livetable.base td div.ground {float:left;width:47px;height:47px;background:url("../image/livescore/bg_ground.png") no-repeat; text-align:center;}
+.livetable.base td div.b1_x_b2_x_b3_x {background-position:-150px -50px;}
+.livetable.base td div.b1_x_b2_o_b3_x {background-position:0px -50px;}
+.livetable.base td div.b1_X_b2_x_b3_o {background-position:-150px -100px;}
+.livetable.base td div.b1_o_b2_x_b3_x {background-position:0px 0px;}
+.livetable.base td div.b1_o_b2_o_b3_x {background-position:0px -150px;}
+.livetable.base td div.b1_x_b2_o_b3_o {background-position:0px -50px;}
+.livetable.base td div.b1_o_b2_x_b3_o {background-position:-50px -50px;}
+.livetable.base td div.b1_o_b2_o_b3_o {background-position:-100px -50px;}
+.livetable.base td div.ground span {color:#fff; font-size:11px; line-height:47px;}
+.liveTable .liveTab .livetable.base td.data > span {width:90px;}
+.liveTable .liveTab .livetable.base td.data > span > span {margin:3px 0 0 3px;}
+.livetable.base > div > table:hover > tbody > tr:nth-of-type(1) > td {border-top:1px solid #ff225b;}
+.livetable.base > div > table:hover > tbody > tr:nth-last-of-type(1) > td {border-bottom:1px solid #ff225b;}
+.livetable.base table:hover b.red {display:block; background:#ff225b; color:#fff !important;}
+.base_table.table_default td.data > div.data {height:auto;}
+.base_table.table_default td.data > div.data span {display:block;float:left;margin:2px;}
+.base_table td.last .relay {padding-left:5px;}
+.base_table td.last .relay > span {height:12px; line-height:12px; font-family:Dotum; font-size:12px;padding-left:15px;vertical-align: middle;}
+.base_table td.last .relay > span > span {vertical-align: text-bottom;}
+.base_table td.last .relay span.line {margin-left:12px;border-left:1px solid #444;display:inline-block;height:12px;}
+.base_table td.data .popup {top:30px;}

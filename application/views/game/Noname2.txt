@@ -1,0 +1,3989 @@
+								
+										<div class="Ltable Ltable2">
+											<table class="table_default gametable">
+												<caption></caption>
+												<colgroup>
+													<col width="67px"/>
+													<col width="210px"/>
+													<col width="96px"/>
+													<col width="56px"/>
+													<col width="68px"/>
+													<col width="61px"/>
+													<col width="56px"/>
+													<col width="77px"/>
+													<col width="62px"/>
+													<col width="89px"/>
+													<col width="*"/>
+												</colgroup>
+												<tr>
+													<th>순위</th>
+													<th>팀</th>
+													<th>경기수</th>
+													<th><span class="n1 rn">승</span></th>
+													<th><span class="n2 rn">무</span></th>
+													<th><span class="n3 rn">패</span></th>
+													<th><span class="n4 rn">득점</span></th>
+													<th><span class="n5 rn">실점</span></th>
+													<th><span class="n6 rn">득실차</span></th>
+													<th><span class="n7 rn">승점</span></th>
+													<th>최근 5경기</th>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>1</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>2</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>3</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot02"></span><b>4</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>5</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>6</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>7</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>8</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>9</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>10</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>11</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>12</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>13</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>14</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>15</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>16</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>17</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>18</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>19</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>20</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+											</table>
+											<div class="redline n2">
+												<span class="bt"></span>
+												<span class="bl"></span>
+												<span class="br"></span>
+												<span class="bb"></span>
+											</div>
+										</div>
+										<div class="Ltable Ltable3">
+											<table class="table_default gametable">
+												<caption></caption>
+												<colgroup>
+													<col width="67px"/>
+													<col width="210px"/>
+													<col width="96px"/>
+													<col width="56px"/>
+													<col width="68px"/>
+													<col width="61px"/>
+													<col width="56px"/>
+													<col width="77px"/>
+													<col width="62px"/>
+													<col width="89px"/>
+													<col width="*"/>
+												</colgroup>
+												<tr>
+													<th>순위</th>
+													<th>팀</th>
+													<th>경기수</th>
+													<th><span class="n1 rn">승</span></th>
+													<th><span class="n2 rn">무</span></th>
+													<th><span class="n3 rn">패</span></th>
+													<th><span class="n4 rn">득점</span></th>
+													<th><span class="n5 rn">실점</span></th>
+													<th><span class="n6 rn">득실차</span></th>
+													<th><span class="n7 rn">승점</span></th>
+													<th>최근 5경기</th>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>1</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>2</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>3</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot02"></span><b>4</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>5</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>6</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>7</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>8</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>9</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>10</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>11</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>12</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>13</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>14</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>15</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>16</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>17</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>18</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>19</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>20</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+											</table>
+											<div class="redline n3">
+												<span class="bt"></span>
+												<span class="bl"></span>
+												<span class="br"></span>
+												<span class="bb"></span>
+											</div>
+										</div>
+										<div class="Ltable Ltable4">
+											<table class="table_default gametable">
+												<caption></caption>
+												<colgroup>
+													<col width="67px"/>
+													<col width="210px"/>
+													<col width="96px"/>
+													<col width="56px"/>
+													<col width="68px"/>
+													<col width="61px"/>
+													<col width="56px"/>
+													<col width="77px"/>
+													<col width="62px"/>
+													<col width="89px"/>
+													<col width="*"/>
+												</colgroup>
+												<tr>
+													<th>순위</th>
+													<th>팀</th>
+													<th>경기수</th>
+													<th><span class="n1 rn">승</span></th>
+													<th><span class="n2 rn">무</span></th>
+													<th><span class="n3 rn">패</span></th>
+													<th><span class="n4 rn">득점</span></th>
+													<th><span class="n5 rn">실점</span></th>
+													<th><span class="n6 rn">득실차</span></th>
+													<th><span class="n7 rn">승점</span></th>
+													<th>최근 5경기</th>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>1</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>2</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>3</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot02"></span><b>4</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>5</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>6</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>7</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>8</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>9</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>10</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>11</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>12</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>13</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>14</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>15</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>16</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>17</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>18</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>19</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>20</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+											</table>
+											<div class="redline n4">
+												<span class="bt"></span>
+												<span class="bl"></span>
+												<span class="br"></span>
+												<span class="bb"></span>
+											</div>
+										</div>
+										<div class="Ltable Ltable5">
+											<table class="table_default gametable">
+												<caption></caption>
+												<colgroup>
+													<col width="67px"/>
+													<col width="210px"/>
+													<col width="96px"/>
+													<col width="56px"/>
+													<col width="68px"/>
+													<col width="61px"/>
+													<col width="56px"/>
+													<col width="77px"/>
+													<col width="62px"/>
+													<col width="89px"/>
+													<col width="*"/>
+												</colgroup>
+												<tr>
+													<th>순위</th>
+													<th>팀</th>
+													<th>경기수</th>
+													<th><span class="n1 rn">승</span></th>
+													<th><span class="n2 rn">무</span></th>
+													<th><span class="n3 rn">패</span></th>
+													<th><span class="n4 rn">득점</span></th>
+													<th><span class="n5 rn">실점</span></th>
+													<th><span class="n6 rn">득실차</span></th>
+													<th><span class="n7 rn">승점</span></th>
+													<th>최근 5경기</th>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>1</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>2</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>3</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot02"></span><b>4</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>5</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>6</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>7</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>8</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>9</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>10</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>11</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>12</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>13</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>14</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>15</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>16</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>17</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>18</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>19</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>20</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+											</table>
+											<div class="redline n5">
+												<span class="bt"></span>
+												<span class="bl"></span>
+												<span class="br"></span>
+												<span class="bb"></span>
+											</div>
+										</div>
+										<div class="Ltable Ltable6">
+											<table class="table_default gametable">
+												<caption></caption>
+												<colgroup>
+													<col width="67px"/>
+													<col width="210px"/>
+													<col width="96px"/>
+													<col width="56px"/>
+													<col width="68px"/>
+													<col width="61px"/>
+													<col width="56px"/>
+													<col width="77px"/>
+													<col width="62px"/>
+													<col width="89px"/>
+													<col width="*"/>
+												</colgroup>
+												<tr>
+													<th>순위</th>
+													<th>팀</th>
+													<th>경기수</th>
+													<th><span class="n1 rn">승</span></th>
+													<th><span class="n2 rn">무</span></th>
+													<th><span class="n3 rn">패</span></th>
+													<th><span class="n4 rn">득점</span></th>
+													<th><span class="n5 rn">실점</span></th>
+													<th><span class="n6 rn">득실차</span></th>
+													<th><span class="n7 rn">승점</span></th>
+													<th>최근 5경기</th>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>1</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>2</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>3</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot02"></span><b>4</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>5</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>6</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>7</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>8</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>9</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>10</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>11</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>12</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>13</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>14</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>15</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>16</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>17</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>18</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>19</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>20</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+											</table>
+											<div class="redline n6">
+												<span class="bt"></span>
+												<span class="bl"></span>
+												<span class="br"></span>
+												<span class="bb"></span>
+											</div>
+										</div>
+										<div class="Ltable Ltable7">
+											<table class="table_default gametable">
+												<caption></caption>
+												<colgroup>
+													<col width="67px"/>
+													<col width="210px"/>
+													<col width="96px"/>
+													<col width="56px"/>
+													<col width="68px"/>
+													<col width="61px"/>
+													<col width="56px"/>
+													<col width="77px"/>
+													<col width="62px"/>
+													<col width="89px"/>
+													<col width="*"/>
+												</colgroup>
+												<tr>
+													<th>순위</th>
+													<th>팀</th>
+													<th>경기수</th>
+													<th><span class="n1 rn">승</span></th>
+													<th><span class="n2 rn">무</span></th>
+													<th><span class="n3 rn">패</span></th>
+													<th><span class="n4 rn">득점</span></th>
+													<th><span class="n5 rn">실점</span></th>
+													<th><span class="n6 rn">득실차</span></th>
+													<th><span class="n7 rn">승점</span></th>
+													<th>최근 5경기</th>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>1</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>2</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot01"></span><b>3</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot02"></span><b>4</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>5</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot03"></span><b>6</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>7</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>8</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>9</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>10</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>11</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>12</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>13</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>14</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>15</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>16</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><b>17</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>18</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>19</b></td>
+													<td><span class="champiL"></span>레알 마드리드</td>
+													<td>11</td>
+													<td>27</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+													</td>
+												</tr>
+												<tr>
+													<td><span class="rankdot04"></span><b>20</b></td>
+													<td><span class="champiL"></span>FC 바르셀로나</td>
+													<td>11</td>
+													<td>25</td>
+													<td>8</td>
+													<td>3</td>
+													<td>0</td>
+													<td>31</td>
+													<td>10</td>
+													<td>21</td>
+													<td>
+														<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+													</td>
+												</tr>
+											</table>
+											<div class="redline n7">
+												<span class="bt"></span>
+												<span class="bl"></span>
+												<span class="br"></span>
+												<span class="bb"></span>
+											</div>
+										</div>
+										
+									
+									<li id="ss2" class="ranking">
+										<div class="tab2_w" style="position:relative;">
+											<ul class="tab02">
+												<li class="on"><a href="">전체</a></li>
+												<li><a href="">홈</a></li>
+												<li><a href="">원정</a></li>
+											</ul>
+											<div class="select">
+												<p>전체</p>
+												<ul>
+													<li><a href="">5경기</a></li>
+													<li><a href="">10경기</a></li>
+													<li><a href="">15경기</a></li>
+													<li><a href="">20경기</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table_default gametable">
+											<caption></caption>
+											<colgroup>
+												<col width="67px"/>
+												<col width="210px"/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+												<col width=""/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th>팀</th>
+												<th>경기수</th>
+												<th>승/승</th>
+												<th>승/무</th>
+												<th>승/패</th>
+												<th>무/승</th>
+												<th>무/무</th>
+												<th>무/패</th>
+												<th>패/승</th>
+												<th>패/무</th>
+												<th>패/패</th>
+												<th>포인트</th> 				
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>7</td>
+												<td>0</td>
+												<td>2</td>
+												<td>2</td>
+												<td>0</td>
+												<td>4</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>65</td>
+											</tr>
+										</table>
+									</li>
+									<li id="ss3" class="ranking twin soccer">
+										<table class="table_default gametable" style="">
+											<caption></caption>
+											<colgroup>
+												<col width="60px"/>
+												<col width="200px"/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th>팀</th>
+												<th class="pink">경기수</th>		
+												<th class="pink">승</th>
+												<th class="pink">무</th>
+												<th class="pink">패</th>
+												<th class="pink">득점</th>
+												<th class="pink">승점</th>
+												<th class="sky">경기수</th>
+												<th class="sky">승</th>
+												<th class="sky">무</th>
+												<th class="sky">패</th>
+												<th class="sky">득점</th>
+												<th class="sky">승점</th>
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td> 					
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td> 					
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>3</td>
+												<td>48</td>
+												<td>53</td>
+											</tr>
+										</table>
+									</li>
+									<li id="ss4" class="ranking">
+										<div class="tab2_w">
+											<ul class="tab02">
+												<li class="on"><a href="">전체</a></li>
+												<li><a href="">홈</a></li>
+												<li><a href="">원정</a></li>
+											</ul>
+											<div class="select">
+												<p>전체</p>
+												<ul>
+													<li><a href="">5경기</a></li>
+													<li><a href="">10경기</a></li>
+													<li><a href="">15경기</a></li>
+													<li><a href="">20경기</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table_default gametable">
+											<caption></caption>
+											<colgroup>
+												<col width="67px"/>
+												<col width="210px"/>
+												<col width="100px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="*"/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th>팀</th>
+												<th>경기수</th>
+												<th>승</th>
+												<th>무</th>
+												<th>패</th>
+												<th>득점</th>
+												<th>승점</th>
+												<th>최근 5경기</th>
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>11</td>
+												<td>27</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>11</td>
+												<td>25</td>
+												<td>8</td>
+												<td>3</td>
+												<td>0</td>
+												<td>21</td>
+												<td>
+													<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li id="ss5" class="ranking">
+										<div class="tab2_w">
+											<ul class="tab02">
+												<li class="on"><a href="">전체</a></li>
+												<li><a href="">홈</a></li>
+												<li><a href="">원정</a></li>
+											</ul>
+											<div class="select">
+												<p>0.5</p>
+												<ul>
+													<li><a href="">0.5</a></li>
+													<li><a href="">1.5</a></li>
+													<li><a href="">2.5</a></li>
+													<li><a href="">3.5</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table_default gametable">
+											<caption></caption>
+											<colgroup>
+												<col width="67px"/>
+												<col width="210px"/>
+												<col width="100px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="*"/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th>팀</th>
+												<th>경기수</th>
+												<th>over</th>
+												<th>under</th>
+												<th>득점</th>
+												<th>경기당 득점</th>
+												<th>최근 5경기</th>
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td> 
+											</tr>
+										</table>
+									</li>
+									<li id="ss6" class="ranking">
+										<div class="tab2_w">
+											<ul class="tab02">
+												<li class="on"><a href="">전체</a></li>
+												<li><a href="">홈</a></li>
+												<li><a href="">원정</a></li>
+											</ul>
+											<div class="select">
+												<p>0.5</p>
+												<ul>
+													<li><a href="">0.5</a></li>
+													<li><a href="">1.5</a></li>
+													<li><a href="">2.5</a></li>
+													<li><a href="">3.5</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table_default gametable">
+											<caption></caption>
+											<colgroup>
+												<col width="67px"/>
+												<col width="210px"/>
+												<col width="100px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="80px"/>
+												<col width="*"/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th>팀</th>
+												<th>경기수</th>
+												<th>over</th>
+												<th>under</th>
+												<th>득점</th>
+												<th>경기당 득점</th>
+												<th>최근 5경기</th>
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>8</td>
+												<td>53</td>
+												<td>3.3</td>
+												<td>
+													<span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
+												</td> 
+											</tr>
+										</table>
+									</li>
+									<li id="ss7" class="ranking">
+										<div class="tab2_w">
+											<ul class="tab02">
+												<li class="on"><a href="">전체</a></li>
+												<li><a href="">홈</a></li>
+												<li><a href="">원정</a></li>
+											</ul>
+											<div class="select">
+												<p>전체</p>
+												<ul>
+													<li><a href="">5경기</a></li>
+													<li><a href="">10경기</a></li>
+													<li><a href="">15경기</a></li>
+													<li><a href="">20경기</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table_default gametable">
+											<caption></caption>
+											<colgroup>
+												<col width="67px"/>
+												<col width="510px"/>
+												<col width="100px"/>
+												<col width="100px"/>
+												<col width="*"/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th style="text-align:left;padding-left:70px;">팀</th>
+												<th>경기수</th>
+												<th>클린시트</th>
+												<th>최근 5경기</th>
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td><span class="champiL"></span>레알 마드리드</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td><span class="champiL"></span>FC 바르셀로나</td>
+												<td>26</td>
+												<td>15</td>
+												<td>
+													<span class="yesL">yes</span><span class="yesL">yes</span><span class="yesL">yes</span><span class="noL">no</span><span class="noL">no</span>
+												</td>
+											</tr>
+										</table>
+									</li>
+									<li id="ss8" class="ranking">
+										<div class="tab2_w">
+											<div class="select select02">
+												<p>팀선택</p>
+												<ul>
+													<li><a href="">첼시 FC</a></li>
+													<li><a href="">리버풀 FC</a></li>
+													<li><a href="">맨체스터 시티 FC</a></li>
+													<li><a href="">아스널 FC</a></li>
+													<li><a href="">토트넘 핫스퍼 FC</a></li>
+													<li><a href="">맨체스터 유나이티드 FC</a></li>
+													<li><a href="">에버틴 FC</a></li>
+													<li><a href="">사우샘프턴 FC</a></li>
+													<li><a href="">웨스트 브로미치 알비온 FC</a></li>
+													<li><a href="">왓포드 FC</a></li>
+													<li><a href="">웨스트햄 유나이티드 FC</a></li>
+													<li><a href="">AFC 본머스</a></li>
+													<li><a href="">스토크 시티 FC</a></li>
+													<li><a href="">번리 FC</a></li>
+													<li><a href="">미들즈브러 FC</a></li>
+													<li><a href="">레스터 시티 FC</a></li>
+													<li><a href="">크리스탈 팰리스 FC</a></li>
+													<li><a href="">선덜랜드 FC</a></li>
+													<li><a href="">스완지 시티 FC</a></li>
+													<li><a href="">헐 시티 FC</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table_default gametable">
+											<caption></caption>
+											<colgroup>
+												<col width="67px"/>
+												<col width="310px"/>
+												<col width="310px"/>
+											</colgroup>
+											<tr>
+												<th>순위</th>
+												<th style="text-align:left;padding-left:15px;">플레이어</th>
+												<th>팀</th>
+												<th>득점</th>
+												<th>어시스트</th>
+											</tr>
+											<tr>
+												<td><b>1</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>2</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>3</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>4</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>5</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>6</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>7</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>8</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>9</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>10</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>11</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>12</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>13</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>14</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>15</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>16</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>17</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>18</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>19</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+											<tr>
+												<td><b>20</b></td>
+												<td>윌슨 C</td>
+												<td>첼시</td>
+												<td>15</td>
+												<td>5</td>
+											</tr>
+										</table>
+										<p class="moreBTN"><a href="">더 보기<span></span></a></p>
+									</li>
+								</ul>
+								

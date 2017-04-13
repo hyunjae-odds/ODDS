@@ -1,0 +1,39 @@
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		var selectObj = document.getElementById("sub");
+		 for(var i=0; i<selectObj.options.length;i++ ){
+			 if( selectObj.options[i].value == "<?=$sub?>"){
+				 selectObj.options[i].selected = "selected"; 
+			 } 
+		 }
+	});
+</script>
+<form action="./<?=$sub?>" method="post" class="span10">
+	<?php echo validation_errors(); ?>
+	<select name="sub" id="sub">
+		<option value="">구분</option>
+		<?php 
+		foreach ($board_code as $entry){
+		?>
+		<option value="<?=$entry->code_value?>"><?=$entry->name_value?></option>
+		<?php } ?>
+	</select>
+    <input type="text" name="title" placeholder="제목" class="span9" value=""/>
+
+    <textarea name="description"></textarea>
+    <div class="form_control">
+    	<?php
+			if($this->session->userdata('is_login')){
+		?>
+		<input class="btn" type="submit"/>
+		<?php } ?>
+		<a href="../" class="btn">메뉴</a>
+    </div>
+</form>
+<script src="/ODDS/public/lib/ckeditor/ckeditor.js"></script>
+<script>
+	CKEDITOR.replace( 'description', {
+		'filebrowserUploadUrl': '/ODDS/board/upload_receive_from_ck'
+	});
+</script>
