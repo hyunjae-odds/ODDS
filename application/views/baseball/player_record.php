@@ -9,12 +9,12 @@
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li class=""><a href="/baseball/league_info/">리그정보</a></li>
-            <li class=""><a href="/baseball/result/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-            <li class=""><a href="/baseball/stats/">리그 통계</a></li>
-            <li class=""><a href="/baseball/team_record/<?=date('Y');?>/<?=date('m');?>">팀 기록</a></li>
+            <li><a href="/baseball/league_info/">리그정보</a></li>
+            <li><a href="/baseball/result/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
+            <li><a href="/baseball/stats/">리그 통계</a></li>
+            <li><a href="/baseball/team_record/<?=date('Y');?>/<?=date('m');?>">팀 기록</a></li>
             <li class="on"><a href="/baseball/player_record/">선수 기록</a></li>
-            <li class=""><a href="/baseball/score/">상대 전적</a></li>
+            <li><a href="/baseball/score/">상대 전적</a></li>
         </ul>
         <ul class="tab_view01 gameMain_view">
             <li class="s5 active">
@@ -369,11 +369,9 @@
                                 <h3>도 루</h3>
                                 <div class="pic"><img src="" alt="" /></div>
                                 <ul>
-                                    <li><b>1. 최형우</b>KIA<b class="red">3.49</b></li>
-                                    <li><b>2. 김태균</b>한화<b class="red">3.49</b></li>
-                                    <li><b>3. 이용규</b>한화<b class="red">3.49</b></li>
-                                    <li><b>4. 김주찬</b>KIA<b class="red">3.49</b></li>
-                                    <li><b>5. 박용택</b>LG<b class="red">3.49</b></li>
+                                    <?php foreach($runner5 as $item): ?>
+                                        <li><b><?=$item->rank;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->sb;?></b></li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </li>
                             <li>

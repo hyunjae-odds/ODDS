@@ -18,13 +18,9 @@ class Baseball extends MY_Controller{
 		$plus_minus=$this->baseball_model->getTotalScore();
 		$league_statistics=$this->baseball_model->getLeagueStatistics();
 		
-		$this->load->view("/baseball/league_info", array('total'=>$total,'offense'=>$offense, 'defence'=>$defence,'schedule'=>$schedule,'plus_minus'=>$plus_minus,
+		$this->load->view("/baseball/league_info", array('total'=>$total, 'offense'=>$offense, 'defence'=>$defence,'schedule'=>$schedule,'plus_minus'=>$plus_minus,
 														 'league_statistics'=>$league_statistics));
 		$this->load->view("/baseball/footer");
-	}
-	function test(){
-		$plus_minus=$this->baseball_model->getLeagueStatistics();
-		var_dump($plus_minus);
 	}
 
 	/* 경기결과 */
@@ -38,7 +34,12 @@ class Baseball extends MY_Controller{
 	function stats(){
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
-		$this->load->view("/baseball/stats");
+
+        $total=$this->baseball_model->getLimit('kbo_team_total_2017');
+        $offense=$this->baseball_model->get('kbo_team_offense_2017');
+        $plus_minus=$this->baseball_model->getTotalScore();
+
+		$this->load->view("/baseball/stats", array('total'=>$total, 'offense'=>$offense, 'plus_minus'=>$plus_minus));
 		$this->load->view("/baseball/footer");
 	}
 
@@ -50,6 +51,7 @@ class Baseball extends MY_Controller{
 		$offense=$this->baseball_model->get('kbo_team_offense_2017');
 		$defence=$this->baseball_model->get('kbo_team_defence_2017');
 		$total=$this->baseball_model->getLimit('kbo_team_total_2017');
+        $plus_minus=$this->baseball_model->getTotalScore();
 
 		$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
 		$team=array();
@@ -67,7 +69,7 @@ class Baseball extends MY_Controller{
 		$schedule=$this->baseball_model->get_schedule($select_month);
 
 		$this->load->view("/baseball/team_record", array('select_year'=>$select_year,'select_month'=>$select_month,'offense'=>$offense,'defence'=>$defence,
-														 'total'=>$total,'rank_month'=>$team,'schedule'=>$schedule));
+														 'total'=>$total,'rank_month'=>$team,'schedule'=>$schedule,'plus_minus'=>$plus_minus));
 		$this->load->view("/baseball/footer");
 	}
 
@@ -87,7 +89,6 @@ class Baseball extends MY_Controller{
         $config['last_link']=FALSE;
 		
 //      SORTING BY TEAM
-        $team='';
         if($this->input->get('team')!=null):
             $team=$this->input->get('team');
             $batter=$this->baseball_model->sortingByTeam('kbo_batterbasic_2017', $team);
@@ -101,8 +102,9 @@ class Baseball extends MY_Controller{
 
         $batter5=$this->baseball_model->getBatter5();
         $pitcher5=$this->baseball_model->getPitcher5();
+        $runner5=$this->baseball_model->getRunner5('kbo_runnerbasic_2017');
 
- 		$this->load->view("/baseball/player_record", array('batter'=>$batter, 'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5));
+ 		$this->load->view("/baseball/player_record", array('batter'=>$batter, 'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5,'runner5'=>$runner5));
 		$this->load->view("/baseball/footer");
 	}
 
@@ -126,7 +128,6 @@ class Baseball extends MY_Controller{
 
 			$resultSet=array();
 			foreach($source->rows as $entry):
-				$arraySet=array();
 				$array=array();
 				foreach($entry->row as $key=>$entries):
 					if($key==0 && $entries->Class=='day'):
@@ -196,64 +197,18 @@ class Baseball extends MY_Controller{
 			array_push($resultSet, $entry);
 		endforeach;
 
-		$score=$this->baseball_model->getByScore('kbo_result_2017');
-		$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-		$result=array();
-		foreach($score as $entry):
-			foreach($team_array as $entries):
-				if($entry->home=='<span>'.$entries.'</span>'):
-					$exp1=explode('>', $entry->home_score);
-					$home_score=explode('<', $exp1[1]);
-					$exp2=explode('>', $entry->away_score);
-					$away_score=explode('<', $exp2[1]);
-
-					if($home_score[0]>$away_score[0]):
-						if(!isset($result[$entry->home])) $result[$entry->home]='승';
-						else $result[$entry->home].=';승';
-					elseif($home_score[0]<$away_score[0]):
-						if(!isset($result[$entry->home])) $result[$entry->home]='패';
-						else $result[$entry->home].=';패';
-					elseif($home_score[0]==$away_score[0]):
-						if(!isset($result[$entry->home])) $result[$entry->home]='무';
-						else $result[$entry->home].=';무';
-					endif;
-				endif;
-
-				if($entry->away=='<span>'.$entries.'</span>'):
-					$exp1=explode('>', $entry->home_score);
-					$home_score=explode('<', $exp1[1]);
-					$exp2=explode('>', $entry->away_score);
-					$away_score=explode('<', $exp2[1]);
-
-					if($home_score[0]<$away_score[0]):
-						if(!isset($result[$entry->away])) $result[$entry->away]='승';
-						else $result[$entry->away].=';승';
-					elseif($home_score[0]>$away_score[0]):
-						if(!isset($result[$entry->away])) $result[$entry->away]='패';
-						else $result[$entry->away].=';패';
-					elseif($home_score[0]==$away_score[0]):
-						if(!isset($result[$entry->away])) $result[$entry->away]='무';
-						else $result[$entry->away].=';무';
-					endif;
-				endif;
-			endforeach;
-		endforeach;
-
 		$exp=explode('<span id="cphContents_cphContents_cphContents_lblSearchDateTitle">', $source);
 		$expp=explode('</span>',$exp[1]);
 		$exppp=explode('(',$expp[0]);
-		$replaced=str_replace('.','-',$exppp[0]);
 
-		$this->baseball_model->insertWithRecentGame('kbo_team_total_2017', $resultSet, $result, $exppp[0]);
+		$this->baseball_model->insertWithRecentGame('kbo_team_total_2017', $resultSet, $this->baseball_model->getByScore(), $exppp[0]);
 
 		/* KBO 공격력 순위 */
 		$columns_batter1=array('rank','team','avg','g','pa','ab','r','h','second_b','third_b','hr','tb','rbi','sac','sf');
 		$offense1=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Hitter/Basic1.aspx'), $columns_batter1);
 		$columns_batter2=array('rank','team','avg','bb','ibb','hbp','so','gdp','slg','obp','ops','mh','risp','phba');
-		$unset_array1=array('rank','team','avg');
 		$offense2=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Hitter/Basic2.aspx'), $columns_batter2);
 		$columns_running=array('rank','team','g','sba','sb','cs','sbp','oob','pko');
-		$unset_array2=array('rank','team');
 		$source=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Runner/Basic.aspx'), $columns_running);
 
 		$resultSet_offense=array();
@@ -269,10 +224,8 @@ class Baseball extends MY_Controller{
 		$columns_pitcher1=array('rank','team','era','g','w','l','sv','hld','wpct','ip','h','hr','bb','hbp','so','r','er','whip');
 		$offense1=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Pitcher/Basic1.aspx'), $columns_pitcher1);
 		$columns_pitcher2=array('rank','team','era','cg','sho','qs','bsv','tbf','np','avg','second_b','third_b','sac','sf','ibb','wp','bk');
-		$unset_array3=array('rank','team','era');
 		$offense2=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Pitcher/Basic2.aspx'), $columns_pitcher2);
 		$columns_defence=array('rank','team','g','e','pko','po','a','dp','fpct','pb','sb','cs','csp');
-		$unset_array4=array('rank','team', 'g');
 		$source=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Defense/Basic.aspx'), $columns_defence);
 
 		$resultSet_defence=array();
@@ -290,7 +243,6 @@ class Baseball extends MY_Controller{
 		$pieces_6=explode('<tbody>', $piece_1[0]);
 		$pieces_2=explode("<tr>", $pieces_6[1]);
 		$resultSet=array();
-		$dataSet=array();
 		if($pieces_2[0]!=' '){
 			for($z=1; $z<count($pieces_2); $z++){
 				$dataArray=array();
@@ -369,5 +321,18 @@ class Baseball extends MY_Controller{
         endforeach;
 
         $this->baseball_model->insertNoDelete('kbo_pitcherbasic_2017', $merged3);
+    }function crawlingPlayerRecordRunner(){
+        $column_total=array('rank','name','team','g','sba','sb','cs','sbp','oob','pko');
+        $source=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/Runner/Basic.aspx');
+        $resultSet=$this->crawlingWithColumnList($source, $column_total);
+
+        $exp5=explode('</a></td>', $source);
+        $arr3=array();
+        foreach($exp5 as $key=>$item): $exp6=explode('">', $item); $arr3[$key]=array_pop($exp6); endforeach;
+        array_pop($arr3);
+
+        for($i=0; $i<30; $i++): $resultSet[$i]['name']=$arr3[$i]; endfor;
+
+        $this->baseball_model->insertNoDelete('kbo_runnerbasic_2017', $resultSet);
     }
 }

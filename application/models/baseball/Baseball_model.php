@@ -37,7 +37,7 @@
 			$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
 			foreach($team_array as $entries):
 				if($entry['team']==$entries):
-					$this->db->set('recent_game', $recent_game['<span>'.$entries.'</span>']);
+					$this->db->set('recent_game', $recent_game[$entries]);
 				endif;
 			endforeach;
 
@@ -68,20 +68,36 @@
 
 		return $this->db->get($table)->result();
 	}
-	function getByScore($table){
-		$this->db->where('away_score!=', '');
-		$this->db->where('home_score!=', '');
-		$this->db->order_by('no', 'ASC');
+//	팀별 최근 10경기 승패
+    function getByScore(){
+        $this->db->where('away_score!=', '');
+        $this->db->where('home_score!=', '');
+        $this->db->order_by('no', 'DESC');
+        $month=$this->db->get('kbo_result_2017')->result();
 
-		return $this->db->get($table, 50)->result();
-	}
-	function getLastPlayDayOfThisMonth(){
-		$this->db->select('date');
-		$this->db->order_by('date', 'DESC');
-		$last_date=$this->db->get('kbo_team_total_2017')->row();
-		$exp=explode('-', $last_date->date);
+        $result=array();
+        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        foreach($team_array as $team):
+            $count=0;
+            $team_recent_ten_game='';
+            foreach($month as $item):
+                if(strip_tags($item->home)==$team && $count<10):
+                    if(strip_tags($item->home_score) > strip_tags($item->away_score)): $team_recent_ten_game='승;'.$team_recent_ten_game; $count++;
+                    elseif(strip_tags($item->home_score) < strip_tags($item->away_score)): $team_recent_ten_game='패;'.$team_recent_ten_game; $count++;
+                    else: $team_recent_ten_game='무;'.$team_recent_ten_game; $count++;
+                    endif;
+                elseif(strip_tags($item->away)==$team && $count<10):
+                    if(strip_tags($item->home_score) < strip_tags($item->away_score)): $team_recent_ten_game='승;'.$team_recent_ten_game; $count++;
+                    elseif(strip_tags($item->home_score) > strip_tags($item->away_score)): $team_recent_ten_game='패;'.$team_recent_ten_game; $count++;
+                    else: $team_recent_ten_game='무;'.$team_recent_ten_game; $count++;
+                    endif;
+                endif;
+            endforeach;
+//          마지막 콤마 제거
+            $result[$team]=substr($team_recent_ten_game, 0, -1);
+        endforeach;
 
-		return $exp[2];
+        return $result;
 	}
 	function getByTeam($team, $this_month){
 		$this->db->select('rank, date, team');
@@ -119,7 +135,8 @@
     	$this->db->order_by('insert_dt', 'DESC');
     	$this->db->distinct();
     	$lastDate=$this->db->get($table, 1)->row();
-    	
+
+    	$this->db->order_by('rank', 'ASC');
      	$this->db->where('insert_dt', $lastDate->insert_dt);
         return $this->db->get($table, $limit, $offset)->result();
     }
@@ -146,12 +163,27 @@
 
         return $resultSet;
     }
+    function getRunner5($table){
+        $this->db->where('insert_dt', $this->getLastDay($table));
+        $this->db->order_by('rank', 'ASC');
+
+        return $this->db->get($table, 5)->result();
+    }
     function get_orderby($table, $limit, $order_by, $asc_desc){
         $this->db->select('name, team, '.$order_by);
-        $this->db->order_by('insert_dt', 'DESC');
+        $this->db->where('insert_dt', $this->getLastDay($table));
         $this->db->order_by($order_by, $asc_desc);
 
         return $this->db->get($table, $limit)->result();
+    }
+
+    function getLastDay($table){
+        $this->db->select('insert_dt');
+        $this->db->order_by('insert_dt', 'DESC');
+        $this->db->distinct();
+        $lastDate=$this->db->get($table, 1)->row();
+
+        return $lastDate->insert_dt;
     }
     function sortingByTeam($table, $team){
         $this->db->order_by('rank');
@@ -196,25 +228,25 @@
     	$this->db->where('away_score!=', '');
     	$this->db->where('home_score!=', '');
     	$total=$this->db->get('kbo_result_2017')->result();
-    	
+
     	$result=array();
     	foreach($team_array as $item):
     		foreach($total as $items):
     			if($item==strip_tags($items->home)):
-		    		if(!isset($result[$item])): 
+		    		if(!isset($result[$item])):
     					$result[$item]=strip_tags($items->home_score);
     					$result[$item.'_lose']=strip_tags($items->away_score);
-		    		else: 
-		    			$result[$item]+=strip_tags($items->home_score); 
+		    		else:
+		    			$result[$item]+=strip_tags($items->home_score);
 		    			$result[$item.'_lose']+=strip_tags($items->away_score);
 		    		endif;
     			endif;
     			if($item==strip_tags($items->away)):
-	    			if(!isset($result[$item])): 
+	    			if(!isset($result[$item])):
     					$result[$item]=strip_tags($items->away_score);
     					$result[$item.'_lose']=strip_tags($items->home_score);
-	    			else: 
-	    				$result[$item]+=strip_tags($items->away_score); 
+	    			else:
+	    				$result[$item]+=strip_tags($items->away_score);
 	    				$result[$item.'_lose']+=strip_tags($items->home_score);
 	    			endif;
 	    		endif;

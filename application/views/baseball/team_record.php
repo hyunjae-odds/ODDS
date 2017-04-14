@@ -48,38 +48,31 @@
 							<th>게임차</th>
 							<th>최근 10경기</th>
 						</tr>
-						<?php foreach($total as $entry): ?>
-							<tr>
-								<?php if($entry->rank==1 || $entry->rank==2 || $entry->rank==3 || $entry->rank==4): ?>
-									<td><span class="rankdot0<?=$entry->rank;?>_color"><b><?=$entry->rank;?></b></span></td>
-								<?php elseif($entry->rank==4): ?>
-									<td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
-								<?php else: ?>
-									<td><?=$entry->rank;?></td>
-								<?php endif; ?>
-
-								<td><?=$entry->team;?></td>
-								<td><?php foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;?></td>
-								<td><?=number_format($entry->win_rate,3);?></td>
-								<td><?=$entry->win;?></td>
-								<td><?=$entry->lose;?></td>
-								<td><?=$entry->tie;?></td>
-								<td>48:29</td>
-								<td>+19</td>
-								<td><?=$entry->game_car;?></td>
-								<td>
-								<?php
-									$exp=explode(';', $entry->recent_game);
-									foreach($exp as $value) :
-										if($value=='승'): echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-										elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
-										else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
-										endif;
-									endforeach;
-								?>
-								</td>
-							</tr>
-						<?php endforeach; ?>
+                        <?php foreach($total as $entry): ?>
+                            <tr>
+                                <?php if($entry->rank==1 || $entry->rank==2 || $entry->rank==3 || $entry->rank==4): ?>
+                                    <td><span class="rankdot0<?=$entry->rank;?>_color"><b><?=$entry->rank;?></b></span></td>
+                                <?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
+                                <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
+                                <td><?=$entry->team;?></td>
+                                <td><?php foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;?></td>
+                                <td><?=number_format($entry->win_rate,3);?></td>
+                                <td><?=$entry->win;?></td>
+                                <td><?=$entry->lose;?></td>
+                                <td><?=$entry->tie;?></td>
+                                <td><?=$plus_minus[$entry->team]; ?>:<?=$plus_minus[$entry->team.'_lose'];?></td>
+                                <td><?=$plus_minus[$entry->team]-$plus_minus[$entry->team.'_lose'];?></td>
+                                <td><?=$entry->game_car;?></td>
+                                <td><?php $exp=explode(';', $entry->recent_game);
+                                    foreach($exp as $value) :
+                                        if($value=='승'): echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+                                        elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                        else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
+                                        endif;
+                                    endforeach; ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 					</table>
 				</div>
 

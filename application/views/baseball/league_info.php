@@ -4882,12 +4882,12 @@
 							<tr>
 								<td>홈경기 승리</td>
 								<td><?=$league_statistics['home_win'];?></td>
-								<td><?=$league_statistics['home_win']/($league_statistics['home_win']+$league_statistics['away_win'])*100;?>%</td>
+								<td><?=$home_win=number_format($league_statistics['home_win']/($league_statistics['home_win']+$league_statistics['away_win'])*100,0);?>%</td>
 							</tr>
 							<tr>
 								<td>원정경기 승리</td>
 								<td><?=$league_statistics['away_win'];?></td>
-								<td><?=$league_statistics['away_win']/($league_statistics['home_win']+$league_statistics['away_win'])*100;?>%</td>
+								<td><?=100-$home_win;?>%</td>
 							</tr>
 							<tr>
 								<td>타이</td>

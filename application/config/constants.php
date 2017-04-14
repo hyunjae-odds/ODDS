@@ -94,5 +94,5 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
  | begin : 17-04-13
  |
  */
-defined('SERVER_HOST')      OR define('SERVER_HOST', 'sponavi.odds.com');
+defined('SERVER_HOST')      OR define('SERVER_HOST', 'odds.dev');
 defined('HANDICAP15')      OR define('HANDICAP15', 1.5);
