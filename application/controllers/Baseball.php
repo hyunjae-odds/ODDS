@@ -44,13 +44,27 @@ class Baseball extends MY_Controller{
 	}
 
 	/* 팀 기록 */
-	function team_record($select_year, $select_month){
+	function team_record($select_year, $select_month, $offense_sort, $defence_sort){
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
 
-		$offense=$this->baseball_model->get('kbo_team_offense_2017');
-		$defence=$this->baseball_model->get('kbo_team_defence_2017');
-		$total=$this->baseball_model->getLimit('kbo_team_total_2017');
+//		소팅으로 페이지 새로고쳤을때 이전 스크롤위치로 이동
+        if($this->input->get('scroll_top')!=null): $mouseTop=$this->input->get('scroll_top'); else: $mouseTop=0; endif;
+        if($this->input->get('focus')!=null): $focus=$this->input->get('focus'); else: $focus=0; endif;
+        if($this->input->get('bold_num')!=null): $boldNum=$this->input->get('bold_num'); else: $boldNum=0; endif;
+//		sorting
+        if($offense_sort!='all'):
+            $offense=$this->baseball_model->getBySort('kbo_team_offense_2017', $offense_sort);
+            $defence=$this->baseball_model->get('kbo_team_defence_2017');
+        elseif($defence_sort!='all'):
+            $offense=$this->baseball_model->get('kbo_team_offense_2017');
+            $defence=$this->baseball_model->getBySort('kbo_team_defence_2017', $defence_sort);
+        elseif($offense_sort=='all' && $defence_sort=='all'):
+            $offense=$this->baseball_model->get('kbo_team_offense_2017');
+            $defence=$this->baseball_model->get('kbo_team_defence_2017');
+        endif;
+
+        $total=$this->baseball_model->getLimit('kbo_team_total_2017');
         $plus_minus=$this->baseball_model->getTotalScore();
 
 		$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
@@ -68,8 +82,8 @@ class Baseball extends MY_Controller{
 		endif;
 		$schedule=$this->baseball_model->get_schedule($select_month);
 
-		$this->load->view("/baseball/team_record", array('select_year'=>$select_year,'select_month'=>$select_month,'offense'=>$offense,'defence'=>$defence,
-														 'total'=>$total,'rank_month'=>$team,'schedule'=>$schedule,'plus_minus'=>$plus_minus));
+		$this->load->view("/baseball/team_record", array('select_year'=>$select_year,'select_month'=>$select_month,'offense'=>$offense,'defence'=>$defence,'focus'=>$focus,'bold_num'=>$boldNum,
+														 'total'=>$total,'rank_month'=>$team,'schedule'=>$schedule,'plus_minus'=>$plus_minus, 'mouseTop'=>$mouseTop));
 		$this->load->view("/baseball/footer");
 	}
 
@@ -87,9 +101,23 @@ class Baseball extends MY_Controller{
         $config['next_link']=FALSE;
         $config['first_link']=FALSE;
         $config['last_link']=FALSE;
-		
-//      SORTING BY TEAM
-        if($this->input->get('team')!=null):
+
+//      SORTING
+        if($this->input->get('scroll_top')!=null): $mouseTop=$this->input->get('scroll_top'); else: $mouseTop=0; endif;
+        if($this->input->get('focus')!=null): $focus=$this->input->get('focus'); else: $focus=0; endif;
+        if($this->input->get('bold_num')!=null): $boldNum=$this->input->get('bold_num'); else: $boldNum=0; endif;
+
+        if($this->input->get('pitcher_sort')!=null):
+            $this->pagination->initialize($config);
+            if($this->uri->segment(3)!=null) $offset=$this->uri->segment(3); else $offset=0;
+            $batter=$this->baseball_model->getPagination('kbo_batterbasic_2017', $per_page, $offset);
+            $pitcher=$this->baseball_model->getBySort('kbo_pitcherbasic_2017', $this->input->get('pitcher_sort'));
+        elseif($this->input->get('batter_sort')!=null):
+            $this->pagination->initialize($config);
+            if($this->uri->segment(3)!=null) $offset=$this->uri->segment(3); else $offset=0;
+            $batter=$this->baseball_model->getBySortPagination('kbo_batterbasic_2017', $this->input->get('batter_sort'), $per_page, $offset);
+            $pitcher=$this->baseball_model->getPagination('kbo_pitcherbasic_2017', $per_page, 0);
+        elseif($this->input->get('team')!=null):
             $team=$this->input->get('team');
             $batter=$this->baseball_model->sortingByTeam('kbo_batterbasic_2017', $team);
             $pitcher=$this->baseball_model->sortingByTeam('kbo_pitcherbasic_2017', $team);
@@ -97,14 +125,26 @@ class Baseball extends MY_Controller{
             $this->pagination->initialize($config);
             if($this->uri->segment(3)!=null) $offset=$this->uri->segment(3); else $offset=0;
             $batter=$this->baseball_model->getPagination('kbo_batterbasic_2017', $per_page, $offset);
-            $pitcher=$this->baseball_model->getPagination('kbo_pitcherbasic_2017', $per_page, $offset);
+            $pitcher=$this->baseball_model->getPagination('kbo_pitcherbasic_2017', $per_page, 0);
         endif;
 
         $batter5=$this->baseball_model->getBatter5();
         $pitcher5=$this->baseball_model->getPitcher5();
         $runner5=$this->baseball_model->getRunner5('kbo_runnerbasic_2017');
 
- 		$this->load->view("/baseball/player_record", array('batter'=>$batter, 'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5,'runner5'=>$runner5));
+        $this->load->helper('cookie');
+        $this->input->set_cookie(array('name'=>'mouse_top','value'=>$mouseTop,'expire'=>'86500','domain'=>'odds.dev'));
+        $this->input->set_cookie(array('name'=>'focus','value'=>$focus,'expire'=>'86500','domain'=>'odds.dev'));
+        $this->input->set_cookie(array('name'=>'bold_num','value'=>$boldNum,'expire'=>'86500','domain'=>'odds.dev'));
+
+        if($this->uri->segment(3)!=null):
+            $mouseTop=$this->input->cookie('mouse_top');
+            $focus=$this->input->cookie('focus');
+            $boldNum=$this->input->cookie('bold_num');
+        endif;
+
+        $this->load->view("/baseball/player_record", array('batter'=>$batter, 'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5,
+                          'runner5'=>$runner5,'mouseTop'=>$mouseTop, 'focus'=>$focus, 'bold_num'=>$boldNum));
 		$this->load->view("/baseball/footer");
 	}
 
@@ -218,7 +258,7 @@ class Baseball extends MY_Controller{
 	    	endforeach;
 		endforeach;
 
-//		$this->baseball_model->insert('kbo_team_offense_2017', $resultSet_offense);
+		$this->baseball_model->insert('kbo_team_offense_2017', $resultSet_offense);
 
 		/* KBO 수비력 순위 */
 		$columns_pitcher1=array('rank','team','era','g','w','l','sv','hld','wpct','ip','h','hr','bb','hbp','so','r','er','whip');
@@ -235,7 +275,7 @@ class Baseball extends MY_Controller{
 			endforeach;
 		endforeach;
 
-//		$this->baseball_model->insert('kbo_team_defence_2017', $resultSet_defence);
+		$this->baseball_model->insert('kbo_team_defence_2017', $resultSet_defence);
 	}
 
 	function crawlingWithColumnList($source, $column_list){

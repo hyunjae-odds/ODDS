@@ -106,6 +106,16 @@
 
 		return $this->db->get_where('kbo_team_total_2017', array('team'=>$team))->result();
 	}
+	function getBySort($table, $sort){
+        $this->db->select('insert_dt');
+    	$this->db->order_by('insert_dt', 'DESC');
+    	$this->db->distinct();
+    	$lastDate=$this->db->get($table, 1)->row();
+
+     	$this->db->where('insert_dt', $lastDate->insert_dt);
+	    $this->db->order_by($sort, 'DESC');
+	    return $this->db->get($table)->result();
+    }
 	function getCountDistinctByMonth($this_month){
 		$this->db->select('date');
 		$this->db->like('date', '2017-'.$this_month, 'after');
@@ -137,6 +147,16 @@
     	$lastDate=$this->db->get($table, 1)->row();
 
     	$this->db->order_by('rank', 'ASC');
+     	$this->db->where('insert_dt', $lastDate->insert_dt);
+        return $this->db->get($table, $limit, $offset)->result();
+    }
+    function getBySortPagination($table, $sort, $limit, $offset){
+    	$this->db->select('insert_dt');
+    	$this->db->order_by('insert_dt', 'DESC');
+    	$this->db->distinct();
+    	$lastDate=$this->db->get($table, 1)->row();
+
+    	$this->db->order_by($sort, 'DESC');
      	$this->db->where('insert_dt', $lastDate->insert_dt);
         return $this->db->get($table, $limit, $offset)->result();
     }
@@ -186,15 +206,26 @@
         return $lastDate->insert_dt;
     }
     function sortingByTeam($table, $team){
+        $this->db->select('insert_dt');
+        $this->db->order_by('insert_dt', 'DESC');
+        $this->db->distinct();
+        $lastDate=$this->db->get($table, 1)->row();
+
         $this->db->order_by('rank');
+        $this->db->where('insert_dt', $lastDate->insert_dt);
 
         return $this->db->get_where($table, array('team'=>$team))->result();
     }
     function getScheduleAfter3Days(){
     	$today=date('m').'.'.date('d');
-    	
+
     	$this->db->like('date', $today.'(', 'after');
     	$today_schedule=$this->db->get('kbo_result_2017')->row();
+    	if(!isset($today_schedule->no)):
+            $today=date('m').'.'.(date('d')+1);
+            $this->db->like('date', $today.'(', 'after');
+            $today_schedule=$this->db->get('kbo_result_2017')->row();
+        endif;
     	
     	$this->db->order_by('date', 'ASC');
     	$this->db->like('date', date('m').'.', 'after');
