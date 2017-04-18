@@ -1,4 +1,4 @@
-﻿<?php 
+﻿<?php
 include("head_up.php");
 include("head.php");
 ?>
@@ -6,16 +6,16 @@ include("head.php");
 
 <script type="text/javascript">
 
-$(document).ready(function(){ 
+$(document).ready(function(){
 
-	$('.other_btn').click(function(){ 
-		var state = $('.other_view').css('display'); 
-		if(state == 'none'){ 
-			$('.other_view').slideDown(); 
+	$('.other_btn').click(function(){
+		var state = $('.other_view').css('display');
+		if(state == 'none'){
+			$('.other_view').slideDown();
 			$('.other_btn').addClass('close');
 			return false;
 		}else{
-			$('.other_view').slideUp(); 	
+			$('.other_view').slideUp();
 			$('.other_btn').removeClass('close');
 			return false;
 		}
@@ -23,10 +23,10 @@ $(document).ready(function(){
 
 
 
-});	
+});
 
 
-$(document).ready(function(){ 
+$(document).ready(function(){
     Highcharts.chart('line_graph01', {
 		 xAxis: {
             tickInterval: 1
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		<script src="../js/highcharts/modules/exporting.js"></script>
 
 
-							
+
 			<div class="match" style="margin-top:-20px;">
 				<div class="top">
 					<ul>
@@ -100,9 +100,9 @@ $(document).ready(function(){
 					<div class="referee">
 						<p>로버트 메들리</p>
 						<b>Kick Off : 22:35</b>
-					</div>	
+					</div>
 					<div class="goal_line_w">
-						<div class="goal_line">		
+						<div class="goal_line">
 							<div>
 								<p>리오넬 메시 (pen)</p>
 								<span>29'</span>
@@ -126,12 +126,12 @@ $(document).ready(function(){
 								<span class="goal_w"></span>
 							</div>
 						</div>
-						<div class="goal_line">		
+						<div class="goal_line">
 							<div>
 								<span class="goal_w"></span>
 								<span>19'</span>
 								<p>리오넬 메시</p>
-								<span class="gray">(AS.이니에스타)</span>			
+								<span class="gray">(AS.이니에스타)</span>
 							</div>
 						</div>
 						<div class="end"></div>
@@ -211,13 +211,13 @@ $(document).ready(function(){
 									<span class="red">51'</span>
 									<p>즐라탄 이브라..</p>
 								</div>
-							</div>	
+							</div>
 						</div>
 						<div class="now" style="left:580px;">
 							<marquee behavior="alternate" width="32" scrollamount="50" scrolldelay="500"><span class="now"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
 						</div>
 					</div>
-				</div>				
+				</div>
 			</div>
 			<div class="opinion">
 				<h4>일치된 의견</h4>
@@ -233,103 +233,103 @@ $(document).ready(function(){
 				<div class="graph">
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:86%"><span>25승 5무 2패</span></div></div>										
+						<div class="left">
+							<div><div style="width:86%"><span>25승 5무 2패</span></div></div>
 						</div>
 						<p>순위</p>
-						<div class="right">	
-							<div><div style="width:86%"><span>25승 5무 2패</span></div></div>		
+						<div class="right">
+							<div><div style="width:86%"><span>25승 5무 2패</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:82%"><span>25승 5무 2패</span></div></div>										
+						<div class="left">
+							<div><div style="width:82%"><span>25승 5무 2패</span></div></div>
 						</div>
 						<p>홈/원정</p>
-						<div class="right">	
-							<div><div style="width:80%"><span>25승 5무 2패</span></div></div>		
+						<div class="right">
+							<div><div style="width:80%"><span>25승 5무 2패</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">50%</span>
-						<div class="left">	
-							<div><div style="width:52%"><span>15/30</span></div></div>										
+						<div class="left">
+							<div><div style="width:52%"><span>15/30</span></div></div>
 						</div>
 						<p>오버(2.5)</p>
-						<div class="right">	
-							<div><div style="width:50%"><span>15/30</span></div></div>		
+						<div class="right">
+							<div><div style="width:50%"><span>15/30</span></div></div>
 						</div>
 						<span class="right">50%</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:82%"><span>78골</span></div></div>										
+						<div class="left">
+							<div><div style="width:82%"><span>78골</span></div></div>
 						</div>
 						<p>득점</p>
-						<div class="right">	
-							<div><div style="width:80%"><span>78골</span></div></div>		
+						<div class="right">
+							<div><div style="width:80%"><span>78골</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:50%"><span>25골</span></div></div>										
+						<div class="left">
+							<div><div style="width:50%"><span>25골</span></div></div>
 						</div>
 						<p>실점</p>
-						<div class="right">	
-							<div><div style="width:50%"><span>25골</span></div></div>		
+						<div class="right">
+							<div><div style="width:50%"><span>25골</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:32%"><span>+0.92골</span></div></div>										
+						<div class="left">
+							<div><div style="width:32%"><span>+0.92골</span></div></div>
 						</div>
 						<p>득점마진</p>
-						<div class="right">	
-							<div><div style="width:30%"><span>+0.92골</span></div></div>		
+						<div class="right">
+							<div><div style="width:30%"><span>+0.92골</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:72%"><span>150</span></div></div>										
+						<div class="left">
+							<div><div style="width:72%"><span>150</span></div></div>
 						</div>
 						<p>유효슈팅</p>
-						<div class="right">	
-							<div><div style="width:70%"><span>150</span></div></div>		
+						<div class="right">
+							<div><div style="width:70%"><span>150</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:82%"><span>65%</span></div></div>										
+						<div class="left">
+							<div><div style="width:82%"><span>65%</span></div></div>
 						</div>
 						<p>볼점유율</p>
-						<div class="right">	
-							<div><div style="width:80%"><span>65%</span></div></div>		
+						<div class="right">
+							<div><div style="width:80%"><span>65%</span></div></div>
 						</div>
 						<span class="right">1위</span>
 					</div>
 					<div>
 						<span class="left">1위</span>
-						<div class="left">	
-							<div><div style="width:32%"><span>8회</span></div></div>										
+						<div class="left">
+							<div><div style="width:32%"><span>8회</span></div></div>
 						</div>
 						<p>퇴장</p>
-						<div class="right">	
-							<div><div style="width:30%"><span>8회</span></div></div>		
+						<div class="right">
+							<div><div style="width:30%"><span>8회</span></div></div>
 						</div>
 						<span class="right">1위</span>
-					</div>									
+					</div>
 				</div>
 			</div>
 			<div class="lineUP">
@@ -539,7 +539,7 @@ $(document).ready(function(){
 								<span>
 									<span class="b_BTN"><a href="match.php">매치정보</a></span>
 									<span class="r_BTN"><a href="">전문가 의견</a></span>
-									<span class="g_BTN"><a href="">블로그</a></span>			
+									<span class="g_BTN"><a href="">블로그</a></span>
 									<span class="y_BTN"><a href="">배당률</a></span>
 								</span>
 								<!-- 블로그팝업 -->
@@ -595,8 +595,8 @@ $(document).ready(function(){
 									<div class="close"><a href="">close</a></div>
 								</div>
 								<!-- 배당률팝업 -->
-								<div class="y_pop" style="display:none;">							
-									<h3>레알마드리드 vs FC바르셀로나</h3>	
+								<div class="y_pop" style="display:none;">
+									<h3>레알마드리드 vs FC바르셀로나</h3>
 									<div>
 										<ul class="y_btn">
 											<li><a href="">전체 회사 보기</a></li>
@@ -5260,7 +5260,7 @@ $(document).ready(function(){
 								<span>
 									<span class="b_BTN"><a href="match.php">매치정보</a></span>
 									<span class="r_BTN"><a href="">전문가 의견</a></span>
-									<span class="g_BTN"><a href="">블로그</a></span>			
+									<span class="g_BTN"><a href="">블로그</a></span>
 									<span class="y_BTN"><a href="">배당률</a></span>
 								</span>
 								<!-- 블로그팝업 -->
@@ -5316,8 +5316,8 @@ $(document).ready(function(){
 									<div class="close"><a href="">close</a></div>
 								</div>
 								<!-- 배당률팝업 -->
-								<div class="y_pop" style="display:none;">							
-									<h3>레알마드리드 vs FC바르셀로나</h3>	
+								<div class="y_pop" style="display:none;">
+									<h3>레알마드리드 vs FC바르셀로나</h3>
 									<div>
 										<ul class="y_btn">
 											<li><a href="">전체 회사 보기</a></li>
@@ -9981,7 +9981,7 @@ $(document).ready(function(){
 								<span>
 									<span class="b_BTN"><a href="match.php">매치정보</a></span>
 									<span class="r_BTN"><a href="">전문가 의견</a></span>
-									<span class="g_BTN"><a href="">블로그</a></span>			
+									<span class="g_BTN"><a href="">블로그</a></span>
 									<span class="y_BTN"><a href="">배당률</a></span>
 								</span>
 								<!-- 블로그팝업 -->
@@ -10037,8 +10037,8 @@ $(document).ready(function(){
 									<div class="close"><a href="">close</a></div>
 								</div>
 								<!-- 배당률팝업 -->
-								<div class="y_pop" style="display:none;">							
-									<h3>레알마드리드 vs FC바르셀로나</h3>	
+								<div class="y_pop" style="display:none;">
+									<h3>레알마드리드 vs FC바르셀로나</h3>
 									<div>
 										<ul class="y_btn">
 											<li><a href="">전체 회사 보기</a></li>
@@ -14702,7 +14702,7 @@ $(document).ready(function(){
 								<span>
 									<span class="b_BTN"><a href="match.php">매치정보</a></span>
 									<span class="r_BTN"><a href="">전문가 의견</a></span>
-									<span class="g_BTN"><a href="">블로그</a></span>			
+									<span class="g_BTN"><a href="">블로그</a></span>
 									<span class="y_BTN"><a href="">배당률</a></span>
 								</span>
 								<!-- 블로그팝업 -->
@@ -14758,8 +14758,8 @@ $(document).ready(function(){
 									<div class="close"><a href="">close</a></div>
 								</div>
 								<!-- 배당률팝업 -->
-								<div class="y_pop" style="display:none;">							
-									<h3>레알마드리드 vs FC바르셀로나</h3>	
+								<div class="y_pop" style="display:none;">
+									<h3>레알마드리드 vs FC바르셀로나</h3>
 									<div>
 										<ul class="y_btn">
 											<li><a href="">전체 회사 보기</a></li>
@@ -19423,7 +19423,7 @@ $(document).ready(function(){
 								<span>
 									<span class="b_BTN"><a href="match.php">매치정보</a></span>
 									<span class="r_BTN"><a href="">전문가 의견</a></span>
-									<span class="g_BTN"><a href="">블로그</a></span>			
+									<span class="g_BTN"><a href="">블로그</a></span>
 									<span class="y_BTN"><a href="">배당률</a></span>
 								</span>
 								<!-- 블로그팝업 -->
@@ -19479,8 +19479,8 @@ $(document).ready(function(){
 									<div class="close"><a href="">close</a></div>
 								</div>
 								<!-- 배당률팝업 -->
-								<div class="y_pop" style="display:none;">							
-									<h3>레알마드리드 vs FC바르셀로나</h3>	
+								<div class="y_pop" style="display:none;">
+									<h3>레알마드리드 vs FC바르셀로나</h3>
 									<div>
 										<ul class="y_btn">
 											<li><a href="">전체 회사 보기</a></li>
@@ -24263,7 +24263,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -24319,8 +24319,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -28984,7 +28984,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -29040,8 +29040,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -33705,7 +33705,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -33761,8 +33761,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -38426,7 +38426,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -38482,8 +38482,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -43147,7 +43147,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -43203,8 +43203,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -47907,7 +47907,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -47963,8 +47963,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -52628,7 +52628,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -52684,8 +52684,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -57349,7 +57349,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -57405,8 +57405,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -62070,7 +62070,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -62126,8 +62126,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -66791,7 +66791,7 @@ $(document).ready(function(){
 									<span>
 										<span class="b_BTN"><a href="match.php">매치정보</a></span>
 										<span class="r_BTN"><a href="">전문가 의견</a></span>
-										<span class="g_BTN"><a href="">블로그</a></span>			
+										<span class="g_BTN"><a href="">블로그</a></span>
 										<span class="y_BTN"><a href="">배당률</a></span>
 									</span>
 									<!-- 블로그팝업 -->
@@ -66847,8 +66847,8 @@ $(document).ready(function(){
 										<div class="close"><a href="">close</a></div>
 									</div>
 									<!-- 배당률팝업 -->
-									<div class="y_pop" style="display:none;">							
-										<h3>레알마드리드 vs FC바르셀로나</h3>	
+									<div class="y_pop" style="display:none;">
+										<h3>레알마드리드 vs FC바르셀로나</h3>
 										<div>
 											<ul class="y_btn">
 												<li><a href="">전체 회사 보기</a></li>
@@ -71569,10 +71569,10 @@ $(document).ready(function(){
 					<div class="left">
 						<div class="box_w">
 							<span class="MU_bb"></span>
-							<div class="box">	
+							<div class="box">
 								<div>
 									<h3>맨체스터 유나이티드</h3>
-									<p>건전한 응원문화를 함께 만들어 갑시다.</p>				
+									<p>건전한 응원문화를 함께 만들어 갑시다.</p>
 								</div>
 							</div>
 							<a href="" class="cheer_btn">응원하기</a>
@@ -71590,8 +71590,8 @@ $(document).ready(function(){
 							<div class="box">
 								<div>
 									<h3>맨체스터 유나이티드</h3>
-									<p>건전한 응원문화를 함께 만들어 갑시다.</p>				
-								</div>	
+									<p>건전한 응원문화를 함께 만들어 갑시다.</p>
+								</div>
 							</div>
 							<a href="" class="cheer_btn">응원하기</a>
 						</div>
@@ -71663,8 +71663,8 @@ $(document).ready(function(){
 			</div>
 
 
-			
-<?php 
+
+<?php
 include("footer.php");
 ?>
 

@@ -148,6 +148,13 @@ class Baseball extends MY_Controller{
 		$this->load->view("/baseball/footer");
 	}
 
+	function match_information(){
+        $this->load->view("/baseball/head_up");
+        $this->load->view("/baseball/head");
+        $this->load->view("/baseball/match");
+        $this->load->view("/baseball/footer");
+    }
+
 	function score(){
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
