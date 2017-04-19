@@ -46,12 +46,12 @@
                                                     </ul>
                                                 </div>
                                                 <div class="select" style="top:-7px;">
-                                                    <p><span class="pp">시즌 전체</span><span class="pa"></span></p>
+                                                    <p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
                                                     <ul>
-                                                        <li class=""><a href="">최근 10경기</a></li>
-                                                        <li class=""><a href="">최근 15경기</a></li>
-                                                        <li class=""><a href="">최근 20경기</a></li>
-                                                        <li class=""><a href="">최근 30경기</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?duration=all')">시즌 전체</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?game=10&duration=10')">10경기</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?game=20&duration=20')">20경기</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?game=30&duration=30')">30경기</a></li>
                                                     </ul>
                                                 </div>
                                                 <table class="table_default table_2_left" >
@@ -87,7 +87,11 @@
                                                             <?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                             <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                             <td><?=$entry->team;?></td>
-                                                            <td><?php foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;?></td>
+                                                            <td><?php
+                                                                if($this->input->get('game')!=null) echo $entry->g;
+                                                                else foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g;
+                                                                endforeach;?>
+                                                            </td>
                                                             <td><?=number_format($entry->win_rate,3);?></td>
                                                             <td><?=$entry->win;?></td>
                                                             <td><?=$entry->lose;?></td>

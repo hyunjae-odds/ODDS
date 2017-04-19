@@ -113,7 +113,10 @@
     	$lastDate=$this->db->get($table, 1)->row();
 
      	$this->db->where('insert_dt', $lastDate->insert_dt);
-	    $this->db->order_by($sort, 'DESC');
+        if($sort=='era') $this->db->order_by($sort, 'ASC');
+        else if($sort=='whip') $this->db->order_by($sort, 'ASC');
+        else if($sort=='avg') $this->db->order_by($sort, 'ASC');
+        else $this->db->order_by($sort, 'DESC');
 	    return $this->db->get($table)->result();
     }
 	function getCountDistinctByMonth($this_month){
@@ -252,38 +255,42 @@
     }
     
     /* 득, 실, 마진 */
-    function getTotalScore(){
+    function getTotalScore($duration){
     	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-    	
-    	$this->db->order_by('no', 'ASC');
-    	$this->db->where('away_score!=', '');
-    	$this->db->where('home_score!=', '');
-    	$total=$this->db->get('kbo_result_2017')->result();
+
+        $this->db->order_by('no', 'DESC');
+        $this->db->where('away_score!=', '');
+        $this->db->where('home_score!=', '');
+        $total=$this->db->get('kbo_result_2017')->result();
 
     	$result=array();
     	foreach($team_array as $item):
-    		foreach($total as $items):
-    			if($item==strip_tags($items->home)):
-		    		if(!isset($result[$item])):
-    					$result[$item]=strip_tags($items->home_score);
-    					$result[$item.'_lose']=strip_tags($items->away_score);
-		    		else:
-		    			$result[$item]+=strip_tags($items->home_score);
-		    			$result[$item.'_lose']+=strip_tags($items->away_score);
-		    		endif;
-    			endif;
-    			if($item==strip_tags($items->away)):
-	    			if(!isset($result[$item])):
-    					$result[$item]=strip_tags($items->away_score);
-    					$result[$item.'_lose']=strip_tags($items->home_score);
-	    			else:
-	    				$result[$item]+=strip_tags($items->away_score);
-	    				$result[$item.'_lose']+=strip_tags($items->home_score);
-	    			endif;
-	    		endif;
-    		endforeach;
+            if($duration=='all') $duration=count($total);
+            $count=0;
+            foreach($total as $items):
+                if($item==strip_tags($items->home) && $count<$duration):
+                    if(!isset($result[$item])):
+                        $result[$item]=strip_tags($items->home_score);
+                        $result[$item.'_lose']=strip_tags($items->away_score);
+                    else:
+                        $result[$item]+=strip_tags($items->home_score);
+                        $result[$item.'_lose']+=strip_tags($items->away_score);
+                    endif;
+                    $count++;
+                endif;
+                if($item==strip_tags($items->away) && $count<$duration):
+                    if(!isset($result[$item])):
+                        $result[$item]=strip_tags($items->away_score);
+                        $result[$item.'_lose']=strip_tags($items->home_score);
+                    else:
+                        $result[$item]+=strip_tags($items->away_score);
+                        $result[$item.'_lose']+=strip_tags($items->home_score);
+                    endif;
+                    $count++;
+                endif;
+            endforeach;
     	endforeach;
-    	
+
     	return $result;
     }
     
@@ -297,15 +304,18 @@
     	/* 리그 승률통계 */
     	$home_win=0;
     	$away_win=0;
+    	$draw=0;
     	foreach($total as $entry):
     		$exp1=explode('"', $entry->away_score);
     		$exp2=explode('"', $entry->home_score);
     		if($exp1[1]=='win') $away_win+=1;
     		if($exp2[1]=='win') $home_win+=1;
+    		else if($exp1[1]=='same') $draw+=1;
     	endforeach;
     	$resultSet['away_win']=$away_win;
     	$resultSet['home_win']=$home_win;
-    	
+    	$resultSet['draw']=$draw;
+
     	/* 리그 득점통계 */
     	$away_total_score=0;
     	$home_total_score=0;
@@ -327,5 +337,13 @@
     	$resultSet['handicap_away_win']=$handicap_away_win;
     	
     	return $resultSet;
+    }
+
+    function get_result(){
+        $this->db->where('away_score!=', '');
+        $this->db->where('home_score!=', '');
+        $this->db->order_by('no', 'DESC');
+
+        return $this->db->get('kbo_result_2017')->result();
     }
 }

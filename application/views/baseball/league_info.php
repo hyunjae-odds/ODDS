@@ -4786,11 +4786,12 @@
 									<li><a href="">원정</a></li>
 								</ul>
 								<div class="select" style="top:-7px;">
-									<p><span class="pp">시즌 전체</span><span class="pa"></span></p>
+									<p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
 										<ul>
-											<li><a href="">10경기</a></li>
-											<li><a href="">20경기</a></li>
-											<li><a href="">30경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=all')">시즌 전체</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?game=10&scroll_top='+document.body.scrollTop+'&duration=10')">10경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?game=20&scroll_top='+document.body.scrollTop+'&duration=20')">20경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?game=30&scroll_top='+document.body.scrollTop+'&duration=30')">30경기</a></li>
 										</ul>
 									</div>
 								</div>
@@ -4830,7 +4831,11 @@
                                             	<?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                 <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                 <td><?=$entry->team;?></td>
-                                                <td><?php foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;?></td>
+                                                <td><?php
+                                                        if($this->input->get('game')!=null) echo $entry->g;
+                                                        else foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g;
+                                                    endforeach;?>
+                                                </td>
                                                 <td><?=number_format($entry->win_rate,3);?></td>
                                                 <td><?=$entry->win;?></td>
                                                 <td><?=$entry->lose;?></td>
@@ -4840,8 +4845,8 @@
                                                 <td><?=$entry->game_car;?></td>
                                                 <td><?php $exp=explode(';', $entry->recent_game);
                                                 		foreach($exp as $value) :
-                                                			if($value=='승'): echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-															elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                                			if($value=='승'): echo '<a href="/baseball/match_information" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+															elseif($value=='패'): echo '<a href="/baseball/match_information" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
 															else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
 															endif;
 														endforeach; ?>
@@ -4882,17 +4887,17 @@
 							<tr>
 								<td>홈경기 승리</td>
 								<td><?=$league_statistics['home_win'];?></td>
-								<td><?=$home_win=number_format($league_statistics['home_win']/($league_statistics['home_win']+$league_statistics['away_win'])*100,0);?>%</td>
+								<td><?php $home_per=number_format($league_statistics['home_win']/($league_statistics['home_win']+$league_statistics['away_win']+$league_statistics['draw'])*100,0); echo $home_per;?>%</td>
 							</tr>
 							<tr>
 								<td>원정경기 승리</td>
 								<td><?=$league_statistics['away_win'];?></td>
-								<td><?=100-$home_win;?>%</td>
+								<td><?php $away_per=number_format($league_statistics['away_win']/($league_statistics['home_win']+$league_statistics['away_win']+$league_statistics['draw'])*100,0); echo $away_per;?>%</td>
 							</tr>
 							<tr>
 								<td>타이</td>
-								<td>0</td>
-								<td>0%</td>
+								<td><?=$league_statistics['draw'];?></td>
+								<td><?=100-($home_per+$away_per)?>%</td>
 							</tr>
 						</table>
 						<table class="table_default">
@@ -5092,7 +5097,9 @@
 </div>
 			
 <script type="text/javascript">
-$(document).ready(function(){ 
+$(document).ready(function(){
+    if('<?=$scroll_top;?>'!='') document.body.scrollTop=<?=$scroll_top;?>;
+
 	//date
 	$(".date_num").click(function(){ 
 		var state = $(this).next().css('display'); 

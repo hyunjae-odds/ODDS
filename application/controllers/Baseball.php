@@ -8,23 +8,33 @@ class Baseball extends MY_Controller{
 
 //	리그정보
 	function league_info(){
+        $this->delete_cookies();
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
-		
-		$total=$this->baseball_model->getLimit('kbo_team_total_2017');
-		$offense=$this->baseball_model->get('kbo_team_offense_2017');
-		$defence=$this->baseball_model->get('kbo_team_defence_2017');
-		$schedule=$this->baseball_model->getScheduleAfter3Days();
-		$plus_minus=$this->baseball_model->getTotalScore();
-		$league_statistics=$this->baseball_model->getLeagueStatistics();
-		
-		$this->load->view("/baseball/league_info", array('total'=>$total, 'offense'=>$offense, 'defence'=>$defence,'schedule'=>$schedule,'plus_minus'=>$plus_minus,
-														 'league_statistics'=>$league_statistics));
+
+        if($this->input->get('scroll_top')!=null) $scroll_top=$this->input->get('scroll_top'); else $scroll_top=0;
+        if($this->input->get('duration')!=null) $duration=$this->input->get('duration'); else $duration='all';
+
+        $total=$this->baseball_model->getLimit('kbo_team_total_2017');
+        $offense=$this->baseball_model->get('kbo_team_offense_2017');
+        $defence=$this->baseball_model->get('kbo_team_defence_2017');
+        $schedule=$this->baseball_model->getScheduleAfter3Days();
+        $league_statistics=$this->baseball_model->getLeagueStatistics();
+
+//      득/실/마진/게임차
+        if($this->input->get('game')==null): $plus_minus=$this->baseball_model->getTotalScore('all');
+        else: $plus_minus=$this->baseball_model->getTotalScore($this->input->get('game')); endif;
+
+//      최근 10/20/30 경기
+		if($this->input->get('game')!=null) $total=$this->getRankBoard();
+
+		$this->load->view("/baseball/league_info", array('total'=>$total,'offense'=>$offense,'defence'=>$defence,'schedule'=>$schedule,'plus_minus'=>$plus_minus,'league_statistics'=>$league_statistics,'scroll_top'=>$scroll_top,'duration'=>$duration));
 		$this->load->view("/baseball/footer");
 	}
 
 	/* 경기결과 */
 	function result($select_year, $select_month){
+        $this->delete_cookies();
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
 		$this->load->view("/baseball/result", array('result'=>$this->baseball_model->getByMonth('kbo_result_'.$select_year, $select_month), 'select_year'=>$select_year, 'select_month'=>$select_month));
@@ -32,19 +42,28 @@ class Baseball extends MY_Controller{
 	}
 
 	function stats(){
-		$this->load->view("/baseball/head_up");
+        $this->delete_cookies();
+        if($this->input->get('duration')!=null) $duration=$this->input->get('duration'); else $duration='all';
+
+        $this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
 
-        $total=$this->baseball_model->getLimit('kbo_team_total_2017');
         $offense=$this->baseball_model->get('kbo_team_offense_2017');
-        $plus_minus=$this->baseball_model->getTotalScore();
+        if($this->input->get('game')==null):
+            $total=$this->baseball_model->getLimit('kbo_team_total_2017');
+            $plus_minus=$this->baseball_model->getTotalScore('all');
+        else:
+            $total=$this->getRankBoard();
+            $plus_minus=$this->baseball_model->getTotalScore($this->input->get('game'));
+        endif;
 
-		$this->load->view("/baseball/stats", array('total'=>$total, 'offense'=>$offense, 'plus_minus'=>$plus_minus));
+        $this->load->view("/baseball/stats", array('total'=>$total, 'offense'=>$offense, 'plus_minus'=>$plus_minus,'duration'=>$duration));
 		$this->load->view("/baseball/footer");
 	}
 
 	/* 팀 기록 */
 	function team_record($select_year, $select_month, $offense_sort, $defence_sort){
+        $this->delete_cookies();
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
 
@@ -65,7 +84,7 @@ class Baseball extends MY_Controller{
         endif;
 
         $total=$this->baseball_model->getLimit('kbo_team_total_2017');
-        $plus_minus=$this->baseball_model->getTotalScore();
+        $plus_minus=$this->baseball_model->getTotalScore('all');
 
 		$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
 		$team=array();
@@ -82,18 +101,19 @@ class Baseball extends MY_Controller{
 		endif;
 		$schedule=$this->baseball_model->get_schedule($select_month);
 
-		$this->load->view("/baseball/team_record", array('select_year'=>$select_year,'select_month'=>$select_month,'offense'=>$offense,'defence'=>$defence,'focus'=>$focus,'bold_num'=>$boldNum,
-														 'total'=>$total,'rank_month'=>$team,'schedule'=>$schedule,'plus_minus'=>$plus_minus, 'mouseTop'=>$mouseTop));
+		$this->load->view("/baseball/team_record", array('select_year'=>$select_year,'select_month'=>$select_month,'offense'=>$offense,'defence'=>$defence,'focus'=>$focus,'bold_num'=>$boldNum,'total'=>$total,'rank_month'=>$team,'schedule'=>$schedule,'plus_minus'=>$plus_minus, 'mouseTop'=>$mouseTop));
 		$this->load->view("/baseball/footer");
 	}
 
 	function player_record(){
-		$this->load->view("/baseball/head_up");
-		$this->load->view("/baseball/head");
+        $this->load->helper('cookie');
+        $this->load->library('pagination');
+
+        $this->load->view("/baseball/head_up");
+        $this->load->view("/baseball/head");
 
 //		PAGINATION
-		$per_page=20;
-        $this->load->library('pagination');
+        $per_page=20;
         $config['base_url']='http://'.SERVER_HOST.'/baseball/player_record/';
         $config['total_rows']=$this->baseball_model->getNumRows('kbo_batterbasic_2017');
         $config['per_page']=$per_page;
@@ -124,7 +144,8 @@ class Baseball extends MY_Controller{
         else:
             $this->pagination->initialize($config);
             if($this->uri->segment(3)!=null) $offset=$this->uri->segment(3); else $offset=0;
-            $batter=$this->baseball_model->getPagination('kbo_batterbasic_2017', $per_page, $offset);
+            if($this->input->cookie('batter_sort')!=null) $batter=$this->baseball_model->getBySortPagination('kbo_batterbasic_2017', $this->input->cookie('batter_sort'), $per_page, $offset);
+            else $batter=$this->baseball_model->getPagination('kbo_batterbasic_2017', $per_page, $offset);
             $pitcher=$this->baseball_model->getPagination('kbo_pitcherbasic_2017', $per_page, 0);
         endif;
 
@@ -132,23 +153,26 @@ class Baseball extends MY_Controller{
         $pitcher5=$this->baseball_model->getPitcher5();
         $runner5=$this->baseball_model->getRunner5('kbo_runnerbasic_2017');
 
-        $this->load->helper('cookie');
-        $this->input->set_cookie(array('name'=>'mouse_top','value'=>$mouseTop,'expire'=>'86500','domain'=>'odds.dev'));
-        $this->input->set_cookie(array('name'=>'focus','value'=>$focus,'expire'=>'86500','domain'=>'odds.dev'));
-        $this->input->set_cookie(array('name'=>'bold_num','value'=>$boldNum,'expire'=>'86500','domain'=>'odds.dev'));
-
-        if($this->uri->segment(3)!=null):
+        if($this->uri->segment(3)==null && $boldNum!=0 && $focus!=0):
+            $this->input->set_cookie(array('name'=>'mouse_top','value'=>$mouseTop,'expire'=>'86500','domain'=>'odds.dev'));
+            $this->input->set_cookie(array('name'=>'focus','value'=>$focus,'expire'=>'86500','domain'=>'odds.dev'));
+            $this->input->set_cookie(array('name'=>'bold_num','value'=>$boldNum,'expire'=>'86500','domain'=>'odds.dev'));
+            $this->input->set_cookie(array('name'=>'pitcher_sort','value'=>'','expire'=>'86500','domain'=>'odds.dev'));
+            $this->input->set_cookie(array('name'=>'batter_sort','value'=>'','expire'=>'86500','domain'=>'odds.dev'));
+            if($this->input->get('batter_sort')!=null): $this->input->set_cookie(array('name'=>'batter_sort','value'=>$this->input->get('batter_sort'),'expire'=>'86500','domain'=>'odds.dev')); endif;
+            if($this->input->get('pitcher_sort')!=null): $this->input->set_cookie(array('name'=>'pitcher_sort','value'=>$this->input->get('pitcher_sort'),'expire'=>'86500','domain'=>'odds.dev')); endif;
+        else:
             $mouseTop=$this->input->cookie('mouse_top');
             $focus=$this->input->cookie('focus');
             $boldNum=$this->input->cookie('bold_num');
         endif;
 
-        $this->load->view("/baseball/player_record", array('batter'=>$batter, 'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5,
-                          'runner5'=>$runner5,'mouseTop'=>$mouseTop, 'focus'=>$focus, 'bold_num'=>$boldNum));
+        $this->load->view("/baseball/player_record", array('batter'=>$batter,'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5,'runner5'=>$runner5,'mouseTop'=>$mouseTop,'focus'=>$focus,'bold_num'=>$boldNum));
 		$this->load->view("/baseball/footer");
 	}
 
 	function match_information(){
+        $this->delete_cookies();
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
         $this->load->view("/baseball/match");
@@ -156,11 +180,83 @@ class Baseball extends MY_Controller{
     }
 
 	function score(){
+	    $this->delete_cookies();
 		$this->load->view("/baseball/head_up");
 		$this->load->view("/baseball/head");
 		$this->load->view("/baseball/score");
 		$this->load->view("/baseball/footer");
 	}
+
+	function delete_cookies(){
+        $this->load->helper('cookie');
+        $this->input->set_cookie(array('name'=>'mouse_top','value'=>'0','expire'=>'86500','domain'=>'odds.dev'));
+	    delete_cookie('focus', 'odds.dev', '/');
+	    delete_cookie('bold_num', 'odds.dev', '/');
+	    delete_cookie('pitcher_sort', 'odds.dev', '/');
+	    delete_cookie('batter_sort', 'odds.dev', '/');
+//        $this->input->set_cookie(array('name'=>'batter_sort','value'=>'avg','expire'=>'86500','domain'=>'odds.dev'));
+//        $this->input->set_cookie(array('name'=>'pitcher_sort','value'=>'era','expire'=>'86500','domain'=>'odds.dev'));
+    }
+    function getRankBoard(){
+        $finalCut=array();
+        $result=$this->baseball_model->get_result();
+        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $total=$this->baseball_model->getLimit('kbo_team_total_2017');
+
+//      승패타이
+        $resultSet=array();
+        foreach($team_array as $team):
+            $count=0;
+            $win=0;
+            $lose=0;
+            $tie=0;
+            foreach($result as $item):
+                if($team==strip_tags($item->home) && $count < $this->input->get('game')):
+                    $exp=explode('"', $item->home_score);
+                    if($exp[1]=='win'): $win++; $count++; endif;
+                    if($exp[1]=='lose'): $lose++; $count++; endif;
+                    if($exp[1]=='tie'): $tie++; $count++; endif;
+                endif;
+                if($team==strip_tags($item->away) && $count < $this->input->get('game')):
+                    $exp=explode('"', $item->away_score);
+                    if($exp[1]=='win'): $win++; $count++; endif;
+                    if($exp[1]=='lose'): $lose++; $count++; endif;
+                    if($exp[1]=='tie'): $tie++; $count++; endif;
+                endif;
+            endforeach;
+            $resultSet[$team]=array('g'=>$this->input->get('game'), 'win_rate'=>$win/$this->input->get('game'), 'win'=>$win, 'lose'=>$lose, 'tie'=>$tie);
+        endforeach;
+
+//      순위
+        $rankSet=array();
+        foreach($team_array as $item):
+            $rank=1;
+            foreach($team_array as $team):
+                if($item!=$team):
+                    if($resultSet[$item]['win'] < $resultSet[$team]['win']) $rank++;
+                endif;
+            endforeach;
+//          최근 10경기
+            foreach($total as $entry): if($entry->team==$item) $recent_game=$entry->recent_game; endforeach;
+
+            $rankSet[$item]=array('rank'=>$rank, 'team'=>$item, 'recent_game'=>$recent_game);
+        endforeach;
+
+//      게임차
+        $game_car=array();
+        $top_ranks_win=0;
+        foreach($team_array as $team): if($rankSet[$team]['rank']==1) $top_ranks_win=$resultSet[$team]['win']; endforeach;
+        foreach($team_array as $item): $game_car[$item]=array('game_car'=>$top_ranks_win-$resultSet[$item]['win']); endforeach;
+
+//      배열 합치기
+        foreach($team_array as $item): array_push($finalCut, (object)($resultSet[$item]+$rankSet[$item]+$game_car[$item])); endforeach;
+
+//      순위 순으로 정렬
+        foreach($finalCut as $item) $sortAux[]=$item->rank;
+        array_multisort($sortAux, SORT_ASC, $finalCut);
+
+        return $finalCut;
+    }
 
 	/* ---------------------------------------------------------- crawling ---------------------------------------------------------- */
 
