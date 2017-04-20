@@ -39,7 +39,7 @@
                         <ul class="player_rec">
                             <li>
                                 <h3>평균자책점</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher5['era'][0]->player_id;?>.jpg" alt="<?=$pitcher5['era'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($pitcher5['era'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->era,2);?></b></li>
@@ -48,7 +48,7 @@
                             </li>
                             <li>
                                 <h3>승 리</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher5['w'][0]->player_id;?>.jpg" alt="<?=$pitcher5['w'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($pitcher5['w'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->w;?></b></li>
@@ -57,7 +57,7 @@
                             </li>
                             <li>
                                 <h3>세이브</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher5['sv'][0]->player_id;?>.jpg" alt="<?=$pitcher5['sv'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($pitcher5['sv'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->sv;?></b></li>
@@ -66,7 +66,7 @@
                             </li>
                             <li>
                                 <h3>승 률</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher5['wpct'][0]->player_id;?>.jpg" alt="<?=$pitcher5['wpct'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($pitcher5['wpct'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->wpct,3);?></b></li>
@@ -75,7 +75,7 @@
                             </li>
                             <li>
                                 <h3>홀 드</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher5['hld'][0]->player_id;?>.jpg" alt="<?=$pitcher5['hld'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($pitcher5['hld'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->hld;?></b></li>
@@ -84,7 +84,7 @@
                             </li>
                             <li>
                                 <h3>탈삼진</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher5['so'][0]->player_id;?>.jpg" alt="<?=$pitcher5['so'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($pitcher5['so'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->so;?></b></li>
@@ -329,7 +329,7 @@
                         <ul class="player_rec">
                             <li>
                                 <h3>타 율</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter5['avg'][0]->player_id;?>.jpg" alt="<?=$batter5['avg'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($batter5['avg'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->avg,3);?></b></li>
@@ -338,7 +338,7 @@
                             </li>
                             <li>
                                 <h3>홈 런</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter5['hr'][0]->player_id;?>.jpg" alt="<?=$batter5['hr'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($batter5['hr'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->hr;?></b></li>
@@ -347,7 +347,7 @@
                             </li>
                             <li>
                                 <h3>타 점</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter5['rbi'][0]->player_id;?>.jpg" alt="<?=$batter5['rbi'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($batter5['rbi'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->rbi;?></b></li>
@@ -356,7 +356,7 @@
                             </li>
                             <li>
                                 <h3>안 타</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter5['h'][0]->player_id;?>.jpg" alt="<?=$batter5['h'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($batter5['h'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->h;?></b></li>
@@ -365,7 +365,7 @@
                             </li>
                             <li>
                                 <h3>도 루</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$runner5[0]->player_id;?>.jpg" alt="<?=$runner5[0]->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($runner5 as $item): ?>
                                         <li><b><?=$item->rank;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->sb;?></b></li>
@@ -374,7 +374,7 @@
                             </li>
                             <li>
                                 <h3>OPS</h3>
-                                <div class="pic"><img src="" alt="" /></div>
+                                <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter5['ops'][0]->player_id;?>.jpg" alt="<?=$batter5['ops'][0]->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
                                 <ul>
                                     <?php foreach($batter5['ops'] as $key=>$item): ?>
                                         <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->ops,3);?></b></li>

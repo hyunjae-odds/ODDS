@@ -172,7 +172,7 @@
         $resultSet['h']=$this->get_orderby('kbo_batterbasic_2017', 5, 'h', 'DESC');
         $resultSet['ops']=$this->get_orderby('kbo_batterbasic_2017', 5, 'ops', 'DESC');
 
-        return $resultSet;
+        return $this->set_player_id($resultSet, array('avg', 'hr', 'rbi', 'h', 'ops'));
     }
     function getPitcher5(){
         $resultSet=array();
@@ -184,13 +184,33 @@
         $resultSet['hld']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'hld', 'DESC');
         $resultSet['so']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'so', 'DESC');
 
-        return $resultSet;
+        return $this->set_player_id($resultSet, array('era', 'w', 'sv', 'wpct', 'hld', 'so'));
     }
     function getRunner5($table){
         $this->db->where('insert_dt', $this->getLastDay($table));
         $this->db->order_by('rank', 'ASC');
 
-        return $this->db->get($table, 5)->result();
+        $resultSet=$this->db->get($table, 5)->result();
+
+        foreach($resultSet as $item):
+            $this->db->select('player_id');
+            $value=$this->db->get_where('kbo_players_2017', array('name'=>$item->name))->row();
+            $item->player_id=$value->player_id;
+        endforeach;
+
+        return $resultSet;
+    }
+//  사진 출력을 위한 player_id 추가
+    function set_player_id($resultSet, $str_array){
+        foreach($str_array as $entry):
+            foreach($resultSet[$entry] as $item):
+                $this->db->select('player_id');
+                $value=$this->db->get_where('kbo_players_2017', array('name'=>$item->name))->row();
+                $item->player_id=$value->player_id;
+            endforeach;
+        endforeach;
+
+        return $resultSet;
     }
     function get_orderby($table, $limit, $order_by, $asc_desc){
         $this->db->select('name, team, '.$order_by);
