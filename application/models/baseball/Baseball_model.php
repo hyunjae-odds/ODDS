@@ -277,11 +277,7 @@
     /* 득, 실, 마진 */
     function getTotalScore($duration){
     	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-
-        $this->db->order_by('no', 'DESC');
-        $this->db->where('away_score!=', '');
-        $this->db->where('home_score!=', '');
-        $total=$this->db->get('kbo_result_2017')->result();
+        $total=$this->get_result();
 
     	$result=array();
     	foreach($team_array as $item):
@@ -316,9 +312,7 @@
     
     /* 리그 요약 - 통계 */
     function getLeagueStatistics(){
-    	$this->db->where('away_score!=', '');
-    	$this->db->where('home_score!=', '');
-    	$total=$this->db->get('kbo_result_2017')->result();
+        $total=$this->get_result();
     	$resultSet=array();
     	
     	/* 리그 승률통계 */
@@ -328,9 +322,9 @@
     	foreach($total as $entry):
     		$exp1=explode('"', $entry->away_score);
     		$exp2=explode('"', $entry->home_score);
-    		if($exp1[1]=='win') $away_win+=1;
-    		if($exp2[1]=='win') $home_win+=1;
-    		else if($exp1[1]=='same') $draw+=1;
+    		if($exp1[1]=='win') $away_win++;
+    		if($exp2[1]=='win') $home_win++;
+    		else if($exp1[1]=='same') $draw++;
     	endforeach;
     	$resultSet['away_win']=$away_win;
     	$resultSet['home_win']=$home_win;
@@ -365,5 +359,95 @@
         $this->db->order_by('no', 'DESC');
 
         return $this->db->get('kbo_result_2017')->result();
+    }
+
+    function getHomeAwayWinRank(){
+        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $kbo_game_result=$this->get_result();
+        $kbo_team_total=$this->getLimit('kbo_team_total_2017');
+
+        $result=array();
+        foreach($team_array as $item):
+            $team=array();
+            $home_win=0;
+            $home_lose=0;
+            $home_draw=0;
+            $away_win=0;
+            $away_lose=0;
+            $away_draw=0;
+            foreach($kbo_game_result as $entry):
+                if($item==strip_tags($entry->home)):
+                    $exp2=explode('"', $entry->home_score);
+                    if($exp2[1]=='win'): $home_win++; endif;
+                    if($exp2[1]=='lose'): $home_lose++; endif;
+                    if($exp2[1]=='same'): $home_draw++; endif;
+                elseif($item==strip_tags($entry->away)):
+                    $exp1=explode('"', $entry->away_score);
+                    if($exp1[1]=='win'): $away_win++; endif;
+                    if($exp1[1]=='lose'): $away_lose++; endif;
+                    if($exp1[1]=='same'): $away_draw++; endif;
+                endif;
+            endforeach;
+            $team['home']=$home_win.'승 '.$home_draw.'무 '.$home_lose.'패';
+            $team['away']=$away_win.'승 '.$away_draw.'무 '.$away_lose.'패';
+            foreach($kbo_team_total as $items): if($items->team==$item): $team['win_rate']=$items->win_rate; endif;endforeach;
+
+            $result[$item]=$team;
+        endforeach;
+
+        return array_splice($result,5);
+    }
+
+//  연승 확인
+    function getRecentWinLose5($flag){
+        $result=array();
+        $total=$this->getLimit('kbo_team_total_2017');
+        foreach($total as $key=>$item):
+            $team=array();
+            $win_count=0;
+            $lose_count=0;
+            $recent_game=$item->recent_game;
+            $exp1=explode(';', $recent_game);
+            $recent=($exp1[9]!='패')? $exp1[9] : '';
+            $recent_lose=($exp1[9]!='승')? $exp1[9] : '';
+            for($i=1; $i<10; $i++):
+                if($exp1[9]!='패'):
+                    $win_count++;
+                    if($exp1[9-$i]=='패') break;
+                    $recent=$exp1[9-$i].';'.$recent;
+                endif;
+                if($exp1[9]!='승'):
+                    $lose_count++;
+                    if($exp1[9-$i]=='승') break;
+                    $recent_lose=$exp1[9-$i].';'.$recent_lose;
+                endif;
+            endfor;
+
+            $team['team']=$item->team;
+            $team['recent']=$recent;
+            $team['recent_lose']=$recent_lose;
+            $team['win']=$win_count;
+            $team['lose']=$lose_count;
+            array_push($result, $team);
+        endforeach;
+
+        if($flag=='win'):
+            foreach($result as $item) $sortAux[]=$item['win'];
+            array_multisort($sortAux, SORT_DESC, $result);
+            array_splice($result,5);
+
+            return $result;
+        else:
+            foreach($result as $item) $sortAux[]=$item['lose'];
+            array_multisort($sortAux, SORT_DESC, $result);
+            array_splice($result,5);
+
+            return $result;
+        endif;
+    }
+
+    function getTotalHomeAway(){
+        $total=$this->get_result();
+
     }
 }
