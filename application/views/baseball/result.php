@@ -20,7 +20,7 @@
 		<ul class="tab_view01 gameMain_view">
 			<li class="result02 s2 active pb50">
 				<div class="date">
-					<a href="/baseball/result/<?=$select_year;?>/0<?=$select_month-1;?>" class="btn_prev" title="이전달">이전달</a>
+					<a href="/baseball/result/<?=$select_year;?>/<?php if($select_month!=3) echo '0';?><?php $minus_one=($select_month==3)?$select_month:$select_month-1; echo $minus_one;?>" class="btn_prev" title="이전달">이전달</a>
 					<a href="javascript:void(0)" class="date_yr date_num"><?=$select_year;?></a>
 					<ul class="date_yr_select date_ul">
 						<li><a href="/baseball/result/2017/<?=$select_month;?>">2017</a></li>
@@ -35,11 +35,9 @@
 						<li><a href="/baseball/result/<?=$select_year;?>/07">07</a></li>
 						<li><a href="/baseball/result/<?=$select_year;?>/08">08</a></li>
 						<li><a href="/baseball/result/<?=$select_year;?>/09">09</a></li>
-						<li><a href="/baseball/result/<?=$select_year;?>/10">10</a></li>
-						<li><a href="/baseball/result/<?=$select_year;?>/11">11</a></li>
 					</ul>
 					<!-- <input value="이동" type="submit" class="btn_nv_mn"> -->
-					<a href="/baseball/result/<?=$select_year;?>/0<?=$select_month+1?>" class="btn_next" title="다음달">다음달</a>
+					<a href="/baseball/result/<?=$select_year;?>/<?php if($select_month!=9) echo '0';?><?php $plus_one=($select_month==9)?$select_month:$select_month+1; echo $plus_one;?>" class="btn_next" title="다음달">다음달</a>
 					<div class="clear"></div>
 				</div>
 				
@@ -67,14 +65,12 @@
 						<th>패</th>
 						<th>데이터</th>
 					</tr>
-					
-			<!---------------------------------------------------!작업 스타트 --------------------------------------------------->
-					<?php foreach($result as $entry): ?>
+					<?php foreach($result as $key=>$entry): ?>
 						<tr>
-							<?php if($entry->date!=$select_month) echo '<td rowspan="5"><b>'.$entry->date.'</b></td>';?>
+							<?php if($key%5==0) echo '<td rowspan="5"><b>'.$entry->date.'</b></td>';?>
 							<td class="l_b"><?=$entry->time;?></td>
 							<td class="right"><?=$entry->away;?></td>
-							<td><b class="score"><?=$entry->away_score; ?>:<?=$entry->home_score;?></b></td>
+							<td><b class="score"><span class="<?=($entry->away_score > $entry->home_score) ? 'win' : 'lose';?>"><?=$entry->away_score;?></span>:<span class="<?=($entry->away_score < $entry->home_score) ? 'win' : 'lose';?>"><?=$entry->home_score;?></span></b></td>
 							<td class="left"><?=$entry->home;?></td>
 							<td><span class="black">1.31</span></td>
 							<td>2.44</td>

@@ -34,18 +34,17 @@
 								<col width="168px"/>
 							</colgroup>
 							<tr>
-								<th colspan="2" class="left pl20"><?=$schedule['date'][$i]->date?></th>
+								<th colspan="2" class="left pl20"><?=$schedule['date'][$i]->date;?></th>
 								<th>B’s</th>
-								<th>승</th>							
+								<th>승</th>
 								<th>패</th>
 								<th>&nbsp;</th>
 								<th>over</th>
 								<th class="left pl5">under</th>
 								<th>DATA</th>
 							</tr>
-							<?php foreach($schedule['schedule'] as $item): 
-								if($i==count($schedule['date'])-1): $endnum=$item->no+1; else: $endnum=$schedule['date'][$i+1]->no; endif;
-									if($schedule['date'][$i]->no <= $item->no && $endnum > $item->no):
+							<?php foreach($schedule['schedule'] as $item):
+                                if($schedule['date'][$i]->date==$item->date):
 							?>
 								<tr>
 									<td><?=$item->time;?></td>
@@ -4770,7 +4769,7 @@
 									</td>
 								</tr>
 							<?php endif;endforeach; ?>
-							
+
 						</table>
 					<?php endfor; ?>
 				</div>
@@ -4781,17 +4780,17 @@
 						<li class="active ranking ss1">
 							<div class="tab2_w">
 								<ul class="tab02">
-									<li class="on"><a href="">전체</a></li>
-									<li><a href="">홈</a></li>
-									<li><a href="">원정</a></li>
+                                    <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=all')">전체</a></li>
+                                    <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=home')">홈</a></li>
+                                    <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=away')">원정</a></li>
 								</ul>
 								<div class="select" style="top:-7px;">
 									<p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
 										<ul>
 											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=all')">시즌 전체</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?game=10&scroll_top='+document.body.scrollTop+'&duration=10')">10경기</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?game=20&scroll_top='+document.body.scrollTop+'&duration=20')">20경기</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?game=30&scroll_top='+document.body.scrollTop+'&duration=30')">30경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=10')">10경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=20')">20경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=30')">30경기</a></li>
 										</ul>
 									</div>
 								</div>
@@ -4831,10 +4830,8 @@
                                             	<?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                 <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                 <td><?=$entry->team;?></td>
-                                                <td><?php
-                                                        if($this->input->get('game')!=null) echo $entry->g;
-                                                        else foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g;
-                                                    endforeach;?>
+                                                <td><?php if($duration=='all' && $home_away=='all') foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;
+                                                    else echo $entry->g;?>
                                                 </td>
                                                 <td><?=number_format($entry->win_rate,3);?></td>
                                                 <td><?=$entry->win;?></td>

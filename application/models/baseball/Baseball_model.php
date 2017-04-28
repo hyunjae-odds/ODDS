@@ -13,18 +13,13 @@
 			$this->db->insert($table, $entry);
 		endforeach;
 	}
-	function insertByMonth($table, $this_month, $array){
-		$this->db->like('date', $this_month, 'after');
-		$num_rows=$this->db->get($table)->num_rows();
-		if($num_rows>0):
-			$this->db->like('date', $this_month, 'after');
-			$this->db->delete($table);
-		endif;
+	function insertByMonth($result_arr){
+        $this->db->empty_table('kbo_result_2017');
 
-		foreach($array as $entry):
-			$this->db->set('insert_dt', 'NOW()', false);
-			$this->db->insert($table, $entry);
-		endforeach;
+        foreach($result_arr as $item):
+            $this->db->set('insert_dt', 'NOW()', false);
+            $this->db->insert('kbo_result_2017', $item);
+        endforeach;
 	}
 	function insertWithRecentGame($table, $data, $recent_game, $date){
 		$num_rows=$this->db->get_where($table, array('date'=>$date))->num_rows();
@@ -55,25 +50,16 @@
 	function get($table){
 		return $this->db->get($table)->result();
 	}
-	function getLimit($table){
-        $this->db->order_by('date', 'DESC');
-        $this->db->order_by('win_rate', 'DESC');
-        $this->db->order_by('rank', 'ASC');
-
-		return $this->db->get($table, 10)->result();
-	}
-	function getByMonth($table, $this_month){
+	function getByMonth($this_month){
 		$this->db->like('date', $this_month, 'after');
 		$this->db->order_by('no', 'ASC');
+		$result=$this->db->get('kbo_result_2017')->result();
 
-		return $this->db->get($table)->result();
+		return $result;
 	}
 //	팀별 최근 10경기 승패
     function getByScore(){
-        $this->db->where('away_score!=', '');
-        $this->db->where('home_score!=', '');
-        $this->db->order_by('no', 'DESC');
-        $month=$this->db->get('kbo_result_2017')->result();
+        $month=$this->get_result();
 
         $result=array();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
@@ -81,14 +67,14 @@
             $count=0;
             $team_recent_ten_game='';
             foreach($month as $item):
-                if(strip_tags($item->home)==$team && $count<10):
-                    if(strip_tags($item->home_score) > strip_tags($item->away_score)): $team_recent_ten_game='승;'.$team_recent_ten_game; $count++;
-                    elseif(strip_tags($item->home_score) < strip_tags($item->away_score)): $team_recent_ten_game='패;'.$team_recent_ten_game; $count++;
+                if($item->home==$team && $count<10):
+                    if($item->home_score > $item->away_score): $team_recent_ten_game='승;'.$team_recent_ten_game; $count++;
+                    elseif($item->home_score < $item->away_score): $team_recent_ten_game='패;'.$team_recent_ten_game; $count++;
                     else: $team_recent_ten_game='무;'.$team_recent_ten_game; $count++;
                     endif;
-                elseif(strip_tags($item->away)==$team && $count<10):
-                    if(strip_tags($item->home_score) < strip_tags($item->away_score)): $team_recent_ten_game='승;'.$team_recent_ten_game; $count++;
-                    elseif(strip_tags($item->home_score) > strip_tags($item->away_score)): $team_recent_ten_game='패;'.$team_recent_ten_game; $count++;
+                elseif($item->away==$team && $count<10):
+                    if($item->home_score < $item->away): $team_recent_ten_game='승;'.$team_recent_ten_game; $count++;
+                    elseif($item->home_score > $item->away): $team_recent_ten_game='패;'.$team_recent_ten_game; $count++;
                     else: $team_recent_ten_game='무;'.$team_recent_ten_game; $count++;
                     endif;
                 endif;
@@ -240,42 +226,27 @@
         return $this->db->get_where($table, array('team'=>$team))->result();
     }
     function getScheduleAfter3Days(){
-    	$today=date('m').'.'.date('d');
+    	$today=date('m.d');
 
-    	$this->db->like('date', $today.'(', 'after');
-    	$today_schedule=$this->db->get('kbo_result_2017')->row();
-    	if(!isset($today_schedule->no)):
-            $today=date('m').'.'.(date('d')+1);
-            $this->db->like('date', $today.'(', 'after');
-            $today_schedule=$this->db->get('kbo_result_2017')->row();
-        endif;
-    	
-    	$this->db->order_by('date', 'ASC');
-    	$this->db->like('date', date('m').'.', 'after');
-    	$month=$this->db->get('kbo_result_2017')->result();
-    	
-    	/* 3일 후의 경기 no추출 */
-    	$key_num=0;
-    	foreach($month as $key=>$item): if(strpos($item->date, $today)!==false): $key_num=$key; endif; endforeach;
-    	$after3days=$month[$key_num+3]->no;
-    	
     	$resultSet=array();
     	$this->db->select('no, date, time, home, away');
-    	$this->db->where('no >=', $today_schedule->no);
-    	$this->db->where('no <', $after3days);
+    	$this->db->like('date', $today, 'after');
+    	$this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
+    	$this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
     	$resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
-    	
-    	$this->db->select('no, date');
-    	$this->db->like('date', date('m').'.', 'after');
-    	$this->db->where('no >=', $today_schedule->no);
-    	$this->db->where('no <', $after3days);
+
+    	$this->db->select('date');
+        $this->db->like('date', $today, 'after');
+        $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
+        $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+        $this->db->distinct();
     	$resultSet['date']=$this->db->get('kbo_result_2017')->result();
-    	
+
     	return $resultSet;
     }
     
     /* 득, 실, 마진 */
-    function getTotalScore($duration){
+    function getTotalScore($duration, $home_away){
     	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $total=$this->get_result();
 
@@ -283,26 +254,31 @@
     	foreach($team_array as $item):
             if($duration=='all') $duration=count($total);
             $count=0;
+
             foreach($total as $items):
-                if($item==strip_tags($items->home) && $count<$duration):
-                    if(!isset($result[$item])):
-                        $result[$item]=strip_tags($items->home_score);
-                        $result[$item.'_lose']=strip_tags($items->away_score);
-                    else:
-                        $result[$item]+=strip_tags($items->home_score);
-                        $result[$item.'_lose']+=strip_tags($items->away_score);
+                if($home_away=='all' || $home_away=='home'):
+                    if($item==$items->home && $count<$duration):
+                        if(!isset($result[$item])):
+                            $result[$item]=$items->home_score;
+                            $result[$item.'_lose']=$items->away_score;
+                        else:
+                            $result[$item]+=$items->home_score;
+                            $result[$item.'_lose']+=$items->away_score;
+                        endif;
+                        $count++;
                     endif;
-                    $count++;
                 endif;
-                if($item==strip_tags($items->away) && $count<$duration):
-                    if(!isset($result[$item])):
-                        $result[$item]=strip_tags($items->away_score);
-                        $result[$item.'_lose']=strip_tags($items->home_score);
-                    else:
-                        $result[$item]+=strip_tags($items->away_score);
-                        $result[$item.'_lose']+=strip_tags($items->home_score);
+                if($home_away=='all' || $home_away=='away'):
+                    if($item==$items->away && $count<$duration):
+                        if(!isset($result[$item])):
+                            $result[$item]=$items->away_score;
+                            $result[$item.'_lose']=$items->home_score;
+                        else:
+                            $result[$item]+=$items->away_score;
+                            $result[$item.'_lose']+=$items->home_score;
+                        endif;
+                        $count++;
                     endif;
-                    $count++;
                 endif;
             endforeach;
     	endforeach;
@@ -314,17 +290,15 @@
     function getLeagueStatistics(){
         $total=$this->get_result();
     	$resultSet=array();
-    	
+
     	/* 리그 승률통계 */
     	$home_win=0;
     	$away_win=0;
     	$draw=0;
     	foreach($total as $entry):
-    		$exp1=explode('"', $entry->away_score);
-    		$exp2=explode('"', $entry->home_score);
-    		if($exp1[1]=='win') $away_win++;
-    		if($exp2[1]=='win') $home_win++;
-    		else if($exp1[1]=='same') $draw++;
+    		if($entry->home_score < $entry->away_score) $away_win++;
+    		else if($entry->home_score > $entry->away_score) $home_win++;
+    		else if($entry->home_score == $entry->away_score) $draw++;
     	endforeach;
     	$resultSet['away_win']=$away_win;
     	$resultSet['home_win']=$home_win;
@@ -334,8 +308,8 @@
     	$away_total_score=0;
     	$home_total_score=0;
     	foreach($total as $entry):
-	    	$away_total_score+=strip_tags($entry->away_score);
-	    	$home_total_score+=strip_tags($entry->home_score);
+	    	$away_total_score+=$entry->away_score;
+	    	$home_total_score+=$entry->home_score;
     	endforeach;
     	$resultSet['away_total_score']=$away_total_score;
     	$resultSet['home_total_score']=$home_total_score;
@@ -344,8 +318,8 @@
     	$handicap_home_win=0;
     	$handicap_away_win=0;
     	foreach($total as $entry):
-    		if(strip_tags($entry->away_score) < strip_tags($entry->home_score)+1.5) $handicap_home_win+=1;
-    		if(strip_tags($entry->away_score) > strip_tags($entry->home_score)+1.5) $handicap_away_win+=1;
+    		if($entry->away_score < $entry->home_score+1.5) $handicap_home_win++;
+    		if($entry->away_score > $entry->home_score+1.5) $handicap_away_win++;
     	endforeach;
     	$resultSet['handicap_home_win']=$handicap_home_win;
     	$resultSet['handicap_away_win']=$handicap_away_win;
@@ -361,10 +335,14 @@
         return $this->db->get('kbo_result_2017')->result();
     }
 
-    function getHomeAwayWinRank(){
+    function getHomeAwayWinRank($handicap){
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $kbo_game_result=$this->get_result();
-        $kbo_team_total=$this->getLimit('kbo_team_total_2017');
+
+        $this->db->order_by('date', 'DESC');
+        $this->db->order_by('win_rate', 'DESC');
+        $this->db->order_by('rank', 'ASC');
+        $kbo_team_total=$this->db->get('kbo_team_total_2017', 10)->result();
 
         $result=array();
         foreach($team_array as $item):
@@ -376,16 +354,14 @@
             $away_lose=0;
             $away_draw=0;
             foreach($kbo_game_result as $entry):
-                if($item==strip_tags($entry->home)):
-                    $exp2=explode('"', $entry->home_score);
-                    if($exp2[1]=='win'): $home_win++; endif;
-                    if($exp2[1]=='lose'): $home_lose++; endif;
-                    if($exp2[1]=='same'): $home_draw++; endif;
-                elseif($item==strip_tags($entry->away)):
-                    $exp1=explode('"', $entry->away_score);
-                    if($exp1[1]=='win'): $away_win++; endif;
-                    if($exp1[1]=='lose'): $away_lose++; endif;
-                    if($exp1[1]=='same'): $away_draw++; endif;
+                if($item==$entry->home):
+                    if($entry->home_score-$handicap > $entry->away_score): $home_win++; endif;
+                    if($entry->home_score-$handicap < $entry->away_score): $home_lose++; endif;
+                    if($entry->home_score-$handicap == $entry->away_score): $home_draw++; endif;
+                elseif($item==$entry->away):
+                    if($entry->home_score < $entry->away_score-$handicap): $away_win++; endif;
+                    if($entry->home_score > $entry->away_score-$handicap): $away_lose++; endif;
+                    if($entry->home_score == $entry->away_score-$handicap): $away_draw++; endif;
                 endif;
             endforeach;
             $team['home']=$home_win.'승 '.$home_draw.'무 '.$home_lose.'패';
@@ -399,55 +375,74 @@
     }
 
 //  연승 확인
-    function getRecentWinLose5($flag){
+    function getRecentWinLose5($flag, $handicap){
         $result=array();
-        $total=$this->getLimit('kbo_team_total_2017');
-        foreach($total as $key=>$item):
-            $team=array();
+        $data=$this->get_result();
+        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        foreach($team_array as $key=>$item):
+            $count=0;
             $win_count=0;
             $lose_count=0;
-            $recent_game=$item->recent_game;
-            $exp1=explode(';', $recent_game);
-            $recent=($exp1[9]!='패')? $exp1[9] : '';
-            $recent_lose=($exp1[9]!='승')? $exp1[9] : '';
-            for($i=1; $i<10; $i++):
-                if($exp1[9]!='패'):
-                    $win_count++;
-                    if($exp1[9-$i]=='패') break;
-                    $recent=$exp1[9-$i].';'.$recent;
+            $recent_game='';
+            $team=array();
+            foreach($data as $items):
+                if($flag=='win'):
+                    if($item==$items->home && $count<10):
+                        if($items->home_score-$handicap > $items->away_score):
+                            $count++;
+                            $win_count++;
+                            $recent_game='승;'.$recent_game;
+                        elseif($items->home_score-$handicap==$items->away_score):
+                            $count++;
+                            $recent_game='무;'.$recent_game;
+                        else: break;
+                        endif;
+                    elseif($item==$items->away && $count<10):
+                        if($items->away_score-$handicap > $items->home_score):
+                            $count++;
+                            $win_count++;
+                            $recent_game='승;'.$recent_game;
+                        elseif($items->home_score==$items->away_score-$handicap):
+                            $count++;
+                            $recent_game='무;'.$recent_game;
+                        else: break;
+                        endif;
+                    endif;
+                elseif($flag=='lose'):
+                    if($item==$items->home && $count<10):
+                        if($items->home_score-$handicap < $items->away_score):
+                            $count++;
+                            $lose_count++;
+                            $recent_game='패;'.$recent_game;
+                        elseif($items->home_score-$handicap==$items->away_score):
+                            $count++;
+                            $recent_game='무;'.$recent_game;
+                        else: break;
+                        endif;
+                    elseif($item==$items->away && $count<10):
+                        if($items->away_score-$handicap < $items->home_score):
+                            $count++;
+                            $lose_count++;
+                            $recent_game='패;'.$recent_game;
+                        elseif($items->home_score==$items->away_score-$handicap):
+                            $count++;
+                            $recent_game='무;'.$recent_game;
+                        else: break;
+                        endif;
+                    endif;
                 endif;
-                if($exp1[9]!='승'):
-                    $lose_count++;
-                    if($exp1[9-$i]=='승') break;
-                    $recent_lose=$exp1[9-$i].';'.$recent_lose;
-                endif;
-            endfor;
-
-            $team['team']=$item->team;
-            $team['recent']=$recent;
-            $team['recent_lose']=$recent_lose;
-            $team['win']=$win_count;
-            $team['lose']=$lose_count;
-            array_push($result, $team);
+            endforeach;
+            $team['team']=$item;
+            $team[$flag]=($flag=='win') ? $win_count : $lose_count;
+            $team['recent']=($recent_game!=null) ? substr($recent_game, 0, -1) : $recent_game;
+            $result[$key]=$team;
         endforeach;
 
-        if($flag=='win'):
-            foreach($result as $item) $sortAux[]=$item['win'];
-            array_multisort($sortAux, SORT_DESC, $result);
-            array_splice($result,5);
+//      순위정렬
+        foreach($result as $item) $sortAux[]=$item[$flag];
+        array_multisort($sortAux, SORT_DESC, $result);
+        array_splice($result,5);
 
-            return $result;
-        else:
-            foreach($result as $item) $sortAux[]=$item['lose'];
-            array_multisort($sortAux, SORT_DESC, $result);
-            array_splice($result,5);
-
-            return $result;
-        endif;
-    }
-
-    function getTotalHomeAway(){
-        $total=$this->get_result();
-
+        return $result;
     }
 }

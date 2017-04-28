@@ -20,9 +20,9 @@
             <li class="s4 active" style="padding-top:40px;">
                 <div class="tab01_w">
                     <ul class="tab01_2 TLS">
-                        <li class="on ls01"><a href="">승패</a></li>
-                        <li class="ls02"><a href="">핸디캡</a></li>
-                        <li class="ls03"><a href="">O/U</a></li>
+                        <li class="on ls01"><a href="/baseball/stats?handicap=0">승패</a></li>
+                        <li class="ls02"><a href="/baseball/stats?handicap=1.5">핸디캡</a></li>
+                        <li class="ls03"><a href="javascript:void(0);">O/U</a></li>
                     </ul>
                 </div>
                 <ul class="LS_view_w">
@@ -45,6 +45,17 @@
                                                         <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=away">원정</a></li>
                                                     </ul>
                                                 </div>
+                                                <?php
+                                                    $on1='';
+                                                    $on15='';
+                                                    $on2='';
+                                                    $on25='';
+                                                    if($handicap==1) $on1='on';
+                                                    else if($handicap==1.5) $on15='on';
+                                                    else if($handicap==2) $on2='on';
+                                                    else if($handicap==2.5) $on25='on';
+                                                    if($handicap!=0): echo '<ul class="r_tit2"><li class="ls01_tab_1 '.$on1.'"><a href="/baseball/stats?handicap=1">1</a></li><li class="ls01_tab_2 '.$on15.'"><a href="/baseball/stats?handicap=1.5">1.5</a></li><li class="ls01_tab_3 '.$on2.'"><a href="/baseball/stats?handicap=2">2.0</a></li><li class="ls01_tab_3 '.$on25.'"><a href="/baseball/stats?handicap=2.5">2.5</a></li></ul>';
+                                                endif; ?>
                                                 <div class="select" style="top:-7px;">
                                                     <p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
                                                     <ul>
@@ -97,7 +108,7 @@
                                                             <td><?=$plus_minus[$entry->team]; ?>:<?=$plus_minus[$entry->team.'_lose'];?></td>
                                                             <td><?=$plus_minus[$entry->team]-$plus_minus[$entry->team.'_lose'];?></td>
                                                             <td><?php $exp=explode(';', $entry->recent_game);
-                                                                foreach($exp as $value) :
+                                                                foreach($exp as $value):
                                                                     if($value=='승'): echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
                                                                     elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
                                                                     else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
@@ -105,9 +116,9 @@
                                                                 endforeach; ?>
                                                             </td>
                                                         </tr>
-                                                    <?php endforeach; ?>
+                                                    <?php endforeach;?>
                                                 </table>
-                                                <h3 class="center noBorder pt50">2017 KBO 리그요약</h3>
+                                                <h3 class="center noBorder pt50">2017 KBO 리그요약<?php if($handicap!=0) echo '(핸디캡)';?></h3>
                                                 <table class="table_default mb10">
                                                     <caption></caption>
                                                     <colgroup></colgroup>
@@ -133,7 +144,7 @@
                                                     </tr>
                                                 </table>
                                                 <div class="TOP5">
-                                                    <div><h4>홈승률 상위 5팀<span></span></h4>
+                                                    <div><h4>홈승률 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                     <ul>
                                                         <li class="th"><p class="top_t">팀 명</p><p class="top_s">승패</p><p class="top_g">승률</p></li>
                                                         <?php foreach ($home_win as $key=>$item): if($key<5): ?>
@@ -141,7 +152,7 @@
                                                         <?php endif;endforeach; ?>
                                                     </ul></div>
                                                     <div>
-                                                        <h4>원정승률 상위 5팀<span></span></h4>
+                                                        <h4>원정승률 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                     <ul>
                                                         <li class="th"><p class="top_t">팀 명</p><p class="top_s">승패</p><p class="top_g">승률</p></li>
                                                         <?php foreach ($away_win as $key=>$item): if($key<5): ?>
@@ -149,7 +160,7 @@
                                                         <?php endif;endforeach; ?>
                                                     </ul></div>
                                                     <div>
-                                                        <h4>득점마진 상위 5팀<span></span></h4>
+                                                        <h4>득점마진 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                     <ul>
                                                         <li class="th"><p class="top_t">팀 명</p><p class="top_s">득 : 실</p><p class="top_g">승률</p></li>
                                                         <?php foreach($rank_plus_minus as $key=>$entry): if($key<5): ?>
@@ -157,7 +168,7 @@
                                                         <?php endif;endforeach; ?>
                                                     </ul></div>
                                                     <div>
-                                                        <h4>득점마진 하위 5팀<span></span></h4>
+                                                        <h4>득점마진 하위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                     <ul>
                                                         <li class="th"><p class="top_t">팀 명</p><p class="top_s">득 : 실</p><p class="top_g">승률</p></li>
                                                         <?php foreach(array_reverse($rank_plus_minus) as $key=>$entry): if($key<5): ?>
@@ -165,7 +176,7 @@
                                                         <?php endif;endforeach; ?>
                                                     </ul></div>
                                                     <div>
-                                                        <h4>최근연승 상위 5팀<span></span></h4>
+                                                        <h4>최근연승 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                         <ul>
                                                             <li class="th"><p class="top_t2">팀 명</p><p class="top_s2">최근 10경기</p><p class="top_g2">연승</p></li>
                                                             <?php foreach($recent_win as $item): ?>
@@ -176,7 +187,7 @@
                                                                         $exp=explode(';', $item['recent']);
                                                                         foreach($exp as $items):
                                                                         ?>
-                                                                            <a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_<?php echo ($items=='승')? 'win.png' : 'dra.png';?>"; alt="" title="두산 4:1 넥센"/></a>
+                                                                            <a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_<?php echo ($items=='승')? 'win.png' : 'dra.png';?>"; alt="" title=""/></a>
                                                                         <?php endforeach; ?>
                                                                     </p>
                                                                     <p class="top_g2"><?=$item['win'];?>연승</p>
@@ -185,7 +196,7 @@
                                                         </ul>
                                                     </div>
                                                     <div>
-                                                        <h4>최근연패 상위 5팀<span></span></h4>
+                                                        <h4>최근연패 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                         <ul>
                                                             <li class="th"><p class="top_t2">팀 명</p><p class="top_s2">최근 10경기</p><p class="top_g2">연패</p></li>
                                                             <?php foreach($recent_lose as $item): ?>
@@ -193,10 +204,10 @@
                                                                     <p class="top_t2"><?=$item['team'];?></p>
                                                                     <p class="top_s2">
                                                                         <?php
-                                                                        $exp=explode(';', $item['recent_lose']);
+                                                                        $exp=explode(';', $item['recent']);
                                                                         foreach($exp as $items):
                                                                             ?>
-                                                                            <a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_<?php echo ($items=='패')? 'lose.png' : 'dra.png';?>"; alt="" title="두산 4:1 넥센"/></a>
+                                                                            <a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_<?php echo ($items=='패')? 'lose.png' : 'dra.png';?>"; alt="" title=""/></a>
                                                                         <?php endforeach; ?>
                                                                     </p>
                                                                     <p class="top_g2"><?=$item['lose'];?>연패</p>
@@ -810,7 +821,6 @@
                             </ul>
                         </div>
                     </li>
-                    <?php include('stats_handicap.php');?>
                     <?php include('stats_overunder.php');?>
                 </ul>
             </li>
@@ -820,14 +830,21 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
+        if('<?=$handicap;?>'!='0'){
+            $(".TLS li").removeClass("on");
+            $(".TLS > li.ls02").addClass("on");
+        }
+
         for(var i=1; i<4; i++){
             (function (k){
                 $(".TLS > li.ls0"+k).click(function(){
-                    $(".TLS li").removeClass("on");
-                    $(this).addClass("on");
-                    $(".LS_view_w > li").removeClass("active");
-                    $(".LS_view_w > li").eq(k-1).addClass("active");
-                    return false;
+                    if(k==3){
+                        $(".TLS li").removeClass("on");
+                        $(this).addClass("on");
+                        $(".LS_view_w > li").removeClass("active");
+                        $(".LS_view_w > li").eq(k-1).addClass("active");
+                        return false;
+                    }
                 });
             }(i));
         };
