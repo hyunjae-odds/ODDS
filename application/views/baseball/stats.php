@@ -31,18 +31,18 @@
                             <ul class="LS_view">
                                 <li class="active ls_all">
                                     <ul class="firTab">
-                                        <li class="on r_tit1_1"><a href="">전체 결과</a></li>
-                                        <li class="r_tit1_2"><a href="">5이닝 결과</a></li>
-                                        <li class="r_tit1_3"><a href="">1이닝 결과</a></li>
+                                        <li class="<?php if($inning=='all') echo 'on';?> r_tit1_1"><a href="/baseball/stats?inning=all&duration=<?=$duration;?>&home_away=<?=$home_away;?>&handicap=<?=$handicap;?>">전체 결과</a></li>
+                                        <li class="<?php if($inning=='half') echo 'on';?> r_tit1_2"><a href="/baseball/stats?inning=half&duration=<?=$duration;?>&home_away=<?=$home_away;?>&handicap=<?=$handicap;?>">5이닝 결과</a></li>
+                                        <li class="<?php if($inning=='first') echo 'on';?> r_tit1_3"><a href="/baseball/stats?inning=first&duration=<?=$duration;?>&home_away=<?=$home_away;?>&handicap=<?=$handicap;?>">1이닝 결과</a></li>
                                     </ul>
                                     <div>
                                         <ul class="r_tit1_view">
                                             <li class="ls01_1 active"><!-- 전체 -->
                                                 <div class="tab2_w">
                                                     <ul class="tab02 LS_tab">
-                                                        <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=all">전체</a></li>
-                                                        <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=home">홈</a></li>
-                                                        <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=away">원정</a></li>
+                                                        <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=all&handicap=<?=$handicap;?>">전체</a></li>
+                                                        <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=home&handicap=<?=$handicap;?>">홈</a></li>
+                                                        <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=away&handicap=<?=$handicap;?>">원정</a></li>
                                                     </ul>
                                                 </div>
                                                 <?php
@@ -839,31 +839,5 @@
             $(".TLS li").removeClass("on");
             $(".TLS > li.ls02").addClass("on");
         }
-
-        for(var i=1; i<4; i++){
-            (function (k){
-                $(".TLS > li.ls0"+k).click(function(){
-                    if(k==3){
-                        $(".TLS li").removeClass("on");
-                        $(this).addClass("on");
-                        $(".LS_view_w > li").removeClass("active");
-                        $(".LS_view_w > li").eq(k-1).addClass("active");
-                        return false;
-                    }
-                });
-            }(i));
-        };
-
-        for(var i=1; i<5; i++){
-            (function (k){
-                $(".firTab > li.r_tit1_"+k).click(function(){
-                    $(this).siblings().removeClass("on");
-                    $(this).addClass("on");
-                    $(this).parent().siblings().find("ul li").removeClass("active");
-                    $(this).parent().siblings().find("ul li.ls01_"+k).addClass("active");
-                    return false;
-                });
-            }(i));
-        };
     });
 </script>

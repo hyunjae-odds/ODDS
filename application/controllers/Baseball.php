@@ -65,6 +65,13 @@ class Baseball extends MY_Controller{
 
 //      COOKIE
         $this->delete_cookies();
+        if($this->input->get('inning')==null || $this->input->get('inning')=='all'):
+            $this->input->set_cookie(array('name'=>'inning','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
+            $inning='all';
+        else:
+            $this->input->set_cookie(array('name'=>'inning','value'=>$this->input->get('inning'),'expire'=>'86500','domain'=>SERVER_HOST));
+            $inning=$this->input->get('inning');
+        endif;
         if($this->input->get('home_away')==null || $this->input->get('home_away')=='all'):
             $this->input->set_cookie(array('name'=>'home_away','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
             $home_away='all';
@@ -79,13 +86,14 @@ class Baseball extends MY_Controller{
             $this->input->set_cookie(array('name'=>'duration','value'=>$this->input->get('duration'),'expire'=>'86500','domain'=>SERVER_HOST));
             $duration=$this->input->get('duration');
         endif;
-        if($this->input->get('handicap')==0): $handicap=0;
-        else: $this->input->set_cookie(array('name'=>'handicap','value'=>$this->input->get('handicap'),'expire'=>'86500','domain'=>SERVER_HOST));
-              $handicap=$this->input->get('handicap');
+        if($this->input->get('handicap')==null || $this->input->get('handicap')==0): $handicap=0;
+        else:
+            $this->input->set_cookie(array('name'=>'handicap','value'=>$this->input->get('handicap'),'expire'=>'86500','domain'=>SERVER_HOST));
+            $handicap=$this->input->get('handicap');
         endif;
 
 //      RANK BOARD
-        $total=$this->getRankBoard($duration, $home_away, $handicap);
+        $total=$this->getRankBoard($inning, $duration, $home_away, $handicap);
         $plus_minus=$this->baseball_model->getTotalScore($duration, $home_away);
         $offense=$this->baseball_model->get('kbo_team_offense_2017');
 
@@ -122,7 +130,7 @@ class Baseball extends MY_Controller{
         $recent_lose=$this->baseball_model->getRecentWinLose5('lose', $handicap);
 
         $this->load->view("/baseball/stats",array('total'=>$total,'offense'=>$offense,'plus_minus'=>$plus_minus,'duration'=>$duration,'league_statistics'=>$league_statistics,'handicap'=>$handicap,
-                          'rank_plus_minus'=>$result,'home_win'=>$home_win,'away_win'=>$away_win,'recent_win'=>$recent_win,'recent_lose'=>$recent_lose,'home_away'=>$home_away));
+                          'rank_plus_minus'=>$result,'home_win'=>$home_win,'away_win'=>$away_win,'recent_win'=>$recent_win,'recent_lose'=>$recent_lose,'home_away'=>$home_away,'inning'=>$inning));
         $this->load->view("/baseball/footer");
     }
 
@@ -252,9 +260,10 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
-    function getRankBoard($duration, $home_away, $handicap){
+    function getRankBoard($inning, $duration, $home_away, $handicap){
         $finalCut=array();
-        $result=$this->baseball_model->get_result();
+        $result=$this->baseball_model->get_result($inning);
+
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
 //      경기 선택 시
         if($home_away=='all' && $duration=='all'):
@@ -475,7 +484,7 @@ class Baseball extends MY_Controller{
     /* ---------------------------------------------------------- crawling ---------------------------------------------------------- */
 
     function crawling_result(){
-        $month_array=array('03','04','05','06','07','08','09');
+        /*$month_array=array('03','04','05','06','07','08','09');
         $result=array();
         foreach($month_array as $month):
             $source=json_decode($this->curl->simple_get('http://www.koreabaseball.com/ws/Schedule.asmx/GetScheduleList?leId=1&srIdList=0%2C9&seasonId=2017&gameMonth='.$month.'&teamId='));
@@ -530,7 +539,59 @@ class Baseball extends MY_Controller{
                 array_push($result, $resultSet);
             endforeach;
         endforeach;
-        $this->baseball_model->insertByMonth($result);
+
+        $this->baseball_model->insertByMonth($result);*/
+
+//      HALF
+        $source_half=$this->curl->simple_get('/application/views/baseball/sources/result_half.php');
+
+        $expl1=explode('class="date-txt">', $source_half);
+        $expl2=explode('</span>', $expl1[1]);
+        $date=substr($expl2[0],5);
+
+        $arr=array(6, 1);
+        $expl0=explode('<p class="place">', $source_half);
+        foreach($arr as $item):
+            $rows=array();
+            for($i=1; $i<6; $i++):
+                $game=array();
+
+                $expl3=explode('</span>', $expl0[$i]);
+                $expl4=explode('<span>', $expl3[0]);
+                $time=$expl4[1];
+
+                $expl5=explode('<th scope="row">', $expl0[$i]);
+                $expl8=explode('<td>', $expl5[1]);
+                $expl6=explode('</th>', $expl8[0]);
+                $away=$expl6[0];
+                $away_score=0;
+                for($h=1; $h<$item; $h++):
+                    $expl9=explode('</td>', $expl8[$h]);
+                    if($expl9[0]!='-'): $away_score+=$expl9[0]; endif;
+                endfor;
+
+                $expl7=explode('<td>', $expl5[2]);
+                $expl9=explode('</th>', $expl7[0]);
+                $home=$expl9[0];
+                $home_score=0;
+                for($j=1; $j<$item; $j++):
+                    $expl10=explode('</td>', $expl7[$j]);
+                    if($expl10[0]!='-'): $home_score+=$expl10[0]; endif;
+                endfor;
+
+                $game['date']=$date;
+                $game['time']=$time;
+                $game['home']=$home;
+                $game['home_score']=$home_score;
+                $game['away']=$away;
+                $game['away_score']=$away_score;
+
+                array_push($rows, $game);
+            endfor;
+
+            $table=($item==6)?'kbo_result_half_2017':'kbo_result_first_2017';
+            $this->baseball_model->insert_result($table, $rows);
+        endforeach;
     }
 
     function insertTeamRecord(){

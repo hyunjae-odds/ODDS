@@ -45,6 +45,12 @@
             $this->db->insert($table, $entry);
         endforeach;
     }
+    function insert_result($table, $data){
+        foreach($data as $datum):
+            $this->db->set('insert_dt', 'NOW()', false);
+            $this->db->insert($table, $datum);
+        endforeach;
+    }
 
 	/* GET */
 	function get($table){
@@ -59,7 +65,7 @@
 	}
 //	팀별 최근 10경기 승패
     function getByScore(){
-        $month=$this->get_result();
+        $month=$this->get_result('all');
 
         $result=array();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
@@ -269,7 +275,7 @@
     /* 득, 실, 마진 */
     function getTotalScore($duration, $home_away){
     	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $total=$this->get_result();
+        $total=$this->get_result('all');
 
     	$result=array();
     	foreach($team_array as $item):
@@ -309,7 +315,7 @@
     
     /* 리그 요약 - 통계 */
     function getLeagueStatistics(){
-        $total=$this->get_result();
+        $total=$this->get_result('all');
     	$resultSet=array();
 
     	/* 리그 승률통계 */
@@ -348,17 +354,21 @@
     	return $resultSet;
     }
 
-    function get_result(){
+    function get_result($inning){
         $this->db->where('away_score!=', '');
         $this->db->where('home_score!=', '');
         $this->db->order_by('no', 'DESC');
 
-        return $this->db->get('kbo_result_2017')->result();
+        if($inning=='all'): $result=$this->db->get('kbo_result_2017')->result();
+        elseif($inning=='half'): $result=$this->db->get('kbo_result_half_2017')->result();
+        elseif($inning=='first'): $result=$this->db->get('kbo_result_first_2017')->result(); endif;
+
+        return $result;
     }
 
     function getHomeAwayWinRank($handicap){
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $kbo_game_result=$this->get_result();
+        $kbo_game_result=$this->get_result('all');
 
         $this->db->order_by('date', 'DESC');
         $this->db->order_by('win_rate', 'DESC');
@@ -398,7 +408,7 @@
 //  연승 확인
     function getRecentWinLose5($flag, $handicap){
         $result=array();
-        $data=$this->get_result();
+        $data=$this->get_result('all');
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         foreach($team_array as $key=>$item):
             $count=0;
