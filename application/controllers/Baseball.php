@@ -58,6 +58,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
+//  리그통계
     function stats(){
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
@@ -100,7 +101,6 @@ class Baseball extends MY_Controller{
         array_multisort($sortAux2, SORT_DESC, $away_win);
 
 //      득점마진 상/하위 5팀
-        $rank_plus_minus=array();
         $result=array();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $plus_minus2=$this->baseball_model->getTotalScore('all', $home_away);
@@ -115,22 +115,18 @@ class Baseball extends MY_Controller{
             endforeach;
             $result[$item]=$rank;
         endforeach;
-        for($i=10; $i>=0; $i--):
-            foreach($team_array as $item):
-                if($result[$item]==$i) $rank_plus_minus[9-$i]=$item;
-            endforeach;
-        endfor;
+        arsort($result);
 
 //      최근 연승/패 상위 5팀
         $recent_win=$this->baseball_model->getRecentWinLose5('win', $handicap);
         $recent_lose=$this->baseball_model->getRecentWinLose5('lose', $handicap);
 
         $this->load->view("/baseball/stats",array('total'=>$total,'offense'=>$offense,'plus_minus'=>$plus_minus,'duration'=>$duration,'league_statistics'=>$league_statistics,'handicap'=>$handicap,
-                          'rank_plus_minus'=>$rank_plus_minus,'home_win'=>$home_win,'away_win'=>$away_win,'recent_win'=>$recent_win,'recent_lose'=>$recent_lose,'home_away'=>$home_away));
+                          'rank_plus_minus'=>$result,'home_win'=>$home_win,'away_win'=>$away_win,'recent_win'=>$recent_win,'recent_lose'=>$recent_lose,'home_away'=>$home_away));
         $this->load->view("/baseball/footer");
     }
 
-    /* 팀 기록 */
+//  팀 기록
     function team_record($select_year, $select_month, $offense_sort, $defence_sort){
         $this->delete_cookies();
         $this->load->view("/baseball/head_up");
@@ -181,7 +177,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
 
-//		PAGINATION
+    //	PAGINATION
         $per_page=20;
         $config['base_url']='http://'.SERVER_HOST.'/baseball/player_record/';
         $config['total_rows']=$this->baseball_model->getNumRows('kbo_batterbasic_2017');
@@ -191,7 +187,7 @@ class Baseball extends MY_Controller{
         $config['first_link']=FALSE;
         $config['last_link']=FALSE;
 
-//      SORTING
+    //  SORTING
         if($this->input->get('scroll_top')!=null): $mouseTop=$this->input->get('scroll_top'); else: $mouseTop=0; endif;
         if($this->input->get('focus')!=null): $focus=$this->input->get('focus'); else: $focus=0; endif;
         if($this->input->get('bold_num')!=null): $boldNum=$this->input->get('bold_num'); else: $boldNum=0; endif;
@@ -254,15 +250,6 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/head");
         $this->load->view("/baseball/score");
         $this->load->view("/baseball/footer");
-    }
-
-    function delete_cookies(){
-        $this->load->helper('cookie');
-        $this->input->set_cookie(array('name'=>'mouse_top','value'=>'0','expire'=>'86500','domain'=>SERVER_HOST));
-        delete_cookie('focus', SERVER_HOST, '/');
-        delete_cookie('bold_num', SERVER_HOST, '/');
-        delete_cookie('pitcher_sort', SERVER_HOST, '/');
-        delete_cookie('batter_sort', SERVER_HOST, '/');
     }
 
     function getRankBoard($duration, $home_away, $handicap){
@@ -476,9 +463,17 @@ class Baseball extends MY_Controller{
         return $finalCut;
     }
 
+    function delete_cookies(){
+        $this->load->helper('cookie');
+        $this->input->set_cookie(array('name'=>'mouse_top','value'=>'0','expire'=>'86500','domain'=>SERVER_HOST));
+        delete_cookie('focus', SERVER_HOST, '/');
+        delete_cookie('bold_num', SERVER_HOST, '/');
+        delete_cookie('pitcher_sort', SERVER_HOST, '/');
+        delete_cookie('batter_sort', SERVER_HOST, '/');
+    }
+
     /* ---------------------------------------------------------- crawling ---------------------------------------------------------- */
 
-    /* 경기결과 */
     function crawling_result(){
         $month_array=array('03','04','05','06','07','08','09');
         $result=array();
@@ -538,24 +533,22 @@ class Baseball extends MY_Controller{
         $this->baseball_model->insertByMonth($result);
     }
 
-    /* 팀 기록 */
     function insertTeamRecord(){
         /* 팀 종합기록 */
         $column_total=array('rank','team','win','lose','tie','win_rate','game_car','recent_game','win_count','home','away');
-//		$source=$this->curl->simple_get('/application/views/baseball/crawling_target.php'); //과거내역 크롤링
+//		$source=$this->curl->simple_get('/application/views/baseball/sources/crawling_target.php'); //과거내역 크롤링
         $source=$this->curl->simple_get('http://www.koreabaseball.com/TeamRank/TeamRank.aspx'); //현재내역 크롤링
         $team_total=$this->crawlingWithColumnList($source, $column_total);
         $resultSet=array();
-        foreach($team_total as $entry):
-            $result=array_splice($entry, 7);
-            array_push($resultSet, $entry);
-        endforeach;
+        $afterUnset=array();
+        foreach($team_total as $entry): array_push($resultSet, $entry); endforeach;
+        foreach ($resultSet as $key=>$item): unset($item['win_count']); unset($item['home']); unset($item['away']); $afterUnset[$key]=$item; endforeach;
 
         $exp=explode('<span id="cphContents_cphContents_cphContents_lblSearchDateTitle">', $source);
         $expp=explode('</span>',$exp[1]);
         $exppp=explode('(',$expp[0]);
 
-        $this->baseball_model->insertWithRecentGame('kbo_team_total_2017', $resultSet, $this->baseball_model->getByScore(), $exppp[0]);
+        $this->baseball_model->insertWithRecentGame('kbo_team_total_2017', $afterUnset, $this->baseball_model->getByScore(), $exppp[0]);
 
         /* KBO 공격력 순위 */
         $columns_batter1=array('rank','team','avg','g','pa','ab','r','h','second_b','third_b','hr','tb','rbi','sac','sf');
@@ -614,11 +607,11 @@ class Baseball extends MY_Controller{
         return $resultSet;
     }
 
-    function crawlingPlayerRecordBatter(){
+    function crawlingBatterRecord(){
 //	    1페이지
         $column_total=array('rank','name','team','avg','g','pa','ab','r','h','second_b','third_b','hr','tb','rbi','sac','sf');
         $source1=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx');
-        $source3=$this->curl->simple_get('/application/views/baseball/hitterbasic_target1.php');
+        $source3=$this->curl->simple_get('/application/views/baseball/sources/hitterbasic_target1.php');
         $resultSet1=$this->crawlingWithColumnList($source1, $column_total);
         $resultSet3=$this->crawlingWithColumnList($source3, $column_total);
 
@@ -630,7 +623,7 @@ class Baseball extends MY_Controller{
 //      2페이지
         $column2_total=array('rank','name','team','avg','bb','ibb','hbp','so','gdp','slg','obp','ops','mh','risp','phba');
         $source2=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/HitterBasic/Basic2.aspx');
-        $source4=$this->curl->simple_get('/application/views/baseball/hitterbasic_target2.php');
+        $source4=$this->curl->simple_get('/application/views/baseball/sources/hitterbasic_target2.php');
         $resultSet2=$this->crawlingWithColumnList($source2, $column2_total);
         $resultSet4=$this->crawlingWithColumnList($source4, $column2_total);
 
@@ -645,13 +638,14 @@ class Baseball extends MY_Controller{
         for($i=0; $i<30; $i++): $merged[$i]['name']=$arr[$i]; endfor;
         $merged2=array();
         foreach($resultSet3 as $key=>$item): $merged2[$key]=array_merge($item, $resultSet4[$key]); endforeach;
-        for($i=0; $i<30; $i++): $merged2[$i]['name']=$arr2[$i]; endfor;
+        for($i=0; $i<count($arr2); $i++): $merged2[$i]['name']=$arr2[$i]; endfor;
 
         $resultSet=array_merge($merged, $merged2);
+
         $this->baseball_model->insertNoDelete('kbo_batterbasic_2017', $resultSet);
     }
 
-    function crawlingPlayerRecordPitcher(){
+    function crawlingPitcherRecord(){
         $column3_total=array('rank','name','team','era','g','w','l','sv','hld','wpct','ip','h','hr','bb','hbp','so','r','er','whip');
         $source5=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/PitcherBasic/Basic1.aspx');
         $resultSet5=$this->crawlingWithColumnList($source5, $column3_total);
@@ -668,17 +662,43 @@ class Baseball extends MY_Controller{
         foreach($exp6 as $key=>$item): $exp6=explode('">', $item); $arr4[$key]=array_pop($exp6); endforeach;
         array_pop($arr4);
 
-        for($i=0; $i<30; $i++): $resultSet5[$i]['name']=$arr3[$i]; endfor;
-        for($i=0; $i<30; $i++): $resultSet6[$i]['name']=$arr4[$i]; endfor;
+        for($i=0; $i<count($arr3); $i++): $resultSet5[$i]['name']=$arr3[$i]; endfor;
+        for($i=0; $i<count($arr4); $i++): $resultSet6[$i]['name']=$arr4[$i]; endfor;
         $merged3=array();
         foreach($resultSet5 as $key=>$item):
             $merged3[$key]=array_merge($item, $resultSet6[$key]);
         endforeach;
 
         $this->baseball_model->insertNoDelete('kbo_pitcherbasic_2017', $merged3);
+
+//      HLD
+        $column5_total=array('rank','name','team','era','g','w','l','sv','hld','wpct','ip','h','hr','bb','hbp','so','r','er','whip');
+        $source7=$this->curl->simple_get('/application/views/baseball/sources/pitcherbasic_hld.php');
+        $resultSet7=$this->crawlingWithColumnList($source7, $column5_total);
+
+        $exp7=explode('</a></td>', $source7);
+        $arr5=array();
+        foreach($exp7 as $key=>$item): $exp8=explode('">', $item); $arr5[$key]=array_pop($exp8); endforeach;
+        array_pop($arr5);
+        for($i=0; $i<count($arr5); $i++): $resultSet7[$i]['name']=$arr5[$i]; $resultSet7[$i]['rank']=99; endfor;
+
+        $this->baseball_model->insertNoDelete('kbo_pitcherbasic_2017', $resultSet7);
+
+//      SV
+        $column6_total=array('rank','name','team','era','g','w','l','sv','hld','wpct','ip','h','hr','bb','hbp','so','r','er','whip');
+        $source8=$this->curl->simple_get('/application/views/baseball/sources/pitcherbasic_sv.php');
+        $resultSet8=$this->crawlingWithColumnList($source8, $column6_total);
+
+        $exp9=explode('</a></td>', $source8);
+        $arr6=array();
+        foreach($exp9 as $key=>$item): $exp10=explode('">', $item); $arr6[$key]=array_pop($exp10); endforeach;
+        array_pop($arr6);
+        for($i=0; $i<count($arr6); $i++): $resultSet8[$i]['name']=$arr6[$i]; $resultSet8[$i]['rank']=99; endfor;
+
+        $this->baseball_model->insertNoDelete('kbo_pitcherbasic_2017', $resultSet8);
     }
 
-    function crawlingPlayerRecordRunner(){
+    function crawlingRunnerRecord(){
         $column_total=array('rank','name','team','g','sba','sb','cs','sbp','oob','pko');
         $source=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/Runner/Basic.aspx');
         $resultSet=$this->crawlingWithColumnList($source, $column_total);
@@ -688,7 +708,7 @@ class Baseball extends MY_Controller{
         foreach($exp5 as $key=>$item): $exp6=explode('">', $item); $arr3[$key]=array_pop($exp6); endforeach;
         array_pop($arr3);
 
-        for($i=0; $i<30; $i++): $resultSet[$i]['name']=$arr3[$i]; endfor;
+        for($i=0; $i<count($arr3); $i++): $resultSet[$i]['name']=$arr3[$i]; endfor;
 
         $this->baseball_model->insertNoDelete('kbo_runnerbasic_2017', $resultSet);
     }

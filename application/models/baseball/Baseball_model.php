@@ -228,19 +228,40 @@
     function getScheduleAfter3Days(){
     	$today=date('m.d');
 
-    	$resultSet=array();
-    	$this->db->select('no, date, time, home, away');
-    	$this->db->like('date', $today, 'after');
-    	$this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
-    	$this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
-    	$resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
-
     	$this->db->select('date');
         $this->db->like('date', $today, 'after');
-        $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
-        $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
         $this->db->distinct();
-    	$resultSet['date']=$this->db->get('kbo_result_2017')->result();
+        $count=$this->db->get('kbo_result_2017')->result();
+
+        if($count!=null):
+            $resultSet=array();
+            $this->db->select('no, date, time, home, away');
+            $this->db->like('date', $today, 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
+
+            $this->db->select('date');
+            $this->db->like('date', $today, 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            $this->db->distinct();
+            $resultSet['date']=$this->db->get('kbo_result_2017')->result();
+        else:
+            $resultSet=array();
+            $this->db->select('no, date, time, home, away');
+            $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
+
+            $this->db->select('date');
+            $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            $this->db->distinct();
+            $resultSet['date']=$this->db->get('kbo_result_2017')->result();
+        endif;
 
     	return $resultSet;
     }
@@ -441,6 +462,10 @@
 //      순위정렬
         foreach($result as $item) $sortAux[]=$item[$flag];
         array_multisort($sortAux, SORT_DESC, $result);
+        array_splice($result,5);
+
+        foreach($result as $item) $sortAux2[]=strlen($item['recent']);
+        array_multisort($sortAux2, SORT_DESC, $result);
         array_splice($result,5);
 
         return $result;

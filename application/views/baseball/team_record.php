@@ -107,16 +107,16 @@
 					<div class="graybox2">
 						<?php $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화'); ?>
 						<canvas id="myChart" width="400" height="150"></canvas>
+                        <?php if($rank_month==0) echo '데이터가 없습니다.'; ?>
 						<script src="/public/lib/js/Chart.min.js"></script>
 						<script src="/public/lib/js/moment.js"></script>
 						<script>
-							var makeDaysInMonth=<?php echo json_encode($schedule);?>;
+							var makeDaysInMonth=<?=json_encode($schedule);?>;
 							var schedule=new Array();
 							for (var i=0; i<makeDaysInMonth.length; i++){
 								var splitted=makeDaysInMonth[i]['date'].split('-');
 								schedule.push(parseInt(splitted[2])+'일');
 							}
-
 							var team_array=new Array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
 							var rank_month=<?php echo json_encode($rank_month);?>;
 							var data=[rank_month['삼성'].split(';'), rank_month['롯데'].split(';'), rank_month['LG'].split(';'), rank_month['SK'].split(';'),rank_month['kt'].split(';'),

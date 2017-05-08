@@ -144,37 +144,42 @@
                                                     </tr>
                                                 </table>
                                                 <div class="TOP5">
-                                                    <div><h4>홈승률 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
-                                                    <ul>
-                                                        <li class="th"><p class="top_t">팀 명</p><p class="top_s">승패</p><p class="top_g">승률</p></li>
-                                                        <?php foreach ($home_win as $key=>$item): if($key<5): ?>
-                                                            <li class="td"><p class="top_t"><?=$key;?></p><p class="top_s"><?=$item['home'];?></p><p class="top_g"><?=number_format($item['win_rate'],3);?></p></li>
-                                                        <?php endif;endforeach; ?>
-                                                    </ul></div>
+                                                    <div>
+                                                        <h4>홈승률 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
+                                                        <ul>
+                                                            <li class="th"><p class="top_t">팀 명</p><p class="top_s">승패</p><p class="top_g">승률</p></li>
+                                                            <?php foreach ($home_win as $key=>$item): if($key<5): ?>
+                                                                <li class="td"><p class="top_t"><?=$key;?></p><p class="top_s"><?=$item['home'];?></p><p class="top_g"><?=number_format($item['win_rate'],3);?></p></li>
+                                                            <?php endif;endforeach; ?>
+                                                        </ul>
+                                                    </div>
                                                     <div>
                                                         <h4>원정승률 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
-                                                    <ul>
-                                                        <li class="th"><p class="top_t">팀 명</p><p class="top_s">승패</p><p class="top_g">승률</p></li>
-                                                        <?php foreach ($away_win as $key=>$item): if($key<5): ?>
-                                                            <li class="td"><p class="top_t"><?=$key;?></p><p class="top_s"><?=$item['away'];?></p><p class="top_g"><?=number_format($item['win_rate'],3);?></p></li>
-                                                        <?php endif;endforeach; ?>
-                                                    </ul></div>
+                                                        <ul>
+                                                            <li class="th"><p class="top_t">팀 명</p><p class="top_s">승패</p><p class="top_g">승률</p></li>
+                                                            <?php foreach ($away_win as $key=>$item): if($key<5): ?>
+                                                                <li class="td"><p class="top_t"><?=$key;?></p><p class="top_s"><?=$item['away'];?></p><p class="top_g"><?=number_format($item['win_rate'],3);?></p></li>
+                                                            <?php endif;endforeach; ?>
+                                                        </ul>
+                                                    </div>
                                                     <div>
                                                         <h4>득점마진 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
-                                                    <ul>
-                                                        <li class="th"><p class="top_t">팀 명</p><p class="top_s">득 : 실</p><p class="top_g">승률</p></li>
-                                                        <?php foreach($rank_plus_minus as $key=>$entry): if($key<5): ?>
-                                                            <li class="td"><p class="top_t"><?=$entry;?></p><p class="top_s"><?=$plus_minus[$entry]; ?>:<?=$plus_minus[$entry.'_lose'];?></p><p class="top_g"><?=number_format($total[$key]->win_rate,3);?></p></li>
-                                                        <?php endif;endforeach; ?>
-                                                    </ul></div>
+                                                        <ul>
+                                                            <li class="th"><p class="top_t">팀 명</p><p class="top_s">득 : 실</p><p class="top_g">승률</p></li>
+                                                            <?php $count=0; foreach($rank_plus_minus as $key=>$entry): if($entry>4): ?>
+                                                                <li class="td"><p class="top_t"><?=$key;?></p><p class="top_s"><?=$plus_minus[$key]; ?>:<?=$plus_minus[$key.'_lose'];?></p><p class="top_g"><?php foreach($total as $item): if($item->team==$key): echo number_format($item->win_rate, 3); endif; endforeach;?></p></li>
+                                                            <?php endif;endforeach; ?>
+                                                        </ul>
+                                                    </div>
                                                     <div>
                                                         <h4>득점마진 하위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
-                                                    <ul>
-                                                        <li class="th"><p class="top_t">팀 명</p><p class="top_s">득 : 실</p><p class="top_g">승률</p></li>
-                                                        <?php foreach(array_reverse($rank_plus_minus) as $key=>$entry): if($key<5): ?>
-                                                            <li class="td"><p class="top_t"><?=$entry;?></p><p class="top_s"><?=$plus_minus[$entry]; ?>:<?=$plus_minus[$entry.'_lose'];?></p><p class="top_g"><?=number_format($total[$key]->win_rate,3);?></p></li>
-                                                        <?php endif;endforeach; ?>
-                                                    </ul></div>
+                                                        <ul>
+                                                            <li class="th"><p class="top_t">팀 명</p><p class="top_s">득 : 실</p><p class="top_g">승률</p></li>
+                                                            <?php $count=0; foreach(array_reverse($rank_plus_minus) as $key=>$entry): if($entry<5): ?>
+                                                                <li class="td"><p class="top_t"><?=$key;?></p><p class="top_s"><?=$plus_minus[$key]; ?>:<?=$plus_minus[$key.'_lose'];?></p><p class="top_g"><?php foreach($total as $item): if($item->team==$key): echo number_format($item->win_rate, 3); endif; endforeach;?></p></li>
+                                                            <?php endif;endforeach; ?>
+                                                        </ul>
+                                                    </div>
                                                     <div>
                                                         <h4>최근연승 상위 5팀<?php if($handicap!=0) echo '('.$handicap.')';?><span></span></h4>
                                                         <ul>
