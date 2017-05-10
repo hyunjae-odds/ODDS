@@ -31,15 +31,15 @@ class Baseball extends MY_Controller{
             $duration=$this->input->get('duration');
         endif;
 
-        $total=$this->getRankBoard($duration, $home_away, 0);
+        $total=$this->getRankBoard('all', $duration, $home_away, 0);
         $offense=$this->baseball_model->get('kbo_team_offense_2017');
         $defence=$this->baseball_model->get('kbo_team_defence_2017');
         $schedule=$this->baseball_model->getScheduleAfter3Days();
         $league_statistics=$this->baseball_model->getLeagueStatistics();
 
 //      득/실/마진/게임차
-        if($this->input->get('game')==null): $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
-        else: $plus_minus=$this->baseball_model->getTotalScore($this->input->get('game'), 'all'); endif;
+        if($this->input->get('game')==null): $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        else: $plus_minus=$this->baseball_model->getTotalScore('all', $this->input->get('game'), 'all'); endif;
 
         $this->load->view("/baseball/league_info", array('total'=>$total,'offense'=>$offense,'defence'=>$defence,'schedule'=>$schedule,'plus_minus'=>$plus_minus,
                           'league_statistics'=>$league_statistics,'scroll_top'=>$scroll_top,'duration'=>$duration,'home_away'=>$home_away));
@@ -65,36 +65,14 @@ class Baseball extends MY_Controller{
 
 //      COOKIE
         $this->delete_cookies();
-        if($this->input->get('inning')==null || $this->input->get('inning')=='all'):
-            $this->input->set_cookie(array('name'=>'inning','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
-            $inning='all';
-        else:
-            $this->input->set_cookie(array('name'=>'inning','value'=>$this->input->get('inning'),'expire'=>'86500','domain'=>SERVER_HOST));
-            $inning=$this->input->get('inning');
-        endif;
-        if($this->input->get('home_away')==null || $this->input->get('home_away')=='all'):
-            $this->input->set_cookie(array('name'=>'home_away','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
-            $home_away='all';
-        else:
-            $this->input->set_cookie(array('name'=>'home_away','value'=>$this->input->get('home_away'),'expire'=>'86500','domain'=>SERVER_HOST));
-            $home_away=$this->input->get('home_away');
-        endif;
-        if($this->input->get('duration')==null || $this->input->get('duration')=='all'):
-            $this->input->set_cookie(array('name'=>'duration','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
-            $duration='all';
-        else:
-            $this->input->set_cookie(array('name'=>'duration','value'=>$this->input->get('duration'),'expire'=>'86500','domain'=>SERVER_HOST));
-            $duration=$this->input->get('duration');
-        endif;
-        if($this->input->get('handicap')==null || $this->input->get('handicap')==0): $handicap=0;
-        else:
-            $this->input->set_cookie(array('name'=>'handicap','value'=>$this->input->get('handicap'),'expire'=>'86500','domain'=>SERVER_HOST));
-            $handicap=$this->input->get('handicap');
-        endif;
+        $inning=($this->input->get('inning')==null || $this->input->get('inning')=='all')? $inning='all' : $inning=$this->input->get('inning');
+        $home_away=($this->input->get('home_away')==null || $this->input->get('home_away')=='all')? 'all' : $this->input->get('home_away');
+        $duration=($this->input->get('duration')==null || $this->input->get('duration')=='all')? 'all' : $this->input->get('duration');
+        $handicap=($this->input->get('handicap')==null || $this->input->get('handicap')==0)? 0 : $this->input->get('handicap');
 
 //      RANK BOARD
         $total=$this->getRankBoard($inning, $duration, $home_away, $handicap);
-        $plus_minus=$this->baseball_model->getTotalScore($duration, $home_away);
+        $plus_minus=$this->baseball_model->getTotalScore($inning, $duration, $home_away);
         $offense=$this->baseball_model->get('kbo_team_offense_2017');
 
 //      KBO 리그요약
@@ -110,8 +88,8 @@ class Baseball extends MY_Controller{
 
 //      득점마진 상/하위 5팀
         $result=array();
-        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $plus_minus2=$this->baseball_model->getTotalScore('all', $home_away);
+        $team_array=KBO_TEAMS;
+        $plus_minus2=$this->baseball_model->getTotalScore($inning, 'all', $home_away);
         foreach($team_array as $item):
             $margin=$plus_minus2[$item]-$plus_minus2[$item.'_lose'];
             $rank=0;
@@ -156,10 +134,10 @@ class Baseball extends MY_Controller{
             $defence=$this->baseball_model->get('kbo_team_defence_2017');
         endif;
 
-        $total=$this->getRankBoard('all', 'all', 0);
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
+        $total=$this->getRankBoard('all', 'all', 0, 0);
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
 
-        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $team_array=KBO_TEAMS;
         $team=array();
 
         if($this->baseball_model->getCountDistinctByMonth($select_month)==0): $team=0;
@@ -264,7 +242,7 @@ class Baseball extends MY_Controller{
         $finalCut=array();
         $result=$this->baseball_model->get_result($inning);
 
-        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $team_array=KBO_TEAMS;
 //      경기 선택 시
         if($home_away=='all' && $duration=='all'):
             $resultSet=array();
@@ -439,6 +417,7 @@ class Baseball extends MY_Controller{
                 endforeach;
                 $recent=substr($recent, 0, -1);
 
+                echo '<br><br><br><br><br>'.$count.', '.$tie;
                 $resultSet[$item]=array('g'=>$count,'win_rate'=>$win/($count-$tie),'win'=>$win,'lose'=>$lose,'tie'=>$tie,'recent_game'=>$recent);
             endforeach;
         endif;
@@ -484,7 +463,7 @@ class Baseball extends MY_Controller{
     /* ---------------------------------------------------------- crawling ---------------------------------------------------------- */
 
     function crawling_result(){
-        /*$month_array=array('03','04','05','06','07','08','09');
+        $month_array=array('03','04','05','06','07','08','09');
         $result=array();
         foreach($month_array as $month):
             $source=json_decode($this->curl->simple_get('http://www.koreabaseball.com/ws/Schedule.asmx/GetScheduleList?leId=1&srIdList=0%2C9&seasonId=2017&gameMonth='.$month.'&teamId='));
@@ -540,20 +519,20 @@ class Baseball extends MY_Controller{
             endforeach;
         endforeach;
 
-        $this->baseball_model->insertByMonth($result);*/
+        $this->baseball_model->insertByMonth($result);
 
 //      HALF
-        $source_half=$this->curl->simple_get('/application/views/baseball/sources/result_half.php');
+        $source=$this->curl->simple_get('/application/views/baseball/sources/result_half.php');
 
-        $expl1=explode('class="date-txt">', $source_half);
+        $expl1=explode('class="date-txt">', $source);
         $expl2=explode('</span>', $expl1[1]);
         $date=substr($expl2[0],5);
 
-        $arr=array(6, 1);
-        $expl0=explode('<p class="place">', $source_half);
+        $arr=array(6, 2);
+        $expl0=explode('<p class="place">', $source);
         foreach($arr as $item):
             $rows=array();
-            for($i=1; $i<6; $i++):
+            for($i=1; $i<count($expl0); $i++):
                 $game=array();
 
                 $expl3=explode('</span>', $expl0[$i]);

@@ -4830,8 +4830,11 @@
                                             	<?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                 <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                 <td><?=$entry->team;?></td>
-                                                <td><?php if($duration=='all' && $home_away=='all') foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;
-                                                    else echo $entry->g;?>
+                                                <td>
+                                                    <?php
+                                                        if($duration=='all' && $home_away=='all') foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;
+                                                        else echo $entry->g;
+                                                    ?>
                                                 </td>
                                                 <td><?=number_format($entry->win_rate,3);?></td>
                                                 <td><?=$entry->win;?></td>

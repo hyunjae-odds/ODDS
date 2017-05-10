@@ -20,8 +20,8 @@
             <li class="s4 active" style="padding-top:40px;">
                 <div class="tab01_w">
                     <ul class="tab01_2 TLS">
-                        <li class="on ls01"><a href="/baseball/stats?handicap=0">승패</a></li>
-                        <li class="ls02"><a href="/baseball/stats?handicap=1.5">핸디캡</a></li>
+                        <li class="on ls01"><a href="/baseball/stats?inning=<?=$inning;?>&duration=<?=$duration;?>&home_away=<?=$home_away;?>&handicap=0">승패</a></li>
+                        <li class="ls02"><a href="/baseball/stats?inning=<?=$inning;?>&duration=<?=$duration;?>&home_away=<?=$home_away;?>&handicap=1.5">핸디캡</a></li>
                         <li class="ls03"><a href="javascript:void(0);">O/U</a></li>
                     </ul>
                 </div>
@@ -40,9 +40,9 @@
                                             <li class="ls01_1 active"><!-- 전체 -->
                                                 <div class="tab2_w">
                                                     <ul class="tab02 LS_tab">
-                                                        <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=all&handicap=<?=$handicap;?>">전체</a></li>
-                                                        <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=home&handicap=<?=$handicap;?>">홈</a></li>
-                                                        <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="/baseball/stats?duration=<?=$duration;?>&home_away=away&handicap=<?=$handicap;?>">원정</a></li>
+                                                        <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="/baseball/stats?inning=<?=$inning;?>&duration=<?=$duration;?>&home_away=all&handicap=<?=$handicap;?>">전체</a></li>
+                                                        <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="/baseball/stats?inning=<?=$inning;?>&duration=<?=$duration;?>&home_away=home&handicap=<?=$handicap;?>">홈</a></li>
+                                                        <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="/baseball/stats?inning=<?=$inning;?>&duration=<?=$duration;?>&home_away=away&handicap=<?=$handicap;?>">원정</a></li>
                                                     </ul>
                                                 </div>
                                                 <?php
@@ -54,15 +54,15 @@
                                                     else if($handicap==1.5) $on15='on';
                                                     else if($handicap==2) $on2='on';
                                                     else if($handicap==2.5) $on25='on';
-                                                    if($handicap!=0): echo '<ul class="r_tit2"><li class="ls01_tab_1 '.$on1.'"><a href="/baseball/stats?handicap=1">1</a></li><li class="ls01_tab_2 '.$on15.'"><a href="/baseball/stats?handicap=1.5">1.5</a></li><li class="ls01_tab_3 '.$on2.'"><a href="/baseball/stats?handicap=2">2.0</a></li><li class="ls01_tab_3 '.$on25.'"><a href="/baseball/stats?handicap=2.5">2.5</a></li></ul>';
+                                                    if($handicap!=0): echo '<ul class="r_tit2"><li class="ls01_tab_1 '.$on1.'"><a href="/baseball/stats?inning='.$inning.'&duration='.$duration.'&home_away='.$home_away.'&handicap=1">1</a></li><li class="ls01_tab_2 '.$on15.'"><a href="/baseball/stats?inning='.$inning.'&duration='.$duration.'&home_away='.$home_away.'&handicap=1.5">1.5</a></li><li class="ls01_tab_3 '.$on2.'"><a href="/baseball/stats?inning='.$inning.'&duration='.$duration.'&home_away='.$home_away.'&handicap=2">2.0</a></li><li class="ls01_tab_3 '.$on25.'"><a href="/baseball/stats?inning='.$inning.'&duration='.$duration.'&home_away='.$home_away.'&handicap=2.5">2.5</a></li></ul>';
                                                 endif; ?>
                                                 <div class="select" style="top:-7px;">
                                                     <p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
                                                     <ul>
-                                                        <li><a href="javascript:location.replace('/baseball/stats?home_away=<?=$home_away;?>&duration=all')">시즌 전체</a></li>
-                                                        <li><a href="javascript:location.replace('/baseball/stats?home_away=<?=$home_away;?>&duration=10')">10경기</a></li>
-                                                        <li><a href="javascript:location.replace('/baseball/stats?home_away=<?=$home_away;?>&duration=20')">20경기</a></li>
-                                                        <li><a href="javascript:location.replace('/baseball/stats?home_away=<?=$home_away;?>&duration=30')">30경기</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?inning=<?=$inning;?>&home_away=<?=$home_away;?>&duration=all&handicap=<?=$handicap;?>')">시즌 전체</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?inning=<?=$inning;?>&home_away=<?=$home_away;?>&duration=10&handicap=<?=$handicap;?>')">10경기</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?inning=<?=$inning;?>&home_away=<?=$home_away;?>&duration=20&handicap=<?=$handicap;?>')">20경기</a></li>
+                                                        <li><a href="javascript:location.replace('/baseball/stats?inning=<?=$inning;?>&home_away=<?=$home_away;?>&duration=30&handicap=<?=$handicap;?>')">30경기</a></li>
                                                     </ul>
                                                 </div>
                                                 <table class="table_default table_2_left" >

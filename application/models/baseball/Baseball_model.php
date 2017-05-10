@@ -13,6 +13,7 @@
 			$this->db->insert($table, $entry);
 		endforeach;
 	}
+
 	function insertByMonth($result_arr){
         $this->db->empty_table('kbo_result_2017');
 
@@ -21,6 +22,7 @@
             $this->db->insert('kbo_result_2017', $item);
         endforeach;
 	}
+
 	function insertWithRecentGame($table, $data, $recent_game, $date){
 		$num_rows=$this->db->get_where($table, array('date'=>$date))->num_rows();
 		if($num_rows>0) $this->db->delete($table, array('date'=>$date));
@@ -39,14 +41,19 @@
 			$this->db->insert($table, $entry);
 		endforeach;
 	}
+
     function insertNoDelete($table, $data){
         foreach($data as $entry):
             $this->db->set('insert_dt', 'NOW()', false);
             $this->db->insert($table, $entry);
         endforeach;
     }
+
     function insert_result($table, $data){
         foreach($data as $datum):
+            $pastGame=$this->db->get_where($table, array('date'=>$datum['date'],'home'=>$datum['home'],'away'=>$datum['away']))->row();
+            $this->db->delete($table, array('no'=>$pastGame->no));
+
             $this->db->set('insert_dt', 'NOW()', false);
             $this->db->insert($table, $datum);
         endforeach;
@@ -56,6 +63,7 @@
 	function get($table){
 		return $this->db->get($table)->result();
 	}
+
 	function getByMonth($this_month){
 		$this->db->like('date', $this_month, 'after');
 		$this->db->order_by('no', 'ASC');
@@ -63,6 +71,7 @@
 
 		return $result;
 	}
+
 //	팀별 최근 10경기 승패
     function getByScore(){
         $month=$this->get_result('all');
@@ -91,6 +100,7 @@
 
         return $result;
 	}
+
 	function getByTeam($team, $this_month){
 		$this->db->select('rank, date, team');
 		$this->db->like('date', '2017-'.$this_month, 'after');
@@ -98,6 +108,7 @@
 
 		return $this->db->get_where('kbo_team_total_2017', array('team'=>$team))->result();
 	}
+
 	function getBySort($table, $sort){
         $this->db->select('insert_dt');
     	$this->db->order_by('insert_dt', 'DESC');
@@ -111,6 +122,7 @@
         else $this->db->order_by($sort, 'DESC');
 	    return $this->db->get($table)->result();
     }
+
 	function getCountDistinctByMonth($this_month){
 		$this->db->select('date');
 		$this->db->like('date', '2017-'.$this_month, 'after');
@@ -118,6 +130,7 @@
 
 		return $this->db->get('kbo_team_total_2017')->num_rows();
 	}
+
 	function get_schedule($select_month){
 		$this->db->select('date');
 		$this->db->like('date', '-'.$select_month.'-', 'both');
@@ -126,6 +139,7 @@
 
 		return $this->db->get('kbo_team_total_2017')->result();
 	}
+
 	function getNumRows($table){
 		$this->db->select('insert_dt');
 		$this->db->order_by('insert_dt', 'DESC');
@@ -135,6 +149,7 @@
 		$this->db->where('insert_dt', $lastDate->insert_dt);
 	    return $this->db->get($table)->num_rows();
     }
+
     function getPagination($table, $limit, $offset){
     	$this->db->select('insert_dt');
     	$this->db->order_by('insert_dt', 'DESC');
@@ -145,6 +160,7 @@
      	$this->db->where('insert_dt', $lastDate->insert_dt);
         return $this->db->get($table, $limit, $offset)->result();
     }
+
     function getBySortPagination($table, $sort, $limit, $offset){
     	$this->db->select('insert_dt');
     	$this->db->order_by('insert_dt', 'DESC');
@@ -155,6 +171,7 @@
      	$this->db->where('insert_dt', $lastDate->insert_dt);
         return $this->db->get($table, $limit, $offset)->result();
     }
+
     function getBatter5(){
         $resultSet=array();
 
@@ -166,6 +183,7 @@
 
         return $this->set_player_id($resultSet, array('avg', 'hr', 'rbi', 'h', 'ops'));
     }
+
     function getPitcher5(){
         $resultSet=array();
 
@@ -178,6 +196,7 @@
 
         return $this->set_player_id($resultSet, array('era', 'w', 'sv', 'wpct', 'hld', 'so'));
     }
+
     function getRunner5($table){
         $this->db->where('insert_dt', $this->getLastDay($table));
         $this->db->order_by('rank', 'ASC');
@@ -192,6 +211,7 @@
 
         return $resultSet;
     }
+
 //  사진 출력을 위한 player_id 추가
     function set_player_id($resultSet, $str_array){
         foreach($str_array as $entry):
@@ -204,6 +224,7 @@
 
         return $resultSet;
     }
+
     function get_orderby($table, $limit, $order_by, $asc_desc){
         $this->db->select('name, team, '.$order_by);
         $this->db->where('insert_dt', $this->getLastDay($table));
@@ -220,6 +241,7 @@
 
         return $lastDate->insert_dt;
     }
+
     function sortingByTeam($table, $team){
         $this->db->select('insert_dt');
         $this->db->order_by('insert_dt', 'DESC');
@@ -231,6 +253,7 @@
 
         return $this->db->get_where($table, array('team'=>$team))->result();
     }
+
     function getScheduleAfter3Days(){
     	$today=date('m.d');
 
@@ -273,9 +296,9 @@
     }
     
     /* 득, 실, 마진 */
-    function getTotalScore($duration, $home_away){
-    	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $total=$this->get_result('all');
+    function getTotalScore($inning, $duration, $home_away){
+    	$team_array=KBO_TEAMS;
+        $total=$this->get_result($inning);
 
     	$result=array();
     	foreach($team_array as $item):
@@ -357,13 +380,13 @@
     function get_result($inning){
         $this->db->where('away_score!=', '');
         $this->db->where('home_score!=', '');
-        $this->db->order_by('no', 'DESC');
+        $this->db->order_by('date', 'DESC');
 
-        if($inning=='all'): $result=$this->db->get('kbo_result_2017')->result();
-        elseif($inning=='half'): $result=$this->db->get('kbo_result_half_2017')->result();
-        elseif($inning=='first'): $result=$this->db->get('kbo_result_first_2017')->result(); endif;
+        $table='kbo_result_2017';
+        if($inning=='half') $table='kbo_result_half_2017';
+        elseif($inning=='first') $table='kbo_result_first_2017';
 
-        return $result;
+        return $this->db->get($table)->result();
     }
 
     function getHomeAwayWinRank($handicap){

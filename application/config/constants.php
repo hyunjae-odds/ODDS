@@ -95,4 +95,4 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
  |
  */
 defined('SERVER_HOST')      OR define('SERVER_HOST', 'odds.dev');
-defined('HANDICAP15')      OR define('HANDICAP15', 1.5);
+defined('KBO_TEAMS')      OR define('KBO_TEAMS', array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화'));
