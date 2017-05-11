@@ -4163,3 +4163,4818 @@ INFO - 2017-05-11 04:22:11 --> File loaded: /Users/hyunjae/Sites/ODDS/applicatio
 INFO - 2017-05-11 04:22:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
 INFO - 2017-05-11 04:22:11 --> Final output sent to browser
 DEBUG - 2017-05-11 04:22:11 --> Total execution time: 0.2339
+INFO - 2017-05-11 04:36:01 --> Config Class Initialized
+INFO - 2017-05-11 04:36:01 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:36:01 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:36:01 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:36:01 --> URI Class Initialized
+INFO - 2017-05-11 04:36:01 --> Router Class Initialized
+INFO - 2017-05-11 04:36:01 --> Output Class Initialized
+INFO - 2017-05-11 04:36:01 --> Security Class Initialized
+DEBUG - 2017-05-11 04:36:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:36:01 --> Input Class Initialized
+INFO - 2017-05-11 04:36:01 --> Language Class Initialized
+INFO - 2017-05-11 04:36:01 --> Loader Class Initialized
+INFO - 2017-05-11 04:36:01 --> Controller Class Initialized
+INFO - 2017-05-11 04:36:01 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:36:02 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:36:02 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:36:02 --> cURL Class Initialized
+INFO - 2017-05-11 04:36:02 --> Model Class Initialized
+INFO - 2017-05-11 04:36:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:36:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 04:36:02 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:36:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 04:36:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:36:02 --> Final output sent to browser
+DEBUG - 2017-05-11 04:36:02 --> Total execution time: 0.2313
+INFO - 2017-05-11 04:36:05 --> Config Class Initialized
+INFO - 2017-05-11 04:36:05 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:36:05 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:36:05 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:36:05 --> URI Class Initialized
+INFO - 2017-05-11 04:36:05 --> Router Class Initialized
+INFO - 2017-05-11 04:36:05 --> Output Class Initialized
+INFO - 2017-05-11 04:36:05 --> Security Class Initialized
+DEBUG - 2017-05-11 04:36:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:36:05 --> Input Class Initialized
+INFO - 2017-05-11 04:36:05 --> Language Class Initialized
+INFO - 2017-05-11 04:36:05 --> Loader Class Initialized
+INFO - 2017-05-11 04:36:05 --> Controller Class Initialized
+INFO - 2017-05-11 04:36:05 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:36:05 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:36:05 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:36:05 --> cURL Class Initialized
+INFO - 2017-05-11 04:36:05 --> Model Class Initialized
+INFO - 2017-05-11 04:36:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:36:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 04:36:05 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:36:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 04:36:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:36:05 --> Final output sent to browser
+DEBUG - 2017-05-11 04:36:05 --> Total execution time: 0.2665
+INFO - 2017-05-11 04:36:50 --> Config Class Initialized
+INFO - 2017-05-11 04:36:50 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:36:50 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:36:50 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:36:50 --> URI Class Initialized
+INFO - 2017-05-11 04:36:50 --> Router Class Initialized
+INFO - 2017-05-11 04:36:50 --> Output Class Initialized
+INFO - 2017-05-11 04:36:50 --> Security Class Initialized
+DEBUG - 2017-05-11 04:36:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:36:50 --> Input Class Initialized
+INFO - 2017-05-11 04:36:50 --> Language Class Initialized
+INFO - 2017-05-11 04:36:50 --> Loader Class Initialized
+INFO - 2017-05-11 04:36:50 --> Controller Class Initialized
+INFO - 2017-05-11 04:36:50 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:36:50 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:36:50 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:36:50 --> cURL Class Initialized
+INFO - 2017-05-11 04:36:50 --> Model Class Initialized
+INFO - 2017-05-11 04:36:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:36:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 04:36:50 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:36:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 04:36:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:36:50 --> Final output sent to browser
+DEBUG - 2017-05-11 04:36:50 --> Total execution time: 0.1748
+INFO - 2017-05-11 04:36:53 --> Config Class Initialized
+INFO - 2017-05-11 04:36:53 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:36:53 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:36:53 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:36:53 --> URI Class Initialized
+INFO - 2017-05-11 04:36:53 --> Router Class Initialized
+INFO - 2017-05-11 04:36:53 --> Output Class Initialized
+INFO - 2017-05-11 04:36:53 --> Security Class Initialized
+DEBUG - 2017-05-11 04:36:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:36:53 --> Input Class Initialized
+INFO - 2017-05-11 04:36:53 --> Language Class Initialized
+INFO - 2017-05-11 04:36:53 --> Loader Class Initialized
+INFO - 2017-05-11 04:36:53 --> Controller Class Initialized
+INFO - 2017-05-11 04:36:53 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:36:53 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:36:53 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:36:53 --> cURL Class Initialized
+INFO - 2017-05-11 04:36:53 --> Model Class Initialized
+INFO - 2017-05-11 04:36:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:36:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 04:36:53 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:36:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 04:36:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:36:53 --> Final output sent to browser
+DEBUG - 2017-05-11 04:36:53 --> Total execution time: 0.1962
+INFO - 2017-05-11 04:37:00 --> Config Class Initialized
+INFO - 2017-05-11 04:37:00 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:37:00 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:37:00 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:37:00 --> URI Class Initialized
+INFO - 2017-05-11 04:37:00 --> Router Class Initialized
+INFO - 2017-05-11 04:37:00 --> Output Class Initialized
+INFO - 2017-05-11 04:37:00 --> Security Class Initialized
+DEBUG - 2017-05-11 04:37:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:37:00 --> Input Class Initialized
+INFO - 2017-05-11 04:37:00 --> Language Class Initialized
+INFO - 2017-05-11 04:37:00 --> Loader Class Initialized
+INFO - 2017-05-11 04:37:00 --> Controller Class Initialized
+INFO - 2017-05-11 04:37:00 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:37:00 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:37:00 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:37:00 --> cURL Class Initialized
+INFO - 2017-05-11 04:37:00 --> Model Class Initialized
+INFO - 2017-05-11 04:37:00 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:37:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:37:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 04:37:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 04:37:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:37:00 --> Final output sent to browser
+DEBUG - 2017-05-11 04:37:00 --> Total execution time: 0.1981
+INFO - 2017-05-11 04:38:23 --> Config Class Initialized
+INFO - 2017-05-11 04:38:23 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:38:23 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:38:23 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:38:23 --> URI Class Initialized
+INFO - 2017-05-11 04:38:23 --> Router Class Initialized
+INFO - 2017-05-11 04:38:23 --> Output Class Initialized
+INFO - 2017-05-11 04:38:23 --> Security Class Initialized
+DEBUG - 2017-05-11 04:38:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:38:23 --> Input Class Initialized
+INFO - 2017-05-11 04:38:23 --> Language Class Initialized
+INFO - 2017-05-11 04:38:23 --> Loader Class Initialized
+INFO - 2017-05-11 04:38:23 --> Controller Class Initialized
+INFO - 2017-05-11 04:38:23 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:38:23 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:38:23 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:38:23 --> cURL Class Initialized
+INFO - 2017-05-11 04:38:23 --> Model Class Initialized
+INFO - 2017-05-11 04:38:23 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:38:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:38:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 04:38:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-05-11 04:38:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:38:23 --> Final output sent to browser
+DEBUG - 2017-05-11 04:38:23 --> Total execution time: 0.1385
+INFO - 2017-05-11 04:38:25 --> Config Class Initialized
+INFO - 2017-05-11 04:38:25 --> Hooks Class Initialized
+DEBUG - 2017-05-11 04:38:25 --> UTF-8 Support Enabled
+INFO - 2017-05-11 04:38:25 --> Utf8 Class Initialized
+INFO - 2017-05-11 04:38:25 --> URI Class Initialized
+INFO - 2017-05-11 04:38:25 --> Router Class Initialized
+INFO - 2017-05-11 04:38:25 --> Output Class Initialized
+INFO - 2017-05-11 04:38:25 --> Security Class Initialized
+DEBUG - 2017-05-11 04:38:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 04:38:25 --> Input Class Initialized
+INFO - 2017-05-11 04:38:25 --> Language Class Initialized
+INFO - 2017-05-11 04:38:25 --> Loader Class Initialized
+INFO - 2017-05-11 04:38:25 --> Controller Class Initialized
+INFO - 2017-05-11 04:38:25 --> Database Driver Class Initialized
+INFO - 2017-05-11 04:38:25 --> Helper loaded: url_helper
+INFO - 2017-05-11 04:38:25 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 04:38:25 --> cURL Class Initialized
+INFO - 2017-05-11 04:38:25 --> Model Class Initialized
+INFO - 2017-05-11 04:38:25 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 04:38:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 04:38:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+ERROR - 2017-05-11 04:38:25 --> Severity: Warning --> A non-numeric value encountered /Users/hyunjae/Sites/ODDS/application/views/baseball/result.php 23
+ERROR - 2017-05-11 04:38:25 --> Severity: Warning --> A non-numeric value encountered /Users/hyunjae/Sites/ODDS/application/views/baseball/result.php 40
+INFO - 2017-05-11 04:38:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-05-11 04:38:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 04:38:25 --> Final output sent to browser
+DEBUG - 2017-05-11 04:38:25 --> Total execution time: 0.1261
+INFO - 2017-05-11 05:17:14 --> Config Class Initialized
+INFO - 2017-05-11 05:17:14 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:17:14 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:17:14 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:17:14 --> URI Class Initialized
+INFO - 2017-05-11 05:17:14 --> Router Class Initialized
+INFO - 2017-05-11 05:17:14 --> Output Class Initialized
+INFO - 2017-05-11 05:17:14 --> Security Class Initialized
+DEBUG - 2017-05-11 05:17:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:17:14 --> Input Class Initialized
+INFO - 2017-05-11 05:17:14 --> Language Class Initialized
+INFO - 2017-05-11 05:17:14 --> Loader Class Initialized
+INFO - 2017-05-11 05:17:14 --> Controller Class Initialized
+INFO - 2017-05-11 05:17:14 --> Database Driver Class Initialized
+INFO - 2017-05-11 05:17:14 --> Helper loaded: url_helper
+INFO - 2017-05-11 05:17:14 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 05:17:14 --> cURL Class Initialized
+INFO - 2017-05-11 05:17:14 --> Model Class Initialized
+INFO - 2017-05-11 05:17:14 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 05:17:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 05:17:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 05:17:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-05-11 05:17:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 05:17:14 --> Final output sent to browser
+DEBUG - 2017-05-11 05:17:14 --> Total execution time: 0.1038
+INFO - 2017-05-11 05:17:21 --> Config Class Initialized
+INFO - 2017-05-11 05:17:21 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:17:21 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:17:21 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:17:21 --> URI Class Initialized
+INFO - 2017-05-11 05:17:21 --> Router Class Initialized
+INFO - 2017-05-11 05:17:21 --> Output Class Initialized
+INFO - 2017-05-11 05:17:21 --> Security Class Initialized
+DEBUG - 2017-05-11 05:17:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:17:21 --> Input Class Initialized
+INFO - 2017-05-11 05:17:21 --> Language Class Initialized
+ERROR - 2017-05-11 05:17:21 --> 404 Page Not Found: Baseball/match1.php
+INFO - 2017-05-11 05:19:27 --> Config Class Initialized
+INFO - 2017-05-11 05:19:27 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:19:27 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:27 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:27 --> URI Class Initialized
+INFO - 2017-05-11 05:19:27 --> Router Class Initialized
+INFO - 2017-05-11 05:19:27 --> Output Class Initialized
+INFO - 2017-05-11 05:19:27 --> Security Class Initialized
+DEBUG - 2017-05-11 05:19:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:27 --> Input Class Initialized
+INFO - 2017-05-11 05:19:27 --> Language Class Initialized
+INFO - 2017-05-11 05:19:27 --> Loader Class Initialized
+INFO - 2017-05-11 05:19:27 --> Controller Class Initialized
+INFO - 2017-05-11 05:19:27 --> Database Driver Class Initialized
+INFO - 2017-05-11 05:19:27 --> Helper loaded: url_helper
+INFO - 2017-05-11 05:19:27 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 05:19:27 --> cURL Class Initialized
+INFO - 2017-05-11 05:19:27 --> Model Class Initialized
+INFO - 2017-05-11 05:19:27 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 05:19:27 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 05:19:27 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 05:19:27 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-05-11 05:19:27 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 05:19:27 --> Final output sent to browser
+DEBUG - 2017-05-11 05:19:27 --> Total execution time: 0.1708
+INFO - 2017-05-11 05:19:30 --> Config Class Initialized
+INFO - 2017-05-11 05:19:30 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:30 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:30 --> URI Class Initialized
+INFO - 2017-05-11 05:19:30 --> Router Class Initialized
+INFO - 2017-05-11 05:19:30 --> Output Class Initialized
+INFO - 2017-05-11 05:19:30 --> Security Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:30 --> Input Class Initialized
+INFO - 2017-05-11 05:19:30 --> Language Class Initialized
+INFO - 2017-05-11 05:19:30 --> Loader Class Initialized
+INFO - 2017-05-11 05:19:30 --> Controller Class Initialized
+INFO - 2017-05-11 05:19:30 --> Database Driver Class Initialized
+INFO - 2017-05-11 05:19:30 --> Helper loaded: url_helper
+INFO - 2017-05-11 05:19:30 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 05:19:30 --> cURL Class Initialized
+INFO - 2017-05-11 05:19:30 --> Model Class Initialized
+INFO - 2017-05-11 05:19:30 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 05:19:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 05:19:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 05:19:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match1.php
+INFO - 2017-05-11 05:19:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 05:19:30 --> Config Class Initialized
+INFO - 2017-05-11 05:19:30 --> Hooks Class Initialized
+INFO - 2017-05-11 05:19:30 --> Config Class Initialized
+INFO - 2017-05-11 05:19:30 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> UTF-8 Support Enabled
+DEBUG - 2017-05-11 05:19:30 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:30 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:30 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:30 --> URI Class Initialized
+INFO - 2017-05-11 05:19:30 --> URI Class Initialized
+INFO - 2017-05-11 05:19:30 --> Router Class Initialized
+INFO - 2017-05-11 05:19:30 --> Router Class Initialized
+INFO - 2017-05-11 05:19:30 --> Output Class Initialized
+INFO - 2017-05-11 05:19:30 --> Output Class Initialized
+INFO - 2017-05-11 05:19:30 --> Security Class Initialized
+INFO - 2017-05-11 05:19:30 --> Security Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2017-05-11 05:19:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:30 --> Input Class Initialized
+INFO - 2017-05-11 05:19:30 --> Input Class Initialized
+INFO - 2017-05-11 05:19:30 --> Language Class Initialized
+INFO - 2017-05-11 05:19:30 --> Language Class Initialized
+ERROR - 2017-05-11 05:19:30 --> 404 Page Not Found: Image/game
+ERROR - 2017-05-11 05:19:30 --> 404 Page Not Found: Image/game
+INFO - 2017-05-11 05:19:30 --> Config Class Initialized
+INFO - 2017-05-11 05:19:30 --> Hooks Class Initialized
+INFO - 2017-05-11 05:19:30 --> Config Class Initialized
+INFO - 2017-05-11 05:19:30 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:30 --> Utf8 Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:30 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:30 --> URI Class Initialized
+INFO - 2017-05-11 05:19:30 --> Router Class Initialized
+INFO - 2017-05-11 05:19:30 --> URI Class Initialized
+INFO - 2017-05-11 05:19:30 --> Output Class Initialized
+INFO - 2017-05-11 05:19:30 --> Router Class Initialized
+INFO - 2017-05-11 05:19:30 --> Security Class Initialized
+INFO - 2017-05-11 05:19:30 --> Output Class Initialized
+DEBUG - 2017-05-11 05:19:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:30 --> Input Class Initialized
+INFO - 2017-05-11 05:19:30 --> Language Class Initialized
+INFO - 2017-05-11 05:19:30 --> Security Class Initialized
+ERROR - 2017-05-11 05:19:30 --> 404 Page Not Found: Image/base
+DEBUG - 2017-05-11 05:19:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:30 --> Input Class Initialized
+INFO - 2017-05-11 05:19:30 --> Language Class Initialized
+ERROR - 2017-05-11 05:19:30 --> 404 Page Not Found: Image/base
+INFO - 2017-05-11 05:19:30 --> Final output sent to browser
+DEBUG - 2017-05-11 05:19:30 --> Total execution time: 0.2210
+INFO - 2017-05-11 05:19:31 --> Config Class Initialized
+INFO - 2017-05-11 05:19:31 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:19:31 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:31 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:31 --> URI Class Initialized
+INFO - 2017-05-11 05:19:31 --> Router Class Initialized
+INFO - 2017-05-11 05:19:31 --> Output Class Initialized
+INFO - 2017-05-11 05:19:31 --> Security Class Initialized
+DEBUG - 2017-05-11 05:19:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:31 --> Input Class Initialized
+INFO - 2017-05-11 05:19:31 --> Language Class Initialized
+ERROR - 2017-05-11 05:19:31 --> 404 Page Not Found: Image/game
+INFO - 2017-05-11 05:19:31 --> Config Class Initialized
+INFO - 2017-05-11 05:19:31 --> Hooks Class Initialized
+INFO - 2017-05-11 05:19:31 --> Config Class Initialized
+INFO - 2017-05-11 05:19:31 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:19:31 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:31 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:31 --> URI Class Initialized
+DEBUG - 2017-05-11 05:19:31 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:19:31 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:19:31 --> Router Class Initialized
+INFO - 2017-05-11 05:19:31 --> URI Class Initialized
+INFO - 2017-05-11 05:19:31 --> Output Class Initialized
+INFO - 2017-05-11 05:19:31 --> Router Class Initialized
+INFO - 2017-05-11 05:19:31 --> Security Class Initialized
+INFO - 2017-05-11 05:19:31 --> Output Class Initialized
+DEBUG - 2017-05-11 05:19:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:31 --> Security Class Initialized
+INFO - 2017-05-11 05:19:31 --> Input Class Initialized
+INFO - 2017-05-11 05:19:31 --> Language Class Initialized
+DEBUG - 2017-05-11 05:19:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:19:31 --> Input Class Initialized
+ERROR - 2017-05-11 05:19:31 --> 404 Page Not Found: Image/base
+INFO - 2017-05-11 05:19:31 --> Language Class Initialized
+ERROR - 2017-05-11 05:19:31 --> 404 Page Not Found: Image/base
+INFO - 2017-05-11 05:21:06 --> Config Class Initialized
+INFO - 2017-05-11 05:21:06 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:21:06 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:21:06 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:21:06 --> URI Class Initialized
+INFO - 2017-05-11 05:21:06 --> Router Class Initialized
+INFO - 2017-05-11 05:21:06 --> Output Class Initialized
+INFO - 2017-05-11 05:21:06 --> Security Class Initialized
+DEBUG - 2017-05-11 05:21:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:21:06 --> Input Class Initialized
+INFO - 2017-05-11 05:21:06 --> Language Class Initialized
+INFO - 2017-05-11 05:21:06 --> Loader Class Initialized
+INFO - 2017-05-11 05:21:06 --> Controller Class Initialized
+INFO - 2017-05-11 05:21:06 --> Database Driver Class Initialized
+INFO - 2017-05-11 05:21:06 --> Helper loaded: url_helper
+INFO - 2017-05-11 05:21:06 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 05:21:06 --> cURL Class Initialized
+INFO - 2017-05-11 05:21:06 --> Model Class Initialized
+INFO - 2017-05-11 05:21:06 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 05:21:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 05:21:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 05:21:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 05:21:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 05:21:06 --> Final output sent to browser
+DEBUG - 2017-05-11 05:21:06 --> Total execution time: 0.2034
+INFO - 2017-05-11 05:21:08 --> Config Class Initialized
+INFO - 2017-05-11 05:21:08 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:21:08 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:21:08 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:21:08 --> URI Class Initialized
+INFO - 2017-05-11 05:21:08 --> Router Class Initialized
+INFO - 2017-05-11 05:21:08 --> Output Class Initialized
+INFO - 2017-05-11 05:21:08 --> Security Class Initialized
+DEBUG - 2017-05-11 05:21:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:21:08 --> Input Class Initialized
+INFO - 2017-05-11 05:21:08 --> Language Class Initialized
+INFO - 2017-05-11 05:21:08 --> Loader Class Initialized
+INFO - 2017-05-11 05:21:08 --> Controller Class Initialized
+INFO - 2017-05-11 05:21:08 --> Database Driver Class Initialized
+INFO - 2017-05-11 05:21:08 --> Helper loaded: url_helper
+INFO - 2017-05-11 05:21:08 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 05:21:08 --> cURL Class Initialized
+INFO - 2017-05-11 05:21:08 --> Model Class Initialized
+INFO - 2017-05-11 05:21:08 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 05:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 05:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 05:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 05:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 05:21:08 --> Final output sent to browser
+DEBUG - 2017-05-11 05:21:08 --> Total execution time: 0.1869
+INFO - 2017-05-11 05:56:04 --> Config Class Initialized
+INFO - 2017-05-11 05:56:04 --> Hooks Class Initialized
+DEBUG - 2017-05-11 05:56:04 --> UTF-8 Support Enabled
+INFO - 2017-05-11 05:56:04 --> Utf8 Class Initialized
+INFO - 2017-05-11 05:56:04 --> URI Class Initialized
+INFO - 2017-05-11 05:56:04 --> Router Class Initialized
+INFO - 2017-05-11 05:56:04 --> Output Class Initialized
+INFO - 2017-05-11 05:56:04 --> Security Class Initialized
+DEBUG - 2017-05-11 05:56:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 05:56:04 --> Input Class Initialized
+INFO - 2017-05-11 05:56:04 --> Language Class Initialized
+INFO - 2017-05-11 05:56:04 --> Loader Class Initialized
+INFO - 2017-05-11 05:56:04 --> Controller Class Initialized
+INFO - 2017-05-11 05:56:04 --> Database Driver Class Initialized
+INFO - 2017-05-11 05:56:04 --> Helper loaded: url_helper
+INFO - 2017-05-11 05:56:04 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 05:56:04 --> cURL Class Initialized
+INFO - 2017-05-11 05:56:04 --> Model Class Initialized
+INFO - 2017-05-11 05:56:04 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 05:56:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 05:56:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 05:56:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 05:56:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 05:56:04 --> Final output sent to browser
+DEBUG - 2017-05-11 05:56:04 --> Total execution time: 0.2366
+INFO - 2017-05-11 06:39:20 --> Config Class Initialized
+INFO - 2017-05-11 06:39:20 --> Hooks Class Initialized
+DEBUG - 2017-05-11 06:39:20 --> UTF-8 Support Enabled
+INFO - 2017-05-11 06:39:20 --> Utf8 Class Initialized
+INFO - 2017-05-11 06:39:20 --> URI Class Initialized
+INFO - 2017-05-11 06:39:20 --> Router Class Initialized
+INFO - 2017-05-11 06:39:20 --> Output Class Initialized
+INFO - 2017-05-11 06:39:20 --> Security Class Initialized
+DEBUG - 2017-05-11 06:39:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 06:39:20 --> Input Class Initialized
+INFO - 2017-05-11 06:39:20 --> Language Class Initialized
+INFO - 2017-05-11 06:39:20 --> Loader Class Initialized
+INFO - 2017-05-11 06:39:20 --> Controller Class Initialized
+INFO - 2017-05-11 06:39:20 --> Database Driver Class Initialized
+INFO - 2017-05-11 06:39:20 --> Helper loaded: url_helper
+INFO - 2017-05-11 06:39:20 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 06:39:20 --> cURL Class Initialized
+INFO - 2017-05-11 06:39:20 --> Model Class Initialized
+INFO - 2017-05-11 06:39:20 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 06:39:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 06:39:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 06:39:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 06:39:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 06:39:20 --> Final output sent to browser
+DEBUG - 2017-05-11 06:39:20 --> Total execution time: 0.2226
+INFO - 2017-05-11 07:03:13 --> Config Class Initialized
+INFO - 2017-05-11 07:03:13 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:03:13 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:03:13 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:03:13 --> URI Class Initialized
+INFO - 2017-05-11 07:03:13 --> Router Class Initialized
+INFO - 2017-05-11 07:03:13 --> Output Class Initialized
+INFO - 2017-05-11 07:03:13 --> Security Class Initialized
+DEBUG - 2017-05-11 07:03:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:03:13 --> Input Class Initialized
+INFO - 2017-05-11 07:03:13 --> Language Class Initialized
+INFO - 2017-05-11 07:03:13 --> Loader Class Initialized
+INFO - 2017-05-11 07:03:13 --> Controller Class Initialized
+INFO - 2017-05-11 07:03:13 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:03:13 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:03:13 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:03:13 --> cURL Class Initialized
+INFO - 2017-05-11 07:03:13 --> Model Class Initialized
+INFO - 2017-05-11 07:03:13 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:03:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:03:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+ERROR - 2017-05-11 07:03:13 --> Severity: Warning --> include(match_1): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 89
+ERROR - 2017-05-11 07:03:13 --> Severity: Warning --> include(): Failed opening 'match_1' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 89
+ERROR - 2017-05-11 07:03:13 --> Severity: Warning --> include(match_2): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 90
+ERROR - 2017-05-11 07:03:13 --> Severity: Warning --> include(): Failed opening 'match_2' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 90
+ERROR - 2017-05-11 07:03:13 --> Severity: Warning --> include(match_3): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 91
+ERROR - 2017-05-11 07:03:13 --> Severity: Warning --> include(): Failed opening 'match_3' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 91
+INFO - 2017-05-11 07:03:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:03:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:03:13 --> Final output sent to browser
+DEBUG - 2017-05-11 07:03:13 --> Total execution time: 0.1355
+INFO - 2017-05-11 07:04:12 --> Config Class Initialized
+INFO - 2017-05-11 07:04:12 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:04:12 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:04:12 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:04:12 --> URI Class Initialized
+INFO - 2017-05-11 07:04:12 --> Router Class Initialized
+INFO - 2017-05-11 07:04:12 --> Output Class Initialized
+INFO - 2017-05-11 07:04:12 --> Security Class Initialized
+DEBUG - 2017-05-11 07:04:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:04:12 --> Input Class Initialized
+INFO - 2017-05-11 07:04:12 --> Language Class Initialized
+INFO - 2017-05-11 07:04:12 --> Loader Class Initialized
+INFO - 2017-05-11 07:04:12 --> Controller Class Initialized
+INFO - 2017-05-11 07:04:12 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:04:12 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:04:12 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:04:12 --> cURL Class Initialized
+INFO - 2017-05-11 07:04:12 --> Model Class Initialized
+INFO - 2017-05-11 07:04:12 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:04:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:04:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 07:04:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:04:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:04:12 --> Final output sent to browser
+DEBUG - 2017-05-11 07:04:12 --> Total execution time: 0.1741
+INFO - 2017-05-11 07:09:19 --> Config Class Initialized
+INFO - 2017-05-11 07:09:19 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:09:19 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:09:19 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:09:19 --> URI Class Initialized
+INFO - 2017-05-11 07:09:19 --> Router Class Initialized
+INFO - 2017-05-11 07:09:19 --> Output Class Initialized
+INFO - 2017-05-11 07:09:19 --> Security Class Initialized
+DEBUG - 2017-05-11 07:09:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:09:19 --> Input Class Initialized
+INFO - 2017-05-11 07:09:19 --> Language Class Initialized
+INFO - 2017-05-11 07:09:19 --> Loader Class Initialized
+INFO - 2017-05-11 07:09:19 --> Controller Class Initialized
+INFO - 2017-05-11 07:09:19 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:09:19 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:09:19 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:09:19 --> cURL Class Initialized
+INFO - 2017-05-11 07:09:19 --> Model Class Initialized
+INFO - 2017-05-11 07:09:19 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:09:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:09:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 07:09:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:09:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:09:19 --> Final output sent to browser
+DEBUG - 2017-05-11 07:09:19 --> Total execution time: 0.1811
+INFO - 2017-05-11 07:10:02 --> Config Class Initialized
+INFO - 2017-05-11 07:10:02 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:10:02 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:10:02 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:10:02 --> URI Class Initialized
+INFO - 2017-05-11 07:10:02 --> Router Class Initialized
+INFO - 2017-05-11 07:10:02 --> Output Class Initialized
+INFO - 2017-05-11 07:10:02 --> Security Class Initialized
+DEBUG - 2017-05-11 07:10:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:10:02 --> Input Class Initialized
+INFO - 2017-05-11 07:10:02 --> Language Class Initialized
+INFO - 2017-05-11 07:10:02 --> Loader Class Initialized
+INFO - 2017-05-11 07:10:02 --> Controller Class Initialized
+INFO - 2017-05-11 07:10:02 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:10:02 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:10:02 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:10:02 --> cURL Class Initialized
+INFO - 2017-05-11 07:10:02 --> Model Class Initialized
+INFO - 2017-05-11 07:10:02 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:10:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:10:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 07:10:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:10:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:10:02 --> Final output sent to browser
+DEBUG - 2017-05-11 07:10:02 --> Total execution time: 0.1666
+INFO - 2017-05-11 07:29:05 --> Config Class Initialized
+INFO - 2017-05-11 07:29:05 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:29:05 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:29:05 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:29:05 --> URI Class Initialized
+INFO - 2017-05-11 07:29:05 --> Router Class Initialized
+INFO - 2017-05-11 07:29:05 --> Output Class Initialized
+INFO - 2017-05-11 07:29:05 --> Security Class Initialized
+DEBUG - 2017-05-11 07:29:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:29:05 --> Input Class Initialized
+INFO - 2017-05-11 07:29:05 --> Language Class Initialized
+INFO - 2017-05-11 07:29:05 --> Loader Class Initialized
+INFO - 2017-05-11 07:29:05 --> Controller Class Initialized
+INFO - 2017-05-11 07:29:05 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:29:06 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:29:06 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:29:06 --> cURL Class Initialized
+INFO - 2017-05-11 07:29:06 --> Model Class Initialized
+INFO - 2017-05-11 07:29:06 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:29:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:29:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+ERROR - 2017-05-11 07:29:06 --> Severity: Warning --> include(match_2_1.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:29:06 --> Severity: Warning --> include(): Failed opening 'match_2_1.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:29:06 --> Severity: Warning --> include(match_2_2.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+ERROR - 2017-05-11 07:29:06 --> Severity: Warning --> include(): Failed opening 'match_2_2.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+INFO - 2017-05-11 07:29:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:29:06 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:29:06 --> Final output sent to browser
+DEBUG - 2017-05-11 07:29:06 --> Total execution time: 0.1452
+INFO - 2017-05-11 07:30:17 --> Config Class Initialized
+INFO - 2017-05-11 07:30:17 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:30:17 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:30:17 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:30:17 --> URI Class Initialized
+INFO - 2017-05-11 07:30:17 --> Router Class Initialized
+INFO - 2017-05-11 07:30:17 --> Output Class Initialized
+INFO - 2017-05-11 07:30:17 --> Security Class Initialized
+DEBUG - 2017-05-11 07:30:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:30:17 --> Input Class Initialized
+INFO - 2017-05-11 07:30:17 --> Language Class Initialized
+INFO - 2017-05-11 07:30:17 --> Loader Class Initialized
+INFO - 2017-05-11 07:30:17 --> Controller Class Initialized
+INFO - 2017-05-11 07:30:17 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:30:17 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:30:17 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:30:17 --> cURL Class Initialized
+INFO - 2017-05-11 07:30:17 --> Model Class Initialized
+INFO - 2017-05-11 07:30:17 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:30:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:30:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+ERROR - 2017-05-11 07:30:17 --> Severity: Warning --> include(match_2_1.php.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:30:17 --> Severity: Warning --> include(): Failed opening 'match_2_1.php.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:30:17 --> Severity: Warning --> include(match_2_2.php.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+ERROR - 2017-05-11 07:30:17 --> Severity: Warning --> include(): Failed opening 'match_2_2.php.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+INFO - 2017-05-11 07:30:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:30:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:30:17 --> Final output sent to browser
+DEBUG - 2017-05-11 07:30:17 --> Total execution time: 0.1770
+INFO - 2017-05-11 07:30:18 --> Config Class Initialized
+INFO - 2017-05-11 07:30:18 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:30:18 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:30:18 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:30:18 --> URI Class Initialized
+INFO - 2017-05-11 07:30:18 --> Router Class Initialized
+INFO - 2017-05-11 07:30:18 --> Output Class Initialized
+INFO - 2017-05-11 07:30:18 --> Security Class Initialized
+DEBUG - 2017-05-11 07:30:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:30:18 --> Input Class Initialized
+INFO - 2017-05-11 07:30:18 --> Language Class Initialized
+INFO - 2017-05-11 07:30:18 --> Loader Class Initialized
+INFO - 2017-05-11 07:30:18 --> Controller Class Initialized
+INFO - 2017-05-11 07:30:18 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:30:18 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:30:18 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:30:18 --> cURL Class Initialized
+INFO - 2017-05-11 07:30:18 --> Model Class Initialized
+INFO - 2017-05-11 07:30:18 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:30:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:30:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+ERROR - 2017-05-11 07:30:18 --> Severity: Warning --> include(match_2_1.php.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:30:18 --> Severity: Warning --> include(): Failed opening 'match_2_1.php.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:30:18 --> Severity: Warning --> include(match_2_2.php.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+ERROR - 2017-05-11 07:30:18 --> Severity: Warning --> include(): Failed opening 'match_2_2.php.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+INFO - 2017-05-11 07:30:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:30:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:30:18 --> Final output sent to browser
+DEBUG - 2017-05-11 07:30:18 --> Total execution time: 0.1330
+INFO - 2017-05-11 07:30:19 --> Config Class Initialized
+INFO - 2017-05-11 07:30:19 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:30:19 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:30:19 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:30:19 --> URI Class Initialized
+INFO - 2017-05-11 07:30:19 --> Router Class Initialized
+INFO - 2017-05-11 07:30:19 --> Output Class Initialized
+INFO - 2017-05-11 07:30:19 --> Security Class Initialized
+DEBUG - 2017-05-11 07:30:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:30:19 --> Input Class Initialized
+INFO - 2017-05-11 07:30:19 --> Language Class Initialized
+INFO - 2017-05-11 07:30:19 --> Loader Class Initialized
+INFO - 2017-05-11 07:30:19 --> Controller Class Initialized
+INFO - 2017-05-11 07:30:19 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:30:19 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:30:19 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:30:19 --> cURL Class Initialized
+INFO - 2017-05-11 07:30:19 --> Model Class Initialized
+INFO - 2017-05-11 07:30:19 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:30:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:30:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+ERROR - 2017-05-11 07:30:19 --> Severity: Warning --> include(match_2_1.php.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:30:19 --> Severity: Warning --> include(): Failed opening 'match_2_1.php.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 14
+ERROR - 2017-05-11 07:30:19 --> Severity: Warning --> include(match_2_2.php.php): failed to open stream: No such file or directory /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+ERROR - 2017-05-11 07:30:19 --> Severity: Warning --> include(): Failed opening 'match_2_2.php.php' for inclusion (include_path='.:') /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 15
+INFO - 2017-05-11 07:30:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:30:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:30:19 --> Final output sent to browser
+DEBUG - 2017-05-11 07:30:19 --> Total execution time: 0.1019
+INFO - 2017-05-11 07:30:37 --> Config Class Initialized
+INFO - 2017-05-11 07:30:37 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:30:37 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:30:37 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:30:37 --> URI Class Initialized
+INFO - 2017-05-11 07:30:37 --> Router Class Initialized
+INFO - 2017-05-11 07:30:37 --> Output Class Initialized
+INFO - 2017-05-11 07:30:37 --> Security Class Initialized
+DEBUG - 2017-05-11 07:30:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:30:37 --> Input Class Initialized
+INFO - 2017-05-11 07:30:37 --> Language Class Initialized
+INFO - 2017-05-11 07:30:37 --> Loader Class Initialized
+INFO - 2017-05-11 07:30:37 --> Controller Class Initialized
+INFO - 2017-05-11 07:30:37 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:30:37 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:30:37 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:30:37 --> cURL Class Initialized
+INFO - 2017-05-11 07:30:37 --> Model Class Initialized
+INFO - 2017-05-11 07:30:37 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:30:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:30:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 07:30:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:30:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:30:37 --> Final output sent to browser
+DEBUG - 2017-05-11 07:30:37 --> Total execution time: 0.2028
+INFO - 2017-05-11 07:46:48 --> Config Class Initialized
+INFO - 2017-05-11 07:46:48 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:46:48 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:46:48 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:46:48 --> URI Class Initialized
+INFO - 2017-05-11 07:46:48 --> Router Class Initialized
+INFO - 2017-05-11 07:46:48 --> Output Class Initialized
+INFO - 2017-05-11 07:46:48 --> Security Class Initialized
+DEBUG - 2017-05-11 07:46:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:46:48 --> Input Class Initialized
+INFO - 2017-05-11 07:46:48 --> Language Class Initialized
+INFO - 2017-05-11 07:46:48 --> Loader Class Initialized
+INFO - 2017-05-11 07:46:48 --> Controller Class Initialized
+INFO - 2017-05-11 07:46:48 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:46:48 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:46:48 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:46:48 --> cURL Class Initialized
+INFO - 2017-05-11 07:46:48 --> Model Class Initialized
+INFO - 2017-05-11 07:46:48 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 07:46:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 07:46:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 07:46:49 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 07:46:49 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 07:46:49 --> Final output sent to browser
+DEBUG - 2017-05-11 07:46:49 --> Total execution time: 0.2239
+INFO - 2017-05-11 07:46:53 --> Config Class Initialized
+INFO - 2017-05-11 07:46:53 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:46:53 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:46:53 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:46:53 --> URI Class Initialized
+INFO - 2017-05-11 07:46:53 --> Router Class Initialized
+INFO - 2017-05-11 07:46:53 --> Output Class Initialized
+INFO - 2017-05-11 07:46:53 --> Security Class Initialized
+DEBUG - 2017-05-11 07:46:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:46:53 --> Input Class Initialized
+INFO - 2017-05-11 07:46:53 --> Language Class Initialized
+INFO - 2017-05-11 07:46:53 --> Loader Class Initialized
+INFO - 2017-05-11 07:46:53 --> Controller Class Initialized
+INFO - 2017-05-11 07:46:53 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:46:53 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:46:53 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:46:53 --> cURL Class Initialized
+INFO - 2017-05-11 07:46:53 --> Model Class Initialized
+INFO - 2017-05-11 07:46:55 --> Config Class Initialized
+INFO - 2017-05-11 07:46:55 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:46:55 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:46:55 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:46:55 --> URI Class Initialized
+INFO - 2017-05-11 07:46:55 --> Router Class Initialized
+INFO - 2017-05-11 07:46:55 --> Output Class Initialized
+INFO - 2017-05-11 07:46:55 --> Security Class Initialized
+DEBUG - 2017-05-11 07:46:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:46:55 --> Input Class Initialized
+INFO - 2017-05-11 07:46:55 --> Language Class Initialized
+INFO - 2017-05-11 07:46:55 --> Loader Class Initialized
+INFO - 2017-05-11 07:46:55 --> Controller Class Initialized
+INFO - 2017-05-11 07:46:55 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:46:55 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:46:55 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:46:55 --> cURL Class Initialized
+INFO - 2017-05-11 07:46:55 --> Model Class Initialized
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:56 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+INFO - 2017-05-11 07:46:56 --> Final output sent to browser
+DEBUG - 2017-05-11 07:46:56 --> Total execution time: 3.5368
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:46:59 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+INFO - 2017-05-11 07:46:59 --> Final output sent to browser
+DEBUG - 2017-05-11 07:46:59 --> Total execution time: 3.7345
+INFO - 2017-05-11 07:53:12 --> Config Class Initialized
+INFO - 2017-05-11 07:53:12 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:53:12 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:53:12 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:53:12 --> URI Class Initialized
+INFO - 2017-05-11 07:53:12 --> Router Class Initialized
+INFO - 2017-05-11 07:53:12 --> Output Class Initialized
+INFO - 2017-05-11 07:53:12 --> Security Class Initialized
+DEBUG - 2017-05-11 07:53:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:53:12 --> Input Class Initialized
+INFO - 2017-05-11 07:53:12 --> Language Class Initialized
+INFO - 2017-05-11 07:53:12 --> Loader Class Initialized
+INFO - 2017-05-11 07:53:12 --> Controller Class Initialized
+INFO - 2017-05-11 07:53:12 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:53:12 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:53:12 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:53:12 --> cURL Class Initialized
+INFO - 2017-05-11 07:53:12 --> Model Class Initialized
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:16 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:17 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:18 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:19 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:20 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:21 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:22 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:23 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:24 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 22
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 23
+ERROR - 2017-05-11 07:53:25 --> Severity: Notice --> Trying to get property of non-object /Users/hyunjae/Sites/ODDS/application/models/baseball/Baseball_model.php 24
+INFO - 2017-05-11 07:53:25 --> Final output sent to browser
+DEBUG - 2017-05-11 07:53:25 --> Total execution time: 13.0627
+INFO - 2017-05-11 07:54:00 --> Config Class Initialized
+INFO - 2017-05-11 07:54:00 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:54:00 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:54:00 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:54:00 --> URI Class Initialized
+INFO - 2017-05-11 07:54:00 --> Router Class Initialized
+INFO - 2017-05-11 07:54:00 --> Output Class Initialized
+INFO - 2017-05-11 07:54:00 --> Security Class Initialized
+DEBUG - 2017-05-11 07:54:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:54:00 --> Input Class Initialized
+INFO - 2017-05-11 07:54:00 --> Language Class Initialized
+INFO - 2017-05-11 07:54:00 --> Loader Class Initialized
+INFO - 2017-05-11 07:54:00 --> Controller Class Initialized
+INFO - 2017-05-11 07:54:00 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:54:00 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:54:00 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:54:00 --> cURL Class Initialized
+INFO - 2017-05-11 07:54:00 --> Model Class Initialized
+INFO - 2017-05-11 07:54:04 --> Final output sent to browser
+DEBUG - 2017-05-11 07:54:04 --> Total execution time: 3.3698
+INFO - 2017-05-11 07:54:57 --> Config Class Initialized
+INFO - 2017-05-11 07:54:57 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:54:57 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:54:57 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:54:57 --> URI Class Initialized
+INFO - 2017-05-11 07:54:57 --> Router Class Initialized
+INFO - 2017-05-11 07:54:57 --> Output Class Initialized
+INFO - 2017-05-11 07:54:57 --> Security Class Initialized
+DEBUG - 2017-05-11 07:54:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:54:57 --> Input Class Initialized
+INFO - 2017-05-11 07:54:57 --> Language Class Initialized
+INFO - 2017-05-11 07:54:57 --> Loader Class Initialized
+INFO - 2017-05-11 07:54:57 --> Controller Class Initialized
+INFO - 2017-05-11 07:54:57 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:54:58 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:54:58 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:54:58 --> cURL Class Initialized
+INFO - 2017-05-11 07:54:58 --> Model Class Initialized
+INFO - 2017-05-11 07:55:10 --> Final output sent to browser
+DEBUG - 2017-05-11 07:55:10 --> Total execution time: 12.8259
+INFO - 2017-05-11 07:58:39 --> Config Class Initialized
+INFO - 2017-05-11 07:58:39 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:58:39 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:58:39 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:58:39 --> URI Class Initialized
+INFO - 2017-05-11 07:58:39 --> Router Class Initialized
+INFO - 2017-05-11 07:58:39 --> Output Class Initialized
+INFO - 2017-05-11 07:58:39 --> Security Class Initialized
+DEBUG - 2017-05-11 07:58:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:58:39 --> Input Class Initialized
+INFO - 2017-05-11 07:58:39 --> Language Class Initialized
+INFO - 2017-05-11 07:58:39 --> Loader Class Initialized
+INFO - 2017-05-11 07:58:39 --> Controller Class Initialized
+INFO - 2017-05-11 07:58:39 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:58:39 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:58:39 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:58:39 --> cURL Class Initialized
+INFO - 2017-05-11 07:58:39 --> Model Class Initialized
+INFO - 2017-05-11 07:58:51 --> Final output sent to browser
+DEBUG - 2017-05-11 07:58:51 --> Total execution time: 12.3451
+INFO - 2017-05-11 07:59:49 --> Config Class Initialized
+INFO - 2017-05-11 07:59:49 --> Hooks Class Initialized
+DEBUG - 2017-05-11 07:59:49 --> UTF-8 Support Enabled
+INFO - 2017-05-11 07:59:49 --> Utf8 Class Initialized
+INFO - 2017-05-11 07:59:49 --> URI Class Initialized
+INFO - 2017-05-11 07:59:49 --> Router Class Initialized
+INFO - 2017-05-11 07:59:49 --> Output Class Initialized
+INFO - 2017-05-11 07:59:49 --> Security Class Initialized
+DEBUG - 2017-05-11 07:59:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 07:59:49 --> Input Class Initialized
+INFO - 2017-05-11 07:59:49 --> Language Class Initialized
+INFO - 2017-05-11 07:59:49 --> Loader Class Initialized
+INFO - 2017-05-11 07:59:49 --> Controller Class Initialized
+INFO - 2017-05-11 07:59:49 --> Database Driver Class Initialized
+INFO - 2017-05-11 07:59:49 --> Helper loaded: url_helper
+INFO - 2017-05-11 07:59:49 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 07:59:49 --> cURL Class Initialized
+INFO - 2017-05-11 07:59:49 --> Model Class Initialized
+INFO - 2017-05-11 08:00:02 --> Final output sent to browser
+DEBUG - 2017-05-11 08:00:02 --> Total execution time: 12.5930
+INFO - 2017-05-11 08:08:25 --> Config Class Initialized
+INFO - 2017-05-11 08:08:25 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:08:25 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:08:25 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:08:25 --> URI Class Initialized
+INFO - 2017-05-11 08:08:25 --> Router Class Initialized
+INFO - 2017-05-11 08:08:25 --> Output Class Initialized
+INFO - 2017-05-11 08:08:25 --> Security Class Initialized
+DEBUG - 2017-05-11 08:08:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:08:25 --> Input Class Initialized
+INFO - 2017-05-11 08:08:25 --> Language Class Initialized
+INFO - 2017-05-11 08:08:25 --> Loader Class Initialized
+INFO - 2017-05-11 08:08:25 --> Controller Class Initialized
+INFO - 2017-05-11 08:08:25 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:08:25 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:08:25 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:08:25 --> cURL Class Initialized
+INFO - 2017-05-11 08:08:25 --> Model Class Initialized
+INFO - 2017-05-11 08:08:25 --> Final output sent to browser
+DEBUG - 2017-05-11 08:08:25 --> Total execution time: 0.3639
+INFO - 2017-05-11 08:09:35 --> Config Class Initialized
+INFO - 2017-05-11 08:09:35 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:09:35 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:09:35 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:09:35 --> URI Class Initialized
+INFO - 2017-05-11 08:09:35 --> Router Class Initialized
+INFO - 2017-05-11 08:09:35 --> Output Class Initialized
+INFO - 2017-05-11 08:09:35 --> Security Class Initialized
+DEBUG - 2017-05-11 08:09:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:09:35 --> Input Class Initialized
+INFO - 2017-05-11 08:09:35 --> Language Class Initialized
+INFO - 2017-05-11 08:09:35 --> Loader Class Initialized
+INFO - 2017-05-11 08:09:35 --> Controller Class Initialized
+INFO - 2017-05-11 08:09:35 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:09:35 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:09:35 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:09:35 --> cURL Class Initialized
+INFO - 2017-05-11 08:09:35 --> Model Class Initialized
+INFO - 2017-05-11 08:09:35 --> Final output sent to browser
+DEBUG - 2017-05-11 08:09:35 --> Total execution time: 0.1778
+INFO - 2017-05-11 08:11:26 --> Config Class Initialized
+INFO - 2017-05-11 08:11:26 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:11:26 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:11:26 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:11:26 --> URI Class Initialized
+INFO - 2017-05-11 08:11:26 --> Router Class Initialized
+INFO - 2017-05-11 08:11:26 --> Output Class Initialized
+INFO - 2017-05-11 08:11:26 --> Security Class Initialized
+DEBUG - 2017-05-11 08:11:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:11:26 --> Input Class Initialized
+INFO - 2017-05-11 08:11:26 --> Language Class Initialized
+INFO - 2017-05-11 08:11:26 --> Loader Class Initialized
+INFO - 2017-05-11 08:11:26 --> Controller Class Initialized
+INFO - 2017-05-11 08:11:26 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:11:26 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:11:26 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:11:26 --> cURL Class Initialized
+INFO - 2017-05-11 08:11:26 --> Model Class Initialized
+INFO - 2017-05-11 08:11:26 --> Final output sent to browser
+DEBUG - 2017-05-11 08:11:26 --> Total execution time: 0.4823
+INFO - 2017-05-11 08:16:16 --> Config Class Initialized
+INFO - 2017-05-11 08:16:16 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:16 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:16 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:16 --> URI Class Initialized
+INFO - 2017-05-11 08:16:16 --> Router Class Initialized
+INFO - 2017-05-11 08:16:16 --> Output Class Initialized
+INFO - 2017-05-11 08:16:16 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:16 --> Input Class Initialized
+INFO - 2017-05-11 08:16:16 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:16 --> 404 Page Not Found: Main/game_main.php
+INFO - 2017-05-11 08:16:20 --> Config Class Initialized
+INFO - 2017-05-11 08:16:20 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:20 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:20 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:20 --> URI Class Initialized
+INFO - 2017-05-11 08:16:20 --> Router Class Initialized
+INFO - 2017-05-11 08:16:20 --> Output Class Initialized
+INFO - 2017-05-11 08:16:20 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:20 --> Input Class Initialized
+INFO - 2017-05-11 08:16:20 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:20 --> 404 Page Not Found: 1222/game
+INFO - 2017-05-11 08:16:23 --> Config Class Initialized
+INFO - 2017-05-11 08:16:23 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:23 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:23 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:23 --> URI Class Initialized
+INFO - 2017-05-11 08:16:23 --> Router Class Initialized
+INFO - 2017-05-11 08:16:23 --> Output Class Initialized
+INFO - 2017-05-11 08:16:23 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:23 --> Input Class Initialized
+INFO - 2017-05-11 08:16:23 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:23 --> 404 Page Not Found: 1222/game
+INFO - 2017-05-11 08:16:29 --> Config Class Initialized
+INFO - 2017-05-11 08:16:29 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:29 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:29 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:29 --> URI Class Initialized
+INFO - 2017-05-11 08:16:29 --> Router Class Initialized
+INFO - 2017-05-11 08:16:29 --> Output Class Initialized
+INFO - 2017-05-11 08:16:29 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:29 --> Input Class Initialized
+INFO - 2017-05-11 08:16:29 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:29 --> 404 Page Not Found: 1222/game
+INFO - 2017-05-11 08:16:34 --> Config Class Initialized
+INFO - 2017-05-11 08:16:34 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:34 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:34 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:34 --> URI Class Initialized
+INFO - 2017-05-11 08:16:34 --> Router Class Initialized
+INFO - 2017-05-11 08:16:34 --> Output Class Initialized
+INFO - 2017-05-11 08:16:34 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:34 --> Input Class Initialized
+INFO - 2017-05-11 08:16:34 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:34 --> 404 Page Not Found: 1222/game
+INFO - 2017-05-11 08:16:35 --> Config Class Initialized
+INFO - 2017-05-11 08:16:35 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:35 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:35 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:35 --> URI Class Initialized
+INFO - 2017-05-11 08:16:35 --> Router Class Initialized
+INFO - 2017-05-11 08:16:35 --> Output Class Initialized
+INFO - 2017-05-11 08:16:35 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:35 --> Input Class Initialized
+INFO - 2017-05-11 08:16:35 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:35 --> 404 Page Not Found: 1222/game
+INFO - 2017-05-11 08:16:43 --> Config Class Initialized
+INFO - 2017-05-11 08:16:43 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:43 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:43 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:43 --> URI Class Initialized
+INFO - 2017-05-11 08:16:43 --> Router Class Initialized
+INFO - 2017-05-11 08:16:43 --> Output Class Initialized
+INFO - 2017-05-11 08:16:43 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:43 --> Input Class Initialized
+INFO - 2017-05-11 08:16:43 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:43 --> 404 Page Not Found: Game/league_base
+INFO - 2017-05-11 08:16:43 --> Config Class Initialized
+INFO - 2017-05-11 08:16:43 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:43 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:43 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:43 --> URI Class Initialized
+INFO - 2017-05-11 08:16:43 --> Router Class Initialized
+INFO - 2017-05-11 08:16:43 --> Output Class Initialized
+INFO - 2017-05-11 08:16:43 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:43 --> Input Class Initialized
+INFO - 2017-05-11 08:16:43 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:43 --> 404 Page Not Found: Game/league_base
+INFO - 2017-05-11 08:16:48 --> Config Class Initialized
+INFO - 2017-05-11 08:16:48 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:48 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:48 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:48 --> URI Class Initialized
+INFO - 2017-05-11 08:16:48 --> Router Class Initialized
+INFO - 2017-05-11 08:16:48 --> Output Class Initialized
+INFO - 2017-05-11 08:16:48 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:48 --> Input Class Initialized
+INFO - 2017-05-11 08:16:48 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:48 --> 404 Page Not Found: Game/league_base
+INFO - 2017-05-11 08:16:56 --> Config Class Initialized
+INFO - 2017-05-11 08:16:56 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:16:56 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:16:56 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:16:56 --> URI Class Initialized
+INFO - 2017-05-11 08:16:56 --> Router Class Initialized
+INFO - 2017-05-11 08:16:56 --> Output Class Initialized
+INFO - 2017-05-11 08:16:56 --> Security Class Initialized
+DEBUG - 2017-05-11 08:16:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:16:56 --> Input Class Initialized
+INFO - 2017-05-11 08:16:56 --> Language Class Initialized
+ERROR - 2017-05-11 08:16:56 --> 404 Page Not Found: Baseball/league_base
+INFO - 2017-05-11 08:17:01 --> Config Class Initialized
+INFO - 2017-05-11 08:17:01 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:17:01 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:17:01 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:17:01 --> URI Class Initialized
+INFO - 2017-05-11 08:17:01 --> Router Class Initialized
+INFO - 2017-05-11 08:17:01 --> Output Class Initialized
+INFO - 2017-05-11 08:17:01 --> Security Class Initialized
+DEBUG - 2017-05-11 08:17:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:17:01 --> Input Class Initialized
+INFO - 2017-05-11 08:17:01 --> Language Class Initialized
+INFO - 2017-05-11 08:17:01 --> Loader Class Initialized
+INFO - 2017-05-11 08:17:01 --> Controller Class Initialized
+INFO - 2017-05-11 08:17:01 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:17:01 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:17:01 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:17:01 --> cURL Class Initialized
+INFO - 2017-05-11 08:17:01 --> Model Class Initialized
+INFO - 2017-05-11 08:17:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:17:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:17:01 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:17:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 08:17:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:17:02 --> Final output sent to browser
+DEBUG - 2017-05-11 08:17:02 --> Total execution time: 0.2020
+INFO - 2017-05-11 08:17:02 --> Config Class Initialized
+INFO - 2017-05-11 08:17:02 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:17:02 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:17:02 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:17:02 --> URI Class Initialized
+INFO - 2017-05-11 08:17:02 --> Router Class Initialized
+INFO - 2017-05-11 08:17:02 --> Output Class Initialized
+INFO - 2017-05-11 08:17:02 --> Security Class Initialized
+DEBUG - 2017-05-11 08:17:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:17:02 --> Input Class Initialized
+INFO - 2017-05-11 08:17:02 --> Language Class Initialized
+INFO - 2017-05-11 08:17:02 --> Loader Class Initialized
+INFO - 2017-05-11 08:17:02 --> Controller Class Initialized
+INFO - 2017-05-11 08:17:02 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:17:02 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:17:02 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:17:02 --> cURL Class Initialized
+INFO - 2017-05-11 08:17:02 --> Model Class Initialized
+INFO - 2017-05-11 08:17:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:17:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:17:02 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:17:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 08:17:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:17:02 --> Final output sent to browser
+DEBUG - 2017-05-11 08:17:02 --> Total execution time: 0.1957
+INFO - 2017-05-11 08:21:08 --> Config Class Initialized
+INFO - 2017-05-11 08:21:08 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:21:08 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:21:08 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:21:08 --> URI Class Initialized
+INFO - 2017-05-11 08:21:08 --> Router Class Initialized
+INFO - 2017-05-11 08:21:08 --> Output Class Initialized
+INFO - 2017-05-11 08:21:08 --> Security Class Initialized
+DEBUG - 2017-05-11 08:21:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:21:08 --> Input Class Initialized
+INFO - 2017-05-11 08:21:08 --> Language Class Initialized
+INFO - 2017-05-11 08:21:08 --> Loader Class Initialized
+INFO - 2017-05-11 08:21:08 --> Controller Class Initialized
+INFO - 2017-05-11 08:21:08 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:21:08 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:21:08 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:21:08 --> cURL Class Initialized
+INFO - 2017-05-11 08:21:08 --> Model Class Initialized
+INFO - 2017-05-11 08:21:08 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 08:21:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:21:09 --> Final output sent to browser
+DEBUG - 2017-05-11 08:21:09 --> Total execution time: 0.2436
+INFO - 2017-05-11 08:21:29 --> Config Class Initialized
+INFO - 2017-05-11 08:21:29 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:21:29 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:21:29 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:21:29 --> URI Class Initialized
+INFO - 2017-05-11 08:21:29 --> Router Class Initialized
+INFO - 2017-05-11 08:21:29 --> Output Class Initialized
+INFO - 2017-05-11 08:21:29 --> Security Class Initialized
+DEBUG - 2017-05-11 08:21:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:21:29 --> Input Class Initialized
+INFO - 2017-05-11 08:21:29 --> Language Class Initialized
+INFO - 2017-05-11 08:21:29 --> Loader Class Initialized
+INFO - 2017-05-11 08:21:29 --> Controller Class Initialized
+INFO - 2017-05-11 08:21:29 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:21:29 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:21:29 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:21:29 --> cURL Class Initialized
+INFO - 2017-05-11 08:21:29 --> Model Class Initialized
+INFO - 2017-05-11 08:21:29 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:21:29 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:21:29 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:21:29 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 08:21:29 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:21:29 --> Final output sent to browser
+DEBUG - 2017-05-11 08:21:29 --> Total execution time: 0.1953
+INFO - 2017-05-11 08:25:10 --> Config Class Initialized
+INFO - 2017-05-11 08:25:10 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:25:10 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:25:10 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:25:10 --> URI Class Initialized
+INFO - 2017-05-11 08:25:10 --> Router Class Initialized
+INFO - 2017-05-11 08:25:10 --> Output Class Initialized
+INFO - 2017-05-11 08:25:10 --> Security Class Initialized
+DEBUG - 2017-05-11 08:25:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:25:10 --> Input Class Initialized
+INFO - 2017-05-11 08:25:10 --> Language Class Initialized
+INFO - 2017-05-11 08:25:10 --> Loader Class Initialized
+INFO - 2017-05-11 08:25:10 --> Controller Class Initialized
+INFO - 2017-05-11 08:25:10 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:25:10 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:25:10 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:25:10 --> cURL Class Initialized
+INFO - 2017-05-11 08:25:10 --> Model Class Initialized
+INFO - 2017-05-11 08:25:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:25:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:25:10 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:25:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-11 08:25:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:25:10 --> Final output sent to browser
+DEBUG - 2017-05-11 08:25:10 --> Total execution time: 0.6563
+INFO - 2017-05-11 08:25:20 --> Config Class Initialized
+INFO - 2017-05-11 08:25:20 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:25:20 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:25:20 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:25:20 --> URI Class Initialized
+INFO - 2017-05-11 08:25:20 --> Router Class Initialized
+INFO - 2017-05-11 08:25:20 --> Output Class Initialized
+INFO - 2017-05-11 08:25:20 --> Security Class Initialized
+DEBUG - 2017-05-11 08:25:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:25:20 --> Input Class Initialized
+INFO - 2017-05-11 08:25:20 --> Language Class Initialized
+INFO - 2017-05-11 08:25:20 --> Loader Class Initialized
+INFO - 2017-05-11 08:25:20 --> Controller Class Initialized
+INFO - 2017-05-11 08:25:20 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:25:20 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:25:20 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:25:20 --> cURL Class Initialized
+INFO - 2017-05-11 08:25:20 --> Model Class Initialized
+INFO - 2017-05-11 08:25:20 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:25:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:25:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:25:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 08:25:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:25:20 --> Final output sent to browser
+DEBUG - 2017-05-11 08:25:20 --> Total execution time: 0.2442
+INFO - 2017-05-11 08:57:32 --> Config Class Initialized
+INFO - 2017-05-11 08:57:32 --> Hooks Class Initialized
+DEBUG - 2017-05-11 08:57:32 --> UTF-8 Support Enabled
+INFO - 2017-05-11 08:57:32 --> Utf8 Class Initialized
+INFO - 2017-05-11 08:57:32 --> URI Class Initialized
+INFO - 2017-05-11 08:57:32 --> Router Class Initialized
+INFO - 2017-05-11 08:57:32 --> Output Class Initialized
+INFO - 2017-05-11 08:57:32 --> Security Class Initialized
+DEBUG - 2017-05-11 08:57:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-11 08:57:32 --> Input Class Initialized
+INFO - 2017-05-11 08:57:32 --> Language Class Initialized
+INFO - 2017-05-11 08:57:32 --> Loader Class Initialized
+INFO - 2017-05-11 08:57:32 --> Controller Class Initialized
+INFO - 2017-05-11 08:57:32 --> Database Driver Class Initialized
+INFO - 2017-05-11 08:57:32 --> Helper loaded: url_helper
+INFO - 2017-05-11 08:57:32 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-11 08:57:32 --> cURL Class Initialized
+INFO - 2017-05-11 08:57:32 --> Model Class Initialized
+INFO - 2017-05-11 08:57:32 --> Helper loaded: cookie_helper
+INFO - 2017-05-11 08:57:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-11 08:57:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-11 08:57:33 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-11 08:57:33 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-11 08:57:33 --> Final output sent to browser
+DEBUG - 2017-05-11 08:57:33 --> Total execution time: 0.2105

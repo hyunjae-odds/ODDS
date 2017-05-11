@@ -57,9 +57,9 @@
 									<td class="left pl10">3.21</td>
 									<td class="data">
 										<span>
-											<span class="b_BTN"><a href="/baseball/match_information">매치정보</a></span>
+											<span class="b_BTN"><a href="/baseball/match_information?schedule_no=<?=$item->no;?>">매치정보</a></span>
 											<span class="r_BTN"><a href="">전문가 의견</a></span>
-											<span class="g_BTN"><a href="">블로그</a></span>			
+											<span class="g_BTN"><a href="">블로그</a></span>
 											<span class="y_BTN"><a href="">배당률</a></span>
 										</span>
 										<!-- 블로그팝업 -->

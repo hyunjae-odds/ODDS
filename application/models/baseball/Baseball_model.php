@@ -17,11 +17,13 @@
 	}
 
 	function insertByMonth($result_arr){
-        $this->db->empty_table('kbo_result_2017');
-
         foreach($result_arr as $item):
             $this->db->set('insert_dt', 'NOW()', false);
-            $this->db->insert('kbo_result_2017', $item);
+            $this->db->where('date', $item['date']);
+            $this->db->where('home', $item['home']);
+            $this->db->where('home_score', '');
+
+            $this->db->update('kbo_result_2017', $item);
         endforeach;
 	}
 
@@ -53,12 +55,13 @@
     }
 
     function insert_result($table, $data){
-        foreach($data as $datum):
-            $pastGame=$this->db->get_where($table, array('date'=>$datum['date'],'home'=>$datum['home'],'away'=>$datum['away']))->row();
-            $this->db->delete($table, array('no'=>$pastGame->no));
-
+        foreach($data as $item):
             $this->db->set('insert_dt', 'NOW()', false);
-            $this->db->insert($table, $datum);
+            $this->db->where('date', $item['date']);
+            $this->db->where('home', $item['home']);
+            $this->db->where('home_score', '');
+
+            $this->db->update($table, $item);
         endforeach;
     }
 

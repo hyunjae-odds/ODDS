@@ -210,7 +210,9 @@ class Baseball extends MY_Controller{
         $this->delete_cookies();
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
-        $this->load->view("/baseball/match");
+
+        $this->load->view("/baseball/match", array('schedule_no'=>$this->input->get('schedule_no')));
+
         $this->load->view("/baseball/footer");
     }
 
@@ -550,8 +552,9 @@ class Baseball extends MY_Controller{
 
                 array_push($rows, $game);
             endfor;
-
             $table=($item==6)?'kbo_result_half_2017':'kbo_result_first_2017';
+
+            var_dump($rows);
             $this->baseball_model->insert_result($table, $rows);
         endforeach;
     }
