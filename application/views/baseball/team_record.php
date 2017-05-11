@@ -303,7 +303,7 @@
 								<?php endforeach; ?>
 							</table>
 						</div>
-						<p class="nextTable"><a href=""></a></p>
+						<p class="nextTable"><a href="javascript:void(0)"></a></p>
 					</div>
 				</div>
 
@@ -450,58 +450,7 @@
 								<?php endforeach; ?>
 							</table>
 						</div>
-						<p class="nextTable nextTable1"><a href=""></a></p>
-						<div class="next_table2" style="display:none;">
-							<table class="table_default table_2_left">
-								<caption></caption>
-								<colgroup>
-									<col width="54px"/>
-									<col width="130px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="56px"/>
-									<col width="106px"/>
-								</colgroup>
-								<tr>
-									<th>순위</th>
-									<th>팀</th>
-									<th><span class="pr_31" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/e?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=31')">실책</span></th>
-									<th><span class="pr_32" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/pko?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=32')">견제사</span></th>
-									<th><span class="pr_33" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/po?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=33')">자살</span></th>
-									<th><span class="pr_34" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/a?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=34')">보살</span></th>
-									<th><span class="pr_35" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/dp?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=35')">병살</span></th>
-									<th><span class="pr_36" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/fpct?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=36')">수비율</span></th>
-									<th><span class="pr_37" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/pb?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=37')">포일</span></th>
-									<th><span class="pr_38" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/sb?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=38')">도루허용</span></th>
-									<th><span class="pr_39" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/cs?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=39')">도루실패</span></th>
-									<th><span class="pr_40" onclick="javascript:location.replace('/baseball/team_record/<?=$select_year;?>/<?=$select_month;?>/all/csp?scroll_top='+document.body.scrollTop+'&focus=defence3&bold_num=40')">도루저지율</span></th>
-								</tr>
-								<?php foreach($defence as $entry): ?>
-									<tr>
-										<td><?=$entry->rank;?></td>
-										<td><?=$entry->team;?></td>
-										<td class="pr_31"><?=$entry->e;?></td>
-										<td class="pr_32"><?=$entry->pko;?></td>
-										<td class="pr_33"><?=$entry->po;?></td>
-										<td class="pr_34"><?=$entry->a;?></td>
-										<td class="pr_35"><?=$entry->dp;?></td>
-										<td class="pr_36"><?=number_format($entry->fpct,3);?></td>
-										<td class="pr_37"><?=$entry->pb;?></td>
-										<td class="pr_38"><?=$entry->sb;?></td>
-										<td class="pr_39"><?=$entry->cs;?></td>
-										<td class="pr_40"><?=number_format($entry->csp,1);?>%</td>
-									</tr>
-								<?php endforeach; ?>
-							</table>
-						</div>
-						<p class="nextTable nextTable2" style="display:none;"><a href=""></a></p>
-						<p class="nextTable nextTable3" style="display:none;"><a href=""></a></p>
+						<p class="nextTable nextTable1"><a href="javascript:void(0)"></a></p>
 					</div>
 				</div>
 			</li>
@@ -547,31 +496,9 @@ $(document).ready(function(){
 		    $(this).next().slideUp();
         }
 	});
-	//순위 확장테이블
-	$(".table_w2_1 .nextTable a").click(function(){
-		$(this).parent().siblings(".next_table").slideToggle();
-		return false;
-	});
-	//순위 확장테이블_2
-	$(".table_w2_2 .nextTable1 a").click(function(){
-		$(this).parent().siblings(".next_table2").slideUp();
-		$(this).parent().siblings(".next_table").slideDown();
-		$(this).parent().css("display","none");
-		$(".nextTable2").css("display","block");
-		return false;
-	});
-	$(".table_w2_2 .nextTable2 a").click(function(){
-		$(this).parent().siblings(".next_table2").slideDown();
-		$(this).parent().css("display","none");
-		$(".nextTable3").css("display","block");
-		return false;
-	});
-	$(".table_w2_2 .nextTable3 a").click(function(){
-		$(this).parent().siblings(".next_table").slideUp();
-		$(this).parent().siblings(".next_table2").slideUp();
-		$(this).parent().css("display","none");
-		$(".nextTable1").css("display","block");
-		return false;
-	});
+
+//	KBO 공격력. 순위력 순위
+	$(".table_w2_1 .nextTable a").click(function(){$(this).parent().siblings(".next_table").slideToggle();});
+	$(".table_w2_2 .nextTable1 a").click(function(){$(this).parent().siblings(".next_table").slideToggle();});
 });
 </script>

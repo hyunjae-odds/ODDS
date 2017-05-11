@@ -6,9 +6,11 @@
 	/* INSERT */
 	function insert($table, $data){
 		$num_rows=$this->db->get($table)->num_rows();
-		if($num_rows>0): $this->db->delete($table, array('*')); endif;
+		if($num_rows>0): $this->db->empty_table($table); endif;
 
 		foreach($data as $entry):
+            echo $table;
+            var_dump($data);
 			$this->db->set('insert_dt', 'NOW()', false);
 			$this->db->insert($table, $entry);
 		endforeach;
@@ -43,7 +45,8 @@
 	}
 
     function insertNoDelete($table, $data){
-        foreach($data as $entry):
+        foreach($data as $key=>$entry):
+            var_dump($entry);
             $this->db->set('insert_dt', 'NOW()', false);
             $this->db->insert($table, $entry);
         endforeach;
@@ -66,7 +69,7 @@
 
 	function getByMonth($this_month){
 		$this->db->like('date', $this_month, 'after');
-		$this->db->order_by('no', 'ASC');
+		$this->db->order_by('date', 'ASC');
 		$result=$this->db->get('kbo_result_2017')->result();
 
 		return $result;
@@ -497,7 +500,7 @@
         array_multisort($sortAux, SORT_DESC, $result);
         array_splice($result,5);
 
-        foreach($result as $item) $sortAux2[]=strlen($item['recent']);
+        foreach($result as $item) $sortAux2[]=$item[$flag];
         array_multisort($sortAux2, SORT_DESC, $result);
         array_splice($result,5);
 

@@ -11,25 +11,10 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
 
-//      스크롤 위치 기억
-        if($this->input->get('scroll_top')!=null) $scroll_top=$this->input->get('scroll_top'); else $scroll_top=0;
-
-//      cookie
         $this->delete_cookies();
-        if($this->input->get('home_away')==null || $this->input->get('home_away')=='all'):
-            $this->input->set_cookie(array('name'=>'home_away','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
-            $home_away='all';
-        else:
-            $this->input->set_cookie(array('name'=>'home_away','value'=>$this->input->get('home_away'),'expire'=>'86500','domain'=>SERVER_HOST));
-            $home_away=$this->input->get('home_away');
-        endif;
-        if($this->input->get('duration')==null || $this->input->get('duration')=='all'):
-            $this->input->set_cookie(array('name'=>'duration','value'=>'all','expire'=>'86500','domain'=>SERVER_HOST));
-            $duration='all';
-        else:
-            $this->input->set_cookie(array('name'=>'duration','value'=>$this->input->get('duration'),'expire'=>'86500','domain'=>SERVER_HOST));
-            $duration=$this->input->get('duration');
-        endif;
+        if($this->input->get('scroll_top')!=null) $scroll_top=$this->input->get('scroll_top'); else $scroll_top=0;
+        if($this->input->get('home_away')==null || $this->input->get('home_away')=='all') $home_away='all'; else $home_away=$this->input->get('home_away');
+        if($this->input->get('duration')==null || $this->input->get('duration')=='all') $duration='all'; else $duration=$this->input->get('duration');
 
         $total=$this->getRankBoard('all', $duration, $home_away, 0);
         $offense=$this->baseball_model->get('kbo_team_offense_2017');
@@ -63,7 +48,6 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
 
-//      COOKIE
         $this->delete_cookies();
         $inning=($this->input->get('inning')==null || $this->input->get('inning')=='all')? $inning='all' : $inning=$this->input->get('inning');
         $home_away=($this->input->get('home_away')==null || $this->input->get('home_away')=='all')? 'all' : $this->input->get('home_away');
@@ -417,7 +401,6 @@ class Baseball extends MY_Controller{
                 endforeach;
                 $recent=substr($recent, 0, -1);
 
-                echo '<br><br><br><br><br>'.$count.', '.$tie;
                 $resultSet[$item]=array('g'=>$count,'win_rate'=>$win/($count-$tie),'win'=>$win,'lose'=>$lose,'tie'=>$tie,'recent_game'=>$recent);
             endforeach;
         endif;
@@ -612,13 +595,11 @@ class Baseball extends MY_Controller{
         $offense1=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Pitcher/Basic1.aspx'), $columns_pitcher1);
         $columns_pitcher2=array('rank','team','era','cg','sho','qs','bsv','tbf','np','avg','second_b','third_b','sac','sf','ibb','wp','bk');
         $offense2=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Pitcher/Basic2.aspx'), $columns_pitcher2);
-        $columns_defence=array('rank','team','g','e','pko','po','a','dp','fpct','pb','sb','cs','csp');
-        $source=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Defense/Basic.aspx'), $columns_defence);
 
         $resultSet_defence=array();
         foreach($offense1 as $key=>$entry):
-            foreach($source as $entries):
-                if($entry['team']==$entries['team']): array_push($resultSet_defence, $entry+$offense2[$key]+$entries); endif;
+            foreach($offense2 as $entries):
+                if($entry['team']==$entries['team']): array_push($resultSet_defence, $entry+$entries); endif;
             endforeach;
         endforeach;
 

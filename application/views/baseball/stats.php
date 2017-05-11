@@ -98,9 +98,7 @@
                                                             <?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                             <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                             <td><?=$entry->team;?></td>
-                                                            <td><?php if($duration=='all' && $home_away=='all') foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;
-                                                                      else echo $entry->g;?>
-                                                            </td>
+                                                            <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
                                                             <td><?=number_format($entry->win_rate,3);?></td>
                                                             <td><?=$entry->win;?></td>
                                                             <td><?=$entry->lose;?></td>
@@ -109,10 +107,9 @@
                                                             <td><?=$plus_minus[$entry->team]-$plus_minus[$entry->team.'_lose'];?></td>
                                                             <td><?php $exp=explode(';', $entry->recent_game);
                                                                 foreach($exp as $value):
-                                                                    if($value=='승'): echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-                                                                    elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
-                                                                    else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
-                                                                    endif;
+                                                                    if($value=='승') echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+                                                                    elseif($value=='패') echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                                                    else echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
                                                                 endforeach; ?>
                                                             </td>
                                                         </tr>

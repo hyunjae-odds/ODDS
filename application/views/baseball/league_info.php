@@ -4787,10 +4787,10 @@
 								<div class="select" style="top:-7px;">
 									<p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
 										<ul>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=all')">시즌 전체</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=10')">10경기</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=20')">20경기</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=30')">30경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=all&home_away=<?=$home_away;?>')">시즌 전체</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=10&home_away=<?=$home_away;?>')">10경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=20&home_away=<?=$home_away;?>')">20경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=30&home_away=<?=$home_away;?>')">30경기</a></li>
 										</ul>
 									</div>
 								</div>
@@ -4836,6 +4836,7 @@
                                                         else echo $entry->g;
                                                     ?>
                                                 </td>
+
                                                 <td><?=number_format($entry->win_rate,3);?></td>
                                                 <td><?=$entry->win;?></td>
                                                 <td><?=$entry->lose;?></td>
@@ -4994,7 +4995,7 @@
 							<?php for($i=0; $i<5; $i++): ?>
 								<tr>
 									<td><?=$offense[$i]->team;?></td>
-									<td><?=$offense[$i]->avg;?></td>
+									<td><?=number_format($offense[$i]->avg,3);?></td>
 									<td><?=$offense[$i]->hr;?></td>
 									<td><?=$offense[$i]->h;?></td>
 									<td>6.45</td>
@@ -5023,7 +5024,7 @@
 							<?php for($i=9; $i>4; $i--): ?>
 								<tr>
 									<td><?=$offense[$i]->team;?></td>
-									<td><?=$offense[$i]->avg;?></td>
+									<td><?=number_format($offense[$i]->avg,3);?></td>
 									<td><?=$offense[$i]->hr;?></td>
 									<td><?=$offense[$i]->h;?></td>
 									<td>6.45</td>
