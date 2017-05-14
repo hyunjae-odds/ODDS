@@ -9,8 +9,6 @@
 		if($num_rows>0): $this->db->empty_table($table); endif;
 
 		foreach($data as $entry):
-            echo $table;
-            var_dump($data);
 			$this->db->set('insert_dt', 'NOW()', false);
 			$this->db->insert($table, $entry);
 		endforeach;
@@ -27,22 +25,27 @@
         endforeach;
 	}
 
-	function insertWithRecentGame($table, $data, $recent_game, $date){
-		$num_rows=$this->db->get_where($table, array('date'=>$date))->num_rows();
-		if($num_rows>0) $this->db->delete($table, array('date'=>$date));
+	function insertWithRecentGame($data){
+	    $this->db->order_by('date', 'DESC');
+	    $this->db->distinct();
+        $result_row=$this->db->get_where('kbo_result_2017', array('away_score!='=>'', 'home_score!='=>''))->row();
+        $month=substr($result_row->date,0,2);
+        $day=substr($result_row->date,3,2);
+        $date_=CURRENT_YEAR.'-'.$month.'-'.$day;
+
+        $num_rows=$this->db->get_where('kbo_team_total_2017', array('date'=>$date_))->num_rows();
 
 		foreach($data as $entry):
 			$this->db->set('insert_dt', 'NOW()', false);
-			$this->db->set('date', $date);
+            $this->db->set('date', $date_);
+            if($num_rows>0):
+                $this->db->where('date', $date_);
+                $this->db->where('team', $entry->team);
 
-			$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-			foreach($team_array as $entries):
-				if($entry['team']==$entries):
-					$this->db->set('recent_game', $recent_game[$entries]);
-				endif;
-			endforeach;
-
-			$this->db->insert($table, $entry);
+                $this->db->update('kbo_team_total_2017', $entry);
+            elseif($num_rows==0):
+                $this->db->insert('kbo_team_total_2017', $entry);
+            endif;
 		endforeach;
 	}
 
@@ -63,6 +66,11 @@
 
             $this->db->update($table, $item);
         endforeach;
+    }
+
+    function insert_comment($data){
+        $this->db->set('insert_dt', 'NOW()', false);
+        $this->db->insert('kbo_comment', $data);
     }
 
 	/* GET */
@@ -146,13 +154,16 @@
 		return $this->db->get('kbo_team_total_2017')->result();
 	}
 
-	function getNumRows($table){
-		$this->db->select('insert_dt');
-		$this->db->order_by('insert_dt', 'DESC');
-		$this->db->distinct();
-		$lastDate=$this->db->get($table, 1)->row();
-		
-		$this->db->where('insert_dt', $lastDate->insert_dt);
+	function getNumRows($table, $schedule_no){
+        if($table=='kbo_batterbasic_2017'):
+            $this->db->select('insert_dt');
+            $this->db->order_by('insert_dt', 'DESC');
+            $this->db->distinct();
+            $lastDate=$this->db->get($table, 1)->row();
+
+            $this->db->where('insert_dt', $lastDate->insert_dt);
+        else: $this->db->where('schedule_no', $schedule_no); endif;
+
 	    return $this->db->get($table)->num_rows();
     }
 
@@ -243,7 +254,7 @@
         $this->db->select('insert_dt');
         $this->db->order_by('insert_dt', 'DESC');
         $this->db->distinct();
-        $lastDate=$this->db->get($table, 1)->row();
+        $lastDate=$this->db->get($table)->row();
 
         return $lastDate->insert_dt;
     }
@@ -268,34 +279,45 @@
         $this->db->distinct();
         $count=$this->db->get('kbo_result_2017')->result();
 
-        if($count!=null):
-            $resultSet=array();
-            $this->db->select('no, date, time, home, away');
-            $this->db->like('date', $today, 'after');
-            $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
-            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
-            $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
+        $resultSet=array();
+        $this->db->select('date');
+        $this->db->like('date', $today, 'after');
+        $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
+        $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+        $this->db->distinct();
+        $counting_is_it_3=$this->db->get('kbo_result_2017')->num_rows();
 
+        if($count!=null):
             $this->db->select('date');
             $this->db->like('date', $today, 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
             $this->db->distinct();
             $resultSet['date']=$this->db->get('kbo_result_2017')->result();
+
+            $this->db->select('no, date, time, home, away');
+            $this->db->like('date', $today, 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
         else:
             $resultSet=array();
-            $this->db->select('no, date, time, home, away');
-            $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
-            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
-            $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
-            $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
-
             $this->db->select('date');
             $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +4 day")), 'after');
             $this->db->distinct();
             $resultSet['date']=$this->db->get('kbo_result_2017')->result();
+
+            $this->db->select('no, date, time, home, away');
+            $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
+            $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +4 day")), 'after');
+            $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
         endif;
 
     	return $resultSet;
@@ -393,6 +415,10 @@
         elseif($inning=='first') $table='kbo_result_first_2017';
 
         return $this->db->get($table)->result();
+    }
+
+    function get_result_one($schedule_no){
+        return $this->db->get_where('kbo_result_2017', array('no'=>$schedule_no))->row();
     }
 
     function getHomeAwayWinRank($handicap){
@@ -508,5 +534,37 @@
         array_splice($result,5);
 
         return $result;
+    }
+
+    function add($no, $flag){
+        $row=($flag=='home' || $flag=='away') ? $this->db->get_where('kbo_result_2017', array('no'=>$no))->row() : $this->db->get_where('kbo_comment', array('no'=>$no))->row();
+
+        $this->db->where('no', $no);
+        if($flag=='home') $this->db->update('kbo_result_2017', array('home_cheer'=>$row->home_cheer+1));
+        else if($flag=='away') $this->db->update('kbo_result_2017', array('away_cheer'=>$row->away_cheer+1));
+        else if($flag=='good') $this->db->update('kbo_comment', array('good'=>$row->good+1));
+        else if($flag=='bad') $this->db->update('kbo_comment', array('bad'=>$row->bad+1));
+    }
+
+    function getCheer($schedule_no, $limit, $offset){
+        $this->db->order_by('insert_dt', 'DESC');
+
+        return $this->db->get_where('kbo_comment', array('schedule_no'=>$schedule_no), $limit, $offset)->result();
+    }
+
+    function getRankByDateAndTeam($date, $team){
+        $result=$this->db->get_where('kbo_team_total_2017', array('date'=>$date, 'team'=>$team))->result();
+        $rank=($result!=null) ? $result[0]->rank : '';
+
+        return $rank;
+    }
+
+    function getTeamTotal(){
+        $this->db->select('date');
+        $this->db->order_by('date', 'DESC');
+        $this->db->distinct();
+        $result=$this->db->get_where('kbo_team_total_2017')->row();
+
+        return $this->db->get_where('kbo_team_total_2017', array('date'=>$result->date))->result();
     }
 }

@@ -27,7 +27,7 @@
                         <li><a href="">2015</a></li>
                         <li><a href="">2016</a></li>
                     </ul>
-<!--                    <input value="이동" type="submit" class="btn_nv_mn">-->
+<!--                <input value="이동" type="submit" class="btn_nv_mn">-->
                     <a href="" class="btn_next" title="다음시즌">다음시즌</a>
                 </div>
                 <div class="relative">
@@ -602,7 +602,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
 //      SORTING
-        if('<?=$mouseTop;?>'!='') document.body.scrollTop=<?=$mouseTop;?>;
+        document.body.scrollTop=<?=$mouseTop;?>;
 
         var selector_name='';
         if('<?=$focus;?>'=='1'){

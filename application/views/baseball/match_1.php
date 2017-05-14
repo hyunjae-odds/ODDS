@@ -4663,25 +4663,25 @@
     <div class="score_bar">
         <div>
             <div class="team">
-                <p class="st">1위</p>
-                <p>LG 트윈스</p>
+                <p class="st"><?=$data->away_rank;?>위</p>
+                <p><?=$away_team;?></p>
                 <span>선발 : 데이비드 허프</span>
             </div>
-            <div class="team_logo"><span class="LG_L"></span></div>
-            <div class="num">2</div>
+            <div class="team_logo"><span class="<?=$away_initial;?>_L"></span></div>
+            <div class="num"><?=$data->away_score;?></div>
             <p>VS</p>
-            <div class="num">1</div>
-            <div class="team_logo"><span class="samsung_L"></span></div>
+            <div class="num"><?=$data->home_score;?></div>
+            <div class="team_logo"><span class="<?=$home_initial;?>_L"></span></div>
             <div class="team">
-                <p class="st">2위</p>
-                <p>삼성 라이온즈</p>
+                <p class="st"><?=$data->home_rank;?>위</p>
+                <p><?=$home_team;?></p>
                 <span>선발 : 윤성환</span>
             </div>
         </div>
         <ul>
-            <li>2016.10.25</li>
-            <li>잠실 경기장</li>
-            <li>서울</li>
+            <li><?=CURRENT_YEAR;?>.<?=$game_date;?></li>
+            <li><?=$game_stadium;?> 경기장</li>
+            <li><?=$game_location;?></li>
         </ul>
     </div>
     <div class="livescore">

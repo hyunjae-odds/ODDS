@@ -57,7 +57,7 @@
 									<td class="left pl10">3.21</td>
 									<td class="data">
 										<span>
-											<span class="b_BTN"><a href="/baseball/match_information?schedule_no=<?=$item->no;?>">매치정보</a></span>
+											<span class="b_BTN"><a href="javascript:location.replace('/baseball/match_information/<?=$item->no;?>/0')">매치정보</a></span>
 											<span class="r_BTN"><a href="">전문가 의견</a></span>
 											<span class="g_BTN"><a href="">블로그</a></span>
 											<span class="y_BTN"><a href="">배당률</a></span>
@@ -4769,7 +4769,6 @@
 									</td>
 								</tr>
 							<?php endif;endforeach; ?>
-
 						</table>
 					<?php endfor; ?>
 				</div>
@@ -4830,13 +4829,7 @@
                                             	<?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                 <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                 <td><?=$entry->team;?></td>
-                                                <td>
-                                                    <?php
-                                                        if($duration=='all' && $home_away=='all') foreach($offense as $entries): if($entry->team==$entries->team) echo $entries->g; endforeach;
-                                                        else echo $entry->g;
-                                                    ?>
-                                                </td>
-
+                                                <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
                                                 <td><?=number_format($entry->win_rate,3);?></td>
                                                 <td><?=$entry->win;?></td>
                                                 <td><?=$entry->lose;?></td>
@@ -4846,8 +4839,8 @@
                                                 <td><?=$entry->game_car;?></td>
                                                 <td><?php $exp=explode(';', $entry->recent_game);
                                                 		foreach($exp as $value) :
-                                                			if($value=='승'): echo '<a href="/baseball/match_information" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-															elseif($value=='패'): echo '<a href="/baseball/match_information" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                                			if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+															elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
 															else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
 															endif;
 														endforeach; ?>
@@ -5099,7 +5092,7 @@
 			
 <script type="text/javascript">
 $(document).ready(function(){
-    if('<?=$scroll_top;?>'!='') document.body.scrollTop=<?=$scroll_top;?>;
+    document.body.scrollTop=<?=$scroll_top;?>;
 
 	//date
 	$(".date_num").click(function(){ 
@@ -5116,7 +5109,7 @@ $(document).ready(function(){
 	});
 
 	//선수기록
-	for(var i=1;i<21;i++){		
+	for(var i=1; i<21; i++){
 		(function (k){
 			$(".table_w2 table th span.pr_" + k ).click(function(){ 
 				$(this).parents(".table_default").siblings("div").removeClass();
@@ -5155,4 +5148,4 @@ $(document).ready(function(){
 		return false;
 	});
 });
- </script>
+</script>

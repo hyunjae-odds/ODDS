@@ -257,15 +257,11 @@
 							</ul>
 						</li>
 					</ul>
-					
-				</div>	
-
+				</div>
 				<div class="banner"><a href=""><img src="/public/lib/image/main/banner02.jpg" alt="" /></a></div>
 			</div><!-- leftMenu -->
-
 			<div id="container">
-
-				<div class="content_w">
+            <div class="content_w">
 
 
 

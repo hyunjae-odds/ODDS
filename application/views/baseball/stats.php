@@ -823,7 +823,6 @@
                             </ul>
                         </div>
                     </li>
-                    <?php include('cheer_board.php');?>
                 </ul>
             </li>
         </ul>
