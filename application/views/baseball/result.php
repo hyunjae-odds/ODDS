@@ -77,7 +77,7 @@
 							<td>1.78</td>
 							<td class="data">
 								<span>
-									<span class="b_BTN2"><a href="javascript:location.replace('/baseball/match_information/<?=$item->no;?>/0')">경기기록</a></span>
+									<span class="b_BTN2"><a href="javascript:location.replace('/baseball/match_information/<?=$entry->no;?>/0')">경기기록</a></span>
 									<span class="r_BTN"><a href="">전문가 의견</a></span>
 									<span class="g_BTN"><a href="">블로그</a></span>	
 								</span>

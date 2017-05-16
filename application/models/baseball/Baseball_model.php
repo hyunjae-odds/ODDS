@@ -279,20 +279,20 @@
         $this->db->distinct();
         $count=$this->db->get('kbo_result_2017')->result();
 
-        $resultSet=array();
         $this->db->select('date');
         $this->db->like('date', $today, 'after');
         $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
         $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
         $this->db->distinct();
-        $counting_is_it_3=$this->db->get('kbo_result_2017')->num_rows();
+        $count_is_it_3=$this->db->get('kbo_result_2017')->result();
 
+        $resultSet=array();
         if($count!=null):
             $this->db->select('date');
             $this->db->like('date', $today, 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
-            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            if($count_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
             $this->db->distinct();
             $resultSet['date']=$this->db->get('kbo_result_2017')->result();
 
@@ -300,7 +300,7 @@
             $this->db->like('date', $today, 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
-            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
+            if($count_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
             $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
         else:
             $resultSet=array();
@@ -308,7 +308,7 @@
             $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
-            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +4 day")), 'after');
+            if($count_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +4 day")), 'after');
             $this->db->distinct();
             $resultSet['date']=$this->db->get('kbo_result_2017')->result();
 
@@ -316,7 +316,7 @@
             $this->db->like('date', date('m.d', strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +2 day")), 'after');
             $this->db->or_like('date', date('m.d', strtotime("$today +3 day")), 'after');
-            if($counting_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +4 day")), 'after');
+            if($count_is_it_3<3) $this->db->or_like('date', date('m.d', strtotime("$today +4 day")), 'after');
             $resultSet['schedule']=$this->db->get('kbo_result_2017')->result();
         endif;
 

@@ -1788,3 +1788,115 @@ INFO - 2017-05-14 01:15:51 --> File loaded: /Users/hyunjae/Sites/ODDS/applicatio
 INFO - 2017-05-14 01:15:51 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
 INFO - 2017-05-14 01:15:51 --> Final output sent to browser
 DEBUG - 2017-05-14 01:15:51 --> Total execution time: 0.2542
+INFO - 2017-05-14 07:48:12 --> Config Class Initialized
+INFO - 2017-05-14 07:48:12 --> Hooks Class Initialized
+DEBUG - 2017-05-14 07:48:12 --> UTF-8 Support Enabled
+INFO - 2017-05-14 07:48:12 --> Utf8 Class Initialized
+INFO - 2017-05-14 07:48:12 --> URI Class Initialized
+INFO - 2017-05-14 07:48:12 --> Router Class Initialized
+INFO - 2017-05-14 07:48:12 --> Output Class Initialized
+INFO - 2017-05-14 07:48:12 --> Security Class Initialized
+DEBUG - 2017-05-14 07:48:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-14 07:48:12 --> Input Class Initialized
+INFO - 2017-05-14 07:48:12 --> Language Class Initialized
+INFO - 2017-05-14 07:48:12 --> Loader Class Initialized
+INFO - 2017-05-14 07:48:12 --> Controller Class Initialized
+INFO - 2017-05-14 07:48:12 --> Database Driver Class Initialized
+INFO - 2017-05-14 07:48:12 --> Helper loaded: url_helper
+INFO - 2017-05-14 07:48:12 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-14 07:48:12 --> cURL Class Initialized
+INFO - 2017-05-14 07:48:12 --> Model Class Initialized
+INFO - 2017-05-14 07:48:12 --> Helper loaded: cookie_helper
+INFO - 2017-05-14 07:48:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-14 07:48:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-14 07:48:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-05-14 07:48:12 --> Pagination Class Initialized
+ERROR - 2017-05-14 07:48:12 --> Severity: Notice --> Use of undefined constant ㄱ0 - assumed 'ㄱ0' /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 52
+ERROR - 2017-05-14 07:48:12 --> Severity: Warning --> number_format() expects parameter 2 to be integer, string given /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 52
+INFO - 2017-05-14 07:48:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-14 07:48:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-14 07:48:13 --> Final output sent to browser
+DEBUG - 2017-05-14 07:48:13 --> Total execution time: 0.2283
+INFO - 2017-05-14 07:49:23 --> Config Class Initialized
+INFO - 2017-05-14 07:49:23 --> Hooks Class Initialized
+DEBUG - 2017-05-14 07:49:23 --> UTF-8 Support Enabled
+INFO - 2017-05-14 07:49:23 --> Utf8 Class Initialized
+INFO - 2017-05-14 07:49:23 --> URI Class Initialized
+INFO - 2017-05-14 07:49:23 --> Router Class Initialized
+INFO - 2017-05-14 07:49:23 --> Output Class Initialized
+INFO - 2017-05-14 07:49:23 --> Security Class Initialized
+DEBUG - 2017-05-14 07:49:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-14 07:49:23 --> Input Class Initialized
+INFO - 2017-05-14 07:49:23 --> Language Class Initialized
+INFO - 2017-05-14 07:49:23 --> Loader Class Initialized
+INFO - 2017-05-14 07:49:23 --> Controller Class Initialized
+INFO - 2017-05-14 07:49:23 --> Database Driver Class Initialized
+INFO - 2017-05-14 07:49:23 --> Helper loaded: url_helper
+INFO - 2017-05-14 07:49:23 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-14 07:49:23 --> cURL Class Initialized
+INFO - 2017-05-14 07:49:23 --> Model Class Initialized
+INFO - 2017-05-14 07:49:23 --> Helper loaded: cookie_helper
+INFO - 2017-05-14 07:49:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-14 07:49:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-14 07:49:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-05-14 07:49:23 --> Pagination Class Initialized
+ERROR - 2017-05-14 07:49:23 --> Severity: Notice --> Use of undefined constant ㄱ0 - assumed 'ㄱ0' /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 52
+ERROR - 2017-05-14 07:49:23 --> Severity: Warning --> number_format() expects parameter 2 to be integer, string given /Users/hyunjae/Sites/ODDS/application/views/baseball/match.php 52
+INFO - 2017-05-14 07:49:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-14 07:49:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-14 07:49:23 --> Final output sent to browser
+DEBUG - 2017-05-14 07:49:23 --> Total execution time: 0.2208
+INFO - 2017-05-14 07:50:19 --> Config Class Initialized
+INFO - 2017-05-14 07:50:19 --> Hooks Class Initialized
+DEBUG - 2017-05-14 07:50:19 --> UTF-8 Support Enabled
+INFO - 2017-05-14 07:50:19 --> Utf8 Class Initialized
+INFO - 2017-05-14 07:50:19 --> URI Class Initialized
+INFO - 2017-05-14 07:50:19 --> Router Class Initialized
+INFO - 2017-05-14 07:50:19 --> Output Class Initialized
+INFO - 2017-05-14 07:50:19 --> Security Class Initialized
+DEBUG - 2017-05-14 07:50:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-14 07:50:19 --> Input Class Initialized
+INFO - 2017-05-14 07:50:19 --> Language Class Initialized
+INFO - 2017-05-14 07:50:19 --> Loader Class Initialized
+INFO - 2017-05-14 07:50:19 --> Controller Class Initialized
+INFO - 2017-05-14 07:50:19 --> Database Driver Class Initialized
+INFO - 2017-05-14 07:50:20 --> Helper loaded: url_helper
+INFO - 2017-05-14 07:50:20 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-14 07:50:20 --> cURL Class Initialized
+INFO - 2017-05-14 07:50:20 --> Model Class Initialized
+INFO - 2017-05-14 07:50:20 --> Helper loaded: cookie_helper
+INFO - 2017-05-14 07:50:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-14 07:50:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-14 07:50:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-05-14 07:50:20 --> Pagination Class Initialized
+INFO - 2017-05-14 07:50:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-14 07:50:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-14 07:50:20 --> Final output sent to browser
+DEBUG - 2017-05-14 07:50:20 --> Total execution time: 0.2181
+INFO - 2017-05-14 07:50:38 --> Config Class Initialized
+INFO - 2017-05-14 07:50:38 --> Hooks Class Initialized
+DEBUG - 2017-05-14 07:50:38 --> UTF-8 Support Enabled
+INFO - 2017-05-14 07:50:38 --> Utf8 Class Initialized
+INFO - 2017-05-14 07:50:38 --> URI Class Initialized
+INFO - 2017-05-14 07:50:38 --> Router Class Initialized
+INFO - 2017-05-14 07:50:38 --> Output Class Initialized
+INFO - 2017-05-14 07:50:38 --> Security Class Initialized
+DEBUG - 2017-05-14 07:50:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-14 07:50:38 --> Input Class Initialized
+INFO - 2017-05-14 07:50:38 --> Language Class Initialized
+INFO - 2017-05-14 07:50:38 --> Loader Class Initialized
+INFO - 2017-05-14 07:50:38 --> Controller Class Initialized
+INFO - 2017-05-14 07:50:38 --> Database Driver Class Initialized
+INFO - 2017-05-14 07:50:38 --> Helper loaded: url_helper
+INFO - 2017-05-14 07:50:38 --> Session: Class initialized using 'database' driver.
+DEBUG - 2017-05-14 07:50:38 --> cURL Class Initialized
+INFO - 2017-05-14 07:50:38 --> Model Class Initialized
+INFO - 2017-05-14 07:50:38 --> Helper loaded: cookie_helper
+INFO - 2017-05-14 07:50:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-14 07:50:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-14 07:50:38 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2017-05-14 07:50:38 --> Pagination Class Initialized
+INFO - 2017-05-14 07:50:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/match.php
+INFO - 2017-05-14 07:50:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-14 07:50:38 --> Final output sent to browser
+DEBUG - 2017-05-14 07:50:38 --> Total execution time: 0.3088

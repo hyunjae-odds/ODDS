@@ -6,7 +6,6 @@ class Baseball extends MY_Controller{
         $this->load->model('/baseball/baseball_model');
     }
 
-//	리그정보
     function league_info(){
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
@@ -30,7 +29,6 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
-//  경기결과
     function result($select_year, $select_month){
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
@@ -41,7 +39,6 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
-//  리그통계
     function stats(){
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
@@ -93,7 +90,6 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
-//  팀 기록
     function team_record($select_year, $select_month, $offense_sort, $defence_sort){
         $this->delete_cookies();
         $this->load->view("/baseball/head_up");
@@ -237,10 +233,22 @@ class Baseball extends MY_Controller{
         $result->away_rank=$this->baseball_model->getRankByDateAndTeam($date_, $result->away);
         $result->home_rank=$this->baseball_model->getRankByDateAndTeam($date_, $result->home);
 
-        $this->load->view("/baseball/match", array('schedule_no'=>$schedule_no,'data'=>$result,'comment_list'=>$comment_list,'scroll_top'=>$scroll_top));
+//      최근 경기 성적
+        $team_total=$this->get_away_home_recent_game($result->away, $result->home);
 
+        $away_result=$this->get_recent_10_game_result($result->away);
+        $home_result=$this->get_recent_10_game_result($result->home);
+
+        $handicap_result=$this->getRankBoard('all', 'all', 'all', 1.5);
+        $plus_away_rank=$this->get_rank_plus_minus($result->away);
+        $plus_home_rank=$this->get_rank_plus_minus($result->home);
+
+        $this->load->view("/baseball/match", array('schedule_no'=>$schedule_no,'data'=>$result,'comment_list'=>$comment_list,'scroll_top'=>$scroll_top,'team_total'=>$team_total,'plus_away_rank'=>$plus_away_rank,
+                                                   'away_result'=>$away_result,'home_result'=>$home_result,'handicap_result'=>$handicap_result,'plus_home_rank'=>$plus_home_rank));
         $this->load->view("/baseball/footer");
     }
+
+    /* ---------------------------------------------------------- COMMON ---------------------------------------------------------- */
 
     function get_team_initial($team_name){
         if($team_name=='KIA') $initial='HT';
@@ -485,6 +493,119 @@ class Baseball extends MY_Controller{
         return $finalCut;
     }
 
+//  매치 - 최근 경기 성적
+    function get_away_home_recent_game($away, $home){
+        $result_set=array();
+        $foreach_str=array($away, $home);
+        $team_total=$this->baseball_model->getTeamTotal();
+        $offense=$this->baseball_model->get('kbo_team_offense_2017');
+        $defence=$this->baseball_model->get('kbo_team_defence_2017');
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+
+        foreach($foreach_str as $teams):
+            $result=array();
+            foreach ($team_total as $item):
+                if($item->team==$teams):
+                    $result['rank']=$item->rank;
+                    $result['team']=$item->team;
+                    $result['g']=$item->g;
+                    $result['win']=$item->win;
+                    $result['lose']=$item->lose;
+                    $result['tie']=$item->tie;
+                    $result['win_rate']=$item->win_rate;
+                    $result['recent']=$item->recent_game;
+                endif;
+            endforeach;
+            $result['plus']=$plus_minus[$teams];
+            $result['minus']=$plus_minus[$teams.'_lose'];
+            foreach ($offense as $item):
+                if($item->team==$teams):
+                    $result['h']=$item->h;
+                    $result['hr']=$item->hr;
+                    $result['avg']=$item->avg;
+                endif;
+            endforeach;
+            foreach ($defence as $item):
+                if($item->team==$teams):
+                    $result['era']=$item->era;
+                endif;
+            endforeach;
+
+            $rank_avg=10;
+            $rank_era=1;
+            $rank_h=10;
+            $rank_hr=10;
+            foreach($offense as $item): if($result['avg'] > $item->avg) $rank_avg--; endforeach;
+            foreach($defence as $item): if($result['era'] > $item->era) $rank_era++; endforeach;
+            foreach($offense as $item): if($result['h'] > $item->h) $rank_h--; endforeach;
+            foreach($offense as $item): if($result['hr'] > $item->hr) $rank_hr--; endforeach;
+            $result['rank_avg']=$rank_avg;
+            $result['rank_era']=$rank_era;
+            $result['rank_h']=$rank_h;
+            $result['rank_hr']=$rank_hr;
+
+            array_push($result_set, $result);
+        endforeach;
+
+
+        return $result_set;
+    }
+
+    function get_rank_plus_minus($team){
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $team_total=$this->baseball_model->getTeamTotal();
+        $team_array=KBO_TEAMS;
+        $result=array();
+        foreach($team_total as $item): if($item->team==$team) $team_g=$item->g; endforeach;
+
+        $rank=10;
+        $lose_rank=10;
+        foreach($team_array as $item):
+            if($plus_minus[$team]/$team_g > $plus_minus[$item]/$team_g) $rank--;
+            if($plus_minus[$team.'_lose']/$team_g < $plus_minus[$item.'_lose']/$team_g) $lose_rank--;
+        endforeach;
+        $result[$team.'_plus']=number_format($plus_minus[$team]/$team_g, 2);
+        $result[$team.'_lose_plus']=number_format($plus_minus[$team.'_lose']/$team_g, 2);
+        $result[$team]=$rank;
+        $result[$team.'_lose']=$lose_rank;
+
+        return $result;
+    }
+
+//  매치 - 홈/원정 최근 경기 결과
+    function get_recent_10_game_result($away_home){
+        $result_set=array();
+        $data=$this->baseball_model->get_result('all');
+
+        $count=0;
+        foreach($data as $item):
+            $result=array();
+            if($count < 10):
+                if($item->away==$away_home):
+                    if($item->away_score > $item->home_score) $result['win_lose']='승';
+                    elseif($item->away_score < $item->home_score) $result['win_lose']='패';
+                    else $result['win_lose']='무';
+                elseif($item->home==$away_home):
+                    if($item->away_score > $item->home_score) $result['win_lose']='패';
+                    elseif($item->away_score < $item->home_score) $result['win_lose']='승';
+                    else $result['win_lose']='무';
+                endif;
+
+                if($item->away==$away_home || $item->home==$away_home):
+                    $result['no']=$item->no;
+                    $result['date']=$item->date;
+                    $result['away']=$item->away;
+                    $result['home']=$item->home;
+                    $result['score']=$item->away_score.':'.$item->home_score;
+                    $count++;
+                    array_push($result_set, $result);
+                endif;
+            endif;
+        endforeach;
+
+        return $result_set;
+    }
+
     function delete_cookies(){
         $this->load->helper('cookie');
         $this->input->set_cookie(array('name'=>'mouse_top','value'=>'0','expire'=>'86500','domain'=>SERVER_HOST));
@@ -494,7 +615,7 @@ class Baseball extends MY_Controller{
         delete_cookie('batter_sort', SERVER_HOST, '/');
     }
 
-    /* ---------------------------------------------------------- crawling ---------------------------------------------------------- */
+    /* ---------------------------------------------------------- CRAWLING ---------------------------------------------------------- */
 
     function crawling_result(){
         $month_array=array('03','04','05','06','07','08','09');
