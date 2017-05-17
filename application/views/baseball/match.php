@@ -80,6 +80,9 @@
             $handicap_home_win_rate=$item->win_rate;
         endif;
     endforeach;
+
+    $inning=explode(';', $score_board['inning']);
+    $game_end=(strpos($score_board['message'], '종료'))?TRUE : FALSE;
 ?>
 <script src="/public/lib/js/highcharts/highcharts.js"></script>
 <script src="/public/lib/js/highcharts/modules/exporting.js"></script>
@@ -4753,7 +4756,7 @@
                 <div class="team">
                     <p class="st"><?=$data->away_rank;?>위</p>
                     <p><?=$away_team;?></p>
-                    <span>선발 : 데이비드 허프</span>
+                    <span>선발 : <?=$score_board['away_starter'];?></span>
                 </div>
                 <div class="team_logo"><span class="<?=$away_initial;?>_L"></span></div>
                 <div class="num"><?=$data->away_score;?></div>
@@ -4763,7 +4766,7 @@
                 <div class="team">
                     <p class="st"><?=$data->home_rank;?>위</p>
                     <p><?=$home_team;?></p>
-                    <span>선발 : 윤성환</span>
+                    <span>선발 : <?=$score_board['home_starter'];?></span>
                 </div>
             </div>
             <ul>
@@ -4817,68 +4820,34 @@
                         <th>B</th>
                     </tr>
                     <tr>
-                        <td><?=$away_team;?><span>(p:소사)</span></td>
+                        <td><?=$away_team;?><span>(p:<?=$score_board['away_pitcher'];?>)</span></td>
                         <td><span class="red">1.45</span><span class="gray">4.5 O</span><span class="red">1.45</span></td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td><span class="red"><b>2</b></span></td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>2</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>1</td>
+                        <?php foreach($score_board['away_score_board'] as $key=>$item): ?>
+                            <?php if($inning[1]==0 && $key+1==$inning[0] && !$game_end): ?><td><span class="red"><b><?=$item;?></b></span></td></td>
+                            <?php else: ?><td><?=$item;?></td><?php endif;?>
+                        <?php endforeach; ?>
                     </tr>
                     <tr>
-                        <td><?=$home_team;?><span>(p:소사소사)</span></td>
+                        <td><?=$home_team;?><span>(p:<?=$score_board['home_pitcher'];?>)</span></td>
                         <td><span class="red">1.45</span><span class="gray">4.5 U</span><span class="red">1.45</span></td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>1</td>
+                        <?php foreach($score_board['home_score_board'] as $key=>$item): ?>
+                            <?php if($inning[1]==1 && $key+1==$inning[0] && !$game_end): ?><td><span class="red"><b><?=$item;?></b></span></td></td>
+                            <?php else: ?><td><?=$item;?></td><?php endif;?>
+                        <?php endforeach; ?>
                     </tr>
                 </table>
             </div>
             <p class="relay">
                 <span class="relay02"></span><b>문자 중계</b>
-                <span class="rive">1루주자 류지혁 : 아웃 (유격수->1루수 1루 터치아웃)</span>
+                <span class="rive"><?=strip_tags($score_board['message']); ?></span>
             </p>
             <ul class="othergame">
-                <li>
-                    <b class="team">NC</b><span class="eagles"></span><b class="score">1</b>vs</span><b class="score">3</b><span class="eagles"></span><b class="team">한화</b>
-                    <div><a href="match.php">매치정보<span></span></a></div>
-                </li>
-                <li>
-                    <b class="team">NC</b><span class="eagles"></span><b class="score">1</b>vs</span><b class="score">3</b><span class="eagles"></span><b class="team">한화</b>
-                    <div><a href="match.php">매치정보<span></span></a></div>
-                </li>
-                <li>
-                    <b class="team">NC</b><span class="eagles"></span><b class="score">1</b>vs</span><b class="score">3</b><span class="eagles"></span><b class="team">한화</b>
-                    <div><a href="match.php">매치정보<span></span></a></div>
-                </li>
-                <li>
-                    <b class="team">NC</b><span class="eagles"></span><b class="score">1</b>vs</span><b class="score">3</b><span class="eagles"></span><b class="team">한화</b>
-                    <div><a href="match.php">매치정보<span></span></a></div>
-                </li>
+                <?php foreach($another_games as $item): ?>
+                    <li>
+                        <b class="team"><?=$item->away;?></b><span class="<?=get_team_initial($item->away);?>"></span><b class="score"><?=$item->away_score;?></b>vs</span><b class="score"><?=$item->home_score;?></b><span class="<?=get_team_initial($item->home);?>"></span><b class="team"><?=$item->home;?></b>
+                        <div><a href="/baseball/match_information/<?=$item->no;?>/0">매치정보<span></span></a></div>
+                    </li>
+                <?php endforeach;?>
             </ul>
             <div class="clear"></div>
             <ul class="live_onoff">
@@ -4944,66 +4913,66 @@
                         <div>
                             <span class="left_g"><?=$plus_away_rank[$data->away];?>위</span>
                             <div class="left_g">
-                                <div><div style="width:<?=10-$plus_away_rank[$data->away];?>0%"><span><?=$plus_away_rank[$data->away.'_plus'];?></span></div></div>
+                                <div><div style="width:<?=11-$plus_away_rank[$data->away];?>0%"><span><?=$plus_away_rank[$data->away.'_plus'];?></span></div></div>
                             </div>
                             <p>득점(경기당)</p>
                             <div class="right_g">
-                                <div><div style="width:<?=10-$plus_home_rank[$data->home];?>0%"><span><?=$plus_home_rank[$data->home.'_plus'];?></span></div></div>
+                                <div><div style="width:<?=11-$plus_home_rank[$data->home];?>0%"><span><?=$plus_home_rank[$data->home.'_plus'];?></span></div></div>
                             </div>
                             <span class="right_g"><?=$plus_home_rank[$data->home];?>위</span>
                         </div>
                         <div>
                             <span class="left_g"><?=$plus_away_rank[$data->away.'_lose'];?>위</span>
                             <div class="left_g">
-                                <div><div style="width:<?=10-$plus_away_rank[$data->away.'_lose'];?>0%"><span><?=$plus_away_rank[$data->away.'_lose_plus'];?></span></div></div>
+                                <div><div style="width:<?=11-$plus_away_rank[$data->away.'_lose'];?>0%"><span><?=$plus_away_rank[$data->away.'_lose_plus'];?></span></div></div>
                             </div>
                             <p>실점(경기당)</p>
                             <div class="right_g">
-                                <div><div style="width:<?=10-$plus_home_rank[$data->home.'_lose'];?>0%"><span><?=$plus_home_rank[$data->home.'_lose_plus'];?></span></div></div>
+                                <div><div style="width:<?=11-$plus_home_rank[$data->home.'_lose'];?>0%"><span><?=$plus_home_rank[$data->home.'_lose_plus'];?></span></div></div>
                             </div>
                             <span class="right_g"><?=$plus_home_rank[$data->home.'_lose'];?>위</span>
                         </div>
                         <div>
                             <span class="left_g"><?=$team_total[0]['rank_avg'];?>위</span>
                             <div class="left_g">
-                                <div><div style="width:32%"><span><?=$team_total[0]['avg'];?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[0]['rank_avg'];?>0%"><span><?=$team_total[0]['avg'];?></span></div></div>
                             </div>
                             <p>팀타율</p>
                             <div class="right_g">
-                                <div><div style="width:30%"><span><?=$team_total[1]['avg']?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[1]['rank_avg'];?>0%"><span><?=$team_total[1]['avg']?></span></div></div>
                             </div>
                             <span class="right_g"><?=$team_total[1]['rank_avg'];?>위</span>
                         </div>
                         <div>
                             <span class="left_g"><?=$team_total[0]['rank_era'];?>위</span>
                             <div class="left_g">
-                                <div><div style="width:72%"><span><?=number_format($team_total[0]['era'],2);?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[0]['rank_era'];?>0%"><span><?=number_format($team_total[0]['era'],2);?></span></div></div>
                             </div>
                             <p>방어율</p>
                             <div class="right_g">
-                                <div><div style="width:70%"><span><?=number_format($team_total[1]['era'],2);?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[1]['rank_era'];?>0%"><span><?=number_format($team_total[1]['era'],2);?></span></div></div>
                             </div>
                             <span class="right_g"><?=$team_total[1]['rank_era'];?>위</span>
                         </div>
                         <div>
                             <span class="left_g"><?=$team_total[0]['rank_h'];?>위</span>
                             <div class="left_g">
-                                <div><div style="width:82%"><span><?=number_format($team_total[0]['h']/$team_total[0]['g'],2);?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[0]['rank_h'];?>0%"><span><?=number_format($team_total[0]['h']/$team_total[0]['g'],2);?></span></div></div>
                             </div>
                             <p>안타(경기당)</p>
                             <div class="right_g">
-                                <div><div style="width:80%"><span><?=number_format($team_total[1]['h']/$team_total[1]['g'],2);?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[1]['rank_h'];?>0%"><span><?=number_format($team_total[1]['h']/$team_total[1]['g'],2);?></span></div></div>
                             </div>
                             <span class="right_g"><?=$team_total[1]['rank_h'];?>위</span>
                         </div>
                         <div>
                             <span class="left_g"><?=$team_total[0]['rank_hr'];?>위</span>
                             <div class="left_g">
-                                <div><div style="width:32%"><span><?=$team_total[0]['hr'];?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[0]['rank_hr'];?>0%"><span><?=$team_total[0]['hr'];?></span></div></div>
                             </div>
                             <p>팀홈런</p>
                             <div class="right_g">
-                                <div><div style="width:30%"><span><?=$team_total[1]['hr'];?></span></div></div>
+                                <div><div style="width:<?=11-$team_total[1]['rank_hr'];?>0%"><span><?=$team_total[1]['hr'];?></span></div></div>
                             </div>
                             <span class="right_g"><?=$team_total[1]['rank_hr'];?>위</span>
                         </div>

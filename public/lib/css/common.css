@@ -680,16 +680,27 @@ span.arsenal_s {font-size:0; vertical-align:top;display:inline-block; width:19px
 span.LGT {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/team_big.png") no-repeat 0 -140px;}
 span.eagles {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/team_big.png") no-repeat 0 -167px;}
 
-span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat;}
-span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat;}
-span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat;}
-span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat;}
-span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat;}
-span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat;}
-span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat;}
-span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat;}
-span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat;}
-span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat;}
+span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat; background-size:contain;}
+span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat; background-size:contain;}
+span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat; background-size:contain;}
+span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat; background-size:contain;}
+span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat; background-size:contain;}
+span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat; background-size:contain;}
+span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat; background-size:contain;}
+span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat; background-size:contain;}
+span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat; background-size:contain;}
+span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat; background-size:contain;}
+
+span.LG {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat; background-size:contain;}
+span.SS {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat; background-size:contain;}
+span.LT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat; background-size:contain;}
+span.WO {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat; background-size:contain;}
+span.SK {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat; background-size:contain;}
+span.KT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat; background-size:contain;}
+span.OB {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat; background-size:contain;}
+span.NC {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat; background-size:contain;}
+span.HH {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat; background-size:contain;}
+span.HT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat; background-size:contain;}
 
 span.manU_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/man_un.png") no-repeat;}
 span.arsenal_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/arsenal.png") no-repeat;}

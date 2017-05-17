@@ -2,7 +2,6 @@
 class Baseball extends MY_Controller{
     function __construct(){
         parent::__construct();
-        $this->load->library('curl');
         $this->load->model('/baseball/baseball_model');
     }
 
@@ -15,8 +14,8 @@ class Baseball extends MY_Controller{
         if($this->input->get('duration')==null || $this->input->get('duration')=='all') $duration='all'; else $duration=$this->input->get('duration');
 
         $total=$this->getRankBoard('all', $duration, $home_away, 0);
-        $offense=$this->baseball_model->get('kbo_team_offense_2017');
-        $defence=$this->baseball_model->get('kbo_team_defence_2017');
+        $offense=$this->baseball_model->get_order_by('kbo_team_offense_2017', 'avg', 'DESC');
+        $defence=$this->baseball_model->get_order_by('kbo_team_defence_2017', 'era', 'ASC');
         $schedule=$this->baseball_model->getScheduleAfter3Days();
         $league_statistics=$this->baseball_model->getLeagueStatistics();
 
@@ -226,7 +225,7 @@ class Baseball extends MY_Controller{
         endforeach;
 
         $result=$this->baseball_model->get_result_one($schedule_no);
-
+        $another_games=$this->baseball_model->get_where('kbo_result_2017', array('date'=>$result->date, 'away!='=>$result->away));
         $month=substr($result->date,0,2);
         $day=substr($result->date,3,2);
         $date_=CURRENT_YEAR.'-'.$month.'-'.$day;
@@ -238,17 +237,122 @@ class Baseball extends MY_Controller{
 
         $away_result=$this->get_recent_10_game_result($result->away);
         $home_result=$this->get_recent_10_game_result($result->home);
-
         $handicap_result=$this->getRankBoard('all', 'all', 'all', 1.5);
         $plus_away_rank=$this->get_rank_plus_minus($result->away);
         $plus_home_rank=$this->get_rank_plus_minus($result->home);
 
-        $this->load->view("/baseball/match", array('schedule_no'=>$schedule_no,'data'=>$result,'comment_list'=>$comment_list,'scroll_top'=>$scroll_top,'team_total'=>$team_total,'plus_away_rank'=>$plus_away_rank,
-                                                   'away_result'=>$away_result,'home_result'=>$home_result,'handicap_result'=>$handicap_result,'plus_home_rank'=>$plus_home_rank));
+//      마이닝 - 전광판
+        $date=substr($result->date, 0,5);
+        $exp=explode('.', $date);
+        $score_board=$this->get_mining_score_board(CURRENT_YEAR.'-'.$exp[0].'-'.$exp[1], $result->away, $result->home);
+
+        $this->load->view("/baseball/match", array('schedule_no'=>$schedule_no,'data'=>$result,'comment_list'=>$comment_list,'scroll_top'=>$scroll_top,'team_total'=>$team_total,
+                                                   'plus_away_rank'=>$plus_away_rank,'away_result'=>$away_result,'home_result'=>$home_result,'handicap_result'=>$handicap_result,
+                                                   'plus_home_rank'=>$plus_home_rank,'another_games'=>$another_games,'score_board'=>$score_board));
+        $this->load->view("/baseball/footer");
+    }
+
+    function score(){
+        $this->delete_cookies();
+        $this->load->view("/baseball/head_up");
+        $this->load->view("/baseball/head");
+        $this->load->view("/baseball/score");
         $this->load->view("/baseball/footer");
     }
 
     /* ---------------------------------------------------------- COMMON ---------------------------------------------------------- */
+//  score - 상대전적 ajax
+    function get_score_result_ajax(){
+        $data=$this->baseball_model->get_result('all');
+        $result=array();
+        foreach($data as $item):
+            if($item->away==$this->input->post('away') && $item->home==$this->input->post('home')):
+                array_push($result, $item);
+            elseif($item->home==$this->input->post('away') && $item->away==$this->input->post('home')):
+                array_push($result, $item);
+            endif;
+        endforeach;
+
+        $away=$this->input->post('away');
+        $away_g=0;
+        $away_win=0;
+        $away_tie=0;
+        $away_lose=0;
+        $away_get_score=0;
+        $away_lose_score=0;
+        $home=$this->input->post('home');
+        $home_g=0;
+        $home_win=0;
+        $home_tie=0;
+        $home_lose=0;
+        $home_get_score=0;
+        $home_lose_score=0;
+        foreach($result as $item):
+            if($item->away==$this->input->post('away')):
+                $away_g++;
+                if($item->away_score > $item->home_score): $away_win++;
+                elseif($item->away_score < $item->home_score): $away_lose++;
+                else: $away_tie++; endif;
+                $away_get_score+=$item->away_score;
+                $away_lose_score+=$item->home_score;
+            elseif($item->home==$this->input->post('away')):
+                $away_g++;
+                if($item->home_score > $item->away_score): $away_win++;
+                elseif($item->home_score < $item->away_score): $away_lose++;
+                else: $away_tie++; endif;
+                $away_get_score+=$item->home_score;
+                $away_lose_score+=$item->away_score;
+            endif;
+            if($item->away==$this->input->post('home')):
+                $home_g++;
+                if($item->away_score > $item->home_score): $home_win++;
+                elseif($item->away_score < $item->home_score): $home_lose++;
+                else: $home_tie++; endif;
+                $home_get_score+=$item->away_score;
+                $home_lose_score+=$item->home_score;
+            elseif($item->home==$this->input->post('home')):
+                $home_g++;
+                if($item->home_score > $item->away_score): $home_win++;
+                elseif($item->home_score < $item->away_score): $home_lose++;
+                else: $home_tie++; endif;
+                $home_get_score+=$item->home_score;
+                $home_lose_score+=$item->away_score;
+            endif;
+        endforeach;
+
+        $string='<tr class="result_contents"><td class="left_t">'.$away.'</td><td class="center">'.$away_g.'</td><td>'.$away_win.'</td><td>'.$away_tie.'</td><td>'.$away_lose.'</td><td>'.$away_get_score.'</td>'.
+                '<td>'.$away_lose_score.'</td><td>'.number_format($away_get_score/$away_g,2).'</td><td>'.number_format($away_lose_score/$away_g,2).'</td></tr>'.
+                '<tr class="result_contents"><td class="left_t">'.$home.'</td><td class="center">'.$home_g.'</td><td>'.$home_win.'</td><td>'.$home_tie.'</td><td>'.$home_lose.'</td><td>'.$home_get_score.'</td>'.
+                '<td>'.$home_lose_score.'</td><td>'.number_format($home_get_score/$home_g,2).'</td><td>'.number_format($home_lose_score/$home_g,2).'</td></tr>';
+
+        echo $string;
+    }
+
+//  score - 매치결과 ajax
+    function get_match_result_ajax(){
+        $data=$this->baseball_model->get_result('all');
+        $result=array();
+        foreach($data as $item):
+            if ($item->away == $this->input->post('away') && $item->home == $this->input->post('home')):
+                array_push($result, $item);
+            elseif ($item->home == $this->input->post('away') && $item->away == $this->input->post('home')):
+                array_push($result, $item);
+            endif;
+        endforeach;
+
+        $result_str='';
+        foreach($result as $item):
+            $result_str.='<tr class="match_contents"><td class="">KBO</td><td class="center c8">'.$item->date.'</td><td>'.$item->away.' vs '.$item->home.'</td><td><b class="score">'.$item->away_score.':'
+            .$item->home_score.'</b></td><td class="red">1.24</td><td>4.29</td><td>2.13</td><td class="data"><span class="match_ajax"><span class="b_BTN2"><a href="">경기기록</a></span>'
+            .'<span class="r_BTN"><a href="">전문가 의견</a></span><span class="g_BTN"><a href="">블로그</a></span><span class="y_BTN"><a href="">배당률</a></span></span></td></tr>';
+        endforeach;
+
+        echo $result_str;
+    }
+
+    function match_include(){
+        $this->load->view('/baseball/match_2_3');
+    }
 
     function get_team_initial($team_name){
         if($team_name=='KIA') $initial='HT';
@@ -262,8 +366,8 @@ class Baseball extends MY_Controller{
 
         return $initial;
     }
-
 //  응원하기 good, bad
+
     function add_ajax(){
         $this->baseball_model->add($this->input->post('no'), $this->input->post('flag'));
     }
@@ -271,14 +375,6 @@ class Baseball extends MY_Controller{
     function insert_comment_ajax(){
         $arr=array('schedule_no'=>$this->input->post('schedule_no'),'ip'=>$this->input->ip_address(),'content'=>$this->input->post('content'));
         $this->baseball_model->insert_comment($arr);
-    }
-
-    function score(){
-        $this->delete_cookies();
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
-        $this->load->view("/baseball/score");
-        $this->load->view("/baseball/footer");
     }
 
     function getRankBoard($inning, $duration, $home_away, $handicap){
@@ -547,7 +643,6 @@ class Baseball extends MY_Controller{
             array_push($result_set, $result);
         endforeach;
 
-
         return $result_set;
     }
 
@@ -562,7 +657,7 @@ class Baseball extends MY_Controller{
         $lose_rank=10;
         foreach($team_array as $item):
             if($plus_minus[$team]/$team_g > $plus_minus[$item]/$team_g) $rank--;
-            if($plus_minus[$team.'_lose']/$team_g < $plus_minus[$item.'_lose']/$team_g) $lose_rank--;
+            if($plus_minus[$team.'_lose']/$team_g > $plus_minus[$item.'_lose']/$team_g) $lose_rank--;
         endforeach;
         $result[$team.'_plus']=number_format($plus_minus[$team]/$team_g, 2);
         $result[$team.'_lose_plus']=number_format($plus_minus[$team.'_lose']/$team_g, 2);
@@ -615,9 +710,92 @@ class Baseball extends MY_Controller{
         delete_cookie('batter_sort', SERVER_HOST, '/');
     }
 
+    function get_mining_db(){
+        $db['hostname']='110.10.130.47';
+        $db['username']='odds';
+        $db['password']='odds8313$';
+        $db['database']='mining';
+        $db['dbdriver']='mysqli';
+        $db['dbprefix']='';
+        $db['pconnect']=FALSE;
+        $db['db_debug']=TRUE;
+        $db['cache_on']=FALSE;
+        $db['cachedir']='/application/cache';
+        $db['char_set']='utf8';
+        $db['dbcollat']='utf8_general_ci';
+        $db['swap_pre']='';
+        $db['encrypt']=FALSE;
+        $db['compress']=FALSE;
+        $db['stricton']=FALSE;
+        $db['failover']=array();
+        $db['save_queries']=TRUE;
+
+        return $this->load->database($db, TRUE);
+    }
+
+//  마이닝 - 전광판
+    function get_mining_score_board($date, $away_name, $home_name){
+        $MINING=$this->get_mining_db();
+        $MINING->select('no, away_starter, home_starter');
+        $MINING->like('game_time', $date, 'after');
+        $schedule=$MINING->get_where('schedule', array('away_name'=>$away_name, 'home_name'=>$home_name))->row();
+
+        $MINING->select('score');
+        $score=$MINING->get_where('game_score', array('schedule_no'=>$schedule->no))->result();
+        $MINING->select('rheb, inning');
+        $rheb=$MINING->get_where('game_data', array('schedule_no'=>$schedule->no))->result();
+        $MINING->select('message');
+        $MINING->order_by('no', 'DESC');
+        $message=$MINING->get_where('game_message', array('schedule_no'=>$schedule->no))->row();
+
+        $MINING->select('line_up.player_id, players.name,teams.team_name');
+        $MINING->join('players', 'players.player_id=line_up.player_id');
+        $MINING->join('teams', 'teams.no=line_up.team');
+        $pitchers=$MINING->get_where('line_up', array('schedule_no'=>$schedule->no, 'line_up.position'=>'투', 'players.delete_yn'=>'N'))->result();
+        $away_pitcher='';
+        $home_pitcher='';
+        if($away_name=='kt') $away_name=strtoupper($away_name); else if($home_name=='kt') $home_name=strtoupper($home_name);
+        if($pitchers!=null):
+            foreach($pitchers as $item):
+                if($item->team_name==$away_name) $away_pitcher=$item->name;
+                else if($item->team_name==$home_name) $home_pitcher=$item->name;
+            endforeach;
+        endif;
+
+        $result=array();
+        $away_score_board=array();
+        $home_score_board=array();
+        $score_arr=($score==null)?';;;;;;;;;;;;;;;;;;;;;;;':$score[0]->score;
+        $rheb_arr=($rheb==null)?';;;;;;;':$rheb[0]->rheb;
+        $inning_arr=($rheb==null)?'0;0':$rheb[0]->inning;
+        $message=($message==null)?'':$message->message;
+        $score_exploded=explode(';', $score_arr);
+        $rheb_exploded=explode(';', $rheb_arr);
+        foreach($score_exploded as $key=>$item):
+            if($key%2==0) array_push($away_score_board, $item);
+            else array_push($home_score_board, $item);
+        endforeach;
+        foreach($rheb_exploded as $key=>$item):
+            if($key<4) array_push($away_score_board, $item);
+            else array_push($home_score_board, $item);
+        endforeach;
+        $result['away_score_board']=$away_score_board;
+        $result['home_score_board']=$home_score_board;
+        $result['inning']=$inning_arr;
+        $result['message']=$message;
+        $result['away_starter']=$schedule->away_starter;
+        $result['home_starter']=$schedule->home_starter;
+        $result['away_pitcher']=$away_pitcher;
+        $result['home_pitcher']=$home_pitcher;
+
+        return $result;
+    }
+
     /* ---------------------------------------------------------- CRAWLING ---------------------------------------------------------- */
 
     function crawling_result(){
+        $this->load->library('curl');
+
         $month_array=array('03','04','05','06','07','08','09');
         $result=array();
         foreach($month_array as $month):
@@ -732,6 +910,8 @@ class Baseball extends MY_Controller{
     }
 
     function insertTeamRecord(){
+        $this->load->library('curl');
+
         /* 팀 종합기록 */
         $total=$this->getRankBoard('all', 'all', 'all', 0);
         $this->baseball_model->insertWithRecentGame($total);
@@ -758,40 +938,22 @@ class Baseball extends MY_Controller{
         $offense1=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Pitcher/Basic1.aspx'), $columns_pitcher1);
         $columns_pitcher2=array('rank','team','era','cg','sho','qs','bsv','tbf','np','avg','second_b','third_b','sac','sf','ibb','wp','bk');
         $offense2=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Pitcher/Basic2.aspx'), $columns_pitcher2);
+        $columns_defence=array('rank','team','g','e','pko','po','a','dp','fpct','pb','sb','cs','csp');
+        $source=$this->crawlingWithColumnList($this->curl->simple_get('http://www.koreabaseball.com/Record/Team/Defense/Basic.aspx'), $columns_defence);
 
         $resultSet_defence=array();
         foreach($offense1 as $key=>$entry):
-            foreach($offense2 as $entries):
-                if($entry['team']==$entries['team']): array_push($resultSet_defence, $entry+$entries); endif;
+            foreach($source as $entries):
+                if($entry['team']==$entries['team']): array_push($resultSet_defence, $entry+$offense2[$key]+$entries); endif;
             endforeach;
         endforeach;
 
         $this->baseball_model->insert('kbo_team_defence_2017', $resultSet_defence);
     }
 
-    function crawlingWithColumnList($source, $column_list){
-        $piece_1=explode('</tbody>', $source);
-        $pieces_6=explode('<tbody>', $piece_1[0]);
-        $pieces_2=explode("<tr>", $pieces_6[1]);
-        $resultSet=array();
-        if($pieces_2[0]!=' '){
-            for($z=1; $z<count($pieces_2); $z++){
-                $dataArray=array();
-                $pieces_3=explode("</tr>", $pieces_2[$z]);
-                $pieces_4=explode("</td>", $pieces_3[0]);
-                for($v=0; $v<count($pieces_4)-1; $v++){
-                    $pieces_5=explode(">", $pieces_4[$v]);
-                    array_push($dataArray, $pieces_5[1]);
-                }
-                $dataSet=array_combine($column_list, $dataArray);
-                array_push($resultSet, $dataSet);
-            }
-        }
-
-        return $resultSet;
-    }
-
     function crawlingBatterRecord(){
+        $this->load->library('curl');
+
 //	    1페이지
         $column_total=array('rank','name','team','avg','g','pa','ab','r','h','second_b','third_b','hr','tb','rbi','sac','sf');
         $source1=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/HitterBasic/Basic1.aspx');
@@ -830,6 +992,8 @@ class Baseball extends MY_Controller{
     }
 
     function crawlingPitcherRecord(){
+        $this->load->library('curl');
+
         $column3_total=array('rank','name','team','era','g','w','l','sv','hld','wpct','ip','h','hr','bb','hbp','so','r','er','whip');
         $source5=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/PitcherBasic/Basic1.aspx');
         $resultSet5=$this->crawlingWithColumnList($source5, $column3_total);
@@ -852,7 +1016,7 @@ class Baseball extends MY_Controller{
         foreach($resultSet5 as $key=>$item):
             $merged3[$key]=array_merge($item, $resultSet6[$key]);
         endforeach;
-
+        var_dump($merged3);
         $this->baseball_model->insertNoDelete('kbo_pitcherbasic_2017', $merged3);
 
 //      HLD
@@ -883,6 +1047,8 @@ class Baseball extends MY_Controller{
     }
 
     function crawlingRunnerRecord(){
+        $this->load->library('curl');
+
         $column_total=array('rank','name','team','g','sba','sb','cs','sbp','oob','pko');
         $source=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/Runner/Basic.aspx');
         $resultSet=$this->crawlingWithColumnList($source, $column_total);
@@ -895,5 +1061,29 @@ class Baseball extends MY_Controller{
         for($i=0; $i<count($arr3); $i++): $resultSet[$i]['name']=$arr3[$i]; endfor;
 
         $this->baseball_model->insertNoDelete('kbo_runnerbasic_2017', $resultSet);
+    }
+
+    function crawlingWithColumnList($source, $column_list){
+        $this->load->library('curl');
+
+        $piece_1=explode('</tbody>', $source);
+        $pieces_6=explode('<tbody>', $piece_1[0]);
+        $pieces_2=explode("<tr>", $pieces_6[1]);
+        $resultSet=array();
+        if($pieces_2[0]!=' '){
+            for($z=1; $z<count($pieces_2); $z++){
+                $dataArray=array();
+                $pieces_3=explode("</tr>", $pieces_2[$z]);
+                $pieces_4=explode("</td>", $pieces_3[0]);
+                for($v=0; $v<count($pieces_4)-1; $v++){
+                    $pieces_5=explode(">", $pieces_4[$v]);
+                    array_push($dataArray, $pieces_5[1]);
+                }
+                $dataSet=array_combine($column_list, $dataArray);
+                array_push($resultSet, $dataSet);
+            }
+        }
+
+        return $resultSet;
     }
 }

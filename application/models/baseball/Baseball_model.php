@@ -51,7 +51,6 @@
 
     function insertNoDelete($table, $data){
         foreach($data as $key=>$entry):
-            var_dump($entry);
             $this->db->set('insert_dt', 'NOW()', false);
             $this->db->insert($table, $entry);
         endforeach;
@@ -77,6 +76,12 @@
 	function get($table){
 		return $this->db->get($table)->result();
 	}
+
+	function get_order_by($table, $order_by, $asc_or_desc){
+        $this->db->order_by($order_by, $asc_or_desc);
+
+        return $this->db->get($table)->result();
+    }
 
 	function getByMonth($this_month){
 		$this->db->like('date', $this_month, 'after');
@@ -417,6 +422,10 @@
         return $this->db->get($table)->result();
     }
 
+    function get_where($table, $where){
+        return $this->db->get_where($table, $where)->result();
+    }
+
     function get_result_one($schedule_no){
         return $this->db->get_where('kbo_result_2017', array('no'=>$schedule_no))->row();
     }
@@ -554,7 +563,7 @@
 
     function getRankByDateAndTeam($date, $team){
         $result=$this->db->get_where('kbo_team_total_2017', array('date'=>$date, 'team'=>$team))->result();
-        $rank=($result!=null) ? $result[0]->rank : '';
+        $rank=($result!=null) ? $result[0]->rank : $this->getRankByDateAndTeam(date('Y-m-d', strtotime("$date -1 day")), $team);
 
         return $rank;
     }
