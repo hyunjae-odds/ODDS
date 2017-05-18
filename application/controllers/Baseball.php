@@ -89,6 +89,36 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
+    function stat(){
+        echo BR;
+        $this->load->view("/baseball/head_up");
+        $this->load->view("/baseball/head");
+
+        $inning=($this->input->get('inning')==null || $this->input->get('inning')=='all')? $inning='all' : $inning=$this->input->get('inning');
+        $home_away=($this->input->get('home_away')==null || $this->input->get('home_away')=='all')? 'all' : $this->input->get('home_away');
+        $duration=($this->input->get('duration')==null || $this->input->get('duration')=='all')? 'all' : $this->input->get('duration');
+        $handicap=($this->input->get('handicap')==null || $this->input->get('handicap')==0)? 0 : $this->input->get('handicap');
+
+//      홈승률/원정승률 상위 5팀
+        $home_away_win_5=$this->baseball_model->getHomeAwayWinRank($handicap);
+
+//      리그득점 상위 5팀, 득점마진 상위 5팀
+        $get_score_5=$this->baseball_model->getTotalScore2('get_score');
+        $score_margin_5=$this->baseball_model->getTotalScore2('score_margin');
+
+//      승패 최근 10경기 상/하위 5팀
+        $total=$this->getRankBoard('all', 10, 'all', 0);
+        foreach($total as $item) $sortAux[]=$item->win;
+        array_multisort($sortAux, SORT_DESC, $total);
+        $total_under_5=array_splice($total,5);
+        foreach($total_under_5 as $item) $sortAux2[]=$item->win;
+        array_multisort($sortAux2, SORT_ASC, $total_under_5);
+
+        $this->load->view("/baseball/sources/stats", array('handicap'=>$handicap,'home_away_win_5'=>$home_away_win_5,'get_score_5'=>$get_score_5,'score_margin_5'=>$score_margin_5,
+                                                           'recent_10_game_over_5'=>$total,'recent_10_game_under_5'=>$total_under_5));
+        $this->load->view("/baseball/footer");
+    }
+
     function team_record($select_year, $select_month, $offense_sort, $defence_sort){
         $this->delete_cookies();
         $this->load->view("/baseball/head_up");

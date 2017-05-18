@@ -3,16 +3,16 @@
 		<div class="topmenu_w">
 			<div class="topmenu">
 				<div class="logo">
-					<h1><a href="../../main.php"><img src="/public/lib/image/base/logo.jpg" alt="DDS CONNECT" /></a></h1>
+					<h1><a href="/public/lib/main.php"><img src="/public/lib/image/base/logo.jpg" alt="DDS CONNECT" /></a></h1>
 				</div>
 				<div class="gnb_w">
 					<div class="gnb">
 						<div class="gnbMenu">
 							<ul>
-								<li class="on"><a href="../main/game_main.php">경기정보</a><span></span></li>
-								<li class=""><a href="../../livescore/livescore_soccer.php">라이브 스코어</a><span></span></li>
-								<li><a href="">전문가존</a><span></span></li>
-								<li><a href="">배팅경연</a><span></span></li>
+								<li class="on"><a href="/odds/game/main/game_main.php">경기정보</a><span></span></li>
+								<li class=""><a href="/odds/livescore/livescore_soccer.php">라이브 스코어</a><span></span></li>
+								<li><a href="/odds/expert/expert.php">전문가존</a><span></span></li>
+								<li><a href="/odds/batting/main.php">배팅경연</a><span></span></li>
 								<li><a href="">서바이벌게임</a><span></span></li>
 								<li><a href="">커넥트뉴스</a><span></span></li>
 								<li><a href="">커뮤니티</a><span></span></li>
@@ -67,10 +67,10 @@
 					<ul>
 						<li class="best tb"><a href="">즐겨찾는 리그</a>
 							<ul class="bestleague" style="display:none;">
-								<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙</a></li>
-								<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가</a></li>
-								<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그</a></li>
-								<li><a href="/1222/game/league_soccer/league.php"><span class="majorL"></span>메이져리그</a></li>
+								<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙</a></li>
+								<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가</a></li>
+								<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그</a></li>
+								<li><a href="/odds/game/league_soccer/league.php"><span class="majorL"></span>메이져리그</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -80,54 +80,54 @@
 							<ul class="bestleague" style="">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">7</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">7</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">2</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">5</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">5</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">5</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">5</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AfricaL"></span>아프리카</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="NorthAmericaL"></span>북중미</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="SouthAmericaL"></span>남미</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="leagueangL"></span>리그앙<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_soccer/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -136,29 +136,29 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그</a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그</a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -167,29 +167,29 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">3</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">3</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">2</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -198,29 +198,29 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그</a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그</a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -229,39 +229,43 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그</a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그</a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/1222/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
-										<li><a href="/1222/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
+										<li><a href="/odds/game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
 					</ul>
+
 				</div>
+
 				<div class="banner"><a href=""><img src="/public/lib/image/main/banner02.jpg" alt="" /></a></div>
 			</div><!-- leftMenu -->
+
 			<div id="container">
-            <div class="content_w">
+
+				<div class="content_w">
 
 
 

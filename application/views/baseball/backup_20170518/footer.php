@@ -1,4 +1,6 @@
+
 			</div>
+
 			<div id="footer">
 				<div class="logo_f"><img src="/public/lib/image/base/f_logo.jpg" alt="" /></div>
 				<div>
@@ -18,6 +20,8 @@
 				</div>
 			</div><!-- footer -->
 		</div><!-- container -->
+
+		
 	</div><!-- wrapper -->
 
 <div class="rightMenu_w">
@@ -29,11 +33,11 @@
 			<li class="hockey"><span>하키</span></li><!-- bm_h 열기 -->
 			<li class="volley"><span>배구</span></li><!-- bm_v 열기 -->
 			<li class="e_sport"><span>e-sport</span></li><!-- bm_e 열기 -->
-			<li class="all"><a href="bookmark.php">관심경기 페이지</a></li>
+			<li class="all"><a href="/public/lib/bookmark.php">관심경기 페이지</a></li>
 		</ul>
 		<p>TODAY MATCH : 16</p>
 		<ul class="bmList">
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -42,7 +46,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -51,7 +55,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>-</b>
@@ -60,7 +64,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -69,7 +73,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>-</b>
@@ -78,7 +82,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -87,7 +91,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -96,7 +100,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -105,7 +109,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>1</b>
@@ -114,7 +118,7 @@
 				<span class="MU_s teamL"></span>
 				<span class="team">ATI</span>
 			</li>
-			<li class="bm_s" onclick="window.location.href='game/league_soccer/match.php';">
+			<li class="bm_s" onclick="window.location.href='match.php';">
 				<span class="team">ATI</span>
 				<span class="arsenal_s teamL"></span>
 				<b>-</b>
@@ -131,8 +135,5 @@
 
 	</div>
 </div>
-
-<map name="visual01">
-    <area shape="rect" coords="447,247,550,273" href="" target="" alt="매치정보보기" />
-</map>
-
+</body>
+</html>

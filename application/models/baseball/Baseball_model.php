@@ -368,6 +368,53 @@
 
     	return $result;
     }
+    function getTotalScore2($flag){
+    	$team_array=KBO_TEAMS;
+        $total=$this->get_result('all');
+
+    	$result_set=array();
+    	foreach($team_array as $item):
+            $count=0;
+            $result=array();
+            $result['team']=$item;
+            foreach($total as $items):
+                if($item==$items->home):
+                    if(!isset($result['get_score'])):
+                        $result['get_score']=$items->home_score;
+                        $result['lose_score']=$items->away_score;
+                    else:
+                        $result['get_score']+=$items->home_score;
+                        $result['lose_score']+=$items->away_score;
+                    endif;
+                    $count++;
+                elseif($item==$items->away):
+                    if(!isset($result['get_score'])):
+                        $result['get_score']=$items->away_score;
+                        $result['lose_score']=$items->home_score;
+                    else:
+                        $result['get_score']+=$items->away_score;
+                        $result['lose_score']+=$items->home_score;
+                    endif;
+                    $count++;
+                endif;
+            endforeach;
+            $result['get_score_by_game']=number_format($result['get_score']/$count,2);
+            $result['score_margin']=$result['get_score']-$result['lose_score'];
+            $result['g']=$count;
+            array_push($result_set, $result);
+    	endforeach;
+
+    	if($flag=='get_score'):
+            foreach($result_set as $item) $sortAux[]=$item['get_score'];
+            array_multisort($sortAux, SORT_DESC, $result_set);
+        else:
+            foreach($result_set as $item) $sortAux[]=$item['score_margin'];
+            array_multisort($sortAux, SORT_DESC, $result_set);
+        endif;
+        array_splice($result_set,5);
+
+        return $result_set;
+    }
     
     /* 리그 요약 - 통계 */
     function getLeagueStatistics(){
@@ -434,39 +481,49 @@
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $kbo_game_result=$this->get_result('all');
 
-        $this->db->order_by('date', 'DESC');
-        $this->db->order_by('win_rate', 'DESC');
-        $this->db->order_by('rank', 'ASC');
-        $kbo_team_total=$this->db->get('kbo_team_total_2017', 10)->result();
-
-        $result=array();
+        $result_home=array();
+        $result_away=array();
         foreach($team_array as $item):
-            $team=array();
+            $home=array();
+            $away=array();
             $home_win=0;
             $home_lose=0;
-            $home_draw=0;
+            $home_tie=0;
+            $home_g=0;
             $away_win=0;
             $away_lose=0;
-            $away_draw=0;
+            $away_tie=0;
+            $away_g=0;
             foreach($kbo_game_result as $entry):
                 if($item==$entry->home):
                     if($entry->home_score-$handicap > $entry->away_score): $home_win++; endif;
                     if($entry->home_score-$handicap < $entry->away_score): $home_lose++; endif;
-                    if($entry->home_score-$handicap == $entry->away_score): $home_draw++; endif;
+                    if($entry->home_score-$handicap == $entry->away_score): $home_tie++; endif;
+                    $home_g++;
                 elseif($item==$entry->away):
                     if($entry->home_score < $entry->away_score-$handicap): $away_win++; endif;
                     if($entry->home_score > $entry->away_score-$handicap): $away_lose++; endif;
-                    if($entry->home_score == $entry->away_score-$handicap): $away_draw++; endif;
+                    if($entry->home_score == $entry->away_score-$handicap): $away_tie++; endif;
+                    $away_g++;
                 endif;
             endforeach;
-            $team['home']=$home_win.'승 '.$home_draw.'무 '.$home_lose.'패';
-            $team['away']=$away_win.'승 '.$away_draw.'무 '.$away_lose.'패';
-            foreach($kbo_team_total as $items): if($items->team==$item): $team['win_rate']=$items->win_rate; endif;endforeach;
+            $home['win']=$home_win; $home['tie']=$home_tie; $home['lose']=$home_lose; $home['win_rate']=number_format($home_win/$home_g,3);
+            $away['win']=$away_win; $away['tie']=$away_tie; $away['lose']=$away_lose; $away['win_rate']=number_format($away_win/$away_g,3);
 
-            $result[$item]=$team;
+            $result_home[$item]=$home;
+            $result_away[$item]=$away;
         endforeach;
 
-        return array_splice($result,5);
+        foreach($result_home as $item) $sortAux[]=$item['win_rate'];
+        array_multisort($sortAux, SORT_DESC, $result_home);
+        foreach($result_away as $item) $sortAux2[]=$item['win_rate'];
+        array_multisort($sortAux2, SORT_DESC, $result_away);
+        array_splice($result_home,5);
+        array_splice($result_away,5);
+
+        $result_set=array('home_win_5'=>$result_home, 'away_win_5'=>$result_away);
+
+        return $result_set;
     }
 
 //  연승 확인
