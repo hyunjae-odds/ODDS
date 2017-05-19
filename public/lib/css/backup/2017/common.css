@@ -1,0 +1,748 @@
+@charset "utf-8";
+
+/* Reset */
+*{margin:0; padding:0;}
+body {font-size:12px; font-family:"맑은 고딕", Malgun Gothic, "돋움",Dotum,Helvetica,AppleGothic,Sans-serif; line-height:1.5em;color:#444;}
+@font-face {font-family:NanumGothic; src:url(font/NanumGothic.eot); src:local('☺'), src:url(font/NanumGothic.woff) format('woff')}
+h1,h2,h3,h4,h5,h6,address{font-weight:normal}
+img,fieldset{border:0; border-style:none;}
+ul,ol,li {list-style:none}
+caption,legend {visibility:hidden; height:0; font-size:0; line-height:0; width:0; overflow:hidden; text-align:left}
+table {border-collapse:collapse} 
+hr {display:none}
+
+
+
+/* html5 요소 정의 */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block}
+
+/* link */
+a:link, a:visited {color:#444; text-decoration:none;border:0; border-style:none;}
+a:active,a:hover,a:focus {color:#444; text-decoration:none}
+
+
+
+/* common */
+
+body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
+#wrapper{position:relative;clear:both; display:block; content:"";width:100%}
+#wrapper .topmenu_w {position:fixed;top:0;background:url("../image/base/bg_top_.jpg") repeat-x; width:100%;height:84px;z-index:9;}
+#wrapper .topmenu {position:fixed;top:0;left:0;right:0;width:1300px;margin:0 auto;}
+#wrapper .container_w {position:absolute;top:84px;left:0;right:0;width:1300px;margin:0 auto;}
+#leftMenu {width:240px; height:100%;position:absolute;left:0;top:20px;}
+#container {position:absolute;left:260px; top:20px;margin:0 auto;}
+.content_w {width:1040px;}
+
+
+/* color */
+.red {color:#ff225b !important;}
+.red>a {color:#ff225b !important;}
+.blue {color:#2eb2fd !important;}
+.gray {color:#aaa !important;}
+/* position */
+.left {text-align:left !important;}
+.right {text-align:right !important;}
+.center {text-align:center !important;}
+.pr5 {padding-right:5px !important;}
+.pr10 {padding-right:10px !important;}
+.pr15 {padding-right:15px !important;}
+.pr20 {padding-right:20px !important;}
+.pl5 {padding-left:5px !important;}
+.pl10 {padding-left:10px !important;}
+.pl20 {padding-left:20px !important;}
+.pt10 {padding-top:10px !important;}
+.mb10 {margin-bottom:10px !important;}
+.mb20 {margin-bottom:20px !important;}
+.ml40 {margin-left:40px !important;}
+.pt50 {padding-top:50px;}
+.pb30 {padding-bottom:30px;}
+.pb50 {padding-bottom:50px;}
+.relative {position:relative !important;}
+.absolute {position:absolute !important;}
+/* title */
+h2.tit02 {font-weight:bold;letter-spacing:-1px;color:#222;font-size:28px;height:59px;line-height:60px;margin:0 40px;border-bottom:1px solid #ccc;clear:both;display:block;content:"";}
+h2.tit02 a {vertical-align: inherit;margin:0;}
+h3 {font-size:22px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8;margin-bottom:10px;clear:both;display:block;content:"";}
+.noBorder {border:none;margin-bottom:5px;}
+
+
+
+
+
+
+
+.logo {padding:29px 30px 18px 20px;background:url("../image/base/bg_top_.jpg") repeat-x;float:left; }
+
+
+.LNB { width:238px; border:1px solid #ccc; position:relative; background-color:#fff;}
+.LNB .search {border:3px solid #f7f7f7;position:relative;}
+.LNB .search input[type="text"] {width:194px;padding:0 0 0 15px;height:100%;font-size:12px;font-family:Malgun Gothic;color:#888; border:none;margin:0;height:32px;line-height:32px;vertical-align:top;display:block;}
+.LNB .search input[type="submit"] {position:absolute;right:0px;top:0px;margin:0; padding:0; width:33px; height:32px; background:url("../image/base/btn_search.jpg") no-repeat; border:none;display:block; font-size:0; cursor:pointer;vertical-align:top;}
+.LNB .tb {border-top:1px solid #e8e8e8;}
+.LNB > p { font-size:16px;background:#f0f0f0;padding-left:20px; height:34px; line-height:34px; border-bottom:1px solid #e8e8e8; font-weight:bold;}
+.LNB ul li { background-color:#fff; letter-spacing:-0.7px;}
+.LNB ul li a {position:relative;}
+.LNB ul li.all>a, .LNB ul li.on>a {background:url("../image/base/icon.png") 173px -368px;}
+.LNB ul li a {display:inline-block; padding:7px 28px 8px 55px; width:197px; height:23px; line-height:23px; font-size:14px; border-bottom:1px solid #e8e8e8;}
+.LNB > ul > li > a {width:155px;}
+.LNB ul li:hover > a { font-weight:bold; }
+.LNB ul li ul {z-index:1;}
+.LNB ul li a span {padding-right:16px;}
+.LNB ul li.on>a { color:#fff; background:url("../image/base/icon.png") 221px -368px;}
+.LNB ul li.on>a {background:url("../image/base/icon.png") 221px -368px;}
+.LNB ul li.on {background-color:#e90052;}
+.LNB ul li.best {background:#fff url("../image/base/sporticon.png") no-repeat 13px 6px;}
+.LNB ul li.best>a,.LNB ul li.best2>a {background:url("../image/base/icon.png") 215px -682px; color:#444;}
+.LNB ul li.best>a.bold {font-weight:bold;}
+.LNB ul li.best10 {background:#fff url("../image/base/sporticon.png") no-repeat 18px -786px;}
+.LNB ul li.best ul.bestleague li {border-right:none; background:#f7f7f7;}
+.LNB ul li.best ul.bestleague2 > li {background:#eee;} 
+.LNB ul li.best ul.bestleague li a { color:#444;padding-left:13px;}
+.LNB ul li.best ul.bestleague li:hover > a {font-weight:bold;}
+.LNB ul li.best a.close,.LNB ul li.best2 a.close {background:url("../image/base/icon.png") 215px -727px;font-weight:bold;}
+.LNB ul li.soccer {background:#fff url("../image/base/sporticon.png") no-repeat 13px -31px;}
+.LNB ul li.baseball {background:#fff url("../image/base/sporticon.png") no-repeat 13px -68px;}
+.LNB ul li.basket {background:#fff url("../image/base/sporticon.png") no-repeat 13px -106px;}
+.LNB ul li.volley {background:#fff url("../image/base/sporticon.png") no-repeat 13px -143px;}
+.LNB ul li.hockey {background:#fff url("../image/base/sporticon.png") no-repeat 13px -406px;}
+.LNB ul li.e_sport {background:#fff url("../image/base/sporticon.png") no-repeat 13px -180px;}
+.LNB span.grayNm {position:absolute;right:34px;top:10px;padding:0 5px;background:#777;font-size:15px;color:#fff;font-weight:bold;height:18px;line-height:17px;letter-spacing:0.5px;min-width:26px;text-align:center;}
+
+
+
+
+/* LNB뎁스*/
+.LNB ul.one_depth {position:absolute;top:38px;left:248px; width:198px;border:1px solid #ccc; border-right:none; z-index:9; display:none;}
+.LNB ul.one_depth li {border-right:1px solid #ccc;}
+.LNB ul.one_depth li.all, .LNB ul.one_depth li.on, .LNB ul.one_depth>li:hover, .LNB ul.etcL li:hover  {background-color:#cb0047;}
+.LNB ul.one_depth li.all>a, .LNB ul.one_depth li.on>a, .LNB ul.one_depth>li:hover>a, .LNB ul.etcL li:hover > a { color:#fff; font-weight:bold;}
+.LNB ul.one_depth li a {width:161px; padding:7px 18px 8px; background:url("../image/base/icon.png") no-repeat 172px -138px;}
+.LNB ul.one_depth li.all > a, .LNB ul.one_depth li.on > a, .LNB ul.one_depth li:hover > a {background-position:172px -368px;}
+.LNB ul.one_depth li a span {padding-right:9px;}
+.LNB ul li.all a {padding-left:18px;}
+/*.LNB ul.etcL {height:500px; overflow-y:scroll; overflow-x:hidden;}*/
+.LNB ul.etcL {position:absolute;top:38px;left:0;border:1px solid #ccc; border-left:none;}
+.LNB ul.etcL li {border-right:none;} 
+.LNB ul.two_depth {position:absolute;top:-1px;left:197px; width:198px; border:1px solid #ccc;display:none;}
+.LNB ul.two_depth li {border:none;background-position:-287px -2707px;}
+.LNB ul.two_depth li a {color:;}
+.LNB ul.two_depth li.all, .LNB ul.two_depth li.on, .LNB ul.two_depth li:hover {background-color:#a6003a; }
+.LNB ul.two_depth li.all a, .LNB ul.two_depth li.on a, .LNB ul.two_depth li:hover a {color:#fff;}/**/
+.LNB ul.etcL ul.two_depth {top:-40px;}
+
+#leftMenu .banner {margin-top:19px;margin-bottom:30px;}
+#leftMenu .banner a {display:block;border:1px solid #ccc;}
+#leftMenu .banner img {width:238px;}
+
+
+.gnb_w {background:url("../image/base/bg_top_.jpg") repeat-x;height:84px; z-index:9;float:left;margin-left:10px; }
+.gnb {padding-top:6px; height:78px; margin-bottom:20px;width:1040px;position:relative;}
+.gnb .todayLeague {height:30px;}
+.gnb .todayLeague p {float:left; color:#f4be57; margin-top:9px; height:14px; line-height:11px; padding-left:22px; padding-right:20px; border-right:1px solid #77828b;}
+.gnb .todayLeague ul li {float:left; color:#77828b; padding:0 15px; width:86px; line-height:30px; text-align:center;}
+.gnb .todayLeague ul li a {color:#77828b;}
+.gnb .todayLeague ul li a:hover {color:#fff; font-weight:bold;}
+.gnb .gnbMenu {float:left;}
+.gnb .gnbMenu ul li {float:left; position:relative; height:78px; line-height:74px; overflow:hidden;}
+.gnb .gnbMenu ul li a {color:#fff; font-size:16px; font-weight:bold; padding:0 21px; display:block; height:78px; position: relative; text-decoration: none;}
+.gnb .gnbMenu>ul>li>a::before { bottom: 0; -webkit-transform: translateY(5px); -moz-transform: translateY(5px); transform: translateY(5px); }
+.gnb .gnbMenu>ul>li>a::before, .gnb .gnbMenu>ul>li>a::after { position: absolute; left: 0; bottom:0; width: 100%; height: 5px; background: #e90052; content: ''; opacity: 0; -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; -moz-transition: opacity 0.3s, -moz-transform 0.3s; transition: opacity 0.3s, transform 0.3s; }
+.gnb .gnbMenu>ul>li>a:hover::before, .gnb .gnbMenu>ul>li>a:focus::before, .gnb .gnbMenu>ul>li>a:hover::after, .gnb .gnbMenu>ul>li>a:focus::after { opacity: 1; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px);}
+.gnb .gnbMenu>ul>li.on span {display:block; width:250px; height:5px; background:#e90052; position:absolute; left:0; bottom:0px;}
+.login {position:absolute;right:-108px;top:4px; border-left:1px solid #595959;}
+.login>a {color:#fff; font-size:17px; font-weight:bold; height:30px; padding:29px 28px 21px; display:block;}
+.login .loginWrap {display:none; position:absolute; width:100%; height:100%; top:0; left:0; opacity:0.5; z-index:1; background:#000;}/* 로그인박스 */
+.login .loginWrap .loginBox {z-index:1;}
+
+.clear {clear:both;content:"";display:block;height:0;width:0;}
+
+
+
+/*  게임 상단/메뉴부분  */
+.topTitle {line-height:1;position:relative;}
+.topTitle > p {background:url("../image/game/bg_title.jpg") repeat-x;height:30px;line-height:28px;}
+.topTitle > p span {color:#fff; font-size:14px;padding-left:40px;}
+.topTitle span.underline {text-decoration:underline;padding:0;}
+.topTitle > p span.sentence {color:#989898;font-size:12px;float:right;}
+.topTitle > p span.sentence > span {color:#a4a4a4;font-size:12px;padding:0 40px 0 0;font-weight:bold;}
+.topTitle ul.leaguebox {position:absolute;background:#fff;top:89px;left:40px;border:1px solid #ccc;z-index:1;width:300px;}
+.topTitle ul.leaguebox li {}
+.topTitle ul.leaguebox li a {display:block;padding:8px 10px;}
+.topTitle ul.leaguebox li a:hover {background:#eee;}
+.game_w {position:relative;margin:0px 40px;}
+.game_w > h3 {font-size:20px;font-weight:bold;color:#222;margin-top:50px;border-bottom:1px solid #ccc;line-height:1;padding-bottom:10px;}
+.game_w > h3.h3_02 {border:none;}
+.btn_arrow01 {font-size:0; cursor:pointer; margin:0 0 0 5px;vertical-align:sub;display:inline-block; width:14px; height:14px; background:url("../image/base/icon.png") no-repeat -181px 0px;}
+
+
+
+.Bottom_gnb .scoreBox {clear:both; display:block;content:""; background:#f7f7f7; position:relative;}
+.Bottom_gnb .scoreBox .Topbox {height:29px;line-height:29px;border-bottom:1px solid #e8e8e8;}
+.Bottom_gnb .scoreBox .Topbox .dayBox p {float:left;margin-left:16px;font-weight:bold; font-size:13px;}
+.Bottom_gnb .scoreBox .Topbox .dayBox p span {font-size:12px;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul {position:relative;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul li {position:absolute;top:11px;height:11px; line-height:11px;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul li a {background:url("../image/base/icon.png") no-repeat; font-size:0; width:11px; height:11px; display:block;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul li.yesterday {left:16px;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul li.yesterday a {background-position:-24px 0;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul li.tomorrow {left:115px;}
+.Bottom_gnb .scoreBox .Topbox .dayBox ul li.tomorrow  a {background-position:-47px 0;}
+.Bottom_gnb .scoreBox .Topbox .daygame {float:left; margin:8px 0 0 20px;}
+.Bottom_gnb .scoreBox .Topbox .daygame li {float:left; padding:0 20px; border-left:1px solid #83888b; height:13px; line-height:13px;}
+.Bottom_gnb .scoreBox .Topbox .daygame li a {font-weight:700; font-size:13px; }
+.Bottom_gnb .scoreBox .Topbox .daygame li.on a {color:#ef1010;} 
+.Bottom_gnb .scoreBox .Topbox .daygame li.last {border:none; }
+.Bottom_gnb .scoreBox .Bottombox {padding:8px 0; position:relative;}
+.Bottom_gnb .scoreBox .Bottombox ul li {cursor:pointer; height:38px; line-height:37px; width:248px;}
+.Bottom_gnb .scoreBox .Bottombox ul li div{float:left;}
+.Bottom_gnb .scoreBox .Bottombox ul li p, .Bottom_gnb .scoreBox .Bottombox ul li span {float:left;}
+.Bottom_gnb .scoreBox .Bottombox ul li .game {margin:0 10px 0 16px;}
+.Bottom_gnb .scoreBox .Bottombox ul li .game p {font-size:13px; font-weight:700; margin-right:7px;}
+.Bottom_gnb .scoreBox .Bottombox ul li .team p {margin:0 5px; font-weight:bold;}
+.Bottom_gnb .scoreBox .Bottombox ul li .team span {color:#e90052; font-weight:bold;margin:0 3px;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper {margin-bottom:0; width:955px;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-viewport {border:none; background-color:none; box-shadow:none; left:9px;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-viewport ul {}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-viewport ul li {border:1px solid #dadada; height:38px;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-controls .bx-controls-direction a {width:17px; height:40px; top:16px;z-index:0;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {background:url("../image/base/icon.png") no-repeat -74px -27px; left:-13px;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-controls .bx-controls-direction .bx-next {background:url("../image/base/icon.png") no-repeat -106px -27px; right:-32px;}
+.Bottom_gnb .scoreBox .Bottombox .bx-wrapper .bx-pager {display:none;}
+.Bottom_gnb .scoreBox .Bottombox>span {position:absolute;right:20px;top:0;width:34px;height:57px;background:url("../image/base/b_gnb_bg.png") no-repeat;font-size:0;}
+.Bottom_gnb .scoreBox .settingdiv {position:absolute;right:0px;top:7px;}
+.Bottom_gnb .scoreBox .settingdiv div {cursor:pointer;float:left;width:17px;height:17px;line-height:17px;}
+.Bottom_gnb .scoreBox .settingdiv div.setting {background:url("../image/base/icon.png") no-repeat -22px -24px;}
+.Bottom_gnb .scoreBox .settingdiv div.toggleButton {background:url("../image/base/icon.png") no-repeat -74px 0px;}
+.Bottom_gnb .scoreBox .settingdiv div.toggleButton.close {background:url("../image/base/icon.png") no-repeat -106px 0px;}
+
+
+#footer {border-top:1px solid #ccc;content:""; display:block; clear:both; font-family:Dotum; height:90px;width:1019px;margin-top:100px;}
+#footer .logo_f {float:left; padding:34px 0 0 38px;}
+#footer div:nth-of-type(2) {float:left;padding:27px 0 0 5px;}
+#footer div:nth-of-type(2) ul {height:20px;}
+#footer div:nth-of-type(2) ul li {float:left; padding:0 15px; height:14px; line-height:14px; border-right:1px solid #888;color:#888;}
+#footer div:nth-of-type(2) ul li a {color:#888;}
+#footer div:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(6) {border:none;}
+#footer div:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) {border:none;}
+
+
+
+
+
+/* --------------------------   rightMenu  ---------------------------- */
+
+.rightMenu_w {position:fixed;right:-288px;top:84px;background:url("../image/base/rightMenu.png") no-repeat; width:320px;height:100%;z-index:99999;}
+.rightMenu_w .button {width:20px;height:48px;position:absolute;top:195px;left:6px;background:url("../image/base/right_open.jpg") no-repeat;border:none;cursor:pointer;}
+.rightMenu_w .rightMenu {width:250px;height:;float:right;margin:20px 25px 20px 15px;}
+.rightMenu .menu_btn {position:absolute;left:4px;top:0;}
+.rightMenu .menu_btn li {width:22px;font-size:0;position:absolute;left:0;}
+.rightMenu .menu_btn li.live {height:51px;background:url("../image/base/rbtn_live_off.png") no-repeat;top:69px;} 
+.rightMenu .menu_btn li.live.on {background:url("../image/base/rbtn_live_on.png") no-repeat;}
+.rightMenu .menu_btn li.game {height:49px;background:url("../image/base/rbtn_game_off.png") no-repeat;top:20px;}
+.rightMenu .menu_btn li.game.on {background:url("../image/base/rbtn_game_on.png") no-repeat;}
+.rightMenu .bmMenu {border-top:1px solid #aaa; border-bottom:1px solid #aaa;padding:7px 4px;height:25px;}
+.rightMenu .bmMenu li {float:left;height:23px;width:23px;border:1px solid #f6f6f6;border-radius:3px;margin-right:11px;}
+.rightMenu .bmMenu li:nth-last-of-type(1) {margin-right:0;}
+.rightMenu .bmMenu li span,.rightMenu .bmMenu li a {display:inline-block;height:23px;width:23px;vertical-align:middle;background:url("../image/base/sporticon.png") no-repeat;font-size:0;cursor:pointer;}
+.rightMenu .bmMenu .soccer span {background-position:2px -256px;}
+.rightMenu .bmMenu .base span {background-position:2px -227px;}
+.rightMenu .bmMenu .basket span {background-position:2px -284px;}
+.rightMenu .bmMenu .hockey span {background-position:2px -312px;}
+.rightMenu .bmMenu .volley span {background-position:2px -369px;}
+.rightMenu .bmMenu .e_sport span {background-position:2px -843px;}
+.rightMenu .bmMenu li.on {border:1px solid #e1e1e1;background:#f3f3f3;}
+.rightMenu .bmMenu li a {background-position:2px -882px;}
+
+.rightMenu > p {display:block;content:"";clear:both;text-align:center;font-weight:bold;font-size:14px;height:40px;line-height:39px;}
+.rightMenu .bmList {}
+.rightMenu .bmList li {width:100%;height:52px;line-height:48px;text-align:center;background:#fff;margin-bottom:2px;cursor:pointer;}
+.rightMenu .bmList li span.team {font-weight:bold;font-size:14px;width:37px;display:inline-block;}
+.rightMenu .bmList li span.teamL {margin-top:17px;}
+.rightMenu .bmList b {font-size:20px;display:inline-block;width:25px;}
+.rightMenu .bmList b.red {color:#ff225b;}
+.rightMenu .bmList .end {font-size:10px;display:inline-block;width:40px;line-height:50px;font-weight:bold;}
+.rightMenu .bmList span.red {color:#ff225b;font-size:12px;display:inline-block;width:40px;line-height:50px;font-weight:bold;}
+.rightMenu .bmList .before {font-size:12px;display:inline-block;width:40px;line-height:50px;font-weight:bold;}
+
+.rightMenu .page {text-align:center;padding:10px 0;border-bottom:1px solid #aaa;}
+.rightMenu .page a {display:inline-block;background:#ddd;width:8px;height:8px;border-radius:4px;font-size:0;margin:0 3px;padding:0;border:none;}
+.rightMenu .page a.on {background:#0977c9;width:26px;} 
+
+
+
+/* --------------------------   bookmark  ---------------------------- */
+
+.bookmark_w {background:#fff;padding-bottom:50px;}
+.book_w {margin:0 0 0 40px;}
+.bookmark {float:left;width:470px;margin: 20px 20px 20px 0px;position:relative;background:#fff;}
+.bookmark > h3 {height:40px;line-height:40px;font-size:14px;font-weight:normal;}
+.bookmark > h3 span.leagueLogo {margin:7px 0 0 15px;}
+.bookmark > h3 b {padding:0 13px 0 7px;}
+.bookmark > h3 span.line {border-left:1px solid #999; height:12px;line-height:12px;display:inline-block;padding:0 10px;}
+.bookmark > h3.basket {background:#eee url("../image/livescore/bg_basket.jpg") no-repeat right 0;}
+.bookmark > h3.soccer {background:#eee url("../image/livescore/bg_soccer.jpg") no-repeat right 0;}
+.bookmark > h3.base {background:#eee url("../image/livescore/bg_base.jpg") no-repeat right 0;}
+.bookmark > div {float:left;padding:7px 4px 0;width:80px;}
+.bookmark p.team,.bookmark p.hh,.bookmark p.OU {text-align:center;font-size:16px;font-weight:bold;padding:10px 0;}
+.bookmark span.t_logo {margin-left:7px;}
+.bookmark > div.table_w {width:280px;padding:0 7px;}
+.bookmark > div.table_w .score {}
+.bookmark > div.table_w .score .nm {font-weight:bold;font-size:24px;display:inline-block;line-height:50px;text-align:center;width:63px;}
+.bookmark > div.table_w .score .win {color:#ff225b;}
+.bookmark > div.table_w .score .state {line-height:50px;width:145px;display:inline-block;text-align:center;font-weight:bold;font-size:14px;position:relative;}
+.bookmark > div.table_w .score .state span.red {display:block;font-size:10px;line-height:10px;position:absolute;left:50%;width:20px;margin-left:-10px;top:33px;color:#ff225b;}
+.bookmark > div.table_w > table {width:280px;}
+.bookmark > div.table_w > table > tbody > tr  > th {font-size:12px;height:20px;line-height:20px;border:2px solid #fff; border-top:none; border-bottom:0;}
+.bookmark > div.table_w > table > tbody > tr > td {font-size:12px;height:20px;line-height:20px;border:none;}
+.bookmark > div.table_w .data {text-align:center;height:40px;position:relative;}
+.bookmark > div.table_w .data > span {display:block;padding-top:9px;}
+.bookmark > div.table_w .data .y_table_w > table th {background:#4a4a4a; height:40px; line-height:40px; font-size:15px; font-weight:normal;}
+.bookmark > div.table_w .data .y_table table th {height:40px; line-height:40px; font-size:15px; font-weight:normal;}
+.bookmark > div.table_w .data .y_table table td {height:40px; line-height:40px; text-align:center; font-size:14px; border-bottom:1px solid #ccc;}
+.bookmark > p {clear:both;content:"";display:block;border:1px solid #ccc; border-right:none; border-left:none;height:29px;line-height:29px;color:#999;}
+.bookmark > p span.relay02 {margin:6px 18px 0 18px;}
+.bookmark > p span.rive {height:12px;line-height:29px;border-left:1px solid #ccc;padding-left:13px;}
+.bookmark > .cover {position:absolute;top:0;right:0;width:100%;height:60%;padding:0;}
+.bookmark > .cover:hover {border:2px solid #ff225b;padding:0;margin:-2px;height:100%;}
+.bookmark > .cover .close_red {display:none;position:absolute;right:6px;top:6px;background:url("../image/base/close_red.jpg") no-repeat;width:24px;height:25px;}
+.bookmark > .cover:hover .close_red {display:block;}
+
+
+
+/*----------------------------- 팝업 -----------------------------*/
+
+
+.popup_w,.popup_w2 {width:100%;height:100%;background:url("../image/base/bg_popup_w.png") repeat;position:fixed;left:0;top:0;}
+.popup {position:absolute;right:10px; top:0;}
+.g_pop_w,.r_pop_w,.y_pop_w {display:none;}
+
+/* 팝업디자인 시작 */
+.g_pop,.r_pop {position:absolute;right:0; top:36px;z-index:4; background:#fff; border:1px solid #ccc; border-radius:10px;width:203px;line-height:1.4; overflow:hidden;display:none;}
+.g_pop h3,.r_pop h3 {border-top:3px solid #2eb300;border-bottom:1px solid #ccc; font-size:14px; text-align:center;background:#f9f9f9;height:29px;line-height:29px;font-weight:bold;margin-bottom:0;}
+.r_pop h3 {border-top:3px solid #f2250f;}
+.g_pop ul,.r_pop ul {text-align:left;padding:5px;}
+.g_pop ul li,.r_pop ul li {border-bottom:1px solid #ccc;padding:11px 10px 12px;}
+.g_pop ul li b,.r_pop ul li b {font-size:15px;}
+.g_pop ul li b span,.r_pop ul li b span {font-size:12px; font-weight:normal; color:#2eb300;padding-left:5px;}
+.r_pop ul li b span {color:#ff225b;}
+.g_pop ul li p,.r_pop ul li p {font-size:13px;line-height:1.1;}
+.g_pop .num,.r_pop .num {text-align:center; height:25px;}
+.g_pop .num span,.r_pop .num span { border-right:1px solid #ccc;padding:0 8px 0 5px; height:11px; line-height:11px; display:inline-block;}
+.g_pop .num span.on,.r_pop .num span.on {font-weight:bold;} 
+.g_pop .num span:nth-last-of-type(1),.r_pop .num span:nth-last-of-type(1) {border:none;}
+.liveTab .livetable td.data .g_pop .num span a,.liveTab .livetable td.data .r_pop .num span a {color:#444;display:inline;font-size:12px;}
+.g_pop .close,.r_pop .close {position:absolute;top:13px;right:11px;}
+.g_pop .close a,.r_pop .close a {display:block;width:11px; height:10px; background:url("../image/base/icon.png") no-repeat -135px -5px;font-size:0;}
+.y_pop {display:none;position:fixed; left:50%; top:50%; margin:-380px 0 0 -240px;z-index:9; width:480px; height:720px;background:#ddd;padding:5px;border:1px solid #aaa; }
+.y_pop h3 {background:#ff225b; color:#fff; text-align:left; padding-left:15px; font-weight:bold; letter-spacing:-1px;line-height:40px;margin-bottom:0;font-size:15px;border-bottom:none;}
+.y_pop > div {background:#fff; position:relative; z-index:9;}
+.y_pop ul.y_btn {float:left; margin-left:10px;height:34px;line-height:34px;}
+.y_pop ul.y_btn li {float:left;}
+.y_pop ul.y_btn a {width:89px; text-align:center; padding:0 7px; margin-right:5px; margin-top:5px; height:22px; line-height:22px; display:inline-block; font-size:12px; border-radius:4px; border:1px solid #ccc;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+.y_pop ul:nth-of-type(2) {float:right; margin:11px 5px 0 0 ;}
+.y_pop ul:nth-of-type(2) li {float:left; border-right:1px solid #444; height:10px; line-height:10px;padding:0 7px;}
+.y_pop ul:nth-of-type(2) li a {font-size:12px;}
+.y_pop ul:nth-of-type(2) li.on a {font-weight:bold;} 
+.y_pop ul:nth-of-type(2) li:nth-last-of-type(1) {border:none;}
+.y_pop .y_table_w {display:block; content:""; clear:both;  text-align:center; margin-left:10px; width:470px; overflow:hidden;  }
+.y_pop .y_table {width:490px; height:400px; overflow-x:hidden; overflow-y:scroll;}
+
+.y_pop .y_table_w > table th {background:#4a4a4a;color:#fff;border:1px solid #ccc;border-top:none; border-bottom:none;height:30px;line-height:30px;font-size:14px;}
+.y_pop .y_table table tr:nth-of-type(odd) th,.y_pop .y_table table tr:nth-of-type(odd) td { background:#f9f9f9;}
+.y_pop .y_table th ,.y_pop .y_table td {background:#fff;border:1px solid #ccc;height:30px;line-height:30px;text-align:center;font-weight:normal;}
+.y_pop .y_table_w td > div {position:relative;text-align:center;}
+.y_pop .y_table_w input[type="checkbox"] {margin:1px 10px 0 0;}
+.y_pop .y_table_w td span.up {color:#e10000;}
+.y_pop .y_table_w td span.down {color:#007fe1;}
+.y_pop .y_table_w div.y_view {display:none;position:absolute;font-family:Dotum; left:82px; top:5px; z-index:9 ; width:175px; padding-left:5px; background:url("../image/livescore/bg_y_view01.png") no-repeat ; }
+.y_pop .y_table_w div.y_view ul {margin:9px 14px 0;}
+.y_pop .y_table_w div.y_view ul li {height:20px; line-height:20px;}
+.y_pop .y_table_w div.y_view span, .y_pop .y_table_w div.y_view b {display:inline-block;font-size:12px; padding:0 2px 0 0;}
+.y_pop .y_table_w div.y_view span.day {border-right:1px solid #444; padding-right:5px; height:10px; line-height:10px;}
+.y_pop .y_table_w div.y_view span.up, .y_pop .y_table_w div.y_view span.down {font-weight:normal;}
+.y_pop .y_table_w div.y_view div {position:relative; top:5px;text-align:left; line-height:1.5;font-size:12px;background:url("../image/livescore/bg_y_view02.png") no-repeat 5px 51px; padding:0 15px 10px;}
+.y_pop .y_table_w div.y_view p {border-top:1px solid #ccc; width:145px; padding-top:10px;}
+.y_pop .y_table_w td:hover div.y_view {display:block;}
+.y_pop > div > div:nth-of-type(2) {border-top:3px solid #ddd;padding:10px;}
+.y_pop > div > div:nth-of-type(2) table {}
+.y_pop > div > div:nth-of-type(2) table th , .y_pop > div > div:nth-of-type(2) table td {line-height:29px; height:29px; text-align:center; border:1px solid #ccc;}
+.y_pop > div > div:nth-of-type(2) table th {background:#4a4a4a; font-size:12px; color:#fff;}
+.y_pop > div > div:nth-of-type(2) table tr:nth-of-type(odd) td { background:#f9f9f9;}
+.y_pop div.close {position:absolute; top:15px; right:15px;width:20px; height:20px; background:none;}
+.y_pop div.close a {display:block; width:20px; height:20px;background:url("../image/base/icon.png") no-repeat -154px 0px; font-size:0;}
+.liveTab .livetable.base .g_pop {top:62px; left:-164px;}
+.liveTab .livetable.base .r_pop {top:62px; left:-139px;}
+ /* 팝업디자인 끝 */
+
+
+
+
+/* --------------------------   select_default  ---------------------------- */
+
+.select {position:absolute;right:2px;top:5px;display:block;background:#fff;margin-top:1px;}
+.select p {border:1px solid #ccc;height:30px;line-height:30px;color:#676767;text-align:center;position:relative;cursor:pointer;width:100%;}
+.select p span.pp {padding:0 15px;display:inline-block; background:#fff;line-height:28px;}
+.select p span.pa {display:inline-block;width:19px;height:30px;background:#fff url("../image/base/open.jpg") no-repeat right 5px;vertical-align:middle;float:right;margin-right:1px;}
+.select ul {display:none;position:relative;right:0px;top:-1px;z-index:1;background:#fff;border:1px solid #ccc;width:100%;}
+.select ul li {height:20px;line-height:20px;}
+.select ul li:hover {background:#eee;}
+.select ul li a {color:#676767;font-family:Dotum;padding:0 5px;display:block;}
+
+
+
+/* --------------------------   table_default  ---------------------------- */
+
+table.table_default {width:100%;}
+table.table_default th {background:#eee; height:40px; line-height:40px; font-size:14px;color:#999;text-align:center;}
+table.table_default td {background:#fff;height:40px; line-height:40px; text-align:center; font-size:14px; border-bottom:1px solid #ddd;}
+table td.data {background:none;position:relative;}
+th span.lh2 {line-height:14px;font-size:12px;}
+
+
+/*--------------------------------- 공통부분 -------------------------------*/
+
+/* dot */
+p.dot {font-size:14px;line-height:14px;text-align:right;padding-top:15px;}
+p.dot span {line-height:14px;}
+span.rankdot01 {display:inline-block;width:8px;height:8px;vertical-align:middle;margin:0 5px 0 15px;background:url("../image/game/bg_dot.png") no-repeat 0 0;}
+span.rankdot02 {display:inline-block;width:8px;height:8px;vertical-align:middle;margin:0 5px 0 15px;background:url("../image/game/bg_dot.png") no-repeat 0 -40px;}
+span.rankdot03 {display:inline-block;width:8px;height:8px;vertical-align:middle;margin:0 5px 0 15px;background:url("../image/game/bg_dot.png") no-repeat 0 -81px;}
+span.rankdot04 {display:inline-block;width:8px;height:8px;vertical-align:middle;margin:0 5px 0 15px;background:url("../image/game/bg_dot.png") no-repeat 0 -121px;}
+
+
+/* date */
+.date {margin:20px 0 5px; height:30px;position:relative;display:block;}
+.date.right {position:absolute;top:5px;right:0;margin:0;}
+.date>a, .date>span {vertical-align:top;display:block; float:left; color:#4b4b4b;}
+.date .btn_prev {width:11px; height:13px; background:url("../image/base/icon.png") no-repeat -23px -50px; font-size:0; margin-top:8px; margin-right:15px;}
+.date .date_yr, .date .date_mn, .date .date_da, .date .round {font-size:22px; line-height:20px; font-weight:bold; border:1px solid #dcdcdc; height:23px; padding:2px 4px 1px;}
+.date .round {border:none;padding:4px 4px 0;}
+.date .date_yr.on, .date .date_mn.on, .date .date_da.on {border:1px solid #bbb;}
+.date .date_yr:hover, .date .date_mn:hover, .date .date_da:hover {border:1px solid #bbb;}
+.date .btn_nv_mn {font-size:12px; font-family:Malgun Gothic; border:1px solid #ccc; border-radius:4px; width:32px; height:28px; float:left; cursor:pointer; margin-left:5px; display:inline-block;background:url("../image/base/bg_inputbtn01.jpg") repeat-x 0 bottom;}
+.date span {font-size:28px; font-weight:bold;vertical-align:sub;padding:0 2px;}
+.date span.f20 {font-size:20px;padding:0;vertical-align:bottom;}
+.date .btn_next {width:11px; height:13px; background:url("../image/base/icon.png") no-repeat -50px -50px; font-size:0;margin:8px 0 0 15px;}
+.date li a {display:block;}
+.date li a:hover {background-color:#eee;}
+.date .date_yr_select, .date .date_mn_select, .date .date_da_select, .date .date_season_select {border:1px solid #bbb; background-color:#fff;position:absolute; z-index:8;display:none;}
+.date .date_yr_select {width:59px; left:26px; top:27px;}
+.date .date_mn_select {width:33px;margin-left:7px; left:91px; top:27px;}
+.date .date_da_select {width:49px;margin-left:8px; left:137px; top:27px; overflow-y:scroll; max-height:200px;}
+.date .clear {display:block; clear:both; content:"";}
+.date_yr .date_t {font-size:20px;vertical-align: bottom;}
+.date .date_ul li {text-align:left;padding-left:5px;}
+.date.center {position:absolute;top:0px;right:0;left:0;margin:0 auto;width:245px;}/*livescore/월일포함*/
+.date.center .date_mn_select,.date.right .date_mn_select {width:34px;}
+
+
+
+/* 핑크탭 */
+ul.tab01 {position:absolute;top:-60px;right:0;}
+ul.tab01 li {float:left;padding-right:1px;text-align:center;height:39px;line-height:30px;background:url("../image/game/bg_tab01.jpg") no-repeat right 0;}
+ul.tab01 li a {font-size:14px;color:#666;display:block;height:35px;min-width:79px;padding:5px 10px 0 10px;}
+ul.tab01 li:nth-of-type(1) a {background:url("../image/game/bg_tab01.jpg") no-repeat 0 0px;height:34px;}
+ul.tab01 li.on {border-top:5px solid #ff386b;border-bottom:1px solid #fff;line-height:31px;background-position:right -1px;height:35px;margin-left:-1px;}
+ul.tab01 li.on a {font-weight:bold;background:url("../image/game/bg_tab01.jpg") no-repeat 0 -5px;padding-top:0;}
+ul.tab01 li.on:nth-of-type(1) a {height:35px;}
+
+/* 노랑탭 */
+.tab01_w {border-bottom:1px solid #ccc;position:relative;height:39px;margin-bottom:10px;}
+ul.tab01_2 { position:absolute;top:0;left:0;z-index:1;}
+ul.tab01_2 li {float:left;padding-right:1px;text-align:center;height:39px;line-height:30px;background:url("../image/game/bg_tab01.jpg") no-repeat right 0;}
+ul.tab01_2 li a {font-size:14px;color:#666;display:block;height:35px;min-width:79px;padding:5px 10px 0 10px;}
+ul.tab01_2 li:nth-of-type(1) a {background:url("../image/game/bg_tab01.jpg") no-repeat 0 0px;height:34px;}
+ul.tab01_2 li.on {border-top:5px solid #ffc000;border-bottom:1px solid #fff;line-height:31px;background-position:right -1px;height:35px;margin-left:-1px;}
+ul.tab01_2 li.on a {font-weight:bold;background:url("../image/game/bg_tab01.jpg") no-repeat 0 -5px;padding-top:0;}
+ul.tab01_2 li.on:nth-of-type(1) a {height:35px;}
+
+/* 검정탭 */
+.blackTab {position:absolute;right:0; top:0;background:#444;padding:2px;border-radius:3px;z-index:1;}
+.blackTab li {font-weight:bold;float:left;border-radius:3px;padding:0 10px;height:21px;margin-left:5px;}
+.blackTab li:nth-of-type(1) {margin:0;}
+.blackTab li.on {background:#fff;}
+.blackTab li a {color:#fff;font-size:13px;line-height:19px;padding:0 5px;}
+.blackTab li.on a {color:#444;}
+
+
+.tab2_w {position:relative;height:14px;line-height:14px;padding-bottom:13px;padding-top:5px;border:none !important;}
+ul.tab02 {height:16px;}
+ul.tab02 li {float:left;text-align:center;height:14px;line-height:1;}
+ul.tab02 li a {font-size:14px;color:#666;display:block;padding:0 15px;height:14px;border-right:1px solid #ccc;}
+ul.tab02 li:nth-last-of-type(1) a {border:none;}
+ul.tab02 li.on a {color:#ff386b;font-weight:bold;}
+.tab2_w.right {position:absolute;right:0;top:15px;width:auto;}
+
+.rankdot01_color {background:#cc9157; font-weight:bold;color:#fff;display:inline-block;height:29px;line-height:29px;width:34px;text-align:center;}
+.rankdot02_color {background:#c2bb51;font-weight:bold;color:#fff;display:inline-block;height:29px;line-height:29px;width:34px;text-align:center;}
+.rankdot03_color {background:#91bf52;font-weight:bold;color:#fff;display:inline-block;height:29px;line-height:29px;width:34px;text-align:center;}
+.rankdot04_color {background:#cbcbcb;font-weight:bold;color:#fff;display:inline-block;height:29px;line-height:29px;width:34px;text-align:center;}
+
+
+
+
+/* --------------------------   icon  ---------------------------- */
+
+/* sport */
+span.soccer_icon {font-size:0; vertical-align:top;display:inline-block; width:19px; height:19px; background:url("../image/base/sporticon.png") no-repeat 0 -257px;}
+span.base_icon {font-size:0; vertical-align:top;display:inline-block; width:19px; height:19px; background:url("../image/base/sporticon.png") no-repeat 0 -227px;}
+span.basket_icon {font-size:0; vertical-align:top;display:inline-block; width:19px; height:19px; background:url("../image/base/sporticon.png") no-repeat 0 -285px;}
+span.volley_icon {font-size:0; vertical-align:top;display:inline-block; width:19px; height:19px; background:url("../image/base/sporticon.png") no-repeat 0 -370px;}
+span.hockey_icon {font-size:0; vertical-align:top;display:inline-block; width:19px; height:19px; background:url("../image/base/sporticon.png") no-repeat 0 -314px;}
+span.popularityL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/sporticon.png") no-repeat 0px -791px;}
+span.scheduleL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/sporticon.png") no-repeat 0px -932px;}
+span.AsiaL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/worldicon.png") no-repeat 0px 0px;}
+span.AfricaL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/worldicon.png") no-repeat 0px -40px;}
+span.EuropeL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/worldicon.png") no-repeat 0px -80px;}
+span.NorthAmericaL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/worldicon.png") no-repeat 0px -120px;}
+span.SouthAmericaL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/worldicon.png") no-repeat 0px -160px;}
+
+
+/* icon */
+span.home_icon {font-size:0; vertical-align:top;display:inline-block; width:11px; height:11px; background:url("../image/base/icon.png") no-repeat 0 0px;}
+span.home_icon_b {font-size:0; vertical-align:top;display:inline-block; width:25px; height:21px; background:url("../image/base/icon.png") no-repeat 0 -82px;}
+span.relay {font-size:0; vertical-align:top;display:inline-block; width:17px; height:20px; background:url("../image/base/icon.png") no-repeat -155px -33px;}
+span.relay02 {font-size:0; vertical-align:top;display:inline-block; width:20px; height:20px; background:url("../image/base/icon.png") no-repeat -183px -34px;}
+
+
+/* BTN */
+span.b_BTN {font-size:0; vertical-align:top;display:inline-block; width:72px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 0;}
+span.b_BTN2 {font-size:0; vertical-align:top;display:inline-block; width:72px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -50px;}
+span.g_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -25px;}
+span.r_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat -25px -25px;}
+span.y_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat -50px -25px;}
+span.ing_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/livescore/ing_btn.gif") no-repeat;}
+span.ing_BTN.none {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/livescore/ing_btn_n.png") no-repeat;}
+span.upicon {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_up.gif") no-repeat;}
+span.b_BTN a,span.b_BTN2 a, span.g_BTN a, span.r_BTN a, span.y_BTN a, span.ing_BTN a,span.btn_mark a {display:block;height:22px;}
+span.btn_mark.on {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_mark.png") no-repeat 0 0;}
+span.btn_mark {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_mark.png") no-repeat -22px 0;}
+
+
+/* league */
+span.engL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -39px;}
+span.champiL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -84px;}
+span.primeraL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -130px;}
+span.leagueangL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -176px;}
+span.bundesligaL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -222px;}
+span.serieL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -268px;}
+span.majorL {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -314px;}
+span.KBO_L {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -358px;}
+span.KBL_L {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -406px;}
+span.K_L {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/leagueicon.png") no-repeat 0px -452px;}
+span.PL_bb {font-size:0; vertical-align:top;display:inline-block; width:109px; height:109px; background:url("../image/base/league.png") no-repeat 0px 0;}
+
+span.KBO_bb {font-size:0; vertical-align:top;display:inline-block; width:109px; height:109px; background:url("../image/base/league.png") no-repeat 0px -109px;}
+
+
+
+/* flag */
+
+span.Greece {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -404px;}
+span.SouthAmerica {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1251px;}
+span.SouthAfrica {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -6228px;}
+span.Netherlands {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1301px;}
+span.Norway {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -2715px;}
+span.Korea {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -753px;}
+span.Denmark {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2497px;}
+span.Germany {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2408px;}
+span.Latvia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -493px;}
+span.Russia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3719px;}
+span.Rumsembureuk {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1301px;}
+span.Rwanda {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3764px;}
+span.Lithuania {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1255px;}
+span.Malaysia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -2304px;}
+span.Morocco {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1437px;}
+span.USA {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -5544px;}
+span.Vietnam {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -5909px;}
+span.Belgium {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -850px;}
+span.Bolivia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -3522px;}
+span.Brazil {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1250px;}
+span.Serbia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -6411px;}
+span.Sweden {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -4038px;}
+span.Switzerland {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1784px;}
+span.Seukoteurendeu {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3947px;}
+span.Spain {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2942px;}
+span.Slovakia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -4221px;}
+span.Singapore {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -4084px;}
+span.Argentina {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -404px;}
+span.IsleRend {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4367px;}
+span.Estonia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2720px;}
+span.Ecuador {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -6547px;}
+span.Ethiopia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2987px;}
+span.Australia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -537px;}
+span.Israel {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4412px;}
+span.Egypt {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2764px;}
+span.Italy {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -251px;}
+span.India {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -23px;}
+span.Japan {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -388px;}
+span.K_England {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2853px;}
+span.China {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2007px;}
+span.Czech {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2363px;}
+span.Chile {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1918px;}
+span.CostaRica {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1918px;}/*뭐지 얘*/
+span.Columbia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2051px;}
+span.Croatia {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -707px;}
+span.Turkey {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -5179px;}
+span.Peru {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4456px;}
+span.Poland {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3263px;}
+span.France {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -3298px;}
+span.Finland {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -3076px;}
+span.Hungary {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4278px;}
+
+
+span.all {background-image:none;}
+/* Greece 그리스 */ span.country_44 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -404px;}
+/* SouthAfrica 남아공 */ span.country_95 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -6228px;}
+/* Netherlands 네덜란드 */ span.country_24 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1301px;}
+/* Norway 노르웨이 */ span.country_92 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -2715px;}
+/* Korea 한국 */ span.country_173 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -753px;}
+/* Denmark 덴마크 */ span.country_17 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2497px;}
+/* Germany 독일 */ span.country_33 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2408px;}
+/* Latvia 라트비아 */ span.country_54 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -493px;}
+/* Russia 러시아 */ span.country_43 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3719px;}
+/* Rumsembureuk 룩셈브루크 */ span.country_181 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1301px;}
+/* Rwanda 르완다 */ span.country_201 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3764px;}
+/* Lithuania 리투아니아 */ span.country_180 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1255px;}
+/* Malaysia 말레이시아 */ span.country_183 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -2304px;}
+/* Morocco 모로코 */ span.country_88 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -1437px;}
+/* USA 미국 */ span.country_59 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -5544px;}
+/* Vietnam 베트남 */ span.country_215 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -5909px;}
+/* Belgium 벨기에 */ span.country_65 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -850px;}
+/* Bolivia 볼리비아 */ span.country_155 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -3522px;}
+/* Brazil 브라질 */ span.country_55 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1250px;}
+/* Serbia 세르비아 */ span.country_72 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -6411px;}
+/* Sweden 스웨덴 */ span.country_45 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -4038px;}
+/* Switzerland 스위스 */ span.country_53 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1784px;}
+/* Seukoteurendeu 스코틀랜드 */ span.country_104 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3947px;}
+/* Spain 스페인 */ span.country_32 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2942px;}
+/* Slovakia 슬로바키아 */ span.country_106 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -4221px;}
+/* Singapore 싱가포르 */ span.country_205 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -4084px;}
+/* Argentina 아르헨티나 */ span.country_57 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -404px;}
+/* IsleRend 아이슬랜드 */ span.country_167 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4367px;}
+/* Estonia 에스토니아 */ span.country_148 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2720px;}
+/* Ecuador 에콰도르 */ span.country_94 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -6547px;}
+/* Ethiopia 에티오피아 */ span.country_239 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2987px;}
+/* Australia 오스트리아 */ span.country_139 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -537px;}
+/* Israel 이스라엘 */ span.country_98 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4412px;}
+/* Egypt 이집트 */ span.country_84 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2764px;}
+/* Italy 이탈리아 */ span.country_34 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -251px;}
+/* India 인도*/ span.country_168 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -23px;}
+/* Japan 일본 */ span.country_79 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -388px;}
+/* England 잉글랜드 */ span.country_18 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2853px;}
+/* China 중국 */ span.country_1 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2007px;}
+/* Czech 체코 */ span.country_14 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2363px;}
+/* Chile 칠레 */ span.country_114 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1918px;}
+/* CostaRica 코스타리카 */ span.country_77 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -1918px;}/* 뭐지 얘*/
+/* Columbia 콜롬비아 */ span.country_93 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -2051px;}
+/* Croatia 크로아티아 */ span.country_6 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -707px;}
+/* Turkey 터키 */ span.country_58 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -5179px;}
+/* Peru 페루 */ span.country_210 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4456px;}
+/* Poland 폴란드 */ span.country_81 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -304px -3263px;}
+/* France 프랑스 */ span.country_20 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -3298px;}
+/* Finland 핀란드 */ span.country_68 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -3076px;}
+/* Hungary 헝가리 */ span.country_166 {font-size:0; vertical-align:top;display:inline-block; width:23px; height:23px; background:url("../image/base/country.png") no-repeat -3px -4278px;}
+span.etc {font-size:0; vertical-align:top;display:inline-block; width:24px; height:24px; background:url("../image/base/country.png") no-repeat -3px -4500px;}
+
+
+/* team */
+span.MU_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat 0 0;}
+span.MC_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat 0 -159px;}
+span.ORL_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat 0 -314px;}
+span.DET_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat 0 -471px;}
+span.NO_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat 0 -636px;}
+span.OKC_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat -129px 2px;}
+span.ATI_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat -129px -158px;}
+span.BAR_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat -129px -314px;}
+span.LG_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat -129px -473px;}
+span.NC_bbb {font-size:0; vertical-align:top;display:inline-block; width:68px; height:68px; background:url("../image/base/team_bigbigbig.png") no-repeat -129px -637px;}
+
+
+span.MU_bb {font-size:0; vertical-align:top;display:inline-block; width:52px; height:52px; background:url("../image/base/team_bigbig.png") no-repeat 0 0;}
+
+
+span.FCB_b {font-size:0; vertical-align:top;display:inline-block; width:24px; height:24px; background:url("../image/base/team_big.png") no-repeat 0 0;}
+span.NBA_b {font-size:0; vertical-align:top;display:inline-block; width:27px; height:27px; background:url("../image/base/team_big.png") no-repeat 0 -34px;}
+span.LALIGA_b {font-size:0; vertical-align:top;display:inline-block; width:27px; height:27px; background:url("../image/base/team_big.png") no-repeat 0 -71px;}
+span.KBO_b {font-size:0; vertical-align:top;display:inline-block; width:27px; height:27px; background:url("../image/base/team_big.png") no-repeat 0 -108px;}
+
+
+span.MU_s {font-size:0; vertical-align:top;display:inline-block; width:19px; height:20px; background:url("../image/base/team_small.png") no-repeat 0 0;}
+span.arsenal_s {font-size:0; vertical-align:top;display:inline-block; width:19px; height:20px; background:url("../image/base/team_small.png") no-repeat -1px -20px;}
+
+span.LGT {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/team_big.png") no-repeat 0 -140px;}
+span.eagles {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/team_big.png") no-repeat 0 -167px;}
+
+span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat; background-size:contain;}
+span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat; background-size:contain;}
+span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat; background-size:contain;}
+span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat; background-size:contain;}
+span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat; background-size:contain;}
+span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat; background-size:contain;}
+span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat; background-size:contain;}
+span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat; background-size:contain;}
+span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat; background-size:contain;}
+span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat; background-size:contain;}
+
+span.LG {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat; background-size:contain;}
+span.SS {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat; background-size:contain;}
+span.LT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat; background-size:contain;}
+span.WO {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat; background-size:contain;}
+span.SK {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat; background-size:contain;}
+span.KT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat; background-size:contain;}
+span.OB {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat; background-size:contain;}
+span.NC {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat; background-size:contain;}
+span.HH {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat; background-size:contain;}
+span.HT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat; background-size:contain;}
+
+span.manU_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/man_un.png") no-repeat;}
+span.arsenal_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/arsenal.png") no-repeat;}
+span.Leicester_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/Leicester.png") no-repeat;}
+
+
+/* event */
+span.yellow {font-size:0; vertical-align:top;display:inline-block; width:20px; height:21px; background:url("../image/livescore/liveicon.png") no-repeat 0px -220px;}
+span.goal {font-size:0; vertical-align:top;display:inline-block; width:20px; height:21px; background:url("../image/livescore/liveicon.png") no-repeat -2px -3px;}
+span.goal_w {font-size:0; vertical-align:top;display:inline-block; width:20px; height:21px; background:url("../image/livescore/liveicon.png") no-repeat -27px -2px;}
+span.change {font-size:0; vertical-align:top;display:inline-block; width:20px; height:21px; background:url("../image/livescore/liveicon.png") no-repeat -1px -33px;}
+span.change_w {font-size:0; vertical-align:top;display:inline-block; width:20px; height:21px; background:url("../image/livescore/liveicon.png") no-repeat -27px -33px;}
+span.now {font-size:0; vertical-align:top;display:inline-block; width:15px; height:15px; background:url("../image/livescore/icon_now.png") no-repeat;}
+span.yellow03 {font-size:0; vertical-align:top;display:inline-block; width:33px; height:14px; background:url("../image/livescore/liveicon.png") no-repeat 0px -302px;}
+span.redcard {font-size:0; vertical-align:top;display:inline-block; width:11px; height:14px; background:url("../image/livescore/liveicon.png") no-repeat -2px -332px;}
+span.injury {font-size:0; vertical-align:top;display:inline-block; width:13px; height:14px; background:url("../image/livescore/liveicon.png") no-repeat -1px -360px;}
+span.goal02 {font-size:0; vertical-align:top;display:inline-block; width:13px; height:15px; background:url("../image/livescore/liveicon.png") no-repeat -3px -277px;}
+span.yellow02 {font-size:0; vertical-align:top;display:inline-block; width:13px; height:15px; background:url("../image/livescore/liveicon.png") no-repeat -24px -277px;}
+span.redcard02 {font-size:0; vertical-align:top;display:inline-block; width:13px; height:15px; background:url("../image/livescore/liveicon.png") no-repeat -44px -277px;}
+
+
+.result_btn {margin:0px 1px 0 2px;display:inline-block;}
+/*span.winL {font-size:0;background:url("../image/game/WLD.png") no-repeat;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+span.loseL {font-size:0;background:url("../image/game/WLD.png") no-repeat -23px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+span.drawL {font-size:0;background:url("../image/game/WLD.png") no-repeat -46px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}*/
+span.plusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -69px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+span.minusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -92px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+span.yesL {font-size:0;background:url("../image/game/WLD.png") no-repeat -115px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+span.noL {font-size:0;background:url("../image/game/WLD.png") no-repeat -138px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+
+/* 아이콘 수정 예정 2.1
+span.winL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
+span.loseL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat -23px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
+span.drawL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat -46px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
+span.plusL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat -69px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
+span.minusL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat -92px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
+span.yesL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat -115px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
+span.noL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat -138px 0;display:inline-block;width:25px;height:25px; margin:0 2px 0 1px;}*/
+
+
+
+/* company */
+span.com_bet365 {font-size:0; vertical-align:top;display:inline-block; width:75px; height:16px; background:url("../image/livescore/company.png") no-repeat 0px 0px;}
+span.com_pinnacle {font-size:0;vertical-align:top;display:inline-block; width:75px; height:16px; background:url("../image/livescore/company.png") no-repeat 0px -32px;}
+span.com_tonybet {font-size:0;vertical-align:top;display:inline-block; width:75px; height:16px; background:url("../image/livescore/company.png") no-repeat 0px -64px;}

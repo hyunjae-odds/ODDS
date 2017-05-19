@@ -21,7 +21,7 @@
                 <div class="gray_warp_w">
                     <div class="gray_warp">
                         <div class="select" style="width:160px;">
-                            <p><span class="pp away">팀선택</span><span class="pa"></span></p>
+                            <p class="off"><span class="pp away" style="width:108px;">팀선택</span><span class="pa"></span></p>
                             <ul>
                                 <li><a href="javascript:select_team('away', '두산');">두산</a></li>
                                 <li><a href="javascript:select_team('away', 'NC');">NC</a></li>
@@ -37,7 +37,7 @@
                         </div>
                         <p>VS</p>
                         <div class="select" style="width:160px;">
-                            <p><span class="pp home">팀선택</span><span class="pa"></span></p>
+                            <p class="off"><span class="pp home" style="width:108px;">팀선택</span><span class="pa"></span></p>
                             <ul>
                                 <li><a href="javascript:select_team('home', '두산');">두산</a></li>
                                 <li><a href="javascript:select_team('home', 'NC');">NC</a></li>
@@ -52,7 +52,7 @@
                             </ul>
                         </div>
                         <div class="select" style="margin-left:55px;">
-                            <p><span class="pp">전체</span><span class="pa"></span></p>
+                            <p class="off"><span class="pp">전체</span><span class="pa"></span></p>
                             <ul>
                                 <li><a href="">홈</a></li>
                                 <li><a href="">원정</a></li>

@@ -330,7 +330,7 @@
     
     /* 득, 실, 마진 */
     function getTotalScore($inning, $duration, $home_away){
-    	$team_array=KBO_TEAMS;
+    	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $total=$this->get_result($inning);
 
     	$result=array();
@@ -368,8 +368,9 @@
 
     	return $result;
     }
+
     function getTotalScore2($flag){
-    	$team_array=KBO_TEAMS;
+    	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $total=$this->get_result('all');
 
     	$result_set=array();
@@ -455,6 +456,43 @@
     	$resultSet['handicap_away_win']=$handicap_away_win;
     	
     	return $resultSet;
+    }
+
+    function getLeagueStatistics2(){
+        $total=$this->get_result('all');
+    	$result=array();
+
+    	$g=0;
+        $away_score=0;
+        $home_score=0;
+        $away_win=0;
+        $home_win=0;
+        $tie=0;
+        $tie_game_count=0;
+        $handicap_away_win=0;
+        $handicap_home_win=0;
+
+        foreach($total as $item):
+            $away_score+=$item->away_score;
+            $home_score+=$item->home_score;
+            if($item->away_score < $item->home_score): $home_win++;
+            elseif($item->away_score > $item->home_score): $away_win++;
+            else: $tie++; $tie_game_count++; endif;
+            if($item->away_score < $item->home_score-1.5): $handicap_home_win++;
+            elseif($item->away_score-1.5 > $item->home_score): $handicap_away_win++; endif;
+            $g++;
+    	endforeach;
+
+    	$result['g']=$g;
+    	$result['away_score']=$away_score;
+    	$result['home_score']=$home_score;
+    	$result['away_win']=$away_win;
+    	$result['home_win']=$home_win;
+    	$result['tie']=$tie;
+    	$result['handicap_away_win']=$handicap_away_win;
+    	$result['handicap_home_win']=$handicap_home_win;
+
+    	return $result;
     }
 
     function get_result($inning){

@@ -385,15 +385,15 @@
                         <div class="gray_warp_w">
                             <div class="gray_warp">
                                 <div class="select ">
-                                    <p><span class="pp">2017</span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp">2017</span><span class="pa"></span></p>
                                     <ul><li><a href="">2017</a></li></ul>
                                 </div>
                                 <div class="select ">
-                                    <p><span class="pp">KBO 정규시즌</span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp">KBO 정규시즌</span><span class="pa"></span></p>
                                     <ul><li><a href="">KBO 정규시즌</a></li></ul>
                                 </div>
                                 <div class="select">
-                                    <p><span class="pp"><?php if($this->input->get('team')!=null): echo $this->input->get('team'); else: echo '팀 선택'; endif; ?></span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp"><?php if($this->input->get('team')!=null): echo $this->input->get('team'); else: echo '팀 선택'; endif; ?></span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href="/baseball/player_record?team=두산">두산</a></li>
                                         <li><a href="/baseball/player_record?team=NC">NC</a></li>
@@ -408,7 +408,7 @@
                                     </ul>
                                 </div>
                                 <div class="select ">
-                                    <p><span class="pp">포지션</span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp">포지션</span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href="">1루수</a></li>
                                         <li><a href="">2루수</a></li>
@@ -422,7 +422,7 @@
                                     </ul>
                                 </div>
                                 <div class="select ">
-                                    <p><span class="pp">경기상황별1</span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp">경기상황별1</span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href="">월별</a></li>
                                         <li><a href="">요일별</a></li>
@@ -440,7 +440,7 @@
                                     </ul>
                                 </div>
                                 <div class="select ">
-                                    <p><span class="pp">경기상황별2</span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp">경기상황별2</span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href="">3~4월</a></li>
                                         <li><a href="">5월</a></li>
@@ -451,7 +451,7 @@
                                     </ul>
                                 </div>
                                 <div class="select ">
-                                    <p><span class="pp">기본기록</span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp">기본기록</span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href=""></a></li>
                                         <li><a href=""></a></li>

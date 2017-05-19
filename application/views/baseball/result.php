@@ -70,7 +70,7 @@
 							<?php if($key%5==0) echo '<td rowspan="5"><b>'.$entry->date.'</b></td>';?>
 							<td class="l_b"><?=$entry->time;?></td>
 							<td class="right"><?=$entry->away;?></td>
-							<td><b class="score"><span class="<?=($entry->away_score > $entry->home_score) ? 'win' : 'lose';?>"><?=$entry->away_score;?></span>:<span class="<?=($entry->away_score < $entry->home_score) ? 'win' : 'lose';?>"><?=$entry->home_score;?></span></b></td>
+							<td><b class="score"><span class="<?=($entry->away_score > $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->away_score;?></span>:<span class="<?=($entry->away_score < $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->home_score;?></span></b></td>
 							<td class="left"><?=$entry->home;?></td>
 							<td><span class="black">1.31</span></td>
 							<td>2.44</td>

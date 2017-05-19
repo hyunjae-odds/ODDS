@@ -4784,7 +4784,7 @@
                                     <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=away')">원정</a></li>
 								</ul>
 								<div class="select" style="top:-7px;">
-									<p><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
+									<p class="off"><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
 										<ul>
 											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=all&home_away=<?=$home_away;?>')">시즌 전체</a></li>
 											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=10&home_away=<?=$home_away;?>')">10경기</a></li>

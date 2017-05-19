@@ -169,7 +169,7 @@
 						</ul>
 					</div>
 					<div class="select" style="top:0;right:0;">
-						<p><span class="pp">정규시즌</span><span class="pa"></span></p>
+						<p class="off"><span class="pp">정규시즌</span><span class="pa"></span></p>
 						<ul>
 							<li class=""><a href="">정규시즌</a></li>
 						</ul>
@@ -316,7 +316,7 @@
 						</ul>
 					</div>
 					<div class="select" style="top:0;right:0;">
-						<p><span class="pp">정규시즌</span><span class="pa"></span></p>
+						<p class="off"><span class="pp">정규시즌</span><span class="pa"></span></p>
 						<ul>
 							<li class=""><a href="">정규시즌</a></li>
 						</ul>

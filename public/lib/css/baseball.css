@@ -229,7 +229,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .graybox2 p {color:#666;background:#fff;width:380px;margin:0 auto; padding:0 25px;height:25px;line-height:25px;font-family:Dotum;font-size:11px;}
 
 
-.top_s2 .result_btn {margin-top:7px;}
+.top_s2 .result_btn {margin-top:7px;float:left;display:block;}
 
 
 /* 리그-선수기록  */
@@ -278,7 +278,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .h3_3 {font-weight:bold;font-size:18px;margin-top:30px;margin-bottom:15px;}
 .date.right {position:absolute;right:0;top:0;margin:0;}
 
-.s5 .gray_warp_w .gray_warp .select:nth-of-type(1) {margin-left:34px;}
+.s5 .gray_warp_w .gray_warp .select:nth-of-type(1) {margin-left:12px;}
 
 .nextTable {position:absolute;top:0;right:0;}
 .nextTable a {display:block;width:16px;height:40px;background:url("../image/game/btn_nexttable.jpg") no-repeat;}
@@ -474,7 +474,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 
 
 /* 팀정보 - 선수기록 */
-.team_p_w {position:relative;margin-top:70px;}
+.team_p_w {position:relative;/*margin-top:70px;*/}
 .team_p_w > h3 {position:absolute;left:0;right:0;margin:0 auto; top:-5px;width:auto;display:inline-block;font-size:22px;}
 .team_p {display:none;padding-top:5px;}
 .team_p.active {display:block;}
@@ -585,7 +585,8 @@ a.other_btn.close {background-position:133px -609px;}
 
 .score_bar {position:relative;}
 .score_bar > div {color:#fff;margin-top:60px;height:140px;}
-.score_bar > ul {color:#fff;content:"";display:block;clear:both;position:absolute;left:0;bottom:0;text-align:center;width:100%;}
+.match_full .score_bar > div {height:190px;}
+.score_bar > ul {color:#fff;content:"";display:block;clear:both;position:absolute;left:0;top:102px;text-align:center;width:100%;}
 .score_bar > ul li {display:inline-block;font-size:13px;padding:0 13px;border-right:1px solid #fff;height:13px;line-height:13px;}
 .score_bar > ul li:nth-last-of-type(1) {border:none;}
 .score_bar > div .team {float:left;margin-top:58px;padding:0 20px;width:210px;}
@@ -597,7 +598,10 @@ a.other_btn.close {background-position:133px -609px;}
 .score_bar > div .team_logo {float:left;width:140px;height:140px;background:url("../image/game/bg_team_logo.png") no-repeat;}
 .score_bar > div .team_logo span {margin:15px 0 0 15px;}
 .score_bar > div .num {float:left;font-size:70px;font-weight:bold;height:140px;line-height:130px;width:95px;text-align:center;}
+.score_bar > div .num.win {background:url("../image/game/icon_win.jpg") no-repeat center 15px;}
 .score_bar > div > p {float:left;height:140px;line-height:145px;font-weight:bold;font-size:20px;width:70px;text-align:center;}
+.score_bar > div > p.full {line-height:33px;margin-top:52px;height:43px;}
+.score_bar > div > p span {font-size:14px;display:block;line-height:14px;}
 
 
 .match .livescore .live {height:65px;background:url("../image/game/bg_soccerlive.png") no-repeat -5px 0; position:relative;top:10px;padding-bottom:20px;padding-left:20px;}
@@ -623,7 +627,7 @@ a.other_btn.close {background-position:133px -609px;}
 .match .livescore ul li:nth-last-of-type(1){margin-right:0;width:244px;}
 .match .livescore ul li b.team {font-size:14px;display:inline-block;width:40px;}
 .match .livescore ul li b.score {font-size:17px;display:inline-block;width:40px;padding:0;}
-.match .livescore ul li span {margin:8px 0 0;}
+.match .livescore ul li span {margin:7px 0 0;}
 .match .livescore ul li > div{display:none;background:url("../image/base/bg_80B3.png") repeat;position:absolute;left:0;top:0;width:100%;height:100%;}/**/
 .match .livescore ul li > div a {margin-top:7px;font-size:13px;color:#444;font-weight:bold;display:inline-block;border-radius:3px;text-align:center;height:26px;line-height:25px;padding:0 13px;background:url("../image/base/bg_inputbtn01.jpg") repeat-x 0 bottom;}
 .match .livescore ul li > div a span {display:inline-block;width:6px;height:12px;background:url("../image/base/icon.png") no-repeat -217px 0;margin:5px 0 0 3px;}
@@ -646,6 +650,34 @@ a.other_btn.close {background-position:133px -609px;}
 .matchTab ul.title li.on a {font-size:16px; color:#444;font-weight:bold;}
 .matchTab .result > li {display:none;width:960px;margin-left:40px;}
 .matchTab .result > li.on {display:block;}
+
+.match_full_table {margin:20px 40px 0;}
+.match_full_table table {}
+.match_full_table table th {background:#f9f9f9;font-weight:normal;color:#444;font-size:14px;}
+.match_full_table table th,.match_full_table table td {border:1px solid #ddd;}
+.match_full_table table tr:nth-of-type(1) th:nth-of-type(1) {background:none;text-align:left;padding-left:20px;font-size:13px;}
+.match_full_table span.TL {vertical-align:middle;}
+.match_full_table table td:nth-of-type(1) {border-right:none;}
+.match_full_table table td:nth-of-type(1) b {vertical-align:middle;margin-left:8px;}
+.match_full_table table td:nth-of-type(2) {border-left:none;font-size:12px;}
+.match_full_table table span.up {display:inline-block;background:url("../image/base/icon.png") 0 -508px no-repeat;width:8px;height:8px;margin-left:3px;vertical-align:middle;}
+.match_full_table table span.down {display:inline-block;background:url("../image/base/icon.png") 0 -540px no-repeat;width:8px;height:8px;margin-left:3px;vertical-align:middle;}
+.match_full_table table span.stay {display:inline-block;background:#ccc;width:8px;height:3px;margin-left:3px;vertical-align:middle;}
+
+.full_table_w {margin:0 40px 40px;}
+.full_table01 {text-align:center;font-size:14px;width:100%;}
+.full_table01 th {background:#eee;height:40px;line-height:40px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;color:#888;}
+.full_table01 td {border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+
+.full_table_w h3 {border:none;font-size:18px;}
+.full_table02 {width:100%;text-align:center;margin-bottom:40px;}
+.full_table02 th {border:1px solid #ddd;background:#595d69;color:#fff;height:40px;}
+.full_table02 td {border:1px solid #ddd;height:40px;}
+.full_table02 th:nth-of-type(1),.full_table02 td:nth-of-type(1){border-left:none;}
+.full_table02 th:nth-last-of-type(1),.full_table02 td:nth-last-of-type(1){border-right:none;}
+.full_table02 td.fs14,.full_table02 td:nth-last-of-type(1) {font-size:14px;}
+.full_table02 span.fs10 {font-size:10px;}
+.full_table02 tr:nth-of-type(odd) td {background:#eee;}
 
 /*팀간비교 막대그래프*/
 .opinion {clear:both;content:""; display:block; padding:65px 0 45px;position:relative;}
@@ -672,10 +704,11 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div span.right_g {width:50px;text-align:center;color:#444;font-size:16px;font-weight:bold;float:left;display:block;}
 .opinion .graph > div.total span.left_g {color:#ff225b;}
 .opinion .graph > div.total span.right_g {color:#22a4ff;}
-.opinion .graph > div > div.left_g span {color:#fff;font-weight:bold;line-height:17px;padding-right:15px;display:inline-block;}
-.opinion .graph > div > div.right_g span {color:#fff;padding:0 0 0 8px;font-weight:bold;line-height:19px;padding-left:20px;display:inline-block;}
-.opinion .graph > div > div > div {width:350px; background:#f1f1f1;height:20px; position:relative;}
-.opinion .graph > div > div > div > div {position:absolute; top:0; height:20px;background:url("../image/game/bg_g_right.jpg") no-repeat;min-width:30%;}
+.opinion .graph > div > div.left_g span {color:#fff;font-weight:bold;line-height:17px;padding-right:15px;display:inline-block;position:absolute;right:0;top:0;}
+.opinion .graph > div > div.right_g span {color:#fff;padding:0 0 0 8px;font-weight:bold;line-height:19px;padding-left:15px;display:inline-block;position:absolute;left:0;top:0;}
+.opinion .graph > div > div > div {width:350px; background:#f1f1f1 url("../image/game/bg_g_right_b.jpg") repeat-y;height:20px; position:relative;}
+.opinion .graph > div > div:nth-of-type(odd) > div {background:#f1f1f1 url("../image/game/bg_g_left_b.jpg") repeat-y;}
+.opinion .graph > div > div > div > div {position:absolute; top:0; height:20px;background:url("../image/game/bg_g_right.jpg") no-repeat;}
 .opinion .graph > div > div.left_g > div > div {background:url("../image/game/bg_g_left.jpg") no-repeat right 0;}
 .opinion .graph > div.total > div > div > div {background:#ff7d9f;}
 .opinion .graph > div.total > div.right_g > div > div {background:#7dc9ff;}
@@ -693,7 +726,7 @@ background: -moz-linear-gradient(left, rgba(123,201,255,1) 0%, rgba(34,164,255,1
 background: -webkit-linear-gradient(left, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', endColorstr='#22a4ff',GradientType=1 ); /* IE6-9 */}
-.opinion .graph > div.total p > span {line-height:11px;}
+.opinion .graph > div.total p > span {line-height:17px;}
 .opinion .graph > div .left_g > div > div {right:0;}
 .opinion .graph > div .right_g > div > div {left:0;}
 .opinion .graph > div .left_g > span,.opinion .graph > div .left_g > div {float:right;}

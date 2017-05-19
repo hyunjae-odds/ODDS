@@ -231,15 +231,21 @@ h3 {font-size:22px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 
 /* --------------------------   rightMenu  ---------------------------- */
 
-.rightMenu_w {position:fixed;right:-288px;top:84px;background:url("../image/base/rightMenu.png") no-repeat; width:320px;height:100%;z-index:99999;}
-.rightMenu_w .button {width:20px;height:48px;position:absolute;top:195px;left:6px;background:url("../image/base/right_open.jpg") no-repeat;border:none;cursor:pointer;}
-.rightMenu_w .rightMenu {width:250px;height:;float:right;margin:20px 25px 20px 15px;}
-.rightMenu .menu_btn {position:absolute;left:4px;top:0;}
+/*.rightMenu_w {position:fixed;width:100%;height:100%;z-index:10;}
+.rightMenu_w .bg {position:fixed;background:orange;width:100%;height:100%;}*/
+.rightMenu_w .rightMenu {/*position:absolute;top:0px;*/position:fixed;top:85px;right:-288px;background:url("../image/base/rightMenu.png") no-repeat; width:320px;height:100%;z-index:1;}
+.rightMenu .menu_btn {position:absolute;left:4px;top:175px;}
 .rightMenu .menu_btn li {width:22px;font-size:0;position:absolute;left:0;}
-.rightMenu .menu_btn li.live {height:51px;background:url("../image/base/rbtn_live_off.png") no-repeat;top:69px;} 
-.rightMenu .menu_btn li.live.on {background:url("../image/base/rbtn_live_on.png") no-repeat;}
-.rightMenu .menu_btn li.game {height:49px;background:url("../image/base/rbtn_game_off.png") no-repeat;top:20px;}
-.rightMenu .menu_btn li.game.on {background:url("../image/base/rbtn_game_on.png") no-repeat;}
+.rightMenu .menu_btn li.live {height:51px;top:69px;}
+.rightMenu .menu_btn li.game {height:49px;top:20px;}
+.rightMenu .menu_btn li a {display:block;width:100%;height:100%;}
+.rightMenu .menu_btn li.live a {background:url("../image/base/rbtn_live_off.png") no-repeat;} 
+.rightMenu .menu_btn li.live.on a {background:url("../image/base/rbtn_live_on.png") no-repeat;}
+.rightMenu .menu_btn li.game a {background:url("../image/base/rbtn_game_off.png") no-repeat;}
+.rightMenu .menu_btn li.game.on a {background:url("../image/base/rbtn_game_on.png") no-repeat;}
+
+/*.rightMenu .menu_view {height:100%;overflow-y:scroll;}*/
+.rightMenu .menu_view > li {padding:20px 25px 20px 46px;}
 .rightMenu .bmMenu {border-top:1px solid #aaa; border-bottom:1px solid #aaa;padding:7px 4px;height:25px;}
 .rightMenu .bmMenu li {float:left;height:23px;width:23px;border:1px solid #f6f6f6;border-radius:3px;margin-right:11px;}
 .rightMenu .bmMenu li:nth-last-of-type(1) {margin-right:0;}
@@ -252,6 +258,48 @@ h3 {font-size:22px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 .rightMenu .bmMenu .e_sport span {background-position:2px -843px;}
 .rightMenu .bmMenu li.on {border:1px solid #e1e1e1;background:#f3f3f3;}
 .rightMenu .bmMenu li a {background-position:2px -882px;}
+.rightMenu .game_view h3 {font-size:14px;border:none;margin-bottom:3px;}
+.rightMenu .game_num {}
+.rightMenu .game_num > li {margin-bottom:3px;}
+.rightMenu .game_num h4 {height:29px;line-height:27px;background:#eee;border:1px solid #ccc;padding:0 10px;font-size:13px;font-weight:bold;}
+.rightMenu .game_num h4 a {display:block;color:#666;}
+.rightMenu .game_num h4 a span {display:inline-block;width:58px;}
+.rightMenu .game_num h4 a span.red {font-size:11px;margin-left:7px;display:inline-block;width:32px;}
+.rightMenu .game_num h4 span.gray {font-size:11px;margin-left:3px;display:inline-block;width:42px;}
+.rightMenu .game_num h4 span.Dgray {text-align:right;display:inline-block;width:70px;}
+.rightMenu .game_num h4 span.arro.up,.rightMenu .game_new h4 span.arro.up {margin-left:5px;display:inline-block;width:10px;height:10px;background:url("../image/base/arro_rightGame.jpg") no-repeat;vertical-align:middle;}
+.rightMenu .game_num h4 span.arro.down,.rightMenu .game_new h4 span.arro.down {margin-left:5px;display:inline-block;width:10px;height:10px;background:url("../image/base/arro_rightGame.jpg") no-repeat 0 -10px;vertical-align:middle;}
+.rightMenu ul.list {display:none;background:#eee;border-left:1px solid #ccc;border-right:1px solid #ccc;}
+.rightMenu ul.list li {position:relative;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:url("../image/base/bg_game_li.jpg") repeat-x 0 bottom;padding:10px;margin-bottom:3px;}
+.rightMenu ul.list li:nth-of-type(1) {border-top:none;}
+.rightMenu ul.list li:nth-last-of-type(1) {margin-bottom:0;}
+.rightMenu ul.list li p {font-weight:bold;color:#666;font-size:13px;}
+.rightMenu ul.list li span {font-size:11px;}
+.rightMenu ul.list li b {position:absolute;bottom:10px;right:10px;font-size:18px;}
+.rightMenu ul.list li a.close {display:block;position:absolute;right:10px;top:10px;background:url("../image/base/btn_game_li_close.jpg") no-repeat;width:12px;height:12px;}
+.rightMenu .game_new {margin-top:20px;}
+.rightMenu .game_new h4 {height:29px;line-height:27px;background:url("../image/base/bg_game_new_h4.jpg") repeat-x ;border:1px solid #ccc;padding:0 10px;font-size:13px;font-weight:bold;}
+.rightMenu .game_new h4 a {display:block;color:#fff;}
+.rightMenu .game_new h4 a span.s1 {display:inline-block;width:30px;}
+.rightMenu .game_new h4 a span.s2 {font-size:11px;margin-left:6px;display:inline-block;width:45px;}
+.rightMenu .game_new h4 span.s3 {width:45px;text-align:center;font-size:11px;margin-left:0px;display:inline-block;background:#ff225b;border-radius:4px;height:15px;line-height:13px;}
+.rightMenu .game_new h4 span.s4 {text-align:right;display:inline-block;width:86px;}
+.rightMenu .game_new div.point {padding:10px 0;border:1px solid #ccc;border-top:none;}
+.rightMenu .game_new div.point p {line-height:27px;height:29px;padding:0 12px;}
+.rightMenu .game_new div.point p .left {font-weight:bold;font-size:13px;color:#666;float:left;}
+.rightMenu .game_new div.point p .right {float:right;}
+.rightMenu .game_new div.point p .right b {margin-right:5px;font-size:13px;color:#666;}
+.rightMenu .game_new div.point p .right b.red {margin:0;}
+.rightMenu .game_new div.point p .right.relative {right:-4px;}
+.rightMenu .game_new div.point p .right input {text-align:right;font-weight:bold;font-size:13px;color:#666;border:1px solid #ccc;height:27px;line-height:25px;width:69px;border-radius:4px;padding:0 35px 0 3px;background:url("../image/base/bg_input_point.jpg") no-repeat right 0;}
+.rightMenu .game_new div.point div {margin-top:5px;padding:0 8px;}
+.rightMenu .game_new div.point div a {display:inline-block;width:111px;height:35px;line-height:33px;color:#666;background:url("../image/base/bg_game_li.jpg") repeat-x 0 bottom;border:1px solid #ccc;text-align:center;}
+.rightMenu .game_new div.point div a:nth-of-type(1),.rightMenu .game_new div.point div a:nth-of-type(2) {margin-bottom:5px;}
+.rightMenu .game_new div.point div a:nth-of-type(even) {margin-left:5px;}
+.rightMenu .game_new div.point div a b {padding-right:5px;font-size:13px;}
+.rightMenu .game_new div.point div a:nth-last-of-type(1) b {padding:0;}
+.rightMenu .game_new p.btn {background:url("../image/base/bg_point_btn.jpg") repeat-x;height:35px;border:1px solid #ccc;}
+.rightMenu .game_new p.btn a {display:block;color:#fff;font-weight:bold;line-height:33px;text-align:center;font-size:13px;}
 
 .rightMenu > p {display:block;content:"";clear:both;text-align:center;font-weight:bold;font-size:14px;height:40px;line-height:39px;}
 .rightMenu .bmList {}
@@ -680,28 +728,8 @@ span.arsenal_s {font-size:0; vertical-align:top;display:inline-block; width:19px
 span.LGT {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/team_big.png") no-repeat 0 -140px;}
 span.eagles {font-size:0; vertical-align:top;display:inline-block; width:26px; height:26px; background:url("../image/base/team_big.png") no-repeat 0 -167px;}
 
-span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat; background-size:contain;}
-span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat; background-size:contain;}
-span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat; background-size:contain;}
-span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat; background-size:contain;}
-span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat; background-size:contain;}
-span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat; background-size:contain;}
-span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat; background-size:contain;}
-span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat; background-size:contain;}
-span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat; background-size:contain;}
-span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat; background-size:contain;}
-
-span.LG {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LG.png") no-repeat; background-size:contain;}
-span.SS {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SS.png") no-repeat; background-size:contain;}
-span.LT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_LT.png") no-repeat; background-size:contain;}
-span.WO {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_WO.png") no-repeat; background-size:contain;}
-span.SK {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_SK.png") no-repeat; background-size:contain;}
-span.KT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_KT.png") no-repeat; background-size:contain;}
-span.OB {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_OB.png") no-repeat; background-size:contain;}
-span.NC {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_NC.png") no-repeat; background-size:contain;}
-span.HH {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HH.png") no-repeat; background-size:contain;}
-span.HT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("http://image.koreabaseball.com/resources/images/emblem/emblem_HT.png") no-repeat; background-size:contain;}
-
+span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/KBO_LG.png") no-repeat;}
+span.samsung_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/KBO_samsung.png") no-repeat;}
 span.manU_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/man_un.png") no-repeat;}
 span.arsenal_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/arsenal.png") no-repeat;}
 span.Leicester_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("../image/logo/Leicester.png") no-repeat;}
