@@ -19,7 +19,7 @@
         <div class="relative">
             <ul class="firTab">
                 <li class="on"><a href="/baseball/stats_win_rate">리그 승률</a></li>
-                <li><a href="/baseball/stats_h">리그 안타</a></li>
+                <li><a href="/baseball/stats_h?handicap=1.5">리그 안타</a></li>
                 <li><a href="javascript:void(0)">리그 홈런</a></li>
             </ul>
             <ul class="tab_view01 gameMain_view">
@@ -116,18 +116,18 @@
                                                         <td><?=$item['total_g']-$item['over'];?></td>
                                                         <td><?=($over_under==0) ? $item['plus'] : $item['plus'].':'.$item['minus'];?></td>
                                                         <td><?=number_format($item['plus']/$item['total_g'],1);?></td>
-                                                        <td><?=$item['total_g'];?></td>
+                                                        <td><?=$item['home_g'];?></td>
                                                         <td><?=$item['home_over_p'];?>%</td>
                                                         <td><?=$item['home_over'];?></td>
                                                         <td><?=$item['total_g']-$item['away_over'];?></td>
                                                         <td><?=($over_under==0) ? $item['plus_home'] : $item['plus_home'].':'.$item['minus_home'];?></td>
-                                                        <td><?=number_format($item['plus_home']/$item['total_g'],1);?></td>
-                                                        <td><?=$item['total_g'];?></td>
+                                                        <td><?=number_format($item['plus_home']/$item['home_g'],1);?></td>
+                                                        <td><?=$item['away_g'];?></td>
                                                         <td><?=$item['away_over_p'];?>%</td>
                                                         <td><?=$item['away_over'];?></td>
                                                         <td><?=$item['total_g']-$item['home_over'];?></td>
                                                         <td><?=($over_under==0) ? $item['plus_away'] : $item['plus_away'].':'.$item['minus_away'];?></td>
-                                                        <td><?=number_format($item['plus_away']/$item['total_g'],1);?></td>
+                                                        <td><?=number_format($item['plus_away']/$item['away_g'],1);?></td>
                                                     <?php endif;?>
                                                 </tr>
                                             <?php endforeach; ?>
@@ -276,7 +276,7 @@
                                                 </ul>
                                             </div>
                                             <div>
-                                                <h4>9.5언더, 최근 10경기 상위 5팀<span></span></h4>
+                                                <h4>9.5언더, 최근 10경기 하위 5팀<span></span></h4>
                                                 <ul>
                                                     <li class="th"><p class="top_t2">팀 명</p><p class="top_s2">&nbsp;</p><p class="top_g2">O/U</p></li>
                                                     <?php foreach($recent_under_5 as $item): ?>
