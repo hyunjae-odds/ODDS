@@ -18,18 +18,18 @@
         </ul>
         <div class="relative">
             <ul class="firTab">
-                <li class="on"><a href="">리그 승률</a></li>
-                <li><a href="javascript:void(0)">리그 안타</a></li>
+                <li class="on"><a href="/baseball/stats_win_rate">리그 승률</a></li>
+                <li><a href="/baseball/stats_h">리그 안타</a></li>
                 <li><a href="javascript:void(0)">리그 홈런</a></li>
             </ul>
             <ul class="tab_view01 gameMain_view">
                 <li class="active" style="padding-top:40px;"><!-- 리그 승률 -->
                     <div class="tab01_w">
                         <ul class="tab01_2 TLS">
-                            <li class="<?php if($handicap==0 && $team=='off') echo 'on';?>"><a href="/baseball/stats_win_rate">승패</a></li>
-                            <li class="<?php if($handicap!=0) echo 'on';?>"><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=<?=$duration;?>&handicap=1.5">핸디캡</a></li>
-                            <li class=""><a href="javascript:void(0)">오버언더</a></li>
-                            <li class="<?php if($team=='on') echo 'on';?>"><a href="/baseball/stats_win_rate?team=on&inning=<?=$inning;?>&duration=<?=$duration;?>">팀별득점</a></li>
+                            <li class="<?php if($handicap==0 && $team=='off' && $over_under==0) echo 'on';?>"><a href="/baseball/stats_win_rate">승패</a></li>
+                            <li class="<?php if($handicap!=0) echo 'on';?>"><a href="/baseball/stats_win_rate?handicap=1.5">핸디캡</a></li>
+                            <li class="<?php if($over_under!=0) echo 'on';?>"><a href="/baseball/stats_win_rate?over_under=9.5">오버언더</a></li>
+                            <li class="<?php if($team=='on') echo 'on';?>"><a href="/baseball/stats_win_rate?team=on">팀별득점</a></li>
                         </ul>
                     </div>
                     <ul class="LS_view_w">
@@ -37,7 +37,11 @@
                             <div class="pt15">
                                 <div class="select inning_select">
                                     <p class="off"><span class="pp is_target"><?php if($inning=='half') echo '5이닝'; else if($inning=='first') echo '1이닝'; else echo '풀타임'; ?></span><span class="pa"></span></p>
-                                    <ul><li class="is01"><a href="/baseball/stats_win_rate?inning=all&duration=<?=$duration;?>&handicap=<?=$handicap;?>&team=<?=$team;?>">풀타임</a></li><li class="is02"><a href="?inning=half&duration=<?=$duration;?>&handicap=<?=$handicap;?>&team=<?=$team;?>">5이닝</a></li><li class="is03"><a href="/baseball/stats_win_rate?inning=first&duration=<?=$duration;?>&handicap=<?=$handicap;?>&team=<?=$team;?>">1이닝</a></li></ul>
+                                    <ul>
+                                        <li class="is01"><a href="/baseball/stats_win_rate?inning=all&duration=<?=$duration;?>&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">풀타임</a></li>
+                                        <li class="is02"><a href="/baseball/stats_win_rate?inning=half&duration=<?=$duration;?>&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">5이닝</a></li>
+                                        <li class="is03"><a href="/baseball/stats_win_rate?inning=first&duration=<?=$duration;?>&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">1이닝</a></li>
+                                    </ul>
                                 </div>
                                 <ul class="inning_view">
                                     <li class="iv01 active"><!-- 풀타임 -->
@@ -52,11 +56,11 @@
                                         <div class="select" style="top:-50px;">
                                             <p class="off"><span class="pp"><?php if($duration==null || $duration=='all') echo '시즌 전체'; else echo '최근 '.$duration.' 경기';?></span><span class="pa"></span></p>
                                             <ul>
-                                                <li class=""><a href="/baseball/stats_win_rate">시즌 전체</a></li>
-                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=10&handicap=<?=$handicap;?>&team=<?=$team;?>">최근 10경기</a></li>
-                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=15&handicap=<?=$handicap;?>&team=<?=$team;?>">최근 15경기</a></li>
-                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=20&handicap=<?=$handicap;?>&team=<?=$team;?>">최근 20경기</a></li>
-                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=30&handicap=<?=$handicap;?>&team=<?=$team;?>">최근 30경기</a></li>
+                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">시즌 전체</a></li>
+                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=10&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">최근 10경기</a></li>
+                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=15&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">최근 15경기</a></li>
+                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=20&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">최근 20경기</a></li>
+                                                <li class=""><a href="/baseball/stats_win_rate?inning=<?=$inning;?>&duration=30&handicap=<?=$handicap;?>&team=<?=$team;?>&sort_home_away=<?=$sort_home_away;?>&over_under=<?=$over_under;?>">최근 30경기</a></li>
                                             </ul>
                                         </div>
                                         <table class="table_default table_2_left table_all_home_visit" >
@@ -66,27 +70,27 @@
                                             </colgroup>
                                             <tr class="w_th">
                                                 <th colspan="2">&nbsp;</th>
-                                                <th colspan="6">전체 기록<a class="up_down up" href="" onfocus="this.blur();">내림차/오름차변경</a></th>
-                                                <th colspan="6">홈 기록<a class="up_down up" href="" onfocus="this.blur();">내림차/오름차변경</a></th>
-                                                <th colspan="6">원정 기록<a class="up_down up" href="" onfocus="this.blur();">내림차/오름차변경</a></th>
+                                                <th colspan="6" <?php if($sort_home_away=='all') echo 'style="color:black;"';?>>전체 기록<a class="up_down up" href="/baseball/stats_win_rate?sort_home_away=all&handicap=<?=$handicap;?>&inning=<?=$inning;?>&duration=<?=$duration;?>&team=<?=$team;?>&over_under=<?=$over_under;?>" onfocus="this.blur();">내림차/오름차변경</a></th>
+                                                <th colspan="6" <?php if($sort_home_away=='home') echo 'style="color:black;"';?>>홈 기록<a class="up_down up" href="/baseball/stats_win_rate?sort_home_away=home&handicap=<?=$handicap;?>&inning=<?=$inning;?>&duration=<?=$duration;?>&team=<?=$team;?>&over_under=<?=$over_under;?>" onfocus="this.blur();">내림차/오름차변경</a></th>
+                                                <th colspan="6" <?php if($sort_home_away=='away') echo 'style="color:black;"';?>>원정 기록<a class="up_down up" href="/baseball/stats_win_rate?sort_home_away=away&handicap=<?=$handicap;?>&inning=<?=$inning;?>&duration=<?=$duration;?>&team=<?=$team;?>&over_under=<?=$over_under;?>" onfocus="this.blur();">내림차/오름차변경</a></th>
                                             </tr>
                                             <tr>
                                                 <th>순위</th><th>팀</th>
-                                                <?php if($team=='off'): ?>
+                                                <?php if($team=='off' && $over_under==0): ?>
                                                     <th>경기수</th><th><?=($handicap==0)?'승률':'확률';?></th><th>승</th><th>패</th><th>타이</th><th>득:실</th>
                                                     <th>경기수</th><th><?=($handicap==0)?'승률':'확률';?></th><th>승</th><th>패</th><th>타이</th><th>득:실</th>
                                                     <th>경기수</th><th><?=($handicap==0)?'승률':'확률';?></th><th>승</th><th>패</th><th>타이</th><th>득:실</th>
                                                 <?php else: ?>
-                                                    <th>경기수</th><th>O%</th><th>오버</th><th>언더</th><th>득점</th><th>경기당</th>
-                                                    <th>경기수</th><th>O%</th><th>오버</th><th>언더</th><th>득점</th><th>경기당</th>
-                                                    <th>경기수</th><th>O%</th><th>오버</th><th>언더</th><th>득점</th><th>경기당</th>
+                                                    <th>경기수</th><th>O%</th><th>오버</th><th>언더</th><th><?=($over_under==0)?'득점':'득:실';?></th><th>경기당</th>
+                                                    <th>경기수</th><th>O%</th><th>오버</th><th>언더</th><th><?=($over_under==0)?'득점':'득:실';?></th><th>경기당</th>
+                                                    <th>경기수</th><th>O%</th><th>오버</th><th>언더</th><th><?=($over_under==0)?'득점':'득:실';?></th><th>경기당</th>
                                                 <?php endif;?>
                                             </tr>
                                             <?php foreach($rank_board as $item): ?>
                                                 <tr>
                                                     <td><span class="rankdot0<?=$item['rank'];?>_color"><b><?=$item['rank'];?></b></span></td>
                                                     <td><?=$item['team'];?></td>
-                                                    <?php if($team=='off'): ?>
+                                                    <?php if($team=='off' && $over_under==0): ?>
                                                         <td><?=$item['total_g'];?></td>
                                                         <td><?=$item['total_win_rate'];?></td>
                                                         <td><?=$item['total_win'];?></td>
@@ -107,23 +111,23 @@
                                                         <td><?=$item['plus_away'];?>:<?=$item['minus_away'];?></td>
                                                     <?php else: ?>
                                                         <td><?=$item['total_g'];?></td>
-                                                        <td>65%</td>
-                                                        <td>85</td>
-                                                        <td>55</td>
-                                                        <td><?=$item['plus'];?></td>
+                                                        <td><?=$item['over_p'];?>%</td>
+                                                        <td><?=$item['over'];?></td>
+                                                        <td><?=$item['total_g']-$item['over'];?></td>
+                                                        <td><?=($over_under==0) ? $item['plus'] : $item['plus'].':'.$item['minus'];?></td>
                                                         <td><?=number_format($item['plus']/$item['total_g'],1);?></td>
                                                         <td><?=$item['total_g'];?></td>
-                                                        <td>65%</td>
-                                                        <td>85</td>
-                                                        <td>55</td>
-                                                        <td><?=$item['plus_home'];?></td>
+                                                        <td><?=$item['home_over_p'];?>%</td>
+                                                        <td><?=$item['home_over'];?></td>
+                                                        <td><?=$item['total_g']-$item['away_over'];?></td>
+                                                        <td><?=($over_under==0) ? $item['plus_home'] : $item['plus_home'].':'.$item['minus_home'];?></td>
                                                         <td><?=number_format($item['plus_home']/$item['total_g'],1);?></td>
                                                         <td><?=$item['total_g'];?></td>
-                                                        <td>65%</td>
-                                                        <td>85</td>
-                                                        <td><?=$item['plus_away'];?></td>
+                                                        <td><?=$item['away_over_p'];?>%</td>
+                                                        <td><?=$item['away_over'];?></td>
+                                                        <td><?=$item['total_g']-$item['home_over'];?></td>
+                                                        <td><?=($over_under==0) ? $item['plus_away'] : $item['plus_away'].':'.$item['minus_away'];?></td>
                                                         <td><?=number_format($item['plus_away']/$item['total_g'],1);?></td>
-                                                        <td><?=$item['total_g'];?></td>
                                                     <?php endif;?>
                                                 </tr>
                                             <?php endforeach; ?>
@@ -133,8 +137,8 @@
                                             <div>
                                                 <ul>
                                                     <li class="th"><p class="top_t3">승률통계</p><p class="top_s3">경기수</p><p class="top_s3">승</p><p class="top_g3">승률</p></li>
-                                                    <li class="td"><p class="top_t3">홈</p><p class="top_s3"><?=$league_statistics['g']/2;?></p><p class="top_s3"><?=$league_statistics['home_win'];?></p><p class="top_g3"><?=number_format($league_statistics['home_win']/$league_statistics['g'],3);?></p></li>
-                                                    <li class="td"><p class="top_t3">원정팀</p><p class="top_s3"><?=$league_statistics['g']/2;?></p><p class="top_s3"><?=$league_statistics['away_win'];?></p><p class="top_g3"><?=number_format($league_statistics['away_win']/$league_statistics['g'],3);?></p></li>
+                                                    <li class="td"><p class="top_t3">홈팀</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['home_win'];?></p><p class="top_g3"><?=number_format($league_statistics['home_win']/$league_statistics['g'],3);?></p></li>
+                                                    <li class="td"><p class="top_t3">원정팀</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['away_win'];?></p><p class="top_g3"><?=number_format($league_statistics['away_win']/$league_statistics['g'],3);?></p></li>
                                                     <li class="td"><p class="top_t3">타이</p><p class="top_s3"><?=$league_statistics['tie'];?></p><p class="top_s3">-</p><p class="top_g3"><?=number_format($league_statistics['tie']/$league_statistics['g']*100);?>%</p></li>
                                                 </ul>
                                             </div>
@@ -142,16 +146,16 @@
                                                 <ul>
                                                     <li class="th"><p class="top_t3">득점통계</p><p class="top_s3">경기수</p><p class="top_s3">득점</p><p class="top_g3">경기당</p></li>
                                                     <li class="td"><p class="top_t3">전체경기</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['home_score']+$league_statistics['away_score'];?></p><p class="top_g3"><?=number_format(($league_statistics['home_score']+$league_statistics['away_score'])/$league_statistics['g'],2);?></p></li>
-                                                    <li class="td"><p class="top_t3">홈팀</p><p class="top_s3"><?=$league_statistics['g']/2;?></p><p class="top_s3"><?=$league_statistics['home_score'];?></p><p class="top_g3"><?=number_format($league_statistics['home_score']/$league_statistics['g'],2);?></p></li>
-                                                    <li class="td"><p class="top_t3">원정팀</p><p class="top_s3"><?=$league_statistics['g']/2;?></p><p class="top_s3"><?=$league_statistics['away_score'];?></p><p class="top_g3"><?=number_format($league_statistics['away_score']/$league_statistics['g'],2);?></p></li>
+                                                    <li class="td"><p class="top_t3">홈팀</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['home_score'];?></p><p class="top_g3"><?=number_format($league_statistics['home_score']/$league_statistics['g'],2);?></p></li>
+                                                    <li class="td"><p class="top_t3">원정팀</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['away_score'];?></p><p class="top_g3"><?=number_format($league_statistics['away_score']/$league_statistics['g'],2);?></p></li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <ul>
                                                     <li class="th"><p class="top_t3">핸디캡통계</p><p class="top_s3">경기수</p><p class="top_s3">승</p><p class="top_g3">승률</p></li>
                                                     <li class="td"><p class="top_t3">전체경기 1.5</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['handicap_home_win']+$league_statistics['handicap_away_win'];?></p><p class="top_g3"><?=number_format(($league_statistics['handicap_home_win']+$league_statistics['handicap_away_win'])/$league_statistics['g'],3);?></p></li>
-                                                    <li class="td"><p class="top_t3">홈팀 1.5</p><p class="top_s3"><?=$league_statistics['g']/2;?></p><p class="top_s3"><?=$league_statistics['handicap_home_win'];?></p><p class="top_g3"><?=number_format($league_statistics['handicap_home_win']/$league_statistics['g'],3);?></p></li>
-                                                    <li class="td"><p class="top_t3">원정팀 1.5</p><p class="top_s3"><?=$league_statistics['g']/2;?></p><p class="top_s3"><?=$league_statistics['handicap_away_win'];?></p><p class="top_g3"><?=number_format($league_statistics['handicap_away_win']/$league_statistics['g'],3);?></p></li>
+                                                    <li class="td"><p class="top_t3">홈팀 1.5</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['handicap_home_win'];?></p><p class="top_g3"><?=number_format($league_statistics['handicap_home_win']/$league_statistics['g'],3);?></p></li>
+                                                    <li class="td"><p class="top_t3">원정팀 1.5</p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['handicap_away_win'];?></p><p class="top_g3"><?=number_format($league_statistics['handicap_away_win']/$league_statistics['g'],3);?></p></li>
                                                 </ul>
                                             </div>
                                             <div>
@@ -258,82 +262,34 @@
                                                 <h4>9.5오버, 최근 10경기 상위 5팀<span></span></h4>
                                                 <ul>
                                                     <li class="th"><p class="top_t2">팀 명</p><p class="top_s2">&nbsp;</p><p class="top_g2">O/U</p></li>
-                                                    <li class="td">
-                                                        <p class="top_t2">LG 트윈스</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2"><span class="red">9</span>/1</p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">KIA 타이거즈</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2"><span class="red">9</span>/1</p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">두산 베어스</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2"><span class="red">9</span>/1</p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">롯데 자이언트</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2"><span class="red">9</span>/1</p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">SK 와이번스</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
-                                                        </p>
-                                                        <p class="top_g2"><span class="red">9</span>/1</p>
-                                                    </li>
+                                                    <?php foreach($recent_over_5 as $item): ?>
+                                                        <li class="td">
+                                                            <p class="top_t2"><?=$item['team'];?></p>
+                                                            <p class="top_s2">
+                                                                <?php $exp=explode(';', $item['over_under']); foreach($exp as $items): ?>
+                                                                    <span class="<?=($items=='o')? 'plus' : 'minus'; ?>L"><?=($items=='o')? 'plus' : 'minus'; ?></span>
+                                                                <?php endforeach; ?>
+                                                            </p>
+                                                            <p class="top_g2"><span class="red"><?=$item['count'];?></span>/<?=10-$item['count'];?></p>
+                                                        </li>
+                                                    <?php endforeach; ?>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h4>9.5언더, 최근 10경기 상위 5팀<span></span></h4>
                                                 <ul>
                                                     <li class="th"><p class="top_t2">팀 명</p><p class="top_s2">&nbsp;</p><p class="top_g2">O/U</p></li>
-                                                    <li class="td">
-                                                        <p class="top_t2">LG 트윈스</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2">1/<span class="blue">9</span></p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">KIA 타이거즈</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2">1/<span class="blue">9</span></p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">두산 베어스</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2">1/<span class="blue">9</span></p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">롯데 자이언트</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span>
-                                                        </p>
-                                                        <p class="top_g2">1/<span class="blue">9</span></p>
-                                                    </li>
-                                                    <li class="td">
-                                                        <p class="top_t2">SK 와이번스</p>
-                                                        <p class="top_s2">
-                                                            <span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="plusL">plus</span><span class="minusL">minus</span><span class="minusL">minus</span>
-                                                        </p>
-                                                        <p class="top_g2">1/<span class="blue">9</span></p>
-                                                    </li>
+                                                    <?php foreach($recent_under_5 as $item): ?>
+                                                        <li class="td">
+                                                            <p class="top_t2"><?=$item['team'];?></p>
+                                                            <p class="top_s2">
+                                                                <?php $exp=explode(';', $item['over_under']); foreach($exp as $items): ?>
+                                                                    <span class="<?=($items=='o')? 'plus' : 'minus'; ?>L"><?=($items=='o')? 'plus' : 'minus'; ?></span>
+                                                                <?php endforeach; ?>
+                                                            </p>
+                                                            <p class="top_g2"><span class="red"><?=$item['count'];?></span>/<?=10-$item['count'];?></p>
+                                                        </li>
+                                                    <?php endforeach; ?>
                                                 </ul>
                                             </div>
                                             <p class="clear"></p>

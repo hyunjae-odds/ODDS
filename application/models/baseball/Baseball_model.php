@@ -119,6 +119,36 @@
 
         return $result;
 	}
+	function getByOverUnder(){
+        $month=$this->get_result('all');
+
+        $result_set=array();
+        $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        foreach($team_array as $team):
+            $result=array();
+            $count=0;
+            $ou_count=0;
+            $team_recent_ten_game='';
+            foreach($month as $item):
+                if($item->home==$team && $count<10):
+                    if($item->home_score > 9.5): $team_recent_ten_game='o;'.$team_recent_ten_game; $ou_count++; $count++;
+                    else: $team_recent_ten_game='u;'.$team_recent_ten_game;$count++; endif;
+                elseif($item->away==$team && $count<10):
+                    if($item->away_score > 9.5): $team_recent_ten_game='o;'.$team_recent_ten_game; $ou_count++; $count++;
+                    else: $team_recent_ten_game='u;'.$team_recent_ten_game; $count++; endif;
+                endif;
+            endforeach;
+//          마지막 콤마 제거
+            $result['team']=$team;
+            $result['count']=$ou_count;
+            $result['over_under']=substr($team_recent_ten_game, 0, -1);
+            array_push($result_set, $result);
+        endforeach;
+        foreach($result_set as $item) $sortAux[]=$item['count'];
+        array_multisort($sortAux, SORT_DESC, $result_set);
+
+        return $result_set;
+	}
 
 	function getByTeam($team, $this_month){
 		$this->db->select('rank, date, team');

@@ -13,7 +13,7 @@ class Baseball extends MY_Controller{
         if($this->input->get('home_away')==null || $this->input->get('home_away')=='all') $home_away='all'; else $home_away=$this->input->get('home_away');
         if($this->input->get('duration')==null || $this->input->get('duration')=='all') $duration='all'; else $duration=$this->input->get('duration');
 
-        $total=$this->getRankBoard('all', $duration, $home_away, 0);
+        $total=$this->getRankBoard('all', $duration, $home_away, 0 ,0);
         $offense=$this->baseball_model->get_order_by('kbo_team_offense_2017', 'avg', 'DESC');
         $defence=$this->baseball_model->get_order_by('kbo_team_defence_2017', 'era', 'ASC');
         $schedule=$this->baseball_model->getScheduleAfter3Days();
@@ -38,6 +38,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/footer");
     }
 
+//  리그 통계 > 리그 승률
     function stats_win_rate(){
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
@@ -46,18 +47,24 @@ class Baseball extends MY_Controller{
         $duration=($this->input->get('duration')==null || $this->input->get('duration')=='all')? 'all' : $this->input->get('duration');
         $handicap=($this->input->get('handicap')==null || $this->input->get('handicap')==0)? 0 : $this->input->get('handicap');
         $team=($this->input->get('team')==null || $this->input->get('team')=='off')? 'off' : 'on';
+        $sort_home_away=($this->input->get('sort_home_away')==null || $this->input->get('sort_home_away')=='all')? 'all':$this->input->get('sort_home_away');
+        $over_under=($this->input->get('over_under')==null || $this->input->get('over_under')==0)? 0 : $this->input->get('over_under');
+        if($this->input->get('team')=='on') $over_under=9.55;
 
 //      RANK BOARD
         $result_set=array();
-        $total=$this->getRankBoard($inning, $duration, 'all', $handicap);
-        $total_away=$this->getRankBoard($inning, $duration, 'away', $handicap);
-        $total_home=$this->getRankBoard($inning, $duration, 'home', $handicap);
+        $total=$this->getRankBoard($inning, $duration, 'all', $handicap, $over_under);
+        if($over_under==9.55) $over_under=0;
+        $total_away=$this->getRankBoard($inning, $duration, 'away', $handicap, $over_under);
+        $total_home=$this->getRankBoard($inning, $duration, 'home', $handicap, $over_under);
         $plus_minus=$this->baseball_model->getTotalScore($inning, $duration, 'all');
         $plus_minus_away=$this->baseball_model->getTotalScore($inning, $duration, 'away');
         $plus_minus_home=$this->baseball_model->getTotalScore($inning, $duration, 'home');
         $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+
         foreach($teams as $item):
             $result=array();
+//          전체기록
             foreach($total as $items):
                 if($items->team==$item):
                     $result['rank']=$items->rank;
@@ -65,22 +72,31 @@ class Baseball extends MY_Controller{
                     $result['total_g']=$items->g;
                     $result['total_win_rate']=number_format($items->win_rate,3);
                     if($handicap!=0):
-                        $total2=$this->getRankBoard($inning, $duration, 'all', 0);
+                        $total2=$this->getRankBoard($inning, $duration, 'all', 0, $over_under);
                         foreach($total2 as $item_total2): if($item_total2->team==$item) $result['total_win_rate']=number_format($items->win/$item_total2->win*100).'%'; endforeach;
                     endif;
                     $result['total_win']=$items->win;
                     $result['total_tie']=$items->tie;
                     $result['total_lose']=$items->lose;
+
+                    $result['over']=$items->ou_away+$items->ou_home;
+                    $result['away_over']=$items->ou_away;
+                    $result['home_over']=$items->ou_home;
+                    $result['over_p']=number_format(($items->ou_away+$items->ou_home)/$items->g*100);
+                    $result['away_over_p']=number_format($items->ou_away/$items->g*100);
+                    $result['home_over_p']=number_format($items->ou_home/$items->g*100);
                 endif;
             endforeach;
             $result['plus']=$plus_minus[$item];
             $result['minus']=$plus_minus[$item.'_lose'];
+//          홈 기록
             foreach($total_away as $items_away):
                 if($items_away->team==$item):
                     $result['away_g']=$items_away->g;
                     $result['away_win_rate']=number_format($items_away->win_rate,3);
                     if($handicap!=0):
-                        foreach($total2 as $item_total2): if($item_total2->team==$item) $result['away_win_rate']=number_format($items_away->win/$item_total2->win*100).'%'; endforeach;
+                        $total3=$this->getRankBoard($inning, $duration, 'away', 0, $over_under);
+                        foreach($total3 as $item_total2): if($item_total2->team==$item) $result['away_win_rate']=number_format($items_away->win/$item_total2->win*100).'%'; endforeach;
                     endif;
                     $result['away_win']=$items_away->win;
                     $result['away_tie']=$items_away->tie;
@@ -89,12 +105,14 @@ class Baseball extends MY_Controller{
             endforeach;
             $result['plus_away']=$plus_minus_away[$item];
             $result['minus_away']=$plus_minus_away[$item.'_lose'];
+//          원정 기록
             foreach($total_home as $items_home):
                 if($items_home->team==$item):
                     $result['home_g']=$items_home->g;
                     $result['home_win_rate']=number_format($items_home->win_rate,3);
                     if($handicap!=0):
-                        foreach($total2 as $item_total2): if($item_total2->team==$item) $result['home_win_rate']=number_format($items_home->win/$item_total2->win*100).'%'; endforeach;
+                        $total4=$this->getRankBoard($inning, $duration, 'home', 0, $over_under);
+                        foreach($total4 as $item_total2): if($item_total2->team==$item) $result['home_win_rate']=number_format($items_home->win/$item_total2->win*100).'%'; endforeach;
                     endif;
                     $result['home_win']=$items_home->win;
                     $result['home_tie']=$items_home->tie;
@@ -106,17 +124,55 @@ class Baseball extends MY_Controller{
 
             array_push($result_set, $result);
         endforeach;
+
+//      RANK_BOARD_SORT
         if($handicap!=0):
-            foreach($result_set as $item) $sortAux3[]=$item['total_win_rate'];
+            if($sort_home_away=='away') $sort_word='away';
+            else if($sort_home_away=='home') $sort_word='home';
+            else $sort_word='total';
+
+            foreach($result_set as $item) $sortAux3[]=$item[$sort_word.'_win_rate'];
             array_multisort($sortAux3, SORT_DESC, $result_set);
+
+//          확률이 100%일때 1위가 아닌 꼴지로 쏘팅되는 문제 해결
+            $count_how_many_100=0;
+            foreach($result_set as $key=>$item) if($item[$sort_word.'_win_rate']==100) $count_how_many_100++;
+            for($i=0; $i<$count_how_many_100; $i++):
+                $result_set_temp=array();
+                foreach($result_set as $key=>$item):
+                    $result_set_temp[$key+1]=$item;
+                endforeach;
+                array_pop($result_set_temp);
+                array_unshift($result_set_temp,$result_set[10-$count_how_many_100]);
+                $result_set=$result_set_temp;
+            endfor;
+
             for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1;
         elseif($team=='on'):
-            foreach($result_set as $item) $sortAux4[]=$item['plus'];
+            $sort_word='over_p';
+            if($sort_home_away=='away') $sort_word='away_over_p';
+            elseif($sort_home_away=='home') $sort_word='home_over_p';
+
+            foreach($result_set as $item) $sortAux4[]=$item[$sort_word];
             array_multisort($sortAux4, SORT_DESC, $result_set);
             for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1;
+        elseif($over_under!=0):
+            $sort_word='over_p';
+            if($sort_home_away=='away') $sort_word='away_over_p';
+            elseif($sort_home_away=='home') $sort_word='home_over_p';
+
+            foreach($result_set as $item) $sortAux6[]=$item[$sort_word];
+            array_multisort($sortAux6, SORT_DESC, $result_set);
+            for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1;
         else:
-            foreach($result_set as $item) $sortAux5[]=$item['rank'];
-            array_multisort($sortAux5, SORT_ASC, $result_set);
+            $sort_word='rank';
+            $sort_ASC_DESC=SORT_ASC;
+            if($sort_home_away=='away'): $sort_word='away_win_rate'; $sort_ASC_DESC=SORT_DESC;
+            elseif($sort_home_away=='home'): $sort_word='home_win_rate'; $sort_ASC_DESC=SORT_DESC; endif;
+
+            foreach($result_set as $item) $sortAux5[]=$item[$sort_word];
+            array_multisort($sortAux5, $sort_ASC_DESC, $result_set);
+            if($sort_home_away!='all') for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1;
         endif;
 
 //      KBO 리그요약
@@ -130,16 +186,32 @@ class Baseball extends MY_Controller{
         $score_margin_5=$this->baseball_model->getTotalScore2('score_margin');
 
 //      승패 최근 10경기 상/하위 5팀
-        $total=$this->getRankBoard('all', 10, 'all', 0);
+        $total=$this->getRankBoard('all', 10, 'all', 0, $over_under);
         foreach($total as $item) $sortAux[]=$item->win;
         array_multisort($sortAux, SORT_DESC, $total);
         $total_under_5=array_splice($total,5);
         foreach($total_under_5 as $item) $sortAux2[]=$item->win;
         array_multisort($sortAux2, SORT_ASC, $total_under_5);
 
+//      9.5오버 최근 10경기 상/하위 5팀
+        $recent_over_under_10=$this->baseball_model->getByOverUnder();
+        $recent_under_5=array_splice($recent_over_under_10,5);
+        foreach($recent_under_5 as $item) $sortAux7[]=$item['count'];
+        array_multisort($sortAux7, SORT_ASC, $recent_under_5);
+
         $this->load->view("/baseball/stats_win_rate", array('handicap'=>$handicap,'home_away_win_5'=>$home_away_win_5,'get_score_5'=>$get_score_5,'score_margin_5'=>$score_margin_5,'team'=>$team,
-                                                   'rank_board'=>$result_set,'recent_10_game_over_5'=>$total,'recent_10_game_under_5'=>$total_under_5,'league_statistics'=>$league_statistics,
-                                                   'inning'=>$inning,'duration'=>$duration,'handicap'=>$handicap));
+                                                            'rank_board'=>$result_set,'recent_10_game_over_5'=>$total,'recent_10_game_under_5'=>$total_under_5,'league_statistics'=>$league_statistics,
+                                                            'inning'=>$inning,'duration'=>$duration,'handicap'=>$handicap,'sort_home_away'=>$sort_home_away,'over_under'=>$over_under,
+                                                            'recent_over_5'=>$recent_over_under_10,'recent_under_5'=>$recent_under_5));
+        $this->load->view("/baseball/footer");
+    }
+
+    function stats_h(){
+        $this->load->view("/baseball/head_up");
+        $this->load->view("/baseball/head");
+
+        $this->load->view("/baseball/stats_h", array());
+
         $this->load->view("/baseball/footer");
     }
 
@@ -164,7 +236,7 @@ class Baseball extends MY_Controller{
             $defence=$this->baseball_model->get('kbo_team_defence_2017');
         endif;
 
-        $total=$this->getRankBoard('all', 'all', 'all', 0);
+        $total=$this->getRankBoard('all', 'all', 'all', 0, 0);
         $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
 
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
@@ -291,7 +363,7 @@ class Baseball extends MY_Controller{
 
         $away_result=$this->get_recent_10_game_result($result->away);
         $home_result=$this->get_recent_10_game_result($result->home);
-        $handicap_result=$this->getRankBoard('all', 'all', 'all', 1.5);
+        $handicap_result=$this->getRankBoard('all', 'all', 'all', 1.5, 0);
         $plus_away_rank=$this->get_rank_plus_minus($result->away);
         $plus_home_rank=$this->get_rank_plus_minus($result->home);
 
@@ -420,7 +492,6 @@ class Baseball extends MY_Controller{
 
         return $initial;
     }
-//  응원하기 good, bad
 
     function add_ajax(){
         $this->baseball_model->add($this->input->post('no'), $this->input->post('flag'));
@@ -431,7 +502,7 @@ class Baseball extends MY_Controller{
         $this->baseball_model->insert_comment($arr);
     }
 
-    function getRankBoard($inning, $duration, $home_away, $handicap){
+    function getRankBoard($inning, $duration, $home_away, $handicap, $over_under){
         $finalCut=array();
         $result=$this->baseball_model->get_result($inning);
 
@@ -446,18 +517,25 @@ class Baseball extends MY_Controller{
                 $tie=0;
                 $recent='';
                 $this_count=0;
+                $ou_count_away=0;
+                $ou_count_home=0;
+
                 foreach($result as $item):
                     if($team==$item->home):
                         $count++;
                         if($item->home_score-$handicap > $item->away_score) $win++;
                         else if($item->home_score-$handicap < $item->away_score) $lose++;
                         else $tie++;
+
+                        if($over_under!=0 && $item->home_score > $over_under) $ou_count_home++;
                     endif;
                     if($team==$item->away):
                         $count++;
                         if($item->home_score < $item->away_score-$handicap) $win++;
                         else if($item->home_score > $item->away_score-$handicap) $lose++;
                         else $tie++;
+
+                        if($over_under!=0 && $item->away_score > $over_under) $ou_count_away++;
                     endif;
 
                     if($item->home==$team && $this_count<10):
@@ -474,7 +552,7 @@ class Baseball extends MY_Controller{
                 endforeach;
                 $recent=substr($recent, 0, -1);
 
-                $resultSet[$team]=array('g'=>$count,'win_rate'=>$win/($count-$tie),'win'=>$win,'lose'=>$lose,'tie'=>$tie,'recent_game'=>$recent);
+                $resultSet[$team]=array('g'=>$count,'win_rate'=>$win/($count-$tie),'win'=>$win,'lose'=>$lose,'tie'=>$tie,'recent_game'=>$recent,'ou_away'=>$ou_count_away,'ou_home'=>$ou_count_home);
             endforeach;
         elseif($home_away=='all' && $duration!='all'):
             $resultSet=array();
@@ -485,6 +563,8 @@ class Baseball extends MY_Controller{
                 $tie=0;
                 $recent='';
                 $this_count=0;
+                $ou_count_away=0;
+                $ou_count_home=0;
 
 //              선택 기간($duration)이 총게임수(count($num_rows_array)) 보다 크면 총게임수로 $duration 변수 값을 변경
                 $num_rows_array=array();
@@ -501,12 +581,16 @@ class Baseball extends MY_Controller{
                         if($item->home_score-$handicap > $item->away_score) $win++;
                         else if($item->home_score-$handicap < $item->away_score) $lose++;
                         else $tie++;
+
+                        if($over_under!=0 && $item->home_score > $over_under) $ou_count_home++;
                     endif;
                     if($team==$item->away && $count<$duration):
                         $count++;
                         if($item->home_score < $item->away_score-$handicap) $win++;
                         else if($item->home_score > $item->away_score-$handicap) $lose++;
                         else $tie++;
+
+                        if($over_under!=0 && $item->away_score > $over_under) $ou_count_away++;
                     endif;
 
                     if($item->home==$team && $this_count<10):
@@ -523,7 +607,7 @@ class Baseball extends MY_Controller{
                 endforeach;
                 $recent=substr($recent, 0, -1);
 
-                $resultSet[$team]=array('g'=>$duration,'win_rate'=>$win/($duration-$tie),'win'=>$win,'lose'=>$lose,'tie'=>$tie,'recent_game'=>$recent);
+                $resultSet[$team]=array('g'=>$duration,'win_rate'=>$win/($duration-$tie),'win'=>$win,'lose'=>$lose,'tie'=>$tie,'recent_game'=>$recent,'ou_away'=>$ou_count_away,'ou_home'=>$ou_count_home);
             endforeach;
         elseif($home_away!='all' && $duration=='all'):
             $resultSet=array();
@@ -534,6 +618,7 @@ class Baseball extends MY_Controller{
                 $tie=0;
                 $recent='';
                 $this_count=0;
+
                 foreach($result as $items):
                     if($home_away=='home'):
                         if($item==$items->home):
@@ -576,6 +661,7 @@ class Baseball extends MY_Controller{
                 $tie=0;
                 $recent='';
                 $this_count=0;
+
                 foreach($result as $items):
                     if($home_away=='home'):
                         if($item==$items->home && $count<$duration):
@@ -967,7 +1053,11 @@ class Baseball extends MY_Controller{
         $this->load->library('curl');
 
         /* 팀 종합기록 */
-        $total=$this->getRankBoard('all', 'all', 'all', 0);
+        $total=$this->getRankBoard('all', 'all', 'all', 0, 0);
+        foreach($total as $item):
+            unset($item->ou_home);
+            unset($item->ou_away);
+        endforeach;
         $this->baseball_model->insertWithRecentGame($total);
 
         /* KBO 공격력 순위 */
@@ -1139,5 +1229,12 @@ class Baseball extends MY_Controller{
         }
 
         return $resultSet;
+    }
+
+    function ckeditortest(){
+        $this->load->view('../../public/lib/ckeditor/samples/toolbarconfigurator/index.html');
+
+        echo BR;
+        $this->load->view('/baseball/test');
     }
 }

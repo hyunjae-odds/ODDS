@@ -11,7 +11,7 @@
 		<ul class="tab01 gameMain">
 			<li class=""><a href="/baseball/league_info/">리그정보</a></li>
 			<li class=""><a href="/baseball/result/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-			<li class=""><a href="/baseball/stats/">리그 통계</a></li>
+			<li class=""><a href="/baseball/stats_win_rate/">리그 통계</a></li>
 			<li class="on"><a href="/baseball/team_record/<?=date('Y');?>/<?=date('m');?>/all/all">팀 기록</a></li>
 			<li class=""><a href="/baseball/player_record/">선수 기록</a></li>
 			<li class=""><a href="/baseball/score/">상대 전적</a></li>

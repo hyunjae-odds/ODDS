@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 
+
+
+
 .match {background:url("../image/game/v_match.jpg") no-repeat;}
 .match .top {height:288px; position:relative;z-index:1;}
 .match .top > ul {position:absolute;left:20px; top:77px; background:url("../image/base/bg_80B3.png") repeat;padding:10px 0;}
@@ -80,10 +83,10 @@ g.highcharts-markers {display:none;}*/
 
 
 .matchTab {clear:both;content:""; display:block; width:1000px; padding-top:45px; margin-left:20px; border-bottom:5px solid #f1f1f1; padding-bottom:30px;}
-.matchTab ul.title {background:#444; border-radius:7px; padding:3px; height:34px;margin:0 auto;width:515px;}
+.matchTab ul.title {background:#444; border-radius:7px; padding:3px; height:34px;margin:0 auto;width:516px;}
 .matchTab ul.title li {padding:0 17px; float:left; border-radius:5px; height:34px; margin-left:-1px; text-align:center; min-width:63px; background:url("../image/game/bg_tabtitle.jpg") no-repeat right -3px;}
 .matchTab ul.title li:nth-last-of-type(1) {background-image:none;}
-.matchTab ul.title li:nth-last-of-type(2) {}
+.matchTab ul.title li:nth-of-type(1) {margin-left:0;}
 .matchTab ul.title li a {color:#fff; font-size:14px;line-height:33px;}
 .matchTab ul.title li.on {background:#fff;background-image:none;} 
 .matchTab ul.title li.on a {font-size:16px; color:#444;font-weight:bold;}
@@ -280,7 +283,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .textarea_box p {color:#f70000;padding:5px 7px 0;}
 
  
-
 
 
 

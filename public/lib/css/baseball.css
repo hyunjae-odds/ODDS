@@ -856,7 +856,7 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .cheer .teams .box > div > h3 {font-size:18px; font-weight:bold; margin-top:15px; line-height:1.4;border:none;margin-bottom:0;} 
 .cheer .teams .box > div > p {color:#999;}
 .cheer .teams .box_w .c_logo {margin:10px 17px 0;width:60px;overflow:hidden;height:60px;}
-.cheer .teams .box_w .c_logo span {background-size:60px;}
+.cheer .teams .box_w .c_logo span {background-size:60px;width:60px;height:60px;}
 .cheer .teams .left .box_w > a, .cheer .teams .right .box_w > a  {margin-top:6px;height:60px; width:70px; line-height:60px; text-align:center; display:block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
 background: #ffffff; /* Old browsers */
@@ -889,7 +889,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .comment ul li div p {display:inline-block; }
 .comment ul li div p a {display:inline-block;border:1px solid #cacaca; color:#444; height:19px; padding:0 5px 0 20px; line-height:19px;}
 .comment ul li div p.like a {background:url("../image/game/likebed.jpg") no-repeat ;}
-.comment ul li div p.bed a {background:url("../image/game/likebed.jpg") no-repeat 0 -30px;}
+.comment ul li div p.bad a {background:url("../image/game/likebed.jpg") no-repeat 0 -30px;}
 
 
 

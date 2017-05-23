@@ -72,45 +72,34 @@ p.more {position:absolute; top:13px;left:263px;color:#888;font-family:Dotum;}
 .livescore {position:relative; background:#fff;}
 .liveTable {margin-top:20px;}
 
+/**/
+.leagueChoice {position:absolute; right:0; top:5px; text-align:center;}
+.leagueChoice>a {padding:0 10px 0 13px ; height:21px; line-height:20px; display:block; font-size:13px; border:1px solid #ccc;}
+.leagueChoice>a span{margin-left:2px;display:inline-block;width:10px;height:10px;background:url("../image/base/arro_rightGame.jpg") no-repeat 0 -10px;}
+.leagueChoice .choice_w {display:none;background:#fff; position:absolute;right:0;top:30px;}
+.choice_w .choice {position:relative;right:0; top:0; border:2px solid #4b515b;background:#fff; width:730px;z-index:8;}
+.choice_w .choice h3 {background:#4b515b; font-weight:bold; color:#fff; font-size:13px; line-height:27px; height:30px; text-indent:10px;text-align:left;margin:0;}
+.choice_w .choice > div {float:left;height:574px;}
+.choice_w .choice > div h4 {height:40px;line-height:40px;font-weight:bold;border-bottom:1px solid #ccc;font-size:14px;}
+.choice_w .choice > div.cho1 {border-right:1px solid #ccc;}
+.choice_w .choice > div.cho1 > div {height:533px;overflow-y:scroll;width:401px;text-align:left;}
+.choice_w .choice > div.cho2 > div {height:480px;overflow-y:scroll;width:328px;}
+.choice_w .choice > div ul.list li > a {height:40px;line-height:39px;border-bottom:1px solid #ccc;font-size:14px;display:block;color:#555;position:relative;background:rgba(0, 0, 0, 0) url("../image/base/icon.png") repeat scroll 356px -682px;}
+.choice_w .choice > div ul.list li a span {margin:0 10px;vertical-align:middle;}
+.choice_w .choice > div ul.list li.leagueC2 > a {background:#f5f5f5 url("../image/base/icon.png") repeat scroll 356px -682px;padding-left:38px;}
+.choice_w .choice > div ul.list ul.leagueC2_v li {height:40px;line-height:39px;border-bottom:1px solid #ccc;font-size:14px;background:#ececec;padding-left:74px;color:#555;position:relative;}
+.choice_w .choice > div ul.list ul.leagueC2_v li input {margin-right:10px;}
+.choice_w .choice > div ul.list span.Nm {position:absolute;right:43px;top:0;margin:0;font-size:12px;text-align:right;}
+.choice_w .choice > div.cho2 {position:relative;}
+.choice_w .choice > div.cho2 ul.list li {position:relative;height:40px;line-height:39px;border-bottom:1px solid #ccc;font-size:14px;text-align:left;padding-left:10px;}
+.choice_w .choice > div.cho2 ul.list li span {margin-right:10px;}
+.choice_w .choice > div.cho2 ul.list a.list_close {position:absolute;background:url("../image/base/btn_game_li_close.jpg") no-repeat;width:12px;height:12px;right:15px;top:15px;border:none;}
+.choice_w .choice > div.cho2 div.btn_div {position:absolute;right:0;bottom :0;border-top:1px solid #ccc;}
+.choice_w .choice > div.cho2 div.btn_div a {display:inline-block;height:33px;line-height:32px;border:1px solid #ccc;text-align:center;width:90px;color:#888;background:url("../image/base/bg_game_li.jpg") repeat-x scroll 0 bottom;margin:2px;font-weight:bold;}
+.choice_w .choice > div.cho2 div.btn_div .apply {width:228px;color:#fff;background:url("../image/base/bg_point_btn.jpg") repeat-x;margin-left:0;}
+.choice_w .choice .close_cho {position:absolute;right:7px;top:9px;}
+.choice_w .choice .close_cho a {width:11px;height:10px;background:url("../image/base/icon.png") no-repeat -158px -68px;display:block;}
 
-.leagueChoice {position:absolute; right:0; top:0px; text-align:center;}
-.leagueChoice>a {padding:0 13px ; height:28px; line-height:25px; display:block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-}
-.leagueChoice .choice_w {display:none;background:#fff; border:6px solid #ccc; border-right:5px solid #ccc; position:absolute; top:38px; right:0px;z-index:1; width:400px; }
-.leagueChoice .choice {z-index:9;position:relative;}
-.leagueChoice .choice > span {position:absolute; top:-13px; right:37px; display:block; width:13px; height:7px; background:url("../image/base/icon.png") no-repeat -133px -26px;}
-.leagueChoice .choice > div:nth-of-type(1), .leagueChoice .choice > div:nth-of-type(2) {float:left; width:199px; border-right:1px solid #ccc; overflow: hidden; border-bottom:1px solid #ccc;}
-.leagueChoice .choice > div:nth-of-type(2) {background:#f2f2f2;}
-.leagueChoice .choice > div:nth-of-type(2) ul li {background:#f2f2f2;}
-.leagueChoice .choice > div h3 {font-weight:bold; background:#f2f2f2; height:40px; line-height:40px; font-size:15px;border-bottom:1px solid #ccc;margin-bottom:0;}
-.leagueChoice .choice > div .scroll_w {width:199px; overflow:hidden; height:368px; position:relative;}
-.leagueChoice .choice > div ul {text-align:left;overflow-y:scroll;height:368px;width:250px;}
-.leagueChoice .choice > div ul li {border-bottom:1px solid #ccc;height:40px; line-height:40px;}
-.leagueChoice .choice > div ul li input {margin-left:10px;}
-.leagueChoice .choice > div ul li span {margin:9px 7px 0 10px;}
-.leagueChoice .choice > div ul li a {font-size:14px; display:inline-block; width:199px;}
-.leagueChoice .choice > div:nth-of-type(1) ul li label {background:url("../image/base/icon.png") no-repeat scroll 174px -138px;}
-.leagueChoice .choice > div ul li label {font-size:14px; display:inline-block; width:199px;}
-.leagueChoice .choice > div ul.allview {display:none; position:absolute;top:0px;left:0;background:#fff;}
-.leagueChoice .choice > div ul.allview li {}
-.leagueChoice .choice > div ul li span.amount {margin-left:5px;background:#ff225b; border-radius:10px; display:inline-block; color:#fff; font-weight:bold; font-size:13px; width:25px; height:15px; line-height:14px; text-align:center;}
-.leagueChoice .choice > div:nth-of-type(3) {height:40px;display:block; content:""; clear:both;text-align:left;}
-.leagueChoice .choice > div:nth-of-type(3) p {float:left;color:#999;font-size:11px;font-family:Dotum;line-height:1.3;padding:6px 0 0 5px;}
-.leagueChoice .choice > div:nth-of-type(3) a {text-align:center;width:30px; padding:0 10px; margin:5px 5px 0 43px ;  height:28px; line-height:28px; display:inline-block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-}
-.leagueChoice .choice > div:nth-of-type(3) a:nth-of-type(2) {color:#ff225b; width:60px; margin:5px 5px 0 0 ;}
 
 
 
@@ -132,7 +121,7 @@ table.soccer_table td {border-bottom:none;}
 .soccer_table td:nth-of-type(8) {text-align:left;}
 
 .liveView {display:none;}
-.dataview {width:960px;position:relative;height:370px;}
+.dataview {width:960px;position:relative;height:130px;}
 .dataview .live {width:960px; height:65px;background:url("../image/livescore/bg_soccerlive.jpg") no-repeat -4px 0;position:relative;}
 .dataview .live .team {position:absolute; left:7px;}
 .dataview .live .team li {height:20px; margin-bottom:25px;}
@@ -140,7 +129,7 @@ table.soccer_table td {border-bottom:none;}
 .dataview .live div.event {position:absolute; top:2px; width:20px; height:65px; text-align:center; margin-left:-10px;}
 .dataview .live div.event span {display:block; height:21px; line-height:21px; font-weight:bold; font-size:13px; width:20px;}
 .dataview .live div.event span.time {height:17px; line-height:17px;}
-.dataview .live div.now {position:absolute; width:15px; height:15px; top:25px;background:url("../image/livescore/icon_now.gif") no-repeat;}
+.dataview .live div.now {position:absolute; width:15px; height:15px; top:25px;background:url("../image/livescore/icon_now.gif") no-repeat;}/*
 .dataview .view {}
 .dataview .view>div {float:left;}
 .dataview .view>div.stadium {margin:33px 0 0 9px;width:410px; height:255px; overflow:hidden; background:url("../image/livescore/soccer_l_go.jpg") no-repeat; position:relative;}
@@ -161,9 +150,10 @@ table.soccer_table td {border-bottom:none;}
 .dataview .view .table .graphDiv>div .right {float:right; font-size:11px; font-weight:bold; height:15px; line-height:15px;}
 .dataview .view .table .graphDiv>div .graph {margin-bottom:10px;}
 .dataview .graph_g {display:block;width:500px;height:10px; background-color:#444;}
-.dataview .bar_g {display:block;height:10px; background-color:#ff225b;}
-.dataview .view .table .text {border:1px solid #ccc;background:#fff;height:30px; line-height:30px; text-align:left; letter-spacing:-0.5px; margin-top:19px;}
-.dataview .view .table .text span {border:none; border-right:1px solid #ccc;background:#f6f6f6; height:30px; line-height:30px; width:96px; text-align:center; display:inline-block; margin-right:10px; font-weight:bold;}
+.dataview .bar_g {display:block;height:10px; background-color:#ff225b;}*/
+.dataview .text {border:1px solid #ccc;background:#fff;height:30px; line-height:30px; text-align:left; letter-spacing:-0.5px; margin-top:19px;}
+.dataview .text span {border:none; border-right:1px solid #ccc;background:#f6f6f6; height:30px; line-height:30px; width:96px; text-align:center; display:inline-block; margin-right:10px; font-weight:bold;}
+
 
 
 
