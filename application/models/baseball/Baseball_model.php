@@ -119,6 +119,7 @@
 
         return $result;
 	}
+
 	function getByOverUnder(){
         $month=$this->get_result('all');
 
@@ -700,5 +701,29 @@
         $result=$this->db->get_where('kbo_team_total_2017')->row();
 
         return $this->db->get_where('kbo_team_total_2017', array('date'=>$result->date))->result();
+    }
+
+//  마이닝 DB 로드
+    function get_mining_db(){
+        $db['hostname']='110.10.130.47';
+        $db['username']='odds';
+        $db['password']='odds8313$';
+        $db['database']='mining';
+        $db['dbdriver']='mysqli';
+        $db['dbprefix']='';
+        $db['pconnect']=FALSE;
+        $db['db_debug']=TRUE;
+        $db['cache_on']=FALSE;
+        $db['cachedir']='/application/cache';
+        $db['char_set']='utf8';
+        $db['dbcollat']='utf8_general_ci';
+        $db['swap_pre']='';
+        $db['encrypt']=FALSE;
+        $db['compress']=FALSE;
+        $db['stricton']=FALSE;
+        $db['failover']=array();
+        $db['save_queries']=TRUE;
+
+        return $this->load->database($db, TRUE);
     }
 }

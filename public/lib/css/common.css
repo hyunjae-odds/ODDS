@@ -800,14 +800,14 @@ span.yellow02 {font-size:0; vertical-align:top;display:inline-block; width:13px;
 span.redcard02 {font-size:0; vertical-align:top;display:inline-block; width:13px; height:15px; background:url("../image/livescore/liveicon.png") no-repeat -44px -277px;}
 
 
-.result_btn {margin:0px 1px 0 2px;display:inline-block;}
+.result_btn {margin:0px 1px 0 2px;display:inline-block;height:25px;}
 /*span.winL {font-size:0;background:url("../image/game/WLD.png") no-repeat;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
 span.loseL {font-size:0;background:url("../image/game/WLD.png") no-repeat -23px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
 span.drawL {font-size:0;background:url("../image/game/WLD.png") no-repeat -46px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}*/
-span.plusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -69px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
-span.minusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -92px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
-span.yesL {font-size:0;background:url("../image/game/WLD.png") no-repeat -115px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
-span.noL {font-size:0;background:url("../image/game/WLD.png") no-repeat -138px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
+span.plusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -69px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
+span.minusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -92px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
+span.yesL {font-size:0;background:url("../image/game/WLD.png") no-repeat -115px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
+span.noL {font-size:0;background:url("../image/game/WLD.png") no-repeat -138px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
 
 /* 아이콘 수정 예정 2.1
 span.winL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
