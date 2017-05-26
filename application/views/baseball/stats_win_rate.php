@@ -20,7 +20,7 @@
             <ul class="firTab">
                 <li class="on"><a href="/baseball/stats_win_rate">리그 승률</a></li>
                 <li><a href="/baseball/stats_h?handicap=1.5">리그 안타</a></li>
-                <li><a href="javascript:void(0)">리그 홈런</a></li>
+                <li><a href="/baseball/stats_hr">리그 홈런</a></li>
             </ul>
             <ul class="tab_view01 gameMain_view">
                 <li class="active" style="padding-top:40px;"><!-- 리그 승률 -->

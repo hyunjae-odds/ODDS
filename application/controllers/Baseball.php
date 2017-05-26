@@ -201,11 +201,12 @@ class Baseball extends MY_Controller{
 
         $this->load->view("/baseball/stats_win_rate", array('handicap'=>$handicap,'home_away_win_5'=>$home_away_win_5,'get_score_5'=>$get_score_5,'score_margin_5'=>$score_margin_5,'team'=>$team,
                                                             'rank_board'=>$result_set,'recent_10_game_over_5'=>$total,'recent_10_game_under_5'=>$total_under_5,'league_statistics'=>$league_statistics,
-                                                            'inning'=>$inning,'duration'=>$duration,'handicap'=>$handicap,'sort_home_away'=>$sort_home_away,'over_under'=>$over_under,
+                                                            'inning'=>$inning,'duration'=>$duration,'sort_home_away'=>$sort_home_away,'over_under'=>$over_under,
                                                             'recent_over_5'=>$recent_over_under_10,'recent_under_5'=>$recent_under_5));
         $this->load->view("/baseball/footer");
     }
 
+//  리그 통계 > 리그 안타
     function stats_h(){
         $this->load->view("/baseball/head_up");
         $this->load->view("/baseball/head");
@@ -394,6 +395,191 @@ class Baseball extends MY_Controller{
 
         $this->load->view("/baseball/stats_h", array('rank_board'=>$result_set,'sort_home_away'=>$sort_home_away,'handicap'=>$handicap,'inning'=>$inning,'duration'=>$duration,'over_under'=>$over_under,'sort_select'=>$sort_select,
                                                      'team'=>$team,'league_statistics'=>$league_h_result,'h'=>$h,'h_margin'=>$h_margin,'half_over_under'=>$half_over_under,'first_over_under'=>$first_over_under,'home_away'=>$home_away));
+        $this->load->view("/baseball/footer");
+    }
+
+//  리그통계 > 리그 홈런
+    function stats_hr(){
+        $this->load->view("/baseball/head_up");
+        $this->load->view("/baseball/head");
+
+        $duration=($this->input->get('duration')==null || $this->input->get('duration')=='all')? 'all' : $this->input->get('duration');
+        $over_under=($this->input->get('over_under')==null || $this->input->get('over_under')==0)? 0 : $this->input->get('over_under');
+        $sort_select=($this->input->get('sort_select')==null)? '' : $this->input->get('sort_select');
+        $sort_home_away=($this->input->get('sort_home_away')==null || $this->input->get('sort_home_away')=='all')? 'all':$this->input->get('sort_home_away');
+        $sort_inning=($this->input->get('sort_inning')==null || $this->input->get('sort_inning')=='full')? 'full':$this->input->get('sort_inning');
+        $tab_selector=($this->input->get('tab_selector')==null)? 1:$this->input->get('tab_selector');
+
+//      RANK BOARD
+        $result_set=array();
+        $total=$this->getRankBoard('all', $duration, 'all', 0, $over_under);
+        $total_half=$this->getRankBoard('half', $duration, 'away', 0, $over_under);
+        $total_first=$this->getRankBoard('first', $duration, 'home', 0, $over_under);
+        $plus_minus=$this->baseball_model->getTotalScore('all', $duration, 'all');
+        $plus_minus_half=$this->baseball_model->getTotalScore('half', $duration, 'away');
+        $plus_minus_first=$this->baseball_model->getTotalScore('first', $duration, 'home');
+        $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+
+        foreach($teams as $item):
+            $result=array();
+//          전체기록
+            foreach($total as $items):
+                if($items->team==$item):
+                    $result['rank']=$items->rank;
+                    $result['team']=$items->team;
+                    $result['total_g']=$items->g;
+                    $result['total_win_rate']=number_format($items->win_rate,3);
+                    $result['total_win']=$items->win;
+                    $result['total_tie']=$items->tie;
+                    $result['total_lose']=$items->lose;
+                    $result['over']=$items->ou_away+$items->ou_home;
+                    $result['over_p']=number_format(($items->ou_away+$items->ou_home)/$items->g*100);
+                endif;
+            endforeach;
+            $result['plus']=$plus_minus[$item];
+            $result['minus']=$plus_minus[$item.'_lose'];
+
+//          홈 기록/원정 기록
+            foreach($total_half as $items_away):
+                if($items_away->team==$item):
+                    $result['away_g']=$items_away->g;
+                    $result['away_win_rate']=number_format($items_away->win_rate,3);
+                    $result['away_win']=$items_away->win;
+                    $result['away_tie']=$items_away->tie;
+                    $result['away_lose']=$items_away->lose;
+                endif;
+            endforeach;
+            $result['plus_away']=$plus_minus_half[$item];
+            $result['minus_away']=$plus_minus_half[$item.'_lose'];
+            foreach($total_first as $items_home):
+                if($items_home->team==$item):
+                    $result['home_g']=$items_home->g;
+                    $result['home_win_rate']=number_format($items_home->win_rate,3);
+                    $result['home_win']=$items_home->win;
+                    $result['home_tie']=$items_home->tie;
+                    $result['home_lose']=$items_home->lose;
+                endif;
+            endforeach;
+            $result['plus_home']=$plus_minus_first[$item];
+            $result['minus_home']=$plus_minus_first[$item.'_lose'];
+
+//          홈런 Y/N
+            if($tab_selector==4):
+                $homerun_result=$this->get_hr_yn($item, $tab_selector);
+                $result['all_hr']=$homerun_result['hr_away']+$homerun_result['hr_home'];
+                $result['all_hr_p']=number_format($result['all_hr']/$result['total_g']*100);
+                $result['away_hr']=$homerun_result['hr_away'];
+                $result['away_hr_p']=number_format($result['away_hr']/$result['away_g']*100);
+                $result['home_hr']=$homerun_result['hr_home'];
+                $result['home_hr_p']=number_format($result['home_hr']/$result['home_g']*100);
+            elseif($tab_selector==5):
+                $result_hr=$this->get_hr_yn($item, $tab_selector);
+                echo BR;
+                echo $item;
+
+                $full_hr_1=0;
+                $full_hr_2=0;
+                $full_hr_3=0;
+                $full_hr_4_over=0;
+                foreach($result_hr as $entry):
+                    if($entry['full_inning_hr']==1): $full_hr_1++;
+                    elseif($entry['full_inning_hr']==2): $full_hr_2++;
+                    elseif($entry['full_inning_hr']==3): $full_hr_3++;
+                    else: $full_hr_4_over++; endif;
+                endforeach;
+                $full_hr_0=$result['total_g']-($full_hr_1+$full_hr_2+$full_hr_3+$full_hr_4_over);
+
+                $half_hr_1=0;
+                $half_hr_2=0;
+                $half_hr_3=0;
+                $half_hr_4_over=0;
+                foreach($result_hr as $entry):
+                    if($entry['half_inning_hr']==1): $half_hr_1++;
+                    elseif($entry['half_inning_hr']==2): $half_hr_2++;
+                    elseif($entry['half_inning_hr']==3): $half_hr_3++;
+                    else: $half_hr_4_over++; endif;
+                endforeach;
+                $half_hr_0=$result['total_g']-($half_hr_1+$half_hr_2+$half_hr_3+$half_hr_4_over);
+
+                $first_hr_1=0;
+                $first_hr_2=0;
+                $first_hr_3=0;
+                $first_hr_4_over=0;
+                foreach($result_hr as $entry):
+                    if($entry['first_inning_hr']==1): $first_hr_1++;
+                    elseif($entry['first_inning_hr']==2): $first_hr_2++;
+                    elseif($entry['first_inning_hr']==3): $first_hr_3++;
+                    else: $first_hr_4_over++; endif;
+                endforeach;
+                $first_hr_0=$result['total_g']-($first_hr_1+$first_hr_2+$first_hr_3+$first_hr_4_over);
+
+                $result['full_hr_0']=$full_hr_0;
+                $result['full_hr_1']=$full_hr_1;
+                $result['full_hr_2']=$full_hr_2;
+                $result['full_hr_3']=$full_hr_3;
+                $result['full_hr_4']=$full_hr_4_over;
+                $result['half_hr_0']=$half_hr_0;
+                $result['half_hr_1']=$half_hr_1;
+                $result['half_hr_2']=$half_hr_2;
+                $result['half_hr_3']=$half_hr_3;
+                $result['half_hr_4']=$half_hr_4_over;
+                $result['first_hr_0']=$first_hr_0;
+                $result['first_hr_1']=$first_hr_1;
+                $result['first_hr_2']=$first_hr_2;
+                $result['first_hr_3']=$first_hr_3;
+                $result['first_hr_4']=$first_hr_4_over;
+
+                var_dump($result);
+            endif;
+
+//          5이닝
+            $h_result=$this->get_half_first_inning_score_from_mining($item, 5, $over_under, 'all');
+            $result['plus_inning_5']=$h_result->score;
+            $result['minus_inning_5']=$h_result->lost_score;
+            $result['over_inning_5']=$h_result->over;
+            if($result['over']==0) $result['over']=1;
+            $result['over_inning_5_p']=number_format($result['over_inning_5']/$result['over']*100);
+
+//          1이닝
+            $h_result2=$this->get_half_first_inning_score_from_mining($item, 1, $over_under, 'all');
+            $result['plus_inning_1']=$h_result2->score;
+            $result['minus_inning_1']=$h_result2->lost_score;
+            $result['over_inning_1']=$h_result2->over;
+            $result['over_inning_1_p']=number_format($result['over_inning_1']/$result['over']*100);
+
+            array_push($result_set, $result);
+        endforeach;
+
+        if($tab_selector==1):
+            $sort_word='rank';
+            $sort_ASC_DESC=SORT_ASC;
+            if($sort_home_away=='away'): $sort_word='away_win_rate'; $sort_ASC_DESC=SORT_DESC;
+            elseif($sort_home_away=='home'): $sort_word='home_win_rate'; $sort_ASC_DESC=SORT_DESC; endif;
+
+            foreach($result_set as $item) $sortAux5[]=$item[$sort_word];
+            array_multisort($sortAux5, $sort_ASC_DESC, $result_set);
+            if($sort_home_away!='all'): for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1; endif;
+        elseif($tab_selector==2 || $tab_selector==3):
+            $sort_word='over_p';
+            if($sort_inning=='half'): $sort_word='over_inning_5_p';
+            elseif($sort_inning=='first'): $sort_word='over_inning_1_p'; endif;
+
+            foreach($result_set as $item) $sortAux5[]=$item[$sort_word];
+            array_multisort($sortAux5, SORT_DESC, $result_set);
+            for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1;
+        elseif($tab_selector==4):
+            $sort_word='all_hr_p';
+            if($sort_home_away=='home'): $sort_word='home_hr_p';
+            elseif($sort_home_away=='away'): $sort_word='away_hr_p'; endif;
+
+            foreach($result_set as $item) $sortAux5[]=$item[$sort_word];
+            array_multisort($sortAux5, SORT_DESC, $result_set);
+            for($i=0; $i<10; $i++) $result_set[$i]['rank']=$i+1;
+        endif;
+
+        $this->load->view("/baseball/stats_hr", array('over_under'=>$over_under,'rank_board'=>$result_set,'duration'=>$duration,'sort_select'=>$sort_select,'sort_home_away'=>$sort_home_away,
+                                                      'tab_selector'=>$tab_selector,'sort_inning'=>$sort_inning));
+
         $this->load->view("/baseball/footer");
     }
 
@@ -1208,7 +1394,6 @@ class Baseball extends MY_Controller{
                     $half_lost_h_away+=$entry->half_inning_h_home;
                     $first_lost_h_away+=$entry->first_inning_h_home;
                 endforeach;
-                var_dump($result_away);
             endif;
             if($home_away=='home' || $home_away=='all'):
                 $MINING->where('home_name', $team);
@@ -1222,7 +1407,6 @@ class Baseball extends MY_Controller{
                     $half_lost_h_home+=$entries->half_inning_h_away;
                     $first_lost_h_home+=$entries->first_inning_h_away;
                 endforeach;
-                var_dump($result_home);
             endif;
 
             $result=array('team'=>$team, 'full_inning_h_away'=>$full_h_away,'half_inning_h_away'=>$half_h_away,'first_inning_h_away'=>$first_h_away,'full_inning_h_home'=>$full_h_home,
@@ -1234,6 +1418,58 @@ class Baseball extends MY_Controller{
         endif;
 
         return $this->db->get_where('kbo_h_temp', array('insert_dt'=>date('Y-m-d'),'team'=>$team))->row();
+    }
+
+//  마이닝 - 홈런 예쓰/노
+    function get_hr_yn($team, $tab_selector){
+        $MINING=$this->get_mining_db();
+
+        $result=array();
+        if($tab_selector==4):
+            $MINING->select('full_inning_hr_away');
+            $MINING->where('away_name', $team);
+            $MINING->where('full_inning_hr_away!=', null);
+            $num_rows_away=$MINING->get('schedule')->num_rows();
+            $MINING->select('full_inning_hr_home');
+            $MINING->where('home_name', $team);
+            $MINING->where('full_inning_hr_home!=', null);
+            $num_rows_home=$MINING->get('schedule')->num_rows();
+
+            $result['hr_away']=$num_rows_away;
+            $result['hr_home']=$num_rows_home;
+        elseif($tab_selector==5):
+            $MINING->select('full_inning_hr_away, half_inning_hr_away, first_inning_hr_away');
+            $MINING->where('away_name', $team);
+            $MINING->where('full_inning_hr_away!=', null);
+            $result_away=$MINING->get('schedule')->result();
+            $MINING->select('full_inning_hr_home, half_inning_hr_home, first_inning_hr_home');
+            $MINING->where('home_name', $team);
+            $MINING->where('full_inning_hr_home!=', null);
+            $result_home=$MINING->get('schedule')->result();
+
+            $full_inning_hr_away=0;
+            $half_inning_hr_away=0;
+            $first_inning_hr_away=0;
+            $full_inning_hr_home=0;
+            $half_inning_hr_home=0;
+            $first_inning_hr_home=0;
+            foreach($result_away as $item):
+                $full_inning_hr_away+=$item->full_inning_hr_away;
+                $half_inning_hr_away+=$item->half_inning_hr_away;
+                $first_inning_hr_away+=$item->first_inning_hr_away;
+            endforeach;
+            foreach($result_home as $item):
+                $full_inning_hr_home+=$item->full_inning_hr_home;
+                $half_inning_hr_home+=$item->half_inning_hr_home;
+                $first_inning_hr_home+=$item->first_inning_hr_home;
+            endforeach;
+
+            $result['full_inning_hr']=$full_inning_hr_away+$full_inning_hr_home;
+            $result['half_inning_hr']=$half_inning_hr_away+$half_inning_hr_home;
+            $result['first_inning_hr']=$first_inning_hr_away+$first_inning_hr_home;
+        endif;
+
+        return $result;
     }
 
     /* ---------------------------------------------------------- CRAWLING ---------------------------------------------------------- */
