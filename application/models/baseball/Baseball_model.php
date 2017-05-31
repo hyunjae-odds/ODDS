@@ -538,6 +538,15 @@
         return $this->db->get($table)->result();
     }
 
+    function get_total_game_num($flag){
+        if($flag=='all'): return $this->db->get_where('kbo_result_2017', array('away_score !='=>''))->num_rows();
+        else:
+            $this->db->where('away', $flag);
+            $this->db->or_where('home', $flag);
+            return $this->db->get('kbo_result_2017')->num_rows();
+        endif;
+    }
+
     function get_where($table, $where){
         return $this->db->get_where($table, $where)->result();
     }

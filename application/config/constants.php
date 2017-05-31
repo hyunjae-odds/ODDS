@@ -95,5 +95,6 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
  |
  */
 defined('SERVER_HOST')      OR define('SERVER_HOST', 'odds.dev');
+//defined('SERVER_HOST')      OR define('SERVER_HOST', 'www.sbportal.co.kr');
 defined('CURRENT_YEAR')      OR define('CURRENT_YEAR', 2017);
 defined('BR')      OR define('BR', '<br><br><br><br><br>');

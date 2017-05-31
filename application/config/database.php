@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '110.10.130.47',
-	'username' => 'odds',
-	'password' => 'odds8313$',
+	'hostname' => '192.168.0.123',
+	'username' => 'root',
+	'password' => 'odds8313#',
 	'database' => 'odds',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -94,3 +94,5 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+
