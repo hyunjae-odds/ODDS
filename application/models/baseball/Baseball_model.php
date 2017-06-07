@@ -49,10 +49,33 @@
 		endforeach;
 	}
 
-    function insertNoDelete($table, $data){
-        foreach($data as $key=>$entry):
-            $this->db->set('insert_dt', 'NOW()', false);
-            $this->db->insert($table, $entry);
+    function insertNoDelete($table, $data, $flag){
+	    if($flag) $count=$this->db->get_where($table, array('insert_dt'=>date('Y-m-d')))->num_rows();
+	    else $count=99;
+
+        foreach($data as $entry):
+            if($count==0):
+                $this->db->set('insert_dt', 'NOW()', false);
+                $this->db->insert($table, $entry);
+            elseif($count==99):
+                $count_99=$this->db->get_where($table, array('team'=>$entry['team'],'name'=>$entry['name'],'insert_dt'=>date('Y-m-d')))->num_rows();
+                if($count_99==0):
+                    $this->db->set('insert_dt', 'NOW()', false);
+                    $this->db->insert($table, $entry);
+                else:
+                    $this->db->where('rank', 99);
+                    $this->db->where('name', $entry['name']);
+                    $this->db->where('team', $entry['team']);
+                    $this->db->where('insert_dt', date('Y-m-d'));
+                    $this->db->update($table, $entry);
+                endif;
+            else:
+                $this->db->where('rank', $entry['rank']);
+                $this->db->where('team', $entry['team']);
+                $this->db->where('name', $entry['name']);
+                $this->db->where('insert_dt', date('Y-m-d'));
+                $this->db->update($table, $entry);
+            endif;
         endforeach;
     }
 
@@ -120,7 +143,7 @@
         return $result;
 	}
 
-	function getByOverUnder(){
+	function getByOverUnder($over_under_reference_value, $flag){
         $month=$this->get_result('all');
 
         $result_set=array();
@@ -128,31 +151,49 @@
         foreach($team_array as $team):
             $result=array();
             $count=0;
-            $ou_count=0;
+            $over_count=0;
+            $g=0;
+            $over_count_all_game=0;
             $team_recent_ten_game='';
             foreach($month as $item):
-                if($item->home==$team && $count<10):
-                    if($item->home_score > 9.5): $team_recent_ten_game='o;'.$team_recent_ten_game; $ou_count++; $count++;
-                    else: $team_recent_ten_game='u;'.$team_recent_ten_game;$count++; endif;
-                elseif($item->away==$team && $count<10):
-                    if($item->away_score > 9.5): $team_recent_ten_game='o;'.$team_recent_ten_game; $ou_count++; $count++;
-                    else: $team_recent_ten_game='u;'.$team_recent_ten_game; $count++; endif;
+                if($flag):
+                    if($item->home==$team || $item->away==$team):
+                        $g++;
+                        if($item->home_score+$item->away_score > $over_under_reference_value): $over_count_all_game++; endif;
+                    endif;
+                else:
+                    if(($item->home==$team || $item->away==$team) && $count<10):
+                        if($item->home_score+$item->away_score > $over_under_reference_value): $team_recent_ten_game='o;'.$team_recent_ten_game; $over_count++; $count++;
+                        else: $team_recent_ten_game='u;'.$team_recent_ten_game; $count++; endif;
+                    endif;
                 endif;
             endforeach;
 //          마지막 콤마 제거
             $result['team']=$team;
-            $result['count']=$ou_count;
-            $result['over_under']=substr($team_recent_ten_game, 0, -1);
+            if($flag):
+                $result['g']=$g;
+                $result['over_under_all_game']=$over_count_all_game;
+                $result['over_under_rate']=number_format($over_count_all_game/$g*100,1);
+            else:
+                $result['count']=$over_count;
+                $result['over_under']=substr($team_recent_ten_game, 0, -1);
+            endif;
+
             array_push($result_set, $result);
         endforeach;
-        foreach($result_set as $item) $sortAux[]=$item['count'];
-        array_multisort($sortAux, SORT_DESC, $result_set);
+        if($flag):
+            foreach($result_set as $item) $sortAux[]=$item['over_under_rate'];
+            array_multisort($sortAux, SORT_DESC, $result_set);
+        else:
+            foreach($result_set as $item) $sortAux[]=$item['count'];
+            array_multisort($sortAux, SORT_DESC, $result_set);
+        endif;
 
         return $result_set;
 	}
 
 	function getByTeam($team, $this_month){
-		$this->db->select('rank, date, team');
+		$this->db->select('rank, date, team, win_rate');
 		$this->db->like('date', '2017-'.$this_month, 'after');
 		$this->db->order_by('date', 'ASC');
 
@@ -165,11 +206,12 @@
     	$this->db->distinct();
     	$lastDate=$this->db->get($table, 1)->row();
 
+     	$this->db->where('rank!=', 99);
      	$this->db->where('insert_dt', $lastDate->insert_dt);
-        if($sort=='era') $this->db->order_by($sort, 'ASC');
-        else if($sort=='whip') $this->db->order_by($sort, 'ASC');
-        else if($sort=='avg') $this->db->order_by($sort, 'ASC');
-        else $this->db->order_by($sort, 'DESC');
+     	if($table=='kbo_team_offense_2017' && $sort=='avg'): $this->db->order_by($sort, 'DESC');
+        elseif($sort=='era' || $sort=='whip' || $sort=='avg'): $this->db->order_by($sort, 'ASC');
+        else: $this->db->order_by($sort, 'DESC'); endif;
+
 	    return $this->db->get($table)->result();
     }
 
@@ -211,6 +253,7 @@
 
     	$this->db->order_by('rank', 'ASC');
      	$this->db->where('insert_dt', $lastDate->insert_dt);
+     	if($table=='kbo_pitcherbasic_2017') $this->db->where('rank!=', 99);
         return $this->db->get($table, $limit, $offset)->result();
     }
 
@@ -250,11 +293,11 @@
         return $this->set_player_id($resultSet, array('era', 'w', 'sv', 'wpct', 'hld', 'so'));
     }
 
-    function getRunner5($table){
-        $this->db->where('insert_dt', $this->getLastDay($table));
+    function getRunner5(){
+        $this->db->where('insert_dt', $this->getLastDay('kbo_runnerbasic_2017'));
         $this->db->order_by('rank', 'ASC');
 
-        $resultSet=$this->db->get($table, 5)->result();
+        $resultSet=$this->db->get('kbo_runnerbasic_2017', 5)->result();
 
         foreach($resultSet as $item):
             $this->db->select('player_id');
@@ -281,6 +324,7 @@
     function get_orderby($table, $limit, $order_by, $asc_desc){
         $this->db->select('name, team, '.$order_by);
         $this->db->where('insert_dt', $this->getLastDay($table));
+        if($order_by=='era' || $order_by=='wpct') $this->db->where('rank!=', 99);
         $this->db->order_by($order_by, $asc_desc);
 
         return $this->db->get($table, $limit)->result();
@@ -302,6 +346,7 @@
         $lastDate=$this->db->get($table, 1)->row();
 
         $this->db->order_by('rank');
+        $this->db->where('rank!=', 99);
         $this->db->where('insert_dt', $lastDate->insert_dt);
 
         return $this->db->get_where($table, array('team'=>$team))->result();
@@ -449,7 +494,7 @@
     }
     
     /* 리그 요약 - 통계 */
-    function getLeagueStatistics(){
+    function getLeagueStatistics($over_under_reference_value, $handicap){
         $total=$this->get_result('all');
     	$resultSet=array();
 
@@ -477,23 +522,65 @@
     	$resultSet['home_total_score']=$home_total_score;
     	
     	/* 핸디캡 승률 통계 */
-    	$handicap_home_win=0;
-    	$handicap_away_win=0;
-    	foreach($total as $entry):
-    		if($entry->away_score < $entry->home_score+1.5) $handicap_home_win++;
-    		if($entry->away_score > $entry->home_score+1.5) $handicap_away_win++;
-    	endforeach;
-    	$resultSet['handicap_home_win']=$handicap_home_win;
-    	$resultSet['handicap_away_win']=$handicap_away_win;
-    	
+        $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $away_result=0;
+        $home_result=0;
+        $away_win_result=0;
+        $home_win_result=0;
+        $over=0;
+        foreach($teams as $key=>$team):
+            $away_g=0;
+            $home_g=0;
+            $away_win=0;
+            $home_win=0;
+            $away_win_in_handicap=0;
+            $home_win_in_handicap=0;
+            $get_score=0;
+            foreach($total as $item):
+                if($item->away==$team):
+                    if($item->away_score > $item->home_score): $away_win++; endif;
+                    $away_g++;
+                    $get_score+=$item->away_score;
+                endif;
+                if($item->home==$team):
+                    if($item->home_score > $item->away_score): $home_win++; endif;
+                    $home_g++;
+                    $get_score+=$item->home_score;
+                endif;
+                if($item->away==$team) if($item->away_score-$handicap > $item->home_score) $away_win_in_handicap++;
+                if($item->home==$team) if($item->home_score-$handicap > $item->away_score) $home_win_in_handicap++;
+
+//              오버언더
+                if($key==0): if($item->away_score+$item->home_score > $over_under_reference_value): $over++; endif; endif;
+            endforeach;
+            $away_win_rate=number_format($away_win/$away_g*100);
+            $away_win_rate_handicap=number_format( $away_win_in_handicap/$away_g*100);
+            $away=number_format($away_win_rate_handicap/$away_win_rate*100,3);
+            $home_win_rate=number_format($home_win/$home_g*100);
+            $home_win_rate_handicap=number_format( $home_win_in_handicap/$home_g*100);
+            $home=number_format($home_win_rate_handicap/$home_win_rate*100,3);
+
+            $away_result+=$away;
+            $home_result+=$home;
+            $away_win_result+=$away_win;
+            $home_win_result+=$home_win;
+        endforeach;
+
+        $resultSet['handicap_away_win']=$away_win_result;
+        $resultSet['handicap_home_win']=$home_win_result;
+        $resultSet['handicap_away_win_rate']=number_format($away_result/count($teams));
+        $resultSet['handicap_home_win_rate']=number_format($home_result/count($teams));
+        $resultSet['over']=$over;
+        $resultSet['g']=count($total);
+
     	return $resultSet;
     }
 
-    function getLeagueStatistics2(){
+    function getLeagueStatistics2($over_under_reference_value){
         $total=$this->get_result('all');
-    	$result=array();
+        $result=array();
 
-    	$g=0;
+        $g=0;
         $away_score=0;
         $home_score=0;
         $away_win=0;
@@ -502,6 +589,9 @@
         $tie_game_count=0;
         $handicap_away_win=0;
         $handicap_home_win=0;
+        $over=0;
+        $over_plus1=0;
+        $over_minus1=0;
 
         foreach($total as $item):
             $away_score+=$item->away_score;
@@ -512,18 +602,35 @@
             if($item->away_score < $item->home_score-1.5): $handicap_home_win++;
             elseif($item->away_score-1.5 > $item->home_score): $handicap_away_win++; endif;
             $g++;
-    	endforeach;
 
-    	$result['g']=$g;
-    	$result['away_score']=$away_score;
-    	$result['home_score']=$home_score;
-    	$result['away_win']=$away_win;
-    	$result['home_win']=$home_win;
-    	$result['tie']=$tie;
-    	$result['handicap_away_win']=$handicap_away_win;
-    	$result['handicap_home_win']=$handicap_home_win;
+//          O/U 통계
+            if($item->away_score+$item->home_score > $over_under_reference_value) $over++;
+            if($item->away_score+$item->home_score > $over_under_reference_value+1) $over_plus1++;
+            if($item->away_score+$item->home_score > $over_under_reference_value-1) $over_minus1++;
+        endforeach;
 
-    	return $result;
+        $result['g']=$g;
+        $result['away_score']=$away_score;
+        $result['home_score']=$home_score;
+        $result['away_win']=$away_win;
+        $result['home_win']=$home_win;
+        $result['tie']=$tie;
+        $result['handicap_away_win']=$handicap_away_win;
+        $result['handicap_home_win']=$handicap_home_win;
+        $result['over']=$over;
+        $result['over_plus1']=$over_plus1;
+        $result['over_minus1']=$over_minus1;
+
+        return $result;
+    }
+
+//  오버언더 기준값
+    function get_over_under(){
+        $total=$this->get_result('all');
+        $values=0;
+        foreach($total as $item) $values+=$item->away_score+$item->home_score;
+
+        return floor(number_format($values/count($total),1)).'.5';
     }
 
     function get_result($inning){

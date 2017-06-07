@@ -22,10 +22,10 @@
                     <a href="" class="btn_prev" title="이전시즌">이전시즌</a>
                     <a href="" class="date_yr date_num">2017<span class="date_t">시즌</span></a>
                     <ul class="date_yr_select date_ul" style="display:none;">
-                        <li><a href="">2013</a></li>
-                        <li><a href="">2014</a></li>
-                        <li><a href="">2015</a></li>
-                        <li><a href="">2016</a></li>
+<!--                        <li><a href="">2013</a></li>-->
+<!--                        <li><a href="">2014</a></li>-->
+<!--                        <li><a href="">2015</a></li>-->
+                        <li><a href="">2017</a></li>
                     </ul>
 <!--                <input value="이동" type="submit" class="btn_nv_mn">-->
                     <a href="" class="btn_next" title="다음시즌">다음시즌</a>
@@ -107,21 +107,22 @@
                                     </ul>
                                 </div>
                                 <div class="select">
-                                    <p><span class="pp"><?php if($this->input->get('team')!=null): echo $this->input->get('team'); else: echo '팀 선택'; endif; ?></span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp"><?php if($this->input->get('team')!=null): echo $this->input->get('team'); else: echo '팀 선택'; endif; ?></span><span class="pa"></span></p>
                                     <ul>
-                                        <li><a href="/baseball/player_record?team=두산">두산</a></li>
-                                        <li><a href="/baseball/player_record?team=NC">NC</a></li>
-                                        <li><a href="/baseball/player_record?team=넥센">넥센</a></li>
-                                        <li><a href="/baseball/player_record?team=LG">LG</a></li>
-                                        <li><a href="/baseball/player_record?team=KIA">KIA</a></li>
-                                        <li><a href="/baseball/player_record?team=SK">SK</a></li>
-                                        <li><a href="/baseball/player_record?team=한화">한화</a></li>
-                                        <li><a href="/baseball/player_record?team=롯데">롯데</a></li>
-                                        <li><a href="/baseball/player_record?team=삼성">삼성</a></li>
-                                        <li><a href="/baseball/player_record?team=kt">KT</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">전체</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=두산&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">두산</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=NC&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">NC</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=넥센&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">넥센</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=LG&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">LG</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=KIA&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KIA</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=SK&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">SK</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=한화&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">한화</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=롯데&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">롯데</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=삼성&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">삼성</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=KT&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KT</a></li>
                                     </ul>
                                 </div>
-                                <div class="select ">
+                                <!--<div class="select ">
                                     <p><span class="pp">포지션</span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href="">1루수</a></li>
@@ -172,7 +173,7 @@
                                         <li><a href=""></a></li>
                                     </ul>
                                 </div>
-                                <a class="btn s6_btn" href="">결과보기<span></span></a>
+                                <a class="btn s6_btn" href="">결과보기<span></span></a>-->
                             </div>
                         </div>
                         <div class="table_w pitcher">
@@ -220,11 +221,11 @@
                                         <th><span class="pr_13" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=so&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=13')">삼진</span></th>
                                         <th><span class="pr_14" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=r&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=14')">실점</span></th>
                                         <th><span class="pr_15" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=er&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=15')">자책</span></th>
-                                        <th><span class="pr_16" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=whip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=16')">이닝당출루허용</span></th>
+                                        <th><span class="pr_16" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=whip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=16')">WHIP</span></th>
                                     </tr>
                                     <?php foreach($pitcher as $key=>$item): ?>
                                         <tr>
-                                            <td><?php if($this->input->get('team')!=null): echo $key+1; else: echo $item->rank; endif; ?></td>
+                                            <td><?=$key+1;?></td>
                                             <td><?=$item->name;?></td>
                                             <td><?=$item->team;?></td>
                                             <td class="pr_1"><?=number_format($item->era,3);?></td>
@@ -255,7 +256,7 @@
                                     <caption></caption>
                                     <colgroup>
                                         <col width="55px"/>
-                                        <col width="80px"/>
+                                        <col width="100px"/>
                                         <col width="80px"/>
                                         <col width="80px"/>
                                         <col width="96px"/>
@@ -263,15 +264,15 @@
                                         <col width="93px"/>
                                         <col width="86px"/>
                                         <col width="85px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
-                                        <col width="81px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
+                                        <col width="78px"/>
                                     </colgroup>
                                     <tr>
                                         <th>순위</th>
@@ -281,21 +282,21 @@
                                         <th><span class="pr_18" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=cg&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=18')">완투</span></th>
                                         <th><span class="pr_19" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=sho&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=19')">완봉</span></th>
                                         <th><span class="pr_20" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=qs&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=20')">QS</span></th>
-                                        <th><span class="pr_21" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=bsv&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=21')">블론세이</span></th>
+                                        <th><span class="pr_21" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=bsv&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=21')">BSV</span></th>
                                         <th><span class="pr_22" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=tbf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=22')">타자수</span></th>
                                         <th><span class="pr_23" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=np&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=23')">투구수</span></th>
                                         <th><span class="pr_24" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=avg&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=24')">피안타</span></th>
                                         <th><span class="pr_25" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=second_b&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=25')">2루타</span></th>
                                         <th><span class="pr_26" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=third_b&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=26')">3루타</span></th>
-                                        <th><span class="pr_27" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=sac&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=27')">희생번</span></th>
-                                        <th><span class="pr_28" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=sf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=28')">희생플라이</span></th>
+                                        <th><span class="pr_27" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=sac&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=27')">SAC</span></th>
+                                        <th><span class="pr_28" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=sf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=28')">SF</span></th>
                                         <th><span class="pr_29" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=ibb&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=29')">고의</span></th>
                                         <th><span class="pr_30" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=wp&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=30')">폭투</span></th>
                                         <th><span class="pr_31" onclick="javascript:location.replace('/baseball/player_record?pitcher_sort=bk&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=31')">보크</span></th>
                                     </tr>
                                     <?php foreach($pitcher as $key=>$item): ?>
                                         <tr>
-                                            <td><?php if($this->input->get('team')!=null): echo $key+1; else: echo $item->rank; endif; ?></td>
+                                            <td><?=$key+1;?></td>
                                             <td><?=$item->name;?></td>
                                             <td><?=$item->team;?></td>
                                             <td class="pr_17"><?=number_format($item->era,3);?></td>
@@ -395,19 +396,20 @@
                                 <div class="select">
                                     <p class="off"><span class="pp"><?php if($this->input->get('team')!=null): echo $this->input->get('team'); else: echo '팀 선택'; endif; ?></span><span class="pa"></span></p>
                                     <ul>
-                                        <li><a href="/baseball/player_record?team=두산">두산</a></li>
-                                        <li><a href="/baseball/player_record?team=NC">NC</a></li>
-                                        <li><a href="/baseball/player_record?team=넥센">넥센</a></li>
-                                        <li><a href="/baseball/player_record?team=LG">LG</li>
-                                        <li><a href="/baseball/player_record?team=KIA">KIA</a></li>
-                                        <li><a href="/baseball/player_record?team=SK">SK</a></li>
-                                        <li><a href="/baseball/player_record?team=한화">한화</a></li>
-                                        <li><a href="/baseball/player_record?team=롯데">롯데</a></li>
-                                        <li><a href="/baseball/player_record?team=삼성">삼성</a></li>
-                                        <li><a href="/baseball/player_record?team=kt">KT</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">전체</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=두산&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">두산</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=NC&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">NC</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=넥센&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">넥센</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=LG&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">LG</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=KIA&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">KIA</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=SK&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">SK</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=한화&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">한화</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=롯데&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">롯데</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=삼성&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">삼성</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record?team=KT&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=<?=$bold_num;?>')">KT</a></li>
                                     </ul>
                                 </div>
-                                <div class="select ">
+                                <!--<div class="select ">
                                     <p class="off"><span class="pp">포지션</span><span class="pa"></span></p>
                                     <ul>
                                         <li><a href="">1루수</a></li>
@@ -458,7 +460,7 @@
                                         <li><a href=""></a></li>
                                     </ul>
                                 </div>
-                                <a class="btn s6_btn" href="">결과보기<span></span></a>
+                                <a class="btn s6_btn" href="">결과보기<span></span></a>-->
                             </div>
                         </div>
                         <div class="table_w hitter">
@@ -501,9 +503,9 @@
                                         <th><span class="bt_12" onclick="javascript:location.replace('/baseball/player_record?batter_sort=sac&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=12')">희생번트</span></th>
                                         <th><span class="bt_13" onclick="javascript:location.replace('/baseball/player_record?batter_sort=sf&scroll_top='+document.body.scrollTop+'&focus=3&bold_num=13')">희생플라이</span></th>
                                     </tr>
-                                    <?php foreach($batter as $key=>$item): ?>
+                                    <?php foreach($batter as $keys=>$item): ?>
                                         <tr>
-                                            <td><?php if($this->input->get('team')!=null): echo $key+1; else: echo $item->rank; endif; ?></td>
+                                            <td><?=$offset+$keys+1;?></td>
                                             <td><?=$item->name;?></td>
                                             <td><?=$item->team;?></td>
                                             <td class="bt_1"><?=number_format($item->avg,3);?></td>
@@ -551,7 +553,7 @@
                                         <th>선수</th>
                                         <th>팀</th>
                                         <th><span class="bt_14" onclick="javascript:location.replace('/baseball/player_record?batter_sort=avg&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=14')">타율</span></th>
-                                        <th><span class="bt_15" onclick="javascript:location.replace('/baseball/player_record?batter_sort=bb&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=15')">볼</span></th>
+                                        <th><span class="bt_15" onclick="javascript:location.replace('/baseball/player_record?batter_sort=bb&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=15')">볼넷</span></th>
                                         <th><span class="bt_16" onclick="javascript:location.replace('/baseball/player_record?batter_sort=ibb&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=16')">고의4구</span></th>
                                         <th><span class="bt_17" onclick="javascript:location.replace('/baseball/player_record?batter_sort=hbp&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=17')">사구</span></th>
                                         <th><span class="bt_18" onclick="javascript:location.replace('/baseball/player_record?batter_sort=so&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=18')">삼진</span></th>
@@ -563,9 +565,9 @@
                                         <th><span class="bt_24" onclick="javascript:location.replace('/baseball/player_record?batter_sort=risp&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=24')">득점권타율</span></th>
                                         <th><span class="bt_25" onclick="javascript:location.replace('/baseball/player_record?batter_sort=phba&scroll_top='+document.body.scrollTop+'&focus=4&bold_num=25')">대타타율</span></th>
                                     </tr>
-                                    <?php foreach($batter as $key=>$item): ?>
+                                    <?php foreach($batter as $keys=>$item): ?>
                                         <tr>
-                                            <td><?php if($this->input->get('team')!=null): echo $key+1; else: echo $item->rank; endif; ?></td>
+                                            <td><?=$offset+$keys+1;?></td>
                                             <td><?=$item->name;?></td>
                                             <td><?=$item->team;?></td>
                                             <td class="bt_14"><?=number_format($item->avg,3);?></td>

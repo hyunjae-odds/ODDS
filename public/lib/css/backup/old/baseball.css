@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-/*   ï¿½ß±ï¿½ css  */
+/*   ¾ß±¸ css  */
 
 
-/*--------------   ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½  ------------*/
+/*--------------   °ÔÀÓ_¸®±× °øÅë ½ÃÀÛ  ------------*/
 
 .game {background:#fff;}
 .game .live_visual {height:297px; }
@@ -49,7 +49,7 @@ h4.h4_02 span {display:inline-block; width:18px;height:100%;background:url("../i
 .r_tit3 li span {vertical-align:middle;}
 
 
-/* common ï¿½ï¿½ï¿½ï¿½ */
+/* common º¯°æ */
 h3.h3_01 {margin-top:-37px;}
 .select_p01 {top:40px;}
 
@@ -60,7 +60,6 @@ p.more {position:absolute; top:13px;left:263px;color:#888;font-family:Dotum;}
 
 
 /* redline */
-table tr th a {color:#999;}
 .Ltable table tr th span {cursor:pointer;}
 .redline  { height:100%;position:absolute; top:0px; display:none;}
 .redline span.bt {display:block; width:100%; height:0; border-top:3px solid #ff225b;position:absolute; left:0;top:0;}
@@ -71,11 +70,11 @@ table tr th a {color:#999;}
 
 
 
-/*--------------   ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½  ------------*/
+/*--------------   °ÔÀÓ_¸®±× °øÅë ³¡  ------------*/
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+/* ¸®±×Á¤º¸ */
 
 div.barGraph01_W {height:205px;}
 div.barGraph01_W > div {width:318px;margin-left:2px;float:left;padding-top:5px;}
@@ -124,11 +123,11 @@ div.TOP5 table th:nth-of-type(1),div.TOP5 table td:nth-of-type(1) {text-align:le
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+/* °æ±â °á°ú */
 
 table td span.black {display:inline-block; line-height:10px;height:12px;padding:3px 7px;background:#eee;border-radius:4px;}
 
-/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+/* ¸®±× Åë°è */
 
 .gameMain_view {}
 .gameMain_view > li {display:none;}
@@ -230,10 +229,10 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .graybox2 p {color:#666;background:#fff;width:380px;margin:0 auto; padding:0 25px;height:25px;line-height:25px;font-family:Dotum;font-size:11px;}
 
 
-.top_s2 .result_btn {margin-top:7px;float:left;display:block;}
+.top_s2 .result_btn {margin-top:7px;}
 
 
-/* ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  */
+/* ¸®±×-¼±¼ö±â·Ï  */
 
 .record_Ltable tr td:nth-of-type(3) {font-weight:bold;}
 .Ltable .redline.p1 {width:90px; left:436px;display:block;}
@@ -279,7 +278,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .h3_3 {font-weight:bold;font-size:18px;margin-top:30px;margin-bottom:15px;}
 .date.right {position:absolute;right:0;top:0;margin:0;}
 
-.s5 .gray_warp_w .gray_warp .select:nth-of-type(1) {margin-left:12px;}
+.s5 .gray_warp_w .gray_warp .select:nth-of-type(1) {margin-left:34px;}
 
 .nextTable {position:absolute;top:0;right:0;}
 .nextTable a {display:block;width:16px;height:40px;background:url("../image/game/btn_nexttable.jpg") no-repeat;}
@@ -312,7 +311,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .team_record.p_info > div:nth-of-type(2) {padding:0px 0 0 10px;}
 .team_record > div p {font-weight:bold;font-size:24px;padding-bottom:5px;}
 .team_record > div span {font-size:14px;}
-.team_record > div.pic {padding:0;}
+.team_record > div.pic {padding:0;} 
 .team_record > div.pic img {border:1px solid #ccc;width:88px;height:111px;}
 .team_record.p_info > div:nth-of-type(2) h3 {font-weight:bold;font-size:24px;}
 .team_record.p_info > div:nth-of-type(2) h3 span {font-size:14px;font-weight:normal;}
@@ -337,7 +336,7 @@ p.teammore {position:absolute;right:0;top:15px;}
 p.teammore a {padding-right:15px;background:url("../image/base/icon.png") no-repeat scroll 39px -148px;}
 
 
-/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+/* »ó´ë ÀüÀû */
 
 .gray_warp_w {position:relative;display:block;content:"";clear:both;height:42px;margin-bottom:20px;}
 .gray_warp_w .gray_warp {position:absolute;left:0;top:0;width:100%;}
@@ -361,7 +360,7 @@ ul.tab_view01 > li .s6_result h4:nth-of-type(1) {margin-top:0;}
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+/* °æ±â°á°ú */
 
 
 .Ltable .redline.a1 {width:60px; left:346px;display:block;}
@@ -394,9 +393,9 @@ ul.tab_view01 > li .s6_result h4:nth-of-type(1) {margin-top:0;}
 
 
 
-/*------------------------------------------------------------ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ----------------------------------------------------------------*/
+/*------------------------------------------------------------ ÆÀÁ¤º¸ ½ÃÀÛ ----------------------------------------------------------------*/
 
-/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*½ÃÁð ±â·Ï*/
 .team_top {position:relative;border-bottom:1px solid #ccc;margin-bottom:50px;}
 .team_top .team_logo {float:left;padding:20px 28px 30px;}
 .team_top .team_logo > img {}
@@ -468,14 +467,14 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .reco_icon.rc_3 {background-position:0 -40px;}
 .reco_icon.rc_4 {background-position:0 -60px;}
 
-/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*°æ±â °á°ú*/
 
 
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-.team_p_w {position:relative;/*margin-top:70px;*/}
+/* ÆÀÁ¤º¸ - ¼±¼ö±â·Ï */
+.team_p_w {position:relative;margin-top:70px;}
 .team_p_w > h3 {position:absolute;left:0;right:0;margin:0 auto; top:-5px;width:auto;display:inline-block;font-size:22px;}
 .team_p {display:none;padding-top:5px;}
 .team_p.active {display:block;}
@@ -493,7 +492,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 
 
 
-/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È²*/
+/*¼±¼öÇöÈ²*/
 .situation {}
 .situation .coach {border-bottom: 3px solid #f1f1f1;}
 .situation .coach .pic {float:left;margin:0 4px 20px 4px;border:1px solid #ccc;padding:0;height:161px;width:139px;}
@@ -521,7 +520,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .situation_list .PL_REC ul li b {font-size:10.5px;color:#888;}
 .situation_list .PL_REC ul li > p {margin-bottom:10px;}
 
-/*ï¿½ï¿½ï¿½Ò°ï¿½*/
+/*ÆÀ¼Ò°³*/
 .team {}
 .team > div:nth-of-type(1) {font-size:14px;padding:20px 0 30px;line-height:1.4;}
 .team > .graybox {background:#f1f1f1;padding:15px 20px;}
@@ -531,16 +530,16 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .team a:hover {text-decoration:underline;}
 
 
-/*---------------------------------------------------------------------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ -----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------- ÆÀÁ¤º¸ ³¡ -----------------------------------------------------------------------*/
 
 
 
 
 
 
-/*-----------------------------------------  match ï¿½ï¿½ï¿½ï¿½ ---------------------------------------*/
+/*-----------------------------------------  match ½ÃÀÛ ---------------------------------------*/
 .Match_w {background:#fff;padding-bottom:1px;}
-/*ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½*/
+/*¸ÅÄ¡»ó´Ü*/
 .match {background:url("../image/game/v_match_KBO.jpg") no-repeat;}
 .match .livescore {content:"";display:block;clear:both;position:relative;padding-bottom:10px;padding:20px;}
 .match .livescore .referee {color:#fff;text-align:center;}
@@ -586,8 +585,7 @@ a.other_btn.close {background-position:133px -609px;}
 
 .score_bar {position:relative;}
 .score_bar > div {color:#fff;margin-top:60px;height:140px;}
-.match_full .score_bar > div {height:190px;}
-.score_bar > ul {color:#fff;content:"";display:block;clear:both;position:absolute;left:0;top:102px;text-align:center;width:100%;}
+.score_bar > ul {color:#fff;content:"";display:block;clear:both;position:absolute;left:0;bottom:0;text-align:center;width:100%;}
 .score_bar > ul li {display:inline-block;font-size:13px;padding:0 13px;border-right:1px solid #fff;height:13px;line-height:13px;}
 .score_bar > ul li:nth-last-of-type(1) {border:none;}
 .score_bar > div .team {float:left;margin-top:58px;padding:0 20px;width:210px;}
@@ -599,15 +597,12 @@ a.other_btn.close {background-position:133px -609px;}
 .score_bar > div .team_logo {float:left;width:140px;height:140px;background:url("../image/game/bg_team_logo.png") no-repeat;}
 .score_bar > div .team_logo span {margin:15px 0 0 15px;}
 .score_bar > div .num {float:left;font-size:70px;font-weight:bold;height:140px;line-height:130px;width:95px;text-align:center;}
-.score_bar > div .num.win {background:url("../image/game/icon_win.jpg") no-repeat center 15px;}
 .score_bar > div > p {float:left;height:140px;line-height:145px;font-weight:bold;font-size:20px;width:70px;text-align:center;}
-.score_bar > div > p.full {line-height:33px;margin-top:52px;height:43px;}
-.score_bar > div > p span {font-size:14px;display:block;line-height:14px;}
 
 
 .match .livescore .live {height:65px;background:url("../image/game/bg_soccerlive.png") no-repeat -5px 0; position:relative;top:10px;padding-bottom:20px;padding-left:20px;}
 .match .score > div > span.logo_t {margin: 5px 8px 0;}
-.match .livescore table {width:1000px;border:none;}
+.match .livescore table {width:1000px;border:none;} 
 .match .livescore table th.gray {color:#aaa;}
 .match .livescore table th,.match .livescore table td {border:1px solid #ccc;}
 .match .livescore table th {font-size:14px;color:#444;border-top:none;}
@@ -628,7 +623,7 @@ a.other_btn.close {background-position:133px -609px;}
 .match .livescore ul li:nth-last-of-type(1){margin-right:0;width:244px;}
 .match .livescore ul li b.team {font-size:14px;display:inline-block;width:40px;}
 .match .livescore ul li b.score {font-size:17px;display:inline-block;width:40px;padding:0;}
-.match .livescore ul li span {margin:7px 0 0;}
+.match .livescore ul li span {margin:8px 0 0;}
 .match .livescore ul li > div{display:none;background:url("../image/base/bg_80B3.png") repeat;position:absolute;left:0;top:0;width:100%;height:100%;}/**/
 .match .livescore ul li > div a {margin-top:7px;font-size:13px;color:#444;font-weight:bold;display:inline-block;border-radius:3px;text-align:center;height:26px;line-height:25px;padding:0 13px;background:url("../image/base/bg_inputbtn01.jpg") repeat-x 0 bottom;}
 .match .livescore ul li > div a span {display:inline-block;width:6px;height:12px;background:url("../image/base/icon.png") no-repeat -217px 0;margin:5px 0 0 3px;}
@@ -647,40 +642,12 @@ a.other_btn.close {background-position:133px -609px;}
 .matchTab ul.title li:nth-last-of-type(1) {background-image:none;}
 .matchTab ul.title li:nth-of-type(1) {margin-left:0;}
 .matchTab ul.title li a {color:#fff; font-size:14px;line-height:32px;}
-.matchTab ul.title li.on {background:#fff;background-image:none;}
+.matchTab ul.title li.on {background:#fff;background-image:none;} 
 .matchTab ul.title li.on a {font-size:16px; color:#444;font-weight:bold;}
 .matchTab .result > li {display:none;width:960px;margin-left:40px;}
 .matchTab .result > li.on {display:block;}
 
-.match_full_table {margin:20px 40px 0;}
-.match_full_table table {}
-.match_full_table table th {background:#f9f9f9;font-weight:normal;color:#444;font-size:14px;}
-.match_full_table table th,.match_full_table table td {border:1px solid #ddd;}
-.match_full_table table tr:nth-of-type(1) th:nth-of-type(1) {background:none;text-align:left;padding-left:20px;font-size:13px;}
-.match_full_table span.TL {vertical-align:middle;}
-.match_full_table table td:nth-of-type(1) {border-right:none;}
-.match_full_table table td:nth-of-type(1) b {vertical-align:middle;margin-left:8px;}
-.match_full_table table td:nth-of-type(2) {border-left:none;font-size:12px;}
-.match_full_table table span.up {display:inline-block;background:url("../image/base/icon.png") 0 -508px no-repeat;width:8px;height:8px;margin-left:3px;vertical-align:middle;}
-.match_full_table table span.down {display:inline-block;background:url("../image/base/icon.png") 0 -540px no-repeat;width:8px;height:8px;margin-left:3px;vertical-align:middle;}
-.match_full_table table span.stay {display:inline-block;background:#ccc;width:8px;height:3px;margin-left:3px;vertical-align:middle;}
-
-.full_table_w {margin:0 40px 40px;}
-.full_table01 {text-align:center;font-size:14px;width:100%;}
-.full_table01 th {background:#eee;height:40px;line-height:40px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;color:#888;}
-.full_table01 td {border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
-
-.full_table_w h3 {border:none;font-size:18px;}
-.full_table02 {width:100%;text-align:center;margin-bottom:40px;}
-.full_table02 th {border:1px solid #ddd;background:#595d69;color:#fff;height:40px;}
-.full_table02 td {border:1px solid #ddd;height:40px;}
-.full_table02 th:nth-of-type(1),.full_table02 td:nth-of-type(1){border-left:none;}
-.full_table02 th:nth-last-of-type(1),.full_table02 td:nth-last-of-type(1){border-right:none;}
-.full_table02 td.fs14,.full_table02 td:nth-last-of-type(1) {font-size:14px;}
-.full_table02 span.fs10 {font-size:10px;}
-.full_table02 tr:nth-of-type(odd) td {background:#eee;}
-
-/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½*/
+/*ÆÀ°£ºñ±³ ¸·´ë±×·¡ÇÁ*/
 .opinion {clear:both;content:""; display:block; padding:65px 0 45px;position:relative;}
 .opi_team {margin:70px 70px 0;}
 .opi_team li {float:left;width:50%;}
@@ -697,37 +664,36 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div {width:960px;height:20px;margin-top:10px;}
 .opinion .graph > div b {font-size:18px;}
 .opinion .graph div.left_g, .opinion .graph div.right_g, .opinion .graph > div > p {float:left;}
-.opinion .graph > div div.left_g {width:350px;text-align:right; margin-bottom:10px;}
+.opinion .graph > div div.left_g {width:350px;text-align:right; margin-bottom:10px;} 
 .opinion .graph > div div.left_g b {padding-right:34px;}
-.opinion .graph > div div.right_g {width:350px;text-align:left; margin-bottom:10px;}
+.opinion .graph > div div.right_g {width:350px;text-align:left; margin-bottom:10px;} 
 .opinion .graph > div div.right_g b {padding-left:34px;}
 .opinion .graph > div span.left_g {width:50px;text-align:center;color:#444;font-size:16px;font-weight:bold;float:left;display:block;}
 .opinion .graph > div span.right_g {width:50px;text-align:center;color:#444;font-size:16px;font-weight:bold;float:left;display:block;}
 .opinion .graph > div.total span.left_g {color:#ff225b;}
 .opinion .graph > div.total span.right_g {color:#22a4ff;}
-.opinion .graph > div > div.left_g span {color:#fff;font-weight:bold;line-height:17px;padding-right:15px;display:inline-block;position:absolute;right:0;top:0;}
-.opinion .graph > div > div.right_g span {color:#fff;padding:0 0 0 8px;font-weight:bold;line-height:19px;padding-left:15px;display:inline-block;position:absolute;left:0;top:0;}
-.opinion .graph > div > div > div {width:350px; background:#f1f1f1 url("../image/game/bg_g_right_b.jpg") repeat-y;height:20px; position:relative;}
-.opinion .graph > div > div:nth-of-type(odd) > div {background:#f1f1f1 url("../image/game/bg_g_left_b.jpg") repeat-y;}
-.opinion .graph > div > div > div > div {position:absolute; top:0; height:20px;background:url("../image/game/bg_g_right.jpg") no-repeat;}
+.opinion .graph > div > div.left_g span {color:#fff;font-weight:bold;line-height:17px;padding-right:15px;display:inline-block;}
+.opinion .graph > div > div.right_g span {color:#fff;padding:0 0 0 8px;font-weight:bold;line-height:19px;padding-left:20px;display:inline-block;}
+.opinion .graph > div > div > div {width:350px; background:#f1f1f1;height:20px; position:relative;}
+.opinion .graph > div > div > div > div {position:absolute; top:0; height:20px;background:url("../image/game/bg_g_right.jpg") no-repeat;min-width:30%;}
 .opinion .graph > div > div.left_g > div > div {background:url("../image/game/bg_g_left.jpg") no-repeat right 0;}
 .opinion .graph > div.total > div > div > div {background:#ff7d9f;}
 .opinion .graph > div.total > div.right_g > div > div {background:#7dc9ff;}
 .opinion .graph > div.total > div > div > div > p {height:17px;margin-top:3px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff225b+0,ff7d9f+100 */
-    background: rgb(255,34,91); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255,34,91,1) 0%, rgba(255,125,159,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff225b', endColorstr='#ff7d9f',GradientType=1 ); /* IE6-9 */}
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff225b+0,ff7d9f+100 */
+background: rgb(255,34,91); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(255,34,91,1) 0%, rgba(255,125,159,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff225b', endColorstr='#ff7d9f',GradientType=1 ); /* IE6-9 */}
 .opinion .graph > div.total > div.right_g > div > div > p {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7bc9ff+0,22a4ff+100 */
-    background: rgb(123,201,255); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(123,201,255,1) 0%, rgba(34,164,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', endColorstr='#22a4ff',GradientType=1 ); /* IE6-9 */}
-.opinion .graph > div.total p > span {line-height:17px;}
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7bc9ff+0,22a4ff+100 */
+background: rgb(123,201,255); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(123,201,255,1) 0%, rgba(34,164,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', endColorstr='#22a4ff',GradientType=1 ); /* IE6-9 */}
+.opinion .graph > div.total p > span {line-height:11px;}
 .opinion .graph > div .left_g > div > div {right:0;}
 .opinion .graph > div .right_g > div > div {left:0;}
 .opinion .graph > div .left_g > span,.opinion .graph > div .left_g > div {float:right;}
@@ -737,7 +703,7 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div .left_g span {padding:0 0 0 15px;}
 
 
-/*ï¿½ï¿½ï¿½Î¾ï¿½*/
+/*¶óÀÎ¾÷*/
 .lineUP {padding-bottom:30px;margin-bottom:40px;}
 .lineUP > h3 {font-size:42px;color:#ccc;font-weight:bold;margin-top:15px;text-align:center;font-style:italic;line-height:1;padding-bottom:10px;border:none;}
 .KBO_lineup_t {position:relative;width:960px;}
@@ -794,7 +760,7 @@ a.other_btn.close {background-position:133px -609px;}
 .highcharts-label .highcharts-tooltip-box {stroke:#fff;stroke-width:1;fill:#fff;}
 
 
-/*ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*ÃÖ±Ù »ó´ëÀüÀû °á°ú*/
 .opponent {position:relative;padding-bottom:55px;}
 .opponent > h3 {font-size:22px;}
 .opponent .opp01 > li {float:left;width:410px;}
@@ -822,11 +788,11 @@ a.other_btn.close {background-position:133px -609px;}
 .opponent .opp02 {display:block;clear:both;content:"";padding-top:10px;}
 .opponent .opp02 li {float:left;width:33.3%;text-align:center;}
 .opponent table.opp03 {margin-top:20px;}
-table.opp03 td:nth-of-type(1) {color:#888;}
-table.opp03 th:nth-of-type(2), table.opp03 td:nth-of-type(2) {text-align:left;padding-left:20px;}
-table.opp03 th:nth-of-type(3), table.opp03 td:nth-of-type(3) {text-align:left;}
-table.opp03 td:nth-of-type(6) {text-align:right;color:#888;}
-table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
+table.opp03 td:nth-of-type(1) {color:#888;} 
+table.opp03 th:nth-of-type(2), table.opp03 td:nth-of-type(2) {text-align:left;padding-left:20px;} 
+table.opp03 th:nth-of-type(3), table.opp03 td:nth-of-type(3) {text-align:left;} 
+table.opp03 td:nth-of-type(6) {text-align:right;color:#888;} 
+table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {} 
 .opponent .opp01 > li ul li .select.OU {background:none;float:none;width:auto;padding:0;position:relative;width:75px;margin:0 auto;}
 .opponent .opp01 > li ul li .select.OU p {float:none;background:#fff;min-width:auto;width:73px;}
 .opponent .opp01 > li ul li .select.OU p span {padding:0 15px;font-weight:normal;float:left;vertical-align: middle;color:#444;font-size:12px;}
@@ -837,7 +803,7 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 
 
 
-/*ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*ÃÖ±Ù °æ±â ¼ºÀû*/
 .match_w {margin-bottom:50px;position:relative;}
 .match_w > h3 {font-size:22px;border:none;}
 .match_w table {margin-bottom:25px;}
@@ -854,17 +820,17 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .cheer .teams .box {width:250px;height:73px;}
 .cheer .teams .left .box,.cheer .teams .left .box_w .c_logo, .cheer .teams .left .box_w > a {float:right;display:inline-block; text-align:right;}
 .cheer .teams .right .box,.cheer .teams .right .box_w .c_logo, .cheer .teams .right .box_w > a {float:left;display:inline-block;text-align:left;}
-.cheer .teams .box > div > h3 {font-size:18px; font-weight:bold; margin-top:15px; line-height:1.4;border:none;margin-bottom:0;}
+.cheer .teams .box > div > h3 {font-size:18px; font-weight:bold; margin-top:15px; line-height:1.4;border:none;margin-bottom:0;} 
 .cheer .teams .box > div > p {color:#999;}
 .cheer .teams .box_w .c_logo {margin:10px 17px 0;width:60px;overflow:hidden;height:60px;}
-.cheer .teams .box_w .c_logo span {background-size:60px;width:60px;height:60px;}
+.cheer .teams .box_w .c_logo span {background-size:60px;}
 .cheer .teams .left .box_w > a, .cheer .teams .right .box_w > a  {margin-top:6px;height:60px; width:70px; line-height:60px; text-align:center; display:block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
 .cheer .teams div .graph_w {clear:both; display:block; content:"";height:32px;border-bottom:3px solid #f1f1f1;width:100%;}
 .cheer .teams .left .graph_w {float:right;}
@@ -886,11 +852,11 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .comment ul li p {color:#888; font-family:Dotum;}
 .comment ul li div {position:absolute; right:15px; top:20px;text-align:right;}
 .comment ul li div span {color:#999;display:block;padding-bottom:8px;line-height:12px;}
-.comment ul li div span:nth-of-type(2) {color:#888; padding-bottom:10px;}
+.comment ul li div span:nth-of-type(2) {color:#888; padding-bottom:10px;} 
 .comment ul li div p {display:inline-block; }
 .comment ul li div p a {display:inline-block;border:1px solid #cacaca; color:#444; height:19px; padding:0 5px 0 20px; line-height:19px;}
 .comment ul li div p.like a {background:url("../image/game/likebed.jpg") no-repeat ;}
-.comment ul li div p.bad a {background:url("../image/game/likebed.jpg") no-repeat 0 -30px;}
+.comment ul li div p.bed a {background:url("../image/game/likebed.jpg") no-repeat 0 -30px;}
 
 
 
@@ -899,17 +865,17 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .textarea_box div textarea {border:1px solid #ccc;width:830px;height:60px;padding:10px;color:#888;font-size:12px;font-family:Dotum;background:#fff url("../image/game/bg_opinion_text.jpg") no-repeat ;}
 .textarea_box div textarea.on {background:#fff;}
 .textarea_box div a {color:#888; position:absolute;right:0;top:0;margin:0;height:80px; width:80px; line-height:80px; text-align:center; display:inline-block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
 .textarea_box p {color:#f70000;padding:5px 7px 0;}
 
 
-/*ï¿½ï¿½ï¿½ßºï¿½ï¿½ï¿½ - ï¿½Ö±Ù»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+/*¼±¹ßºñ±³ - ÃÖ±Ù»ó´ëÀüÀû*/
 .player_score_w {}
 .player_score_w > h3 {border:none;text-align:center;font-size:22px;margin-bottom:30px;}
 .player_score {margin-bottom:50px;}
@@ -966,5 +932,5 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 
 
 
-/*-----------------------------------------  match ï¿½ï¿½ ---------------------------------------*/
+/*-----------------------------------------  match ³¡ ---------------------------------------*/
 

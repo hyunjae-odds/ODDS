@@ -52,11 +52,11 @@
                             </ul>
                         </div>
                         <div class="select" style="margin-left:55px;">
-                            <p class="off"><span class="pp">전체</span><span class="pa"></span></p>
+                            <!--<p class="off"><span class="pp">전체</span><span class="pa"></span></p>
                             <ul>
                                 <li><a href="">홈</a></li>
                                 <li><a href="">원정</a></li>
-                            </ul>
+                            </ul>-->
                         </div>
                         <a href="javascript:get_result();" class="btn s6_btn">결과보기<span class=""></span></a>
                     </div>

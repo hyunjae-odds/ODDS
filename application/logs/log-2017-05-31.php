@@ -6307,3 +6307,2401 @@ INFO - 2017-05-31 08:08:32 --> File loaded: /Users/hyunjae/Sites/odds/applicatio
 INFO - 2017-05-31 08:08:32 --> File loaded: /Users/hyunjae/Sites/odds/application/views//baseball/footer.php
 INFO - 2017-05-31 08:08:32 --> Final output sent to browser
 DEBUG - 2017-05-31 08:08:32 --> Total execution time: 0.1992
+INFO - 2017-05-31 08:23:43 --> Config Class Initialized
+INFO - 2017-05-31 08:23:43 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:23:43 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:23:43 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:23:43 --> URI Class Initialized
+DEBUG - 2017-05-31 08:23:43 --> No URI present. Default controller set.
+INFO - 2017-05-31 08:23:43 --> Router Class Initialized
+INFO - 2017-05-31 08:23:43 --> Output Class Initialized
+INFO - 2017-05-31 08:23:43 --> Security Class Initialized
+DEBUG - 2017-05-31 08:23:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:23:43 --> Input Class Initialized
+INFO - 2017-05-31 08:23:43 --> Language Class Initialized
+INFO - 2017-05-31 08:23:43 --> Loader Class Initialized
+INFO - 2017-05-31 08:23:43 --> Controller Class Initialized
+INFO - 2017-05-31 08:23:43 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:23:43 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:23:43 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:23:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/head_up.php
+INFO - 2017-05-31 08:23:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/head_main.php
+INFO - 2017-05-31 08:23:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/index.php
+INFO - 2017-05-31 08:23:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/footer.php
+INFO - 2017-05-31 08:23:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/footer_down.php
+INFO - 2017-05-31 08:23:43 --> Final output sent to browser
+DEBUG - 2017-05-31 08:23:43 --> Total execution time: 0.0932
+INFO - 2017-05-31 08:23:44 --> Config Class Initialized
+INFO - 2017-05-31 08:23:44 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:23:44 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:23:44 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:23:44 --> URI Class Initialized
+INFO - 2017-05-31 08:23:44 --> Router Class Initialized
+INFO - 2017-05-31 08:23:44 --> Output Class Initialized
+INFO - 2017-05-31 08:23:44 --> Security Class Initialized
+DEBUG - 2017-05-31 08:23:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:23:44 --> Input Class Initialized
+INFO - 2017-05-31 08:23:44 --> Language Class Initialized
+ERROR - 2017-05-31 08:23:44 --> 404 Page Not Found: Public/lib
+INFO - 2017-05-31 08:23:44 --> Config Class Initialized
+INFO - 2017-05-31 08:23:44 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:23:44 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:23:44 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:23:44 --> URI Class Initialized
+INFO - 2017-05-31 08:23:44 --> Router Class Initialized
+INFO - 2017-05-31 08:23:44 --> Output Class Initialized
+INFO - 2017-05-31 08:23:44 --> Security Class Initialized
+DEBUG - 2017-05-31 08:23:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:23:44 --> Input Class Initialized
+INFO - 2017-05-31 08:23:44 --> Language Class Initialized
+ERROR - 2017-05-31 08:23:44 --> 404 Page Not Found: Public/lib
+INFO - 2017-05-31 08:23:48 --> Config Class Initialized
+INFO - 2017-05-31 08:23:48 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:23:48 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:23:48 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:23:48 --> URI Class Initialized
+INFO - 2017-05-31 08:23:48 --> Router Class Initialized
+INFO - 2017-05-31 08:23:48 --> Output Class Initialized
+INFO - 2017-05-31 08:23:48 --> Security Class Initialized
+DEBUG - 2017-05-31 08:23:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:23:48 --> Input Class Initialized
+INFO - 2017-05-31 08:23:48 --> Language Class Initialized
+INFO - 2017-05-31 08:23:48 --> Loader Class Initialized
+INFO - 2017-05-31 08:23:48 --> Controller Class Initialized
+INFO - 2017-05-31 08:23:48 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:23:48 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:23:48 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:23:48 --> Model Class Initialized
+INFO - 2017-05-31 08:23:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:23:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:23:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-05-31 08:23:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:23:48 --> Final output sent to browser
+DEBUG - 2017-05-31 08:23:48 --> Total execution time: 0.1615
+INFO - 2017-05-31 08:37:41 --> Config Class Initialized
+INFO - 2017-05-31 08:37:41 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:37:41 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:37:41 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:37:41 --> URI Class Initialized
+INFO - 2017-05-31 08:37:41 --> Router Class Initialized
+INFO - 2017-05-31 08:37:41 --> Output Class Initialized
+INFO - 2017-05-31 08:37:41 --> Security Class Initialized
+DEBUG - 2017-05-31 08:37:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:37:41 --> Input Class Initialized
+INFO - 2017-05-31 08:37:41 --> Language Class Initialized
+INFO - 2017-05-31 08:37:41 --> Loader Class Initialized
+INFO - 2017-05-31 08:37:41 --> Controller Class Initialized
+INFO - 2017-05-31 08:37:41 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:37:41 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:37:41 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:37:41 --> Model Class Initialized
+INFO - 2017-05-31 08:37:41 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:37:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:37:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:37:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:37:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:37:41 --> Final output sent to browser
+DEBUG - 2017-05-31 08:37:41 --> Total execution time: 0.1291
+INFO - 2017-05-31 08:37:41 --> Config Class Initialized
+INFO - 2017-05-31 08:37:41 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:37:41 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:37:41 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:37:41 --> URI Class Initialized
+INFO - 2017-05-31 08:37:41 --> Router Class Initialized
+INFO - 2017-05-31 08:37:41 --> Output Class Initialized
+INFO - 2017-05-31 08:37:41 --> Security Class Initialized
+DEBUG - 2017-05-31 08:37:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:37:41 --> Input Class Initialized
+INFO - 2017-05-31 08:37:41 --> Language Class Initialized
+INFO - 2017-05-31 08:37:41 --> Loader Class Initialized
+INFO - 2017-05-31 08:37:41 --> Controller Class Initialized
+INFO - 2017-05-31 08:37:41 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:37:41 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:37:41 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:37:41 --> Model Class Initialized
+INFO - 2017-05-31 08:37:41 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:37:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:37:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:37:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:37:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:37:42 --> Final output sent to browser
+DEBUG - 2017-05-31 08:37:42 --> Total execution time: 0.3713
+INFO - 2017-05-31 08:37:47 --> Config Class Initialized
+INFO - 2017-05-31 08:37:47 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:37:47 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:37:47 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:37:47 --> URI Class Initialized
+INFO - 2017-05-31 08:37:47 --> Router Class Initialized
+INFO - 2017-05-31 08:37:47 --> Output Class Initialized
+INFO - 2017-05-31 08:37:47 --> Security Class Initialized
+DEBUG - 2017-05-31 08:37:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:37:47 --> Input Class Initialized
+INFO - 2017-05-31 08:37:47 --> Language Class Initialized
+INFO - 2017-05-31 08:37:47 --> Loader Class Initialized
+INFO - 2017-05-31 08:37:47 --> Controller Class Initialized
+INFO - 2017-05-31 08:37:47 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:37:47 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:37:47 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:37:47 --> Model Class Initialized
+INFO - 2017-05-31 08:37:47 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:37:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:37:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:37:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:37:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:37:47 --> Final output sent to browser
+DEBUG - 2017-05-31 08:37:47 --> Total execution time: 0.1433
+INFO - 2017-05-31 08:37:58 --> Config Class Initialized
+INFO - 2017-05-31 08:37:58 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:37:58 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:37:58 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:37:58 --> URI Class Initialized
+INFO - 2017-05-31 08:37:58 --> Router Class Initialized
+INFO - 2017-05-31 08:37:58 --> Output Class Initialized
+INFO - 2017-05-31 08:37:58 --> Security Class Initialized
+DEBUG - 2017-05-31 08:37:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:37:58 --> Input Class Initialized
+INFO - 2017-05-31 08:37:58 --> Language Class Initialized
+INFO - 2017-05-31 08:37:58 --> Loader Class Initialized
+INFO - 2017-05-31 08:37:58 --> Controller Class Initialized
+INFO - 2017-05-31 08:37:58 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:37:58 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:37:58 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:37:58 --> Model Class Initialized
+INFO - 2017-05-31 08:37:58 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:37:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:37:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:37:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:37:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:37:58 --> Final output sent to browser
+DEBUG - 2017-05-31 08:37:58 --> Total execution time: 0.1427
+INFO - 2017-05-31 08:39:07 --> Config Class Initialized
+INFO - 2017-05-31 08:39:07 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:39:07 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:39:07 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:39:07 --> URI Class Initialized
+INFO - 2017-05-31 08:39:07 --> Router Class Initialized
+INFO - 2017-05-31 08:39:07 --> Output Class Initialized
+INFO - 2017-05-31 08:39:07 --> Security Class Initialized
+DEBUG - 2017-05-31 08:39:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:39:07 --> Input Class Initialized
+INFO - 2017-05-31 08:39:07 --> Language Class Initialized
+INFO - 2017-05-31 08:39:07 --> Loader Class Initialized
+INFO - 2017-05-31 08:39:07 --> Controller Class Initialized
+INFO - 2017-05-31 08:39:07 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:39:07 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:39:07 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:39:07 --> Model Class Initialized
+INFO - 2017-05-31 08:39:07 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:39:07 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:39:07 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:39:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:39:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:39:08 --> Final output sent to browser
+DEBUG - 2017-05-31 08:39:08 --> Total execution time: 0.3534
+INFO - 2017-05-31 08:39:10 --> Config Class Initialized
+INFO - 2017-05-31 08:39:10 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:39:10 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:39:10 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:39:10 --> URI Class Initialized
+INFO - 2017-05-31 08:39:10 --> Router Class Initialized
+INFO - 2017-05-31 08:39:10 --> Output Class Initialized
+INFO - 2017-05-31 08:39:10 --> Security Class Initialized
+DEBUG - 2017-05-31 08:39:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:39:10 --> Input Class Initialized
+INFO - 2017-05-31 08:39:10 --> Language Class Initialized
+INFO - 2017-05-31 08:39:10 --> Loader Class Initialized
+INFO - 2017-05-31 08:39:10 --> Controller Class Initialized
+INFO - 2017-05-31 08:39:10 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:39:10 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:39:10 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:39:10 --> Model Class Initialized
+INFO - 2017-05-31 08:39:10 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:39:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:39:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:39:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:39:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:39:11 --> Final output sent to browser
+DEBUG - 2017-05-31 08:39:11 --> Total execution time: 0.4784
+INFO - 2017-05-31 08:39:23 --> Config Class Initialized
+INFO - 2017-05-31 08:39:23 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:39:23 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:39:23 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:39:23 --> URI Class Initialized
+INFO - 2017-05-31 08:39:23 --> Router Class Initialized
+INFO - 2017-05-31 08:39:23 --> Output Class Initialized
+INFO - 2017-05-31 08:39:23 --> Security Class Initialized
+DEBUG - 2017-05-31 08:39:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:39:23 --> Input Class Initialized
+INFO - 2017-05-31 08:39:23 --> Language Class Initialized
+INFO - 2017-05-31 08:39:23 --> Loader Class Initialized
+INFO - 2017-05-31 08:39:23 --> Controller Class Initialized
+INFO - 2017-05-31 08:39:23 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:39:23 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:39:23 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:39:23 --> Model Class Initialized
+INFO - 2017-05-31 08:39:23 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:39:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:39:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:39:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:39:23 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:39:23 --> Final output sent to browser
+DEBUG - 2017-05-31 08:39:23 --> Total execution time: 0.1334
+INFO - 2017-05-31 08:39:24 --> Config Class Initialized
+INFO - 2017-05-31 08:39:24 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:39:24 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:39:24 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:39:24 --> URI Class Initialized
+INFO - 2017-05-31 08:39:24 --> Router Class Initialized
+INFO - 2017-05-31 08:39:24 --> Output Class Initialized
+INFO - 2017-05-31 08:39:24 --> Security Class Initialized
+DEBUG - 2017-05-31 08:39:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:39:24 --> Input Class Initialized
+INFO - 2017-05-31 08:39:24 --> Language Class Initialized
+INFO - 2017-05-31 08:39:24 --> Loader Class Initialized
+INFO - 2017-05-31 08:39:24 --> Controller Class Initialized
+INFO - 2017-05-31 08:39:24 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:39:24 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:39:24 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:39:24 --> Model Class Initialized
+INFO - 2017-05-31 08:39:24 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:39:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:39:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:39:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:39:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:39:24 --> Final output sent to browser
+DEBUG - 2017-05-31 08:39:24 --> Total execution time: 0.1343
+INFO - 2017-05-31 08:39:42 --> Config Class Initialized
+INFO - 2017-05-31 08:39:42 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:39:42 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:39:42 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:39:42 --> URI Class Initialized
+INFO - 2017-05-31 08:39:42 --> Router Class Initialized
+INFO - 2017-05-31 08:39:42 --> Output Class Initialized
+INFO - 2017-05-31 08:39:42 --> Security Class Initialized
+DEBUG - 2017-05-31 08:39:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:39:42 --> Input Class Initialized
+INFO - 2017-05-31 08:39:42 --> Language Class Initialized
+INFO - 2017-05-31 08:39:42 --> Loader Class Initialized
+INFO - 2017-05-31 08:39:42 --> Controller Class Initialized
+INFO - 2017-05-31 08:39:42 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:39:42 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:39:42 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:39:42 --> Model Class Initialized
+INFO - 2017-05-31 08:39:42 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:39:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:39:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:39:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:39:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:39:42 --> Final output sent to browser
+DEBUG - 2017-05-31 08:39:42 --> Total execution time: 0.1639
+INFO - 2017-05-31 08:40:14 --> Config Class Initialized
+INFO - 2017-05-31 08:40:14 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:40:14 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:40:14 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:40:14 --> URI Class Initialized
+INFO - 2017-05-31 08:40:14 --> Router Class Initialized
+INFO - 2017-05-31 08:40:14 --> Output Class Initialized
+INFO - 2017-05-31 08:40:14 --> Security Class Initialized
+DEBUG - 2017-05-31 08:40:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:40:14 --> Input Class Initialized
+INFO - 2017-05-31 08:40:14 --> Language Class Initialized
+INFO - 2017-05-31 08:40:14 --> Loader Class Initialized
+INFO - 2017-05-31 08:40:14 --> Controller Class Initialized
+INFO - 2017-05-31 08:40:14 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:40:14 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:40:14 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:40:14 --> Model Class Initialized
+INFO - 2017-05-31 08:40:14 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:40:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:40:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:40:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:40:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:40:14 --> Final output sent to browser
+DEBUG - 2017-05-31 08:40:14 --> Total execution time: 0.1560
+INFO - 2017-05-31 08:42:40 --> Config Class Initialized
+INFO - 2017-05-31 08:42:40 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:42:40 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:42:40 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:42:40 --> URI Class Initialized
+INFO - 2017-05-31 08:42:40 --> Router Class Initialized
+INFO - 2017-05-31 08:42:40 --> Output Class Initialized
+INFO - 2017-05-31 08:42:40 --> Security Class Initialized
+DEBUG - 2017-05-31 08:42:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:42:40 --> Input Class Initialized
+INFO - 2017-05-31 08:42:40 --> Language Class Initialized
+INFO - 2017-05-31 08:42:40 --> Loader Class Initialized
+INFO - 2017-05-31 08:42:40 --> Controller Class Initialized
+INFO - 2017-05-31 08:42:40 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:42:40 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:42:40 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:42:40 --> Model Class Initialized
+INFO - 2017-05-31 08:42:40 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:42:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:42:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:42:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:42:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:42:40 --> Final output sent to browser
+DEBUG - 2017-05-31 08:42:40 --> Total execution time: 0.1807
+INFO - 2017-05-31 08:44:11 --> Config Class Initialized
+INFO - 2017-05-31 08:44:11 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:44:12 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:44:12 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:44:12 --> URI Class Initialized
+INFO - 2017-05-31 08:44:12 --> Router Class Initialized
+INFO - 2017-05-31 08:44:12 --> Output Class Initialized
+INFO - 2017-05-31 08:44:12 --> Security Class Initialized
+DEBUG - 2017-05-31 08:44:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:44:12 --> Input Class Initialized
+INFO - 2017-05-31 08:44:12 --> Language Class Initialized
+INFO - 2017-05-31 08:44:12 --> Loader Class Initialized
+INFO - 2017-05-31 08:44:12 --> Controller Class Initialized
+INFO - 2017-05-31 08:44:12 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:44:12 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:44:12 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:44:12 --> Model Class Initialized
+INFO - 2017-05-31 08:44:12 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:44:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:44:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:44:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:44:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:44:12 --> Final output sent to browser
+DEBUG - 2017-05-31 08:44:12 --> Total execution time: 0.1525
+INFO - 2017-05-31 08:45:30 --> Config Class Initialized
+INFO - 2017-05-31 08:45:30 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:45:30 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:45:30 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:45:30 --> URI Class Initialized
+INFO - 2017-05-31 08:45:30 --> Router Class Initialized
+INFO - 2017-05-31 08:45:30 --> Output Class Initialized
+INFO - 2017-05-31 08:45:30 --> Security Class Initialized
+DEBUG - 2017-05-31 08:45:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:45:30 --> Input Class Initialized
+INFO - 2017-05-31 08:45:30 --> Language Class Initialized
+INFO - 2017-05-31 08:45:30 --> Loader Class Initialized
+INFO - 2017-05-31 08:45:30 --> Controller Class Initialized
+INFO - 2017-05-31 08:45:30 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:45:30 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:45:30 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:45:30 --> Model Class Initialized
+INFO - 2017-05-31 08:45:30 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:45:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:45:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:45:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:45:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:45:30 --> Final output sent to browser
+DEBUG - 2017-05-31 08:45:30 --> Total execution time: 0.5234
+INFO - 2017-05-31 08:45:53 --> Config Class Initialized
+INFO - 2017-05-31 08:45:53 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:45:53 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:45:53 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:45:53 --> URI Class Initialized
+INFO - 2017-05-31 08:45:53 --> Router Class Initialized
+INFO - 2017-05-31 08:45:53 --> Output Class Initialized
+INFO - 2017-05-31 08:45:53 --> Security Class Initialized
+DEBUG - 2017-05-31 08:45:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:45:53 --> Input Class Initialized
+INFO - 2017-05-31 08:45:53 --> Language Class Initialized
+INFO - 2017-05-31 08:45:53 --> Loader Class Initialized
+INFO - 2017-05-31 08:45:53 --> Controller Class Initialized
+INFO - 2017-05-31 08:45:53 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:45:53 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:45:53 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:45:53 --> Model Class Initialized
+INFO - 2017-05-31 08:45:53 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:45:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:45:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:45:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:45:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:45:54 --> Final output sent to browser
+DEBUG - 2017-05-31 08:45:54 --> Total execution time: 0.1397
+INFO - 2017-05-31 08:47:21 --> Config Class Initialized
+INFO - 2017-05-31 08:47:21 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:47:21 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:47:21 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:47:21 --> URI Class Initialized
+INFO - 2017-05-31 08:47:21 --> Router Class Initialized
+INFO - 2017-05-31 08:47:21 --> Output Class Initialized
+INFO - 2017-05-31 08:47:21 --> Security Class Initialized
+DEBUG - 2017-05-31 08:47:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:47:21 --> Input Class Initialized
+INFO - 2017-05-31 08:47:21 --> Language Class Initialized
+INFO - 2017-05-31 08:47:21 --> Loader Class Initialized
+INFO - 2017-05-31 08:47:21 --> Controller Class Initialized
+INFO - 2017-05-31 08:47:21 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:47:21 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:47:21 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:47:21 --> Model Class Initialized
+INFO - 2017-05-31 08:47:21 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:47:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:47:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:47:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:47:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:47:21 --> Final output sent to browser
+DEBUG - 2017-05-31 08:47:21 --> Total execution time: 0.2192
+INFO - 2017-05-31 08:55:05 --> Config Class Initialized
+INFO - 2017-05-31 08:55:05 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:55:05 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:55:05 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:55:05 --> URI Class Initialized
+INFO - 2017-05-31 08:55:05 --> Router Class Initialized
+INFO - 2017-05-31 08:55:05 --> Output Class Initialized
+INFO - 2017-05-31 08:55:05 --> Security Class Initialized
+DEBUG - 2017-05-31 08:55:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:55:05 --> Input Class Initialized
+INFO - 2017-05-31 08:55:05 --> Language Class Initialized
+INFO - 2017-05-31 08:55:05 --> Loader Class Initialized
+INFO - 2017-05-31 08:55:05 --> Controller Class Initialized
+INFO - 2017-05-31 08:55:05 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:55:05 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:55:05 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:55:05 --> Model Class Initialized
+INFO - 2017-05-31 08:55:05 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:55:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:55:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:55:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:55:05 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:55:05 --> Final output sent to browser
+DEBUG - 2017-05-31 08:55:05 --> Total execution time: 0.1337
+INFO - 2017-05-31 08:56:59 --> Config Class Initialized
+INFO - 2017-05-31 08:56:59 --> Hooks Class Initialized
+DEBUG - 2017-05-31 08:56:59 --> UTF-8 Support Enabled
+INFO - 2017-05-31 08:56:59 --> Utf8 Class Initialized
+INFO - 2017-05-31 08:56:59 --> URI Class Initialized
+INFO - 2017-05-31 08:56:59 --> Router Class Initialized
+INFO - 2017-05-31 08:56:59 --> Output Class Initialized
+INFO - 2017-05-31 08:56:59 --> Security Class Initialized
+DEBUG - 2017-05-31 08:56:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 08:56:59 --> Input Class Initialized
+INFO - 2017-05-31 08:56:59 --> Language Class Initialized
+INFO - 2017-05-31 08:56:59 --> Loader Class Initialized
+INFO - 2017-05-31 08:56:59 --> Controller Class Initialized
+INFO - 2017-05-31 08:56:59 --> Database Driver Class Initialized
+INFO - 2017-05-31 08:56:59 --> Helper loaded: url_helper
+INFO - 2017-05-31 08:56:59 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 08:56:59 --> Model Class Initialized
+INFO - 2017-05-31 08:56:59 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 08:56:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 08:56:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 08:57:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 08:57:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 08:57:00 --> Final output sent to browser
+DEBUG - 2017-05-31 08:57:00 --> Total execution time: 0.1579
+INFO - 2017-05-31 09:02:18 --> Config Class Initialized
+INFO - 2017-05-31 09:02:18 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:02:18 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:02:18 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:02:18 --> URI Class Initialized
+INFO - 2017-05-31 09:02:18 --> Router Class Initialized
+INFO - 2017-05-31 09:02:18 --> Output Class Initialized
+INFO - 2017-05-31 09:02:18 --> Security Class Initialized
+DEBUG - 2017-05-31 09:02:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:02:18 --> Input Class Initialized
+INFO - 2017-05-31 09:02:18 --> Language Class Initialized
+INFO - 2017-05-31 09:02:18 --> Loader Class Initialized
+INFO - 2017-05-31 09:02:18 --> Controller Class Initialized
+INFO - 2017-05-31 09:02:18 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:02:19 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:02:19 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:02:19 --> Model Class Initialized
+INFO - 2017-05-31 09:02:19 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:02:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:02:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:02:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:02:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:02:19 --> Final output sent to browser
+DEBUG - 2017-05-31 09:02:19 --> Total execution time: 0.1512
+INFO - 2017-05-31 09:02:31 --> Config Class Initialized
+INFO - 2017-05-31 09:02:31 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:02:31 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:02:31 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:02:31 --> URI Class Initialized
+INFO - 2017-05-31 09:02:31 --> Router Class Initialized
+INFO - 2017-05-31 09:02:31 --> Output Class Initialized
+INFO - 2017-05-31 09:02:31 --> Security Class Initialized
+DEBUG - 2017-05-31 09:02:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:02:31 --> Input Class Initialized
+INFO - 2017-05-31 09:02:31 --> Language Class Initialized
+INFO - 2017-05-31 09:02:31 --> Loader Class Initialized
+INFO - 2017-05-31 09:02:31 --> Controller Class Initialized
+INFO - 2017-05-31 09:02:31 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:02:31 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:02:31 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:02:31 --> Model Class Initialized
+INFO - 2017-05-31 09:02:31 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:02:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:02:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:02:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:02:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:02:31 --> Final output sent to browser
+DEBUG - 2017-05-31 09:02:31 --> Total execution time: 0.1578
+INFO - 2017-05-31 09:02:39 --> Config Class Initialized
+INFO - 2017-05-31 09:02:39 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:02:39 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:02:39 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:02:39 --> URI Class Initialized
+INFO - 2017-05-31 09:02:39 --> Router Class Initialized
+INFO - 2017-05-31 09:02:39 --> Output Class Initialized
+INFO - 2017-05-31 09:02:39 --> Security Class Initialized
+DEBUG - 2017-05-31 09:02:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:02:39 --> Input Class Initialized
+INFO - 2017-05-31 09:02:39 --> Language Class Initialized
+INFO - 2017-05-31 09:02:39 --> Loader Class Initialized
+INFO - 2017-05-31 09:02:39 --> Controller Class Initialized
+INFO - 2017-05-31 09:02:39 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:02:39 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:02:39 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:02:39 --> Model Class Initialized
+INFO - 2017-05-31 09:02:39 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:02:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:02:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:02:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:02:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:02:39 --> Final output sent to browser
+DEBUG - 2017-05-31 09:02:39 --> Total execution time: 0.1368
+INFO - 2017-05-31 09:06:16 --> Config Class Initialized
+INFO - 2017-05-31 09:06:16 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:06:16 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:06:16 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:06:16 --> URI Class Initialized
+INFO - 2017-05-31 09:06:16 --> Router Class Initialized
+INFO - 2017-05-31 09:06:16 --> Output Class Initialized
+INFO - 2017-05-31 09:06:16 --> Security Class Initialized
+DEBUG - 2017-05-31 09:06:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:06:16 --> Input Class Initialized
+INFO - 2017-05-31 09:06:16 --> Language Class Initialized
+INFO - 2017-05-31 09:06:16 --> Loader Class Initialized
+INFO - 2017-05-31 09:06:16 --> Controller Class Initialized
+INFO - 2017-05-31 09:06:16 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:06:16 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:06:16 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:06:16 --> Model Class Initialized
+INFO - 2017-05-31 09:06:16 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:06:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:06:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:06:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:06:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:06:16 --> Final output sent to browser
+DEBUG - 2017-05-31 09:06:16 --> Total execution time: 0.1388
+INFO - 2017-05-31 09:09:15 --> Config Class Initialized
+INFO - 2017-05-31 09:09:15 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:09:15 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:09:15 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:09:15 --> URI Class Initialized
+INFO - 2017-05-31 09:09:15 --> Router Class Initialized
+INFO - 2017-05-31 09:09:15 --> Output Class Initialized
+INFO - 2017-05-31 09:09:15 --> Security Class Initialized
+DEBUG - 2017-05-31 09:09:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:09:15 --> Input Class Initialized
+INFO - 2017-05-31 09:09:15 --> Language Class Initialized
+INFO - 2017-05-31 09:09:15 --> Loader Class Initialized
+INFO - 2017-05-31 09:09:15 --> Controller Class Initialized
+INFO - 2017-05-31 09:09:15 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:09:15 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:09:15 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:09:15 --> Model Class Initialized
+INFO - 2017-05-31 09:09:15 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:09:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:09:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:09:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:09:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:09:15 --> Final output sent to browser
+DEBUG - 2017-05-31 09:09:15 --> Total execution time: 0.1467
+INFO - 2017-05-31 09:09:17 --> Config Class Initialized
+INFO - 2017-05-31 09:09:17 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:09:17 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:09:17 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:09:17 --> URI Class Initialized
+INFO - 2017-05-31 09:09:17 --> Router Class Initialized
+INFO - 2017-05-31 09:09:17 --> Output Class Initialized
+INFO - 2017-05-31 09:09:17 --> Security Class Initialized
+DEBUG - 2017-05-31 09:09:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:09:17 --> Input Class Initialized
+INFO - 2017-05-31 09:09:18 --> Language Class Initialized
+INFO - 2017-05-31 09:09:18 --> Loader Class Initialized
+INFO - 2017-05-31 09:09:18 --> Controller Class Initialized
+INFO - 2017-05-31 09:09:18 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:09:18 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:09:18 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:09:18 --> Model Class Initialized
+INFO - 2017-05-31 09:09:18 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:09:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:09:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:09:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:09:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:09:18 --> Final output sent to browser
+DEBUG - 2017-05-31 09:09:18 --> Total execution time: 0.1343
+INFO - 2017-05-31 09:10:16 --> Config Class Initialized
+INFO - 2017-05-31 09:10:16 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:10:16 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:10:16 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:10:16 --> URI Class Initialized
+INFO - 2017-05-31 09:10:16 --> Router Class Initialized
+INFO - 2017-05-31 09:10:16 --> Output Class Initialized
+INFO - 2017-05-31 09:10:16 --> Security Class Initialized
+DEBUG - 2017-05-31 09:10:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:10:16 --> Input Class Initialized
+INFO - 2017-05-31 09:10:16 --> Language Class Initialized
+INFO - 2017-05-31 09:10:16 --> Loader Class Initialized
+INFO - 2017-05-31 09:10:16 --> Controller Class Initialized
+INFO - 2017-05-31 09:10:16 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:10:16 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:10:16 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:10:16 --> Model Class Initialized
+INFO - 2017-05-31 09:10:16 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:10:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:10:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:10:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:10:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:10:16 --> Final output sent to browser
+DEBUG - 2017-05-31 09:10:16 --> Total execution time: 0.1222
+INFO - 2017-05-31 09:10:49 --> Config Class Initialized
+INFO - 2017-05-31 09:10:49 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:10:49 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:10:49 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:10:49 --> URI Class Initialized
+INFO - 2017-05-31 09:10:49 --> Router Class Initialized
+INFO - 2017-05-31 09:10:49 --> Output Class Initialized
+INFO - 2017-05-31 09:10:49 --> Security Class Initialized
+DEBUG - 2017-05-31 09:10:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:10:49 --> Input Class Initialized
+INFO - 2017-05-31 09:10:49 --> Language Class Initialized
+INFO - 2017-05-31 09:10:49 --> Loader Class Initialized
+INFO - 2017-05-31 09:10:49 --> Controller Class Initialized
+INFO - 2017-05-31 09:10:49 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:10:49 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:10:49 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:10:49 --> Model Class Initialized
+INFO - 2017-05-31 09:10:49 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:10:49 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:10:49 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:10:49 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:10:49 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:10:49 --> Final output sent to browser
+DEBUG - 2017-05-31 09:10:49 --> Total execution time: 0.1589
+INFO - 2017-05-31 09:12:14 --> Config Class Initialized
+INFO - 2017-05-31 09:12:14 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:12:14 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:12:14 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:12:14 --> URI Class Initialized
+INFO - 2017-05-31 09:12:14 --> Router Class Initialized
+INFO - 2017-05-31 09:12:14 --> Output Class Initialized
+INFO - 2017-05-31 09:12:14 --> Security Class Initialized
+DEBUG - 2017-05-31 09:12:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:12:14 --> Input Class Initialized
+INFO - 2017-05-31 09:12:14 --> Language Class Initialized
+INFO - 2017-05-31 09:12:14 --> Loader Class Initialized
+INFO - 2017-05-31 09:12:14 --> Controller Class Initialized
+INFO - 2017-05-31 09:12:14 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:12:14 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:12:14 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:12:14 --> Model Class Initialized
+INFO - 2017-05-31 09:12:14 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:12:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:12:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:12:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:12:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:12:14 --> Final output sent to browser
+DEBUG - 2017-05-31 09:12:14 --> Total execution time: 0.1395
+INFO - 2017-05-31 09:12:15 --> Config Class Initialized
+INFO - 2017-05-31 09:12:15 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:12:15 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:12:15 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:12:15 --> URI Class Initialized
+INFO - 2017-05-31 09:12:15 --> Router Class Initialized
+INFO - 2017-05-31 09:12:15 --> Output Class Initialized
+INFO - 2017-05-31 09:12:15 --> Security Class Initialized
+DEBUG - 2017-05-31 09:12:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:12:15 --> Input Class Initialized
+INFO - 2017-05-31 09:12:15 --> Language Class Initialized
+INFO - 2017-05-31 09:12:15 --> Loader Class Initialized
+INFO - 2017-05-31 09:12:15 --> Controller Class Initialized
+INFO - 2017-05-31 09:12:15 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:12:15 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:12:15 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:12:15 --> Model Class Initialized
+INFO - 2017-05-31 09:12:15 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:12:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:12:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:12:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:12:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:12:15 --> Final output sent to browser
+DEBUG - 2017-05-31 09:12:15 --> Total execution time: 0.1603
+INFO - 2017-05-31 09:12:16 --> Config Class Initialized
+INFO - 2017-05-31 09:12:16 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:12:16 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:12:16 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:12:16 --> URI Class Initialized
+INFO - 2017-05-31 09:12:16 --> Router Class Initialized
+INFO - 2017-05-31 09:12:16 --> Output Class Initialized
+INFO - 2017-05-31 09:12:16 --> Security Class Initialized
+DEBUG - 2017-05-31 09:12:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:12:16 --> Input Class Initialized
+INFO - 2017-05-31 09:12:16 --> Language Class Initialized
+INFO - 2017-05-31 09:12:16 --> Loader Class Initialized
+INFO - 2017-05-31 09:12:16 --> Controller Class Initialized
+INFO - 2017-05-31 09:12:16 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:12:16 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:12:16 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:12:16 --> Model Class Initialized
+INFO - 2017-05-31 09:12:16 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:12:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:12:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:12:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:12:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:12:16 --> Final output sent to browser
+DEBUG - 2017-05-31 09:12:16 --> Total execution time: 0.1514
+INFO - 2017-05-31 09:12:18 --> Config Class Initialized
+INFO - 2017-05-31 09:12:18 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:12:18 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:12:18 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:12:18 --> URI Class Initialized
+INFO - 2017-05-31 09:12:18 --> Router Class Initialized
+INFO - 2017-05-31 09:12:18 --> Output Class Initialized
+INFO - 2017-05-31 09:12:18 --> Security Class Initialized
+DEBUG - 2017-05-31 09:12:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:12:18 --> Input Class Initialized
+INFO - 2017-05-31 09:12:18 --> Language Class Initialized
+INFO - 2017-05-31 09:12:18 --> Loader Class Initialized
+INFO - 2017-05-31 09:12:18 --> Controller Class Initialized
+INFO - 2017-05-31 09:12:18 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:12:18 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:12:18 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:12:18 --> Model Class Initialized
+INFO - 2017-05-31 09:12:18 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:12:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:12:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:12:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:12:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:12:19 --> Final output sent to browser
+DEBUG - 2017-05-31 09:12:19 --> Total execution time: 0.1356
+INFO - 2017-05-31 09:14:15 --> Config Class Initialized
+INFO - 2017-05-31 09:14:15 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:14:15 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:14:15 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:14:15 --> URI Class Initialized
+INFO - 2017-05-31 09:14:15 --> Router Class Initialized
+INFO - 2017-05-31 09:14:15 --> Output Class Initialized
+INFO - 2017-05-31 09:14:15 --> Security Class Initialized
+DEBUG - 2017-05-31 09:14:15 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:14:15 --> Input Class Initialized
+INFO - 2017-05-31 09:14:15 --> Language Class Initialized
+INFO - 2017-05-31 09:14:15 --> Loader Class Initialized
+INFO - 2017-05-31 09:14:15 --> Controller Class Initialized
+INFO - 2017-05-31 09:14:15 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:14:15 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:14:15 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:14:15 --> Model Class Initialized
+INFO - 2017-05-31 09:14:15 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:14:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:14:15 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:14:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:14:16 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:14:16 --> Final output sent to browser
+DEBUG - 2017-05-31 09:14:16 --> Total execution time: 0.1148
+INFO - 2017-05-31 09:14:50 --> Config Class Initialized
+INFO - 2017-05-31 09:14:50 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:14:50 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:14:50 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:14:50 --> URI Class Initialized
+INFO - 2017-05-31 09:14:50 --> Router Class Initialized
+INFO - 2017-05-31 09:14:50 --> Output Class Initialized
+INFO - 2017-05-31 09:14:50 --> Security Class Initialized
+DEBUG - 2017-05-31 09:14:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:14:50 --> Input Class Initialized
+INFO - 2017-05-31 09:14:50 --> Language Class Initialized
+INFO - 2017-05-31 09:14:50 --> Loader Class Initialized
+INFO - 2017-05-31 09:14:50 --> Controller Class Initialized
+INFO - 2017-05-31 09:14:50 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:14:50 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:14:50 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:14:50 --> Model Class Initialized
+INFO - 2017-05-31 09:14:50 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:14:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:14:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:14:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:14:50 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:14:50 --> Final output sent to browser
+DEBUG - 2017-05-31 09:14:50 --> Total execution time: 0.1784
+INFO - 2017-05-31 09:15:57 --> Config Class Initialized
+INFO - 2017-05-31 09:15:57 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:15:57 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:15:57 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:15:57 --> URI Class Initialized
+INFO - 2017-05-31 09:15:57 --> Router Class Initialized
+INFO - 2017-05-31 09:15:57 --> Output Class Initialized
+INFO - 2017-05-31 09:15:57 --> Security Class Initialized
+DEBUG - 2017-05-31 09:15:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:15:57 --> Input Class Initialized
+INFO - 2017-05-31 09:15:57 --> Language Class Initialized
+INFO - 2017-05-31 09:15:57 --> Loader Class Initialized
+INFO - 2017-05-31 09:15:57 --> Controller Class Initialized
+INFO - 2017-05-31 09:15:57 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:15:57 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:15:57 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:15:57 --> Model Class Initialized
+INFO - 2017-05-31 09:15:57 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:15:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:15:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:15:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:15:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:15:57 --> Final output sent to browser
+DEBUG - 2017-05-31 09:15:57 --> Total execution time: 0.1300
+INFO - 2017-05-31 09:17:56 --> Config Class Initialized
+INFO - 2017-05-31 09:17:56 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:17:56 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:17:56 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:17:56 --> URI Class Initialized
+INFO - 2017-05-31 09:17:56 --> Router Class Initialized
+INFO - 2017-05-31 09:17:56 --> Output Class Initialized
+INFO - 2017-05-31 09:17:56 --> Security Class Initialized
+DEBUG - 2017-05-31 09:17:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:17:56 --> Input Class Initialized
+INFO - 2017-05-31 09:17:56 --> Language Class Initialized
+INFO - 2017-05-31 09:17:56 --> Loader Class Initialized
+INFO - 2017-05-31 09:17:56 --> Controller Class Initialized
+INFO - 2017-05-31 09:17:56 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:17:56 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:17:56 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:17:56 --> Model Class Initialized
+INFO - 2017-05-31 09:17:56 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:17:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:17:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:17:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:17:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:17:56 --> Final output sent to browser
+DEBUG - 2017-05-31 09:17:56 --> Total execution time: 0.1256
+INFO - 2017-05-31 09:18:28 --> Config Class Initialized
+INFO - 2017-05-31 09:18:28 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:18:28 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:18:28 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:18:28 --> URI Class Initialized
+INFO - 2017-05-31 09:18:28 --> Router Class Initialized
+INFO - 2017-05-31 09:18:28 --> Output Class Initialized
+INFO - 2017-05-31 09:18:28 --> Security Class Initialized
+DEBUG - 2017-05-31 09:18:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:18:28 --> Input Class Initialized
+INFO - 2017-05-31 09:18:28 --> Language Class Initialized
+INFO - 2017-05-31 09:18:28 --> Loader Class Initialized
+INFO - 2017-05-31 09:18:28 --> Controller Class Initialized
+INFO - 2017-05-31 09:18:28 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:18:28 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:18:28 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:18:28 --> Model Class Initialized
+INFO - 2017-05-31 09:18:28 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:18:28 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:18:28 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:18:29 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:18:29 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:18:29 --> Final output sent to browser
+DEBUG - 2017-05-31 09:18:29 --> Total execution time: 0.2011
+INFO - 2017-05-31 09:18:48 --> Config Class Initialized
+INFO - 2017-05-31 09:18:48 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:18:48 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:18:48 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:18:48 --> URI Class Initialized
+INFO - 2017-05-31 09:18:48 --> Router Class Initialized
+INFO - 2017-05-31 09:18:48 --> Output Class Initialized
+INFO - 2017-05-31 09:18:48 --> Security Class Initialized
+DEBUG - 2017-05-31 09:18:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:18:48 --> Input Class Initialized
+INFO - 2017-05-31 09:18:48 --> Language Class Initialized
+INFO - 2017-05-31 09:18:48 --> Loader Class Initialized
+INFO - 2017-05-31 09:18:48 --> Controller Class Initialized
+INFO - 2017-05-31 09:18:48 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:18:48 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:18:48 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:18:48 --> Model Class Initialized
+INFO - 2017-05-31 09:18:48 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:18:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:18:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:18:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:18:48 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:18:48 --> Final output sent to browser
+DEBUG - 2017-05-31 09:18:48 --> Total execution time: 0.1682
+INFO - 2017-05-31 09:19:07 --> Config Class Initialized
+INFO - 2017-05-31 09:19:07 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:19:07 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:19:07 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:19:07 --> URI Class Initialized
+INFO - 2017-05-31 09:19:07 --> Router Class Initialized
+INFO - 2017-05-31 09:19:07 --> Output Class Initialized
+INFO - 2017-05-31 09:19:07 --> Security Class Initialized
+DEBUG - 2017-05-31 09:19:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:19:07 --> Input Class Initialized
+INFO - 2017-05-31 09:19:07 --> Language Class Initialized
+INFO - 2017-05-31 09:19:07 --> Loader Class Initialized
+INFO - 2017-05-31 09:19:07 --> Controller Class Initialized
+INFO - 2017-05-31 09:19:07 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:19:07 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:19:07 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:19:07 --> Model Class Initialized
+INFO - 2017-05-31 09:19:07 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:19:07 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:19:07 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:19:07 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:19:07 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:19:07 --> Final output sent to browser
+DEBUG - 2017-05-31 09:19:07 --> Total execution time: 0.1273
+INFO - 2017-05-31 09:19:40 --> Config Class Initialized
+INFO - 2017-05-31 09:19:40 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:19:40 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:19:40 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:19:40 --> URI Class Initialized
+INFO - 2017-05-31 09:19:40 --> Router Class Initialized
+INFO - 2017-05-31 09:19:40 --> Output Class Initialized
+INFO - 2017-05-31 09:19:40 --> Security Class Initialized
+DEBUG - 2017-05-31 09:19:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:19:40 --> Input Class Initialized
+INFO - 2017-05-31 09:19:40 --> Language Class Initialized
+INFO - 2017-05-31 09:19:40 --> Loader Class Initialized
+INFO - 2017-05-31 09:19:40 --> Controller Class Initialized
+INFO - 2017-05-31 09:19:40 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:19:40 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:19:40 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:19:40 --> Model Class Initialized
+INFO - 2017-05-31 09:19:40 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:19:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:19:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:19:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:19:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:19:40 --> Final output sent to browser
+DEBUG - 2017-05-31 09:19:40 --> Total execution time: 0.1615
+INFO - 2017-05-31 09:19:47 --> Config Class Initialized
+INFO - 2017-05-31 09:19:47 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:19:47 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:19:47 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:19:47 --> URI Class Initialized
+INFO - 2017-05-31 09:19:47 --> Router Class Initialized
+INFO - 2017-05-31 09:19:47 --> Output Class Initialized
+INFO - 2017-05-31 09:19:47 --> Security Class Initialized
+DEBUG - 2017-05-31 09:19:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:19:47 --> Input Class Initialized
+INFO - 2017-05-31 09:19:47 --> Language Class Initialized
+INFO - 2017-05-31 09:19:47 --> Loader Class Initialized
+INFO - 2017-05-31 09:19:47 --> Controller Class Initialized
+INFO - 2017-05-31 09:19:47 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:19:47 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:19:47 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:19:47 --> Model Class Initialized
+INFO - 2017-05-31 09:19:47 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:19:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:19:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:19:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:19:47 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:19:47 --> Final output sent to browser
+DEBUG - 2017-05-31 09:19:47 --> Total execution time: 0.1519
+INFO - 2017-05-31 09:20:03 --> Config Class Initialized
+INFO - 2017-05-31 09:20:03 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:20:03 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:20:03 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:20:03 --> URI Class Initialized
+INFO - 2017-05-31 09:20:03 --> Router Class Initialized
+INFO - 2017-05-31 09:20:03 --> Output Class Initialized
+INFO - 2017-05-31 09:20:03 --> Security Class Initialized
+DEBUG - 2017-05-31 09:20:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:20:03 --> Input Class Initialized
+INFO - 2017-05-31 09:20:03 --> Language Class Initialized
+INFO - 2017-05-31 09:20:03 --> Loader Class Initialized
+INFO - 2017-05-31 09:20:03 --> Controller Class Initialized
+INFO - 2017-05-31 09:20:03 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:20:03 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:20:03 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:20:03 --> Model Class Initialized
+INFO - 2017-05-31 09:20:03 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:20:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:20:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:20:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:20:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:20:03 --> Final output sent to browser
+DEBUG - 2017-05-31 09:20:03 --> Total execution time: 0.1616
+INFO - 2017-05-31 09:21:03 --> Config Class Initialized
+INFO - 2017-05-31 09:21:03 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:21:03 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:21:03 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:21:03 --> URI Class Initialized
+INFO - 2017-05-31 09:21:03 --> Router Class Initialized
+INFO - 2017-05-31 09:21:03 --> Output Class Initialized
+INFO - 2017-05-31 09:21:03 --> Security Class Initialized
+DEBUG - 2017-05-31 09:21:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:21:03 --> Input Class Initialized
+INFO - 2017-05-31 09:21:03 --> Language Class Initialized
+INFO - 2017-05-31 09:21:03 --> Loader Class Initialized
+INFO - 2017-05-31 09:21:03 --> Controller Class Initialized
+INFO - 2017-05-31 09:21:03 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:21:03 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:21:03 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:21:03 --> Model Class Initialized
+INFO - 2017-05-31 09:21:03 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:21:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:21:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:21:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:21:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:21:03 --> Final output sent to browser
+DEBUG - 2017-05-31 09:21:03 --> Total execution time: 0.1231
+INFO - 2017-05-31 09:23:11 --> Config Class Initialized
+INFO - 2017-05-31 09:23:11 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:23:11 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:23:11 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:23:11 --> URI Class Initialized
+INFO - 2017-05-31 09:23:11 --> Router Class Initialized
+INFO - 2017-05-31 09:23:11 --> Output Class Initialized
+INFO - 2017-05-31 09:23:11 --> Security Class Initialized
+DEBUG - 2017-05-31 09:23:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:23:11 --> Input Class Initialized
+INFO - 2017-05-31 09:23:11 --> Language Class Initialized
+INFO - 2017-05-31 09:23:11 --> Loader Class Initialized
+INFO - 2017-05-31 09:23:11 --> Controller Class Initialized
+INFO - 2017-05-31 09:23:11 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:23:11 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:23:11 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:23:11 --> Model Class Initialized
+INFO - 2017-05-31 09:23:11 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:23:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:23:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:23:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:23:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:23:12 --> Final output sent to browser
+DEBUG - 2017-05-31 09:23:12 --> Total execution time: 0.1579
+INFO - 2017-05-31 09:23:21 --> Config Class Initialized
+INFO - 2017-05-31 09:23:21 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:23:21 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:23:21 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:23:21 --> URI Class Initialized
+INFO - 2017-05-31 09:23:21 --> Router Class Initialized
+INFO - 2017-05-31 09:23:21 --> Output Class Initialized
+INFO - 2017-05-31 09:23:21 --> Security Class Initialized
+DEBUG - 2017-05-31 09:23:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:23:21 --> Input Class Initialized
+INFO - 2017-05-31 09:23:21 --> Language Class Initialized
+INFO - 2017-05-31 09:23:21 --> Loader Class Initialized
+INFO - 2017-05-31 09:23:21 --> Controller Class Initialized
+INFO - 2017-05-31 09:23:21 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:23:21 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:23:21 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:23:21 --> Model Class Initialized
+INFO - 2017-05-31 09:23:21 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:23:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:23:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:23:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:23:21 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:23:21 --> Final output sent to browser
+DEBUG - 2017-05-31 09:23:21 --> Total execution time: 0.1804
+INFO - 2017-05-31 09:28:10 --> Config Class Initialized
+INFO - 2017-05-31 09:28:10 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:28:10 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:28:10 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:28:10 --> URI Class Initialized
+INFO - 2017-05-31 09:28:10 --> Router Class Initialized
+INFO - 2017-05-31 09:28:10 --> Output Class Initialized
+INFO - 2017-05-31 09:28:10 --> Security Class Initialized
+DEBUG - 2017-05-31 09:28:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:28:10 --> Input Class Initialized
+INFO - 2017-05-31 09:28:10 --> Language Class Initialized
+INFO - 2017-05-31 09:28:10 --> Loader Class Initialized
+INFO - 2017-05-31 09:28:10 --> Controller Class Initialized
+INFO - 2017-05-31 09:28:10 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:28:10 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:28:10 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:28:10 --> Model Class Initialized
+INFO - 2017-05-31 09:28:10 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:28:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:28:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:28:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:28:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:28:10 --> Final output sent to browser
+DEBUG - 2017-05-31 09:28:10 --> Total execution time: 0.1245
+INFO - 2017-05-31 09:28:17 --> Config Class Initialized
+INFO - 2017-05-31 09:28:17 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:28:17 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:28:17 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:28:17 --> URI Class Initialized
+INFO - 2017-05-31 09:28:17 --> Router Class Initialized
+INFO - 2017-05-31 09:28:17 --> Output Class Initialized
+INFO - 2017-05-31 09:28:17 --> Security Class Initialized
+DEBUG - 2017-05-31 09:28:17 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:28:17 --> Input Class Initialized
+INFO - 2017-05-31 09:28:17 --> Language Class Initialized
+INFO - 2017-05-31 09:28:17 --> Loader Class Initialized
+INFO - 2017-05-31 09:28:17 --> Controller Class Initialized
+INFO - 2017-05-31 09:28:17 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:28:17 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:28:17 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:28:17 --> Model Class Initialized
+INFO - 2017-05-31 09:28:17 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:28:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:28:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:28:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:28:17 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:28:17 --> Final output sent to browser
+DEBUG - 2017-05-31 09:28:17 --> Total execution time: 0.1273
+INFO - 2017-05-31 09:29:36 --> Config Class Initialized
+INFO - 2017-05-31 09:29:36 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:29:36 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:29:36 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:29:36 --> URI Class Initialized
+INFO - 2017-05-31 09:29:36 --> Router Class Initialized
+INFO - 2017-05-31 09:29:36 --> Output Class Initialized
+INFO - 2017-05-31 09:29:36 --> Security Class Initialized
+DEBUG - 2017-05-31 09:29:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:29:36 --> Input Class Initialized
+INFO - 2017-05-31 09:29:36 --> Language Class Initialized
+INFO - 2017-05-31 09:29:36 --> Loader Class Initialized
+INFO - 2017-05-31 09:29:36 --> Controller Class Initialized
+INFO - 2017-05-31 09:29:36 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:29:36 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:29:36 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:29:36 --> Model Class Initialized
+INFO - 2017-05-31 09:29:36 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:29:36 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:29:36 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:29:36 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:29:36 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:29:36 --> Final output sent to browser
+DEBUG - 2017-05-31 09:29:36 --> Total execution time: 0.1533
+INFO - 2017-05-31 09:30:03 --> Config Class Initialized
+INFO - 2017-05-31 09:30:03 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:30:03 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:30:03 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:30:03 --> URI Class Initialized
+INFO - 2017-05-31 09:30:03 --> Router Class Initialized
+INFO - 2017-05-31 09:30:03 --> Output Class Initialized
+INFO - 2017-05-31 09:30:03 --> Security Class Initialized
+DEBUG - 2017-05-31 09:30:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:30:03 --> Input Class Initialized
+INFO - 2017-05-31 09:30:03 --> Language Class Initialized
+INFO - 2017-05-31 09:30:03 --> Loader Class Initialized
+INFO - 2017-05-31 09:30:03 --> Controller Class Initialized
+INFO - 2017-05-31 09:30:03 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:30:03 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:30:03 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:30:03 --> Model Class Initialized
+INFO - 2017-05-31 09:30:03 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:30:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:30:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:30:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:30:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:30:03 --> Final output sent to browser
+DEBUG - 2017-05-31 09:30:03 --> Total execution time: 0.1300
+INFO - 2017-05-31 09:30:34 --> Config Class Initialized
+INFO - 2017-05-31 09:30:34 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:30:34 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:30:34 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:30:34 --> URI Class Initialized
+INFO - 2017-05-31 09:30:34 --> Router Class Initialized
+INFO - 2017-05-31 09:30:34 --> Output Class Initialized
+INFO - 2017-05-31 09:30:34 --> Security Class Initialized
+DEBUG - 2017-05-31 09:30:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:30:34 --> Input Class Initialized
+INFO - 2017-05-31 09:30:34 --> Language Class Initialized
+INFO - 2017-05-31 09:30:34 --> Loader Class Initialized
+INFO - 2017-05-31 09:30:34 --> Controller Class Initialized
+INFO - 2017-05-31 09:30:34 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:30:34 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:30:34 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:30:34 --> Model Class Initialized
+INFO - 2017-05-31 09:30:34 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:30:34 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:30:34 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:30:34 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:30:34 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:30:34 --> Final output sent to browser
+DEBUG - 2017-05-31 09:30:34 --> Total execution time: 0.1262
+INFO - 2017-05-31 09:30:51 --> Config Class Initialized
+INFO - 2017-05-31 09:30:51 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:30:51 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:30:51 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:30:51 --> URI Class Initialized
+INFO - 2017-05-31 09:30:51 --> Router Class Initialized
+INFO - 2017-05-31 09:30:51 --> Output Class Initialized
+INFO - 2017-05-31 09:30:51 --> Security Class Initialized
+DEBUG - 2017-05-31 09:30:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:30:51 --> Input Class Initialized
+INFO - 2017-05-31 09:30:51 --> Language Class Initialized
+INFO - 2017-05-31 09:30:51 --> Loader Class Initialized
+INFO - 2017-05-31 09:30:51 --> Controller Class Initialized
+INFO - 2017-05-31 09:30:51 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:30:51 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:30:51 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:30:51 --> Model Class Initialized
+INFO - 2017-05-31 09:30:51 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:30:51 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:30:51 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:30:51 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:30:51 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:30:51 --> Final output sent to browser
+DEBUG - 2017-05-31 09:30:51 --> Total execution time: 0.1794
+INFO - 2017-05-31 09:33:38 --> Config Class Initialized
+INFO - 2017-05-31 09:33:38 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:33:38 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:33:38 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:33:38 --> URI Class Initialized
+INFO - 2017-05-31 09:33:38 --> Router Class Initialized
+INFO - 2017-05-31 09:33:38 --> Output Class Initialized
+INFO - 2017-05-31 09:33:38 --> Security Class Initialized
+DEBUG - 2017-05-31 09:33:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:33:38 --> Input Class Initialized
+INFO - 2017-05-31 09:33:38 --> Language Class Initialized
+INFO - 2017-05-31 09:33:38 --> Loader Class Initialized
+INFO - 2017-05-31 09:33:38 --> Controller Class Initialized
+INFO - 2017-05-31 09:33:38 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:33:38 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:33:38 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:33:38 --> Model Class Initialized
+INFO - 2017-05-31 09:33:38 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:33:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:33:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:33:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:33:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:33:38 --> Final output sent to browser
+DEBUG - 2017-05-31 09:33:38 --> Total execution time: 0.1478
+INFO - 2017-05-31 09:38:41 --> Config Class Initialized
+INFO - 2017-05-31 09:38:41 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:38:41 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:38:41 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:38:41 --> URI Class Initialized
+INFO - 2017-05-31 09:38:41 --> Router Class Initialized
+INFO - 2017-05-31 09:38:41 --> Output Class Initialized
+INFO - 2017-05-31 09:38:41 --> Security Class Initialized
+DEBUG - 2017-05-31 09:38:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:38:41 --> Input Class Initialized
+INFO - 2017-05-31 09:38:41 --> Language Class Initialized
+INFO - 2017-05-31 09:38:41 --> Loader Class Initialized
+INFO - 2017-05-31 09:38:41 --> Controller Class Initialized
+INFO - 2017-05-31 09:38:41 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:38:41 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:38:41 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:38:41 --> Model Class Initialized
+INFO - 2017-05-31 09:38:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:38:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:38:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/stats_win_rate.php
+INFO - 2017-05-31 09:38:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:38:41 --> Final output sent to browser
+DEBUG - 2017-05-31 09:38:41 --> Total execution time: 0.2305
+INFO - 2017-05-31 09:46:18 --> Config Class Initialized
+INFO - 2017-05-31 09:46:18 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:46:18 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:46:18 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:46:18 --> URI Class Initialized
+INFO - 2017-05-31 09:46:18 --> Router Class Initialized
+INFO - 2017-05-31 09:46:18 --> Output Class Initialized
+INFO - 2017-05-31 09:46:18 --> Security Class Initialized
+DEBUG - 2017-05-31 09:46:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:46:18 --> Input Class Initialized
+INFO - 2017-05-31 09:46:18 --> Language Class Initialized
+INFO - 2017-05-31 09:46:18 --> Loader Class Initialized
+INFO - 2017-05-31 09:46:18 --> Controller Class Initialized
+INFO - 2017-05-31 09:46:18 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:46:18 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:46:18 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:46:18 --> Model Class Initialized
+INFO - 2017-05-31 09:46:18 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:46:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:46:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:46:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:46:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:46:18 --> Final output sent to browser
+DEBUG - 2017-05-31 09:46:18 --> Total execution time: 0.1333
+INFO - 2017-05-31 09:46:19 --> Config Class Initialized
+INFO - 2017-05-31 09:46:19 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:46:19 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:46:19 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:46:19 --> URI Class Initialized
+INFO - 2017-05-31 09:46:19 --> Router Class Initialized
+INFO - 2017-05-31 09:46:19 --> Output Class Initialized
+INFO - 2017-05-31 09:46:19 --> Security Class Initialized
+DEBUG - 2017-05-31 09:46:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:46:19 --> Input Class Initialized
+INFO - 2017-05-31 09:46:19 --> Language Class Initialized
+INFO - 2017-05-31 09:46:19 --> Loader Class Initialized
+INFO - 2017-05-31 09:46:19 --> Controller Class Initialized
+INFO - 2017-05-31 09:46:19 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:46:19 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:46:19 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:46:19 --> Model Class Initialized
+INFO - 2017-05-31 09:46:19 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:46:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:46:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:46:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:46:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:46:19 --> Final output sent to browser
+DEBUG - 2017-05-31 09:46:19 --> Total execution time: 0.1318
+INFO - 2017-05-31 09:47:14 --> Config Class Initialized
+INFO - 2017-05-31 09:47:14 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:47:14 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:47:14 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:47:14 --> URI Class Initialized
+INFO - 2017-05-31 09:47:14 --> Router Class Initialized
+INFO - 2017-05-31 09:47:14 --> Output Class Initialized
+INFO - 2017-05-31 09:47:14 --> Security Class Initialized
+DEBUG - 2017-05-31 09:47:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:47:14 --> Input Class Initialized
+INFO - 2017-05-31 09:47:14 --> Language Class Initialized
+INFO - 2017-05-31 09:47:14 --> Loader Class Initialized
+INFO - 2017-05-31 09:47:14 --> Controller Class Initialized
+INFO - 2017-05-31 09:47:14 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:47:14 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:47:14 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:47:14 --> Model Class Initialized
+INFO - 2017-05-31 09:47:14 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:47:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:47:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:47:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:47:14 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:47:14 --> Final output sent to browser
+DEBUG - 2017-05-31 09:47:14 --> Total execution time: 0.3291
+INFO - 2017-05-31 09:47:43 --> Config Class Initialized
+INFO - 2017-05-31 09:47:43 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:47:43 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:47:43 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:47:43 --> URI Class Initialized
+INFO - 2017-05-31 09:47:43 --> Router Class Initialized
+INFO - 2017-05-31 09:47:43 --> Output Class Initialized
+INFO - 2017-05-31 09:47:43 --> Security Class Initialized
+DEBUG - 2017-05-31 09:47:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:47:43 --> Input Class Initialized
+INFO - 2017-05-31 09:47:43 --> Language Class Initialized
+INFO - 2017-05-31 09:47:43 --> Loader Class Initialized
+INFO - 2017-05-31 09:47:43 --> Controller Class Initialized
+INFO - 2017-05-31 09:47:43 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:47:43 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:47:43 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:47:43 --> Model Class Initialized
+INFO - 2017-05-31 09:47:43 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:47:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:47:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:47:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:47:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:47:43 --> Final output sent to browser
+DEBUG - 2017-05-31 09:47:43 --> Total execution time: 0.1243
+INFO - 2017-05-31 09:48:37 --> Config Class Initialized
+INFO - 2017-05-31 09:48:37 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:48:37 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:48:37 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:48:37 --> URI Class Initialized
+INFO - 2017-05-31 09:48:37 --> Router Class Initialized
+INFO - 2017-05-31 09:48:37 --> Output Class Initialized
+INFO - 2017-05-31 09:48:37 --> Security Class Initialized
+DEBUG - 2017-05-31 09:48:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:48:37 --> Input Class Initialized
+INFO - 2017-05-31 09:48:37 --> Language Class Initialized
+INFO - 2017-05-31 09:48:37 --> Loader Class Initialized
+INFO - 2017-05-31 09:48:37 --> Controller Class Initialized
+INFO - 2017-05-31 09:48:37 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:48:37 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:48:37 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:48:37 --> Model Class Initialized
+INFO - 2017-05-31 09:48:37 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:48:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:48:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:48:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:48:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:48:38 --> Final output sent to browser
+DEBUG - 2017-05-31 09:48:38 --> Total execution time: 0.1555
+INFO - 2017-05-31 09:51:31 --> Config Class Initialized
+INFO - 2017-05-31 09:51:31 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:51:31 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:51:31 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:51:31 --> URI Class Initialized
+INFO - 2017-05-31 09:51:31 --> Router Class Initialized
+INFO - 2017-05-31 09:51:31 --> Output Class Initialized
+INFO - 2017-05-31 09:51:31 --> Security Class Initialized
+DEBUG - 2017-05-31 09:51:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:51:31 --> Input Class Initialized
+INFO - 2017-05-31 09:51:31 --> Language Class Initialized
+INFO - 2017-05-31 09:51:31 --> Loader Class Initialized
+INFO - 2017-05-31 09:51:31 --> Controller Class Initialized
+INFO - 2017-05-31 09:51:31 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:51:31 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:51:31 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:51:31 --> Model Class Initialized
+INFO - 2017-05-31 09:51:31 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:51:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:51:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:51:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:51:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:51:31 --> Final output sent to browser
+DEBUG - 2017-05-31 09:51:31 --> Total execution time: 0.1099
+INFO - 2017-05-31 09:52:08 --> Config Class Initialized
+INFO - 2017-05-31 09:52:08 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:08 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:08 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:08 --> URI Class Initialized
+INFO - 2017-05-31 09:52:08 --> Router Class Initialized
+INFO - 2017-05-31 09:52:08 --> Output Class Initialized
+INFO - 2017-05-31 09:52:08 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:08 --> Input Class Initialized
+INFO - 2017-05-31 09:52:08 --> Language Class Initialized
+INFO - 2017-05-31 09:52:08 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:08 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:08 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:08 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:08 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:08 --> Model Class Initialized
+INFO - 2017-05-31 09:52:08 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:08 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:08 --> Total execution time: 0.1253
+INFO - 2017-05-31 09:52:11 --> Config Class Initialized
+INFO - 2017-05-31 09:52:11 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:11 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:11 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:11 --> URI Class Initialized
+INFO - 2017-05-31 09:52:11 --> Router Class Initialized
+INFO - 2017-05-31 09:52:11 --> Output Class Initialized
+INFO - 2017-05-31 09:52:11 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:11 --> Input Class Initialized
+INFO - 2017-05-31 09:52:11 --> Language Class Initialized
+INFO - 2017-05-31 09:52:11 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:11 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:11 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:11 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:11 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:11 --> Model Class Initialized
+INFO - 2017-05-31 09:52:11 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:11 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:11 --> Total execution time: 0.1202
+INFO - 2017-05-31 09:52:31 --> Config Class Initialized
+INFO - 2017-05-31 09:52:31 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:31 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:31 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:31 --> URI Class Initialized
+INFO - 2017-05-31 09:52:31 --> Router Class Initialized
+INFO - 2017-05-31 09:52:31 --> Output Class Initialized
+INFO - 2017-05-31 09:52:31 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:31 --> Input Class Initialized
+INFO - 2017-05-31 09:52:31 --> Language Class Initialized
+INFO - 2017-05-31 09:52:31 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:31 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:31 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:31 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:31 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:31 --> Model Class Initialized
+INFO - 2017-05-31 09:52:31 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:31 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:31 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:31 --> Total execution time: 0.1467
+INFO - 2017-05-31 09:52:32 --> Config Class Initialized
+INFO - 2017-05-31 09:52:32 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:32 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:32 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:32 --> URI Class Initialized
+INFO - 2017-05-31 09:52:32 --> Router Class Initialized
+INFO - 2017-05-31 09:52:32 --> Output Class Initialized
+INFO - 2017-05-31 09:52:32 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:32 --> Input Class Initialized
+INFO - 2017-05-31 09:52:32 --> Language Class Initialized
+INFO - 2017-05-31 09:52:32 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:32 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:32 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:32 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:32 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:32 --> Model Class Initialized
+INFO - 2017-05-31 09:52:32 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:32 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:32 --> Total execution time: 0.1462
+INFO - 2017-05-31 09:52:41 --> Config Class Initialized
+INFO - 2017-05-31 09:52:41 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:41 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:41 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:41 --> URI Class Initialized
+INFO - 2017-05-31 09:52:41 --> Router Class Initialized
+INFO - 2017-05-31 09:52:41 --> Output Class Initialized
+INFO - 2017-05-31 09:52:41 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:41 --> Input Class Initialized
+INFO - 2017-05-31 09:52:41 --> Language Class Initialized
+INFO - 2017-05-31 09:52:41 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:41 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:41 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:41 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:41 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:41 --> Model Class Initialized
+INFO - 2017-05-31 09:52:41 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:41 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:42 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:42 --> Total execution time: 0.3350
+INFO - 2017-05-31 09:52:43 --> Config Class Initialized
+INFO - 2017-05-31 09:52:43 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:43 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:43 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:43 --> URI Class Initialized
+INFO - 2017-05-31 09:52:43 --> Router Class Initialized
+INFO - 2017-05-31 09:52:43 --> Output Class Initialized
+INFO - 2017-05-31 09:52:43 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:43 --> Input Class Initialized
+INFO - 2017-05-31 09:52:43 --> Language Class Initialized
+INFO - 2017-05-31 09:52:43 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:43 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:43 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:43 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:43 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:43 --> Model Class Initialized
+INFO - 2017-05-31 09:52:43 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:43 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:43 --> Total execution time: 0.4903
+INFO - 2017-05-31 09:52:53 --> Config Class Initialized
+INFO - 2017-05-31 09:52:53 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:53 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:53 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:53 --> URI Class Initialized
+INFO - 2017-05-31 09:52:53 --> Router Class Initialized
+INFO - 2017-05-31 09:52:53 --> Output Class Initialized
+INFO - 2017-05-31 09:52:53 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:53 --> Input Class Initialized
+INFO - 2017-05-31 09:52:53 --> Language Class Initialized
+INFO - 2017-05-31 09:52:53 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:53 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:53 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:53 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:53 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:53 --> Model Class Initialized
+INFO - 2017-05-31 09:52:53 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:53 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:53 --> Total execution time: 0.1454
+INFO - 2017-05-31 09:52:59 --> Config Class Initialized
+INFO - 2017-05-31 09:52:59 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:52:59 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:52:59 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:52:59 --> URI Class Initialized
+INFO - 2017-05-31 09:52:59 --> Router Class Initialized
+INFO - 2017-05-31 09:52:59 --> Output Class Initialized
+INFO - 2017-05-31 09:52:59 --> Security Class Initialized
+DEBUG - 2017-05-31 09:52:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:52:59 --> Input Class Initialized
+INFO - 2017-05-31 09:52:59 --> Language Class Initialized
+INFO - 2017-05-31 09:52:59 --> Loader Class Initialized
+INFO - 2017-05-31 09:52:59 --> Controller Class Initialized
+INFO - 2017-05-31 09:52:59 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:52:59 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:52:59 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:52:59 --> Model Class Initialized
+INFO - 2017-05-31 09:52:59 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:52:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:52:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:52:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:52:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:52:59 --> Final output sent to browser
+DEBUG - 2017-05-31 09:52:59 --> Total execution time: 0.1093
+INFO - 2017-05-31 09:53:54 --> Config Class Initialized
+INFO - 2017-05-31 09:53:54 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:53:54 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:53:54 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:53:54 --> URI Class Initialized
+INFO - 2017-05-31 09:53:54 --> Router Class Initialized
+INFO - 2017-05-31 09:53:54 --> Output Class Initialized
+INFO - 2017-05-31 09:53:54 --> Security Class Initialized
+DEBUG - 2017-05-31 09:53:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:53:54 --> Input Class Initialized
+INFO - 2017-05-31 09:53:54 --> Language Class Initialized
+INFO - 2017-05-31 09:53:54 --> Loader Class Initialized
+INFO - 2017-05-31 09:53:54 --> Controller Class Initialized
+INFO - 2017-05-31 09:53:54 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:53:54 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:53:54 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:53:54 --> Model Class Initialized
+INFO - 2017-05-31 09:53:54 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:53:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:53:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:53:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:53:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:53:54 --> Final output sent to browser
+DEBUG - 2017-05-31 09:53:54 --> Total execution time: 0.1766
+INFO - 2017-05-31 09:54:18 --> Config Class Initialized
+INFO - 2017-05-31 09:54:18 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:54:18 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:54:18 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:54:18 --> URI Class Initialized
+INFO - 2017-05-31 09:54:18 --> Router Class Initialized
+INFO - 2017-05-31 09:54:18 --> Output Class Initialized
+INFO - 2017-05-31 09:54:18 --> Security Class Initialized
+DEBUG - 2017-05-31 09:54:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:54:18 --> Input Class Initialized
+INFO - 2017-05-31 09:54:18 --> Language Class Initialized
+INFO - 2017-05-31 09:54:18 --> Loader Class Initialized
+INFO - 2017-05-31 09:54:18 --> Controller Class Initialized
+INFO - 2017-05-31 09:54:18 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:54:18 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:54:18 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:54:18 --> Model Class Initialized
+INFO - 2017-05-31 09:54:18 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:54:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:54:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:54:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:54:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:54:18 --> Final output sent to browser
+DEBUG - 2017-05-31 09:54:18 --> Total execution time: 0.1041
+INFO - 2017-05-31 09:54:36 --> Config Class Initialized
+INFO - 2017-05-31 09:54:36 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:54:36 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:54:36 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:54:36 --> URI Class Initialized
+INFO - 2017-05-31 09:54:36 --> Router Class Initialized
+INFO - 2017-05-31 09:54:36 --> Output Class Initialized
+INFO - 2017-05-31 09:54:36 --> Security Class Initialized
+DEBUG - 2017-05-31 09:54:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:54:36 --> Input Class Initialized
+INFO - 2017-05-31 09:54:36 --> Language Class Initialized
+INFO - 2017-05-31 09:54:36 --> Loader Class Initialized
+INFO - 2017-05-31 09:54:36 --> Controller Class Initialized
+INFO - 2017-05-31 09:54:36 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:54:37 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:54:37 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:54:37 --> Model Class Initialized
+INFO - 2017-05-31 09:54:37 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:54:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:54:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:54:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:54:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:54:37 --> Final output sent to browser
+DEBUG - 2017-05-31 09:54:37 --> Total execution time: 0.1314
+INFO - 2017-05-31 09:54:38 --> Config Class Initialized
+INFO - 2017-05-31 09:54:38 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:54:38 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:54:38 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:54:38 --> URI Class Initialized
+INFO - 2017-05-31 09:54:38 --> Router Class Initialized
+INFO - 2017-05-31 09:54:38 --> Output Class Initialized
+INFO - 2017-05-31 09:54:38 --> Security Class Initialized
+DEBUG - 2017-05-31 09:54:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:54:38 --> Input Class Initialized
+INFO - 2017-05-31 09:54:38 --> Language Class Initialized
+INFO - 2017-05-31 09:54:38 --> Loader Class Initialized
+INFO - 2017-05-31 09:54:38 --> Controller Class Initialized
+INFO - 2017-05-31 09:54:38 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:54:38 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:54:38 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:54:38 --> Model Class Initialized
+INFO - 2017-05-31 09:54:38 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:54:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:54:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:54:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:54:38 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:54:38 --> Final output sent to browser
+DEBUG - 2017-05-31 09:54:38 --> Total execution time: 0.1566
+INFO - 2017-05-31 09:54:43 --> Config Class Initialized
+INFO - 2017-05-31 09:54:43 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:54:43 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:54:43 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:54:43 --> URI Class Initialized
+INFO - 2017-05-31 09:54:43 --> Router Class Initialized
+INFO - 2017-05-31 09:54:43 --> Output Class Initialized
+INFO - 2017-05-31 09:54:43 --> Security Class Initialized
+DEBUG - 2017-05-31 09:54:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:54:43 --> Input Class Initialized
+INFO - 2017-05-31 09:54:43 --> Language Class Initialized
+INFO - 2017-05-31 09:54:43 --> Loader Class Initialized
+INFO - 2017-05-31 09:54:43 --> Controller Class Initialized
+INFO - 2017-05-31 09:54:43 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:54:43 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:54:43 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:54:43 --> Model Class Initialized
+INFO - 2017-05-31 09:54:43 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:54:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:54:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:54:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:54:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:54:44 --> Final output sent to browser
+DEBUG - 2017-05-31 09:54:44 --> Total execution time: 0.1204
+INFO - 2017-05-31 09:54:45 --> Config Class Initialized
+INFO - 2017-05-31 09:54:45 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:54:45 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:54:45 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:54:45 --> URI Class Initialized
+INFO - 2017-05-31 09:54:45 --> Router Class Initialized
+INFO - 2017-05-31 09:54:45 --> Output Class Initialized
+INFO - 2017-05-31 09:54:45 --> Security Class Initialized
+DEBUG - 2017-05-31 09:54:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:54:45 --> Input Class Initialized
+INFO - 2017-05-31 09:54:45 --> Language Class Initialized
+INFO - 2017-05-31 09:54:45 --> Loader Class Initialized
+INFO - 2017-05-31 09:54:45 --> Controller Class Initialized
+INFO - 2017-05-31 09:54:45 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:54:45 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:54:45 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:54:45 --> Model Class Initialized
+INFO - 2017-05-31 09:54:45 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:54:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:54:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:54:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:54:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:54:45 --> Final output sent to browser
+DEBUG - 2017-05-31 09:54:45 --> Total execution time: 0.1286
+INFO - 2017-05-31 09:55:32 --> Config Class Initialized
+INFO - 2017-05-31 09:55:32 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:55:32 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:55:32 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:55:32 --> URI Class Initialized
+INFO - 2017-05-31 09:55:32 --> Router Class Initialized
+INFO - 2017-05-31 09:55:32 --> Output Class Initialized
+INFO - 2017-05-31 09:55:32 --> Security Class Initialized
+DEBUG - 2017-05-31 09:55:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:55:32 --> Input Class Initialized
+INFO - 2017-05-31 09:55:32 --> Language Class Initialized
+INFO - 2017-05-31 09:55:32 --> Loader Class Initialized
+INFO - 2017-05-31 09:55:32 --> Controller Class Initialized
+INFO - 2017-05-31 09:55:32 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:55:32 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:55:32 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:55:32 --> Model Class Initialized
+INFO - 2017-05-31 09:55:32 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:55:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:55:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:55:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:55:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:55:32 --> Final output sent to browser
+DEBUG - 2017-05-31 09:55:32 --> Total execution time: 0.1756
+INFO - 2017-05-31 09:56:57 --> Config Class Initialized
+INFO - 2017-05-31 09:56:57 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:56:57 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:56:57 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:56:57 --> URI Class Initialized
+INFO - 2017-05-31 09:56:57 --> Router Class Initialized
+INFO - 2017-05-31 09:56:57 --> Output Class Initialized
+INFO - 2017-05-31 09:56:57 --> Security Class Initialized
+DEBUG - 2017-05-31 09:56:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:56:57 --> Input Class Initialized
+INFO - 2017-05-31 09:56:57 --> Language Class Initialized
+INFO - 2017-05-31 09:56:57 --> Loader Class Initialized
+INFO - 2017-05-31 09:56:57 --> Controller Class Initialized
+INFO - 2017-05-31 09:56:57 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:56:57 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:56:57 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:56:57 --> Model Class Initialized
+INFO - 2017-05-31 09:56:57 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:56:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:56:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:56:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:56:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:56:57 --> Final output sent to browser
+DEBUG - 2017-05-31 09:56:57 --> Total execution time: 0.1097
+INFO - 2017-05-31 09:57:22 --> Config Class Initialized
+INFO - 2017-05-31 09:57:22 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:57:22 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:57:22 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:57:22 --> URI Class Initialized
+INFO - 2017-05-31 09:57:22 --> Router Class Initialized
+INFO - 2017-05-31 09:57:22 --> Output Class Initialized
+INFO - 2017-05-31 09:57:22 --> Security Class Initialized
+DEBUG - 2017-05-31 09:57:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:57:22 --> Input Class Initialized
+INFO - 2017-05-31 09:57:22 --> Language Class Initialized
+INFO - 2017-05-31 09:57:22 --> Loader Class Initialized
+INFO - 2017-05-31 09:57:22 --> Controller Class Initialized
+INFO - 2017-05-31 09:57:22 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:57:22 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:57:22 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:57:22 --> Model Class Initialized
+INFO - 2017-05-31 09:57:22 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:57:22 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:57:22 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:57:22 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:57:22 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:57:22 --> Final output sent to browser
+DEBUG - 2017-05-31 09:57:22 --> Total execution time: 0.1299
+INFO - 2017-05-31 09:57:32 --> Config Class Initialized
+INFO - 2017-05-31 09:57:32 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:57:32 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:57:32 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:57:32 --> URI Class Initialized
+INFO - 2017-05-31 09:57:32 --> Router Class Initialized
+INFO - 2017-05-31 09:57:32 --> Output Class Initialized
+INFO - 2017-05-31 09:57:32 --> Security Class Initialized
+DEBUG - 2017-05-31 09:57:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:57:32 --> Input Class Initialized
+INFO - 2017-05-31 09:57:32 --> Language Class Initialized
+INFO - 2017-05-31 09:57:32 --> Loader Class Initialized
+INFO - 2017-05-31 09:57:32 --> Controller Class Initialized
+INFO - 2017-05-31 09:57:32 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:57:32 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:57:32 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:57:32 --> Model Class Initialized
+INFO - 2017-05-31 09:57:32 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:57:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:57:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:57:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:57:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:57:32 --> Final output sent to browser
+DEBUG - 2017-05-31 09:57:32 --> Total execution time: 0.1223
+INFO - 2017-05-31 09:57:44 --> Config Class Initialized
+INFO - 2017-05-31 09:57:44 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:57:44 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:57:44 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:57:44 --> URI Class Initialized
+INFO - 2017-05-31 09:57:44 --> Router Class Initialized
+INFO - 2017-05-31 09:57:44 --> Output Class Initialized
+INFO - 2017-05-31 09:57:44 --> Security Class Initialized
+DEBUG - 2017-05-31 09:57:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:57:44 --> Input Class Initialized
+INFO - 2017-05-31 09:57:44 --> Language Class Initialized
+INFO - 2017-05-31 09:57:44 --> Loader Class Initialized
+INFO - 2017-05-31 09:57:44 --> Controller Class Initialized
+INFO - 2017-05-31 09:57:44 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:57:44 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:57:44 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:57:44 --> Model Class Initialized
+INFO - 2017-05-31 09:57:44 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:57:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:57:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:57:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:57:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:57:44 --> Final output sent to browser
+DEBUG - 2017-05-31 09:57:44 --> Total execution time: 0.1275
+INFO - 2017-05-31 09:58:01 --> Config Class Initialized
+INFO - 2017-05-31 09:58:01 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:58:01 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:58:01 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:58:01 --> URI Class Initialized
+INFO - 2017-05-31 09:58:01 --> Router Class Initialized
+INFO - 2017-05-31 09:58:01 --> Output Class Initialized
+INFO - 2017-05-31 09:58:01 --> Security Class Initialized
+DEBUG - 2017-05-31 09:58:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:58:01 --> Input Class Initialized
+INFO - 2017-05-31 09:58:01 --> Language Class Initialized
+INFO - 2017-05-31 09:58:01 --> Loader Class Initialized
+INFO - 2017-05-31 09:58:01 --> Controller Class Initialized
+INFO - 2017-05-31 09:58:01 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:58:01 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:58:01 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:58:01 --> Model Class Initialized
+INFO - 2017-05-31 09:58:01 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:58:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:58:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:58:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:58:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:58:01 --> Final output sent to browser
+DEBUG - 2017-05-31 09:58:01 --> Total execution time: 0.1151
+INFO - 2017-05-31 09:59:04 --> Config Class Initialized
+INFO - 2017-05-31 09:59:04 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:59:04 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:59:04 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:59:04 --> URI Class Initialized
+INFO - 2017-05-31 09:59:04 --> Router Class Initialized
+INFO - 2017-05-31 09:59:04 --> Output Class Initialized
+INFO - 2017-05-31 09:59:04 --> Security Class Initialized
+DEBUG - 2017-05-31 09:59:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:59:04 --> Input Class Initialized
+INFO - 2017-05-31 09:59:04 --> Language Class Initialized
+INFO - 2017-05-31 09:59:04 --> Loader Class Initialized
+INFO - 2017-05-31 09:59:04 --> Controller Class Initialized
+INFO - 2017-05-31 09:59:04 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:59:04 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:59:04 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:59:04 --> Model Class Initialized
+INFO - 2017-05-31 09:59:04 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:59:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:59:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:59:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:59:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:59:04 --> Final output sent to browser
+DEBUG - 2017-05-31 09:59:04 --> Total execution time: 0.1781
+INFO - 2017-05-31 09:59:19 --> Config Class Initialized
+INFO - 2017-05-31 09:59:19 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:59:19 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:59:19 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:59:19 --> URI Class Initialized
+INFO - 2017-05-31 09:59:19 --> Router Class Initialized
+INFO - 2017-05-31 09:59:19 --> Output Class Initialized
+INFO - 2017-05-31 09:59:19 --> Security Class Initialized
+DEBUG - 2017-05-31 09:59:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:59:19 --> Input Class Initialized
+INFO - 2017-05-31 09:59:19 --> Language Class Initialized
+INFO - 2017-05-31 09:59:19 --> Loader Class Initialized
+INFO - 2017-05-31 09:59:19 --> Controller Class Initialized
+INFO - 2017-05-31 09:59:19 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:59:19 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:59:19 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:59:19 --> Model Class Initialized
+INFO - 2017-05-31 09:59:19 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:59:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:59:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:59:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:59:19 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:59:19 --> Final output sent to browser
+DEBUG - 2017-05-31 09:59:19 --> Total execution time: 0.1301
+INFO - 2017-05-31 09:59:35 --> Config Class Initialized
+INFO - 2017-05-31 09:59:35 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:59:35 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:59:35 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:59:35 --> URI Class Initialized
+INFO - 2017-05-31 09:59:35 --> Router Class Initialized
+INFO - 2017-05-31 09:59:35 --> Output Class Initialized
+INFO - 2017-05-31 09:59:35 --> Security Class Initialized
+DEBUG - 2017-05-31 09:59:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:59:35 --> Input Class Initialized
+INFO - 2017-05-31 09:59:35 --> Language Class Initialized
+INFO - 2017-05-31 09:59:35 --> Loader Class Initialized
+INFO - 2017-05-31 09:59:35 --> Controller Class Initialized
+INFO - 2017-05-31 09:59:35 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:59:35 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:59:35 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:59:35 --> Model Class Initialized
+INFO - 2017-05-31 09:59:35 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:59:35 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:59:35 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:59:35 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:59:35 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:59:35 --> Final output sent to browser
+DEBUG - 2017-05-31 09:59:35 --> Total execution time: 0.1388
+INFO - 2017-05-31 09:59:43 --> Config Class Initialized
+INFO - 2017-05-31 09:59:43 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:59:43 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:59:43 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:59:43 --> URI Class Initialized
+INFO - 2017-05-31 09:59:43 --> Router Class Initialized
+INFO - 2017-05-31 09:59:43 --> Output Class Initialized
+INFO - 2017-05-31 09:59:43 --> Security Class Initialized
+DEBUG - 2017-05-31 09:59:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:59:43 --> Input Class Initialized
+INFO - 2017-05-31 09:59:43 --> Language Class Initialized
+INFO - 2017-05-31 09:59:43 --> Loader Class Initialized
+INFO - 2017-05-31 09:59:43 --> Controller Class Initialized
+INFO - 2017-05-31 09:59:43 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:59:43 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:59:43 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:59:43 --> Model Class Initialized
+INFO - 2017-05-31 09:59:43 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:59:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:59:43 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:59:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:59:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:59:44 --> Final output sent to browser
+DEBUG - 2017-05-31 09:59:44 --> Total execution time: 0.2345
+INFO - 2017-05-31 09:59:52 --> Config Class Initialized
+INFO - 2017-05-31 09:59:52 --> Hooks Class Initialized
+DEBUG - 2017-05-31 09:59:52 --> UTF-8 Support Enabled
+INFO - 2017-05-31 09:59:52 --> Utf8 Class Initialized
+INFO - 2017-05-31 09:59:52 --> URI Class Initialized
+INFO - 2017-05-31 09:59:52 --> Router Class Initialized
+INFO - 2017-05-31 09:59:52 --> Output Class Initialized
+INFO - 2017-05-31 09:59:52 --> Security Class Initialized
+DEBUG - 2017-05-31 09:59:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 09:59:52 --> Input Class Initialized
+INFO - 2017-05-31 09:59:52 --> Language Class Initialized
+INFO - 2017-05-31 09:59:52 --> Loader Class Initialized
+INFO - 2017-05-31 09:59:52 --> Controller Class Initialized
+INFO - 2017-05-31 09:59:52 --> Database Driver Class Initialized
+INFO - 2017-05-31 09:59:52 --> Helper loaded: url_helper
+INFO - 2017-05-31 09:59:52 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 09:59:52 --> Model Class Initialized
+INFO - 2017-05-31 09:59:52 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 09:59:52 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 09:59:52 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 09:59:52 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 09:59:52 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 09:59:52 --> Final output sent to browser
+DEBUG - 2017-05-31 09:59:52 --> Total execution time: 0.1347
+INFO - 2017-05-31 10:00:01 --> Config Class Initialized
+INFO - 2017-05-31 10:00:01 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:00:01 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:00:01 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:00:01 --> URI Class Initialized
+INFO - 2017-05-31 10:00:01 --> Router Class Initialized
+INFO - 2017-05-31 10:00:01 --> Output Class Initialized
+INFO - 2017-05-31 10:00:01 --> Security Class Initialized
+DEBUG - 2017-05-31 10:00:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:00:01 --> Input Class Initialized
+INFO - 2017-05-31 10:00:01 --> Language Class Initialized
+INFO - 2017-05-31 10:00:01 --> Loader Class Initialized
+INFO - 2017-05-31 10:00:01 --> Controller Class Initialized
+INFO - 2017-05-31 10:00:01 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:00:01 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:00:01 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:00:01 --> Model Class Initialized
+INFO - 2017-05-31 10:00:01 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:00:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:00:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:00:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:00:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:00:01 --> Final output sent to browser
+DEBUG - 2017-05-31 10:00:01 --> Total execution time: 0.1460
+INFO - 2017-05-31 10:00:18 --> Config Class Initialized
+INFO - 2017-05-31 10:00:18 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:00:18 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:00:18 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:00:18 --> URI Class Initialized
+INFO - 2017-05-31 10:00:18 --> Router Class Initialized
+INFO - 2017-05-31 10:00:18 --> Output Class Initialized
+INFO - 2017-05-31 10:00:18 --> Security Class Initialized
+DEBUG - 2017-05-31 10:00:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:00:18 --> Input Class Initialized
+INFO - 2017-05-31 10:00:18 --> Language Class Initialized
+INFO - 2017-05-31 10:00:18 --> Loader Class Initialized
+INFO - 2017-05-31 10:00:18 --> Controller Class Initialized
+INFO - 2017-05-31 10:00:18 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:00:18 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:00:18 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:00:18 --> Model Class Initialized
+INFO - 2017-05-31 10:00:18 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:00:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:00:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:00:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:00:18 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:00:18 --> Final output sent to browser
+DEBUG - 2017-05-31 10:00:18 --> Total execution time: 0.1432
+INFO - 2017-05-31 10:00:33 --> Config Class Initialized
+INFO - 2017-05-31 10:00:33 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:00:33 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:00:33 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:00:33 --> URI Class Initialized
+INFO - 2017-05-31 10:00:33 --> Router Class Initialized
+INFO - 2017-05-31 10:00:33 --> Output Class Initialized
+INFO - 2017-05-31 10:00:33 --> Security Class Initialized
+DEBUG - 2017-05-31 10:00:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:00:33 --> Input Class Initialized
+INFO - 2017-05-31 10:00:33 --> Language Class Initialized
+INFO - 2017-05-31 10:00:33 --> Loader Class Initialized
+INFO - 2017-05-31 10:00:33 --> Controller Class Initialized
+INFO - 2017-05-31 10:00:33 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:00:33 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:00:33 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:00:33 --> Model Class Initialized
+INFO - 2017-05-31 10:00:33 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:00:33 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:00:33 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:00:33 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:00:33 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:00:33 --> Final output sent to browser
+DEBUG - 2017-05-31 10:00:33 --> Total execution time: 0.1219
+INFO - 2017-05-31 10:00:56 --> Config Class Initialized
+INFO - 2017-05-31 10:00:56 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:00:56 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:00:56 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:00:56 --> URI Class Initialized
+INFO - 2017-05-31 10:00:56 --> Router Class Initialized
+INFO - 2017-05-31 10:00:56 --> Output Class Initialized
+INFO - 2017-05-31 10:00:56 --> Security Class Initialized
+DEBUG - 2017-05-31 10:00:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:00:56 --> Input Class Initialized
+INFO - 2017-05-31 10:00:56 --> Language Class Initialized
+INFO - 2017-05-31 10:00:56 --> Loader Class Initialized
+INFO - 2017-05-31 10:00:56 --> Controller Class Initialized
+INFO - 2017-05-31 10:00:57 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:00:57 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:00:57 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:00:57 --> Model Class Initialized
+INFO - 2017-05-31 10:00:57 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:00:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:00:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:00:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:00:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:00:57 --> Final output sent to browser
+DEBUG - 2017-05-31 10:00:57 --> Total execution time: 0.1295
+INFO - 2017-05-31 10:01:54 --> Config Class Initialized
+INFO - 2017-05-31 10:01:54 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:01:54 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:01:54 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:01:54 --> URI Class Initialized
+INFO - 2017-05-31 10:01:54 --> Router Class Initialized
+INFO - 2017-05-31 10:01:54 --> Output Class Initialized
+INFO - 2017-05-31 10:01:54 --> Security Class Initialized
+DEBUG - 2017-05-31 10:01:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:01:54 --> Input Class Initialized
+INFO - 2017-05-31 10:01:54 --> Language Class Initialized
+INFO - 2017-05-31 10:01:54 --> Loader Class Initialized
+INFO - 2017-05-31 10:01:54 --> Controller Class Initialized
+INFO - 2017-05-31 10:01:54 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:01:54 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:01:54 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:01:54 --> Model Class Initialized
+INFO - 2017-05-31 10:01:54 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:01:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:01:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:01:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:01:54 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:01:54 --> Final output sent to browser
+DEBUG - 2017-05-31 10:01:54 --> Total execution time: 0.3547
+INFO - 2017-05-31 10:01:56 --> Config Class Initialized
+INFO - 2017-05-31 10:01:56 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:01:56 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:01:56 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:01:56 --> URI Class Initialized
+INFO - 2017-05-31 10:01:56 --> Router Class Initialized
+INFO - 2017-05-31 10:01:56 --> Output Class Initialized
+INFO - 2017-05-31 10:01:56 --> Security Class Initialized
+DEBUG - 2017-05-31 10:01:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:01:56 --> Input Class Initialized
+INFO - 2017-05-31 10:01:56 --> Language Class Initialized
+INFO - 2017-05-31 10:01:56 --> Loader Class Initialized
+INFO - 2017-05-31 10:01:56 --> Controller Class Initialized
+INFO - 2017-05-31 10:01:56 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:01:56 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:01:56 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:01:56 --> Model Class Initialized
+INFO - 2017-05-31 10:01:56 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:01:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:01:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:01:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:01:56 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:01:56 --> Final output sent to browser
+DEBUG - 2017-05-31 10:01:56 --> Total execution time: 0.3347
+INFO - 2017-05-31 10:02:02 --> Config Class Initialized
+INFO - 2017-05-31 10:02:02 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:02:02 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:02:02 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:02:02 --> URI Class Initialized
+INFO - 2017-05-31 10:02:02 --> Router Class Initialized
+INFO - 2017-05-31 10:02:02 --> Output Class Initialized
+INFO - 2017-05-31 10:02:02 --> Security Class Initialized
+DEBUG - 2017-05-31 10:02:02 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:02:02 --> Input Class Initialized
+INFO - 2017-05-31 10:02:02 --> Language Class Initialized
+INFO - 2017-05-31 10:02:02 --> Loader Class Initialized
+INFO - 2017-05-31 10:02:02 --> Controller Class Initialized
+INFO - 2017-05-31 10:02:02 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:02:02 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:02:02 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:02:02 --> Model Class Initialized
+INFO - 2017-05-31 10:02:02 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:02:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:02:02 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:02:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:02:03 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:02:03 --> Final output sent to browser
+DEBUG - 2017-05-31 10:02:03 --> Total execution time: 0.1601
+INFO - 2017-05-31 10:02:04 --> Config Class Initialized
+INFO - 2017-05-31 10:02:04 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:02:04 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:02:04 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:02:04 --> URI Class Initialized
+INFO - 2017-05-31 10:02:04 --> Router Class Initialized
+INFO - 2017-05-31 10:02:04 --> Output Class Initialized
+INFO - 2017-05-31 10:02:04 --> Security Class Initialized
+DEBUG - 2017-05-31 10:02:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:02:04 --> Input Class Initialized
+INFO - 2017-05-31 10:02:04 --> Language Class Initialized
+INFO - 2017-05-31 10:02:04 --> Loader Class Initialized
+INFO - 2017-05-31 10:02:04 --> Controller Class Initialized
+INFO - 2017-05-31 10:02:04 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:02:04 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:02:04 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:02:04 --> Model Class Initialized
+INFO - 2017-05-31 10:02:04 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:02:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:02:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:02:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:02:04 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:02:04 --> Final output sent to browser
+DEBUG - 2017-05-31 10:02:04 --> Total execution time: 0.3225
+INFO - 2017-05-31 10:02:12 --> Config Class Initialized
+INFO - 2017-05-31 10:02:12 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:02:12 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:02:12 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:02:12 --> URI Class Initialized
+INFO - 2017-05-31 10:02:12 --> Router Class Initialized
+INFO - 2017-05-31 10:02:12 --> Output Class Initialized
+INFO - 2017-05-31 10:02:12 --> Security Class Initialized
+DEBUG - 2017-05-31 10:02:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:02:12 --> Input Class Initialized
+INFO - 2017-05-31 10:02:12 --> Language Class Initialized
+INFO - 2017-05-31 10:02:12 --> Loader Class Initialized
+INFO - 2017-05-31 10:02:12 --> Controller Class Initialized
+INFO - 2017-05-31 10:02:12 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:02:12 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:02:12 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:02:12 --> Model Class Initialized
+INFO - 2017-05-31 10:02:12 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:02:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:02:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:02:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:02:12 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:02:12 --> Final output sent to browser
+DEBUG - 2017-05-31 10:02:12 --> Total execution time: 0.1432
+INFO - 2017-05-31 10:02:13 --> Config Class Initialized
+INFO - 2017-05-31 10:02:13 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:02:13 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:02:13 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:02:13 --> URI Class Initialized
+INFO - 2017-05-31 10:02:13 --> Router Class Initialized
+INFO - 2017-05-31 10:02:13 --> Output Class Initialized
+INFO - 2017-05-31 10:02:13 --> Security Class Initialized
+DEBUG - 2017-05-31 10:02:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:02:13 --> Input Class Initialized
+INFO - 2017-05-31 10:02:13 --> Language Class Initialized
+INFO - 2017-05-31 10:02:13 --> Loader Class Initialized
+INFO - 2017-05-31 10:02:13 --> Controller Class Initialized
+INFO - 2017-05-31 10:02:13 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:02:13 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:02:13 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:02:13 --> Model Class Initialized
+INFO - 2017-05-31 10:02:13 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:02:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:02:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:02:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:02:13 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:02:13 --> Final output sent to browser
+DEBUG - 2017-05-31 10:02:13 --> Total execution time: 0.1459
+INFO - 2017-05-31 10:02:44 --> Config Class Initialized
+INFO - 2017-05-31 10:02:44 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:02:44 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:02:44 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:02:44 --> URI Class Initialized
+INFO - 2017-05-31 10:02:44 --> Router Class Initialized
+INFO - 2017-05-31 10:02:44 --> Output Class Initialized
+INFO - 2017-05-31 10:02:44 --> Security Class Initialized
+DEBUG - 2017-05-31 10:02:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:02:44 --> Input Class Initialized
+INFO - 2017-05-31 10:02:44 --> Language Class Initialized
+INFO - 2017-05-31 10:02:44 --> Loader Class Initialized
+INFO - 2017-05-31 10:02:44 --> Controller Class Initialized
+INFO - 2017-05-31 10:02:44 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:02:44 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:02:44 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:02:44 --> Model Class Initialized
+INFO - 2017-05-31 10:02:44 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:02:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:02:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:02:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:02:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:02:44 --> Final output sent to browser
+DEBUG - 2017-05-31 10:02:44 --> Total execution time: 0.1352
+INFO - 2017-05-31 10:02:57 --> Config Class Initialized
+INFO - 2017-05-31 10:02:57 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:02:57 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:02:57 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:02:57 --> URI Class Initialized
+INFO - 2017-05-31 10:02:57 --> Router Class Initialized
+INFO - 2017-05-31 10:02:57 --> Output Class Initialized
+INFO - 2017-05-31 10:02:57 --> Security Class Initialized
+DEBUG - 2017-05-31 10:02:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:02:57 --> Input Class Initialized
+INFO - 2017-05-31 10:02:57 --> Language Class Initialized
+INFO - 2017-05-31 10:02:57 --> Loader Class Initialized
+INFO - 2017-05-31 10:02:57 --> Controller Class Initialized
+INFO - 2017-05-31 10:02:57 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:02:57 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:02:57 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:02:57 --> Model Class Initialized
+INFO - 2017-05-31 10:02:57 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:02:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:02:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:02:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:02:57 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:02:57 --> Final output sent to browser
+DEBUG - 2017-05-31 10:02:57 --> Total execution time: 0.1662
+INFO - 2017-05-31 10:03:10 --> Config Class Initialized
+INFO - 2017-05-31 10:03:10 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:03:10 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:03:10 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:03:10 --> URI Class Initialized
+INFO - 2017-05-31 10:03:10 --> Router Class Initialized
+INFO - 2017-05-31 10:03:10 --> Output Class Initialized
+INFO - 2017-05-31 10:03:10 --> Security Class Initialized
+DEBUG - 2017-05-31 10:03:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:03:10 --> Input Class Initialized
+INFO - 2017-05-31 10:03:10 --> Language Class Initialized
+INFO - 2017-05-31 10:03:10 --> Loader Class Initialized
+INFO - 2017-05-31 10:03:10 --> Controller Class Initialized
+INFO - 2017-05-31 10:03:10 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:03:10 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:03:10 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:03:10 --> Model Class Initialized
+INFO - 2017-05-31 10:03:10 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:03:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:03:10 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:03:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:03:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:03:11 --> Final output sent to browser
+DEBUG - 2017-05-31 10:03:11 --> Total execution time: 0.2276
+INFO - 2017-05-31 10:03:32 --> Config Class Initialized
+INFO - 2017-05-31 10:03:32 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:03:32 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:03:32 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:03:32 --> URI Class Initialized
+INFO - 2017-05-31 10:03:32 --> Router Class Initialized
+INFO - 2017-05-31 10:03:32 --> Output Class Initialized
+INFO - 2017-05-31 10:03:32 --> Security Class Initialized
+DEBUG - 2017-05-31 10:03:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:03:32 --> Input Class Initialized
+INFO - 2017-05-31 10:03:32 --> Language Class Initialized
+INFO - 2017-05-31 10:03:32 --> Loader Class Initialized
+INFO - 2017-05-31 10:03:32 --> Controller Class Initialized
+INFO - 2017-05-31 10:03:32 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:03:32 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:03:32 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:03:32 --> Model Class Initialized
+INFO - 2017-05-31 10:03:32 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:03:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:03:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:03:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:03:32 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:03:32 --> Final output sent to browser
+DEBUG - 2017-05-31 10:03:32 --> Total execution time: 0.1534
+INFO - 2017-05-31 10:03:40 --> Config Class Initialized
+INFO - 2017-05-31 10:03:40 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:03:40 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:03:40 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:03:40 --> URI Class Initialized
+INFO - 2017-05-31 10:03:40 --> Router Class Initialized
+INFO - 2017-05-31 10:03:40 --> Output Class Initialized
+INFO - 2017-05-31 10:03:40 --> Security Class Initialized
+DEBUG - 2017-05-31 10:03:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:03:40 --> Input Class Initialized
+INFO - 2017-05-31 10:03:40 --> Language Class Initialized
+INFO - 2017-05-31 10:03:40 --> Loader Class Initialized
+INFO - 2017-05-31 10:03:40 --> Controller Class Initialized
+INFO - 2017-05-31 10:03:40 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:03:40 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:03:40 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:03:40 --> Model Class Initialized
+INFO - 2017-05-31 10:03:40 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:03:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:03:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:03:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:03:40 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:03:40 --> Final output sent to browser
+DEBUG - 2017-05-31 10:03:40 --> Total execution time: 0.1603
+INFO - 2017-05-31 10:03:45 --> Config Class Initialized
+INFO - 2017-05-31 10:03:45 --> Hooks Class Initialized
+DEBUG - 2017-05-31 10:03:45 --> UTF-8 Support Enabled
+INFO - 2017-05-31 10:03:45 --> Utf8 Class Initialized
+INFO - 2017-05-31 10:03:45 --> URI Class Initialized
+INFO - 2017-05-31 10:03:45 --> Router Class Initialized
+INFO - 2017-05-31 10:03:45 --> Output Class Initialized
+INFO - 2017-05-31 10:03:45 --> Security Class Initialized
+DEBUG - 2017-05-31 10:03:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-05-31 10:03:45 --> Input Class Initialized
+INFO - 2017-05-31 10:03:45 --> Language Class Initialized
+INFO - 2017-05-31 10:03:45 --> Loader Class Initialized
+INFO - 2017-05-31 10:03:45 --> Controller Class Initialized
+INFO - 2017-05-31 10:03:45 --> Database Driver Class Initialized
+INFO - 2017-05-31 10:03:45 --> Helper loaded: url_helper
+INFO - 2017-05-31 10:03:45 --> Session: Class initialized using 'database' driver.
+INFO - 2017-05-31 10:03:45 --> Model Class Initialized
+INFO - 2017-05-31 10:03:45 --> Helper loaded: cookie_helper
+INFO - 2017-05-31 10:03:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head_up.php
+INFO - 2017-05-31 10:03:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/head.php
+INFO - 2017-05-31 10:03:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/team_record.php
+INFO - 2017-05-31 10:03:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/footer.php
+INFO - 2017-05-31 10:03:45 --> Final output sent to browser
+DEBUG - 2017-05-31 10:03:45 --> Total execution time: 0.1429
