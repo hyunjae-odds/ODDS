@@ -162,8 +162,8 @@
                                                 <ul>
                                                     <li class="th"><p class="top_t3">O/U통계</p><p class="top_s3">경기수</p><p class="top_s3">오버</p><p class="top_g3">확률</p></li>
                                                     <li class="td"><p class="top_t3">오버 <?=$over_under_reference_value-1;?></p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['over'];?></p><p class="top_g3"><?=number_format($league_statistics['over']/$league_statistics['g']*100);?>%</p></li>
-                                                    <li class="td"><p class="top_t3">오버 <?=$over_under_reference_value+1;?></p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['over_minus1'];?></p><p class="top_g3"><?=number_format($league_statistics['over_minus1']/$league_statistics['g']*100);?>%</p></li>
                                                     <li class="td"><p class="top_t3">오버 <?=$over_under_reference_value;?></p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['over_plus1'];?></p><p class="top_g3"><?=number_format($league_statistics['over_plus1']/$league_statistics['g']*100);?>%</p></li>
+                                                    <li class="td"><p class="top_t3">오버 <?=$over_under_reference_value+1;?></p><p class="top_s3"><?=$league_statistics['g'];?></p><p class="top_s3"><?=$league_statistics['over_minus1'];?></p><p class="top_g3"><?=number_format($league_statistics['over_minus1']/$league_statistics['g']*100);?>%</p></li>
                                                 </ul>
                                             </div>
                                             <p class="clear"></p>

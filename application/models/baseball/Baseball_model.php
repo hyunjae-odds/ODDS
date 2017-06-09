@@ -633,6 +633,25 @@
         return floor(number_format($values/count($total),1)).'.5';
     }
 
+    function get_recent_ten_game_over_under($team_name, $over_under_reference_value){
+        $count=0;
+        $game_count=0;
+        $result=$this->get_result('all');
+
+        foreach($result as $item):
+            if($item->away==$team_name || $item->home==$team_name):
+                if($game_count<10):
+                    $game_count++;
+                    if($item->away_score+$item->home_score > $over_under_reference_value):
+                        $count++;
+                    endif;
+                endif;
+            endif;
+        endforeach;
+
+        return $count;
+    }
+
     function get_result($inning){
         $this->db->where('away_score!=', '');
         $this->db->where('home_score!=', '');
@@ -707,6 +726,81 @@
         array_splice($result_away,5);
 
         $result_set=array('home_win_5'=>$result_home, 'away_win_5'=>$result_away);
+
+        return $result_set;
+    }
+
+    function get_relative_match_result($away, $home, $over_under_reference_value){
+        $total_game_count=0;
+        $game_count=0;
+        $away_win_count=0;
+        $away_lose_count=0;
+        $away_win_lose_arr=array();
+        $home_win_lose_arr=array();
+        $away_game_no_arr=array();
+        $over_under=0;
+        $over_under_arr=array();
+        $result=$this->get_result('all');
+        $data_set=array();
+        $result_set=array();
+
+        foreach($result as $item):
+            if($game_count<10):
+                if(($item->away==$away && $item->home==$home) || ($item->away==$home && $item->home==$away)):
+                    $game_count++;
+                    array_push($data_set, $item);
+                endif;
+            endif;
+
+//          승률/오버언더/승패
+            if($item->away==$away && $item->home==$home):
+                $total_game_count++;
+                if($item->away_score > $item->home_score):
+                    $away_win_count++;
+                    array_push($away_win_lose_arr,'win');
+                    array_push($home_win_lose_arr,'lose');
+                    array_push($away_game_no_arr, $item->no);
+                elseif($item->away_score < $item->home_score):
+                    $away_lose_count++;
+                    array_push($away_win_lose_arr,'lose');
+                    array_push($home_win_lose_arr,'win');
+                    array_push($away_game_no_arr, $item->no);
+                endif;
+
+                if($item->away_score+$item->home_score > $over_under_reference_value):
+                    $over_under++;
+                    array_push($over_under_arr,'plus');
+                else: array_push($over_under_arr,'minus'); endif;
+            elseif($item->away==$home && $item->home==$away):
+                $total_game_count++;
+                if($item->away_score < $item->home_score):
+                    $away_win_count++;
+                    array_push($away_win_lose_arr,'win');
+                    array_push($home_win_lose_arr,'lose');
+                    array_push($away_game_no_arr, $item->no);
+                elseif($item->away_score > $item->home_score):
+                    $away_lose_count++;
+                    array_push($away_win_lose_arr,'lose');
+                    array_push($home_win_lose_arr,'win');
+                    array_push($away_game_no_arr, $item->no);
+                endif;
+
+                if($item->away_score+$item->home_score > $over_under_reference_value):
+                    $over_under++;
+                    array_push($over_under_arr,'plus');
+                else: array_push($over_under_arr,'minus'); endif;
+            endif;
+        endforeach;
+        $result_set['data']=$data_set;
+        $result_set['g']=$total_game_count;
+        $result_set['away_win']=$away_win_count;
+        $result_set['away_lose']=$away_lose_count;
+        $result_set['away_win_rate']=number_format($away_win_count/$total_game_count*100);
+        $result_set['away_win_lose_str']=array_reverse($away_win_lose_arr);
+        $result_set['home_win_lose_str']=array_reverse($home_win_lose_arr);
+        $result_set['away_game_no']=$away_game_no_arr;
+        $result_set['ou_count']=$over_under;
+        $result_set['ou_str']=array_reverse($over_under_arr);
 
         return $result_set;
     }
@@ -841,5 +935,9 @@
         $db['save_queries']=TRUE;
 
         return $this->load->database($db, TRUE);
+    }
+
+    function get_team_introduce($team){
+        return $this->db->get_where('kbo_team_introduce', array('team'=>$team))->row();
     }
 }

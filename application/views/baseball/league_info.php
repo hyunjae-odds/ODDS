@@ -48,7 +48,7 @@
 							?>
 								<tr>
 									<td><?=$item->time;?></td>
-									<td class="left pl20"><a href="team_info.php"><?=$item->away;?></a> vs <a href=""><?=$item->home;?></a></td>
+									<td class="left pl20"><a href="/baseball/player?team=<?=$item->away;?>"><?=$item->away;?></a> vs <a href="/baseball/player?team=<?=$item->home;?>"><?=$item->home;?></a></td>
 									<td class="red">24</td>
 									<td>1.24</td>
 									<td>2.13</td>

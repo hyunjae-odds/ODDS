@@ -50,9 +50,13 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .pl5 {padding-left:5px !important;}
 .pl10 {padding-left:10px !important;}
 .pl20 {padding-left:20px !important;}
+.pt5 {padding-top:5px !important;}
 .pt10 {padding-top:10px !important;}
 .pt15 {padding-top:15px !important;}
 .pt20 {padding-top:20px !important;}
+.ml10 {margin-left:10px !important;}
+.mr10 {margin-right:10px !important;}
+.mt20 {margin-top:20px !important;}
 .mb10 {margin-bottom:10px !important;}
 .mb20 {margin-bottom:20px !important;}
 .ml40 {margin-left:40px !important;}
@@ -153,9 +157,80 @@ h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 .gnb .gnbMenu>ul>li.on span {display:block; width:250px; height:5px; background:#e90052; position:absolute; left:0; bottom:0px;}
 .login {position:absolute;right:-108px;top:4px; border-left:1px solid #595959;}
 .login>a {color:#fff; font-size:17px; font-weight:bold; height:30px; padding:29px 28px 21px; display:block;}
-.login .loginWrap {display:none; position:absolute; width:100%; height:100%; top:0; left:0; opacity:0.5; z-index:1; background:#000;}/* 로그인박스 */
-.login .loginWrap .loginBox {z-index:1;}
+/* 로그인박스 */
+.login .loginWrap {position:fixed;top:84px;left:0;right:0;width:100%;height:100%;display:none;z-index:5;}
+.login .loginWrap .bg_b {display:none;position:absolute;background:#000;opacity:0.7;width:100%;height:100%;}
+.login .loginWrap .loginBox {display:none;}
+.loginBox > div {display:none;position:absolute;top:60px;left:0;right:0;margin:0 auto;width:660px;background:#fff;}
+.loginBox > div a.close_btn {position:absolute;top:10px;right:10px;display:block;width:21px;height:21px;background:url("../image/blog/btn_close_bloglist_view_w.jpg") no-repeat;}
+.loginBox > div h4 {position:relative;border:none;height:42px;line-height:42px;padding-left:74px;text-align:left; font-size:16px;color:#fff;background:#ff225b url("../image/base/title_red.jpg") no-repeat;overflow:hidden;}
+.loginBox > div .log_b {padding:15px 20px 20px;}
+.loginBox > div .log_b > p {font-size:12px;letter-spacing:-0.02em;color:#888;}
+.loginBox > div .log_b > p span {margin-right:20px;}
+.loginBox > div .log_b > p span input {vertical-align:middle;margin-right:5px;}
+.loginBox > div .log_b > p.center {text-align:center;} 
+.loginBox > div .log_b > p.center a {padding:0 15px;border-right:1px solid #444;height:12px;line-height:12px;}
+.loginBox > div .log_b > p.center a:nth-last-of-type(1) {border:none;}
+.log_no {position:absolute;top:130px;left:0;right:0;margin:0 auto;background:#fff;border:1px solid #ccc;box-shadow:0 0 10px #555;width:340px;padding:20px 0 10px;text-align:center;}
+.log_no .border_top {border-top:1px solid #ccc;margin:10px 20px 0;}
+.loginBox a.btn {margin-top:13px;border:1px solid #ccc;background:url("../image/blog/bg_g.jpg") repeat-x 0 bottom;height:28px;line-height:26px;display:inline-block;padding:0 15px;font-size:13px;}
+.log_no p.gray {color:#888;padding:10px 0;}
+.loginBox > div .log_b .relative {height:41px;margin-top:30px;}
+.loginBox > div .log_b .relative ul.tab01 {top:0;left:0;}
+.loginBox > div .log_b .relative ul.tab01 a {padding:0 25px; line-height:37px;}
+.loginBox > div .log_b .relative ul.tab01 li.on a {line-height:28px;}
+.loginBox > div .log_b .cho_p2 {padding:20px 0;}
+.loginBox > div .log_b .cho_p2 span {color:#444;margin:0 30px;}
+.loginBox > div .log_b .cho_p2 label {margin-right:30px; font-weight:bold;}
+.loginBox > div .log_b .cho_p2 input {vertical-align:middle;}
+.loginBox > div.logbox03 {width:900px;}
+.loginBox > div.logbox03 .cho_p {font-weight:bold;font-size:16px;cursor:pointer;}
+.loginBox > div.logbox03 .log_b {height:600px;overflow-y:scroll;}
+.loginBox > div.logbox03 .log_b > div {padding-top:15px;}
+.loginBox > div.logbox03 .log_b > div.border_bottom {border-bottom:1px solid #ccc;padding-bottom:10px;}
+.loginBox > div.logbox03 .log_b > div .cho_p .red {font-size:12px;font-weight:normal;margin-left:5px;}
+.loginBox > div.logbox03 .log_b > div:nth-of-type(1) .cho_p .red {border-bottom:1px solid #ff225b;font-size:16px;font-weight:bold; }
+.loginBox > div.logbox03 .log_b span.check {margin-left:10px;float:left;display:inline-block;width:24px;height:24px;background:url("../image/base/cho_p.jpg") no-repeat;}
+.loginBox > div.logbox03 .log_b span.check.on {margin-left:5px;float:left;display:inline-block;width:24px;height:24px;background:url("../image/base/cho_p.jpg") no-repeat -24px 0;}
+.loginBox > div.logbox03 .log_b p.cho_p {float:left;line-height:24px;margin-left:20px;letter-spacing:-0.02em;}
+.loginBox > div.logbox03 .log_b > div .infobox {border:1px solid #f0f0f0;padding:0 30px;margin:10px 10px 0;background:#f7f7f7;overflow-y:scroll;height:110px;font-size:12px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray {padding:20px;background:#f5f6f7;margin:0 10px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox {}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li {background:#fff;float:left;width:389px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li a.btn {margin-top:0;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li:nth-of-type(1) {width:780px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li input {width:370px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li:nth-of-type(1) input {width:660px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li:nth-of-type(3) input {width:369px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li input.pw1 {background:#fff url("../image/base/input_pw.jpg") no-repeat 358px 14px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox > li input.pw2 {background:#fff url("../image/base/input_pw.jpg") no-repeat 356px -47px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li {width:780px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p {float:left;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p span {margin-top:9px;border:1px solid #ccc;cursor:pointer;display:inline-block;width:190px;text-align:center;height:30px;line-height:30px;color:#999;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p span:nth-of-type(1) {border-right:none;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 label {font-size:14px;color:#999;border-right:1px solid #ccc;float:left;font-family:"맑은 고딕", Malgun Gothic !important;background:#f7f7f7;line-height:50px;padding:0 10px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 input {float:left;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .relative {float:left;margin:0;height:50px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .select02 {position:relative;right:0;top:-2px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .select02 p {border:none;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .select02 p span {font-size:14px;font-weight:normal;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .select02 ul {top:8px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .border_right {border-right:1px solid #ccc;height:25px;margin-top:13px;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .center {text-align:center;}
 
+
+ul.input_textbox > li {border:1px solid #ccc;border-top:none;}
+ul.input_textbox > li:nth-of-type(1) {border-top:1px solid #ccc;}
+ul.input_textbox > li input {font-family:"맑은 고딕", Malgun Gothic !important;background:#fff;border:none;padding:0 10px;line-height:50px;color:#999;width:598px;font-size:14px;}
+ul.input_textbox li input.pw1 {background:#fff url("../image/base/input_pw.jpg") no-repeat 583px 14px;}
+ul.input_textbox li input.pw2 {background:#fff url("../image/base/input_pw.jpg") no-repeat 583px -47px;}
+a.red_btn {width:100%;height:56px;font-weight:bold;text-align:center;background:#ff225b;display:block;line-height:56px;font-size:16px;color:#fff;}
+.log_c_box {margin:17px 0;padding:15px 0 13px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;height:42px;}
+.log_c_box li {float:left;margin-right:7px;width:202px;height:42px;font-size:0;}
+.log_c_box li.log_c1 {background:url("../image/base/btn_logcho.jpg") no-repeat;}
+.log_c_box li.log_c2 {background:url("../image/base/btn_logcho.jpg") no-repeat 0 -42px;}
+.log_c_box li.log_c3 {background:url("../image/base/btn_logcho.jpg") no-repeat 0 -84px;margin-right:0;}
+.log_c_box li a {width:202px;height:42px;display:inline-block;}
 .clear {clear:both;content:"";display:block;height:0;width:0;}
 
 
