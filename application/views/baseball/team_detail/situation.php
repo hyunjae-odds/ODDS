@@ -1,17 +1,18 @@
-﻿<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css" />
+﻿<?php $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','두산'=>'두산 베어스','롯데'=>'롯데 자이언츠','KIA'=>'KIA 타이거즈','한화'=>'한화 이글스','LG'=>'LG 트윈스','NC'=>'NC 다이노스','kt'=>'kt 위즈','KT'=>'kt 위즈','삼성'=>'삼성 라이온즈'); ?>
+<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css" />
 <div class="livescore game">
     <div class="topTitle">
         <p>
-            <span>리그정보 - 야구 - 대한민국 - KBO - <span class="underline"><?=$team_introduce->team_full_name;?></span></span>
+            <span>리그정보 - 야구 - 대한민국 - KBO - <span class="underline"><?=$full_name_team[$team];?></span></span>
             <span class="sentence">SPORTS COMMUNITY POTAL <span>ODDSNAVI</span></span>
         </p>
-        <h2 class="tit02"><?=$team_introduce->team_full_name;?></h2>
+        <h2 class="tit02"><?=$full_name_team[$team];?></h2>
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li class=""><a href="/baseball/team_info">시즌 기록</a></li>
-            <li class=""><a href="/baseball/schedule">경기 결과</a></li>
-            <li class=""><a href="/baseball/player">선수 기록</a></li>
+            <li class=""><a href="/baseball/team_info?team=<?=$team;?>">시즌 기록</a></li>
+            <li class=""><a href="/baseball/schedule/<?=date('Y');?>/<?=date('m');?>?team=<?=$team;?>">경기 결과</a></li>
+            <li class=""><a href="/baseball/player?team=<?=$team;?>">선수 기록</a></li>
             <li class="on"><a href="/baseball/situation?team=<?=$team;?>">선수 현황</a></li>
             <li class=""><a href="/baseball/team?team=<?=$team;?>">팀 소개</a></li>
         </ul>
@@ -43,8 +44,8 @@
                                     if($player->position=='투수'):
                                 ?>
                                     <li>
-                                        <p><a href="../player_info_hitter.php"><img src="http://www.koreabaseball.com/file/person/middle/<?=$player->player_id;?>.jpg" alt="<?=$player->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></a></p>
-                                        <h4><a href="../player_info_hitter.php"><?=$player->name;?></a></h4>
+                                        <p><a href="/baseball/player_detail/pitcher/<?=$player->player_id;?>?team=<?=$team;?>"><img src="http://www.koreabaseball.com/file/person/middle/<?=$player->player_id;?>.jpg" alt="<?=$player->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></a></p>
+                                        <h4><a href="/baseball/player_detail/pitcher/<?=$player->player_id;?>?team=<?=$team;?>"><?=$player->name;?></a></h4>
                                         <p>1990년 7월 30일</p>
                                         <span>No.<?=$player->back_num;?></span>
                                     </li>
@@ -57,8 +58,8 @@
                                     if($player->position=='내야수' || $player->position=='포수'):
                                         ?>
                                         <li>
-                                            <p><a href="../player_info_hitter.php"><img src="http://www.koreabaseball.com/file/person/middle/<?=$player->player_id;?>.jpg" alt="<?=$player->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></a></p>
-                                            <h4><a href="../player_info_hitter.php"><?=$player->name;?></a></h4>
+                                            <p><a href="/baseball/player_detail/batter/<?=$player->player_id;?>?team=<?=$team;?>"><img src="http://www.koreabaseball.com/file/person/middle/<?=$player->player_id;?>.jpg" alt="<?=$player->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></a></p>
+                                            <h4><a href="/baseball/player_detail/batter/<?=$player->player_id;?>?team=<?=$team;?>"><?=$player->name;?></a></h4>
                                             <p>1990년 7월 30일</p>
                                             <span>No.<?=$player->back_num;?></span>
                                         </li>
@@ -71,8 +72,8 @@
                                     if($player->position=='외야수'):
                                         ?>
                                         <li>
-                                            <p><a href="../player_info_hitter.php"><img src="http://www.koreabaseball.com/file/person/middle/<?=$player->player_id;?>.jpg" alt="<?=$player->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></a></p>
-                                            <h4><a href="../player_info_hitter.php"><?=$player->name;?></a></h4>
+                                            <p><a href="/baseball/player_detail/batter/<?=$player->player_id;?>?team=<?=$team;?>"><img src="http://www.koreabaseball.com/file/person/middle/<?=$player->player_id;?>.jpg" alt="<?=$player->player_id;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></a></p>
+                                            <h4><a href="/baseball/player_detail/batter/<?=$player->player_id;?>?team=<?=$team;?>"><?=$player->name;?></a></h4>
                                             <p>1990년 7월 30일</p>
                                             <span>No.<?=$player->back_num;?></span>
                                         </li>

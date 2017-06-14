@@ -11,7 +11,7 @@ class Main extends MY_Controller {
 	function index(){
 		$this->load->view("head_up");
 		$this->load->view("head_main");
-		$this->load->view("index");
+		$this->load->view("main");
 		$this->load->view("footer");
 		$this->load->view("footer_down");
 		//echo '</body></html>'; 

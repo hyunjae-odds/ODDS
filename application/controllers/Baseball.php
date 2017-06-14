@@ -7,8 +7,8 @@ class Baseball extends MY_Controller{
 
 //  메인탭6
     function league_info(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         if($this->input->get('scroll_top')!=null) $scroll_top=$this->input->get('scroll_top'); else $scroll_top=0;
         if($this->input->get('home_away')==null || $this->input->get('home_away')=='all') $home_away='all'; else $home_away=$this->input->get('home_away');
@@ -40,22 +40,22 @@ class Baseball extends MY_Controller{
 
         $this->load->view("/baseball/league_info", array('total'=>$total,'offense'=>$offense,'defence'=>$defence,'schedule'=>$schedule,'handicap'=>$handicap,'league_statistics'=>$league_statistics,'scroll_top'=>$scroll_top,
                                                          'duration'=>$duration,'home_away'=>$home_away,'sort'=>$sort,'over_under_reference_value'=>$over_under_reference_value));
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function result($select_year, $select_month){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
-        $result=$this->baseball_model->getByMonth($select_month);
+        $result=$this->baseball_model->getByMonth($select_month, 'all');
         $this->load->view("/baseball/result", array('result'=>$result, 'select_year'=>$select_year, 'select_month'=>$select_month));
 
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function stats_win_rate(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         $inning=($this->input->get('inning')==null || $this->input->get('inning')=='all')? $inning='all' : $inning=$this->input->get('inning');
         $duration=($this->input->get('duration')==null || $this->input->get('duration')=='all')? 'all' : $this->input->get('duration');
@@ -221,13 +221,13 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/stats_win_rate", array('handicap'=>$handicap,'home_away_win_5'=>$home_away_win_5,'get_score_5'=>$get_score_5,'score_margin_5'=>$score_margin_5,'team'=>$team,'rank_board'=>$result_set,'over_under_statistics'=>$over_under_statistics,
                           'recent_10_game_over_5'=>$total,'recent_10_game_under_5'=>$total_under_5,'league_statistics'=>$league_statistics,'inning'=>$inning,'duration'=>$duration,'handicap'=>$handicap,'tab_selector'=>$tab_selector,'over_under_statistics_under5'=>$over_under_statistics_under5,
                           'sort_home_away'=>$sort_home_away,'over_under'=>$over_under,'recent_over_5'=>$recent_over_under_10,'recent_under_5'=>$recent_under_5,'over_under_reference_value'=>$over_under_reference_value));
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function team_record($select_year, $select_month, $offense_sort, $defence_sort){
         $this->delete_cookies();
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
 //		소팅으로 페이지 새로고쳤을때 이전 스크롤위치로 이동
         $mouseTop=($this->input->get('scroll_top')!=null) ? $this->input->get('scroll_top') : 0;
@@ -265,12 +265,12 @@ class Baseball extends MY_Controller{
 
         $this->load->view("/baseball/team_record", array('select_year'=>$select_year,'select_month'=>$select_month,'offense'=>$offense,'defence'=>$defence,'focus'=>$focus,'bold_num'=>$boldNum,
                           'total'=>$total,'plus_minus'=>$plus_minus, 'mouseTop'=>$mouseTop,'sort'=>$sort));
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function player_record(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         $this->load->helper('cookie');
         $this->load->library('pagination');
@@ -334,20 +334,20 @@ class Baseball extends MY_Controller{
 
         $this->load->view("/baseball/player_record", array('batter'=>$batter,'pitcher'=>$pitcher,'batter5'=>$batter5,'pitcher5'=>$pitcher5,'runner5'=>$runner5,'mouseTop'=>$mouseTop,'focus'=>$focus,'bold_num'=>$boldNum,
                                                            'offset'=>$offset,'pitcher_sort'=>$pitcher_sort,'batter_sort'=>$batter_sort));
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function score(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
         $this->load->view("/baseball/score");
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
 //  추가 상세 페이지
     function match_information($schedule_no, $scroll_top){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
 //      pagination
         $this->load->library('pagination');
@@ -435,32 +435,155 @@ class Baseball extends MY_Controller{
         $this->load->view("/baseball/match", array('schedule_no'=>$schedule_no,'data'=>$result,'comment_list'=>$comment_list,'scroll_top'=>$scroll_top,'team_total'=>$team_total,'over_under_reference_value'=>$over_under_reference_value,
             'relative_match_result'=>$relative_match_result,'plus_away_rank'=>$plus_away_rank,'away_result'=>$away_result,'home_result'=>$home_result,'handicap_result'=>$handicap_result,
             'plus_home_rank'=>$plus_home_rank,'another_games'=>$another_games,'score_board'=>$score_board,'players'=>$players));
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function team_info(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
+        $handicap=1.5;
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
-        $this->load->view("/baseball/team_detail/team_info", array('team'=>$team));
+        $home_away=($this->input->get('home_away')!=null)? $this->input->get('home_away') : 'all';
+        $first_statistics=$this->baseball_model->get_record_by_team($team);
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus_rank=$this->get_rank_plus_minus($team);
+        $over_under_reference_value=$this->baseball_model->get_over_under();
+        $over_under=$this->baseball_model->get_all_game_over_under($team, $over_under_reference_value, $handicap);
+        $offense=$this->baseball_model->get('kbo_team_offense_2017');
+        $defence=$this->baseball_model->get('kbo_team_defence_2017');
 
-        $this->load->view("/baseball/footer");
+        $first_statistics['get_score']=$plus_minus[$team];
+        $first_statistics['lose_score']=$plus_minus[$team.'_lose'];
+        $first_statistics['get_score_rank']=$plus_minus_rank[$team];
+        $first_statistics['lose_score_rank']=$plus_minus_rank[$team.'_lose'];
+        $first_statistics['get_score_avg']=$plus_minus_rank[$team.'_plus'];
+        $first_statistics['lose_score_avg']=$plus_minus_rank[$team.'_lose_plus'];
+        $first_statistics['over']=$over_under['over'];
+        $first_statistics['g']=$over_under['g'];
+        $first_statistics['handicap_win']=$over_under['handicap_win'];
+        $first_statistics['win_lose']=array_reverse($over_under['win_lose']);
+        $first_statistics['over_under']=array_reverse($over_under['over_under']);
+
+//      팀 상세 기록
+        $team_detail_record['offense']['avg']=$this->get_rank($offense, $team, 'avg', 'DESC');
+        $team_detail_record['offense']['r']=$this->get_rank($offense, $team, 'r', 'DESC');
+        $team_detail_record['offense']['h']=$this->get_rank($offense, $team, 'h', 'DESC');
+        $team_detail_record['offense']['hr']=$this->get_rank($offense, $team, 'hr', 'DESC');
+        $team_detail_record['offense']['slg']=$this->get_rank($offense, $team, 'slg', 'DESC');
+        $team_detail_record['offense']['obp']=$this->get_rank($offense, $team, 'obp', 'DESC');
+        $team_detail_record['offense']['risp']=$this->get_rank($offense, $team, 'risp', 'DESC');
+        $team_detail_record['offense']['bb']=$this->get_rank($offense, $team, 'bb', 'DESC');
+        $team_detail_record['offense']['so']=$this->get_rank($offense, $team, 'so', 'DESC');
+        $team_detail_record['offense']['gdp']=$this->get_rank($offense, $team, 'gdp', 'DESC');
+
+        $team_detail_record['defence']['era']=$this->get_rank($defence, $team, 'era', 'ASC');
+        $team_detail_record['defence']['r']=$this->get_rank($defence, $team, 'r', 'DESC');
+        $team_detail_record['defence']['h']=$this->get_rank($defence, $team, 'h', 'DESC');
+        $team_detail_record['defence']['avg']=$this->get_rank($defence, $team, 'avg', 'DESC');
+        $team_detail_record['defence']['hr']=$this->get_rank($defence, $team, 'hr', 'DESC');
+        $team_detail_record['defence']['qs']=$this->get_rank($defence, $team, 'qs', 'DESC');
+        $team_detail_record['defence']['bb']=$this->get_rank($defence, $team, 'bb', 'DESC');
+        $team_detail_record['defence']['so']=$this->get_rank($defence, $team, 'so', 'DESC');
+        $team_detail_record['defence']['er']=$this->get_rank($defence, $team, 'er', 'DESC');
+        $team_detail_record['defence']['whip']=$this->get_rank($defence, $team, 'whip', 'ASC');
+
+        foreach($offense as $item) if($item->team==$team) $team_detail_record['offense_data']=$item;
+        foreach($defence as $item) if($item->team==$team) $team_detail_record['defence_data']=$item;
+
+        $rank_board=$this->getRankBoard('all', 'all', $home_away, 0 ,0);
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', $home_away);
+
+//      기록분석
+        $offense_title_str_arr=array('avg'=>'타율','r'=>'득점','h'=>'안타','hr'=>'홈런','slg'=>'장타율','obp'=>'출루율','risp'=>'득점권타율','bb'=>'볼넷','so'=>'삼진','gdp'=>'병살타');
+        $defence_title_str_arr=array('era'=>'방어율','r'=>'실점','h'=>'피안타','avg'=>'피안타율','hr'=>'피홈런','qs'=>'QS','bb'=>'볼넷','so'=>'삼진','er'=>'실책','whip'=>'whip');
+        $rank_to_str=array(1=>'매우 강함', 2=>'매우 강함', 3=>'강함', 4=>'강함', 5=>'보통', 6=>'보통', 7=>'약함', 8=>'약함', 9=>'매우 약함', 10=>'매우 약함');
+        $rank_to_str_reverse=array(1=>'매우 약함', 2=>'매우 약함', 3=>'약함', 4=>'약함', 5=>'보통', 6=>'보통', 7=>'강함', 8=>'강함', 9=>'매우 강함', 10=>'매우 강함');
+        $num_to_num=array(1=>1, 2=>1, 3=>2, 4=>2, 5=>'', 6=>'', 7=>4, 8=>4, 9=>3, 10=>3);
+        $num_to_num_reverse=array(1=>3, 2=>3, 3=>4, 4=>4, 5=>'', 6=>'', 7=>2, 8=>2, 9=>1, 10=>1);
+
+        $offense_anal=array('strong'=>array(), 'normal'=>array(), 'weak'=>array());
+        foreach($team_detail_record['offense'] as $key=>$item):
+            $row=array();
+            $row['rank']=$item;
+            $row['title']=$offense_title_str_arr[$key];
+            $row['value']=$team_detail_record['offense_data']->$key;
+            $row['strong_num']=($key=='so' || $key=='gdp')? $num_to_num_reverse[$item] : $num_to_num[$item];
+            $row['str']=($key=='so' || $key=='gdp')? $rank_to_str_reverse[$item] : $rank_to_str[$item];
+
+            if($row['strong_num']==1) array_push($offense_anal['strong'], $row);
+            elseif($row['strong_num']==2) array_push($offense_anal['strong'], $row);
+            elseif($row['strong_num']==3) array_push($offense_anal['weak'], $row);
+            elseif($row['strong_num']==4) array_push($offense_anal['weak'], $row);
+            else array_push($offense_anal['normal'], $row);
+        endforeach;
+
+        $max_size=sizeof($offense_anal['strong']);
+        if(sizeof($offense_anal['strong']) < sizeof($offense_anal['normal'])) $max_size=sizeof($offense_anal['normal']);
+        if($max_size < sizeof($offense_anal['weak'])) $max_size=sizeof($offense_anal['weak']);
+        $offense_anal['max_size']=$max_size;
+        sort($offense_anal['strong']); sort($offense_anal['normal']); sort($offense_anal['weak']);
+
+        $defence_anal=array('strong'=>array(), 'normal'=>array(), 'weak'=>array());
+        foreach($team_detail_record['defence'] as $key=>$item):
+            $row=array();
+            $row['rank']=$item;
+            $row['title']=$defence_title_str_arr[$key];
+            $row['value']=$team_detail_record['defence_data']->$key;
+            $row['strong_num']=($key=='r' || $key=='h' || $key=='avg' || $key=='hr' || $key=='bb' || $key=='er')? $num_to_num_reverse[$item] : $num_to_num[$item];
+            $row['str']=($key=='r' || $key=='h' || $key=='avg' || $key=='hr' || $key=='bb' || $key=='er')? $rank_to_str_reverse[$item] : $rank_to_str[$item];
+
+            if($row['strong_num']==1) array_push($defence_anal['strong'], $row);
+            elseif($row['strong_num']==2) array_push($defence_anal['strong'], $row);
+            elseif($row['strong_num']==3) array_push($defence_anal['weak'], $row);
+            elseif($row['strong_num']==4) array_push($defence_anal['weak'], $row);
+            else array_push($defence_anal['normal'], $row);
+        endforeach;
+
+        $max_size=sizeof($defence_anal['strong']);
+        if(sizeof($defence_anal['strong']) < sizeof($defence_anal['normal'])) $max_size=sizeof($defence_anal['normal']);
+        if($max_size < sizeof($defence_anal['weak'])) $max_size=sizeof($defence_anal['weak']);
+        $defence_anal['max_size']=$max_size;
+        sort($defence_anal['strong']); sort($defence_anal['normal']); sort($defence_anal['weak']);
+
+        $this->load->view("/baseball/team_detail/team_info", array('team'=>$team,'first_statistics'=>$first_statistics,'over_under_reference_value'=>$over_under_reference_value,'handicap'=>$handicap,'home_away'=>$home_away,
+                                                                   'rank_board'=>$rank_board,'plus_minus'=>$plus_minus,'team_detail_record'=>$team_detail_record,'offense_anal'=>$offense_anal,'defence_anal'=>$defence_anal));
+        $this->load->view("/footer");
     }
 
-    function schedule(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+    function schedule($select_year, $select_month){
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
+        $handicap=1.5;
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
-        $this->load->view("/baseball/team_detail/schedule", array('team'=>$team));
+        $first_statistics=$this->baseball_model->get_record_by_team($team);
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus_rank=$this->get_rank_plus_minus($team);
+        $over_under_reference_value=$this->baseball_model->get_over_under();
+        $over_under=$this->baseball_model->get_all_game_over_under($team, $over_under_reference_value, $handicap);
+        $result=$this->baseball_model->getByMonth($select_month, $team);
 
-        $this->load->view("/baseball/footer");
+        $first_statistics['get_score']=$plus_minus[$team];
+        $first_statistics['lose_score']=$plus_minus[$team.'_lose'];
+        $first_statistics['get_score_rank']=$plus_minus_rank[$team];
+        $first_statistics['lose_score_rank']=$plus_minus_rank[$team.'_lose'];
+        $first_statistics['get_score_avg']=$plus_minus_rank[$team.'_plus'];
+        $first_statistics['lose_score_avg']=$plus_minus_rank[$team.'_lose_plus'];
+        $first_statistics['over']=$over_under['over'];
+        $first_statistics['g']=$over_under['g'];
+        $first_statistics['handicap_win']=$over_under['handicap_win'];
+        $first_statistics['win_lose']=array_reverse($over_under['win_lose']);
+        $first_statistics['over_under']=array_reverse($over_under['over_under']);
+
+        $this->load->view("/baseball/team_detail/schedule", array('team'=>$team,'first_statistics'=>$first_statistics,'over_under_reference_value'=>$over_under_reference_value,
+                                                                  'handicap'=>$handicap,'result'=>$result,'select_year'=>$select_year,'select_month'=>$select_month));
+        $this->load->view("/footer");
     }
 
     function player(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         $this->load->helper('cookie');
         $this->load->library('pagination');
@@ -497,9 +620,66 @@ class Baseball extends MY_Controller{
             $batter_sort=$this->input->cookie('batter_sort');
         endif;
 
+        $teams=array('SK'=>1,'KT'=>2,'삼성'=>3,'NC'=>4,'두산'=>5,'넥센'=>6,'LG'=>7,'한화'=>8,'롯데'=>9,'KIA'=>10,'kt'=>2);
         $batter=$this->baseball_model->sortingByTeam('kbo_batterbasic_2017', $team);
+        $MINING=$this->get_mining_db();
+        foreach($batter as $item):
+            $MINING->select('player_id');
+            $player_id=$MINING->get_where('players', array('team_no'=>$teams[$item->team],'name'=>$item->name))->row();
+            $item->player_id=$player_id->player_id;
+        endforeach;
         $pitcher=$this->baseball_model->sortingByTeam('kbo_pitcherbasic_2017', $team);
+        foreach($pitcher as $item):
+            $MINING->select('player_id');
+            $player_id=$MINING->get_where('players', array('team_no'=>$teams[$item->team], 'name'=>$item->name))->row();
+            $item->player_id=$player_id->player_id;
+        endforeach;
+        $runner=$this->baseball_model->sortingByTeam('kbo_runnerbasic_2017', $team);
+        foreach($runner as $item):
+            $MINING->select('player_id');
+            $player_id=$MINING->get_where('players', array('team_no'=>$teams[$item->team], 'name'=>$item->name))->row();
+            $item->player_id=$player_id->player_id;
+        endforeach;
 
+//      부분별 선수 순위 1위 타자/투수
+        $batter_result=array();
+        if(isset($batter)):
+            foreach($batter as $item) $sortAux2[]=$item->avg;
+            array_multisort($sortAux2, SORT_DESC, $batter);
+            $batter_result['avg']=$batter[0];
+            foreach($batter as $item) $sortAux3[]=$item->hr;
+            array_multisort($sortAux3, SORT_DESC, $batter);
+            $batter_result['hr']=$batter[0];
+            foreach($batter as $item) $sortAux4[]=$item->rbi;
+            array_multisort($sortAux4, SORT_DESC, $batter);
+            $batter_result['rbi']=$batter[0];
+            foreach($batter as $item) $sortAux5[]=$item->h;
+            array_multisort($sortAux5, SORT_DESC, $batter);
+            $batter_result['h']=$batter[0];
+            foreach($runner as $item) $sortAux11[]=$item->sb;
+            array_multisort($sortAux11, SORT_DESC, $runner);
+            $batter_result['sb']=$runner[0];
+        endif;
+        $pitcher_result=array();
+        if(isset($pitcher)):
+            foreach($pitcher as $item) $sortAux6[]=$item->era;
+            array_multisort($sortAux6, SORT_DESC, $pitcher);
+            $pitcher_result['era']=$pitcher[0];
+            foreach($pitcher as $item) $sortAux7[]=$item->w;
+            array_multisort($sortAux7, SORT_DESC, $pitcher);
+            $pitcher_result['w']=$pitcher[0];
+            foreach($pitcher as $item) $sortAux8[]=$item->sv;
+            array_multisort($sortAux8, SORT_DESC, $pitcher);
+            $pitcher_result['sv']=$pitcher[0];
+            foreach($pitcher as $item) $sortAux9[]=$item->wpct;
+            array_multisort($sortAux9, SORT_DESC, $pitcher);
+            $pitcher_result['wpct']=$pitcher[0];
+            foreach($pitcher as $item) $sortAux10[]=$item->hld;
+            array_multisort($sortAux10, SORT_DESC, $pitcher);
+            $pitcher_result['hld']=$pitcher[0];
+        endif;
+
+//      SORT
         if($pitcher_sort!=''):
             foreach($pitcher as $item) $sortAux[]=$item->$pitcher_sort;
             array_multisort($sortAux, SORT_DESC, $pitcher);
@@ -508,34 +688,88 @@ class Baseball extends MY_Controller{
             array_multisort($sortAux1, SORT_DESC, $batter);
         endif;
 
-        $this->load->view("/baseball/team_detail/player", array('team'=>$team,'batter'=>$batter,'pitcher'=>$pitcher,'mouseTop'=>$mouseTop,'focus'=>$focus,'bold_num'=>$boldNum,'offset'=>$offset,'pitcher_sort'=>$pitcher_sort,'batter_sort'=>$batter_sort));
-
-        $this->load->view("/baseball/footer");
+        $this->load->view("/baseball/team_detail/player", array('team'=>$team,'batter'=>$batter,'pitcher'=>$pitcher,'mouseTop'=>$mouseTop,'focus'=>$focus,'bold_num'=>$boldNum,'offset'=>$offset,'pitcher_sort'=>$pitcher_sort,
+                                                                'batter_sort'=>$batter_sort,'pitcher_result'=>$pitcher_result,'batter_result'=>$batter_result));
+        $this->load->view("/footer");
     }
 
-    function pitcher_detail(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+    function player_detail($pitcher_or_batter, $player_id){
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
-        $this->load->view("/baseball/player_info_pitcher", array('team'=>$team));
 
-        $this->load->view("/baseball/footer");
-    }
+//      시즌 성적
+        $this->load->library('curl');
 
-    function batter_detail(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $flag=($pitcher_or_batter=='pitcher')? 'PitcherDetail' : 'HitterDetail';
+        $data2=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/'.$flag.'/Basic.aspx?playerId='.$player_id);
+        $exp10=explode('<tbody>', $data2);
+        $data01=explode('</tbody>', $exp10[1]);
+        $data02=explode('</tbody>', $exp10[2]);
 
-        $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
-        $this->load->view("/baseball/player_info_hitter", array('team'=>$team));
+//      player_basic
+        $player_basic=array();
+        $exp9=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblName">', $data2);
+        $basic_name=explode('</span>',$exp9[1]);
+        $player_basic['name']=$basic_name[0];
+        $exp8=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblBackNo">', $data2);
+        $basic_back_num=explode('</span>',$exp8[1]);
+        $player_basic['back_num']=$basic_back_num[0];
+        $exp8=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblPosition">', $data2);
+        $basic_position=explode('</span>',$exp8[1]);
+        $player_basic['position']=$basic_position[0];
+        $exp8=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblBirthday">', $data2);
+        $basic_birth=explode('</span>',$exp8[1]);
+        $player_basic['birth']=$basic_birth[0];
+        $exp8=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblHeightWeight">', $data2);
+        $basic_hw=explode('</span>',$exp8[1]);
+        $player_basic['hw']=$basic_hw[0];
+        $player_data=($pitcher_or_batter=='pitcher')? $this->baseball_model->sortingByTeam('kbo_pitcherbasic_2017', $team) : $this->baseball_model->sortingByTeam('kbo_batterbasic_2017', $team);
+        $player_basic['w']=0;
+        $player_basic['w_rank']=0;
+        $player_basic['era']=0;
+        $player_basic['so']=0;
+        $player_basic['avg']=0;
+        $player_basic['avg_rank']=0;
+        $player_basic['hr']=0;
+        $player_basic['rbi']=0;
+        foreach($player_data as $item):
+            if($item->name==$player_basic['name']):
+                if($pitcher_or_batter=='pitcher'):
+                    $player_basic['w']=$item->w;
+                    $player_basic['w_rank']=$item->rank;
+                    $player_basic['era']=$item->era;
+                    $player_basic['so']=$item->so;
+                elseif($pitcher_or_batter=='batter'):
+                    $player_basic['avg']=$item->avg;
+                    $player_basic['avg_rank']=$item->rank;
+                    $player_basic['hr']=$item->hr;
+                    $player_basic['rbi']=$item->rbi;
+                endif;
+            endif;
+        endforeach;
 
-        $this->load->view("/baseball/footer");
+//      1: 최근 10경기 성적, 2:상대팀별 성적, 3: 구장별, 4: 월별, 5: 요일별, 6: 홈방문별, 7: 주야간
+        $exp0=explode('<tbody>', $data2);
+        $exp1=explode('</tbody>', $exp0[3]);
+        $data=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/'.$flag.'/Game.aspx?playerId='.$player_id);
+        $exp=explode('<tbody>', $data);
+        $exp2=explode('</tbody>', $exp[1]);
+        $exp3=explode('</tbody>', $exp[2]);
+        $exp4=explode('</tbody>', $exp[3]);
+        $exp5=explode('</tbody>', $exp[4]);
+        $exp6=explode('</tbody>', $exp[5]);
+        $exp7=explode('</tbody>', $exp[6]);
+
+        $this->load->view("/baseball/team_detail/player_info", array('team'=>$team,'player_id'=>$player_id,'data1'=>$exp1[0],'data2'=>$exp2[0],'data3'=>$exp3[0],'data4'=>$exp4[0],'data5'=>$exp5[0],'data6'=>$exp6[0],
+                                                                            'data7'=>$exp7[0],'player_basic'=>$player_basic,'data01'=>$data01[0],'data02'=>$data02[0],'pitcher_or_batter'=>$pitcher_or_batter));
+        $this->load->view("/footer");
     }
 
     function situation(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
         $team_introduce=$this->baseball_model->get_team_introduce($team);
@@ -547,21 +781,37 @@ class Baseball extends MY_Controller{
 
         $this->load->view("/baseball/team_detail/situation", array('team'=>$team,'team_introduce'=>$team_introduce,'players'=>$players));
 
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     function team(){
-        $this->load->view("/baseball/head_up");
-        $this->load->view("/baseball/head");
+        $this->load->view("/head_up");
+        $this->load->view("/head");
 
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
         $team_introduce=$this->baseball_model->get_team_introduce($team);
         $this->load->view("/baseball/team_detail/team", array('team'=>$team,'team_introduce'=>$team_introduce));
 
-        $this->load->view("/baseball/footer");
+        $this->load->view("/footer");
     }
 
     /* ---------------------------------------------------------- COMMON ---------------------------------------------------------- */
+
+    function get_rank($data, $team, $subject, $asc_or_desc){
+        $rank=1;
+        $value=0;
+        
+        foreach($data as $item) if($item->team==$team) $value=$item->$subject;
+        foreach($data as $item):
+            if($asc_or_desc=='ASC'):
+                if($item->$subject < $value): $rank++; endif;
+            elseif($asc_or_desc=='DESC'):
+                if($item->$subject > $value): $rank++; endif;
+            endif;
+        endforeach;
+
+        return $rank;
+    }
 
     function get_team_full_name($team_short_name){
         $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','두산'=>'두산 베어스','롯데'=>'롯데 자이언츠','KIA'=>'KIA 타이거즈','한화'=>'한화 이글스','LG'=>'LG 트윈스','NC'=>'NC 다이노스','kt'=>'kt 위즈','삼성'=>'삼성 라이온즈');
@@ -1099,6 +1349,7 @@ class Baseball extends MY_Controller{
             endforeach;
         endif;
 
+        $teams=array('SK'=>1,'KT'=>2,'삼성'=>3,'NC'=>4,'두산'=>5,'넥센'=>6,'LG'=>7,'한화'=>8,'롯데'=>9,'KIA'=>10,'kt'=>2);
         $result=array();
         $away_score_board=array();
         $home_score_board=array();
@@ -1126,9 +1377,9 @@ class Baseball extends MY_Controller{
         $result['home_pitcher']=$home_pitcher;
 
         $MINING->select('back_num, player_id');
-        $away_starter=$MINING->get_where('players', array('name'=>$schedule->away_starter, 'delete_yn'=>'N'))->row();
+        $away_starter=$MINING->get_where('players', array('name'=>$schedule->away_starter,'team_no'=>$teams[$away_name]))->row();
         $MINING->select('back_num, player_id');
-        $home_starter=$MINING->get_where('players', array('name'=>$schedule->home_starter, 'delete_yn'=>'N'))->row();
+        $home_starter=$MINING->get_where('players', array('name'=>$schedule->home_starter,'team_no'=>$teams[$home_name]))->row();
 
         if(isset($away_starter)):
             $result['away_starter_back_num']=$away_starter->back_num;
@@ -1611,21 +1862,5 @@ class Baseball extends MY_Controller{
         }
 
         return $resultSet;
-    }
-
-    function ckeditortest(){
-        $this->load->view('../../public/lib/ckeditor/samples/toolbarconfigurator/index.html');
-
-        echo BR;
-        $this->load->view('/baseball/test');
-    }
-
-    function test(){
-        $this->load->library('curl');
-        $result=$this->curl->simple_get('http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate=20170606&gameId=20170606LTNC0&section=REVIEW');
-
-        echo '<textarea>'.$result.'</textarea>';
-
-        $this->load->view('/baseball/test');
     }
 }

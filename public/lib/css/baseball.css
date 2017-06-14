@@ -249,7 +249,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .PL_REC .select {margin-right:10px;}
 .table_w {position:relative;}
 .table_w table th:nth-last-of-type(1),.PL_REC .table_w table td:nth-last-of-type(1) {padding-right:16px;}
-.table_w table td:nth-of-type(4) {font-weight:bold;}
+/*.table_w table td:nth-of-type(4) {font-weight:bold;}*/
 .table_w table th span {cursor:pointer;}
 .player_rec {display:block;clear:both;content:"";border-bottom:1px solid #ccc;float:left;margin-bottom:40px;}
 .player_rec > li {float:left;width:319px;border-left:1px solid #ccc;padding-bottom:10px;}
@@ -497,7 +497,8 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .situation {}
 .situation .coach {border-bottom: 3px solid #f1f1f1;}
 .situation .coach .pic {float:left;margin:0 4px 20px 4px;border:1px solid #ccc;padding:0;height:161px;width:139px;}
-.situation .coach > div {float:left;margin-left:20px;}
+.situation .coach .pic img {height:161px;width:139px;}
+.situation .coach > div {float:left;margin-left:20px;margin-bottom:20px;}
 .situation .coach > div h3 {font-size:20px;font-weight:bold;margin:5px 0 10px 0;}
 .situation .coach > div > p {font-weight:bold; font-size:14px;}
 .situation .coach > div > p > span {font-weight:bold; font-size:11px;color:#888;}
@@ -520,6 +521,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .situation_list .PL_REC ul li h4 a:hover {text-decoration:underline;}
 .situation_list .PL_REC ul li b {font-size:10.5px;color:#888;}
 .situation_list .PL_REC ul li > p {margin-bottom:10px;}
+.situation_list .PL_REC ul li > p a img {width:139px;height:161px;}
 
 /*ÆÀ¼Ò°³*/
 .team {}
@@ -968,3 +970,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /*-----------------------------------------  match ³¡ ---------------------------------------*/
 
+
+
+span.LG {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+span.SS {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+span.LT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+span.WO {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+span.SK {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+span.KT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+span.OB {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+span.NC {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+span.HH {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+span.HT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/KI_120120.png") no-repeat center center; background-size:contain;}
+
+span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/KI_120120.png") no-repeat center center; background-size:contain;}

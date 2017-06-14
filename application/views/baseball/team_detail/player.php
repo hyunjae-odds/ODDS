@@ -1,17 +1,18 @@
-﻿<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css" />
+﻿<?php $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','두산'=>'두산 베어스','롯데'=>'롯데 자이언츠','KIA'=>'KIA 타이거즈','한화'=>'한화 이글스','LG'=>'LG 트윈스','NC'=>'NC 다이노스','kt'=>'kt 위즈','KT'=>'kt 위즈','삼성'=>'삼성 라이온즈'); ?>
+<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css" />
 <div class="livescore game">
     <div class="topTitle">
         <p>
-            <span>리그정보 - 야구 - 대한민국 - KBO - <span class="underline">LG트윈스</span></span>
+            <span>리그정보 - 야구 - 대한민국 - KBO - <span class="underline"><?=$full_name_team[$team];?></span></span>
             <span class="sentence">SPORTS COMMUNITY POTAL <span>ODDSNAVI</span></span>
         </p>
-        <h2 class="tit02">LG 트윈스</h2>
+        <h2 class="tit02"><?=$full_name_team[$team];?></h2>
     </div>
     <div class="game_w pb50">
         <ul class="tab01 gameMain">
-            <li class=""><a href="/baseball/team_info">시즌 기록</a></li>
-            <li class=""><a href="/baseball/schedule">경기 결과</a></li>
-            <li class="on"><a href="/baseball/player">선수 기록</a></li>
+            <li class=""><a href="/baseball/team_info?team=<?=$team;?>">시즌 기록</a></li>
+            <li class=""><a href="/baseball/schedule/<?=date('Y');?>/<?=date('m');?>?team=<?=$team;?>">경기 결과</a></li>
+            <li class="on"><a href="/baseball/player?team=<?=$team;?>">선수 기록</a></li>
             <li class=""><a href="/baseball/situation?team=<?=$team;?>">선수 현황</a></li>
             <li class=""><a href="/baseball/team?team=<?=$team;?>">팀 소개</a></li>
         </ul>
@@ -37,38 +38,38 @@
                             <ul class="player_list">
                                 <li>
                                     <p class="th">평균자책점</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher_result['era']->player_id;?>.jpg" alt="<?=$pitcher_result['era']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/pitcher/<?=$pitcher_result['era']->player_id;?>?team=<?=$team;?>"><?=$pitcher_result['era']->name;?></a></p>
+                                    <b class="red"><?=$pitcher_result['era']->era;?></b>
+                                    <b class="gray">리그전체 <?=$pitcher_result['era']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">승 리</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher_result['w']->player_id;?>.jpg" alt="<?=$pitcher_result['w']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/pitcher/<?=$pitcher_result['w']->player_id;?>?team=<?=$team;?>"><?=$pitcher_result['w']->name;?></a></p>
+                                    <b class="red"><?=$pitcher_result['w']->w;?></b>
+                                    <b class="gray">리그전체 <?=$pitcher_result['w']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">세이브</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher_result['sv']->player_id;?>.jpg" alt="<?=$pitcher_result['sv']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/pitcher/<?=$pitcher_result['sv']->player_id;?>?team=<?=$team;?>"><?=$pitcher_result['sv']->name;?></a></p>
+                                    <b class="red"><?=$pitcher_result['sv']->sv;?></b>
+                                    <b class="gray">리그전체 <?=$pitcher_result['sv']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">승 률</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher_result['wpct']->player_id;?>.jpg" alt="<?=$pitcher_result['wpct']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/pitcher/<?=$pitcher_result['wpct']->player_id;?>?team=<?=$team;?>"><?=$pitcher_result['wpct']->name;?></a></p>
+                                    <b class="red"><?=$pitcher_result['wpct']->wpct;?></b>
+                                    <b class="gray">리그전체 <?=$pitcher_result['wpct']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">홀 드</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$pitcher_result['hld']->player_id;?>.jpg" alt="<?=$pitcher_result['hld']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/pitcher/<?=$pitcher_result['hld']->player_id;?>?team=<?=$team;?>"><?=$pitcher_result['hld']->name;?></a></p>
+                                    <b class="red"><?=$pitcher_result['hld']->hld;?></b>
+                                    <b class="gray">리그전체 <?=$pitcher_result['hld']->rank;?>위</b>
                                 </li>
                             </ul>
                             <div class="table_w pitcher">
@@ -76,26 +77,8 @@
                                     <table class="table_default">
                                         <caption></caption>
                                         <colgroup>
-                                            <col width="40px"/>
-                                            <col width="100px"/>
-                                            <col width="64px"/>
-                                            <col width="70px"/>
-                                            <col width="51px"/>
-                                            <col width="64px"/>
-                                            <col width="59px"/>
-                                            <col width="58px"/>
-                                            <col width="57px"/>
-                                            <col width="43px"/>
-                                            <col width="61px"/>
-                                            <col width="59px"/>
-                                            <col width="59px"/>
-                                            <col width="53px"/>
-                                            <col width="51px"/>
-                                            <col width="44px"/>
-                                            <col width="65px"/>
-                                            <col width="65px"/>
-                                            <col width="65px"/>
-                                            <col width="65px"/>
+                                            <col width="60px">
+                                            <col width="75px">
                                         </colgroup>
                                         <tr>
                                             <th>순위</th>
@@ -121,7 +104,7 @@
                                         <?php foreach($pitcher as $key=>$item): ?>
                                             <tr>
                                                 <td><?=$key+1;?></td>
-                                                <td><?=$item->name;?></td>
+                                                <td><a href="/baseball/player_detail/pitcher/<?=$item->player_id;?>?team=<?=$item->team;?>"><?=$item->name;?></a></td>
                                                 <td><?=$item->team;?></td>
                                                 <td class="pr_1"><?=number_format($item->era,3);?></td>
                                                 <td class="pr_2"><?=$item->g;?></td>
@@ -147,27 +130,11 @@
                                     </div>
                                 </div>
                                 <div class="next_table" style="display:none;">
-                                    <table class="table_default">
+                                    <table class="table_default" style="width:960px;">
                                         <caption></caption>
                                         <colgroup>
-                                            <col width="55px"/>
-                                            <col width="100px"/>
-                                            <col width="80px"/>
-                                            <col width="80px"/>
-                                            <col width="96px"/>
-                                            <col width="91px"/>
-                                            <col width="93px"/>
-                                            <col width="86px"/>
-                                            <col width="85px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
-                                            <col width="78px"/>
+                                            <col width="60px">
+                                            <col width="75px">
                                         </colgroup>
                                         <tr>
                                             <th>순위</th>
@@ -192,7 +159,7 @@
                                         <?php foreach($pitcher as $key=>$item): ?>
                                             <tr>
                                                 <td><?=$key+1;?></td>
-                                                <td><?=$item->name;?></td>
+                                                <td><a href="/baseball/player_detail/pitcher/<?=$item->player_id;?>?team=<?=$item->team;?>"><?=$item->name;?></a></td>
                                                 <td><?=$item->team;?></td>
                                                 <td class="pr_17"><?=number_format($item->era,3);?></td>
                                                 <td class="pr_18"><?=$item->cg;?></td>
@@ -225,38 +192,38 @@
                             <ul class="player_list">
                                 <li>
                                     <p class="th">타 율</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter_result['avg']->player_id;?>.jpg" alt="<?=$batter_result['avg']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/batter/<?=$batter_result['avg']->player_id;?>?team=<?=$team;?>"><?=$batter_result['avg']->name;?></a></p>
+                                    <b class="red"><?=$batter_result['avg']->avg;?></b>
+                                    <b class="gray">리그전체 <?=$batter_result['avg']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">홈 런</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter_result['hr']->player_id;?>.jpg" alt="<?=$batter_result['hr']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/batter/<?=$batter_result['hr']->player_id;?>?team=<?=$team;?>"><?=$batter_result['hr']->name;?></a></p>
+                                    <b class="red"><?=$batter_result['hr']->hr;?></b>
+                                    <b class="gray">리그전체 <?=$batter_result['hr']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">타 점</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter_result['rbi']->player_id;?>.jpg" alt="<?=$batter_result['rbi']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/batter/<?=$batter_result['rbi']->player_id;?>?team=<?=$team;?>"><?=$batter_result['rbi']->name;?></a></p>
+                                    <b class="red"><?=$batter_result['rbi']->rbi;?></b>
+                                    <b class="gray">리그전체 <?=$batter_result['rbi']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">안 타</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter_result['h']->player_id;?>.jpg" alt="<?=$batter_result['h']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/batter/<?=$batter_result['h']->player_id;?>?team=<?=$team;?>"><?=$batter_result['h']->name;?></a></p>
+                                    <b class="red"><?=$batter_result['h']->h;?></b>
+                                    <b class="gray">리그전체 <?=$batter_result['h']->rank;?>위</b>
                                 </li>
                                 <li>
                                     <p class="th">도 루</p>
-                                    <div class="pic"><img src="/public/lib/image/game/pic04.jpg" alt=""></div>
-                                    <p class="td">최형우</p>
-                                    <b class="red">3.49</b>
-                                    <b class="gray">리그전체 2위</b>
+                                    <div class="pic"><img src="http://www.koreabaseball.com/file/person/middle/<?=$batter_result['sb']->player_id;?>.jpg" alt="<?=$batter_result['sb']->name;?>" onerror="this.src='http://www.koreabaseball.com/file/person/middle/noimg.jpg';"/></div>
+                                    <p class="td"><a href="/baseball/player_detail/batter/<?=$batter_result['sb']->player_id;?>?team=<?=$team;?>"><?=$batter_result['sb']->name;?></a></p>
+                                    <b class="red"><?=$batter_result['sb']->sb;?></b>
+                                    <b class="gray">리그전체 <?=$batter_result['sb']->rank;?>위</b>
                                 </li>
                             </ul>
                             <div class="table_w hitter">
@@ -264,22 +231,8 @@
                                     <table class="table_default">
                                         <caption></caption>
                                         <colgroup>
-                                            <col width="48px"/>
-                                            <col width="72px"/>
-                                            <col width="*"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="50px"/>
-                                            <col width="90px"/>
-                                            <col width="90px"/>
+                                            <col width="60px">
+                                            <col width="75px">
                                         </colgroup>
                                         <tr>
                                             <th>순위</th>
@@ -302,7 +255,7 @@
                                         <?php foreach($batter as $keys=>$item): ?>
                                             <tr>
                                                 <td><?=$offset+$keys+1;?></td>
-                                                <td><?=$item->name;?></td>
+                                                <td><a href="/baseball/player_detail/batter/<?=$item->player_id;?>?team=<?=$item->team;?>"><?=$item->name;?></a></td>
                                                 <td><?=$item->team;?></td>
                                                 <td class="bt_1"><?=number_format($item->avg,3);?></td>
                                                 <td class="bt_2"><?=$item->g;?></td>
@@ -325,24 +278,11 @@
                                     </div>
                                 </div>
                                 <div class="next_table" style="display:none;">
-                                    <table class="table_default">
+                                    <table class="table_default" style="width:960px;">
                                         <caption></caption>
                                         <colgroup>
-                                            <col width="48px"/>
-                                            <col width="100px"/>
-                                            <col width="100px"/>
-                                            <col width="93px"/>
-                                            <col width="93px"/>
-                                            <col width="93px"/>
-                                            <col width="93px"/>
-                                            <col width="94px"/>
-                                            <col width="94px"/>
-                                            <col width="110px"/>
-                                            <col width="110px"/>
-                                            <col width="110px"/>
-                                            <col width="110px"/>
-                                            <col width="110px"/>
-                                            <col width="110px"/>
+                                            <col width="60px">
+                                            <col width="75px">
                                         </colgroup>
                                         <tr>
                                             <th>순위</th>
@@ -365,7 +305,7 @@
                                             <tr>
                                                 <td><?=$offset+$keys+1;?></td>
                                                 <td><?=$item->name;?></td>
-                                                <td><?=$item->team;?></td>
+                                                <td><a href="/baseball/player_detail/batter/<?=$item->player_id;?>?team=<?=$item->team;?>"><?=$item->team;?></a></td>
                                                 <td class="bt_14"><?=number_format($item->avg,3);?></td>
                                                 <td class="bt_15"><?=$item->bb;?></td>
                                                 <td class="bt_16"><?=$item->ibb;?></td>

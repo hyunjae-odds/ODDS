@@ -106,10 +106,14 @@
         return $this->db->get($table)->result();
     }
 
-	function getByMonth($this_month){
-		$this->db->like('date', $this_month, 'after');
-		$this->db->order_by('date', 'ASC');
-		$result=$this->db->get('kbo_result_2017')->result();
+	function getByMonth($this_month, $team){
+	    if($team=='all'):
+            $this->db->like('date', $this_month, 'after');
+            $this->db->order_by('date', 'ASC');
+            $result=$this->db->get('kbo_result_2017')->result();
+        else:
+            $result=$this->db->query('SELECT * FROM kbo_result_2017 WHERE (away="'.$team.'" OR home="'.$team.'") AND date LIKE "'.$this_month.'%" ORDER BY date ASC')->result();
+        endif;
 
 		return $result;
 	}
@@ -652,6 +656,47 @@
         return $count;
     }
 
+    function get_all_game_over_under($team, $over_under_reference_value, $handicap){
+        $result=$this->get_result('all');
+        $result_set=array('over'=>0, 'g'=>0, 'handicap_win'=>0, 'win_lose'=>array(), 'game_no'=>array(), 'over_under'=>array());
+        $win_lose_cnt=0;
+        $over_under_cnt=0;
+
+        foreach($result as $item):
+            if($item->away==$team || $item->home==$team):
+                $result_set['g']++;
+                if($item->away_score+$item->home_score > $over_under_reference_value) $result_set['over']++;
+
+                if($item->away_score+$item->home_score > $over_under_reference_value && $over_under_cnt<10): array_push($result_set['over_under'], 'plus'); $over_under_cnt++;
+                elseif($item->away_score+$item->home_score < $over_under_reference_value && $over_under_cnt<10): array_push($result_set['over_under'], 'minus'); $over_under_cnt++; endif;
+            endif;
+
+            if($item->away==$team):
+                if($item->away_score > $item->home_score && $win_lose_cnt<10):
+                    $win_lose_cnt++;
+                    array_push($result_set['win_lose'], 'win');
+                elseif($item->away_score < $item->home_score && $win_lose_cnt<10):
+                    $win_lose_cnt++;
+                    array_push($result_set['win_lose'], 'lose');
+                endif;
+
+                if($item->away_score-$handicap > $item->home_score): $result_set['handicap_win']++; endif;
+            elseif($item->home==$team):
+                if($item->home_score > $item->away_score && $win_lose_cnt<10):
+                    $win_lose_cnt++;
+                    array_push($result_set['win_lose'], 'win');
+                elseif($item->home_score < $item->away_score && $win_lose_cnt<10):
+                    $win_lose_cnt++;
+                    array_push($result_set['win_lose'], 'lose');
+                endif;
+
+                if($item->home_score-$handicap > $item->away_score): $result_set['handicap_win']++; endif;
+            endif;
+        endforeach;
+
+        return $result_set;
+    }
+
     function get_result($inning){
         $this->db->where('away_score!=', '');
         $this->db->where('home_score!=', '');
@@ -913,31 +958,35 @@
         return $this->db->get_where('kbo_team_total_2017', array('date'=>$result->date))->result();
     }
 
-//  마이닝 DB 로드
-    function get_mining_db(){
-        $db['hostname']='110.10.130.47';
-        $db['username']='odds';
-        $db['password']='odds8313$';
-        $db['database']='mining';
-        $db['dbdriver']='mysqli';
-        $db['dbprefix']='';
-        $db['pconnect']=FALSE;
-        $db['db_debug']=TRUE;
-        $db['cache_on']=FALSE;
-        $db['cachedir']='/application/cache';
-        $db['char_set']='utf8';
-        $db['dbcollat']='utf8_general_ci';
-        $db['swap_pre']='';
-        $db['encrypt']=FALSE;
-        $db['compress']=FALSE;
-        $db['stricton']=FALSE;
-        $db['failover']=array();
-        $db['save_queries']=TRUE;
-
-        return $this->load->database($db, TRUE);
-    }
-
     function get_team_introduce($team){
         return $this->db->get_where('kbo_team_introduce', array('team'=>$team))->row();
+    }
+
+    function get_record_by_team($team){
+        $this->db->select('date');
+        $this->db->order_by('date', 'DESC');
+        $this->db->distinct();
+        $lastDate=$this->db->get('kbo_team_total_2017')->row();
+
+        $this->db->select('h, hr');
+        $another_teams_offense=$this->db->get_where('kbo_team_offense_2017', array('team!='=>$team))->result();
+        $this->db->select('so');
+        $another_teams_defence=$this->db->get_where('kbo_team_defence_2017', array('team!='=>$team))->result();
+
+        $team_total=$this->db->get_where('kbo_team_total_2017', array('team'=>$team, 'date'=>$lastDate->date))->row();
+        $team_offense=$this->db->get_where('kbo_team_offense_2017', array('team'=>$team))->row();
+        $team_defence=$this->db->get_where('kbo_team_defence_2017', array('team'=>$team))->row();
+
+        $h_rank=1;
+        $hr_rank=1;
+        $so_rank=1;
+        foreach($another_teams_offense as $item) if($item->h > $team_offense->h) $h_rank++;
+        foreach($another_teams_offense as $item) if($item->hr > $team_offense->hr) $hr_rank++;
+        foreach($another_teams_defence as $item) if($item->so > $team_defence->so) $so_rank++;
+
+        $result=array('win_rate'=>number_format($team_total->win_rate,3),'win_rate_rank'=>$team_total->rank,'defence'=>$team_defence->era,'defence_rank'=>$team_defence->rank,'offense'=>number_format($team_offense->avg,3),'offense_rank'=>$team_offense->rank,
+                      'h'=>$team_offense->h,'h_rank'=>$h_rank,'hr'=>$team_offense->hr,'hr_rank'=>$hr_rank,'so'=>$team_defence->so,'so_rank'=>$so_rank,'w'=>$team_total->win,'l'=>$team_total->lose,'tie'=>$team_total->tie);
+
+        return $result;
     }
 }
