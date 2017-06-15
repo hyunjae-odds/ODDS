@@ -75,8 +75,8 @@ function get_team_initial($team_name){
                     </ul>
                     <div class="record_10">
                         <p>
-                            <?php foreach($first_statistics['win_lose'] as $item) :
-                                if($item=='win'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+                            <?php foreach($first_statistics['win_lose'] as $item):
+                                if($item=='win'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/></a>';
                                 elseif($item=='lose'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
                                 else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
                                 endif;
@@ -142,7 +142,7 @@ function get_team_initial($team_name){
                                 <td>
                                     <?php $exp=explode(';', $item->recent_game);
                                     foreach($exp as $value) :
-                                        if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+                                        if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/></a>';
                                         elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
                                         else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
                                         endif;

@@ -137,7 +137,7 @@ h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 .LNB ul.etcL ul.two_depth {top:-40px;}
 
 #leftMenu .banner {margin-top:19px;margin-bottom:30px;}
-#leftMenu .banner a {display:block;border:1px solid #ccc;}
+#leftMenu .banner a {display:block;border:1px solid #ccc;height:165px;;}
 #leftMenu .banner img {width:238px;}
 
 
@@ -155,8 +155,13 @@ h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 .gnb .gnbMenu>ul>li>a::before, .gnb .gnbMenu>ul>li>a::after { position: absolute; left: 0; bottom:0; width: 100%; height: 5px; background: #e90052; content: ''; opacity: 0; -webkit-transition: opacity 0.3s, -webkit-transform 0.3s; -moz-transition: opacity 0.3s, -moz-transform 0.3s; transition: opacity 0.3s, transform 0.3s; }
 .gnb .gnbMenu>ul>li>a:hover::before, .gnb .gnbMenu>ul>li>a:focus::before, .gnb .gnbMenu>ul>li>a:hover::after, .gnb .gnbMenu>ul>li>a:focus::after { opacity: 1; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px);}
 .gnb .gnbMenu>ul>li.on span {display:block; width:250px; height:5px; background:#e90052; position:absolute; left:0; bottom:0px;}
-.login {position:absolute;right:-108px;top:4px; border-left:1px solid #595959;}
-.login>a {color:#fff; font-size:17px; font-weight:bold; height:30px; padding:29px 28px 21px; display:block;}
+.login {position:absolute;left:1020px;top:4px; border-left:1px solid #595959;}
+.login>a {color:#fff; font-size:17px; font-weight:bold; height:30px; padding:29px 28px 21px; display:block;width:60px;}
+.login > .logon {display:none;color:#fff;padding:10px 12px;height:60px;line-height:1.7em;width:190px;}
+.login > .logon p,.login > .logon > span {font-size:14px;}
+.login > .logon p.id {font-size:16px;font-weight:bold;}
+.login > .logon p > span {color:#595959;}
+.login > .logon a.setting {display:inline-block;width:15px;height:14px;background:url("../image/base/icon.png") no-repeat -45px -26px;margin-left:10px;}
 /* 로그인박스 */
 .login .loginWrap {position:fixed;top:84px;left:0;right:0;width:100%;height:100%;display:none;z-index:5;}
 .login .loginWrap .bg_b {display:none;position:absolute;background:#000;opacity:0.7;width:100%;height:100%;}
@@ -175,17 +180,19 @@ h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 .log_no .border_top {border-top:1px solid #ccc;margin:10px 20px 0;}
 .loginBox a.btn {margin-top:13px;border:1px solid #ccc;background:url("../image/blog/bg_g.jpg") repeat-x 0 bottom;height:28px;line-height:26px;display:inline-block;padding:0 15px;font-size:13px;}
 .log_no p.gray {color:#888;padding:10px 0;}
-.loginBox > div .log_b .relative {height:41px;margin-top:30px;}
+.loginBox > div .log_b .relative {height:41px;margin-top:40px;}
 .loginBox > div .log_b .relative ul.tab01 {top:0;left:0;}
-.loginBox > div .log_b .relative ul.tab01 a {padding:0 25px; line-height:37px;}
-.loginBox > div .log_b .relative ul.tab01 li.on a {line-height:28px;}
+.loginBox > div .log_b .relative ul.tab01 a {padding:0 25px; line-height:37px;height:39px;}
+.loginBox > div .log_b .relative ul.tab01 li.on a {line-height:28px;height:35px;}
 .loginBox > div .log_b .cho_p2 {padding:20px 0;}
 .loginBox > div .log_b .cho_p2 span {color:#444;margin:0 30px;}
 .loginBox > div .log_b .cho_p2 label {margin-right:30px; font-weight:bold;}
 .loginBox > div .log_b .cho_p2 input {vertical-align:middle;}
+.loginBox > div .log_b > ul.logbox02_v > li {display:none;}
+.loginBox > div .log_b > ul.logbox02_v p.logbox02_v_p {position:absolute;top:55px;left:20px;color:#888;} 
 .loginBox > div.logbox02 {}
 .loginBox > div.logbox03 {width:900px;}
-.loginBox > div.logbox03 .cho_p {font-weight:bold;font-size:16px;cursor:pointer;}
+.loginBox > div.logbox03 .cho_p {font-weight:bold;font-size:16px;cursor:default;}
 .loginBox > div.logbox03 .log_b {height:600px;overflow-y:scroll;}
 .loginBox > div.logbox03 .log_b > div {padding-top:15px;}
 .loginBox > div.logbox03 .log_b > div.border_bottom {border-bottom:1px solid #ccc;padding-bottom:10px;}
@@ -209,8 +216,11 @@ h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p {float:left;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p span {margin-top:9px;border:1px solid #ccc;cursor:pointer;display:inline-block;width:190px;text-align:center;height:30px;line-height:30px;color:#999;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p span:nth-of-type(1) {border-right:none;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li > p span.on {background:#f1f1f1;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 label {font-size:14px;color:#999;border-right:1px solid #ccc;float:left;font-family:"맑은 고딕", Malgun Gothic !important;background:#f7f7f7;line-height:50px;padding:0 10px;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 input {float:left;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 span {float:left;line-height:50px;color:#999;}
+.loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 span.pp {line-height:27px;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .relative {float:left;margin:0;height:50px;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .select02 {position:relative;right:0;top:-2px;}
 .loginBox > div.logbox03 .log_b > div .bg_gray ul.input_textbox2 > li .select02 p {border:none;}
@@ -222,7 +232,7 @@ h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8
 
 ul.input_textbox > li {border:1px solid #ccc;border-top:none;}
 ul.input_textbox > li:nth-of-type(1) {border-top:1px solid #ccc;}
-ul.input_textbox > li input {font-family:"맑은 고딕", Malgun Gothic !important;background:#fff;border:none;padding:0 10px;line-height:50px;color:#999;width:598px;font-size:14px;}
+ul.input_textbox > li input {font-family:"맑은 고딕", Malgun Gothic !important;background:#fff;border:none;padding:0 10px;line-height:50px;height:50px;color:#999;width:598px;font-size:14px;}
 ul.input_textbox li input.pw1 {background:#fff url("../image/base/input_pw.jpg") no-repeat 583px 14px;}
 ul.input_textbox li input.pw2 {background:#fff url("../image/base/input_pw.jpg") no-repeat 583px -47px;}
 a.red_btn {width:100%;height:56px;font-weight:bold;text-align:center;background:#ff225b;display:block;line-height:56px;font-size:16px;color:#fff;}
@@ -535,6 +545,7 @@ table.table_default th {background:#eee; height:40px; line-height:40px; font-siz
 table.table_default th a {color:#999;}
 table.table_default td {background:#fff;height:40px; line-height:40px; text-align:center; font-size:14px; border-bottom:1px solid #ddd;}
 table td.data {background:none;position:relative;}
+table td.data > span.match_ajax > span {margin:0 3px 0 2px;}/* 개발 후 추가 - 170614 */
 th span.lh2 {line-height:14px;font-size:12px;display:block;}
 
 

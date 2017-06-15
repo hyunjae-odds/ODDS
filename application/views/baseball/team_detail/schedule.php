@@ -75,9 +75,12 @@ $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','�
                     </ul>
                     <div class="record_10">
                         <p>
-                            <?php foreach ($first_statistics['win_lose'] as $item): ?>
-                                <a href="../match.php" class="result_btn"><img src="/public/lib/image/base/btn_<?=$item?>.png" alt="" title="두산 4:1 넥센"/></a>
-                            <?php endforeach; ?>
+                            <?php foreach($first_statistics['win_lose'] as $item):
+                                if($item=='win'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/></a>';
+                                elseif($item=='lose'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
+                                endif;
+                            endforeach; ?>
                         </p>
                         <span>최근 10경기 기록</span>
                         <p>
@@ -131,10 +134,10 @@ $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','�
                         <tr>
                             <th><span class="up_down01 down">날짜</span><a href="" class="up_down up">내림차/오름차변경</a></th>
                             <th>구장</th>
-                            <th>결과</th>
-                            <th class="right pr20">원정</th>
+                            <th class="pr80">결과</th>
+                            <th>원정</th>
                             <th>스코어</th>
-                            <th class="left pl20">홈</th>
+                            <th class="pr80">홈</th>
                             <th>1</th>
                             <th>X</th>
                             <th>2</th>
@@ -144,7 +147,8 @@ $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','�
                             <tr>
                                 <td><b><?=$entry->date;?></b></td>
                                 <td class="l_b"><?=$entry->stadium;?></td>
-                                <td><a href="/baseball/match_information/<?=$entry->no;?>/0" class="result_btn">
+                                <td class="pr80">
+                                    <a href="/baseball/match_information/<?=$entry->no;?>/0" class="result_btn">
                                         <?php if($entry->away_score==null): echo '-'; else: ?>
                                             <img src="/public/lib/image/base/btn_<?php
                                             if($entry->away==$team):
@@ -159,9 +163,9 @@ $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','�
                                         <?php endif; ?>
                                     </a>
                                 </td>
-                                <td class="right"><span class="<?php if($entry->away_score > $entry->home_score) echo 'red';?>"><a href="/baseball/team_info?team=<?=$entry->away;?>"><?=$entry->away;?></a><?php if($entry->away_score > $entry->home_score) echo '</span>';?></td>
-                                <td><b class="score"><?=$entry->away_score;?>:<?=$entry->home_score;?></b></td>
-                                <td class="left"><span class="<?php if($entry->away_score < $entry->home_score) echo 'red';?>"><a href="/baseball/team_info?team=<?=$entry->home;?>"><?=$entry->home;?></a><?php if($entry->away_score < $entry->home_score) echo '</span>';?></td>
+                                <td><span class="<?php if($entry->away_score > $entry->home_score) echo 'red';?>"><a href="/baseball/team_info?team=<?=$entry->away;?>"><?=$entry->away;?></a><?php if($entry->away_score > $entry->home_score) echo '</span>';?></td>
+                                <td><b class="score"><?=$entry->away_score;?><span class="colon">:</span><?=$entry->home_score;?></b></td>
+                                <td class="pr80"><span class="<?php if($entry->away_score < $entry->home_score) echo 'red';?>"><a href="/baseball/team_info?team=<?=$entry->home;?>"><?=$entry->home;?></a><?php if($entry->away_score < $entry->home_score) echo '</span>';?></td>
                                 <td><span class="black">1.31</span></td>
                                 <td>2.44</td>
                                 <td>1.78</td>

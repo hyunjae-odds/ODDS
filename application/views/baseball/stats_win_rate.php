@@ -1,4 +1,5 @@
-﻿<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
+﻿<?php $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','두산'=>'두산 베어스','롯데'=>'롯데 자이언츠','KIA'=>'KIA 타이거즈','한화'=>'한화 이글스','LG'=>'LG 트윈스','NC'=>'NC 다이노스','kt'=>'kt 위즈','KT'=>'kt 위즈','삼성'=>'삼성 라이온즈'); ?>
+<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
 <div class="livescore game">
     <div class="topTitle">
         <p>
@@ -66,7 +67,7 @@
                                         <table class="table_default table_2_left table_all_home_visit" >
                                             <caption></caption>
                                             <colgroup>
-                                                <col width="63px"/><col width="*"/><col width="55px"/><col width="36px"/><col width="30px"/><col width="30px"/><col width="36px"/><col width="50px"/><col width="55px"/><col width="36px"/><col width="30px"/><col width="30px"/><col width="36px"/><col width="50px"/><col width="55px"/><col width="36px"/><col width="30px"/><col width="30px"/><col width="36px"/><col width="50px"/>
+                                                <col width="63px"/><col width="185px"/>
                                             </colgroup>
                                             <tr class="w_th">
                                                 <th colspan="2">&nbsp;</th>
@@ -89,7 +90,7 @@
                                             <?php foreach($rank_board as $item): ?>
                                                 <tr>
                                                     <td><span class="rankdot0<?=$item['rank'];?>_color"><b><?=$item['rank'];?></b></span></td>
-                                                    <td><?=$item['team'];?></td>
+                                                    <td><?=$full_name_team[$item['team']];?></td>
                                                     <?php if($tab_selector==1 || $tab_selector==2): ?>
                                                         <td><?=$item['total_g'];?></td>
                                                         <td><?=$item['total_win_rate'];?></td>

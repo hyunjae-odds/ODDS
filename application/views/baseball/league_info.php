@@ -109,14 +109,14 @@
 										<tr>
 											<th>순위</th>
 											<th class="left">팀</th>
-											<th><span><a <?php if($sort=='g') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=g')">경기수</a></span></th>
-											<th><span class="n1 rn"><a <?php if($sort=='win_rate') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win_rate')">승률</a></span></th>
-											<th><span class="n2 rn"><a <?php if($sort=='win') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win')">승</a></span></th>
-											<th><span class="n3 rn"><a <?php if($sort=='lose') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=lose')">패</a></span></th>
-											<th><span class="n4 rn"><a <?php if($sort=='tie') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=tie')">타이</a></span></th>
-											<th><span class="n5 rn"><a <?php if($sort=='plus') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=plus')">득:실</a></span></th>
-											<th><span class="n6 rn"><a <?php if($sort=='margin') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=margin')">마진</a></span></th>
-											<th><span class="n7 rn"><a <?php if($sort=='game_car') echo 'style="color:black;"';?> href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=game_car')">게임차</a></span></th>
+											<th>경기수</th>
+											<th><span class="n1 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win_rate')">승률</a></span></th>
+											<th><span class="n2 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win')">승</a></span></th>
+											<th><span class="n3 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=lose')">패</a></span></th>
+											<th><span class="n4 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=tie')">타이</a></span></th>
+											<th><span class="n5 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=plus')">득:실</a></span></th>
+											<th><span class="n6 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=margin')">마진</a></span></th>
+											<th><span class="n7 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=game_car')">게임차</a></span></th>
 											<th>최근 10경기</th>
 										</tr>
                                         <?php foreach($total as $entry): ?>
@@ -126,26 +126,38 @@
                                             	<?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                 <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                 <td><?=$entry->team;?></td>
-                                                <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
-                                                <td><?=number_format($entry->win_rate,3);?></td>
-                                                <td><?=$entry->win;?></td>
-                                                <td><?=$entry->lose;?></td>
-                                                <td><?=$entry->tie;?></td>
-                                                <td><?=$entry->plus;?>:<?=$entry->minus;?></td>
-                                                <td><?=$entry->margin;?></td>
-                                                <td><?=$entry->game_car;?></td>
-                                                <td><?php $exp=explode(';', $entry->recent_game);
-                                                		foreach($exp as $value) :
-                                                			if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-															elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
-															else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
-															endif;
-														endforeach; ?>
+                                                <td <?php if($sort=='g') echo 'style="font-weight:bold;"';?>><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
+                                                <td <?php if($sort=='win_rate') echo 'style="font-weight:bold;"'; else echo 'style="font-weight:normal;"';?>><?=number_format($entry->win_rate,3);?></td>
+                                                <td <?php if($sort=='win') echo 'style="font-weight:bold;"';?>><?=$entry->win;?></td>
+                                                <td <?php if($sort=='lose') echo 'style="font-weight:bold;"';?>><?=$entry->lose;?></td>
+                                                <td <?php if($sort=='tie') echo 'style="font-weight:bold;"';?>><?=$entry->tie;?></td>
+                                                <td <?php if($sort=='plus') echo 'style="font-weight:bold;"';?>><?=$entry->plus;?>:<?=$entry->minus;?></td>
+                                                <td <?php if($sort=='margin') echo 'style="font-weight:bold;"';?>><?=$entry->margin;?></td>
+                                                <td <?php if($sort=='game_car') echo 'style="font-weight:bold;"';?>><?=$entry->game_car;?></td>
+                                                <td>
+                                                    <?php
+                                                        $exp=explode(';', $entry->recent_game);
+                                                        foreach($exp as $value) :
+                                                            if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+                                                            elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                                            else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
+                                                            endif;
+                                                        endforeach;
+                                                    ?>
 												</td>
 											</tr>
 										<?php endforeach; ?>
 								</table>
-								<div class="redline n1">
+                                <?php
+                                    if($sort=='win_rate') $sort_num='1';
+                                    else if($sort=='win') $sort_num='2';
+                                    else if($sort=='lose') $sort_num='3';
+                                    else if($sort=='tie') $sort_num='4';
+                                    else if($sort=='plus') $sort_num='5';
+                                    else if($sort=='margin') $sort_num='6';
+                                    else if($sort=='game_car') $sort_num='7';
+                                ?>
+								<div class="redline n<?=$sort_num;?>">
 									<span class="bt"></span>
 									<span class="bl"></span>
 									<span class="br"></span>

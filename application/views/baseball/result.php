@@ -44,22 +44,22 @@
 				<table class="table_default">
 					<caption></caption>
 					<colgroup>
-						<col width="100px" />
-						<col width="76px" />
-						<col width="154px" />
-						<col width="96px" />
-						<col width="189px" />
-						<col width="69px" />
-						<col width="71px" />
-						<col width="71px" />
-						<col width="175px" />
-					</colgroup>								
+                        <col width="*" />
+                        <col width="150px" />
+                        <col width="75px" />
+                        <col width="96px" />
+                        <col width="155px" />
+                        <col width="69px" />
+                        <col width="71px" />
+                        <col width="71px" />
+                        <col width="175px" />
+                    </colgroup>
 					<tr>
 						<th><span class="up_down01 down">날짜</span></th>
-						<th>시간</th>
-						<th class="right pr20">원정</th>
+						<th class="pr80">시간</th>
+						<th class="">원정</th>
 						<th>스코어</th>
-						<th class="left pl20">홈</th>
+						<th class="pr80">홈</th>
 						<th>승</th>
 						<th>무</th>
 						<th>패</th>
@@ -68,10 +68,10 @@
 					<?php foreach($result as $key=>$entry): ?>
 						<tr>
 							<?php if($key%5==0) echo '<td rowspan="5"><b>'.$entry->date.'</b></td>';?>
-							<td class="l_b"><?=$entry->time;?></td>
-							<td class="right"><?=$entry->away;?></td>
-							<td><b class="score"><span class="<?=($entry->away_score > $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->away_score;?></span>:<span class="<?=($entry->away_score < $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->home_score;?></span></b></td>
-							<td class="left"><?=$entry->home;?></td>
+							<td class="l_b pr80"><?=$entry->time;?></td>
+							<td ><span class="<?=($entry->away_score > $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->away;?><?php if($entry->away_score > $entry->home_score) echo '</span>';?></td>
+							<td><b class="score"><?=$entry->away_score;?><span class="colon">:</span><?=$entry->home_score;?></b></td>
+							<td class="pr80"><span class="<?=($entry->away_score < $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->home;?><?php if($entry->away_score < $entry->home_score) echo '</span>';?></td>
 							<td><span class="black">1.31</span></td>
 							<td>2.44</td>
 							<td>1.78</td>

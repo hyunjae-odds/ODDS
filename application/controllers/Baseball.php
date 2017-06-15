@@ -27,8 +27,9 @@ class Baseball extends MY_Controller{
             $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
         endforeach;
 //      정렬
+        $sort_word=($sort=='game_car')?SORT_ASC : SORT_DESC;
         foreach($total as $item) $sortAux[]=$item->$sort;
-        array_multisort($sortAux, SORT_DESC, $total);
+        array_multisort($sortAux, $sort_word, $total);
         for($i=0; $i<10; $i++) $total[$i]->rank=$i+1;
 
         $handicap=1.5;
@@ -1565,8 +1566,33 @@ class Baseball extends MY_Controller{
         return $result;
     }
 
+    function crawlingWithColumnList($source, $column_list){
+        $this->load->library('curl');
+
+        $piece_1=explode('</tbody>', $source);
+        $pieces_6=explode('<tbody>', $piece_1[0]);
+        $pieces_2=explode("<tr>", $pieces_6[1]);
+        $resultSet=array();
+        if($pieces_2[0]!=' '){
+            for($z=1; $z<count($pieces_2); $z++){
+                $dataArray=array();
+                $pieces_3=explode("</tr>", $pieces_2[$z]);
+                $pieces_4=explode("</td>", $pieces_3[0]);
+                for($v=0; $v<count($pieces_4)-1; $v++){
+                    $pieces_5=explode(">", $pieces_4[$v]);
+                    array_push($dataArray, $pieces_5[1]);
+                }
+                $dataSet=array_combine($column_list, $dataArray);
+                array_push($resultSet, $dataSet);
+            }
+        }
+
+        return $resultSet;
+    }
+
     /* ---------------------------------------------------------- CRAWLING ---------------------------------------------------------- */
 
+//  자동화 됨
     function crawling_result(){
         $this->load->library('curl');
 
@@ -1683,6 +1709,7 @@ class Baseball extends MY_Controller{
         endforeach;*/
     }
 
+//  자동화 됨
     function insertTeamRecord(){
         $this->load->library('curl');
 
@@ -1823,6 +1850,7 @@ class Baseball extends MY_Controller{
         $this->baseball_model->insertNoDelete('kbo_pitcherbasic_2017', $resultSet8, false);
     }
 
+//  자동화 됨
     function crawlingRunnerRecord(){
         $this->load->library('curl');
 
@@ -1838,29 +1866,5 @@ class Baseball extends MY_Controller{
         for($i=0; $i<count($arr3); $i++): $resultSet[$i]['name']=$arr3[$i]; endfor;
 
         $this->baseball_model->insertNoDelete('kbo_runnerbasic_2017', $resultSet, true);
-    }
-
-    function crawlingWithColumnList($source, $column_list){
-        $this->load->library('curl');
-
-        $piece_1=explode('</tbody>', $source);
-        $pieces_6=explode('<tbody>', $piece_1[0]);
-        $pieces_2=explode("<tr>", $pieces_6[1]);
-        $resultSet=array();
-        if($pieces_2[0]!=' '){
-            for($z=1; $z<count($pieces_2); $z++){
-                $dataArray=array();
-                $pieces_3=explode("</tr>", $pieces_2[$z]);
-                $pieces_4=explode("</td>", $pieces_3[0]);
-                for($v=0; $v<count($pieces_4)-1; $v++){
-                    $pieces_5=explode(">", $pieces_4[$v]);
-                    array_push($dataArray, $pieces_5[1]);
-                }
-                $dataSet=array_combine($column_list, $dataArray);
-                array_push($resultSet, $dataSet);
-            }
-        }
-
-        return $resultSet;
     }
 }
