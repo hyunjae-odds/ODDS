@@ -65,9 +65,9 @@
                                 <td><?=$entry->game_car;?></td>
                                 <td><?php $exp=explode(';', $entry->recent_game);
                                     foreach($exp as $value) :
-                                        if($value=='승'): echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-                                        elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
-                                        else: echo '<a href="match.php" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
+                                        if($value=='승'): echo '<a href="match.php" class="result_btn"><img src2="/public/lib/image/base/btn_win.png" alt="" title=""/>';
+                                        elseif($value=='패'): echo '<a href="/baseball/match" class="result_btn"><img src2="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                        else: echo '<a href="match.php" class="result_btn"><img src2="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
                                         endif;
                                     endforeach; ?>
                                 </td>

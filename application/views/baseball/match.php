@@ -5713,9 +5713,9 @@
                                 <td><span class="gray">(<?=$item['over_under_reference_value'];?>)</span> <?=$item['ou'];?>/<?=10-$item['ou'];?></td>
                                 <td><?php $exp=explode(';', $item['recent']);
                                     foreach($exp as $value) :
-                                        if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title="'.$item['team'].'"/>';
-                                        elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title="'.$item['team'].'"/></a>';
-                                        else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title="'.$item['team'].'"/></a>';
+                                        if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_win.png" alt="" title="'.$item['team'].'"/>';
+                                        elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_lose.png" alt="" title="'.$item['team'].'"/></a>';
+                                        else: echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_dra.png" alt="" title="'.$item['team'].'"/></a>';
                                         endif;
                                     endforeach; ?>
                                 </td>

@@ -13529,7 +13529,7 @@ class HTMLPurifier_AttrTransform_EnumToCSS extends HTMLPurifier_AttrTransform
 // must be called POST validation
 
 /**
- * Transform that supplies default values for the src and alt attributes
+ * Transform that supplies default values for the src2 and alt attributes
  * in img tags, as well as prevents the img tag from being removed
  * because of a missing alt tag. This needs to be registered as both
  * a pre and post attribute transform.
@@ -13546,11 +13546,11 @@ class HTMLPurifier_AttrTransform_ImgRequired extends HTMLPurifier_AttrTransform
     public function transform($attr, $config, $context)
     {
         $src = true;
-        if (!isset($attr['src'])) {
+        if (!isset($attr['src2'])) {
             if ($config->get('Core.RemoveInvalidImg')) {
                 return $attr;
             }
-            $attr['src'] = $config->get('Attr.DefaultInvalidImage');
+            $attr['src2'] = $config->get('Attr.DefaultInvalidImage');
             $src = false;
         }
 
@@ -13558,7 +13558,7 @@ class HTMLPurifier_AttrTransform_ImgRequired extends HTMLPurifier_AttrTransform
             if ($src) {
                 $alt = $config->get('Attr.DefaultImageAlt');
                 if ($alt === null) {
-                    $attr['alt'] = basename($attr['src']);
+                    $attr['alt'] = basename($attr['src2']);
                 } else {
                     $attr['alt'] = $alt;
                 }
@@ -13679,8 +13679,8 @@ class HTMLPurifier_AttrTransform_Input extends HTMLPurifier_AttrTransform
                 $attr['size'] = $result;
             }
         }
-        if (isset($attr['src']) && $t !== 'image') {
-            unset($attr['src']);
+        if (isset($attr['src2']) && $t !== 'image') {
+            unset($attr['src2']);
         }
         if (!isset($attr['value']) && ($t === 'radio' || $t === 'checkbox')) {
             $attr['value'] = '';
@@ -14015,7 +14015,7 @@ class HTMLPurifier_AttrTransform_SafeParam extends HTMLPurifier_AttrTransform
                 $attr['value'] = $this->wmode->validate($attr['value'], $config, $context);
                 break;
             case 'movie':
-            case 'src':
+            case 'src2':
                 $attr['name'] = "movie";
                 $attr['value'] = $this->uri->validate($attr['value'], $config, $context);
                 break;
@@ -15836,7 +15836,7 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
                 'name' => 'CDATA',
                 'readonly' => 'Bool#readonly',
                 'size' => 'Number',
-                'src' => 'URI#embedded',
+                'src2' => 'URI#embedded',
                 'tabindex' => 'Number',
                 'type' => 'Enum#text,password,checkbox,button,radio,submit,reset,file,hidden,image',
                 'value' => 'CDATA',
@@ -16043,7 +16043,7 @@ class HTMLPurifier_HTMLModule_Iframe extends HTMLPurifier_HTMLModule
             'Flow',
             'Common',
             array(
-                'src' => 'URI#embedded',
+                'src2' => 'URI#embedded',
                 'width' => 'Length',
                 'height' => 'Length',
                 'name' => 'ID',
@@ -16092,7 +16092,7 @@ class HTMLPurifier_HTMLModule_Image extends HTMLPurifier_HTMLModule
                 'height' => 'Pixels#' . $max,
                 'width' => 'Pixels#' . $max,
                 'longdesc' => 'URI',
-                'src*' => new HTMLPurifier_AttrDef_URI(true), // embedded
+                'src2*' => new HTMLPurifier_AttrDef_URI(true), // embedded
             )
         );
         if ($max === null || $config->get('HTML.Trusted')) {
@@ -16630,7 +16630,7 @@ class HTMLPurifier_HTMLModule_SafeEmbed extends HTMLPurifier_HTMLModule
             'Empty',
             'Common',
             array(
-                'src*' => 'URI#embedded',
+                'src2*' => 'URI#embedded',
                 'type' => 'Enum#application/x-shockwave-flash',
                 'width' => 'Pixels#' . $max,
                 'height' => 'Pixels#' . $max,
@@ -16741,7 +16741,7 @@ class HTMLPurifier_HTMLModule_SafeScripting extends HTMLPurifier_HTMLModule
                 // While technically not required by the spec, we're forcing
                 // it to this value.
                 'type' => 'Enum#text/javascript',
-                'src*' => new HTMLPurifier_AttrDef_Enum(array_keys($allowed))
+                'src2*' => new HTMLPurifier_AttrDef_Enum(array_keys($allowed))
             )
         );
         $script->attr_transform_pre[] =
@@ -16812,7 +16812,7 @@ class HTMLPurifier_HTMLModule_Scripting extends HTMLPurifier_HTMLModule
         $this->info['script'] = new HTMLPurifier_ElementDef();
         $this->info['script']->attr = array(
             'defer' => new HTMLPurifier_AttrDef_Enum(array('defer')),
-            'src' => new HTMLPurifier_AttrDef_URI(true),
+            'src2' => new HTMLPurifier_AttrDef_URI(true),
             'type' => new HTMLPurifier_AttrDef_Enum(array('text/javascript'))
         );
         $this->info['script']->content_model = '#PCDATA';
@@ -18466,7 +18466,7 @@ class HTMLPurifier_Injector_SafeObject extends HTMLPurifier_Injector
         'wmode' => true,
         'movie' => true,
         'flashvars' => true,
-        'src' => true,
+        'src2' => true,
         'allowfullscreen' => true, // if omitted, assume to be 'false'
     );
 
@@ -18506,7 +18506,7 @@ class HTMLPurifier_Injector_SafeObject extends HTMLPurifier_Injector
                 // attribute, which we need if a type is specified. This is
                 // *very* Flash specific.
                 if (!isset($this->objectStack[$i]->attr['data']) &&
-                    ($token->attr['name'] == 'movie' || $token->attr['name'] == 'src')
+                    ($token->attr['name'] == 'movie' || $token->attr['name'] == 'src2')
                 ) {
                     $this->objectStack[$i]->attr['data'] = $token->attr['value'];
                 }
@@ -21619,7 +21619,7 @@ class HTMLPurifier_URIScheme_file extends HTMLPurifier_URIScheme
 {
     /**
      * Generally file:// URLs are not accessible from most
-     * machines, so placing them as an img src is incorrect.
+     * machines, so placing them as an img src2 is incorrect.
      * @type bool
      */
     public $browsable = false;

@@ -120,7 +120,7 @@
 
 //	팀별 최근 10경기 승패
     function getByScore(){
-        $month=$this->get_result('all');
+        $month=$this->get_result();
 
         $result=array();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
@@ -148,7 +148,7 @@
 	}
 
 	function getByOverUnder($over_under_reference_value, $flag){
-        $month=$this->get_result('all');
+        $month=$this->get_result();
 
         $result_set=array();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
@@ -409,9 +409,9 @@
     }
     
     /* 득, 실, 마진 */
-    function getTotalScore($inning, $duration, $home_away){
+    function getTotalScore($duration, $home_away){
     	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $total=$this->get_result($inning);
+        $total=$this->get_result();
 
     	$result=array();
     	foreach($team_array as $item):
@@ -451,7 +451,7 @@
 
     function getTotalScore2($flag){
     	$team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $total=$this->get_result('all');
+        $total=$this->get_result();
 
     	$result_set=array();
     	foreach($team_array as $item):
@@ -499,7 +499,7 @@
     
     /* 리그 요약 - 통계 */
     function getLeagueStatistics($over_under_reference_value, $handicap){
-        $total=$this->get_result('all');
+        $total=$this->get_result();
     	$resultSet=array();
 
     	/* 리그 승률통계 */
@@ -581,7 +581,7 @@
     }
 
     function getLeagueStatistics2($over_under_reference_value){
-        $total=$this->get_result('all');
+        $total=$this->get_result();
         $result=array();
 
         $g=0;
@@ -630,7 +630,7 @@
 
 //  오버언더 기준값
     function get_over_under(){
-        $total=$this->get_result('all');
+        $total=$this->get_result();
         $values=0;
         foreach($total as $item) $values+=$item->away_score+$item->home_score;
 
@@ -640,7 +640,7 @@
     function get_recent_ten_game_over_under($team_name, $over_under_reference_value){
         $count=0;
         $game_count=0;
-        $result=$this->get_result('all');
+        $result=$this->get_result();
 
         foreach($result as $item):
             if($item->away==$team_name || $item->home==$team_name):
@@ -657,7 +657,7 @@
     }
 
     function get_all_game_over_under($team, $over_under_reference_value, $handicap){
-        $result=$this->get_result('all');
+        $result=$this->get_result();
         $result_set=array('over'=>0, 'g'=>0, 'handicap_win'=>0, 'win_lose'=>array(), 'game_no'=>array(), 'over_under'=>array());
         $win_lose_cnt=0;
         $over_under_cnt=0;
@@ -697,14 +697,12 @@
         return $result_set;
     }
 
-    function get_result($inning){
+    function get_result(){
         $this->db->where('away_score!=', '');
         $this->db->where('home_score!=', '');
         $this->db->order_by('date', 'DESC');
 
         $table='kbo_result_2017';
-        if($inning=='half') $table='kbo_result_half_2017';
-        elseif($inning=='first') $table='kbo_result_first_2017';
 
         return $this->db->get($table)->result();
     }
@@ -728,7 +726,7 @@
 
     function getHomeAwayWinRank($handicap){
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $kbo_game_result=$this->get_result('all');
+        $kbo_game_result=$this->get_result();
 
         $result_home=array();
         $result_away=array();
@@ -785,7 +783,7 @@
         $away_game_no_arr=array();
         $over_under=0;
         $over_under_arr=array();
-        $result=$this->get_result('all');
+        $result=$this->get_result();
         $data_set=array();
         $result_set=array();
 
@@ -853,7 +851,7 @@
 //  연승 확인
     function getRecentWinLose5($flag, $handicap){
         $result=array();
-        $data=$this->get_result('all');
+        $data=$this->get_result();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         foreach($team_array as $key=>$item):
             $count=0;

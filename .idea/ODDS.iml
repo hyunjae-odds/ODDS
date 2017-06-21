@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="MINING" />
     <orderEntry type="module" module-name="jerusalemdonkeys" />
+    <orderEntry type="module" module-name="RATCHET" />
   </component>
 </module>

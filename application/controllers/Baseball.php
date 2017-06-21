@@ -18,8 +18,8 @@ class Baseball extends MY_Controller{
 //      RankBoard
         $total=$this->getRankBoard('all', $duration, $home_away, 0 ,0);
 //      득/실/마진
-        if($this->input->get('game')==null) $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
-        else $plus_minus=$this->baseball_model->getTotalScore('all', $this->input->get('game'), 'all');
+        if($this->input->get('game')==null) $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
+        else $plus_minus=$this->baseball_model->getTotalScore($this->input->get('game'), 'all');
 //      합치기
         foreach($total as $item):
             $item->plus=$plus_minus[$item->team];
@@ -72,9 +72,9 @@ class Baseball extends MY_Controller{
         $total=$this->getRankBoard($inning, $duration, 'all', $handicap, $over_under);
         $total_away=$this->getRankBoard($inning, $duration, 'away', $handicap, $over_under);
         $total_home=$this->getRankBoard($inning, $duration, 'home', $handicap, $over_under);
-        $plus_minus=$this->baseball_model->getTotalScore($inning, $duration, 'all');
-        $plus_minus_away=$this->baseball_model->getTotalScore($inning, $duration, 'away');
-        $plus_minus_home=$this->baseball_model->getTotalScore($inning, $duration, 'home');
+        $plus_minus=$this->baseball_model->getTotalScore($duration, 'all');
+        $plus_minus_away=$this->baseball_model->getTotalScore($duration, 'away');
+        $plus_minus_home=$this->baseball_model->getTotalScore($duration, 'home');
         $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
 
         foreach($teams as $item):
@@ -252,7 +252,7 @@ class Baseball extends MY_Controller{
         foreach($defence as $item) $item->team=$full_name_team[$item->team];
 
         $total=$this->getRankBoard('all', 'all', 'all', 0, 0);
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
         foreach($total as $item):
             $item->plus=$plus_minus[$item->team];
             $item->minus=$plus_minus[$item->team.'_lose'];
@@ -405,11 +405,10 @@ class Baseball extends MY_Controller{
         $MINING->join('players', 'line_up.player_id = players.player_id');
         $MINING->join('teams', 'teams.no = line_up.team');
         $line_up=$MINING->get_where('line_up', array('schedule_no'=>$mining_data->no))->result();
+        $this->db->get_where('kbo_daily_batter', array(''));
 
         $away_batter_line_up=array();
         $home_batter_line_up=array();
-        $away_pitcher_line_up=array();
-        $home_pitcher_line_up=array();
         $away_pitchers=array();
         $home_pitchers=array();
         $away=($result->away=='kt')? 'KT' : $result->away;
@@ -447,7 +446,7 @@ class Baseball extends MY_Controller{
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
         $home_away=($this->input->get('home_away')!=null)? $this->input->get('home_away') : 'all';
         $first_statistics=$this->baseball_model->get_record_by_team($team);
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
         $plus_minus_rank=$this->get_rank_plus_minus($team);
         $over_under_reference_value=$this->baseball_model->get_over_under();
         $over_under=$this->baseball_model->get_all_game_over_under($team, $over_under_reference_value, $handicap);
@@ -493,7 +492,7 @@ class Baseball extends MY_Controller{
         foreach($defence as $item) if($item->team==$team) $team_detail_record['defence_data']=$item;
 
         $rank_board=$this->getRankBoard('all', 'all', $home_away, 0 ,0);
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', $home_away);
+        $plus_minus=$this->baseball_model->getTotalScore('all', $home_away);
 
 //      기록분석
         $offense_title_str_arr=array('avg'=>'타율','r'=>'득점','h'=>'안타','hr'=>'홈런','slg'=>'장타율','obp'=>'출루율','risp'=>'득점권타율','bb'=>'볼넷','so'=>'삼진','gdp'=>'병살타');
@@ -559,7 +558,7 @@ class Baseball extends MY_Controller{
         $handicap=1.5;
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
         $first_statistics=$this->baseball_model->get_record_by_team($team);
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
         $plus_minus_rank=$this->get_rank_plus_minus($team);
         $over_under_reference_value=$this->baseball_model->get_over_under();
         $over_under=$this->baseball_model->get_all_game_over_under($team, $over_under_reference_value, $handicap);
@@ -1181,7 +1180,7 @@ class Baseball extends MY_Controller{
         $team_total=$this->baseball_model->getTeamTotal();
         $offense=$this->baseball_model->get('kbo_team_offense_2017');
         $defence=$this->baseball_model->get('kbo_team_defence_2017');
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
 
         foreach($foreach_str as $teams):
             $result=array();
@@ -1234,7 +1233,7 @@ class Baseball extends MY_Controller{
     }
 
     function get_rank_plus_minus($team){
-        $plus_minus=$this->baseball_model->getTotalScore('all', 'all', 'all');
+        $plus_minus=$this->baseball_model->getTotalScore('all', 'all');
         $team_total=$this->baseball_model->getTeamTotal();
         $team_array=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
         $result=array();
@@ -1567,8 +1566,6 @@ class Baseball extends MY_Controller{
     }
 
     function crawlingWithColumnList($source, $column_list){
-        $this->load->library('curl');
-
         $piece_1=explode('</tbody>', $source);
         $pieces_6=explode('<tbody>', $piece_1[0]);
         $pieces_2=explode("<tr>", $pieces_6[1]);
@@ -1590,7 +1587,44 @@ class Baseball extends MY_Controller{
         return $resultSet;
     }
 
-    /* ---------------------------------------------------------- CRAWLING ---------------------------------------------------------- */
+    function crawlingDailyBatterPitcher($player_id, $pitcher_or_batter){
+        $this->load->library('curl');
+
+        $url_word=($pitcher_or_batter=='pitcher')? 'PitcherDetail': 'HitterDetail';
+        $source=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/'.$url_word.'/Daily.aspx?playerId='.$player_id);
+        $column_list=($pitcher_or_batter=='pitcher')? array('date','opponent','position','result','era1','tbf','ip','h','hr','bb','hbp','so','r','er','era2')
+                                                    : array('date','opponent','avg1','ab','r','h','second_b','third_b','hr','rbi','sb','cs','bb','hbp','so','gdp','avg2');
+
+        $piece_1=explode('</tbody>', $source);
+        if(sizeof($piece_1)>2):
+            foreach($piece_1 as $item):
+                $pieces_6=explode('<tbody>', $item);
+                unset($pieces_6[0]);
+                foreach($pieces_6 as $items):
+                    $pieces_2=explode("<tr>", $items);
+                    for($z=1; $z<count($pieces_2); $z++){
+                        $dataArray=array();
+                        $pieces_3=explode("</tr>", $pieces_2[$z]);
+                        $pieces_4=explode("</td>", $pieces_3[0]);
+                        for($v=0; $v<count($pieces_4)-1; $v++){
+                            $pieces_5=explode(">", $pieces_4[$v]);
+                            array_push($dataArray, $pieces_5[1]);
+                        }
+                        $dataSet=array_combine($column_list, $dataArray);
+
+                        $num=$this->db->get_where('kbo_daily_'.$pitcher_or_batter, array('player_id'=>$player_id, 'date'=>$dataSet['date']))->num_rows();
+                        if($num==0):
+                            $this->db->set('player_id', $player_id);
+                            $this->db->set('insert_dt', 'NOW()', false);
+                            $this->db->insert('kbo_daily_'.$pitcher_or_batter, $dataSet);
+                        endif;
+                    }
+                endforeach;
+            endforeach;
+        endif;
+    }
+
+/* ---------------------------------------------------------- CRAWLING ---------------------------------------------------------- */
 
 //  자동화 됨
     function crawling_result(){
@@ -1866,5 +1900,16 @@ class Baseball extends MY_Controller{
         for($i=0; $i<count($arr3); $i++): $resultSet[$i]['name']=$arr3[$i]; endfor;
 
         $this->baseball_model->insertNoDelete('kbo_runnerbasic_2017', $resultSet, true);
+    }
+
+//  자동화 됨
+    function crawlingDailyPlayer(){
+        $MINING=$this->get_mining_db();
+
+        $batter_list_from_mining=$MINING->get_where('players', array('position!='=>'투수'))->result();
+        foreach($batter_list_from_mining as $item) $this->crawlingDailyBatterPitcher($item->player_id, 'batter');
+
+        $pitcher_list_from_mining=$MINING->get_where('players', array('position'=>'투수'))->result();
+        foreach($pitcher_list_from_mining as $item) $this->crawlingDailyBatterPitcher($item->player_id, 'pitcher');
     }
 }
