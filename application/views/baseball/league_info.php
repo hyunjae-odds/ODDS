@@ -9,12 +9,10 @@
 	</div>
 	<div class="game_w">
 		<ul class="tab01 gameMain">
-			<li class="on"><a href="/baseball/league_info/">리그정보</a></li>
+			<li class="on"><a href="/baseball/league_info">리그정보</a></li>
 			<li><a href="/baseball/result/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-			<li><a href="/baseball/stats_win_rate/">리그 통계</a></li>
-			<li><a href="/baseball/team_record/<?=date('Y');?>/<?=date('m');?>/all/all">팀 기록</a></li>
-			<li><a href="/baseball/player_record/">선수 기록</a></li>
-			<li><a href="/baseball/score/">상대 전적</a></li>
+			<li><a href="/baseball/player_record_hitter">선수 기록</a></li>
+			<li><a href="/baseball/score">상대 전적</a></li>
 		</ul>
 		<ul class="tab_view01 gameMain_view">
 			<li class="active s1">
@@ -70,7 +68,7 @@
 					<?php endfor; ?>
 				</div>
 				<div class="pb50 relative" style="margin-left:0;">
-					<h3>2017 KBO 리그 순위</h3>
+					<h3>2017 KBO 리그 테이블</h3>
 					<p class="more" style="left:auto;right:0;">"리그통계" 메뉴에서 더 많은 통계를 확인할 수 있습니다</p>
 					<ul class="tab_view01 LastGame_view Team" style="margin-top:3px;">
 						<li class="active ranking ss1">
@@ -121,8 +119,8 @@
 										</tr>
                                         <?php foreach($total as $entry): ?>
                                         	<tr>
-                                            	<?php if($entry->rank==1 || $entry->rank==2 || $entry->rank==3 || $entry->rank==4): ?>
-                                                	<td><span class="rankdot0<?=$entry->rank;?>_color"><b><?=$entry->rank;?></b></span></td>
+                                            	<?php if($entry->rank==1 || $entry->rank==2 || $entry->rank==3 || $entry->rank==4| $entry->rank==5): if($entry->rank==5) $rank_color=4; else $rank_color=$entry->rank; ?>
+                                                	<td><span class="rankdot0<?=$rank_color;?>_color"><b><?=$entry->rank;?></b></span></td>
                                             	<?php elseif($entry->rank==4): ?><td><span class="rankdot04_color"><b><?=$entry->rank;?></b></span></td>
                                                 <?php else: ?><td><?=$entry->rank;?></td><?php endif; ?>
                                                 <td><?=$entry->team;?></td>
@@ -137,11 +135,10 @@
                                                 <td>
                                                     <?php
                                                         $exp=explode(';', $entry->recent_game);
-                                                        foreach($exp as $value) :
-                                                            if($value=='승'): echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_win.png" alt="" title=""/>';
-                                                            elseif($value=='패'): echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
-                                                            else: echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
-                                                            endif;
+                                                        foreach($exp as $key=>$value):
+                                                            if($value=='승') echo '<a href="/baseball/match_information/'.$entry->recent_detail[9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_win.png" title="'.$entry->recent_detail[9-$key]["away"].' '.$entry->recent_detail[9-$key]["away_score"].":".$entry->recent_detail[9-$key]["home_score"].' '.$entry->recent_detail[9-$key]["home"].'"/></a>';
+                                                            elseif($value=='패') echo '<a href="/baseball/match_information/'.$entry->recent_detail[9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" title="'.$entry->recent_detail[9-$key]["away"].' '.$entry->recent_detail[9-$key]["away_score"].":".$entry->recent_detail[9-$key]["home_score"].' '.$entry->recent_detail[9-$key]["home"].'"/></a>';
+                                                            else echo '<a href="/baseball/match_information/'.$entry->recent_detail[9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" title="'.$entry->recent_detail[9-$key]["away"].' '.$entry->recent_detail[9-$key]["away_score"].":".$entry->recent_detail[9-$key]["home_score"].' '.$entry->recent_detail[9-$key]["home"].'"/></a>';
                                                         endforeach;
                                                     ?>
 												</td>
@@ -183,24 +180,28 @@
 								<col width="*"/><col width="25%"/><col width="25%"/>
 							</colgroup>
 							<tr>
-								<th>리그 승률통계</th>
-								<th>경기수</th>
-								<th>확률</th>
+								<th>승률 통계</th>
+								<th>경기</th>
+								<th>승</th>
+								<th>승률</th>
 							</tr>
 							<tr>
-								<td>홈팀 승리</td>
+								<td>홈팀 승</td>
+								<td><?=$league_statistics['g'];?></td>
 								<td><?=$league_statistics['home_win'];?></td>
-								<td><?php $home_per=number_format($league_statistics['home_win']/($league_statistics['home_win']+$league_statistics['away_win']+$league_statistics['draw'])*100,0); echo $home_per;?>%</td>
+								<td><?php $home_per=number_format($league_statistics['home_win']/$league_statistics['g'],3); echo $home_per;?></td>
 							</tr>
 							<tr>
-								<td>원정팀 승리</td>
+								<td>원정팀 승</td>
+								<td><?=$league_statistics['g'];?></td>
 								<td><?=$league_statistics['away_win'];?></td>
-								<td><?php $away_per=number_format($league_statistics['away_win']/($league_statistics['home_win']+$league_statistics['away_win']+$league_statistics['draw'])*100,0); echo $away_per;?>%</td>
+								<td><?php $away_per=number_format($league_statistics['away_win']/$league_statistics['g'],3); echo $away_per;?></td>
 							</tr>
 							<tr>
 								<td>타이</td>
+								<td><?=$league_statistics['g'];?></td>
 								<td><?=$league_statistics['draw'];?></td>
-								<td><?=100-($home_per+$away_per)?>%</td>
+								<td><?=number_format(100-($home_per*100+$away_per*100),0);?>%</td>
 							</tr>
 						</table>
 						<table class="table_default">
@@ -208,191 +209,93 @@
 							<colgroup>
 								<col width="*"/><col width="25%"/><col width="25%"/>
 							</colgroup>
+                            <tr>
+                                <th><?=$handicap;?> 핸디캡 승률</th>
+                                <th>경기</th>
+                                <th>승</th>
+                                <th>승률</th>
+                            </tr>
 							<tr>
-								<th>리그 득점통계</th>
-								<th>득점</th>
-								<th>경기당</th>
-							</tr>
-							<tr>
-								<td>전체경기 득점</td>
-								<td><?=$league_statistics['home_total_score']+$league_statistics['away_total_score'];?></td>
-								<td>-</td>
-							</tr>
-							<tr>
-								<td>홈경기 득점</td>
-								<td><?=$league_statistics['home_total_score'];?></td>
-								<td><?php $home_score=number_format($league_statistics['home_total_score']/($league_statistics['home_total_score']+$league_statistics['away_total_score'])*100,0); echo $home_score;?>%</td>
-							</tr>
-							<tr>
-								<td>원정경기 득점</td>
-								<td><?=$league_statistics['away_total_score'];?></td>
-								<td><?=100-$home_score?>%</td>
-							</tr>
-						</table>
-						<table class="table_default">
-							<caption></caption>
-							<colgroup>
-								<col width="*"/><col width="25%"/><col width="25%"/>
-							</colgroup>
-							<tr>
-								<th>핸디캡 (<?=$handicap;?>) 승률 통계</th>
-								<th>경기수</th>
-								<th>확률</th>
-							</tr>
-							<tr>
-								<td>홈팀 승리</td>
+								<td>홈팀 승</td>
+								<td><?=$league_statistics['g'];?></td>
 								<td><?=$league_statistics['handicap_home_win'];?></td>
-								<td><?=$league_statistics['handicap_home_win_rate'];?>%</td>
+								<td><?=number_format($league_statistics['handicap_home_win']/$league_statistics['g'], 3);?>%</td>
 							</tr>
 							<tr>
-								<td>원정팀 승리</td>
+								<td>원정팀 승</td>
+								<td><?=$league_statistics['g'];?></td>
 								<td><?=$league_statistics['handicap_away_win'];?></td>
-								<td><?=$league_statistics['handicap_away_win_rate'];?>%</td>
+								<td><?=number_format($league_statistics['handicap_home_win']/$league_statistics['g'], 3);?>%</td>
 							</tr>
+                            <tr>
+                                <td>타이</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
 						</table>
+                        <table class="table_default">
+                            <caption></caption>
+                            <colgroup>
+                                <col width="*"/><col width="25%"/><col width="25%"/>
+                            </colgroup>
+                            <tr>
+                                <th>득점 통계</th>
+                                <th>경기</th>
+                                <th>득점</th>
+                                <th>경기당</th>
+                            </tr>
+                            <tr>
+                                <td>전체 득점</td>
+                                <td><?=$league_statistics['g'];?></td>
+                                <td><?=$league_statistics['home_total_score']+$league_statistics['away_total_score'];?></td>
+                                <td><?=number_format(($league_statistics['home_total_score']+$league_statistics['away_total_score'])/($league_statistics['g']),2);?></td>
+                            </tr>
+                            <tr>
+                                <td>홈 득점</td>
+                                <td><?=$league_statistics['g'];?></td>
+                                <td><?=$league_statistics['home_total_score'];?></td>
+                                <td><?=number_format($league_statistics['home_total_score']/($league_statistics['g']),2);?></td>
+                            </tr>
+                            <tr>
+                                <td>원정 득점</td>
+                                <td><?=$league_statistics['g'];?></td>
+                                <td><?=$league_statistics['away_total_score'];?></td>
+                                <td><?=number_format($league_statistics['away_total_score']/($league_statistics['g']),2);?></td>
+                            </tr>
+                        </table>
 						<table class="table_default">
 							<caption></caption>
 							<colgroup>
 								<col width="*"/><col width="25%"/><col width="25%"/>
 							</colgroup>
 							<tr>
-								<th>오버/언더 확률통계</th>
-								<th>경기수</th>
+								<th>O/U 통계</th>
+								<th>경기</th>
+								<th>오버</th>
 								<th>확률</th>
 							</tr>
 							<tr>
-								<td>오버 (<?=$over_under_reference_value;?>)</td>
-								<td><?=$league_statistics['over'];?></td>
-								<td><?=number_format($league_statistics['over']/$league_statistics['g']*100);?>%</td>
+								<td>오버 <?=$over_under_reference_value-1;?></td>
+								<td><?=$league_statistics['g'];?></td>
+								<td><?=$league_statistics['over_minus_one'];?></td>
+								<td><?=number_format($league_statistics['over_minus_one']/$league_statistics['g']*100);?>%</td>
 							</tr>
 							<tr>
-								<td>언더 (<?=$over_under_reference_value;?>)</td>
-								<td><?=$league_statistics['g']-$league_statistics['over'];?></td>
-								<td><?=number_format(($league_statistics['g']-$league_statistics['over'])/$league_statistics['g']*100);?>%</td>
+								<td>오버 <?=$over_under_reference_value;?></td>
+                                <td><?=$league_statistics['g'];?></td>
+                                <td><?=$league_statistics['over'];?></td>
+                                <td><?=number_format($league_statistics['over']/$league_statistics['g']*100);?>%</td>
+							</tr>
+                            <tr>
+								<td>오버 <?=$over_under_reference_value+1;?></td>
+                                <td><?=$league_statistics['g'];?></td>
+                                <td><?=$league_statistics['over_plus_one'];?></td>
+                                <td><?=number_format($league_statistics['over_plus_one']/$league_statistics['g']*100);?>%</td>
 							</tr>
 						</table>
 					</div>
 					<div class="clear"></div>
-				</div>
-				<div class="pb50 TOP5">
-					<h3>2017 KBO 각 부분 상위 5팀</h3>
-					<div>
-						<h4>공격력 상위 5팀<span></span></h4>
-						<table class="table_default">
-							<caption></caption>
-							<colgroup>
-								<col width="190px"/>
-								<col width="85px"/>
-								<col width="80px"/>
-								<col width="80px"/>
-								<col width="85px"/>
-							</colgroup>
-							<tr>
-								<th>팀 명</th>
-								<th>타율</th>
-								<th>홈런</th>
-								<th>득점</th>
-								<th>경기당</th>
-							</tr>
-							<?php for($i=0; $i<5; $i++): ?>
-								<tr>
-									<td><?=$offense[$i]->team;?></td>
-									<td><?=number_format($offense[$i]->avg,3);?></td>
-									<td><?=$offense[$i]->hr;?></td>
-									<td><?=$offense[$i]->h;?></td>
-									<td>6.45</td>
-								</tr>
-							<?php endfor; ?>
-						</table>
-					</div>
-					<div>
-						<h4>공격력 하위 5팀<span></span></h4>
-						<table class="table_default">
-							<caption></caption>
-							<colgroup>
-								<col width="190px"/>
-								<col width="85px"/>
-								<col width="80px"/>
-								<col width="80px"/>
-								<col width="85px"/>
-							</colgroup>
-							<tr>
-								<th>팀 명</th>
-								<th>타율</th>
-								<th>홈런</th>
-								<th>득점</th>
-								<th>경기당</th>
-							</tr>
-							<?php for($i=9; $i>4; $i--): ?>
-								<tr>
-									<td><?=$offense[$i]->team;?></td>
-									<td><?=number_format($offense[$i]->avg,3);?></td>
-									<td><?=$offense[$i]->hr;?></td>
-									<td><?=$offense[$i]->h;?></td>
-									<td>6.45</td>
-								</tr>
-							<?php endfor; ?>
-						</table>
-					</div>
-					<div>
-						<h4>방어력 상위 5팀<span></span></h4>
-						<table class="table_default">
-							<caption></caption>
-							<colgroup>
-								<col width="190px"/>
-								<col width="85px"/>
-								<col width="80px"/>
-								<col width="80px"/>
-								<col width="85px"/>
-							</colgroup>
-							<tr>
-								<th>팀 명</th>
-								<th>방어율</th>
-								<th>피홈런</th>
-								<th>실점</th>
-								<th>경기당</th>
-							</tr>
-							<?php for($i=0; $i<5; $i++): ?>
-								<tr>
-									<td><?=$defence[$i]->team;?></td>
-									<td><?=number_format($defence[$i]->era, 2);?></td>
-									<td><?=$defence[$i]->hr;?></td>
-									<td><?=$defence[$i]->h;?></td>
-									<td>6.45</td>
-								</tr>
-							<?php endfor; ?>
-						</table>
-					</div>
-					<div>
-						<h4>방어력 하위 5팀<span></span></h4>
-						<table class="table_default">
-							<caption></caption>
-							<colgroup>
-								<col width="190px"/>
-								<col width="85px"/>
-								<col width="80px"/>
-								<col width="80px"/>
-								<col width="85px"/>
-							</colgroup>
-							<tr>
-								<th>팀 명</th>
-								<th>방어율</th>
-								<th>피홈런</th>
-								<th>실점</th>
-								<th>경기당</th>
-							</tr>
-							<?php for($i=9; $i>4; $i--): ?>
-								<tr>
-									<td><?=$defence[$i]->team;?></td>
-									<td><?=number_format($defence[$i]->era, 2);?></td>
-									<td><?=$defence[$i]->hr;?></td>
-									<td><?=$defence[$i]->h;?></td>
-									<td>6.45</td>
-								</tr>
-							<?php endfor; ?>
-						</table>
-					</div>	
-					<span class="clear"></span>
 				</div>
 			</li>
 		</ul>

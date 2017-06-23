@@ -33,7 +33,7 @@
         $day=substr($result_row->date,3,2);
         $date_=CURRENT_YEAR.'-'.$month.'-'.$day;
 
-        $num_rows=$this->db->get_where('kbo_team_total_2017', array('date'=>$date_))->num_rows();
+        $num_rows=$this->db->get_where('kbo_team_total', array('date'=>$date_))->num_rows();
 
 		foreach($data as $entry):
 			$this->db->set('insert_dt', 'NOW()', false);
@@ -42,9 +42,9 @@
                 $this->db->where('date', $date_);
                 $this->db->where('team', $entry->team);
 
-                $this->db->update('kbo_team_total_2017', $entry);
+                $this->db->update('kbo_team_total', $entry);
             elseif($num_rows==0):
-                $this->db->insert('kbo_team_total_2017', $entry);
+                $this->db->insert('kbo_team_total', $entry);
             endif;
 		endforeach;
 	}
@@ -95,6 +95,12 @@
         $this->db->insert('kbo_comment', $data);
     }
 
+    function insertPlayerRecordByCrawling($table, $result_set){
+        $this->db->set('insert_dt', 'NOW()', false);
+
+        return $this->db->insert($table, $result_set);
+    }
+
 	/* GET */
 	function get($table){
 		return $this->db->get($table)->result();
@@ -104,6 +110,43 @@
         $this->db->order_by($order_by, $asc_or_desc);
 
         return $this->db->get($table)->result();
+    }
+
+    function get_order_by_limit($table, $order_by, $asc_desc){
+        $last_date=$this->getLastDay($table, 'crawling_date');
+
+        $this->db->select('kbo_players.name, kbo_players.player_id, team,'.$order_by);
+        $this->db->where('crawling_date', $last_date);
+        if($order_by!='hld' && $order_by!='sv') $this->db->where('req_yn', 'Y');
+        $this->db->join('kbo_players', 'kbo_players.player_id='.$table.'.player_id');
+        $this->db->order_by($order_by, $asc_desc);
+
+        return $this->db->get($table, 5)->result();
+    }
+
+    function getRequired($bat_or_pit){
+        $last_date=$this->getLastDay('kbo_team_total', 'date');
+        $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $result=array();
+
+        foreach($teams as $item):
+            $this->db->select('g');
+            $g=$this->db->get_where('kbo_team_total', array('team'=>$item, 'date'=>$last_date))->row();
+            $value=($bat_or_pit=='bat')? floor($g->g*3.1) : $g->g;
+
+            $result[$item]=$value;
+        endforeach;
+
+        return $result;
+    }
+
+    function getLastDay($table, $field){
+        $this->db->select($field);
+        $this->db->order_by($field, 'DESC');
+        $this->db->distinct();
+        $last_date=$this->db->get($table)->row();
+
+        return $last_date->$field;
     }
 
 	function getByMonth($this_month, $team){
@@ -201,21 +244,19 @@
 		$this->db->like('date', '2017-'.$this_month, 'after');
 		$this->db->order_by('date', 'ASC');
 
-		return $this->db->get_where('kbo_team_total_2017', array('team'=>$team))->result();
+		return $this->db->get_where('kbo_team_total', array('team'=>$team))->result();
 	}
 
 	function getBySort($table, $sort){
-        $this->db->select('insert_dt');
-    	$this->db->order_by('insert_dt', 'DESC');
-    	$this->db->distinct();
-    	$lastDate=$this->db->get($table, 1)->row();
+        $last_date=$this->getLastDay($table, 'crawling_date');
 
-     	$this->db->where('rank!=', 99);
-     	$this->db->where('insert_dt', $lastDate->insert_dt);
-     	if($table=='kbo_team_offense_2017' && $sort=='avg'): $this->db->order_by($sort, 'DESC');
+        $this->db->select($table.'.*, kbo_players.name');
+        $this->db->where('crawling_date', $last_date);
+        $this->db->where('req_yn', 'Y');
+        $this->db->join('kbo_players', 'kbo_players.player_id='.$table.'.player_id');
+        if($table=='kbo_team_offense_2017' && $sort=='avg'): $this->db->order_by($sort, 'DESC');
         elseif($sort=='era' || $sort=='whip' || $sort=='avg'): $this->db->order_by($sort, 'ASC');
         else: $this->db->order_by($sort, 'DESC'); endif;
-
 	    return $this->db->get($table)->result();
     }
 
@@ -224,7 +265,7 @@
 		$this->db->like('date', '2017-'.$this_month, 'after');
 		$this->db->distinct();
 
-		return $this->db->get('kbo_team_total_2017')->num_rows();
+		return $this->db->get('kbo_team_total')->num_rows();
 	}
 
 	function get_schedule($select_month){
@@ -233,126 +274,82 @@
 		$this->db->order_by('date', 'ASC');
 		$this->db->distinct();
 
-		return $this->db->get('kbo_team_total_2017')->result();
+		return $this->db->get('kbo_team_total')->result();
 	}
 
 	function getNumRows($table, $schedule_no){
-        if($table=='kbo_batterbasic_2017'):
-            $this->db->select('insert_dt');
-            $this->db->order_by('insert_dt', 'DESC');
-            $this->db->distinct();
-            $lastDate=$this->db->get($table, 1)->row();
-
-            $this->db->where('insert_dt', $lastDate->insert_dt);
+        if($table=='kbo_record_hitter'): $lastDate=$this->getLastDay($table, 'crawling_date'); $this->db->where('crawling_date', $lastDate); $this->db->where('req_yn', 'Y');
         else: $this->db->where('schedule_no', $schedule_no); endif;
 
 	    return $this->db->get($table)->num_rows();
     }
 
     function getPagination($table, $limit, $offset){
-    	$this->db->select('insert_dt');
-    	$this->db->order_by('insert_dt', 'DESC');
-    	$this->db->distinct();
-    	$lastDate=$this->db->get($table, 1)->row();
+        $last_date=$this->getLastDay($table, 'crawling_date');
 
-    	$this->db->order_by('rank', 'ASC');
-     	$this->db->where('insert_dt', $lastDate->insert_dt);
-     	if($table=='kbo_pitcherbasic_2017') $this->db->where('rank!=', 99);
+    	$this->db->select($table.'.*, kbo_players.name');
+     	$this->db->where('crawling_date', $last_date);
+        $this->db->where('req_yn', 'Y');
+        $this->db->where('kbo_players.delete_yn', 'N');
+     	$this->db->join('kbo_players', 'kbo_players.player_id='.$table.'.player_id');
+        if($table=='kbo_record_hitter') $this->db->order_by('avg', 'DESC'); else $this->db->order_by('era', 'ASC');
+
         return $this->db->get($table, $limit, $offset)->result();
     }
 
-    function getBySortPagination($table, $sort, $limit, $offset){
-    	$this->db->select('insert_dt');
-    	$this->db->order_by('insert_dt', 'DESC');
-    	$this->db->distinct();
-    	$lastDate=$this->db->get($table, 1)->row();
+    function get_num_rows_by_sort($sort){
+        $lastDate=$this->getLastDay('kbo_record_pitcher', 'crawling_date');
+        if($sort =='era' || $sort =='avg' || $sort =='wpct' || $sort =='whip') $this->db->where('crawling_date', $lastDate); $this->db->where('req_yn', 'Y');
 
-    	$this->db->order_by($sort, 'DESC');
-     	$this->db->where('insert_dt', $lastDate->insert_dt);
+        return $this->db->get('kbo_record_pitcher')->num_rows();
+    }
+
+    function getBySortPagination($table, $sort, $limit, $offset){
+        $last_date=$this->getLastDay($table, 'crawling_date');
+
+        $this->db->select($table.'.*, kbo_players.name');
+        $this->db->where('crawling_date', $last_date);
+        if($sort=='era' || $sort=='wpct' || $sort=='whip' || $sort=='avg') $this->db->where('req_yn', 'Y');
+        $this->db->join('kbo_players', 'kbo_players.player_id='.$table.'.player_id');
+    	if($sort=='era' || $sort=='era' || $sort=='whip') $this->db->order_by($sort, 'ASC'); else $this->db->order_by($sort, 'DESC');
+
         return $this->db->get($table, $limit, $offset)->result();
     }
 
     function getBatter5(){
         $resultSet=array();
 
-        $resultSet['avg']=$this->get_orderby('kbo_batterbasic_2017', 5, 'avg', 'DESC');
-        $resultSet['hr']=$this->get_orderby('kbo_batterbasic_2017', 5, 'hr', 'DESC');
-        $resultSet['rbi']=$this->get_orderby('kbo_batterbasic_2017', 5, 'rbi', 'DESC');
-        $resultSet['h']=$this->get_orderby('kbo_batterbasic_2017', 5, 'h', 'DESC');
-        $resultSet['ops']=$this->get_orderby('kbo_batterbasic_2017', 5, 'ops', 'DESC');
+        $resultSet['avg']=$this->get_order_by_limit('kbo_record_hitter','avg', 'DESC');
+        $resultSet['hr']=$this->get_order_by_limit('kbo_record_hitter', 'hr', 'DESC');
+        $resultSet['rbi']=$this->get_order_by_limit('kbo_record_hitter', 'rbi', 'DESC');
+        $resultSet['h']=$this->get_order_by_limit('kbo_record_hitter', 'h', 'DESC');
+        $resultSet['sb']=$this->get_order_by_limit('kbo_record_hitter', 'sb', 'DESC');
+        $resultSet['ops']=$this->get_order_by_limit('kbo_record_hitter', 'ops', 'DESC');
 
-        return $this->set_player_id($resultSet, array('avg', 'hr', 'rbi', 'h', 'ops'));
+        return $resultSet;
     }
 
     function getPitcher5(){
         $resultSet=array();
 
-        $resultSet['era']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'era', 'ASC');
-        $resultSet['w']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'w', 'DESC');
-        $resultSet['sv']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'sv', 'DESC');
-        $resultSet['wpct']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'wpct', 'DESC');
-        $resultSet['hld']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'hld', 'DESC');
-        $resultSet['so']=$this->get_orderby('kbo_pitcherbasic_2017', 5, 'so', 'DESC');
-
-        return $this->set_player_id($resultSet, array('era', 'w', 'sv', 'wpct', 'hld', 'so'));
-    }
-
-    function getRunner5(){
-        $this->db->where('insert_dt', $this->getLastDay('kbo_runnerbasic_2017'));
-        $this->db->order_by('rank', 'ASC');
-
-        $resultSet=$this->db->get('kbo_runnerbasic_2017', 5)->result();
-
-        foreach($resultSet as $item):
-            $this->db->select('player_id');
-            $value=$this->db->get_where('kbo_players_2017', array('name'=>$item->name))->row();
-            $item->player_id=$value->player_id;
-        endforeach;
+        $resultSet['era']=$this->get_order_by_limit('kbo_record_pitcher', 'era', 'ASC');
+        $resultSet['w']=$this->get_order_by_limit('kbo_record_pitcher', 'w', 'DESC');
+        $resultSet['sv']=$this->get_order_by_limit('kbo_record_pitcher', 'sv', 'DESC');
+        $resultSet['wpct']=$this->get_order_by_limit('kbo_record_pitcher', 'wpct', 'DESC');
+        $resultSet['hld']=$this->get_order_by_limit('kbo_record_pitcher', 'hld', 'DESC');
+        $resultSet['so']=$this->get_order_by_limit('kbo_record_pitcher', 'so', 'DESC');
 
         return $resultSet;
-    }
-
-//  사진 출력을 위한 player_id 추가
-    function set_player_id($resultSet, $str_array){
-        foreach($str_array as $entry):
-            foreach($resultSet[$entry] as $item):
-                $this->db->select('player_id');
-                $value=$this->db->get_where('kbo_players_2017', array('name'=>$item->name))->row();
-                $item->player_id=$value->player_id;
-            endforeach;
-        endforeach;
-
-        return $resultSet;
-    }
-
-    function get_orderby($table, $limit, $order_by, $asc_desc){
-        $this->db->select('name, team, '.$order_by);
-        $this->db->where('insert_dt', $this->getLastDay($table));
-        if($order_by=='era' || $order_by=='wpct') $this->db->where('rank!=', 99);
-        $this->db->order_by($order_by, $asc_desc);
-
-        return $this->db->get($table, $limit)->result();
-    }
-
-    function getLastDay($table){
-        $this->db->select('insert_dt');
-        $this->db->order_by('insert_dt', 'DESC');
-        $this->db->distinct();
-        $lastDate=$this->db->get($table)->row();
-
-        return $lastDate->insert_dt;
     }
 
     function sortingByTeam($table, $team){
-        $this->db->select('insert_dt');
-        $this->db->order_by('insert_dt', 'DESC');
-        $this->db->distinct();
-        $lastDate=$this->db->get($table, 1)->row();
+        $last_date=$this->getLastDay($table, 'crawling_date');
 
+        $this->db->select($table.'.*, kbo_players.name');
+        $this->db->where('crawling_date', $last_date);
+        $this->db->where('req_yn', 'Y');
+        $this->db->join('kbo_players', 'kbo_players.player_id='.$table.'.player_id');
         $this->db->order_by('rank');
-        $this->db->where('rank!=', 99);
-        $this->db->where('insert_dt', $lastDate->insert_dt);
-
         return $this->db->get_where($table, array('team'=>$team))->result();
     }
 
@@ -527,54 +524,30 @@
     	
     	/* 핸디캡 승률 통계 */
         $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
-        $away_result=0;
-        $home_result=0;
-        $away_win_result=0;
-        $home_win_result=0;
+        $away_win_handicap=0;
+        $home_win_handicap=0;
         $over=0;
+        $over_minus_one=0;
+        $over_plus_one=0;
         foreach($teams as $key=>$team):
-            $away_g=0;
-            $home_g=0;
-            $away_win=0;
-            $home_win=0;
-            $away_win_in_handicap=0;
-            $home_win_in_handicap=0;
-            $get_score=0;
             foreach($total as $item):
-                if($item->away==$team):
-                    if($item->away_score > $item->home_score): $away_win++; endif;
-                    $away_g++;
-                    $get_score+=$item->away_score;
-                endif;
-                if($item->home==$team):
-                    if($item->home_score > $item->away_score): $home_win++; endif;
-                    $home_g++;
-                    $get_score+=$item->home_score;
-                endif;
-                if($item->away==$team) if($item->away_score-$handicap > $item->home_score) $away_win_in_handicap++;
-                if($item->home==$team) if($item->home_score-$handicap > $item->away_score) $home_win_in_handicap++;
+                if($item->away==$team): if($item->away_score-$handicap > $item->home_score): $away_win_handicap++; endif;
+                elseif($item->home==$team): if($item->home_score-$handicap > $item->away_score): $home_win_handicap++; endif; endif;
 
 //              오버언더
-                if($key==0): if($item->away_score+$item->home_score > $over_under_reference_value): $over++; endif; endif;
+                if($key==0):
+                    if($item->away_score+$item->home_score > $over_under_reference_value) $over++;
+                    if($item->away_score+$item->home_score > $over_under_reference_value-1) $over_minus_one++;
+                    if($item->away_score+$item->home_score > $over_under_reference_value+1) $over_plus_one++;
+                endif;
             endforeach;
-            $away_win_rate=number_format($away_win/$away_g*100);
-            $away_win_rate_handicap=number_format( $away_win_in_handicap/$away_g*100);
-            $away=number_format($away_win_rate_handicap/$away_win_rate*100,3);
-            $home_win_rate=number_format($home_win/$home_g*100);
-            $home_win_rate_handicap=number_format( $home_win_in_handicap/$home_g*100);
-            $home=number_format($home_win_rate_handicap/$home_win_rate*100,3);
-
-            $away_result+=$away;
-            $home_result+=$home;
-            $away_win_result+=$away_win;
-            $home_win_result+=$home_win;
         endforeach;
 
-        $resultSet['handicap_away_win']=$away_win_result;
-        $resultSet['handicap_home_win']=$home_win_result;
-        $resultSet['handicap_away_win_rate']=number_format($away_result/count($teams));
-        $resultSet['handicap_home_win_rate']=number_format($home_result/count($teams));
+        $resultSet['handicap_away_win']=$away_win_handicap;
+        $resultSet['handicap_home_win']=$home_win_handicap;
         $resultSet['over']=$over;
+        $resultSet['over_minus_one']=$over_minus_one;
+        $resultSet['over_plus_one']=$over_plus_one;
         $resultSet['g']=count($total);
 
     	return $resultSet;
@@ -941,7 +914,7 @@
     }
 
     function getRankByDateAndTeam($date, $team){
-        $result=$this->db->get_where('kbo_team_total_2017', array('date'=>$date, 'team'=>$team))->result();
+        $result=$this->db->get_where('kbo_team_total', array('date'=>$date, 'team'=>$team))->result();
         $rank=($result!=null) ? $result[0]->rank : $this->getRankByDateAndTeam(date('Y-m-d', strtotime("$date -1 day")), $team);
 
         return $rank;
@@ -951,9 +924,9 @@
         $this->db->select('date');
         $this->db->order_by('date', 'DESC');
         $this->db->distinct();
-        $result=$this->db->get_where('kbo_team_total_2017')->row();
+        $result=$this->db->get_where('kbo_team_total')->row();
 
-        return $this->db->get_where('kbo_team_total_2017', array('date'=>$result->date))->result();
+        return $this->db->get_where('kbo_team_total', array('date'=>$result->date))->result();
     }
 
     function get_team_introduce($team){
@@ -964,14 +937,14 @@
         $this->db->select('date');
         $this->db->order_by('date', 'DESC');
         $this->db->distinct();
-        $lastDate=$this->db->get('kbo_team_total_2017')->row();
+        $lastDate=$this->db->get('kbo_team_total')->row();
 
         $this->db->select('h, hr');
         $another_teams_offense=$this->db->get_where('kbo_team_offense_2017', array('team!='=>$team))->result();
         $this->db->select('so');
         $another_teams_defence=$this->db->get_where('kbo_team_defence_2017', array('team!='=>$team))->result();
 
-        $team_total=$this->db->get_where('kbo_team_total_2017', array('team'=>$team, 'date'=>$lastDate->date))->row();
+        $team_total=$this->db->get_where('kbo_team_total', array('team'=>$team, 'date'=>$lastDate->date))->row();
         $team_offense=$this->db->get_where('kbo_team_offense_2017', array('team'=>$team))->row();
         $team_defence=$this->db->get_where('kbo_team_defence_2017', array('team'=>$team))->row();
 
@@ -987,4 +960,10 @@
 
         return $result;
     }
+
+    function get_players(){
+        $this->db->select('player_id');
+        return $this->db->get_where('kbo_players', array('delete_yn'=>'N', 'record_year'=>date('Y')))->result();
+    }
+
 }
