@@ -46,7 +46,7 @@
 							?>
 								<tr>
 									<td><?=$item->time;?></td>
-									<td class="left pl20"><a href="/baseball/player?team=<?=$item->away;?>"><?=$item->away;?></a> vs <a href="/baseball/player?team=<?=$item->home;?>"><?=$item->home;?></a></td>
+									<td class="left pl20"><a href="/baseball/player_hitter?team=<?=$item->away;?>"><?=$item->away;?></a> vs <a href="/baseball/player_hitter?team=<?=$item->home;?>"><?=$item->home;?></a></td>
 									<td class="red">24</td>
 									<td>1.24</td>
 									<td>2.13</td>
@@ -60,7 +60,7 @@
 											<span class="g_BTN"><a href="">블로그</a></span>
 											<span class="y_BTN"><a href="">배당률</a></span>
 										</span>
-                                        <?php include('match_2_3.php'); ?>
+                                        <?php include('team_detail/match_2_3.php'); ?>
 									</td>
 								</tr>
 							<?php endif;endforeach; ?>

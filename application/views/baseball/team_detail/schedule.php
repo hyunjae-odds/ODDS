@@ -28,7 +28,7 @@ $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','�
         <ul class="tab01 gameMain">
             <li class=""><a href="/baseball/team_info?team=<?=$team;?>">시즌 기록</a></li>
             <li class="on"><a href="/baseball/schedule/<?=date('Y');?>/<?=date('m');?>?team=<?=$team;?>">경기 결과</a></li>
-            <li class=""><a href="/baseball/player?team=<?=$team;?>">선수 기록</a></li>
+            <li class=""><a href="/baseball/player_hitter?team=<?=$team;?>">선수 기록</a></li>
             <li class=""><a href="/baseball/situation?team=<?=$team;?>">선수 현황</a></li>
             <li class=""><a href="/baseball/team?team=<?=$team;?>">팀 소개</a></li>
         </ul>
@@ -76,9 +76,9 @@ $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','�
                     <div class="record_10">
                         <p>
                             <?php foreach($first_statistics['win_lose'] as $item):
-                                if($item=='win'): echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_win.png" alt="" title=""/></a>';
-                                elseif($item=='lose'): echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
-                                else: echo '<a href="javascript:void(0)" class="result_btn"><img src2="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
+                                if($item=='win'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title=""/></a>';
+                                elseif($item=='lose'): echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title=""/></a>';
+                                else: echo '<a href="javascript:void(0)" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title=""/></a>';
                                 endif;
                             endforeach; ?>
                         </p>

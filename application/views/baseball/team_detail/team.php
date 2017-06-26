@@ -12,7 +12,7 @@
         <ul class="tab01 gameMain">
             <li class=""><a href="/baseball/team_info?team=<?=$team;?>">시즌 기록</a></li>
             <li class=""><a href="/baseball/schedule/<?=date('Y');?>/<?=date('m');?>?team=<?=$team;?>">경기 결과</a></li>
-            <li class=""><a href="/baseball/player?team=<?=$team;?>">선수 기록</a></li>
+            <li class=""><a href="/baseball/player_hitter?team=<?=$team;?>">선수 기록</a></li>
             <li class=""><a href="/baseball/situation?team=<?=$team;?>">선수 현황</a></li>
             <li class="on"><a href="/baseball/team?team=<?=$team;?>">팀 소개</a></li>
         </ul>

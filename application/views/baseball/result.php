@@ -67,9 +67,9 @@
 						<tr>
 							<?php if($key%5==0) echo '<td rowspan="5"><b>'.$entry->date.'</b></td>';?>
 							<td class="l_b pr80"><?=$entry->time;?></td>
-							<td ><span class="<?=($entry->away_score > $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->away;?><?php if($entry->away_score > $entry->home_score) echo '</span>';?></td>
+                            <td><span class="<?=($entry->away_score > $entry->home_score) ? 'red' : 'lose';?>"><a href="/baseball/player_hitter?team=<?=$entry->away;?>"><?=$entry->away;?></a><?php if($entry->away_score > $entry->home_score) echo '</span>';?></td>
 							<td><b class="score"><?=$entry->away_score;?><span class="colon">:</span><?=$entry->home_score;?></b></td>
-							<td class="pr80"><span class="<?=($entry->away_score < $entry->home_score) ? 'red' : 'lose';?>"><?=$entry->home;?><?php if($entry->away_score < $entry->home_score) echo '</span>';?></td>
+                            <td class="pr80"><span class="<?=($entry->away_score < $entry->home_score) ? 'red' : 'lose';?>"><a href="/baseball/player_hitter?team=<?=$entry->home;?>"><?=$entry->home;?></a><?php if($entry->away_score < $entry->home_score) echo '</span>';?></td>
 							<td><span class="black">1.31</span></td>
 							<td>2.44</td>
 							<td>1.78</td>

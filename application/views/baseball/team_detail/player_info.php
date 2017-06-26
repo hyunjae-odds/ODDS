@@ -11,7 +11,7 @@
         <ul class="tab01 gameMain">
             <li class=""><a href="/baseball/team_info?team=<?=$team;?>">시즌 기록</a></li>
             <li class=""><a href="/baseball/schedule/<?=date('Y');?>/<?=date('m');?>?team=<?=$team;?>">경기 결과</a></li>
-            <li class="on"><a href="/baseball/player?team=<?=$team;?>">선수 기록</a></li>
+            <li class="on"><a href="/baseball/player_hitter?team=<?=$team;?>">선수 기록</a></li>
             <li class=""><a href="/baseball/situation?team=<?=$team;?>">선수 현황</a></li>
             <li class=""><a href="/baseball/team?team=<?=$team;?>">팀 소개</a></li>
         </ul>
@@ -30,11 +30,11 @@
                     <div class="clear"></div>
                     <ul>
                         <?php if($pitcher_or_batter=='batter'): ?>
-                            <li>타율<span><?=$player_basic['avg'];?></span>(<?=$player_basic['avg_rank'];?>위)</li>
+                            <li>타율<span><?=$player_basic['avg'];?></span></li>
                             <li>홈런<span><?=$player_basic['hr'];?></span></li>
                             <li>타점<span><?=$player_basic['rbi'];?></span></li>
                         <?php else: ?>
-                            <li>다승<span><?=$player_basic['w'];?></span>(<?=$player_basic['w_rank'];?>위)</li>
+                            <li>다승<span><?=$player_basic['w'];?></span></li>
                             <li>평균자책<span><?=$player_basic['era'];?></span></li>
                             <li>탈삼진<span><?=$player_basic['so'];?></span></li>
                         <?php endif;?>
