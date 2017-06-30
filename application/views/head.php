@@ -136,27 +136,28 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그</a></li>
-										<li><a href="game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그</a></li>
+										<li><a href="/baseball/league_info/MLB"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/MLB"><span class="majorL"></span>메이져리그</a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
@@ -167,27 +168,27 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">3</span></a></li>
-										<li><a href="game/league_base/league.php"><span class="majorL"></span>메이져리그<span class="grayNm">2</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">3</span></a></li>
+										<li><a href="/baseball/league_info/MLB"><span class="majorL"></span>메이져리그<span class="grayNm">2</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
@@ -198,27 +199,27 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그</a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그</a></li>
 										<li><a href="game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
@@ -229,27 +230,27 @@
 							<ul class="bestleague" style="display:none;">
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그</a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그</a></li>
 										<li><a href="game/league_base/league.php"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="AsiaL"></span>아시아</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="EuropeL"></span>유럽</a>
 									<ul class="bestleague2 " style="display:none;">
-										<li><a href="/baseball/league_info"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
+										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그<span class="grayNm">6</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="bundesligaL"></span>분데스리가<span class="grayNm">2</span></a></li>
 										<li><a href="game/league_base/league.php"><span class="serieL"></span>세리에 리그<span class="grayNm">4</span></a></li>
 									</ul>

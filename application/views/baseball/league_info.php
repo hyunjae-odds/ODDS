@@ -1,16 +1,17 @@
-﻿<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
+﻿<?php $days_in_korean=array("일", "월", "화", "수", "목", "금", "토"); ?>
+<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
 <div class="livescore game">
 	<div class="topTitle">
 		<p>
 			<span>리그정보 - 야구 - 대한민국</span>
 			<span class="sentence">SPORTS COMMUNITY POTAL <span>ODDSNAVI</span></span>
 		</p>
-		<h2 class="tit02">2017 KBO</h2>
+		<h2 class="tit02">2017 <?=$league;?></h2>
 	</div>
 	<div class="game_w">
 		<ul class="tab01 gameMain">
-			<li class="on"><a href="/baseball/league_info">리그정보</a></li>
-			<li><a href="/baseball/result/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
+			<li class="on"><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
+			<li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
 			<li><a href="/baseball/player_record_hitter">선수 기록</a></li>
 			<li><a href="/baseball/score">상대 전적</a></li>
 		</ul>
@@ -32,7 +33,15 @@
 								<col width="168px"/>
 							</colgroup>
 							<tr>
-								<th colspan="2" class="left pl20"><?=$schedule['date'][$i]->date;?></th>
+								<th colspan="2" class="left pl20">
+                                    <?php
+                                        if($league=='KBO'): echo $schedule['date'][$i]->date;
+                                        else:
+                                            $exp=explode('-', $schedule['date'][$i]->date);
+                                            echo $exp[1].'.'.$exp[2].'('.$days_in_korean[date("w")].')';
+                                        endif;
+                                    ?>
+                                </th>
 								<th>B’s</th>
 								<th>승</th>
 								<th>패</th>
@@ -41,11 +50,17 @@
 								<th class="left pl5">under</th>
 								<th>DATA</th>
 							</tr>
-							<?php foreach($schedule['schedule'] as $item):
-                                if($schedule['date'][$i]->date==$item->date):
-							?>
+							<?php foreach($schedule['schedule'] as $item): if($schedule['date'][$i]->date==$item->date): ?>
 								<tr>
-									<td><?=$item->time;?></td>
+									<td>
+                                        <?php
+                                            if($league=='KBO'): echo $item->time;
+                                            else:
+                                                $exp=explode(':', $item->time);
+                                                echo $exp[0].':'.$exp[1];
+                                            endif;
+                                        ?>
+                                    </td>
 									<td class="left pl20"><a href="/baseball/player_hitter?team=<?=$item->away;?>"><?=$item->away;?></a> vs <a href="/baseball/player_hitter?team=<?=$item->home;?>"><?=$item->home;?></a></td>
 									<td class="red">24</td>
 									<td>1.24</td>
@@ -63,7 +78,7 @@
                                         <?php include('team_detail/match_2_3.php'); ?>
 									</td>
 								</tr>
-							<?php endif;endforeach; ?>
+							<?php endif; endforeach; ?>
 						</table>
 					<?php endfor; ?>
 				</div>
@@ -74,17 +89,17 @@
 						<li class="active ranking ss1">
 							<div class="tab2_w">
 								<ul class="tab02">
-                                    <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=all')">전체</a></li>
-                                    <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=home')">홈</a></li>
-                                    <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=away')">원정</a></li>
+                                    <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=all')">전체</a></li>
+                                    <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=home')">홈</a></li>
+                                    <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=away')">원정</a></li>
 								</ul>
 								<div class="select" style="top:-7px;">
 									<p class="off"><span class="pp"><?php if($duration=='all') echo '시즌 전체'; else echo $duration.'경기';?></span><span class="pa"></span></p>
 										<ul>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=all&home_away=<?=$home_away;?>')">시즌 전체</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=10&home_away=<?=$home_away;?>')">10경기</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=20&home_away=<?=$home_away;?>')">20경기</a></li>
-											<li><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=30&home_away=<?=$home_away;?>')">30경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=all&home_away=<?=$home_away;?>')">시즌 전체</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=10&home_away=<?=$home_away;?>')">10경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=20&home_away=<?=$home_away;?>')">20경기</a></li>
+											<li><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=30&home_away=<?=$home_away;?>')">30경기</a></li>
 										</ul>
 									</div>
 								</div>
@@ -108,13 +123,13 @@
 											<th>순위</th>
 											<th class="left">팀</th>
 											<th>경기수</th>
-											<th><span class="n1 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win_rate')">승률</a></span></th>
-											<th><span class="n2 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win')">승</a></span></th>
-											<th><span class="n3 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=lose')">패</a></span></th>
-											<th><span class="n4 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=tie')">타이</a></span></th>
-											<th><span class="n5 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=plus')">득:실</a></span></th>
-											<th><span class="n6 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=margin')">마진</a></span></th>
-											<th><span class="n7 rn"><a href="javascript:location.replace('/baseball/league_info?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=game_car')">게임차</a></span></th>
+											<th><span class="n1 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win_rate')">승률</a></span></th>
+											<th><span class="n2 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=win')">승</a></span></th>
+											<th><span class="n3 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=lose')">패</a></span></th>
+											<th><span class="n4 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=tie')">타이</a></span></th>
+											<th><span class="n5 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=plus')">득:실</a></span></th>
+											<th><span class="n6 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=margin')">마진</a></span></th>
+											<th><span class="n7 rn"><a href="javascript:location.replace('/baseball/league_info/KBO?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&sort=game_car')">게임차</a></span></th>
 											<th>최근 10경기</th>
 										</tr>
                                         <?php foreach($total as $entry): ?>

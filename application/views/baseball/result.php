@@ -1,4 +1,5 @@
-﻿<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
+﻿<?php $days_in_korean=array("일", "월", "화", "수", "목", "금", "토"); ?>
+<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
 
 <div class="livescore game">
 	<div class="topTitle">
@@ -6,14 +7,14 @@
 			<span>리그정보 - 야구 - 대한민국</span>
 			<span class="sentence">SPORTS COMMUNITY POTAL <span>ODDSNAVI</span></span>
 		</p>
-		<h2 class="tit02"><?=date('Y');?> KBO</h2>
+		<h2 class="tit02"><?=date('Y');?> <?=$league?></h2>
 	</div>
 	<div class="game_w">
 		<ul class="tab01 gameMain">
-			<li class=""><a href="/baseball/league_info">리그정보</a></li>
-			<li class="on"><a href="/baseball/result/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-			<li class=""><a href="/baseball/player_record_hitter">선수 기록</a></li>
-			<li class=""><a href="/baseball/score">상대 전적</a></li>
+			<li class=""><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
+			<li class="on"><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
+			<li class=""><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB';?>">선수 기록</a></li>
+			<li class=""><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB';?>">상대 전적</a></li>
 		</ul>
 		<ul class="tab_view01 gameMain_view">
 			<li class="result02 s2 active pb50">
@@ -65,8 +66,25 @@
 					</tr>
 					<?php foreach($result as $key=>$entry): ?>
 						<tr>
-							<?php if($key%5==0) echo '<td rowspan="5"><b>'.$entry->date.'</b></td>';?>
-							<td class="l_b pr80"><?=$entry->time;?></td>
+							<?php
+                                if($league=='KBO'):
+                                    if($key%5==0): echo '<td rowspan="5"><b>'.$entry->date.'</b></td>'; endif;
+                                else:
+                                    if($key%15==0):
+                                        $exp=explode('-', $entry->date);
+                                        echo '<td rowspan="15"><b>'.$exp[1].'.'.$exp[2].'('.$days_in_korean[date("w")].')'.'</b></td>';
+                                    endif;
+                                endif;
+                            ?>
+							<td class="l_b pr80">
+                                <?php
+                                    if($league=='KBO'): echo $entry->time;
+                                    else:
+                                        $exp=explode(':', $entry->time);
+                                        echo $exp[0].':'.$exp[1];
+                                    endif;
+                                ?>
+                            </td>
                             <td><span class="<?=($entry->away_score > $entry->home_score) ? 'red' : 'lose';?>"><a href="/baseball/player_hitter?team=<?=$entry->away;?>"><?=$entry->away;?></a><?php if($entry->away_score > $entry->home_score) echo '</span>';?></td>
 							<td><b class="score"><?=$entry->away_score;?><span class="colon">:</span><?=$entry->home_score;?></b></td>
                             <td class="pr80"><span class="<?=($entry->away_score < $entry->home_score) ? 'red' : 'lose';?>"><a href="/baseball/player_hitter?team=<?=$entry->home;?>"><?=$entry->home;?></a><?php if($entry->away_score < $entry->home_score) echo '</span>';?></td>
