@@ -9,10 +9,10 @@
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
-            <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-            <li class="on"><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLB';?>">선수 기록</a></li>
-            <li><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB';?>">상대 전적</a></li>
+            <li><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">리그정보</a></li>
+            <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
+            <li class="on"><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">선수 기록</a></li>
+            <li><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">상대 전적</a></li>
         </ul>
         <ul class="tab_view01 gameMain_view">
             <li class="s5 active">
@@ -30,8 +30,8 @@
                 </div>
                 <div class="relative">
                     <ul class="blackTab r_tit" style="top:-33px;">
-                        <li class="on ls01_tab_1"><a href="/baseball/player_record_pitcher">투수</a></li>
-                        <li class="ls01_tab_2"><a href="/baseball/player_record_hitter">타자</a></li>
+                        <li class="on ls01_tab_1"><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLBAE';?>">투수</a></li>
+                        <li class="ls01_tab_2"><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLBAE';?>">타자</a></li>
                     </ul>
                     <div class="PL_REC ls01_1 active">
                         <ul class="player_rec">
@@ -107,17 +107,17 @@
                                 <div class="select">
                                     <p class="off"><span class="pp"><?=($team=='')? '팀 선택' : $team;?></span><span class="pa"></span></p>
                                     <ul>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">전체</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=두산&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">두산</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=NC&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">NC</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=넥센&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">넥센</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=LG&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">LG</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=KIA&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KIA</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=SK&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">SK</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=한화&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">한화</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=롯데&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">롯데</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=삼성&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">삼성</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher?team=KT&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KT</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">전체</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=두산&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">두산</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=NC&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">NC</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=넥센&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">넥센</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=LG&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">LG</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=KIA&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KIA</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=SK&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">SK</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=한화&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">한화</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=롯데&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">롯데</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=삼성&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">삼성</a></li>
+                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=KT&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KT</a></li>
                                     </ul>
                                 </div>
                                 <!--<div class="select ">
@@ -204,21 +204,21 @@
                                         <th>순위</th>
                                         <th>선수</th>
                                         <th>팀</th>
-                                        <th><span class="pr_1" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=era&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=1&team=<?=$team;?>')">평균자책</span></th>
-                                        <th><span class="pr_2" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=g&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=2&team=<?=$team;?>')">경기</span></th>
-                                        <th><span class="pr_3" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=w&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=3&team=<?=$team;?>')">승</span></th>
-                                        <th><span class="pr_4" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=l&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=4&team=<?=$team;?>')">패</span></th>
-                                        <th><span class="pr_5" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=sv&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=5&team=<?=$team;?>')">세이브</span></th>
-                                        <th><span class="pr_6" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=hld&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=6&team=<?=$team;?>')">홀드</span></th>
-                                        <th><span class="pr_7" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=wpct&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=7&team=<?=$team;?>')">승률</span></th>
-                                        <th><span class="pr_8" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=ip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=8&team=<?=$team;?>')">이닝</span></th>
-                                        <th><span class="pr_9" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=h&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=9&team=<?=$team;?>')">피안타</span></th>
-                                        <th><span class="pr_10" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=hr&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=10&team=<?=$team;?>')">홈</span></th>
-                                        <th><span class="pr_11" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=bb&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=11&team=<?=$team;?>')">볼넷</span></th>
-                                        <th><span class="pr_13" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=so&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=13&team=<?=$team;?>')">삼진</span></th>
-                                        <th><span class="pr_14" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=r&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=14&team=<?=$team;?>')">실점</span></th>
-                                        <th><span class="pr_15" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=er&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=15&team=<?=$team;?>')">자책</span></th>
-                                        <th><span class="pr_16" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=whip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=16&team=<?=$team;?>')">WHIP</span></th>
+                                        <th><span class="pr_1" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=era&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=1&team=<?=$team;?>')">평균자책</span></th>
+                                        <th><span class="pr_2" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=g&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=2&team=<?=$team;?>')">경기</span></th>
+                                        <th><span class="pr_3" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=w&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=3&team=<?=$team;?>')">승</span></th>
+                                        <th><span class="pr_4" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=l&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=4&team=<?=$team;?>')">패</span></th>
+                                        <th><span class="pr_5" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=sv&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=5&team=<?=$team;?>')">세이브</span></th>
+                                        <th><span class="pr_6" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=hld&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=6&team=<?=$team;?>')">홀드</span></th>
+                                        <th><span class="pr_7" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=wpct&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=7&team=<?=$team;?>')">승률</span></th>
+                                        <th><span class="pr_8" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=ip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=8&team=<?=$team;?>')">이닝</span></th>
+                                        <th><span class="pr_9" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=h&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=9&team=<?=$team;?>')">피안타</span></th>
+                                        <th><span class="pr_10" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=hr&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=10&team=<?=$team;?>')">홈</span></th>
+                                        <th><span class="pr_11" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=bb&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=11&team=<?=$team;?>')">볼넷</span></th>
+                                        <th><span class="pr_13" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=so&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=13&team=<?=$team;?>')">삼진</span></th>
+                                        <th><span class="pr_14" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=r&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=14&team=<?=$team;?>')">실점</span></th>
+                                        <th><span class="pr_15" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=er&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=15&team=<?=$team;?>')">자책</span></th>
+                                        <th><span class="pr_16" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=whip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=16&team=<?=$team;?>')">WHIP</span></th>
                                     </tr>
                                     <?php foreach($pitcher as $key=>$item): ?>
                                         <tr>
@@ -274,21 +274,21 @@
                                         <th>순위</th>
                                         <th>이름</th>
                                         <th>팀</th>
-                                        <th><span class="pr_17" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=era&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=17&team=<?=$team;?>')">평균자책</span></th>
-                                        <th><span class="pr_18" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=cg&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=18&team=<?=$team;?>')">완투</span></th>
-                                        <th><span class="pr_19" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=sho&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=19&team=<?=$team;?>')">완봉</span></th>
-                                        <th><span class="pr_20" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=qs&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=20&team=<?=$team;?>')">QS</span></th>
-                                        <th><span class="pr_21" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=bsv&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=21&team=<?=$team;?>')">BSV</span></th>
-                                        <th><span class="pr_22" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=tbf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=22&team=<?=$team;?>')">타자수</span></th>
-                                        <th><span class="pr_23" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=np&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=23&team=<?=$team;?>')">투구수</span></th>
-                                        <th><span class="pr_24" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=avg&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=24&team=<?=$team;?>')">피안타율</span></th>
-                                        <th><span class="pr_25" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=second_b&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=25&team=<?=$team;?>')">2루타</span></th>
-                                        <th><span class="pr_26" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=third_b&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=26&team=<?=$team;?>')">3루타</span></th>
-                                        <th><span class="pr_27" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=sac&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=27&team=<?=$team;?>')">SAC</span></th>
-                                        <th><span class="pr_28" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=sf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=28&team=<?=$team;?>')">SF</span></th>
-                                        <th><span class="pr_29" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=ibb&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=29&team=<?=$team;?>')">고의</span></th>
-                                        <th><span class="pr_30" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=wp&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=30&team=<?=$team;?>')">폭투</span></th>
-                                        <th><span class="pr_31" onclick="javascript:location.replace('/baseball/player_record_pitcher?pitcher_sort=bk&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=31&team=<?=$team;?>')">보크</span></th>
+                                        <th><span class="pr_17" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=era&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=17&team=<?=$team;?>')">평균자책</span></th>
+                                        <th><span class="pr_18" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=cg&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=18&team=<?=$team;?>')">완투</span></th>
+                                        <th><span class="pr_19" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=sho&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=19&team=<?=$team;?>')">완봉</span></th>
+                                        <th><span class="pr_20" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=qs&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=20&team=<?=$team;?>')">QS</span></th>
+                                        <th><span class="pr_21" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=bsv&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=21&team=<?=$team;?>')">BSV</span></th>
+                                        <th><span class="pr_22" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=tbf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=22&team=<?=$team;?>')">타자수</span></th>
+                                        <th><span class="pr_23" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=np&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=23&team=<?=$team;?>')">투구수</span></th>
+                                        <th><span class="pr_24" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=avg&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=24&team=<?=$team;?>')">피안타율</span></th>
+                                        <th><span class="pr_25" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=second_b&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=25&team=<?=$team;?>')">2루타</span></th>
+                                        <th><span class="pr_26" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=third_b&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=26&team=<?=$team;?>')">3루타</span></th>
+                                        <th><span class="pr_27" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=sac&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=27&team=<?=$team;?>')">SAC</span></th>
+                                        <th><span class="pr_28" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=sf&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=28&team=<?=$team;?>')">SF</span></th>
+                                        <th><span class="pr_29" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=ibb&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=29&team=<?=$team;?>')">고의</span></th>
+                                        <th><span class="pr_30" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=wp&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=30&team=<?=$team;?>')">폭투</span></th>
+                                        <th><span class="pr_31" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=bk&scroll_top='+document.body.scrollTop+'&focus=2&bold_num=31&team=<?=$team;?>')">보크</span></th>
                                     </tr>
                                     <?php foreach($pitcher as $key=>$item): ?>
                                         <tr>

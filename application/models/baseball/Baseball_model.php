@@ -434,7 +434,7 @@
             $this->db->or_like('date', date($date_form, strtotime("$today +1 day")), 'after');
             $this->db->or_like('date', date($date_form, strtotime("$today +2 day")), 'after');
             if($count_is_it_3<3) $this->db->or_like('date', date($date_form, strtotime("$today +3 day")), 'after');
-            if($league=='mlb') $this->db->order_by('time', 'ASC');
+            if($league!='KBO') $this->db->order_by('time', 'ASC');
             $resultSet['schedule']=$this->db->get($table)->result();
         else:
             $resultSet=array();
@@ -451,7 +451,7 @@
             $this->db->or_like('date', date($date_form, strtotime("$today +2 day")), 'after');
             $this->db->or_like('date', date($date_form, strtotime("$today +3 day")), 'after');
             if($count_is_it_3<3) $this->db->or_like('date', date($date_form, strtotime("$today +4 day")), 'after');
-            if($league=='mlb') $this->db->order_by('time', 'ASC');
+            if($league!='KBO') $this->db->order_by('time', 'ASC');
             $resultSet['schedule']=$this->db->get($table)->result();
         endif;
 
@@ -468,8 +468,7 @@
         else if($league=='MLBNC') $team_array=array('Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds');
         else if($league=='MLBNW') $team_array=array('Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
 
-        if($league=='KBO') $total=$this->baseball_model->get_result('KBO_result');
-        else $total=$this->baseball_model->get_result('MLB_result');
+        $total=($league=='KBO')? $this->baseball_model->get_result('KBO_result') : $this->baseball_model->get_result('MLB_result');
 
     	$result=array();
     	foreach($team_array as $item):
@@ -555,9 +554,9 @@
         return $result_set;
     }
 
-    /* 리그 요약 - 통계 */
-    function getLeagueStatistics($over_under_reference_value, $handicap){
-        $total=$this->get_result('KBO_result');
+    /* 리그 정보 - 리그 요약 */
+    function getLeagueStatistics($league, $over_under_reference_value, $handicap){
+        $total=($league=='KBO')? $this->baseball_model->get_result('KBO_result') : $this->baseball_model->get_result('MLB_result');
     	$resultSet=array();
 
     	/* 리그 승률통계 */
@@ -584,7 +583,10 @@
     	$resultSet['home_total_score']=$home_total_score;
 
     	/* 핸디캡 승률 통계 */
-        $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $mlb_teams=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays','Cleveland Indians','Minnesota Twins','Kansas City Royals','Detroit Tigers','Chicago White Sox','Houston Astros','Los Angeles Angels of Anaheim','Texas Rangers','Seattle Mariners','Oakland Athletics','Washington Nationals','Atlanta Braves','New York Mets','Miami Marlins','Philadelphia Phillies','Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds','Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
+        if($league=='KBO') $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        else if($league=='MLB_A') $teams=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays','Cleveland Indians','Minnesota Twins','Kansas City Royals','Detroit Tigers','Chicago White Sox','Houston Astros','Los Angeles Angels of Anaheim','Texas Rangers','Seattle Mariners','Oakland Athletics');
+        else if($league=='MLB_N') $teams=array('Washington Nationals','Atlanta Braves','New York Mets','Miami Marlins','Philadelphia Phillies','Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds','Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
         $away_win_handicap=0;
         $home_win_handicap=0;
         $over=0;
@@ -592,10 +594,6 @@
         $over_plus_one=0;
         foreach($teams as $key=>$team):
             foreach($total as $item):
-                if($item->away==$team): if($item->away_score-$handicap > $item->home_score): $away_win_handicap++; endif;
-                elseif($item->home==$team): if($item->home_score-$handicap > $item->away_score): $home_win_handicap++; endif; endif;
-
-//              오버언더
                 if($key==0):
                     if($item->away_score+$item->home_score > $over_under_reference_value) $over++;
                     if($item->away_score+$item->home_score > $over_under_reference_value-1) $over_minus_one++;
@@ -603,6 +601,15 @@
                 endif;
             endforeach;
         endforeach;
+
+        if($league!='KBO'):
+            foreach($mlb_teams as $key=>$team):
+                foreach($total as $item):
+                    if($item->away==$team): if($item->away_score-$handicap > $item->home_score): $away_win_handicap++; endif;
+                    elseif($item->home==$team): if($item->home_score-$handicap > $item->away_score): $home_win_handicap++; endif; endif;
+                endforeach;
+            endforeach;
+        endif;
 
         $resultSet['handicap_away_win']=$away_win_handicap;
         $resultSet['handicap_home_win']=$home_win_handicap;
@@ -663,8 +670,8 @@
     }
 
 //  오버언더 기준값
-    function get_over_under(){
-        $total=$this->get_result('KBO_result');
+    function get_over_under($league){
+        $total=($league=='KBO')? $this->baseball_model->get_result('KBO_result') : $this->baseball_model->get_result('MLB_result');
         $values=0;
         foreach($total as $item) $values+=$item->away_score+$item->home_score;
 
@@ -732,13 +739,9 @@
     }
 
     function get_result($table){
-        if($table=='KBO_result'):
-            $this->db->where('away_score!=', '');
-            $this->db->where('home_score!=', '');
-        else:
-            $this->db->where('away_score!=', '0');
-            $this->db->where('home_score!=', '0');
-        endif;
+        $this->db->where('away_score!=', '');
+        $this->db->where('home_score!=', '');
+        if($table=='MLB_result') $this->db->where('date <=', date('Y-m-d'));
         $this->db->order_by('date', 'DESC');
 
         return $this->db->get($table)->result();
@@ -1023,7 +1026,7 @@
 
     function get_players(){
         $this->db->select('player_id');
-        return $this->db->get_where('KBO_players', array('delete_yn'=>'N', 'record_year'=>date('Y')))->result();
+        return $this->db->get_where('KBO_players', array('delete_yn'=>'N', 'year'=>date('Y')))->result();
     }
 
     function get_top_player_in_team($team, $pitcher_or_hitter, $sort){

@@ -414,7 +414,7 @@
 								<li class="best2"><a href=""><span class="scheduleL"></span>Today’s Matches</a>
 									<ul class="bestleague2 " style="display:none;">
 										<li><a href="/baseball/league_info/KBO"><span class="KBO_L"></span>KBO 리그</a></li>
-										<li><a href="/baseball/league_info/MLB"><span class="majorL"></span>메이져리그</a></li>
+										<li><a href="/baseball/league_info/MLB_A"><span class="majorL"></span>메이져리그</a></li>
 									</ul>
 								</li>
 								<li class="best2"><a href=""><span class="popularityL"></span>인기 리그</a>

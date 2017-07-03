@@ -16,34 +16,95 @@ class Baseball extends MY_Controller{
         if($this->input->get('sort')==null || $this->input->get('sort')=='win_rate') $sort='win_rate'; else $sort=$this->input->get('sort');
 
 //      RankBoard
-        $total=$this->getRankBoard($league, 'all', $duration, $home_away, 0 ,0);
+        if($league=='MLB_A'):
+            $total_west=$this->getRankBoard('MLBAW', 'all', $duration, $home_away, 0 ,0);
+            $plus_minus=$this->baseball_model->getTotalScore('MLBAW', $duration, 'all');
+            foreach($total_west as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
 
-//      득/실/마진
-        if($duration=='all') $plus_minus=$this->baseball_model->getTotalScore($league, 'all', 'all');
-        else $plus_minus=$this->baseball_model->getTotalScore($league, $duration, 'all');
+            $total_central=$this->getRankBoard('MLBAC', 'all', $duration, $home_away, 0,0);
+            $plus_minus=$this->baseball_model->getTotalScore('MLBAC', $duration, 'all');
+            foreach($total_central as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
 
-//      합치기
-        foreach($total as $item):
-            $item->plus=$plus_minus[$item->team];
-            $item->minus=$plus_minus[$item->team.'_lose'];
-            $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
-        endforeach;
+            $total_east=$this->getRankBoard('MLBAE', 'all', $duration, $home_away, 0,0);
+            $plus_minus=$this->baseball_model->getTotalScore('MLBAE', $duration, 'all');
+            foreach($total_east as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
+
+            $total=array($total_west, $total_central, $total_east);
+        elseif($league=='MLB_N'):
+            $total_west=$this->getRankBoard('MLBNW', 'all', $duration, $home_away, 0 ,0);
+            $plus_minus=$this->baseball_model->getTotalScore('MLBNW', $duration, 'all');
+            foreach($total_west as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
+
+            $total_central=$this->getRankBoard('MLBNC', 'all', $duration, $home_away, 0,0);
+            $plus_minus=$this->baseball_model->getTotalScore('MLBNC', $duration, 'all');
+            foreach($total_central as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
+
+            $total_east=$this->getRankBoard('MLBNE', 'all', $duration, $home_away, 0,0);
+            $plus_minus=$this->baseball_model->getTotalScore('MLBNE', $duration, 'all');
+            foreach($total_east as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
+
+            $total=array($total_west, $total_central, $total_east);
+        else:
+            $total=$this->getRankBoard($league, 'all', $duration, $home_away, 0 ,0);
+            $plus_minus=$this->baseball_model->getTotalScore($league, $duration, 'all');
+            foreach($total as $item):
+                $item->plus=$plus_minus[$item->team];
+                $item->minus=$plus_minus[$item->team.'_lose'];
+                $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
+            endforeach;
+        endif;
 
 //      정렬
-        $sort_word=($sort=='game_car')? SORT_ASC : SORT_DESC;
-        foreach($total as $item) $sortAux[]=$item->$sort;
-        array_multisort($sortAux, $sort_word, $total);
-        $num=($league=='KBO')? 10 : 5;
-        for($i=0; $i<$num; $i++) $total[$i]->rank=$i+1;
+        if($league=='KBO'):
+            $sort_word=($sort=='game_car')? SORT_ASC : SORT_DESC;
+            foreach($total as $item) $sortAux[]=$item->$sort;
+            array_multisort($sortAux, $sort_word, $total);
+            for($i=0; $i<10; $i++) $total[$i]->rank=$i+1;
+        else:
+            $sort_word=($sort=='game_car')? SORT_ASC : SORT_DESC;
+
+            foreach($total[0] as $item) $sortAux0[]=$item->$sort;
+            array_multisort($sortAux0, $sort_word, $total[0]);
+            for($i=0; $i<5; $i++) $total[0][$i]->rank=$i+1;
+            foreach($total[1] as $item) $sortAux1[]=$item->$sort;
+            array_multisort($sortAux1, $sort_word, $total[1]);
+            for($i=0; $i<5; $i++) $total[1][$i]->rank=$i+1;
+            foreach($total[2] as $item) $sortAux2[]=$item->$sort;
+            array_multisort($sortAux2, $sort_word, $total[2]);
+            for($i=0; $i<5; $i++) $total[2][$i]->rank=$i+1;
+        endif;
 
         $handicap=1.5;
-        $over_under_reference_value=$this->baseball_model->get_over_under();
-        $offense=$this->baseball_model->get_order_by('KBO_team_offense', 'avg', 'DESC');
-        $defence=$this->baseball_model->get_order_by('KBO_team_defence', 'era', 'ASC');
-        $schedule=$this->baseball_model->getScheduleAfter3Days($league);
-        $league_statistics=$this->baseball_model->getLeagueStatistics($over_under_reference_value, $handicap);
+        $over_under_reference_value=$this->baseball_model->get_over_under($league);
 
-        $this->load->view("/baseball/league_info", array('league'=>$league,'total'=>$total,'offense'=>$offense,'defence'=>$defence,'schedule'=>$schedule,'handicap'=>$handicap,'league_statistics'=>$league_statistics,
+        $schedule=$this->baseball_model->getScheduleAfter3Days($league);
+        $league_statistics=$this->baseball_model->getLeagueStatistics($league, $over_under_reference_value, $handicap);
+
+        $this->load->view("/baseball/league_info", array('league'=>$league,'total'=>$total,'schedule'=>$schedule,'handicap'=>$handicap,'league_statistics'=>$league_statistics,
                                                          'scroll_top'=>$scroll_top,'duration'=>$duration,'home_away'=>$home_away,'sort'=>$sort,'over_under_reference_value'=>$over_under_reference_value));
         $this->load->view("/footer");
     }
@@ -63,7 +124,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/head");
 
         $per_page=20;
-        $offset=($this->uri->segment(3)!=null) ? $this->uri->segment(3) : 0;
+        $offset=($this->uri->segment(4)!=null) ? $this->uri->segment(4) : 0;
         $mouseTop=($this->input->get('scroll_top')!=null) ? $this->input->get('scroll_top') : 0;
         $focus=($this->input->get('focus')!=null) ? $this->input->get('focus') : 0;
         $boldNum=($this->input->get('bold_num')!=null) ? $this->input->get('bold_num') : 0;
@@ -71,7 +132,7 @@ class Baseball extends MY_Controller{
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
 
         $this->load->helper('cookie');
-        if($this->uri->segment(3)==null):
+        if($this->uri->segment(4)==null):
             $this->input->set_cookie(array('name'=>'mouse_top','value'=>$mouseTop,'expire'=>'86500','domain'=>SERVER_HOST));
             $this->input->set_cookie(array('name'=>'focus','value'=>$focus,'expire'=>'86500','domain'=>SERVER_HOST));
             $this->input->set_cookie(array('name'=>'bold_num','value'=>$boldNum,'expire'=>'86500','domain'=>SERVER_HOST));
@@ -90,7 +151,7 @@ class Baseball extends MY_Controller{
         else $batter=$this->baseball_model->getBySortPagination('KBO_record_hitter', $batter_sort, $per_page, $offset);
 
         $this->load->library('pagination');
-        $config['base_url'] = '/baseball/player_record_hitter';
+        $config['base_url'] = '/baseball/player_record_hitter/'.$league;
         $config['total_rows'] = ($team=='')? $this->baseball_model->getNumRows('KBO_record_hitter', 0) : $this->baseball_model->get_num_rows_by_team('KBO_record_hitter', $team, $batter_sort);
         $config['per_page']=$per_page;
         $config['num_links'] = 3;
@@ -113,7 +174,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/head");
 
         $per_page=20;
-        $offset=($this->uri->segment(3)!=null) ? $this->uri->segment(3) : 0;
+        $offset=($this->uri->segment(4)!=null) ? $this->uri->segment(4) : 0;
         $mouseTop=($this->input->get('scroll_top')!=null)? $this->input->get('scroll_top') : 0;
         $focus=($this->input->get('focus')!=null)? $this->input->get('focus') : 0;
         $boldNum=($this->input->get('bold_num')!=null)? $this->input->get('bold_num') : 0;
@@ -121,7 +182,7 @@ class Baseball extends MY_Controller{
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
 
         $this->load->helper('cookie');
-        if($this->uri->segment(3)==null):
+        if($this->uri->segment(4)==null):
             $this->input->set_cookie(array('name'=>'mouse_top','value'=>$mouseTop,'expire'=>'86500','domain'=>SERVER_HOST));
             $this->input->set_cookie(array('name'=>'focus','value'=>$focus,'expire'=>'86500','domain'=>SERVER_HOST));
             $this->input->set_cookie(array('name'=>'bold_num','value'=>$boldNum,'expire'=>'86500','domain'=>SERVER_HOST));
@@ -143,7 +204,7 @@ class Baseball extends MY_Controller{
         }
 
         $this->load->library('pagination');
-        $config['base_url'] = '/baseball/player_record_pitcher';
+        $config['base_url'] = '/baseball/player_record_pitcher/'.$league;
         $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows_by_sort($pitcher_sort) : $this->baseball_model->get_num_rows_by_team('KBO_record_pitcher', $team, $pitcher_sort);
         $config['per_page'] = $per_page;
         $config['num_links'] = 3;
@@ -202,7 +263,7 @@ class Baseball extends MY_Controller{
         $result->away_rank=$this->baseball_model->getRankByDateAndTeam($date_, $result->away);
         $result->home_rank=$this->baseball_model->getRankByDateAndTeam($date_, $result->home);
 
-        $over_under_reference_value=$this->baseball_model->get_over_under();
+        $over_under_reference_value=$this->baseball_model->get_over_under('KBO');
         $team_total=$this->get_away_home_recent_game($result->away, $result->home, $over_under_reference_value);
         $away_result=$this->get_recent_10_game_result($result->away);
         $home_result=$this->get_recent_10_game_result($result->home);
@@ -270,7 +331,7 @@ class Baseball extends MY_Controller{
         $first_statistics=$this->baseball_model->get_record_by_team($team);
         $plus_minus=$this->baseball_model->getTotalScore('KBO', 'all', 'all');
         $plus_minus_rank=$this->get_rank_plus_minus($team);
-        $over_under_reference_value=$this->baseball_model->get_over_under();
+        $over_under_reference_value=$this->baseball_model->get_over_under('KBO');
         $over_under=$this->baseball_model->get_all_game_over_under($team, $over_under_reference_value, $handicap);
         $offense=$this->baseball_model->get('KBO_team_offense');
         $defence=$this->baseball_model->get('KBO_team_defence');
@@ -383,7 +444,7 @@ class Baseball extends MY_Controller{
         $first_statistics=$this->baseball_model->get_record_by_team($team);
         $plus_minus=$this->baseball_model->getTotalScore('KBO', 'all', 'all');
         $plus_minus_rank=$this->get_rank_plus_minus($team);
-        $over_under_reference_value=$this->baseball_model->get_over_under();
+        $over_under_reference_value=$this->baseball_model->get_over_under('KBO');
         $over_under=$this->baseball_model->get_all_game_over_under($team, $over_under_reference_value, $handicap);
         $result=$this->baseball_model->getByMonth($league, $select_month, $team);
 
@@ -751,8 +812,7 @@ class Baseball extends MY_Controller{
 
     function getRankBoard($league, $inning, $duration, $home_away, $handicap, $over_under){
         $finalCut=array();
-        if($league=='KBO') $result=$this->baseball_model->get_result('KBO_result');
-        else $result=$this->baseball_model->get_result('MLB_result');
+        $result=($league=='KBO')? $this->baseball_model->get_result('KBO_result') : $this->baseball_model->get_result('MLB_result');
         if($handicap==99) $handicap=0;
 
         if($league=='MLBAE') $team_array=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays');
@@ -952,7 +1012,7 @@ class Baseball extends MY_Controller{
                                 if($items->home_score-$handicap > $items->away_score) $recent='승;'.$recent;
                                 else if($items->home_score-$handicap < $items->away_score) $recent='패;'.$recent;
                                 else $recent='무;'.$recent;
-                                array_push($recent_detail, array('no'=>$item->no,'away'=>$item->away,'away_score'=>$item->away_score,'home'=>$item->home,'home_score'=>$item->home_score));
+                                array_push($recent_detail, array('no'=>$items->no,'away'=>$items->away,'away_score'=>$items->away_score,'home'=>$items->home,'home_score'=>$items->home_score));
                             endif;
                         endif;
                     else:
@@ -969,7 +1029,7 @@ class Baseball extends MY_Controller{
                             if($items->home_score < $items->away_score-$handicap) $recent='승;'.$recent;
                             else if($items->home_score > $items->away_score-$handicap) $recent='패;'.$recent;
                             else $recent='무;'.$recent;
-                            array_push($recent_detail, array('no'=>$item->no,'away'=>$item->away,'away_score'=>$item->away_score,'home'=>$item->home,'home_score'=>$item->home_score));
+                            array_push($recent_detail, array('no'=>$items->no,'away'=>$items->away,'away_score'=>$items->away_score,'home'=>$items->home,'home_score'=>$items->home_score));
                         endif;
                     endif;
                 endforeach;
@@ -1467,10 +1527,9 @@ class Baseball extends MY_Controller{
         $column_list1=array('team','era','g','cg','sho','w','l','sv','hld','wpct','tbf','np','ip','h','second_b','third_b','hr');
         $column_list2=array('sac','sf','bb','ibb','so','wp','bk','r','er','bsv','whip','avg','qs');
 
-        $players_id=$this->baseball_model->get_players();
-        foreach($players_id as $key=>$items):
-            $source=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId='.$players_id->player_id);
-
+        $players=$this->baseball_model->get_players();
+        foreach($players as $key=>$items):
+            $source=$this->curl->simple_get('http://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId='.$items->player_id);
             $piece_1=explode('</tbody>', $source);
             $result_set1=array();
             $result_set2=array();
@@ -1488,7 +1547,7 @@ class Baseball extends MY_Controller{
                         endforeach;
 
                         if($key==0): $dataSet1=array_combine($column_list1, $result); $result_set1=$dataSet1; endif;
-                        if($key==1): $dataSet2=array_combine($column_list2, $result); $result_set2=array('crawling_date'=>date('Y-m-d'),'player_id'=>$players_id->player_id)+$result_set1+$dataSet2; endif;
+                        if($key==1): $dataSet2=array_combine($column_list2, $result); $result_set2=array('crawling_date'=>date('Y-m-d'),'player_id'=>$items->player_id)+$result_set1+$dataSet2; endif;
                     endif;
                 endif;
             endforeach;
@@ -1506,13 +1565,13 @@ class Baseball extends MY_Controller{
                 endif;
                 $result_set=$result_set2+array('req_yn'=>$req);
 
-                $cnt=$this->baseball_model->get_where('KBO_record_pitcher', array('crawling_date'=>date('Y-m-d'), 'player_id'=>$players_id->player_id));
+                $cnt=$this->baseball_model->get_where('KBO_record_pitcher', array('crawling_date'=>date('Y-m-d'), 'player_id'=>$items->player_id));
                 if(sizeof($cnt)==0):
                     $result_message=$this->baseball_model->insertPlayerRecordByCrawling('KBO_record_pitcher', $result_set);
-                    if($result_message==1): echo 'player_id('.$players_id->player_id.') insert completed.<br>'; $insert_count++; endif;
+                    if($result_message==1): echo 'player_id('.$items->player_id.') insert completed.<br>'; $insert_count++; endif;
                 else:
                     $result_message=$this->baseball_model->updatePlayerRecordByCrawling('KBO_record_pitcher', $result_set);
-                    if($result_message==1): echo 'player_id('.$players_id->player_id.') update completed.<br>'; $update_count++; endif;
+                    if($result_message==1): echo 'player_id('.$items->player_id.') update completed.<br>'; $update_count++; endif;
                 endif;
             endif;
         endforeach;
@@ -1529,23 +1588,28 @@ class Baseball extends MY_Controller{
             $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/match/d10jn0i4i5a81s7l0k6qz2i38?tmcl=5m0znw5wpznp7iizf135jz9bd&_pgSz=500&_fmt=json&_pgNm='.$i));
             foreach($opta_data as $item):
                 foreach($item as $items):
-                    $match_info_id=$items->matchInfo->id;
-                    $opta_data_score=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/matchstats/d10jn0i4i5a81s7l0k6qz2i38/'.$match_info_id.'?&_fmt=json'));
-                    $time=(isset($items->matchInfo->date))? date('H:i:s', strtotime($items->matchInfo->time)) : '00:00:00';
-                    $home_score=($opta_data_score==null)? 0 : $opta_data_score->matchStats->liveData->matchDetails->scores->total->home;
-                    $away_score=($opta_data_score==null)? 0 : $opta_data_score->matchStats->liveData->matchDetails->scores->total->away;
+                    if($items->matchInfo->stage->name!='Pre Season'):
+                        $match_info_id=$items->matchInfo->id;
+                        $opta_data_score=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/matchstats/d10jn0i4i5a81s7l0k6qz2i38/'.$match_info_id.'?&_fmt=json'));
 
-                    $result=array();
-                    $result['date']=date('Y-m-d', strtotime($items->matchInfo->date));
-                    $result['time']=$time;
-                    $result['home']=$items->matchInfo->contestants->contestant[0]->name;
-                    $result['home_score']=$home_score;
-                    $result['away']=$items->matchInfo->contestants->contestant[1]->name;
-                    $result['away_score']=$away_score;
-                    $result['stadium']=$items->matchInfo->venue->name;
-                    $where=array('date'=>$result['date'], 'away'=>$result['away'], 'home'=>$result['home']);
+                        $time=(isset($items->matchInfo->time))? $items->matchInfo->time : '00:00:00';
+                        $date=date("Y-m-d H:i:s", strtotime($items->matchInfo->date.' '.$time));
+                        $home_score=($opta_data_score==null)? '' : $opta_data_score->matchStats->liveData->matchDetails->scores->total->home;
+                        $away_score=($opta_data_score==null)? '' : $opta_data_score->matchStats->liveData->matchDetails->scores->total->away;
 
-                    $this->baseball_model->insertUpdateBefore('MLB_result', $result, $where);
+                        $result=array();
+                        $exp=explode(' ', $date);
+                        $result['date']=$exp[0];
+                        $result['time']=$exp[1];
+                        $result['home']=$items->matchInfo->contestants->contestant[0]->name;
+                        $result['home_score']=$home_score;
+                        $result['away']=$items->matchInfo->contestants->contestant[1]->name;
+                        $result['away_score']=$away_score;
+                        $result['stadium']=$items->matchInfo->venue->name;
+                        $where=array('date'=>$result['date'], 'away'=>$result['away'], 'home'=>$result['home']);
+
+                        $this->baseball_model->insertUpdateBefore('MLB_result', $result, $where);
+                    endif;
                 endforeach;
             endforeach;
         endfor;

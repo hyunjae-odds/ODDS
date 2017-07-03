@@ -9,10 +9,10 @@
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
-            <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-            <li><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB';?>">선수 기록</a></li>
-            <li class="on"><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB';?>">상대 전적</a></li>
+            <li><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">리그정보</a></li>
+            <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
+            <li><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">선수 기록</a></li>
+            <li class="on"><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">상대 전적</a></li>
         </ul>
         <ul class="tab_view01 gameMain_view">
             <li class="s6 active pb50">
