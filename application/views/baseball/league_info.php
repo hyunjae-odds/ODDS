@@ -35,10 +35,11 @@
 							<tr>
 								<th colspan="2" class="left pl20">
                                     <?php
+                                        setlocale(LC_ALL, "ko_KR.utf-8");
                                         if($league=='KBO'): echo $schedule['date'][$i]->date;
                                         else:
                                             $exp=explode('-', $schedule['date'][$i]->date);
-                                            echo $exp[1].'.'.$exp[2].'('.$days_in_korean[date("w")].')';
+                                            echo $exp[1].'.'.$exp[2].'('.strftime('%a', strtotime($schedule['date'][$i]->date)).')';
                                         endif;
                                     ?>
                                 </th>

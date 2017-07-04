@@ -67,7 +67,7 @@
 					<?php foreach($result as $key=>$entry): ?>
 						<tr>
 							<?php
-                                setlocale(LC_TIME,'ko_KR');
+                                setlocale(LC_ALL, "ko_KR.utf-8");
                                 if($league=='KBO'):
                                     if($key%5==0): echo '<td rowspan="5"><b>'.$entry->date.'</b></td>'; endif;
                                 else:

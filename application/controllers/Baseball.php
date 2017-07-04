@@ -1656,4 +1656,20 @@ class Baseball extends MY_Controller{
         endfor;
     }
 
+    function crawlingOptaTeam(){
+        $this->load->library('curl');
+        $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/match/d10jn0i4i5a81s7l0k6qz2i38?tmcl=5m0znw5wpznp7iizf135jz9bd&_pgSz=150&_fmt=json&_pgNm=1'));
+
+        foreach($opta_data as $item):
+            foreach($item as $items):
+                $id=$items->matchInfo->contestants->contestant[0]->id;
+                $name=$items->matchInfo->contestants->contestant[0]->name;
+                $stadium=$items->matchInfo->venue->name;
+                $result_set=array('id'=>$id, 'name'=>$name, 'stadium'=>$stadium);
+
+                $this->baseball_model->insertUpdateBefore('MLB_team', $result_set, array('id'=>$id));
+            endforeach;
+        endforeach;
+    }
+
 }
