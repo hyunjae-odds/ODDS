@@ -20562,3 +20562,292 @@ INFO - 2017-07-03 08:55:11 --> File loaded: /Users/hyunjae/Sites/ODDS/applicatio
 INFO - 2017-07-03 08:55:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
 INFO - 2017-07-03 08:55:11 --> Final output sent to browser
 DEBUG - 2017-07-03 08:55:11 --> Total execution time: 0.1156
+INFO - 2017-07-03 09:00:20 --> Config Class Initialized
+INFO - 2017-07-03 09:00:20 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:00:20 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:00:20 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:00:20 --> URI Class Initialized
+DEBUG - 2017-07-03 09:00:20 --> No URI present. Default controller set.
+INFO - 2017-07-03 09:00:20 --> Router Class Initialized
+INFO - 2017-07-03 09:00:20 --> Output Class Initialized
+INFO - 2017-07-03 09:00:20 --> Security Class Initialized
+DEBUG - 2017-07-03 09:00:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:00:20 --> Input Class Initialized
+INFO - 2017-07-03 09:00:20 --> Language Class Initialized
+INFO - 2017-07-03 09:00:20 --> Loader Class Initialized
+INFO - 2017-07-03 09:00:20 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:00:20 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:00:20 --> Controller Class Initialized
+INFO - 2017-07-03 09:00:20 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:00:20 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:00:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/head_up.php
+INFO - 2017-07-03 09:00:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/head_main.php
+INFO - 2017-07-03 09:00:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/main.php
+INFO - 2017-07-03 09:00:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/footer.php
+INFO - 2017-07-03 09:00:20 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/footer_down.php
+INFO - 2017-07-03 09:00:20 --> Final output sent to browser
+DEBUG - 2017-07-03 09:00:20 --> Total execution time: 0.0819
+INFO - 2017-07-03 09:00:21 --> Config Class Initialized
+INFO - 2017-07-03 09:00:21 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:00:21 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:00:21 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:00:21 --> URI Class Initialized
+INFO - 2017-07-03 09:00:21 --> Router Class Initialized
+INFO - 2017-07-03 09:00:21 --> Output Class Initialized
+INFO - 2017-07-03 09:00:21 --> Security Class Initialized
+DEBUG - 2017-07-03 09:00:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:00:21 --> Input Class Initialized
+INFO - 2017-07-03 09:00:21 --> Language Class Initialized
+ERROR - 2017-07-03 09:00:21 --> 404 Page Not Found: Public/lib
+INFO - 2017-07-03 09:00:21 --> Config Class Initialized
+INFO - 2017-07-03 09:00:21 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:00:21 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:00:21 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:00:21 --> URI Class Initialized
+INFO - 2017-07-03 09:00:21 --> Router Class Initialized
+INFO - 2017-07-03 09:00:21 --> Output Class Initialized
+INFO - 2017-07-03 09:00:21 --> Security Class Initialized
+DEBUG - 2017-07-03 09:00:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:00:21 --> Input Class Initialized
+INFO - 2017-07-03 09:00:21 --> Language Class Initialized
+ERROR - 2017-07-03 09:00:21 --> 404 Page Not Found: Public/lib
+INFO - 2017-07-03 09:00:24 --> Config Class Initialized
+INFO - 2017-07-03 09:00:24 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:00:24 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:00:24 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:00:24 --> URI Class Initialized
+INFO - 2017-07-03 09:00:24 --> Router Class Initialized
+INFO - 2017-07-03 09:00:24 --> Output Class Initialized
+INFO - 2017-07-03 09:00:24 --> Security Class Initialized
+DEBUG - 2017-07-03 09:00:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:00:24 --> Input Class Initialized
+INFO - 2017-07-03 09:00:24 --> Language Class Initialized
+INFO - 2017-07-03 09:00:24 --> Loader Class Initialized
+INFO - 2017-07-03 09:00:24 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:00:24 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:00:24 --> Controller Class Initialized
+INFO - 2017-07-03 09:00:24 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:00:24 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:00:24 --> Model Class Initialized
+INFO - 2017-07-03 09:00:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:00:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:00:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-07-03 09:00:24 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:00:24 --> Final output sent to browser
+DEBUG - 2017-07-03 09:00:24 --> Total execution time: 0.1733
+INFO - 2017-07-03 09:07:26 --> Config Class Initialized
+INFO - 2017-07-03 09:07:26 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:07:26 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:07:26 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:07:26 --> URI Class Initialized
+INFO - 2017-07-03 09:07:26 --> Router Class Initialized
+INFO - 2017-07-03 09:07:26 --> Output Class Initialized
+INFO - 2017-07-03 09:07:26 --> Security Class Initialized
+DEBUG - 2017-07-03 09:07:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:07:26 --> Input Class Initialized
+INFO - 2017-07-03 09:07:26 --> Language Class Initialized
+INFO - 2017-07-03 09:07:26 --> Loader Class Initialized
+INFO - 2017-07-03 09:07:26 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:07:26 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:07:26 --> Controller Class Initialized
+INFO - 2017-07-03 09:07:26 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:07:26 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:07:26 --> Model Class Initialized
+INFO - 2017-07-03 09:07:26 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:07:26 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:07:26 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-07-03 09:07:26 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:07:26 --> Final output sent to browser
+DEBUG - 2017-07-03 09:07:26 --> Total execution time: 0.1907
+INFO - 2017-07-03 09:07:30 --> Config Class Initialized
+INFO - 2017-07-03 09:07:30 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:07:30 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:07:30 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:07:30 --> URI Class Initialized
+INFO - 2017-07-03 09:07:30 --> Router Class Initialized
+INFO - 2017-07-03 09:07:30 --> Output Class Initialized
+INFO - 2017-07-03 09:07:30 --> Security Class Initialized
+DEBUG - 2017-07-03 09:07:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:07:30 --> Input Class Initialized
+INFO - 2017-07-03 09:07:30 --> Language Class Initialized
+INFO - 2017-07-03 09:07:30 --> Loader Class Initialized
+INFO - 2017-07-03 09:07:30 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:07:30 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:07:30 --> Controller Class Initialized
+INFO - 2017-07-03 09:07:30 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:07:30 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:07:30 --> Model Class Initialized
+INFO - 2017-07-03 09:07:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:07:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:07:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-07-03 09:07:30 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:07:30 --> Final output sent to browser
+DEBUG - 2017-07-03 09:07:30 --> Total execution time: 0.0502
+INFO - 2017-07-03 09:07:37 --> Config Class Initialized
+INFO - 2017-07-03 09:07:37 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:07:37 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:07:37 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:07:37 --> URI Class Initialized
+INFO - 2017-07-03 09:07:37 --> Router Class Initialized
+INFO - 2017-07-03 09:07:37 --> Output Class Initialized
+INFO - 2017-07-03 09:07:37 --> Security Class Initialized
+DEBUG - 2017-07-03 09:07:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:07:37 --> Input Class Initialized
+INFO - 2017-07-03 09:07:37 --> Language Class Initialized
+INFO - 2017-07-03 09:07:37 --> Loader Class Initialized
+INFO - 2017-07-03 09:07:37 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:07:37 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:07:37 --> Controller Class Initialized
+INFO - 2017-07-03 09:07:37 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:07:37 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:07:37 --> Model Class Initialized
+INFO - 2017-07-03 09:07:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:07:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:07:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-07-03 09:07:37 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:07:37 --> Final output sent to browser
+DEBUG - 2017-07-03 09:07:37 --> Total execution time: 0.6452
+INFO - 2017-07-03 09:07:39 --> Config Class Initialized
+INFO - 2017-07-03 09:07:39 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:07:39 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:07:39 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:07:39 --> URI Class Initialized
+INFO - 2017-07-03 09:07:39 --> Router Class Initialized
+INFO - 2017-07-03 09:07:39 --> Output Class Initialized
+INFO - 2017-07-03 09:07:39 --> Security Class Initialized
+DEBUG - 2017-07-03 09:07:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:07:39 --> Input Class Initialized
+INFO - 2017-07-03 09:07:39 --> Language Class Initialized
+INFO - 2017-07-03 09:07:39 --> Loader Class Initialized
+INFO - 2017-07-03 09:07:39 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:07:39 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:07:39 --> Controller Class Initialized
+INFO - 2017-07-03 09:07:39 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:07:39 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:07:39 --> Model Class Initialized
+INFO - 2017-07-03 09:07:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:07:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:07:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-07-03 09:07:39 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:07:39 --> Final output sent to browser
+DEBUG - 2017-07-03 09:07:39 --> Total execution time: 0.0663
+INFO - 2017-07-03 09:08:11 --> Config Class Initialized
+INFO - 2017-07-03 09:08:11 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:08:11 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:08:11 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:08:11 --> URI Class Initialized
+INFO - 2017-07-03 09:08:11 --> Router Class Initialized
+INFO - 2017-07-03 09:08:11 --> Output Class Initialized
+INFO - 2017-07-03 09:08:11 --> Security Class Initialized
+DEBUG - 2017-07-03 09:08:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:08:11 --> Input Class Initialized
+INFO - 2017-07-03 09:08:11 --> Language Class Initialized
+INFO - 2017-07-03 09:08:11 --> Loader Class Initialized
+INFO - 2017-07-03 09:08:11 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:08:11 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:08:11 --> Controller Class Initialized
+INFO - 2017-07-03 09:08:11 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:08:11 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:08:11 --> Model Class Initialized
+INFO - 2017-07-03 09:08:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:08:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:08:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-07-03 09:08:11 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:08:11 --> Final output sent to browser
+DEBUG - 2017-07-03 09:08:11 --> Total execution time: 0.0672
+INFO - 2017-07-03 09:09:42 --> Config Class Initialized
+INFO - 2017-07-03 09:09:42 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:09:42 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:09:42 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:09:42 --> URI Class Initialized
+INFO - 2017-07-03 09:09:42 --> Router Class Initialized
+INFO - 2017-07-03 09:09:42 --> Output Class Initialized
+INFO - 2017-07-03 09:09:42 --> Security Class Initialized
+DEBUG - 2017-07-03 09:09:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:09:42 --> Input Class Initialized
+INFO - 2017-07-03 09:09:42 --> Language Class Initialized
+INFO - 2017-07-03 09:09:42 --> Loader Class Initialized
+INFO - 2017-07-03 09:09:42 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:09:42 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:09:42 --> Controller Class Initialized
+INFO - 2017-07-03 09:09:42 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:09:42 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:09:42 --> Model Class Initialized
+INFO - 2017-07-03 09:09:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:09:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:09:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-07-03 09:09:42 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:09:42 --> Final output sent to browser
+DEBUG - 2017-07-03 09:09:42 --> Total execution time: 0.0856
+INFO - 2017-07-03 09:09:58 --> Config Class Initialized
+INFO - 2017-07-03 09:09:58 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:09:58 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:09:58 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:09:58 --> URI Class Initialized
+INFO - 2017-07-03 09:09:58 --> Router Class Initialized
+INFO - 2017-07-03 09:09:58 --> Output Class Initialized
+INFO - 2017-07-03 09:09:58 --> Security Class Initialized
+DEBUG - 2017-07-03 09:09:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:09:58 --> Input Class Initialized
+INFO - 2017-07-03 09:09:58 --> Language Class Initialized
+INFO - 2017-07-03 09:09:58 --> Loader Class Initialized
+INFO - 2017-07-03 09:09:58 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:09:58 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:09:58 --> Controller Class Initialized
+INFO - 2017-07-03 09:09:58 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:09:58 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:09:58 --> Model Class Initialized
+INFO - 2017-07-03 09:09:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:09:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:09:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-07-03 09:09:58 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:09:58 --> Final output sent to browser
+DEBUG - 2017-07-03 09:09:58 --> Total execution time: 0.0948
+INFO - 2017-07-03 09:09:59 --> Config Class Initialized
+INFO - 2017-07-03 09:09:59 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:09:59 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:09:59 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:09:59 --> URI Class Initialized
+INFO - 2017-07-03 09:09:59 --> Router Class Initialized
+INFO - 2017-07-03 09:09:59 --> Output Class Initialized
+INFO - 2017-07-03 09:09:59 --> Security Class Initialized
+DEBUG - 2017-07-03 09:09:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:09:59 --> Input Class Initialized
+INFO - 2017-07-03 09:09:59 --> Language Class Initialized
+INFO - 2017-07-03 09:09:59 --> Loader Class Initialized
+INFO - 2017-07-03 09:09:59 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:09:59 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:09:59 --> Controller Class Initialized
+INFO - 2017-07-03 09:09:59 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:09:59 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:09:59 --> Model Class Initialized
+INFO - 2017-07-03 09:09:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:09:59 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:10:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league_info.php
+INFO - 2017-07-03 09:10:00 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:10:00 --> Final output sent to browser
+DEBUG - 2017-07-03 09:10:00 --> Total execution time: 0.6121
+INFO - 2017-07-03 09:10:01 --> Config Class Initialized
+INFO - 2017-07-03 09:10:01 --> Hooks Class Initialized
+DEBUG - 2017-07-03 09:10:01 --> UTF-8 Support Enabled
+INFO - 2017-07-03 09:10:01 --> Utf8 Class Initialized
+INFO - 2017-07-03 09:10:01 --> URI Class Initialized
+INFO - 2017-07-03 09:10:01 --> Router Class Initialized
+INFO - 2017-07-03 09:10:01 --> Output Class Initialized
+INFO - 2017-07-03 09:10:01 --> Security Class Initialized
+DEBUG - 2017-07-03 09:10:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-07-03 09:10:01 --> Input Class Initialized
+INFO - 2017-07-03 09:10:01 --> Language Class Initialized
+INFO - 2017-07-03 09:10:01 --> Loader Class Initialized
+INFO - 2017-07-03 09:10:01 --> Database Driver Class Initialized
+INFO - 2017-07-03 09:10:01 --> Session: Class initialized using 'database' driver.
+INFO - 2017-07-03 09:10:01 --> Controller Class Initialized
+INFO - 2017-07-03 09:10:01 --> Helper loaded: url_helper
+DEBUG - 2017-07-03 09:10:01 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-07-03 09:10:01 --> Model Class Initialized
+INFO - 2017-07-03 09:10:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-07-03 09:10:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-07-03 09:10:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/result.php
+INFO - 2017-07-03 09:10:01 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-07-03 09:10:01 --> Final output sent to browser
+DEBUG - 2017-07-03 09:10:01 --> Total execution time: 0.1343

@@ -2,10 +2,10 @@
 <div class="livescore game">
     <div class="topTitle">
         <p>
-            <span>리그정보 - 야구 - 대한민국</span>
+            <span>리그정보 - 야구 - <?=($league=='KBO')? '대한민국' : 'USA';?></span>
             <span class="sentence">SPORTS COMMUNITY POTAL <span>ODDSNAVI</span></span>
         </p>
-        <h2 class="tit02">2017 KBO</h2>
+        <h2 class="tit02">2017 <?=($league=='KBO')? 'KBO' : 'MLB';?></h2>
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">

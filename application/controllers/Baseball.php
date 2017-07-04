@@ -79,20 +79,20 @@ class Baseball extends MY_Controller{
         endif;
 
 //      정렬
+        $sort_word=($sort=='game_car')? SORT_ASC : SORT_DESC;
         if($league=='KBO'):
-            $sort_word=($sort=='game_car')? SORT_ASC : SORT_DESC;
             foreach($total as $item) $sortAux[]=$item->$sort;
             array_multisort($sortAux, $sort_word, $total);
             for($i=0; $i<10; $i++) $total[$i]->rank=$i+1;
         else:
-            $sort_word=($sort=='game_car')? SORT_ASC : SORT_DESC;
-
             foreach($total[0] as $item) $sortAux0[]=$item->$sort;
             array_multisort($sortAux0, $sort_word, $total[0]);
             for($i=0; $i<5; $i++) $total[0][$i]->rank=$i+1;
+
             foreach($total[1] as $item) $sortAux1[]=$item->$sort;
             array_multisort($sortAux1, $sort_word, $total[1]);
             for($i=0; $i<5; $i++) $total[1][$i]->rank=$i+1;
+
             foreach($total[2] as $item) $sortAux2[]=$item->$sort;
             array_multisort($sortAux2, $sort_word, $total[2]);
             for($i=0; $i<5; $i++) $total[2][$i]->rank=$i+1;

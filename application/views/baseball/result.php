@@ -4,10 +4,10 @@
 <div class="livescore game">
 	<div class="topTitle">
 		<p>
-			<span>리그정보 - 야구 - 대한민국</span>
+			<span>리그정보 - 야구 - <?=($league=='KBO')? '대한민국' : 'USA';?></span>
 			<span class="sentence">SPORTS COMMUNITY POTAL <span>ODDSNAVI</span></span>
 		</p>
-		<h2 class="tit02"><?=date('Y');?> <?=$league?></h2>
+		<h2 class="tit02"><?=date('Y');?> <?=($league=='KBO')? 'KBO' : 'MLB';?></h2>
 	</div>
 	<div class="game_w">
 		<ul class="tab01 gameMain">
@@ -67,12 +67,13 @@
 					<?php foreach($result as $key=>$entry): ?>
 						<tr>
 							<?php
+                                setlocale(LC_TIME,'ko_KR');
                                 if($league=='KBO'):
                                     if($key%5==0): echo '<td rowspan="5"><b>'.$entry->date.'</b></td>'; endif;
                                 else:
                                     if($key%15==0):
                                         $exp=explode('-', $entry->date);
-                                        echo '<td rowspan="15"><b>'.$exp[1].'.'.$exp[2].'('.$days_in_korean[date("w")].')'.'</b></td>';
+                                        echo '<td rowspan="15"><b>'.$exp[1].'.'.$exp[2].'('.strftime('%a', strtotime($entry->date)).')'.'</b></td>';
                                     endif;
                                 endif;
                             ?>
