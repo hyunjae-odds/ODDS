@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-/*   ï¿½ß±ï¿½ css  */
+/*   ¾ß±¸ css  */
 
 
-/*--------------   ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½  ------------*/
+/*--------------   °ÔÀÓ_¸®±× °øÅë ½ÃÀÛ  ------------*/
 
 .game {background:#fff;}
 .game .live_visual {height:297px; }
@@ -26,8 +26,9 @@ table.gametable td:nth-of-type(2) {text-align:left;padding-left:20px;}
 
 
 
-b.score {letter-spacing:5px; padding:0 10px;}
+b.score {padding:0 10px;}
 b.score span.red {color:#ff386b;}
+b.score span.colon {display:inline-block;padding:0 5px;}
 
 .r_view > li {display:none;}
 .r_view > li.active {display:block;}
@@ -39,6 +40,8 @@ b.score span.red {color:#ff386b;}
 a.up_down.up {display:inline-block;width:12px;height:8px;background:url("../image/base/icon.png") no-repeat 0 -698px;font-size:0;vertical-align:text-bottom;margin: 0 0 3px 7px;}
 a.up_down.down {display:inline-block;width:12px;height:8px;background:url("../image/base/icon.png") no-repeat 0 -740px;font-size:0;vertical-align:text-bottom;margin: 0 0 5px 7px;}
 
+.pr80 {padding-right:80px !important;}
+
 
 /*h4 style*/
 h4.h4_02 {background:#eee url("../image/game/bg_h4f.jpg") no-repeat ;height:27px;line-height:26px;font-size:14px;color:#999;padding-left:17px;display:inline-block;font-weight:bold;margin-bottom:10px;}
@@ -49,7 +52,7 @@ h4.h4_02 span {display:inline-block; width:18px;height:100%;background:url("../i
 .r_tit3 li span {vertical-align:middle;}
 
 
-/* common ï¿½ï¿½ï¿½ï¿½ */
+/* common º¯°æ */
 h3.h3_01 {margin-top:-37px;}
 .select_p01 {top:40px;}
 
@@ -71,11 +74,11 @@ table tr th a {color:#999;}
 
 
 
-/*--------------   ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½  ------------*/
+/*--------------   °ÔÀÓ_¸®±× °øÅë ³¡  ------------*/
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+/* ¸®±×Á¤º¸ */
 
 div.barGraph01_W {height:205px;}
 div.barGraph01_W > div {width:318px;margin-left:2px;float:left;padding-top:5px;}
@@ -124,11 +127,11 @@ div.TOP5 table th:nth-of-type(1),div.TOP5 table td:nth-of-type(1) {text-align:le
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+/* °æ±â °á°ú */
 
 table td span.black {display:inline-block; line-height:10px;height:12px;padding:3px 7px;background:#eee;border-radius:4px;}
 
-/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+/* ¸®±× Åë°è */
 
 .gameMain_view {}
 .gameMain_view > li {display:none;}
@@ -233,7 +236,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .top_s2 .result_btn {margin-top:7px;float:left;display:block;}
 
 
-/* ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  */
+/* ¸®±×-¼±¼ö±â·Ï  */
 
 .record_Ltable tr td:nth-of-type(3) {font-weight:bold;}
 .Ltable .redline.p1 {width:90px; left:436px;display:block;}
@@ -249,7 +252,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .PL_REC .select {margin-right:10px;}
 .table_w {position:relative;}
 .table_w table th:nth-last-of-type(1),.PL_REC .table_w table td:nth-last-of-type(1) {padding-right:16px;}
-.table_w table td:nth-of-type(4) {font-weight:bold;}
+/*.table_w table td:nth-of-type(4) {font-weight:bold;}*/
 .table_w table th span {cursor:pointer;}
 .player_rec {display:block;clear:both;content:"";border-bottom:1px solid #ccc;float:left;margin-bottom:40px;}
 .player_rec > li {float:left;width:319px;border-left:1px solid #ccc;padding-bottom:10px;}
@@ -312,7 +315,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .team_record.p_info > div:nth-of-type(2) {padding:0px 0 0 10px;}
 .team_record > div p {font-weight:bold;font-size:24px;padding-bottom:5px;}
 .team_record > div span {font-size:14px;}
-.team_record > div.pic {padding:0;}
+.team_record > div.pic {padding:0;} 
 .team_record > div.pic img {border:1px solid #ccc;width:88px;height:111px;}
 .team_record.p_info > div:nth-of-type(2) h3 {font-weight:bold;font-size:24px;}
 .team_record.p_info > div:nth-of-type(2) h3 span {font-size:14px;font-weight:normal;}
@@ -337,7 +340,7 @@ p.teammore {position:absolute;right:0;top:15px;}
 p.teammore a {padding-right:15px;background:url("../image/base/icon.png") no-repeat scroll 39px -148px;}
 
 
-/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+/* »ó´ë ÀüÀû */
 
 .gray_warp_w {position:relative;display:block;content:"";clear:both;height:42px;margin-bottom:20px;}
 .gray_warp_w .gray_warp {position:absolute;left:0;top:0;width:100%;}
@@ -361,7 +364,7 @@ ul.tab_view01 > li .s6_result h4:nth-of-type(1) {margin-top:0;}
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+/* °æ±â°á°ú */
 
 
 .Ltable .redline.a1 {width:60px; left:346px;display:block;}
@@ -394,9 +397,9 @@ ul.tab_view01 > li .s6_result h4:nth-of-type(1) {margin-top:0;}
 
 
 
-/*------------------------------------------------------------ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ----------------------------------------------------------------*/
+/*------------------------------------------------------------ ÆÀÁ¤º¸ ½ÃÀÛ ----------------------------------------------------------------*/
 
-/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*½ÃÁð ±â·Ï*/
 .team_top {position:relative;border-bottom:1px solid #ccc;margin-bottom:50px;}
 .team_top .team_logo {float:left;padding:20px 28px 30px;}
 .team_top .team_logo > img {}
@@ -468,13 +471,13 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .reco_icon.rc_3 {background-position:0 -40px;}
 .reco_icon.rc_4 {background-position:0 -60px;}
 
-/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*°æ±â °á°ú*/
 
 
 
 
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+/* ÆÀÁ¤º¸ - ¼±¼ö±â·Ï */
 .team_p_w {position:relative;/*margin-top:70px;*/}
 .team_p_w > h3 {position:absolute;left:0;right:0;margin:0 auto; top:-5px;width:auto;display:inline-block;font-size:22px;}
 .team_p {display:none;padding-top:5px;}
@@ -493,11 +496,12 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 
 
 
-/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È²*/
+/*¼±¼öÇöÈ²*/
 .situation {}
 .situation .coach {border-bottom: 3px solid #f1f1f1;}
 .situation .coach .pic {float:left;margin:0 4px 20px 4px;border:1px solid #ccc;padding:0;height:161px;width:139px;}
-.situation .coach > div {float:left;margin-left:20px;}
+.situation .coach .pic img {height:161px;width:139px;}
+.situation .coach > div {float:left;margin-left:20px;margin-bottom:20px;}
 .situation .coach > div h3 {font-size:20px;font-weight:bold;margin:5px 0 10px 0;}
 .situation .coach > div > p {font-weight:bold; font-size:14px;}
 .situation .coach > div > p > span {font-weight:bold; font-size:11px;color:#888;}
@@ -520,8 +524,9 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .situation_list .PL_REC ul li h4 a:hover {text-decoration:underline;}
 .situation_list .PL_REC ul li b {font-size:10.5px;color:#888;}
 .situation_list .PL_REC ul li > p {margin-bottom:10px;}
+.situation_list .PL_REC ul li > p a img {width:139px;height:161px;}
 
-/*ï¿½ï¿½ï¿½Ò°ï¿½*/
+/*ÆÀ¼Ò°³*/
 .team {}
 .team > div:nth-of-type(1) {font-size:14px;padding:20px 0 30px;line-height:1.4;}
 .team > .graybox {background:#f1f1f1;padding:15px 20px;}
@@ -531,16 +536,16 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .team a:hover {text-decoration:underline;}
 
 
-/*---------------------------------------------------------------------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ -----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------- ÆÀÁ¤º¸ ³¡ -----------------------------------------------------------------------*/
 
 
 
 
 
 
-/*-----------------------------------------  match ï¿½ï¿½ï¿½ï¿½ ---------------------------------------*/
+/*-----------------------------------------  match ½ÃÀÛ ---------------------------------------*/
 .Match_w {background:#fff;padding-bottom:1px;}
-/*ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½*/
+/*¸ÅÄ¡»ó´Ü*/
 .match {background:url("../image/game/v_match_KBO.jpg") no-repeat;}
 .match .livescore {content:"";display:block;clear:both;position:relative;padding-bottom:10px;padding:20px;}
 .match .livescore .referee {color:#fff;text-align:center;}
@@ -607,7 +612,7 @@ a.other_btn.close {background-position:133px -609px;}
 
 .match .livescore .live {height:65px;background:url("../image/game/bg_soccerlive.png") no-repeat -5px 0; position:relative;top:10px;padding-bottom:20px;padding-left:20px;}
 .match .score > div > span.logo_t {margin: 5px 8px 0;}
-.match .livescore table {width:1000px;border:none;}
+.match .livescore table {width:1000px;border:none;} 
 .match .livescore table th.gray {color:#aaa;}
 .match .livescore table th,.match .livescore table td {border:1px solid #ccc;}
 .match .livescore table th {font-size:14px;color:#444;border-top:none;}
@@ -647,7 +652,7 @@ a.other_btn.close {background-position:133px -609px;}
 .matchTab ul.title li:nth-last-of-type(1) {background-image:none;}
 .matchTab ul.title li:nth-of-type(1) {margin-left:0;}
 .matchTab ul.title li a {color:#fff; font-size:14px;line-height:32px;}
-.matchTab ul.title li.on {background:#fff;background-image:none;}
+.matchTab ul.title li.on {background:#fff;background-image:none;} 
 .matchTab ul.title li.on a {font-size:16px; color:#444;font-weight:bold;}
 .matchTab .result > li {display:none;width:960px;margin-left:40px;}
 .matchTab .result > li.on {display:block;}
@@ -680,7 +685,7 @@ a.other_btn.close {background-position:133px -609px;}
 .full_table02 span.fs10 {font-size:10px;}
 .full_table02 tr:nth-of-type(odd) td {background:#eee;}
 
-/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½*/
+/*ÆÀ°£ºñ±³ ¸·´ë±×·¡ÇÁ*/
 .opinion {clear:both;content:""; display:block; padding:65px 0 45px;position:relative;}
 .opi_team {margin:70px 70px 0;}
 .opi_team li {float:left;width:50%;}
@@ -697,9 +702,9 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div {width:960px;height:20px;margin-top:10px;}
 .opinion .graph > div b {font-size:18px;}
 .opinion .graph div.left_g, .opinion .graph div.right_g, .opinion .graph > div > p {float:left;}
-.opinion .graph > div div.left_g {width:350px;text-align:right; margin-bottom:10px;}
+.opinion .graph > div div.left_g {width:350px;text-align:right; margin-bottom:10px;} 
 .opinion .graph > div div.left_g b {padding-right:34px;}
-.opinion .graph > div div.right_g {width:350px;text-align:left; margin-bottom:10px;}
+.opinion .graph > div div.right_g {width:350px;text-align:left; margin-bottom:10px;} 
 .opinion .graph > div div.right_g b {padding-left:34px;}
 .opinion .graph > div span.left_g {width:50px;text-align:center;color:#444;font-size:16px;font-weight:bold;float:left;display:block;}
 .opinion .graph > div span.right_g {width:50px;text-align:center;color:#444;font-size:16px;font-weight:bold;float:left;display:block;}
@@ -714,19 +719,19 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div.total > div > div > div {background:#ff7d9f;}
 .opinion .graph > div.total > div.right_g > div > div {background:#7dc9ff;}
 .opinion .graph > div.total > div > div > div > p {height:17px;margin-top:3px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff225b+0,ff7d9f+100 */
-    background: rgb(255,34,91); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255,34,91,1) 0%, rgba(255,125,159,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff225b', endColorstr='#ff7d9f',GradientType=1 ); /* IE6-9 */}
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff225b+0,ff7d9f+100 */
+background: rgb(255,34,91); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(255,34,91,1) 0%, rgba(255,125,159,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,34,91,1) 0%,rgba(255,125,159,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff225b', endColorstr='#ff7d9f',GradientType=1 ); /* IE6-9 */}
 .opinion .graph > div.total > div.right_g > div > div > p {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7bc9ff+0,22a4ff+100 */
-    background: rgb(123,201,255); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(123,201,255,1) 0%, rgba(34,164,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', endColorstr='#22a4ff',GradientType=1 ); /* IE6-9 */}
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7bc9ff+0,22a4ff+100 */
+background: rgb(123,201,255); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(123,201,255,1) 0%, rgba(34,164,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(123,201,255,1) 0%,rgba(34,164,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', endColorstr='#22a4ff',GradientType=1 ); /* IE6-9 */}
 .opinion .graph > div.total p > span {line-height:17px;}
 .opinion .graph > div .left_g > div > div {right:0;}
 .opinion .graph > div .right_g > div > div {left:0;}
@@ -737,7 +742,7 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div .left_g span {padding:0 0 0 15px;}
 
 
-/*ï¿½ï¿½ï¿½Î¾ï¿½*/
+/*¶óÀÎ¾÷*/
 .lineUP {padding-bottom:30px;margin-bottom:40px;}
 .lineUP > h3 {font-size:42px;color:#ccc;font-weight:bold;margin-top:15px;text-align:center;font-style:italic;line-height:1;padding-bottom:10px;border:none;}
 .KBO_lineup_t {position:relative;width:960px;}
@@ -752,7 +757,7 @@ a.other_btn.close {background-position:133px -609px;}
 .KBO_lineup_t .lineup_bar p.line_btn {float:right;}
 .KBO_lineup_t .lineup_bar p.line_btn a {font-size:12px;color:#444;display:inline-block;border:1px solid #ccc;text-align:center;height:21px;line-height:21px;padding:0 8px 0 10px;background:url("../image/base/bg_inputbtn01.jpg") repeat-x 0 bottom;}
 .KBO_lineup_t .lineup_bar p.line_btn a span {display:inline-block; width:10px; height:10px; margin-left:2px;background:url("../image/base/icon.png") no-repeat -230px 0;}
-.KBO_lineup_t .pic_line {display:block;content:"";clear:both; float:left;margin-top:5px;border:1px solid #ccc;}
+.KBO_lineup_t .pic_line {display:block;content:"";clear:both; float:left;height:118px;margin-top:5px;border:1px solid #ccc;}
 .KBO_lineup_t .pic_line img {width:94px;height:118px;}
 .KBO_lineup_t table {width:349px;float:left;margin:5px 0 0 5px;}
 .KBO_lineup_t table th,.KBO_lineup_t table td {height:29px;line-height:29px;font-size:12px;}
@@ -794,7 +799,7 @@ a.other_btn.close {background-position:133px -609px;}
 .highcharts-label .highcharts-tooltip-box {stroke:#fff;stroke-width:1;fill:#fff;}
 
 
-/*ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*ÃÖ±Ù »ó´ëÀüÀû °á°ú*/
 .opponent {position:relative;padding-bottom:55px;}
 .opponent > h3 {font-size:22px;}
 .opponent .opp01 > li {float:left;width:410px;}
@@ -822,14 +827,14 @@ a.other_btn.close {background-position:133px -609px;}
 .opponent .opp02 {display:block;clear:both;content:"";padding-top:10px;}
 .opponent .opp02 li {float:left;width:33.3%;text-align:center;}
 .opponent table.opp03 {margin-top:20px;}
-table.opp03 td:nth-of-type(1) {color:#888;}
-table.opp03 th:nth-of-type(2), table.opp03 td:nth-of-type(2) {text-align:left;padding-left:20px;}
-table.opp03 th:nth-of-type(3), table.opp03 td:nth-of-type(3) {text-align:left;}
-table.opp03 td:nth-of-type(6) {text-align:right;color:#888;}
-table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
+table.opp03 td:nth-of-type(1) {color:#888;} 
+table.opp03 th:nth-of-type(2), table.opp03 td:nth-of-type(2) {text-align:left;padding-left:20px;} 
+table.opp03 th:nth-of-type(3), table.opp03 td:nth-of-type(3) {text-align:left;} 
+table.opp03 td:nth-of-type(6) {text-align:right;color:#888;} 
+table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {} 
 .opponent .opp01 > li ul li .select.OU {background:none;float:none;width:auto;padding:0;position:relative;width:75px;margin:0 auto;}
 .opponent .opp01 > li ul li .select.OU p {float:none;background:#fff;min-width:auto;width:73px;}
-.opponent .opp01 > li ul li .select.OU p span {padding:0 15px;font-weight:normal;float:left;vertical-align: middle;color:#444;font-size:12px;}
+.opponent .opp01 > li ul li .select.OU p span {padding:0 15px;font-weight:normal;float:left;vertical-align: middle;color:#444;font-size:12px;min-width:19px;}
 .opponent .opp01 > li ul li .select.OU p span.pa {padding:0;}
 .opponent .opp01 > li ul li .select.OU ul {margin:0;width:73px;}
 .opponent .opp01 > li ul li .select.OU ul li {text-align:left;height:20px;line-height:20px;}
@@ -837,7 +842,7 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 
 
 
-/*ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+/*ÃÖ±Ù °æ±â ¼ºÀû*/
 .match_w {margin-bottom:50px;position:relative;}
 .match_w > h3 {font-size:22px;border:none;}
 .match_w table {margin-bottom:25px;}
@@ -854,17 +859,17 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .cheer .teams .box {width:250px;height:73px;}
 .cheer .teams .left .box,.cheer .teams .left .box_w .c_logo, .cheer .teams .left .box_w > a {float:right;display:inline-block; text-align:right;}
 .cheer .teams .right .box,.cheer .teams .right .box_w .c_logo, .cheer .teams .right .box_w > a {float:left;display:inline-block;text-align:left;}
-.cheer .teams .box > div > h3 {font-size:18px; font-weight:bold; margin-top:15px; line-height:1.4;border:none;margin-bottom:0;}
+.cheer .teams .box > div > h3 {font-size:18px; font-weight:bold; margin-top:15px; line-height:1.4;border:none;margin-bottom:0;} 
 .cheer .teams .box > div > p {color:#999;}
 .cheer .teams .box_w .c_logo {margin:10px 17px 0;width:60px;overflow:hidden;height:60px;}
 .cheer .teams .box_w .c_logo span {background-size:60px;width:60px;height:60px;}
 .cheer .teams .left .box_w > a, .cheer .teams .right .box_w > a  {margin-top:6px;height:60px; width:70px; line-height:60px; text-align:center; display:block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
 .cheer .teams div .graph_w {clear:both; display:block; content:"";height:32px;border-bottom:3px solid #f1f1f1;width:100%;}
 .cheer .teams .left .graph_w {float:right;}
@@ -886,7 +891,7 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .comment ul li p {color:#888; font-family:Dotum;}
 .comment ul li div {position:absolute; right:15px; top:20px;text-align:right;}
 .comment ul li div span {color:#999;display:block;padding-bottom:8px;line-height:12px;}
-.comment ul li div span:nth-of-type(2) {color:#888; padding-bottom:10px;}
+.comment ul li div span:nth-of-type(2) {color:#888; padding-bottom:10px;} 
 .comment ul li div p {display:inline-block; }
 .comment ul li div p a {display:inline-block;border:1px solid #cacaca; color:#444; height:19px; padding:0 5px 0 20px; line-height:19px;}
 .comment ul li div p.like a {background:url("../image/game/likebed.jpg") no-repeat ;}
@@ -899,17 +904,17 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .textarea_box div textarea {border:1px solid #ccc;width:830px;height:60px;padding:10px;color:#888;font-size:12px;font-family:Dotum;background:#fff url("../image/game/bg_opinion_text.jpg") no-repeat ;}
 .textarea_box div textarea.on {background:#fff;}
 .textarea_box div a {color:#888; position:absolute;right:0;top:0;margin:0;height:80px; width:80px; line-height:80px; text-align:center; display:inline-block; font-size:13px; font-weight:bold; border:1px solid #ccc; border-radius:4px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
 .textarea_box p {color:#f70000;padding:5px 7px 0;}
 
 
-/*ï¿½ï¿½ï¿½ßºï¿½ï¿½ï¿½ - ï¿½Ö±Ù»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+/*¼±¹ßºñ±³ - ÃÖ±Ù»ó´ëÀüÀû*/
 .player_score_w {}
 .player_score_w > h3 {border:none;text-align:center;font-size:22px;margin-bottom:30px;}
 .player_score {margin-bottom:50px;}
@@ -966,5 +971,28 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 
 
 
-/*-----------------------------------------  match ï¿½ï¿½ ---------------------------------------*/
+/*-----------------------------------------  match ³¡ ---------------------------------------*/
 
+
+
+span.LG {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+span.SS {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+span.LT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+span.WO {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+span.SK {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+span.KT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+span.OB {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+span.NC {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+span.HH {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+span.HT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/KI_120120.png") no-repeat center center; background-size:contain;}
+
+span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/KI_120120.png") no-repeat center center; background-size:contain;}

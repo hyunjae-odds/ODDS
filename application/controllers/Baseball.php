@@ -109,6 +109,15 @@ class Baseball extends MY_Controller{
         $this->load->view("/footer");
     }
 
+    function league(){
+        $this->load->view("/head_up");
+        $this->load->view("/head");
+
+        $this->load->view('/baseball/league');
+
+        $this->load->view("/footer");
+    }
+
     function result($league, $select_year, $select_month){
         $this->load->view("/head_up");
         $this->load->view("/head");
@@ -681,7 +690,7 @@ class Baseball extends MY_Controller{
     function get_rank($data, $team, $subject, $asc_or_desc){
         $rank=1;
         $value=0;
-        
+
         foreach($data as $item) if($item->team==$team) $value=$item->$subject;
         foreach($data as $item):
             if($asc_or_desc=='ASC'):
@@ -1667,9 +1676,47 @@ class Baseball extends MY_Controller{
                 $stadium=$items->matchInfo->venue->name;
                 $result_set=array('id'=>$id, 'name'=>$name, 'stadium'=>$stadium);
 
-                $this->baseball_model->insertUpdateBefore('MLB_team', $result_set, array('id'=>$id));
+                $this->baseball_model->insertUpdateBefore('MLB_teams', $result_set, array('id'=>$id));
             endforeach;
         endforeach;
     }
 
+    function crawlingOptaPlayers(){
+        $this->load->library('curl');
+
+        $teams=$this->baseball_model->get('MLB_teams');
+        foreach($teams as $team):
+            $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/squads/d10jn0i4i5a81s7l0k6qz2i38?ctst='.$team->id.'&detailed=yes&_fmt=json'));
+            $players=$opta_data->teamSquads->squads->squad[0]->person;
+            foreach($players as $player):
+                $result=array();
+                $result['year']=date('Y');
+                $result['team']=(isset($team->name))? $team->name : '';
+                $result['id']=(isset($player->id))? $player->id : '';
+                $result['type']=(isset($player->type))? $player->type : '';
+                $result['first_name']=(isset($player->firstName))? $player->firstName : '';
+                $result['last_name']=(isset($player->lastName))? $player->lastName : '';
+                $result['match_name']=(isset($player->matchName))? $player->matchName : '';
+                $result['position']=(isset($player->position))? $player->position : '';
+                $result['nationality']=(isset($player->nationality))? $player->nationality : '';
+                $result['date_of_birth']=(isset($player->dateOfBirth))? $player->dateOfBirth : '';
+                $result['place_of_birth']=(isset($player->placeOfBirth))? $player->placeOfBirth : '';
+                $result['country_of_birth']=(isset($player->countryOfBirth))? $player->countryOfBirth : '';
+                $result['height']=(isset($player->height))? $player->height : '';
+                $result['weight']=(isset($player->weight))? $player->weight : '';
+                $result['college']=(isset($player->college))? $player->college : '';
+                $result['experience']=(isset($player->experience))? $player->experience : '';
+
+                $this->baseball_model->insertUpdateBefore('MLB_players_detail', $result, array('id'=>$result['id']));
+            endforeach;
+        endforeach;
+    }
+
+    function test($limit, $offset){
+        $this->load->library('curl');
+//      total : 1271
+
+        $players=$this->baseball_model->get_limit('MLB_players', $limit, $offset);
+        $this->load->view('/baseball/crawling/players', array('players'=>$players));
+    }
 }

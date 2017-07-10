@@ -129,6 +129,10 @@
 	    return $this->db->get_where($table, $where)->result();
     }
 
+    function get_limit($table, $limit, $offset){
+        return $this->db->get($table, $limit, $offset)->result();
+    }
+
 	function get_order_by($table, $order_by, $asc_or_desc){
         $this->db->order_by($order_by, $asc_or_desc);
 

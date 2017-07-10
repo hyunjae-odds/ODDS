@@ -16,9 +16,11 @@
 .table_default td.score {font-weight:bold;letter-spacing:2px;font-size:15px;}
 .table_default td.data {text-align:right;position:relative;}
 .table_default td.data > span {display:block;height:22px;padding-right:15px;}
-table.table_default td.graybox {text-align:right;}
-table.table_default td.graybox span {/*background: #eee none repeat scroll 0 0;border-radius: 3px;*/color: #888;display: inline-block;font-size: 11px;height: 17px;line-height: 16px;padding: 0 4px;}
-table.table_default a:hover {text-decoration:underline;}
+
+span.graybox  {background: #eee;display: inline-block;font-size: 12px;height: 21px;line-height: 18px;width:32px;text-align:center;}
+span.redbox  {background: #ff386b;display: inline-block;font-size: 14px;height: 21px;line-height: 18px;width:32px;text-align:center;color:#fff;}
+
+table.table_default a:hover {/*text-decoration:underline;*/}
 table.gametable tr th:nth-of-type(1),table.gametable tr td:nth-of-type(1) {text-align:right;}
 table.gametable tr td:nth-of-type(1) {padding-right:5px;}
 table.gametable th:nth-of-type(2) {text-align:left;padding-left:30px;}
@@ -101,22 +103,33 @@ div.barGraph01_W > div .grayBG ul li span {text-align:center;font-weight:bold;co
 div.barGraph01_W > div .grayBG > p {text-align:center;font-weight:bold;color:#bbb;padding-top:10px;font-size:14px;}
 span.teamLogo {margin:8px 5px 0 0;}
 
+.game_w ul.LastGame_view {position:relative;margin:0;}
+.LastGame_view ul.tab02 {position:absolute;left:0;top:13px;z-index:1;}
+.league_Ltable tr.th02 th {}
+.league_Ltable tr td:nth-of-type(2) span {width:35px;height:35px;}
 .league_Ltable tr td:nth-of-type(1) {font-size:15px;}
-.league_Ltable tr th:nth-of-type(2),.league_Ltable tr td:nth-of-type(2) {text-align:left;padding-left:10px;}
-.league_Ltable tr td:nth-of-type(4) {font-weight:bold;}
-.Ltable .redline.n1 {width:63px; left:236px;display:block;}
+.league_Ltable tr th:nth-of-type(2),.league_Ltable tr td:nth-of-type(2) {text-align:left;padding-left:5px;}
+.league_Ltable tr th:nth-of-type(3),.league_Ltable tr td:nth-of-type(3),.league_Ltable tr th:nth-of-type(11),.league_Ltable tr td:nth-of-type(11) {border-left:1px solid #ccc;padding-left:5px;}
+.league_Ltable tr.th02 th {border:none;background:#fff;padding:0;text-align:center;color:#444;font-weight:normal;font-size:12px;}
+.league_Ltable tr.th02 th b {font-weight:bold;font-size:14px;}
+.league_Ltable tr.th02 th.br {border-right:1px solid #ccc;}
+/*.Ltable .redline.n1 {width:63px; left:236px;display:block;}
 .Ltable .redline.n2 {width:56px; left:306px;display:block;}
 .Ltable .redline.n3 {width:56px; left:364px;display:block;}
 .Ltable .redline.n4 {width:56px; left:425px;display:block;}
 .Ltable .redline.n5 {width:73px; left:486px;display:block;}
 .Ltable .redline.n6 {width:57px; left:562px;display:block;}
-.Ltable .redline.n7 {width:63px; left:624px;display:block;}
+.Ltable .redline.n7 {width:63px; left:624px;display:block;}*/
 
 
-.tableNtable {}
+
 .tableNtable table {width:470px;float:left;margin-right:20px;margin-bottom:20px;}
 .tableNtable table:nth-of-type(even) {margin-right:0;}
 .tableNtable table th:nth-of-type(1),.tableNtable table td:nth-of-type(1) {text-align:left;padding-left:20px;}
+
+.gametable02 {}
+.gametable02 td:nth-of-type(1) span {height: 35px;width: 35px;}
+.tableNtable table.gametable02 th:nth-of-type(1),.tableNtable table.gametable02 td:nth-of-type(1) {text-align:center;padding:0;}
 
 div.TOP5 {width:;display:block; clear:both;content:"";}
 div.TOP5 > div {float:left;width:470px;font-size:15px;margin-right:20px;margin-bottom:10px;margin-top:10px;}
@@ -124,6 +137,9 @@ div.TOP5 > div:nth-of-type(even){margin-right:0;}
 div.TOP5 h4 {background:#eee url("../image/game/bg_h4f.jpg") no-repeat ;height:27px;line-height:26px;font-size:14px;color:#999;padding-left:17px;display:inline-block;font-weight:bold;margin-bottom:10px;}
 div.TOP5 h4 span {display:inline-block; width:18px;height:100%;background:url("../image/game/bg_h4b.jpg") no-repeat;vertical-align:top;}
 div.TOP5 table th:nth-of-type(1),div.TOP5 table td:nth-of-type(1) {text-align:left;padding-left:20px;}
+
+
+
 
 
 
@@ -975,24 +991,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
-span.LG {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/LG_120120.png") no-repeat center center; background-size:contain;}
-span.SS {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/SS_120120.png") no-repeat center center; background-size:contain;}
-span.LT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/LT_120120.png") no-repeat center center; background-size:contain;}
-span.WO {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/NS_120120.png") no-repeat center center; background-size:contain;}
-span.SK {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/SK_120120.png") no-repeat center center; background-size:contain;}
-span.KT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/KT_120120.png") no-repeat center center; background-size:contain;}
-span.OB {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/DS_120120.png") no-repeat center center; background-size:contain;}
-span.NC {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/NC_120120.png") no-repeat center center; background-size:contain;}
-span.HH {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/HH_120120.png") no-repeat center center; background-size:contain;}
-span.HT {font-size:0; vertical-align:top;display:inline-block; width:30px; height:30px; background:url("/public/lib/image/base/KI_120120.png") no-repeat center center; background-size:contain;}
+span.LG {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+span.SS {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+span.LT {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+span.WO {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+span.SK {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+span.KT {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+span.OB {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+span.NC {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+span.HH {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+span.HT {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
 
-span.LG_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/LG_120120.png") no-repeat center center; background-size:contain;}
-span.SS_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/SS_120120.png") no-repeat center center; background-size:contain;}
-span.LT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/LT_120120.png") no-repeat center center; background-size:contain;}
-span.WO_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/NS_120120.png") no-repeat center center; background-size:contain;}
-span.SK_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/SK_120120.png") no-repeat center center; background-size:contain;}
-span.KT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/KT_120120.png") no-repeat center center; background-size:contain;}
-span.OB_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/DS_120120.png") no-repeat center center; background-size:contain;}
-span.NC_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/NC_120120.png") no-repeat center center; background-size:contain;}
-span.HH_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/HH_120120.png") no-repeat center center; background-size:contain;}
-span.HT_L {font-size:0; vertical-align:top;display:inline-block; width:110px; height:110px; background:url("/public/lib/image/base/KI_120120.png") no-repeat center center; background-size:contain;}
+/*LG 트윈스*/span.LG_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+/*삼성 라이온즈*/span.SS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+/*롯데 자이언츠*/span.LT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+/*넥센 히어로즈*/span.WO_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+/*SK 와이번즈*/span.SK_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+/*KT 위즈*/span.KT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+/*두산 베어스*/span.OB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+/*NC 다이노스*/span.NC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+/*한화 이글스*/span.HH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+/*KIA 타이거즈*/span.HT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
