@@ -4,7 +4,7 @@
 *{margin:0; padding:0;}
 body {font-size:12px; font-family:"맑은 고딕", Malgun Gothic, "돋움",Dotum,Helvetica,AppleGothic,Sans-serif; line-height:1.5em;color:#444;}
 @font-face {font-family:NanumGothic; src:url(font/NanumGothic.eot); src:local('☺'), src:url(font/NanumGothic.woff) format('woff')}
-h1,h2,h3,h4,h5,h6,address{font-weight:normal}
+h1,h2,h3,h4,h5,h6,address{font-weight:normal;}
 img,fieldset{border:0; border-style:none;}
 ul,ol,li {list-style:none}
 caption,legend {visibility:hidden; height:0; font-size:0; line-height:0; width:0; overflow:hidden; text-align:left}
@@ -39,6 +39,8 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .red>a {color:#ff225b !important;}
 .blue {color:#2eb2fd !important;}
 .gray {color:#aaa !important;}
+.gray2 {color:#777 !important;}
+.gray3 {color:#444 !important;}
 /* position */
 .left {text-align:left !important;}
 .right {text-align:right !important;}
@@ -49,6 +51,7 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .pr20 {padding-right:20px !important;}
 .pl5 {padding-left:5px !important;}
 .pl10 {padding-left:10px !important;}
+.pl15 {padding-left:15px !important;}
 .pl20 {padding-left:20px !important;}
 .pt5 {padding-top:5px !important;}
 .pt10 {padding-top:10px !important;}
@@ -56,7 +59,9 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .pt20 {padding-top:20px !important;}
 .ml10 {margin-left:10px !important;}
 .mr10 {margin-right:10px !important;}
+.mt15 {margin-top:15px !important;}
 .mt20 {margin-top:20px !important;}
+.mt35 {margin-top:35px !important;}
 .mb10 {margin-bottom:10px !important;}
 .mb20 {margin-bottom:20px !important;}
 .ml40 {margin-left:40px !important;}
@@ -65,11 +70,14 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .pb50 {padding-bottom:50px;}
 .relative {position:relative !important;}
 .absolute {position:absolute !important;}
+.normal {font-weight:normal !important;}
+.underline {text-decoration:underline;}
 /* title */
 h2.tit02 {font-weight:bold;letter-spacing:-1px;color:#222;font-size:28px;height:59px;line-height:60px;margin:0 40px;border-bottom:1px solid #ccc;clear:both;display:block;content:"";}
 h2.tit02 a {vertical-align: inherit;margin:0;}
 h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8;margin-bottom:10px;clear:both;display:block;content:"";}
 .noBorder {border:none;margin-bottom:5px;}
+
 
 
 
@@ -456,20 +464,40 @@ a.red_btn {width:100%;height:56px;font-weight:bold;text-align:center;background:
 .g_pop_w,.r_pop_w,.y_pop_w {display:none;}
 
 /* 팝업디자인 시작 */
-.g_pop,.r_pop {position:absolute;right:0; top:36px;z-index:4; background:#fff; border:1px solid #ccc; border-radius:10px;width:203px;line-height:1.4; overflow:hidden;display:none;}
+/*.g_pop,.r_pop {position:absolute;right:0; top:36px;z-index:9; background:#fff; border:1px solid #ccc; border-radius:7px;width:203px;line-height:1.4; overflow:hidden;display:none;}*/
+.g_pop,.r_pop {position:absolute;right:0; top:36px;z-index:9; background:#fff; border:1px solid #ccc; border-radius:7px;width:203px;line-height:1.4;display:none;}
 .g_pop h3,.r_pop h3 {border-top:3px solid #2eb300;border-bottom:1px solid #ccc; font-size:14px; text-align:center;background:#f9f9f9;height:29px;line-height:29px;font-weight:bold;margin-bottom:0;}
-.r_pop h3 {border-top:3px solid #f2250f;}
-.g_pop ul,.r_pop ul {text-align:left;padding:5px;}
-.g_pop ul li,.r_pop ul li {border-bottom:1px solid #ccc;padding:11px 10px 12px;}
-.g_pop ul li b,.r_pop ul li b {font-size:15px;}
-.g_pop ul li b span,.r_pop ul li b span {font-size:12px; font-weight:normal; color:#2eb300;padding-left:5px;}
-.r_pop ul li b span {color:#ff225b;}
-.g_pop ul li p,.r_pop ul li p {font-size:13px;line-height:1.1;}
-.g_pop .num,.r_pop .num {text-align:center; height:25px;}
-.g_pop .num span,.r_pop .num span { border-right:1px solid #ccc;padding:0 8px 0 5px; height:11px; line-height:11px; display:inline-block;}
-.g_pop .num span.on,.r_pop .num span.on {font-weight:bold;} 
-.g_pop .num span:nth-last-of-type(1),.r_pop .num span:nth-last-of-type(1) {border:none;}
-.liveTab .livetable td.data .g_pop .num span a,.liveTab .livetable td.data .r_pop .num span a {color:#444;display:inline;font-size:12px;}
+.r_pop > span.arr {background:url("../image/base/icon.png") no-repeat -329px 0;display:block;width:9px;height:5px;position:absolute;top:-5px;left:0;right:0;margin:0 auto;}
+.r_pop ul.list {border-top:3px solid #f2250f; border-radius:7px 7px 0 0;}
+.r_pop ul.list li {float:left;width:101px;text-align:center;background:#eee;font-size:13px;height:29px;border-bottom:1px solid #ccc;line-height:28px;}
+.r_pop ul.list li:nth-of-type(1) {border-right:1px solid #ccc;}
+.r_pop ul.list li.on {background:#fff;border-bottom:1px solid #fff;}
+.r_pop ul.list li.on a {font-weight:bold;}
+.r_pop ul.view {padding:0 4px;}
+.r_pop ul.view li {display:none;}
+.r_pop ul.view li a {display:block;height:55px;padding:10px 6px;border-bottom:1px solid #ccc;}
+.r_pop ul.view li a span.img {width:55px;height:55px;float:left;display:block;text-align:left;}
+.r_pop ul.view li a span.img img {width:55px;height:55px;display:block;}
+.r_pop ul.view li a span.hh {font-weight:bold;font-size:13px;display:block;text-align:left;margin-left:8px;float:left;width:120px;}
+.r_pop ul.view li a span.pp {font-size:12px;display:block;text-align:left;margin-left:8px;float:left;width:120px;}
+.r_pop ul.view li div {position:relative;height:18px;margin:8px 0 10px;}
+.r_pop ul.view li div > span {position:absolute; bottom:0px;right:47px;height:18px;line-height:17px;font-size:12px;}
+.r_pop ul.view li div button {position:absolute; bottom:0px; cursor:pointer; text-indent:-9999px;overflow:hidden; display:block; width:18px; height:18px; background:rgba(0, 0, 0, 0) url("../image/blog/bg_g.jpg") repeat-x center center; border:1px solid #ccc;}
+button.btn_prev {right:22px;}
+button.btn_next {right:0px;}
+button.btn_prev span {display:block;width:5px;height:9px;background:rgba(0, 0, 0, 0) url("../image/blog/icon.png") no-repeat scroll -16px -24px;margin: 3px 5px;}
+button.btn_next span {display:block;width:5px;height:9px;background:rgba(0, 0, 0, 0) url("../image/blog/icon.png") no-repeat scroll -35px -24px;margin: 3px 6px;}
+
+.g_pop ul {text-align:left;padding:5px;}
+.g_pop ul li {border-bottom:1px solid #ccc;padding:11px 10px 12px;}
+.g_pop ul li b {font-size:15px;}
+.g_pop ul li b span {font-size:12px; font-weight:normal; color:#2eb300;padding-left:5px;}
+.g_pop ul li p {font-size:13px;line-height:1.1;}
+.g_pop .num {text-align:center; height:25px;}
+.g_pop .num span { border-right:1px solid #ccc;padding:0 8px 0 5px; height:11px; line-height:11px; display:inline-block;}
+.g_pop .num span.on {font-weight:bold;} 
+.g_pop .num span:nth-last-of-type(1){border:none;}
+.liveTab .livetable td.data .g_pop .num span a{color:#444;display:inline;font-size:12px;}
 .g_pop .close,.r_pop .close {position:absolute;top:13px;right:11px;}
 .g_pop .close a,.r_pop .close a {display:block;width:11px; height:10px; background:url("../image/base/icon.png") no-repeat -135px -5px;font-size:0;}
 .y_pop {display:none;position:fixed; left:50%; top:50%; margin:-380px 0 0 -240px;z-index:9; width:480px; height:720px;background:#ddd;padding:5px;border:1px solid #aaa; }
@@ -541,9 +569,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* --------------------------   table_default  ---------------------------- */
 
 table.table_default {width:100%;}
-table.table_default th {background:#eee; height:40px; line-height:40px; font-size:12px;color:#999;text-align:center;}
+table.table_default th {background:#5b616f; height:34px; line-height:34px; font-size:12px;color:#fff;text-align:center;}
 table.table_default th a {color:#999;}
 table.table_default td {background:#fff;height:40px; line-height:40px; text-align:center; font-size:14px; border-bottom:1px solid #ddd;}
+table.table_default td:nth-of-type(1) {border-left:none;}
+table.table_default td:nth-last-of-type(1) {border-right:none;}
 table td.data {background:none;position:relative;}
 table td.data > span.match_ajax > span {margin:0 3px 0 2px;}/* 개발 후 추가 - 170614 */
 th span.lh2 {line-height:14px;font-size:12px;display:block;}
@@ -587,7 +617,8 @@ span.rankdot04 {display:inline-block;width:8px;height:8px;vertical-align:middle;
 
 
 /*탭*/
-.tab01_w {border-bottom:1px solid #ccc;position:relative;height:39px;margin-bottom:10px;}
+.tab01_w {border-bottom:1px solid #ccc;position:relative;height:39px;margin-bottom:20px;}
+.tab01_w .tab01 {top:0;}
 
 /* 핑크탭 */
 ul.tab01 {position:absolute;top:-60px;right:0;}
@@ -680,20 +711,26 @@ span.home_icon {font-size:0; vertical-align:top;display:inline-block; width:11px
 span.home_icon_b {font-size:0; vertical-align:top;display:inline-block; width:25px; height:21px; background:url("../image/base/icon.png") no-repeat 0 -82px;}
 span.relay {font-size:0; vertical-align:top;display:inline-block; width:17px; height:20px; background:url("../image/base/icon.png") no-repeat -155px -33px;}
 span.relay02 {font-size:0; vertical-align:top;display:inline-block; width:20px; height:20px; background:url("../image/base/icon.png") no-repeat -183px -34px;}
+span.excl_mark {font-size:0; vertical-align:middle;display:inline-block; width:10px; height:10px; background:url("../image/base/icon_h.png") no-repeat 0px -50px;cursor:pointer;}
 
 
 /* BTN */
 span.b_BTN {font-size:0; vertical-align:top;display:inline-block; width:72px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 0;}
 span.b_BTN2 {font-size:0; vertical-align:top;display:inline-block; width:72px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -50px;}
+span.b_BTN_s {font-size:0; vertical-align:top;display:inline-block; width:55px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -144px;}
+span.b_BTN3 {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -82px;}
+span.b_BTN4 {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -114px;}
+span.b_BTN5 {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat -25px -114px;}
 span.g_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat 0 -25px;}
 span.r_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat -25px -25px;}
+span.r_BTN2 {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat -25px -82px;}
 span.y_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/hotmatchBTN.png") no-repeat -50px -25px;}
 span.ing_BTN {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/livescore/ing_btn.gif") no-repeat;}
 span.ing_BTN.none {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/livescore/ing_btn_n.png") no-repeat;}
 span.upicon {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_up.gif") no-repeat;}
-span.b_BTN a,span.b_BTN2 a, span.g_BTN a, span.r_BTN a, span.y_BTN a, span.ing_BTN a,span.btn_mark a {display:block;height:22px;}
-span.btn_mark.on {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_mark.png") no-repeat 0 0;}
-span.btn_mark {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_mark.png") no-repeat -22px 0;}
+span.b_BTN a,span.b_BTN2 a, span.g_BTN a, span.r_BTN a, span.r_BTN2 a, span.y_BTN a, span.ing_BTN a,span.btn_mark a,span.b_BTN_s a,span.b_BTN5 a {display:block;height:22px;}
+span.btn_mark.on {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_mark.png") no-repeat 0 -30px;}
+span.btn_mark {font-size:0; vertical-align:top;display:inline-block; width:22px; height:22px; background:url("../image/base/btn_mark.png") no-repeat -22px -30px;}
 
 
 /* league */
@@ -774,57 +811,57 @@ span.Hungary {font-size:0; vertical-align:top;display:inline-block; width:23px; 
 
 
 span.all {background-image:none;}
-/* Greece 그리스 */ span.country_44 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -3px;}
-/* SouthAfrica 남아공 */ span.country_95 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -48px;}
-/* Netherlands 네덜란드 */ span.country_24 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -93px;}
-/* Norway 노르웨이 */ span.country_92 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -128px;}
-/* Korea 한국 */ span.country_173 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -173px;}
-/* Denmark 덴마크 */ span.country_17 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -218px;}
-/* Germany 독일 */ span.country_33 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -263px;}
-/* Latvia 라트비아 */ span.country_54 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -308px;}
-/* Russia 러시아 */ span.country_43 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -353px;}
-/* Rumsembureuk 룩셈브루크 */ span.country_181 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -398px;}
-/* Rwanda 르완다 */ span.country_201 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -443px;}
-/* Lithuania 리투아니아 */ span.country_180 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -488px;}
-/* Malaysia 말레이시아 */ span.country_183 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -533px;}
-/* Morocco 모로코 */ span.country_88 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -578px;}
-/* USA 미국 */ span.country_59 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -623px;}
-/* Vietnam 베트남 */ span.country_215 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -668px;}
-/* Belgium 벨기에 */ span.country_65 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -713px;}
+/* Greece 그리스 */ span.country_44 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -9px;}
+/* SouthAfrica 남아공 */ span.country_95 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -54px;}
+/* Netherlands 네덜란드 */ span.country_24 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -98px;}
+/* Norway 노르웨이 */ span.country_92 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -148px;}
+/* Korea 한국 */ span.country_173 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -187px;}
+/* Denmark 덴마크 */ span.country_17 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -232px;}
+/* Germany 독일 */ span.country_33 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -276px;}
+/* Latvia 라트비아 */ span.country_54 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -321px;}
+/* Russia 러시아 */ span.country_43 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -365px;}
+/* Rumsembureuk 룩셈브루크 */ span.country_181 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -410px;}
+/* Rwanda 르완다 */ span.country_201 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -454px;}
+/* Lithuania 리투아니아 */ span.country_180 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -499px;}
+/* Malaysia 말레이시아 */ span.country_183 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -543px;}
+/* Morocco 모로코 */ span.country_88 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -588px;}
+/* USA 미국 */ span.country_59 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -632px;}
+/* Vietnam 베트남 */ span.country_215 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -677px;}
+/* Belgium 벨기에 */ span.country_65 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -721px;}
 
 
 /* Bolivia 볼리비아 */ span.country_155 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -766px;}
-/* Brazil 브라질 */ span.country_55 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -803px;}
-/* Serbia 세르비아 */ span.country_72 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -848px;}
-/* Sweden 스웨덴 */ span.country_45 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -893px;}
-/* Switzerland 스위스 */ span.country_53 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -938px;}
-/* Seukoteurendeu 스코틀랜드 */ span.country_104 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -983px;}
+/* Brazil 브라질 */ span.country_55 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -811px;}
+/* Serbia 세르비아 */ span.country_72 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -856px;}
+/* Sweden 스웨덴 */ span.country_45 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -900px;}
+/* Switzerland 스위스 */ span.country_53 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -945px;}
+/* Seukoteurendeu 스코틀랜드 */ span.country_104 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -989px;}
 /* Spain 스페인 */ span.country_32 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1034px;}
-/* Slovakia 슬로바키아 */ span.country_106 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1073px;}
-/* Singapore 싱가포르 */ span.country_205 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1118px;}
-/* Argentina 아르헨티나 */ span.country_57 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1163px;}
-/* IsleRend 아이슬랜드 */ span.country_167 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1208px;}
+/* Slovakia 슬로바키아 */ span.country_106 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1078px;}
+/* Singapore 싱가포르 */ span.country_205 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1123px;}
+/* Argentina 아르헨티나 */ span.country_57 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1167px;}
+/* IsleRend 아이슬랜드 */ span.country_167 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1212px;}
 /* Estonia 에스토니아 */ span.country_148 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1256px;}
-/* Ecuador 에콰도르 */ span.country_94 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1298px;}
-/* Ethiopia 에티오피아 */ span.country_239 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1343px;}
-/* Australia 오스트리아 */ span.country_139 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1388px;}
-/* Israel 이스라엘 */ span.country_98 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1433px;}
-/* Egypt 이집트 */ span.country_84 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1478px;}
+/* Ecuador 에콰도르 */ span.country_94 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1301px;}
+/* Ethiopia 에티오피아 */ span.country_239 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1345px;}
+/* Australia 오스트리아 */ span.country_139 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1390px;}
+/* Israel 이스라엘 */ span.country_98 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1434px;}
+/* Egypt 이집트 */ span.country_84 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1479px;}
 /* Italy 이탈리아 */ span.country_34 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1523px;}
 /* India 인도*/ span.country_168 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1568px;}
-/* Japan 일본 */ span.country_79 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1613px;}
+/* Japan 일본 */ span.country_79 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1612px;}
 /* England 잉글랜드 */ span.country_18 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1657px;}
-/* China 중국 */ span.country_1 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1703px;}
+/* China 중국 */ span.country_1 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1701px;}
 /* Czech 체코 */ span.country_14 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1746px;}
-/* Chile 칠레 */ span.country_114 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1793px;}
-/* CostaRica 코스타리카 */ span.country_77 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1838px;}/* 뭐지 얘*/
-/* Columbia 콜롬비아 */ span.country_93 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1883px;}
+/* Chile 칠레 */ span.country_114 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1790px;}
+/* CostaRica 코스타리카 */ span.country_77 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1836px;}/* 뭐지 얘*/
+/* Columbia 콜롬비아 */ span.country_93 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1879px;}
 /* Croatia 크로아티아 */ span.country_6 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1928px;}
-/* Turkey 터키 */ span.country_58 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1973px;}
-/* Peru 페루 */ span.country_210 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2018px;}
-/* Poland 폴란드 */ span.country_81 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2063px;}
+/* Turkey 터키 */ span.country_58 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -1968px;}
+/* Peru 페루 */ span.country_210 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2013px;}
+/* Poland 폴란드 */ span.country_81 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2057px;}
 /* France 프랑스 */ span.country_20 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2102px;}
-/* Finland 핀란드 */ span.country_68 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2153px;}
+/* Finland 핀란드 */ span.country_68 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2146px;}
 /* Hungary 헝가리 */ span.country_166 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2191px;}
 span.etc {font-size:0; vertical-align:middle;display:inline-block; width:24px; height:24px; background:url("../image/base/country.png") no-repeat -3px -4500px;}
 
@@ -878,7 +915,7 @@ span.yellow02 {font-size:0; vertical-align:top;display:inline-block; width:13px;
 span.redcard02 {font-size:0; vertical-align:top;display:inline-block; width:13px; height:15px; background:url("../image/livescore/liveicon.png") no-repeat -44px -277px;}
 
 
-.result_btn {margin:0px 1px 0 2px;display:inline-block;height:25px;vertical-align:text-bottom;}
+.result_btn {margin:0px 1px 0 2px;display:inline-block;height:25px;vertical-align:text-top;}
 /*.result_btn img {vertical-align:middle;}
 span.winL {font-size:0;background:url("../image/game/WLD.png") no-repeat;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
 span.loseL {font-size:0;background:url("../image/game/WLD.png") no-repeat -23px 0;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;}
@@ -887,6 +924,7 @@ span.plusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -69px 
 span.minusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -92px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
 span.yesL {font-size:0;background:url("../image/game/WLD.png") no-repeat -115px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
 span.noL {font-size:0;background:url("../image/game/WLD.png") no-repeat -138px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
+
 
 /* 아이콘 수정 예정 2.1
 span.winL {font-size:0;background:url("../image/game/WLD_2.png") no-repeat;display:inline-block;width:22px;height:25px; margin:0 2px 0 1px;}
@@ -917,3 +955,20 @@ span.com_tonybet {font-size:0;vertical-align:top;display:inline-block; width:75p
 .customer_service table td:nth-of-type(1) {text-align:left;padding-left:30px;}
 
 
+
+
+.dividend_w {margin:55px 40px 80px;}
+.dividend_w .tab01 {right:auto;left:0;}
+.dividend_w table td {border-collapse:collapse;}
+.dividend_w table td:nth-last-of-type(1), .dividend_w table td:nth-last-of-type(2), .dividend_w table td:nth-last-of-type(3) {border-left:1px solid #ddd;}
+.dividend_w table a {font-weight:bold;color:#ff225b;font-size:16px;padding-right:20px;display:inline-block;background:url("/odds/image/base/icon_h.png") no-repeat right 16px;}
+.dividend_w table span.down {font-weight:bold;padding-left:15px;display:inline-block; background:url("/odds/image/base/arrow_h.png") no-repeat left 17px;}
+.dividend_w table span.up {font-weight:bold;color:#ff225b;padding-left:15px;display:inline-block; background:url("/odds/image/base/arrow_h.png") no-repeat left -32px;}
+.dividend_w table tr:hover td {background:#eee;}
+/*
+.dividend_w table tr:hover td {border-top:3px solid #5b616f;border-bottom:3px solid #5b616f; height:36px;line-height:36px;}
+.dividend_w table tr:hover td:nth-last-of-type(1) {background:url("/odds/image/base/table_hover_border.jpg") no-repeat right 0;}
+.dividend_w table tr:hover td:nth-of-type(1) {background:url("/odds/image/base/table_hover_border.jpg") no-repeat left 0;}
+.dividend_w table tr:hover td a {background-position:right 14px;}
+.dividend_w table tr:hover td span.down {background-position:left 15px;}
+.dividend_w table tr:hover td span.up {background-position:left -34px;}*/
