@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12d05596-3630-4e6d-85ee-c7d5ea644a13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/baseball/crawling/teams.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/baseball/league_info.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/image/base/country.png" afterPath="$PROJECT_DIR$/public/lib/image/base/country.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/image/base/hotmatchBTN.png" afterPath="$PROJECT_DIR$/public/lib/image/base/hotmatchBTN.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/image/game/WLD.png" afterPath="$PROJECT_DIR$/public/lib/image/game/WLD.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/footer_.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/index.php_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/index_.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Baseball.php" afterPath="$PROJECT_DIR$/application/controllers/Baseball.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/logs/log-2017-07-20.php" afterPath="$PROJECT_DIR$/application/logs/log-2017-07-20.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/baseball/Baseball_model.php" afterPath="$PROJECT_DIR$/application/models/baseball/Baseball_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/baseball/crawling/players.php" afterPath="$PROJECT_DIR$/application/views/baseball/crawling/players.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/baseball/league.php" afterPath="$PROJECT_DIR$/application/views/baseball/league.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/css/baseball.css" afterPath="$PROJECT_DIR$/public/lib/css/baseball.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/css/common.css" afterPath="$PROJECT_DIR$/public/lib/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/baseball/player_record_hitter.php" afterPath="$PROJECT_DIR$/application/views/baseball/player_record_hitter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/baseball/player_record_pitcher.php" afterPath="$PROJECT_DIR$/application/views/baseball/player_record_pitcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/baseball/result.php" afterPath="$PROJECT_DIR$/application/views/baseball/result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/baseball/score.php" afterPath="$PROJECT_DIR$/application/views/baseball/score.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/head.php" afterPath="$PROJECT_DIR$/application/views/head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/head_main.php" afterPath="$PROJECT_DIR$/application/views/head_main.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,9 +46,10 @@
       <file leaf-file-name="Baseball.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Baseball.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="873">
-              <caret line="1732" column="38" lean-forward="false" selection-start-line="1732" selection-start-column="38" selection-end-line="1732" selection-end-column="38" />
+            <state relative-caret-position="525">
+              <caret line="161" column="122" lean-forward="false" selection-start-line="161" selection-start-column="122" selection-end-line="161" selection-end-column="122" />
               <folding>
+                <element signature="n#__construct#0;n#Baseball#0;n#!!top" expanded="false" />
                 <element signature="n#result#0;n#Baseball#0;n#!!top" expanded="false" />
                 <element signature="n#player_record_hitter#0;n#Baseball#0;n#!!top" expanded="false" />
                 <element signature="n#player_record_pitcher#0;n#Baseball#0;n#!!top" expanded="false" />
@@ -89,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teams.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/baseball/crawling/teams.php">
+      <file leaf-file-name="league.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/baseball/league.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="60" column="61" lean-forward="true" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+            <state relative-caret-position="414">
+              <caret line="76" column="135" lean-forward="false" selection-start-line="76" selection-start-column="135" selection-end-line="76" selection-end-column="135" />
               <folding />
             </state>
           </provider>
@@ -102,11 +105,11 @@
       <file leaf-file-name="Baseball_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/baseball/Baseball_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="55" />
+            <state relative-caret-position="-7">
+              <caret line="360" column="78" lean-forward="false" selection-start-line="360" selection-start-column="78" selection-end-line="360" selection-end-column="78" />
               <folding>
-                <element signature="n#__construct#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#insert#0;n#Baseball_model#0;n#!!top" expanded="false" />
+                <element signature="n#insert_update_before#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#insert_delete_before#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#insert_by_month#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#insert_with_recent_game#0;n#Baseball_model#0;n#!!top" expanded="false" />
@@ -135,7 +138,6 @@
                 <element signature="n#get_over_under#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_over_under_by_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_recent_ten_game_over_under#0;n#Baseball_model#0;n#!!top" expanded="false" />
-                <element signature="n#get_recent_ten_game_over_under_to_str#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_all_game_over_under#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_result#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_result_by_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
@@ -149,8 +151,8 @@
                 <element signature="n#get_record_by_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_players#0;n#Baseball_model#0;n#!!top" expanded="false" />
                 <element signature="n#get_top_player_in_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
-                <marker date="1500529730000" expanded="true" signature="5079:5193" ph="SELECT * FRO... KBO_result" />
-                <marker date="1500529730000" expanded="true" signature="25569:25695" ph="select * fro... ${$table}" />
+                <marker date="1500614959000" expanded="true" signature="5079:5193" ph="SELECT * FRO... KBO_result" />
+                <marker date="1500614959000" expanded="true" signature="26905:27031" ph="select * fro... ${$table}" />
               </folding>
             </state>
           </provider>
@@ -168,13 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>insertDeleteBefore</find>
-      <find>insertByMonth</find>
-      <find>insertWithRecentGame</find>
-      <find>insert_player_record_by_crawling</find>
-      <find>insertPlayerRecordByCrawling</find>
-      <find>update_player_</find>
-      <find>../../</find>
       <find>ls0</find>
       <find>btn_arrow01</find>
       <find>btn_mark</find>
@@ -189,7 +184,6 @@
       <find>get_league_statistics</find>
       <find>$sortAux</find>
       <find>get_away_home_recent_game</find>
-      <find>get_recent_ten_game_over_under</find>
       <find>$teams</find>
       <find>티</find>
       <find>plusL</find>
@@ -198,6 +192,14 @@
       <find>underline</find>
       <find>$recent_over_under</find>
       <find>match_information</find>
+      <find>league_info</find>
+      <find>get_total_score</find>
+      <find>mlb</find>
+      <find>get_recent_ten_game_over_under</find>
+      <find>get_recent_ten_game_over_under_to_str</find>
+      <find>2016</find>
+      <find>$total</find>
+      <find>f</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -230,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../MINING/application/models/game/Game_model.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/../MINING/application/views/game/test.php" />
@@ -263,12 +264,6 @@
         <option value="$PROJECT_DIR$/application/views/baseball/match.php" />
         <option value="$PROJECT_DIR$/application/views/baseball/team_detail/opta.php" />
         <option value="$PROJECT_DIR$/application/views/baseball/team_detail/schedule.php" />
-        <option value="$PROJECT_DIR$/application/views/head.php" />
-        <option value="$PROJECT_DIR$/application/views/head_main.php" />
-        <option value="$PROJECT_DIR$/application/views/baseball/player_record_hitter.php" />
-        <option value="$PROJECT_DIR$/application/views/baseball/player_record_pitcher.php" />
-        <option value="$PROJECT_DIR$/application/views/baseball/score.php" />
-        <option value="$PROJECT_DIR$/application/views/baseball/result.php" />
         <option value="$PROJECT_DIR$/application/views/baseball/simple.js" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/system/core/CodeIgniter.php" />
@@ -277,10 +272,17 @@
         <option value="$PROJECT_DIR$/application/views/baseball/a.php" />
         <option value="$PROJECT_DIR$/application/views/baseball/team_detail/player_hitter.php" />
         <option value="$PROJECT_DIR$/application/views/baseball/league_info.php" />
-        <option value="$PROJECT_DIR$/application/models/baseball/Baseball_model.php" />
-        <option value="$PROJECT_DIR$/application/views/baseball/league.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Baseball.php" />
         <option value="$PROJECT_DIR$/application/views/baseball/crawling/teams.php" />
+        <option value="$PROJECT_DIR$/application/views/head.php" />
+        <option value="$PROJECT_DIR$/application/views/head_main.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/views/baseball/score.php" />
+        <option value="$PROJECT_DIR$/application/views/baseball/result.php" />
+        <option value="$PROJECT_DIR$/application/views/baseball/player_record_pitcher.php" />
+        <option value="$PROJECT_DIR$/application/views/baseball/player_record_hitter.php" />
+        <option value="$PROJECT_DIR$/application/models/baseball/Baseball_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Baseball.php" />
+        <option value="$PROJECT_DIR$/application/views/baseball/league.php" />
       </list>
     </option>
   </component>
@@ -323,7 +325,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -404,20 +405,53 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ODDS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ODDS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="baseball" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="crawling" />
+              <option name="myItemId" value="ODDS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ODDS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -654,12 +688,13 @@
       <workItem from="1500253560567" duration="14153000" />
       <workItem from="1500337503855" duration="10330000" />
       <workItem from="1500445591069" duration="6638000" />
-      <workItem from="1500508947323" duration="22678000" />
+      <workItem from="1500508947323" duration="22782000" />
+      <workItem from="1500595806903" duration="17202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1043452000" />
+    <option name="totallyTimeSpent" value="1060758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,7 +709,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1845238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18809524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -703,13 +738,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="46" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../MINING/application/views/composer.json" />
-    <entry file="file://$PROJECT_DIR$/../MINING/application/views/ratchet/chat-server.php" />
     <entry file="file://$PROJECT_DIR$/../MINING/application/views/ratchet/MyApp/Chat.php" />
     <entry file="file://$PROJECT_DIR$/../MINING/application/views/game/index.php" />
     <entry file="file://$PROJECT_DIR$/../MINING/index.php">
@@ -744,13 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-430">
           <caret line="568" column="22" lean-forward="false" selection-start-line="568" selection-start-column="12" selection-end-line="568" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -829,38 +855,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/head_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="416" column="80" lean-forward="false" selection-start-line="416" selection-start-column="80" selection-end-line="416" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="165" column="29" lean-forward="true" selection-start-line="165" selection-start-column="29" selection-end-line="165" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/score.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/baseball/simple.js" />
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="140" column="49" lean-forward="true" selection-start-line="140" selection-start-column="49" selection-end-line="140" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/CodeIgniter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -868,36 +863,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/head_.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/baseball/test.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/player_record_pitcher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" column="92" lean-forward="false" selection-start-line="75" selection-start-column="92" selection-end-line="75" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/baseball/team_detail/match_2_3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88920">
           <caret line="4680" column="20" lean-forward="true" selection-start-line="4680" selection-start-column="20" selection-end-line="4680" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,18 +896,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/a.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19929">
-          <caret line="122" column="47" lean-forward="true" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/a.php" />
     <entry file="file://$PROJECT_DIR$/public/lib/css/baseball.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -952,26 +912,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="940" column="65" lean-forward="false" selection-start-line="940" selection-start-column="65" selection-end-line="940" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/player_record_hitter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="276" column="74" lean-forward="true" selection-start-line="276" selection-start-column="74" selection-end-line="276" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/league_info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="151" column="60" lean-forward="false" selection-start-line="151" selection-start-column="60" selection-end-line="155" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/league_info.php" />
     <entry file="file://$PROJECT_DIR$/application/views/baseball/crawling/players.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -980,50 +924,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/league.php">
+    <entry file="file://$PROJECT_DIR$/application/views/head_.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="277" column="99" lean-forward="false" selection-start-line="277" selection-start-column="99" selection-end-line="277" selection-end-column="99" />
-          <folding>
-            <element signature="e#14366#14372#1#HTML" expanded="true" />
-            <element signature="e#14426#14432#1#HTML" expanded="true" />
-            <element signature="e#14486#14492#1#HTML" expanded="true" />
-            <marker date="1500534010000" expanded="true" signature="2395:2542" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="2435:2542" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="2478:2542" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="2638:3417" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="2741:2793" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="2741:3146" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="3187:3417" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="3232:3345" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="3232:3417" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="11269:11325" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="13045:13101" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="13239:13304" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="14764:14820" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="16642:16698" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="18816:18860" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="18977:19020" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="21279:21323" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="21440:21483" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="21708:21755" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="21886:21939" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="22383:22427" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="22581:22624" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="22951:22998" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="24119:24163" ph="..." />
-            <marker date="1500534010000" expanded="true" signature="24317:24360" ph="..." />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="157" column="74" lean-forward="true" selection-start-line="157" selection-start-column="74" selection-end-line="157" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/head_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="425" column="37" lean-forward="true" selection-start-line="425" selection-start-column="37" selection-end-line="425" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="95" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="98" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="307" column="29" lean-forward="true" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/crawling/teams.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="50" column="44" lean-forward="true" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/player_record_hitter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/player_record_pitcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="50" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/score.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/baseball/Baseball_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="-7">
+          <caret line="360" column="78" lean-forward="false" selection-start-line="360" selection-start-column="78" selection-end-line="360" selection-end-column="78" />
           <folding>
-            <element signature="n#__construct#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#insert#0;n#Baseball_model#0;n#!!top" expanded="false" />
+            <element signature="n#insert_update_before#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#insert_delete_before#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#insert_by_month#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#insert_with_recent_game#0;n#Baseball_model#0;n#!!top" expanded="false" />
@@ -1052,7 +1055,6 @@
             <element signature="n#get_over_under#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_over_under_by_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_recent_ten_game_over_under#0;n#Baseball_model#0;n#!!top" expanded="false" />
-            <element signature="n#get_recent_ten_game_over_under_to_str#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_all_game_over_under#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_result#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_result_by_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
@@ -1066,17 +1068,18 @@
             <element signature="n#get_record_by_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_players#0;n#Baseball_model#0;n#!!top" expanded="false" />
             <element signature="n#get_top_player_in_team#0;n#Baseball_model#0;n#!!top" expanded="false" />
-            <marker date="1500529730000" expanded="true" signature="5079:5193" ph="SELECT * FRO... KBO_result" />
-            <marker date="1500529730000" expanded="true" signature="25569:25695" ph="select * fro... ${$table}" />
+            <marker date="1500614959000" expanded="true" signature="5079:5193" ph="SELECT * FRO... KBO_result" />
+            <marker date="1500614959000" expanded="true" signature="26905:27031" ph="select * fro... ${$table}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Baseball.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="873">
-          <caret line="1732" column="38" lean-forward="false" selection-start-line="1732" selection-start-column="38" selection-end-line="1732" selection-end-column="38" />
+        <state relative-caret-position="525">
+          <caret line="161" column="122" lean-forward="false" selection-start-line="161" selection-start-column="122" selection-end-line="161" selection-end-column="122" />
           <folding>
+            <element signature="n#__construct#0;n#Baseball#0;n#!!top" expanded="false" />
             <element signature="n#result#0;n#Baseball#0;n#!!top" expanded="false" />
             <element signature="n#player_record_hitter#0;n#Baseball#0;n#!!top" expanded="false" />
             <element signature="n#player_record_pitcher#0;n#Baseball#0;n#!!top" expanded="false" />
@@ -1118,10 +1121,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/baseball/crawling/teams.php">
+    <entry file="file://$PROJECT_DIR$/application/views/baseball/league.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="60" column="61" lean-forward="true" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+        <state relative-caret-position="414">
+          <caret line="76" column="135" lean-forward="false" selection-start-line="76" selection-start-column="135" selection-end-line="76" selection-end-column="135" />
           <folding />
         </state>
       </provider>

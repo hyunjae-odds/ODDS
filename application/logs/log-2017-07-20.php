@@ -15033,3 +15033,12 @@ DEBUG - 2017-07-20 09:02:45 --> Total execution time: 21.8685
 INFO - 2017-07-20 09:03:08 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/crawling/teams.php
 INFO - 2017-07-20 09:03:08 --> Final output sent to browser
 DEBUG - 2017-07-20 09:03:08 --> Total execution time: 26.1955
+INFO - 2017-07-20 09:05:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/crawling/teams.php
+INFO - 2017-07-20 09:05:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/crawling/teams.php
+INFO - 2017-07-20 09:05:53 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/crawling/teams.php
+INFO - 2017-07-20 09:05:53 --> Final output sent to browser
+INFO - 2017-07-20 09:05:53 --> Final output sent to browser
+DEBUG - 2017-07-20 09:05:53 --> Total execution time: 5,943.0800
+DEBUG - 2017-07-20 09:05:53 --> Total execution time: 5,878.7878
+INFO - 2017-07-20 09:05:53 --> Final output sent to browser
+DEBUG - 2017-07-20 09:05:53 --> Total execution time: 5,792.7717

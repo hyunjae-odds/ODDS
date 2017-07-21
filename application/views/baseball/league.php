@@ -12,7 +12,7 @@
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li class="on"><a href="/baseball/league_info/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
+            <li class="on"><a href="/baseball/league/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
             <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
             <li><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB';?>">선수 기록</a></li>
             <li><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB';?>">상대 전적</a></li>
@@ -70,7 +70,11 @@
                                                 endif;
                                                 ?>
                                             </td>
-                                            <td class="left pl20"><a href="/baseball/player_hitter?team=<?=$item->away;?>"><?=$full_name_team[$item->away];?></a> vs <a href="/baseball/player_hitter?team=<?=$item->home;?>"><?=$full_name_team[$item->home];?></a></td>
+                                            <?php if($item->away=='Los Angeles Angels of Anaheim'): $item->away='Los Angeles Angels'; ?>
+                                            <?php elseif($item->home=='Los Angeles Angels of Anaheim'): $item->home='Los Angeles Angels'; endif; ?>
+                                            <td class="left pl20"><a href="/baseball/player_hitter?team=<?=$item->away;?>"><?=($league=='KBO')? $full_name_team[$item->away] : $item->away;?></a> vs <a href="/baseball/player_hitter?team=<?=$item->home;?>"><?=($league=='KBO')? $full_name_team[$item->home] : $item->home;?></a></td>
+                                            <?php if($item->away=='Los Angeles Angels'): $item->away='Los Angeles Angels of Anaheim'; ?>
+                                            <?php elseif($item->home=='Los Angeles Angels'): $item->home='Los Angeles Angels of Anaheim'; endif; ?>
                                             <?php if($selector=='handicap'): ?><td><span class="underline">-1.5</span></td>
                                             <?php elseif($selector=='over_under'): ?><td><span class="underline"><?=number_format(($over_under_reference[$item->away]+$over_under_reference[$item->home])/2).'.5';?></span></td><?php endif;?>
                                             <td><span class="">1.93</span></td>
@@ -86,7 +90,7 @@
                 </ul>
                 
                 <div class="pb50 relative" style="margin-left:0;">
-                    <h3 class="center" style="margin:0;">2016 <?=($league=='KBO')? 'KBO' : 'MLB';?> 리그 테이블</h3>
+                    <h3 class="center" style="margin:0;">2017 <?=($league=='KBO')? 'KBO' : 'MLB';?> 리그 테이블</h3>
                     <div class="LastGame_view">
                         <ul class="tab02">
                             <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=all&selector=<?=$selector;?>')">전체</a></li>
@@ -106,40 +110,82 @@
                                     <th colspan="8" class="br"><b>승패</b></th>
                                     <th colspan="6"><b>O/U</b></th>
                                 </tr>
-                                <tr>
-                                    <th>순위</th>
-                                    <th class="left">팀명</th>
-                                    <th>경기</th>
-                                    <th>승</th>
-                                    <th>패</th>
-                                    <th>무</th>
-                                    <th>득점</th>
-                                    <th>실점</th>
-                                    <th>승률%</th>
-                                    <th>승차</th>
-                                    <th>득/실</th>
-                                    <th>기준</th>
-                                    <th>오버%</th>
-                                    <th>언더%</th>
-                                </tr>
-                                <?php foreach($total as $entry): ?>
+
+                                <?php if($league=='MLB_A' || $league=='MLB_N'): ?>
+                                    <?php foreach($total as $item): ?>
+                                        <tr>
+                                            <th>순위</th>
+                                            <th class="left">팀명</th>
+                                            <th>경기</th>
+                                            <th>승</th>
+                                            <th>패</th>
+                                            <th>무</th>
+                                            <th>득점</th>
+                                            <th>실점</th>
+                                            <th>승률%</th>
+                                            <th>승차</th>
+                                            <th>득/실</th>
+                                            <th>기준</th>
+                                            <th>오버%</th>
+                                            <th>언더%</th>
+                                        </tr>
+                                        <?php foreach($item as $entry): ?>
+                                            <tr>
+                                                <td><?=$entry->rank;?></td>
+                                                <?php if($entry->team=='Los Angeles Angels of Anaheim') $entry->team='Los Angeles Angels'; ?>
+                                                <td class="left"><span class=""></span> <?=$entry->team;?></td>
+                                                <?php if($entry->team=='Los Angeles Angels') $entry->team='Los Angeles Angels of Anaheim'; ?>
+                                                <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
+                                                <td><?=$entry->win;?></td>
+                                                <td><?=$entry->lose;?></td>
+                                                <td><?=$entry->tie;?></td>
+                                                <td><?=$entry->plus;?></td>
+                                                <td><?=$entry->minus;?></td>
+                                                <td><?=number_format($entry->win_rate,3);?></td>
+                                                <td><?=$entry->game_car;?></td>
+                                                <td><?=number_format(($entry->plus+$entry->minus)/$entry->g,1);?></td>
+                                                <td><?=$over_under_reference[$entry->team];?></td>
+                                                <td><?=$over_under_reference[$entry->team.'_over'];?></td>
+                                                <td><?=$over_under_reference[$entry->team.'_under'];?></td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    <?php endforeach; ?>
+                                <?php else: ?>
                                     <tr>
-                                        <td><?=$entry->rank;?></td>
-                                        <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span> <?=$full_name_team[$entry->team];?></td>
-                                        <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
-                                        <td><?=$entry->win;?></td>
-                                        <td><?=$entry->lose;?></td>
-                                        <td><?=$entry->tie;?></td>
-                                        <td><?=$entry->plus;?></td>
-                                        <td><?=$entry->minus;?></td>
-                                        <td><?=number_format($entry->win_rate,3);?></td>
-                                        <td><?=$entry->game_car;?></td>
-                                        <td><?=number_format(($entry->plus+$entry->minus)/$entry->g,1);?></td>
-                                        <td><?=$over_under_reference[$entry->team];?></td>
-                                        <td><?=$over_under_reference[$entry->team.'_over'];?></td>
-                                        <td><?=$over_under_reference[$entry->team.'_under'];?></td>
+                                        <th>순위</th>
+                                        <th class="left">팀명</th>
+                                        <th>경기</th>
+                                        <th>승</th>
+                                        <th>패</th>
+                                        <th>무</th>
+                                        <th>득점</th>
+                                        <th>실점</th>
+                                        <th>승률%</th>
+                                        <th>승차</th>
+                                        <th>득/실</th>
+                                        <th>기준</th>
+                                        <th>오버%</th>
+                                        <th>언더%</th>
                                     </tr>
-                                <?php endforeach; ?>
+                                    <?php foreach($total as $entry): ?>
+                                        <tr>
+                                            <td><?=$entry->rank;?></td>
+                                            <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span> <?=$full_name_team[$entry->team];?></td>
+                                            <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
+                                            <td><?=$entry->win;?></td>
+                                            <td><?=$entry->lose;?></td>
+                                            <td><?=$entry->tie;?></td>
+                                            <td><?=$entry->plus;?></td>
+                                            <td><?=$entry->minus;?></td>
+                                            <td><?=number_format($entry->win_rate,3);?></td>
+                                            <td><?=$entry->game_car;?></td>
+                                            <td><?=number_format(($entry->plus+$entry->minus)/$entry->g,1);?></td>
+                                            <td><?=$over_under_reference[$entry->team];?></td>
+                                            <td><?=$over_under_reference[$entry->team.'_over'];?></td>
+                                            <td><?=$over_under_reference[$entry->team.'_under'];?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
                             </table>
                             <div class="pt50">
                                 <h3 class="center noBorder">2017 <?=($league=='KBO')? 'KBO' : 'MLB';?> 리그요약</h3>
@@ -266,7 +312,8 @@
                             </tr>
                             <?php foreach($recent as $items): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=$team_initial[$items['team']];?>_L"></span> <?=$items['team'];?></td>
+                                    <?php if($items['team']=='Los Angeles Angels of Anaheim') $items['team']='Los Angeles Angels'; ?>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$items['team'];?></td>
                                     <td>
                                         <?php foreach($items['recent_game'] as $key=>$value):
                                             if($value=='win') echo '<a href="/baseball/match_information/'.$items['recent_detail'][9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_win.png" title="'.$items['recent_detail'][9-$key]["away"].' '.$items['recent_detail'][9-$key]["away_score"].":".$items['recent_detail'][9-$key]["home_score"].' '.$items['recent_detail'][9-$key]["home"].'"/></a>';
@@ -290,7 +337,7 @@
                             </tr>
                             <?php foreach($recent_over_under as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=$team_initial[$item['team']];?>_L"></span> <?=$item['team'];?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$item['team'];?></td>
                                     <td><?php foreach($item['str'] as $items): ?><span class="<?=$items;?>L"><?=$items;?></span><?php endforeach; ?></td>
                                     <td><span class="red"><?=$item['over'];?></span>/<?=$item['under'];?></td>
                                 </tr>
@@ -310,13 +357,22 @@
                             </tr>
                             <?php foreach($offense as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=$team_initial[$item->team];?>_L"></span> <?=$item->team;?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$item->team;?></td>
                                     <td><?php
                                         $plus=0;
-                                        foreach($total as $items):
-                                            if($items->team=='KT'): $items->team='kt'; endif;
-                                            if($items->team==$item->team) $plus=$items->plus;
-                                        endforeach;
+                                        if($league=='KBO'):
+                                            foreach($total as $items):
+                                                if($items->team=='KT'): $items->team='kt'; endif;
+                                                if($items->team==$item->team) $plus=$items->plus;
+                                            endforeach;
+                                        else:
+                                            foreach($total as $items):
+                                                foreach($items as $entry):
+                                                    if($entry->team=='Los Angeles Angels of Anaheim') $entry->team='Los Angeles Angels';
+                                                    if($entry->team==$item->team) $plus=$entry->plus;
+                                                endforeach;
+                                            endforeach;
+                                        endif;
                                         echo $plus;
                                         ?>
                                     </td>
@@ -340,13 +396,22 @@
                             </tr>
                             <?php foreach($defence as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=$team_initial[$item->team];?>_L"></span> <?=$item->team;?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$item->team;?></td>
                                     <td><?php
                                         $minus=0;
-                                        foreach($total as $items):
-                                            if($items->team=='KT'): $items->team='kt'; endif;
-                                            if($items->team==$item->team) $minus=$items->minus;
-                                        endforeach;
+                                        if($league=='KBO'):
+                                            foreach($total as $items):
+                                                if($items->team=='KT'): $items->team='kt'; endif;
+                                                if($items->team==$item->team) $minus=$items->minus;
+                                            endforeach;
+                                        else:
+                                            foreach($total as $items):
+                                                foreach($items as $entry):
+                                                    if($entry->team=='Los Angeles Angels of Anaheim') $entry->team='Los Angeles Angels';
+                                                    if($entry->team==$item->team) $minus=$entry->minus;
+                                                endforeach;
+                                            endforeach;
+                                        endif;
                                         echo $minus;
                                         ?>
                                     </td>

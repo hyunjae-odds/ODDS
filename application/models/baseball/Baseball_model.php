@@ -437,7 +437,9 @@
 
     function get_over_under_by_team($league){
         $result=array();
-        $teams=array('SK','kt','삼성','NC','두산','넥센','LG','한화','롯데','KIA');
+        $kbo_teams=array('SK','kt','삼성','NC','두산','넥센','LG','한화','롯데','KIA');
+        $mlb_teams=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays','Cleveland Indians','Minnesota Twins','Kansas City Royals','Detroit Tigers','Chicago White Sox','Houston Astros','Los Angeles Angels of Anaheim','Texas Rangers','Seattle Mariners','Oakland Athletics','Washington Nationals','Atlanta Braves','New York Mets','Miami Marlins','Philadelphia Phillies','Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds','Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
+        $teams=($league=='KBO')?$kbo_teams : $mlb_teams;
 
         foreach($teams as $team):
             $total=($league=='KBO')? $this->get_result_by_team('KBO_result', $team) : $this->get_result_by_team('MLB_result', $team);
@@ -482,7 +484,9 @@
 
     function get_recent_ten_game_over_under_to_str($league, $over_under_reference){
         $result=($league=='KBO')? $this->get_result('KBO_result') : $this->get_result('MLB_result');
-        $teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $kbo_teams=array('삼성','롯데','LG','SK','kt','두산','넥센','KIA','NC','한화');
+        $mlb_teams=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays','Cleveland Indians','Minnesota Twins','Kansas City Royals','Detroit Tigers','Chicago White Sox','Houston Astros','Los Angeles Angels of Anaheim','Texas Rangers','Seattle Mariners','Oakland Athletics','Washington Nationals','Atlanta Braves','New York Mets','Miami Marlins','Philadelphia Phillies','Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds','Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
+        $teams=($league=='KBO')?$kbo_teams : $mlb_teams;
 
         $result_set=array();
         foreach($teams as $team):
@@ -570,10 +574,7 @@
     }
 
     function get_result_by_team($table, $team){
-        $data=($table=='KBO_result')?$this->db->query('select * from '.$table.' where away_score!="" AND home_score!="" AND (away="'.$team.'" OR home="'.$team.'") order by date DESC')->result()
-             : '';
-
-        return $data;
+        return $this->db->query('select * from '.$table.' where away_score!="" AND home_score!="" AND (away="'.$team.'" OR home="'.$team.'") order by date DESC')->result();
     }
 
     function get_result_one($schedule_no){

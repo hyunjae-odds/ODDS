@@ -113,17 +113,66 @@ class Baseball extends MY_Controller{
             endforeach;
             foreach($recent_result as $item) $sortAux3[]=$item['win'];
             array_multisort($sortAux3, SORT_DESC, $recent_result);
+        else:
+            $recent_game=array();
+            foreach($total as $item):
+                foreach($item as $entry):
+                    $win=0;
+                    $lose=0;
+                    $recent=array();
+                    $exp=explode(';', $entry->recent_game);
+                    foreach($exp as $items):
+                        if($items=='승'):
+                            $win++;
+                            array_push($recent, 'win');
+                        else:
+                            $lose++;
+                            array_push($recent, 'lose');
+                        endif;
+                    endforeach;
+                    $recent_game['team']=$entry->team;
+                    $recent_game['recent_game']=$recent;
+                    $recent_game['win']=$win;
+                    $recent_game['lose']=$lose;
+                    $recent_game['recent_detail']=$entry->recent_detail;
 
-            $recent_over_under=$this->baseball_model->get_recent_ten_game_over_under_to_str($league, $over_under_reference);
-
-            $offense=$this->baseball_model->get('KBO_team_offense');
-            foreach($offense as $item) $sortAux4[]=$item->avg;
-            array_multisort($sortAux4, SORT_DESC, $offense);
-
-            $defence=$this->baseball_model->get('KBO_team_defence');
-            foreach($defence as $item) $sortAux5[]=$item->era;
-            array_multisort($sortAux5, SORT_ASC, $defence);
+                    array_push($recent_result, $recent_game);
+                endforeach;
+            endforeach;
+            foreach($recent_result as $item) $sortAux3[]=$item['win'];
+            array_multisort($sortAux3, SORT_DESC, $recent_result);
         endif;
+
+        $MLB_A_teams=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays','Cleveland Indians','Minnesota Twins','Kansas City Royals','Detroit Tigers','Chicago White Sox','Houston Astros','Los Angeles Angels','Texas Rangers','Seattle Mariners','Oakland Athletics');
+        $MLB_N_teams=array('Washington Nationals','Atlanta Braves','New York Mets','Miami Marlins','Philadelphia Phillies','Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds','Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
+        $recent_over_under=$this->baseball_model->get_recent_ten_game_over_under_to_str($league, $over_under_reference);
+        $arr=array();
+        foreach($recent_over_under as $item):
+            if($item['team']=='Los Angeles Angels of Anaheim'): $item['team']='Los Angeles Angels'; endif;
+            if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item['team']==$items): array_push($arr, $item); endif;
+            elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item['team']==$items): array_push($arr, $item); endif; endif;
+        endforeach;
+        $recent_over_under=$arr;
+
+        $offense=($league=='KBO')? $this->baseball_model->get('KBO_team_offense') : $this->baseball_model->get('MLB_team_offense') ;
+        foreach($offense as $item) $sortAux4[]=$item->avg;
+        array_multisort($sortAux4, SORT_DESC, $offense);
+        $arr=array();
+        foreach($offense as $item):
+            if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item->team==$items): array_push($arr, $item); endif;
+            elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item->team==$items): array_push($arr, $item); endif; endif;
+        endforeach;
+        $offense=$arr;
+
+        $defence=($league=='KBO')? $this->baseball_model->get('KBO_team_defence') : $this->baseball_model->get('MLB_team_defence') ;
+        foreach($defence as $item) $sortAux5[]=$item->era;
+        array_multisort($sortAux5, SORT_ASC, $defence);
+        $arr=array();
+        foreach($defence as $item):
+            if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item->team==$items): array_push($arr, $item); endif;
+            elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item->team==$items): array_push($arr, $item); endif; endif;
+        endforeach;
+        $defence=$arr;
 
         $this->load->view('/baseball/league', array('league'=>$league,'total'=>$total,'schedule'=>$schedule,'handicap'=>$handicap,'league_statistics'=>$league_statistics,'over_under_reference_value'=>$over_under_reference_value,'offense'=>$offense,'defence'=>$defence,'selector'=>$selector,
                                                     'scroll_top'=>$scroll_top,'duration'=>$duration,'home_away'=>$home_away,'over_under_reference'=>$over_under_reference,'recent'=>$recent_result,'recent_over_under'=>$recent_over_under));
