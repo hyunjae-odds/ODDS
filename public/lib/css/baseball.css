@@ -74,6 +74,10 @@ table tr th a {color:#999;}
 .redline span.bb {display:block; width:100%; height:0; border-bottom:3px solid #ff225b;position:absolute; left:0;bottom:0;}
 
 
+/*o/u패턴 말풍선*/
+.pop_excl_mark {background:#fff;border:1px solid #ccc; position:absolute;right:-29px;top:-34px;color:#444;font-size:12px;font-weight:normal;height:30px;line-height:30px;width:100%;display:none;}
+.pop_excl_mark span {display:inline-block;width:14px;height:8px;background:url("/odds/image/base/arrow_h.png") no-repeat 0 -99px;position:absolute;right:0;left:0;bottom:-8px;margin:0 auto;}
+
 
 
 /*--------------   게임_리그 공통 끝  ------------*/
@@ -155,6 +159,34 @@ div.TOP5 table th:nth-of-type(1),div.TOP5 table td:nth-of-type(1) {text-align:le
 
 table td span.black {display:inline-block; line-height:10px;height:12px;padding:3px 7px;background:#eee;border-radius:4px;}
 
+.team_list {border:1px solid #ddd;height:100px;}
+.team_list li {float:left;}
+.team_list li div {cursor:pointer;width:81px;height:94px;text-align:center;border:3px solid #fff;}
+.team_list li:nth-of-type(1) div {width:82px;}
+.team_list li div span {width:55px;height:55px;margin-top:7px;}
+.team_list li div p {font-weight:bold;font-size:12px;color:#555;}
+.team_list li.on div {border:3px solid red;}
+
+.result_veiw {}
+.result_veiw > li {display:none;}
+.result_veiw > li.active {display:block;}
+
+.result_table01 {}
+.result_table01 span {margin-right:5px;}
+.result_table01 span.orangeBox {text-align:center;width:55px;height:25px;line-height:25px;color:#fff;display:inline-block;background:#ffa800;}
+.result_table01 span.skyBox {text-align:center;width:55px;height:25px;line-height:25px;color:#fff;display:inline-block;background:#8caedc;}
+.result_table01 span.grayBox {text-align:center;width:50px;height:25px;line-height:25px;color:#fff;display:inline-block;background:#ccc;}
+table.result_table01_1 td {text-align:left;}
+table.result_table01_1 td:nth-of-type(1) {border-left:1px solid #ddd;}
+table.result_table01_1 td:nth-last-of-type(1) {border-right:1px solid #ddd;}
+
+
+.result_table01_1_onoff {position:absolute;margin:0 auto;left:0;right:0;bottom:-26px;width:190px;}
+.result_table01_1_onoff li {display:none;}
+.result_table01_1_onoff li a {display:block;background:url("/odds/image/game/bg_team_onoff.png") no-repeat;width:190px;height:27px;line-height:26px;text-align:center;font-size:14px;}
+.result_table01_1_onoff li a.up span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/close.jpg") no-repeat center center;vertical-align:middle;}
+.result_table01_1_onoff li a.down span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/open.jpg") no-repeat center center;vertical-align:middle;}
+.result_table01_1_onoff li.active {display:block;}
 /* 리그 통계 */
 
 .gameMain_view {}
@@ -309,7 +341,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .s5 .gray_warp_w .gray_warp .select:nth-of-type(1) {margin-left:12px;}
 
 .nextTable {position:absolute;top:0;right:0;}
-.nextTable a {display:block;width:16px;height:40px;background:url("../image/game/btn_nexttable.jpg") no-repeat;}
+.nextTable a {display:block;width:16px;height:34px;background:url("../image/game/btn_nexttable.jpg") no-repeat center center;}
 .next_table {position:absolute;top:0;left:0;}
 .next_table td {background:#fff;}/*
 .hitter .redline.pr_1 {width:50px; left:289px;display:block;}
@@ -797,6 +829,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', end
 .opinion .graph > div.DblueG.fff > div > div > div {background:#5b616f;}
 .opinion .graph > div.DblueG.fff > div span {color:#fff;font-weight:bold;}
 .opinion .graph > div.DblueG.fff span.left_g,.opinion .graph > div.DblueG.fff span.right_g {height:30px;line-height:30px;}
+
+span.excl_mark_w {display:block; position:relative; height:18px;}
+span.excl_mark_w:hover .pop_excl_mark {display:block;}
+span.excl_mark_w .pop_excl_mark {width:338px;right:-105px;top:-37px;}
+
 
 /*라인업*/
 .lineUP {padding-bottom:30px;margin-bottom:40px;}

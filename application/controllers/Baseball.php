@@ -146,46 +146,58 @@ class Baseball extends MY_Controller{
         $MLB_A_teams=array('Boston Red Sox','New York Yankees','Tampa Bay Rays','Baltimore Orioles','Toronto Blue Jays','Cleveland Indians','Minnesota Twins','Kansas City Royals','Detroit Tigers','Chicago White Sox','Houston Astros','Los Angeles Angels','Texas Rangers','Seattle Mariners','Oakland Athletics');
         $MLB_N_teams=array('Washington Nationals','Atlanta Braves','New York Mets','Miami Marlins','Philadelphia Phillies','Milwaukee Brewers','Chicago Cubs','St. Louis Cardinals','Pittsburgh Pirates','Cincinnati Reds','Los Angeles Dodgers','Arizona Diamondbacks','Colorado Rockies','San Diego Padres','San Francisco Giants');
         $recent_over_under=$this->baseball_model->get_recent_ten_game_over_under_to_str($league, $over_under_reference);
-        $arr=array();
-        foreach($recent_over_under as $item):
-            if($item['team']=='Los Angeles Angels of Anaheim'): $item['team']='Los Angeles Angels'; endif;
-            if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item['team']==$items): array_push($arr, $item); endif;
-            elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item['team']==$items): array_push($arr, $item); endif; endif;
-        endforeach;
-        $recent_over_under=$arr;
+        if($league!='KBO'):
+            $arr=array();
+            foreach($recent_over_under as $item):
+                if($item['team']=='Los Angeles Angels of Anaheim'): $item['team']='Los Angeles Angels'; endif;
+                if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item['team']==$items): array_push($arr, $item); endif;
+                elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item['team']==$items): array_push($arr, $item); endif; endif;
+            endforeach;
+            $recent_over_under=$arr;
+        endif;
 
         $offense=($league=='KBO')? $this->baseball_model->get('KBO_team_offense') : $this->baseball_model->get('MLB_team_offense') ;
         foreach($offense as $item) $sortAux4[]=$item->avg;
         array_multisort($sortAux4, SORT_DESC, $offense);
-        $arr=array();
-        foreach($offense as $item):
-            if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item->team==$items): array_push($arr, $item); endif;
-            elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item->team==$items): array_push($arr, $item); endif; endif;
-        endforeach;
-        $offense=$arr;
+        if($league!='KBO'):
+            $arr=array();
+            foreach($offense as $item):
+                if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item->team==$items): array_push($arr, $item); endif;
+                elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item->team==$items): array_push($arr, $item); endif; endif;
+            endforeach;
+            $offense=$arr;
+        endif;
 
         $defence=($league=='KBO')? $this->baseball_model->get('KBO_team_defence') : $this->baseball_model->get('MLB_team_defence') ;
         foreach($defence as $item) $sortAux5[]=$item->era;
         array_multisort($sortAux5, SORT_ASC, $defence);
-        $arr=array();
-        foreach($defence as $item):
-            if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item->team==$items): array_push($arr, $item); endif;
-            elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item->team==$items): array_push($arr, $item); endif; endif;
-        endforeach;
-        $defence=$arr;
+        if($league!='KBO'):
+            $arr=array();
+            foreach($defence as $item):
+                if($league=='MLB_A'): foreach($MLB_A_teams as $items) if($item->team==$items): array_push($arr, $item); endif;
+                elseif($league=="MLB_N"): foreach($MLB_N_teams as $items) if($item->team==$items): array_push($arr, $item); endif; endif;
+            endforeach;
+            $defence=$arr;
+        endif;
 
         $this->load->view('/baseball/league', array('league'=>$league,'total'=>$total,'schedule'=>$schedule,'handicap'=>$handicap,'league_statistics'=>$league_statistics,'over_under_reference_value'=>$over_under_reference_value,'offense'=>$offense,'defence'=>$defence,'selector'=>$selector,
                                                     'scroll_top'=>$scroll_top,'duration'=>$duration,'home_away'=>$home_away,'over_under_reference'=>$over_under_reference,'recent'=>$recent_result,'recent_over_under'=>$recent_over_under));
         $this->load->view("/footer");
     }
 
-    function result($league, $select_year, $select_month){
+    function result($league, $team, $month){
         $this->load->view("/head_up");
         $this->load->view("/head");
 
-        $result=$this->baseball_model->get_by_month($league, $select_month, 'all');
-        $this->load->view("/baseball/result", array('league'=>$league, 'result'=>$result, 'select_year'=>$select_year, 'select_month'=>$select_month));
+        if($month>9) $month==9;
 
+        $result=$this->baseball_model->get_by_week(urldecode($team), $month);
+        $over_under_reference=$this->baseball_model->get_over_under_by_team($league);
+        $over_under_reference_value=$this->baseball_model->get_over_under($league);
+        $team_month=$this->baseball_model->get_team_month(urldecode($team), $month);
+        $league_result=$this->baseball_model->get_league_result();
+
+        $this->load->view("/baseball/result", array('league'=>$league,'result'=>$result,'over_under_reference_value'=>$over_under_reference_value,'team_month'=>$team_month,'team'=>urldecode($team),'month'=>$month,'over_under_reference'=>$over_under_reference,'league_result'=>$league_result));
         $this->load->view("/footer");
     }
 
@@ -1369,6 +1381,7 @@ class Baseball extends MY_Controller{
 
 /* ---------------------------------------------------- CRAWLING ---------------------------------------------------- */
 
+//  KBO
     function crawlingResult(){
         $this->load->library('curl');
 
@@ -1385,8 +1398,10 @@ class Baseball extends MY_Controller{
                     if($keys==0):
                         $len=strlen($items->Text);
                         if($len==10):
-                            $date=$items->Text;
-                            $resultSet['date']=$items->Text;
+                            $date1=explode('(', $items->Text);
+                            $date2=explode('.', $date1[0]);
+                            $date=date('Y').'-'.$date2[0].'-'.$date2[1];
+                            $resultSet['date']=$date;
                             $resultSet['stadium']=$item->row[7]->Text;
                         else:
                             $resultSet['date']=$date;
@@ -1432,57 +1447,6 @@ class Baseball extends MY_Controller{
         endforeach;
 
         $this->baseball_model->insert_by_month($result);
-
-//      HALF
-        /*$source=$this->curl->simple_get('/application/views/baseball/sources/result_half_first.php');
-
-        $expl1=explode('class="date-txt">', $source);
-        $expl2=explode('</span>', $expl1[1]);
-        $date=substr($expl2[0],5);
-
-        $arr=array(6, 2);
-        $expl0=explode('<p class="place">', $source);
-        foreach($arr as $item):
-            $rows=array();
-            for($i=1; $i<count($expl0); $i++):
-                $game=array();
-
-                $expl3=explode('</span>', $expl0[$i]);
-                $expl4=explode('<span>', $expl3[0]);
-                $time=$expl4[1];
-
-                $expl5=explode('<th scope="row">', $expl0[$i]);
-                $expl8=explode('<td>', $expl5[1]);
-                $expl6=explode('</th>', $expl8[0]);
-                $away=$expl6[0];
-                $away_score=0;
-                for($h=1; $h<$item; $h++):
-                    $expl9=explode('</td>', $expl8[$h]);
-                    if($expl9[0]!='-'): $away_score+=$expl9[0]; endif;
-                endfor;
-
-                $expl7=explode('<td>', $expl5[2]);
-                $expl9=explode('</th>', $expl7[0]);
-                $home=$expl9[0];
-                $home_score=0;
-                for($j=1; $j<$item; $j++):
-                    $expl10=explode('</td>', $expl7[$j]);
-                    if($expl10[0]!='-'): $home_score+=$expl10[0]; endif;
-                endfor;
-
-                $game['date']=$date;
-                $game['time']=$time;
-                $game['home']=$home;
-                $game['home_score']=$home_score;
-                $game['away']=$away;
-                $game['away_score']=$away_score;
-
-                array_push($rows, $game);
-            endfor;
-            $table=($item==6)?'KBO_result_half_2017':'KBO_result_first_2017';
-
-            $this->baseball_model->insert_result($table, $rows);
-        endforeach;*/
     }
 
     function crawlingTeamRecord(){
@@ -1650,6 +1614,11 @@ class Baseball extends MY_Controller{
         if($update_count!=0) echo 'total updated data count : '.$update_count;
     }
 
+    function crawlingKboMonth(){
+        $this->load->view('/baseball/crawling/month');
+    }
+
+//  MLB
     function crawlingOptaResult(){
         $this->load->library('curl');
         date_default_timezone_set('Asia/Seoul');

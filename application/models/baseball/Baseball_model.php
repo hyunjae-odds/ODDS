@@ -154,6 +154,31 @@
 		return $result;
 	}
 
+    function get_by_week($team, $month){
+        $result_arr=array();
+        $arr=$this->get_weeks_of_month($month);
+
+	    if($team=='all'):
+            foreach($arr as $item):
+                if($item!=null):
+                    $max=sizeof($item)-1;
+                    $result=$this->db->query('SELECT * FROM KBO_result WHERE date>="2017-'.$month.'-'.$item[0].'" AND date<="2017-'.$month.'-'.$item[$max].'" AND away_score!="" AND home_score!=""')->result();
+                    if($result!=null) array_push($result_arr, $result);
+                endif;
+            endforeach;
+        else:
+            foreach($arr as $item):
+                if($item!=null):
+                    $max=sizeof($item)-1;
+                    $result=$this->db->query('SELECT * FROM KBO_result WHERE date>="2017-'.$month.'-'.$item[0].'" AND date<="2017-'.$month.'-'.$item[$max].'" AND (away="'.$team.'" OR home="'.$team.'") AND away_score!="" AND home_score!=""')->result();
+                    if($result!=null) array_push($result_arr, $result);
+                endif;
+            endforeach;
+        endif;
+
+        return $result_arr;
+    }
+
 //	팀별 최근 10경기 승패
 	function get_num_rows($table, $schedule_no){
         if($table=='KBO_record_hitter'): $lastDate=$this->get_last_day($table, 'crawling_date'); $this->db->where('crawling_date', $lastDate); $this->db->where('req_yn', 'Y');
@@ -255,8 +280,8 @@
     }
 
     function get_schedule_after_3days($league){
-    	$today=($league=='KBO')? date('m.d') : date('Y-m-d');
-    	$date_form=($league=='KBO')? 'm.d' : 'Y-m-d';
+    	$today=date('Y-m-d');
+    	$date_form='Y-m-d';
     	$table=($league=='KBO')? 'KBO_result' : 'MLB_result';
 
         $this->db->select('date');
@@ -461,6 +486,35 @@
         endforeach;
 
         return $result;
+    }
+
+    function get_over_under_by_month($team){
+        $value=$this->db->query('SELECT DISTINCT month FROM KBO_team_month ORDER BY month DESC LIMIT 1')->row();
+        $max_month=$value->month+1;
+
+        $result_arr=array();
+        for($i=3; $i<$max_month; $i++):
+            $over_under_reference_value=$this->get_over_under('KBO');
+            $over_under_reference=$this->get_over_under_by_team('KBO');
+            $result2=($team=='all') ? $this->db->query('SELECT * FROM KBO_result WHERE away_score!="" AND home_score!="" AND date LIKE "2017-0'.$i.'%"')->result()
+                                    : $this->db->query('SELECT * FROM KBO_result WHERE (away="'.$team.'" OR home="'.$team.'") AND away_score!="" AND home_score!="" AND date LIKE "2017-0'.$i.'%"')->result();
+
+            $result['month']=$i;
+            $result['over']=0;
+            $result['under']=0;
+            foreach($result2 as $item):
+                if($team=='all'):
+                    if($item->away_score+$item->home_score > $over_under_reference_value) $result['over']++;
+                    else $result['under']++;
+                else:
+                    if($item->away_score+$item->home_score > $over_under_reference[$team]) $result['over']++;
+                    else $result['under']++;
+                endif;
+            endforeach;
+            array_push($result_arr, $result);
+        endfor;
+
+        return $result_arr;
     }
 
     function get_recent_ten_game_over_under($team_name, $over_under_reference_value){
@@ -751,4 +805,94 @@
         return $result;
     }
 
+    function get_weeks_of_month($month){
+        $result_arr=array();
+        $arr=array();
+	    $first_day=date('w', strtotime(date('Y').'-'.$month.'-01'));
+	    if($first_day==0) $first_day=6; else $first_day--;
+
+	    $month_arr=array('01'=>31,'02'=>28,'03'=>31,'04'=>30,'05'=>31,'06'=>30,'07'=>31,'08'=>31,'09'=>30,'10'=>31,'11'=>30,'12'=>31);
+	    for($i=1; $i<$month_arr[$month]+1; $i++):
+            if(strlen($i)==1) $i='0'.$i;
+	        array_push($arr, $i);
+	        $first_day++;
+            if($first_day==7):
+                array_push($result_arr, $arr);
+                $arr=array();
+                $first_day=0;
+            endif;
+            if($i==$month_arr[$month]) array_push($result_arr, $arr);
+        endfor;
+
+        return $result_arr;
+    }
+
+    function get_team_month($team){
+        $result_set=array();
+        $value=$this->db->query('SELECT DISTINCT month FROM KBO_team_month ORDER BY month DESC LIMIT 1')->row();
+        $max_month=$value->month+1;
+
+        if($team=='all'):
+            $result=$this->db->get('KBO_team_month')->result();
+
+            for($i=3; $i<$max_month; $i++):
+                $result_arr=array('month'=>$i, 'g'=>0, 'r'=>0, 'hr'=>0, 'h'=>0, 'avg'=>0);
+                foreach($result as $item):
+                    if($item->month==$i):
+                        $result_arr['g']+=$item->g/2;
+                        $result_arr['r']+=$item->r;
+                        $result_arr['hr']+=$item->hr;
+                        $result_arr['h']+=$item->h;
+                        $result_arr['avg']+=$item->avg;
+                    endif;
+                endforeach;
+                array_push($result_set, (object)$result_arr);
+            endfor;
+            $result_over_under=$this->get_over_under_by_month($team);
+
+            foreach($result_set as $key=>$item):
+                foreach($result_over_under as $items):
+                    if($item->month==$items['month']):
+                        $result_set[$key]->over=$items['over'];
+                        $result_set[$key]->under=$items['under'];
+                    endif;
+                endforeach;
+            endforeach;
+        else:
+            $result_set=$this->db->get_where('KBO_team_month', array('team'=>urldecode($team)))->result();
+            $result_over_under=$this->get_over_under_by_month($team);
+
+            foreach($result_set as $key=>$item):
+                foreach($result_over_under as $items):
+                    if($item->month==$items['month']):
+                        $result_set[$key]->over=$items['over'];
+                        $result_set[$key]->under=$items['under'];
+                    endif;
+                endforeach;
+            endforeach;
+        endif;
+
+        return $result_set;
+    }
+
+    function get_league_result(){
+        $this->db->select_sum('g');
+        $this->db->select_avg('r');
+        $this->db->select_avg('hr');
+        $this->db->select_avg('h');
+        $this->db->select_avg('avg');
+        $result=$this->db->get('KBO_team_month')->row();
+
+        $over_under_reference_value=$this->baseball_model->get_over_under('KBO');
+        $result_arr=$this->db->get_where('KBO_result', array('away_score!='=>'', 'away!='=>'드림'))->result();
+
+        $result->over=0;
+        $result->under=0;
+        foreach($result_arr as $item):
+            if($item->away_score+$item->home_score > $over_under_reference_value) $result->over++;
+            else $result->under++;
+        endforeach;
+
+        return $result;
+    }
 }

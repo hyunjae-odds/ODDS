@@ -12,10 +12,10 @@
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li class="on"><a href="/baseball/league/<?=($league=='KBO')? 'KBO' : 'MLB';?>">리그정보</a></li>
-            <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/<?=date('Y');?>/<?=date('m');?>">경기 결과</a></li>
-            <li><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB';?>">선수 기록</a></li>
-            <li><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB';?>">상대 전적</a></li>
+            <li class="on"><a href="/baseball/league/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">리그정보</a></li>
+            <li><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>/all/<?=date('m');?>">경기 결과</a></li>
+            <li><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">선수 기록</a></li>
+            <li><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">상대 전적</a></li>
         </ul>
         <ul class="tab_view01 gameMain_view">
             <li class="active s1">
@@ -313,7 +313,7 @@
                             <?php foreach($recent as $items): ?>
                                 <tr>
                                     <?php if($items['team']=='Los Angeles Angels of Anaheim') $items['team']='Los Angeles Angels'; ?>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$items['team'];?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$items['team']] : '';?>_L"></span> <?=$items['team'];?></td>
                                     <td>
                                         <?php foreach($items['recent_game'] as $key=>$value):
                                             if($value=='win') echo '<a href="/baseball/match_information/'.$items['recent_detail'][9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_win.png" title="'.$items['recent_detail'][9-$key]["away"].' '.$items['recent_detail'][9-$key]["away_score"].":".$items['recent_detail'][9-$key]["home_score"].' '.$items['recent_detail'][9-$key]["home"].'"/></a>';
@@ -357,7 +357,7 @@
                             </tr>
                             <?php foreach($offense as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$item->team;?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item->team] : '';?>_L"></span> <?=$item->team;?></td>
                                     <td><?php
                                         $plus=0;
                                         if($league=='KBO'):
@@ -396,7 +396,7 @@
                             </tr>
                             <?php foreach($defence as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$item->team;?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item->team] : '';?>_L"></span> <?=$item->team;?></td>
                                     <td><?php
                                         $minus=0;
                                         if($league=='KBO'):

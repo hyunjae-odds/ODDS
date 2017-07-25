@@ -49,6 +49,7 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .pr10 {padding-right:10px !important;}
 .pr15 {padding-right:15px !important;}
 .pr20 {padding-right:20px !important;}
+.pr40 {padding-right:40px !important;}
 .pl5 {padding-left:5px !important;}
 .pl10 {padding-left:10px !important;}
 .pl15 {padding-left:15px !important;}
@@ -546,6 +547,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .y_pop div.close a {display:block; width:20px; height:20px;background:url("../image/base/icon.png") no-repeat -154px 0px; font-size:0;}
 .liveTab .livetable.base .g_pop {top:62px; left:-164px;}
 .liveTab .livetable.base .r_pop {top:62px; left:-139px;}
+
+
+/* 재야의분석/블로그보기 팝업 */
+.r_pop2 {width:200px;}
+.r_pop2 .r_pop_h {border-top:4px solid #f2250f;border-radius:5px 5px 0 0;}
+.r_pop2 .r_pop_h li {font-weight:normal;float:left;width:100px;font-size:13px;text-align:center;background:#eee;height:29px;line-height:29px;border-bottom:1px solid #ddd;}
+.r_pop2 .r_pop_h li:nth-of-type(1) {border-right:1px solid #ddd;width:99px;}
+.r_pop2 .r_pop_h li.on {background:#fff;font-weight:bold;border-bottom:1px solid #fff;}
+.r_pop2 .r_pop_h li a:hover {text-decoration:none;}
+.r_pop2 .r_pop_v {display:block;clear:both;content:"";margin:5px;}
+.r_pop2 .r_pop_v > li {display:none;}
+.r_pop2 .r_pop_v > li.active {display:block;}
+.r_pop2 .r_pop_v > li span.img {display:inline-block;width:55px;height:55px;float:left;margin:7px 7px 7px 5px;}
+.r_pop2 .r_pop_v > li span.img img {width:55px;height:55px;}
+.r_pop2 .r_pop_v > li span.hh {float:left;font-weight:bold;width:119px;text-align:left;font-size:13px;margin-top:10px;}
+.r_pop2 .r_pop_v > li span.pp {float:left;width:119px;text-align:left;font-size:12px;}
+.r_pop2 .r_pop_v > li ul li {border-bottom:1px solid #ddd;display:block;clear:both;content:"";padding:0 2px;height:70px;}
+.r_pop2 p {display:block;clear:both;content:"";text-align:right;padding:7px 0 5px;}
+.r_pop2 p span {display: inline-block;}
+.r_pop2 p button {border: 1px solid #ccc;cursor: pointer;display: inline-block;height: 18px;width: 18px;font-size:0;vertical-align:middle;margin-left:3px;}
+
  /* 팝업디자인 끝 */
 
 
@@ -595,7 +617,7 @@ span.rankdot04 {display:inline-block;width:8px;height:8px;vertical-align:middle;
 .date.right {position:absolute;top:5px;right:0;margin:0;}
 .date>a, .date>span {vertical-align:top;display:block; float:left; color:#4b4b4b;}
 .date .btn_prev {width:11px; height:13px; background:url("../image/base/icon.png") no-repeat -23px -50px; font-size:0; margin-top:8px; margin-right:15px;}
-.date .date_yr, .date .date_mn, .date .date_da, .date .round {font-size:22px; line-height:20px; font-weight:bold; border:1px solid #dcdcdc; height:23px; padding:2px 4px 1px;}
+.date .date_yr, .date .date_mn, .date .date_da, .date .round {font-size:22px; line-height:20px; font-weight:bold; border:1px solid #dcdcdc; height:23px; padding:2px 4px 1px;background:#fff;}
 .date .round {border:none;padding:4px 4px 0;}
 .date .date_yr.on, .date .date_mn.on, .date .date_da.on {border:1px solid #bbb;}
 .date .date_yr:hover, .date .date_mn:hover, .date .date_da:hover {border:1px solid #bbb;}
@@ -924,6 +946,9 @@ span.plusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -69px 
 span.minusL {font-size:0;background:url("../image/game/WLD.png") no-repeat -92px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
 span.yesL {font-size:0;background:url("../image/game/WLD.png") no-repeat -115px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
 span.noL {font-size:0;background:url("../image/game/WLD.png") no-repeat -138px 0;display:block;width:22px;height:25px; margin:0 2px 0 1px;vertical-align:inherit;float:left;}
+
+span.DL {font-size:0;background:url("../image/game/WLD.png") no-repeat -161px -1px;display:inline-block;width:22px;height:22px; margin:0;vertical-align:middle;}
+span.AL {font-size:0;background:url("../image/game/WLD.png") no-repeat -184px -1px;display:inline-block;width:22px;height:22px; margin:0;vertical-align:middle;}
 
 
 /* 아이콘 수정 예정 2.1
