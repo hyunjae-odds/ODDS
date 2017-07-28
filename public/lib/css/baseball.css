@@ -152,6 +152,16 @@ div.TOP5 table th:nth-of-type(1),div.TOP5 table td:nth-of-type(1) {text-align:le
 */
 
 
+.MLB_league_table {padding-bottom:50px;}
+.MLB_league_table .tab01_w {}
+.MLB_league_table .tab01_w .tab01_2 {position:absolute;left:auto;right:0;}
+.MLB_league_table .tab01_w .tab01_2 li a {width:125px;padding-left:0;padding-right:0;}
+.MLB_league_table .LastGame_view {border-top:1px solid #ccc;}
+.MLB_league_table .LastGame_view ul.tab02 {top:70px;}
+.MLB_league_table .LastGame_view > ul > li {display:none;}
+.MLB_league_table .LastGame_view > ul > li.active {display:block;}
+.MLB_league_table .tableNtable {border-top:none;}
+
 
 
 
@@ -1091,3 +1101,4 @@ span.HT {font-size:0; vertical-align:middle;display:inline-block; width:30px; he
 /*NC 다이노스*/span.NC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
 /*한화 이글스*/span.HH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
 /*KIA 타이거즈*/span.HT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
+/*KBO*/span.KBO_L_B {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KBO2_120120.png") no-repeat center center; background-size:contain;}

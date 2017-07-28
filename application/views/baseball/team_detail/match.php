@@ -5265,7 +5265,9 @@
                     </ul>
                     <ul class="opp02">
                         <li>
-                            <?php foreach($relative_match_result['away_win_lose_str'] as $key=>$item): ?><a href="/baseball/match_information/<?=$relative_match_result['away_game_no'][$key];?>/0" class="result_btn"><img src="/public/lib/image/base/btn_<?=$item;?>.png" alt="" title=""/></a><?php endforeach;?>
+                            <?php foreach($relative_match_result['away_win_lose_str'] as $key=>$item): ?>
+                                <a href="/baseball/match_information/<?=$relative_match_result['away_game_no'][$key];?>/0" class="result_btn"><img src="/public/lib/image/base/btn_<?=$item;?>.png" alt="" title=""/></a>
+                            <?php endforeach;?>
                         </li>
                         <li>
                             <?php foreach($relative_match_result['ou_str'] as $item): ?>

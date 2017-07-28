@@ -1,4 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
+use JonnyW\PhantomJs\Client;
 class Baseball extends MY_Controller{
     function __construct(){
         parent::__construct();
@@ -41,7 +42,7 @@ class Baseball extends MY_Controller{
                 $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
             endforeach;
 
-            $total=array($total_west, $total_central, $total_east);
+            $total=array($total_east, $total_west, $total_central);
         elseif($league=='MLB_N'):
             $total_west=$this->getRankBoard('MLBNW', 'all', $duration, $home_away, 0 ,0);
             $plus_minus=$this->baseball_model->get_total_score('MLBNW', $duration, 'all');
@@ -67,7 +68,7 @@ class Baseball extends MY_Controller{
                 $item->margin=$plus_minus[$item->team]-$plus_minus[$item->team.'_lose'];
             endforeach;
 
-            $total=array($total_west, $total_central, $total_east);
+            $total=array($total_east, $total_west, $total_central);
         else:
             $total=$this->getRankBoard($league, 'all', $duration, $home_away, 0 ,0);
             $plus_minus=$this->baseball_model->get_total_score($league, $duration, 'all');
@@ -82,7 +83,7 @@ class Baseball extends MY_Controller{
         $over_under_reference=$this->baseball_model->get_over_under_by_team($league);
         $over_under_reference_value=$this->baseball_model->get_over_under($league);
 
-        $schedule=$this->baseball_model->get_schedule_after_3days($league);
+        $schedule=$this->baseball_model->get_schedule_after_1days($league);
         $league_statistics=$this->baseball_model->get_league_statistics($league, $over_under_reference, $handicap);
 
 //      팀별 경기 최근
@@ -212,6 +213,7 @@ class Baseball extends MY_Controller{
         $boldNum=($this->input->get('bold_num')!=null) ? $this->input->get('bold_num') : 0;
         $batter_sort=($this->input->get('batter_sort')!=null) ? $this->input->get('batter_sort') : '';
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
+        $table=($league=='KBO')? 'KBO_record_hitter': 'MLB_record_hitter';
 
         $this->load->helper('cookie');
         if($this->uri->segment(4)==null):
@@ -229,12 +231,12 @@ class Baseball extends MY_Controller{
         endif;
 
         if($batter_sort==''): $batter_sort='avg'; $boldNum=1; endif;
-        if($team!='') $batter=$this->baseball_model->sort_by_team_order_by('KBO_record_hitter', $team, $batter_sort, $per_page, $offset);
-        else $batter=$this->baseball_model->get_by_sort_pagination('KBO_record_hitter', $batter_sort, $per_page, $offset);
+        if($team!='') $batter=$this->baseball_model->sort_by_team_order_by($table, $team, $batter_sort, $per_page, $offset);
+        else $batter=$this->baseball_model->get_by_sort_pagination($table, $batter_sort, $per_page, $offset);
 
         $this->load->library('pagination');
         $config['base_url'] = '/baseball/player_record_hitter/'.$league;
-        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows('KBO_record_hitter', 0) : $this->baseball_model->get_num_rows_by_team('KBO_record_hitter', $team);
+        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows($league, $table, 0) : $this->baseball_model->get_num_rows_by_team($table, $team);
         $config['per_page']=$per_page;
         $config['num_links'] = 3;
         $config['cur_tag_open'] = '<a class="on" href="" >';
@@ -245,7 +247,7 @@ class Baseball extends MY_Controller{
         $config['last_link'] = '>>';
         $this->pagination->initialize($config);
 
-        $batter5=$this->baseball_model->get_batter5();
+        $batter5=$this->baseball_model->get_batter5($league);
 
         $this->load->view("/baseball/player_record_hitter",array('league'=>$league,'batter'=>$batter,'batter5'=>$batter5,'mouseTop'=>$mouseTop,'focus'=>$focus,'bold_num'=>$boldNum,'offset'=>$offset,'batter_sort'=>$batter_sort,'team'=>$team));
         $this->load->view("/footer");
@@ -262,6 +264,7 @@ class Baseball extends MY_Controller{
         $boldNum=($this->input->get('bold_num')!=null)? $this->input->get('bold_num') : 0;
         $pitcher_sort=($this->input->get('pitcher_sort')!=null)? $this->input->get('pitcher_sort') : 'era';
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
+        $table=($league=='KBO')? 'KBO_record_pitcher': 'MLB_record_pitcher';
 
         $this->load->helper('cookie');
         if($this->uri->segment(4)==null):
@@ -278,16 +281,16 @@ class Baseball extends MY_Controller{
             if($this->input->cookie('team')!=null) $team=$this->input->cookie('team');
         endif;
 
-        if($team!=null) $pitcher=$this->baseball_model->sort_by_team_order_by('KBO_record_pitcher', $team, $pitcher_sort, $per_page, $offset);
-        else if($pitcher_sort!='') $pitcher=$this->baseball_model->get_by_sort_pagination('KBO_record_pitcher', $pitcher_sort, $per_page, $offset);
+        if($team!=null) $pitcher=$this->baseball_model->sort_by_team_order_by($table, $team, $pitcher_sort, $per_page, $offset);
+        else if($pitcher_sort!='') $pitcher=$this->baseball_model->get_by_sort_pagination($table, $pitcher_sort, $per_page, $offset);
         else{
-            if($this->input->cookie('pitcher_sort') == null) $pitcher=$this->baseball_model->get_pagination('KBO_record_pitcher', $per_page, $offset);
-            else $pitcher=$this->baseball_model->get_by_sort_pagination('KBO_record_pitcher', 'era', $per_page, $offset);
+            if($this->input->cookie('pitcher_sort') == null) $pitcher=$this->baseball_model->get_pagination($table, $per_page, $offset);
+            else $pitcher=$this->baseball_model->get_by_sort_pagination($table, 'era', $per_page, $offset);
         }
 
         $this->load->library('pagination');
         $config['base_url'] = '/baseball/player_record_pitcher/'.$league;
-        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows_by_sort($pitcher_sort) : $this->baseball_model->get_num_rows_by_team('KBO_record_pitcher', $team);
+        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows_by_sort($table, $pitcher_sort) : $this->baseball_model->get_num_rows_by_team($table, $team);
         $config['per_page'] = $per_page;
         $config['num_links'] = 3;
         $config['cur_tag_open'] = '<a class="on" href="" >';
@@ -298,7 +301,7 @@ class Baseball extends MY_Controller{
         $config['last_link'] = '>>';
         $this->pagination->initialize($config);
 
-        $pitcher5=$this->baseball_model->get_pitcher5();
+        $pitcher5=$this->baseball_model->get_pitcher5($league);
 
         $this->load->view("/baseball/player_record_pitcher",array('league'=>$league,'pitcher'=>$pitcher,'pitcher5'=>$pitcher5,'mouseTop'=>$mouseTop,'focus'=>$focus,'bold_num'=>$boldNum,'offset'=>$offset,'pitcher_sort'=>$pitcher_sort,'team'=>$team));
         $this->load->view("/footer");
@@ -312,94 +315,213 @@ class Baseball extends MY_Controller{
     }
 
     //  그 외 페이지
-    function match_information($schedule_no, $scroll_top){
+    function match($league, $schedule_no, $scroll_top){
         $this->load->view("/head_up");
         $this->load->view("/head");
 
-//      pagination
-        $this->load->library('pagination');
-        $per_page=5;
-        $total_count=$this->baseball_model->get_num_rows('KBO_comment', $schedule_no);
-        $config['base_url']='http://'.SERVER_HOST.'/baseball/match_information/'.$schedule_no.'/'.$scroll_top;
-        $config['total_rows']=$total_count;
-        $config['per_page']=$per_page;
-        $config['prev_link']=FALSE;
-        $config['next_link']=FALSE;
-        $config['first_link']=FALSE;
-        $config['last_link']=FALSE;
-        $config['uri_segment']=5;
-        $this->pagination->initialize($config);
-        $offset=($this->uri->segment(5)!=null) ? $this->uri->segment(5) : 0;
-        $comment_list=$this->baseball_model->get_cheer($schedule_no, $per_page, $offset);
-        foreach ($comment_list as $item):
-            $exp_ip=explode('.', $item->ip);
-            $marked_ip=$exp_ip[0].'.'.$exp_ip[1].'.'.preg_replace("/[0-9]/", "*", $exp_ip[2]).'.'.preg_replace("/[0-9]/", "*", $exp_ip[3]);
-            $item->ip=$marked_ip;
-        endforeach;
+        $schedule=$this->baseball_model->get_where_row('KBO_result', array('no'=>$schedule_no));
+        $total=$this->baseball_model->get_team_total();
+        $over_under_by_team=$this->baseball_model->get_over_under_by_team('KBO');
 
-        $result=$this->baseball_model->get_result_one($schedule_no);
-        $another_games=$this->baseball_model->get_where('KBO_result', array('date'=>$result->date, 'away!='=>$result->away));
-        $month=substr($result->date,0,2);
-        $day=substr($result->date,3,2);
-        $date_=CURRENT_YEAR.'-'.$month.'-'.$day;
-        $result->away_rank=$this->baseball_model->get_rank_by_date_team($date_, $result->away);
-        $result->home_rank=$this->baseball_model->get_rank_by_date_team($date_, $result->home);
-
-        $over_under_reference_value=$this->baseball_model->get_over_under('KBO');
-        $team_total=$this->get_away_home_recent_game($result->away, $result->home, $over_under_reference_value);
-        $away_result=$this->get_recent_10_game_result($result->away);
-        $home_result=$this->get_recent_10_game_result($result->home);
-        $handicap_result=$this->getRankBoard('KBO', 'all', 'all', 'all', 1.5, 0);
-        $plus_away_rank=$this->get_rank_plus_minus($result->away);
-        $plus_home_rank=$this->get_rank_plus_minus($result->home);
-
-//      마이닝 - 전광판
-        $date=substr($result->date, 0,5);
-        $exp=explode('.', $date);
-        $score_board=$this->get_mining_score_board(CURRENT_YEAR.'-'.$exp[0].'-'.$exp[1], $result->away, $result->home);
-
-//      2017시즌 상대전적 결과
-        $relative_match_result=$this->baseball_model->get_relative_match_result($result->away, $result->home, $over_under_reference_value);
-
-//      LINE_UP
-        $MINING=$this->get_mining_db();
-
-        $exp=explode('(', $result->date);
-        $exp1=explode('.', $exp[0]);
-        $mining_data=$MINING->get_where('schedule', array('game_time'=>CURRENT_YEAR.'-'.$exp1[0].'-'.$exp1[1], 'away_name'=>$result->away))->row();
-        $MINING->select('teams.team_name, players.name, line_up.position, line_up.subi, players.back_num, players.player_id');
-        $MINING->join('players', 'line_up.player_id = players.player_id');
-        $MINING->join('teams', 'teams.no = line_up.team');
-        $line_up=$MINING->get_where('line_up', array('schedule_no'=>$mining_data->no))->result();
-
-        $away_batter_line_up=array();
-        $home_batter_line_up=array();
-        $away_pitchers=array();
-        $home_pitchers=array();
-        $away=($result->away=='kt')? 'KT' : $result->away;
-        $home=($result->home=='kt')? 'KT' : $result->home;
-
-        foreach($line_up as $item):
-            if($item->team_name==$away): array_push($away_batter_line_up, $item);
-            elseif($item->team_name==$home): array_push($home_batter_line_up, $item); endif;
-        endforeach;
-        if($line_up!=null):
-            foreach($away_batter_line_up as $item) $sortAux[]=$item->position;
-            array_multisort($sortAux, SORT_ASC, $away_batter_line_up);
-            $away_pitcher_line_up=array_pop($away_batter_line_up);
-
-            foreach($home_batter_line_up as $item) $sortAux2[]=$item->position;
-            array_multisort($sortAux2, SORT_ASC, $home_batter_line_up);
-            $home_pitcher_line_up=array_pop($home_batter_line_up);
-
-            $away_pitchers=array('players'=>array('starter'=>$score_board['away_starter'], 'last_pitcher'=>$away_pitcher_line_up->name), 'starter_back_num'=>$score_board['away_starter_back_num'], 'last_pitcher_back_num'=>$away_pitcher_line_up->back_num, 'starter_id'=>$score_board['away_starter_id']);
-            $home_pitchers=array('players'=>array('starter'=>$score_board['home_starter'], 'last_pitcher'=>$home_pitcher_line_up->name), 'starter_back_num'=>$score_board['home_starter_back_num'], 'last_pitcher_back_num'=>$home_pitcher_line_up->back_num, 'starter_id'=>$score_board['home_starter_id']);
+//      선발투수 기록 확인 및 기록 안되어 있는 경우 크롤링
+        if($schedule->away_pitcher==''):
+            $this->crawlingKBOTodayPitcher($schedule->no, $schedule->away, $schedule->home, str_replace('-', '', $schedule->date));
+            $schedule=$this->baseball_model->get_where('KBO_result', array('no'=>$schedule_no));
         endif;
-        $players=array('away_batter'=>$away_batter_line_up,'home_batter'=>$home_batter_line_up,'away_pitcher'=>$away_pitchers,'home_pitcher'=>$home_pitchers);
+//      팀간 비교
+        foreach($total as $item):
+            if($schedule->away==$item->team):
+                $schedule->away_rank=$item->rank;
+                $away_exp=explode(';', $item->recent_game);
+                $recent_win=0;
+                $recent_lose=0;
+                foreach($away_exp as $key=>$items):
+                    if($items=='승'): $recent_win++; $away_exp[$key]='win';
+                    elseif($items=='패'): $recent_lose++;  $away_exp[$key]='lose';
+                    else: $away_exp[$key]='dra';
+                    endif;
+                endforeach;
+                $schedule->away_recent=$away_exp;
+                $schedule->away_recent_win_lose=$recent_win.'/'.$recent_lose;
+                $schedule->away_win=$item->win;
+                $schedule->away_tie=$item->tie;
+                $schedule->away_lose=$item->lose;
+                $schedule->away_win_rate=number_format($item->win_rate,3);
+//              O/U
+                $schedule->away_over_under_reference_value=$over_under_by_team[$schedule->away];
+                $result=$this->baseball_model->get_all_game_over_under($schedule->away, $schedule->away_over_under_reference_value, 0);
+                $schedule->away_over=$result['over'];
+                $schedule->away_under=$result['g']-$result['over'];
+//              홈경기/원정경기
+                $away_game=$this->baseball_model->get_away_home_win($schedule->away);
+                $away_recent_ten_game=$this->get_recent_10_game_result($schedule->away);
+                $schedule->away_awaygame_win=$away_game['away_win'];
+                $schedule->away_awaygame_lose=$away_game['away_lose'];
+                $schedule->away_homegame_win=$away_game['home_win'];
+                $schedule->away_homegame_lose=$away_game['home_lose'];
+                $schedule->away_recent_ten_game=$away_recent_ten_game;
+//              득점/실점/타율/홈런
+                $away_offense=$this->baseball_model->get_where_row('KBO_team_offense', array('team'=>$schedule->away));
+                $away_defence=$this->baseball_model->get_where_row('KBO_team_defence', array('team'=>$schedule->away));
+                $schedule->away_plus=$away_offense->r;
+                $schedule->away_minus=$away_defence->r;
+                $schedule->away_avg=$away_offense->avg;
+                $schedule->away_hr=$away_offense->hr;
+                $schedule->away_g=$away_offense->g;
+            elseif($schedule->home==$item->team):
+                $schedule->home_rank=$item->rank;
+                $home_exp=explode(';', $item->recent_game);
+                $recent_win=0;
+                $recent_lose=0;
+                foreach($home_exp as $key=>$items):
+                    if($items=='승'): $recent_win++; $home_exp[$key]='win';
+                    elseif($items=='패'): $recent_lose++;  $home_exp[$key]='lose';
+                    else: $home_exp[$key]='dra';
+                    endif;
+                endforeach;
+                $schedule->home_recent=$home_exp;
+                $schedule->home_recent_win_lose=$recent_win.'/'.$recent_lose;
+                $schedule->home_win=$item->win;
+                $schedule->home_tie=$item->tie;
+                $schedule->home_lose=$item->lose;
+                $schedule->home_win_rate=number_format($item->win_rate,3);
+//              O/U
+                $schedule->home_over_under_reference_value=$over_under_by_team[$schedule->home];
+                $result=$this->baseball_model->get_all_game_over_under($schedule->home, $schedule->home_over_under_reference_value, 0);
+                $schedule->home_over=$result['over'];
+                $schedule->home_under=$result['g']-$result['over'];
+//              홈경기/원정경기
+                $home_game=$this->baseball_model->get_away_home_win($schedule->home);
+                $home_recent_ten_game=$this->get_recent_10_game_result($schedule->home);
+                $schedule->home_awaygame_win=$home_game['away_win'];
+                $schedule->home_awaygame_lose=$home_game['away_lose'];
+                $schedule->home_homegame_win=$home_game['home_win'];
+                $schedule->home_homegame_lose=$home_game['home_lose'];
+                $schedule->home_recent_ten_game=$home_recent_ten_game;
+//              득점/실점/타율/홈런
+                $home_offense=$this->baseball_model->get_where('KBO_team_offense', array('team'=>$schedule->home));
+                $home_defence=$this->baseball_model->get_where('KBO_team_defence', array('team'=>$schedule->home));
+                $schedule->home_plus=$home_offense[0]->r;
+                $schedule->home_minus=$home_defence[0]->r;
+                $schedule->home_avg=$home_offense[0]->avg;
+                $schedule->home_hr=$home_offense[0]->hr;
+                $schedule->home_g=$home_offense[0]->g;
+            endif;
+        endforeach;
+//      시즌 상대전적
+        $over_under=array();
+        $over_under_reference_value=number_format(($over_under_by_team[$schedule->away]+$over_under_by_team[$schedule->home])/2).'.5';
+        $relative_match_result=$this->baseball_model->get_relative_match_result($schedule->away, $schedule->home, $over_under_reference_value);
+        $over_under['over']=0;
+        $over_under['under']=0;
+        $over_under['away_r_avg']=0;
+        $over_under['home_r_avg']=0;
+        $h2h_arr=array();
+        $h2h_result=array('away_avg'=>0,'home_avg'=>0,'away_hr'=>0,'home_hr'=>0,'away_win_lose'=>array(),'away_win'=>0,'home_win'=>0);
+        $count=0;
+        $h2h_last_six_game=array();
+        foreach($relative_match_result['data'] as $item):
+            if($item->away_score+$item->home_score > $over_under_reference_value) $over_under['over']++;
+            else $over_under['under']++;
 
-        $this->load->view("/baseball/team_detail/match", array('schedule_no'=>$schedule_no,'data'=>$result,'comment_list'=>$comment_list,'scroll_top'=>$scroll_top,'team_total'=>$team_total,'over_under_reference_value'=>$over_under_reference_value,
-            'relative_match_result'=>$relative_match_result,'plus_away_rank'=>$plus_away_rank,'away_result'=>$away_result,'home_result'=>$home_result,'handicap_result'=>$handicap_result,
-            'plus_home_rank'=>$plus_home_rank,'another_games'=>$another_games,'score_board'=>$score_board,'players'=>$players));
+            if($schedule->away==$item->away): $over_under['away_r_avg']+=$item->away_score;
+            elseif($schedule->away==$item->home): $over_under['away_r_avg']+=$item->home_score;
+            endif;
+
+            if($schedule->home==$item->away): $over_under['home_r_avg']+=$item->away_score;
+            elseif($schedule->home==$item->home): $over_under['home_r_avg']+=$item->home_score;
+            endif;
+//          타율/홈런
+            $h2h=$this->baseball_model->get_where_row('KBO_h2h', array('schedule_no'=>$item->no));
+            if(!isset($h2h)) $this->crawlingKBORelationHRAVG($item->no, $item->away, $item->home, str_replace('-', '', $item->date));
+            array_push($h2h_arr, $this->baseball_model->get_where_row('KBO_h2h', array('schedule_no'=>$item->no)));
+//          최근6경기
+            if($count<6):
+                if($item->away==$schedule->away):
+                    if($item->away_score > $item->home_score): array_push($h2h_result['away_win_lose'], 'win'); $h2h_result['away_win']++;
+                    elseif($item->away_score < $item->home_score): array_push($h2h_result['away_win_lose'], 'lose'); $h2h_result['home_win']++;
+                    elseif($item->away_score==$item->home_score): array_push($h2h_result['away_win_lose'], 'dra'); endif;
+                    array_push($h2h_last_six_game, $item);
+                elseif($item->home==$schedule->away):
+                    if($item->away_score < $item->home_score): array_push($h2h_result['away_win_lose'], 'win'); $h2h_result['away_win']++;
+                    elseif($item->away_score > $item->home_score): array_push($h2h_result['away_win_lose'], 'lose'); $h2h_result['home_win']++;
+                    elseif($item->away_score==$item->home_score): array_push($h2h_result['away_win_lose'], 'dra'); endif;
+                    array_push($h2h_last_six_game, $item);
+                endif;
+                $count++;
+            endif;
+        endforeach;
+        $over_under['over_per']=number_format($over_under['over']/sizeof($relative_match_result['data'])*100);
+        $over_under['under_per']=number_format($over_under['under']/sizeof($relative_match_result['data'])*100);
+        $over_under['away_r']=$over_under['away_r_avg'];
+        $over_under['home_r']=$over_under['home_r_avg'];
+        $over_under['away_r_per']=number_format($over_under['away_r_avg']/sizeof($relative_match_result['data']), 1);
+        $over_under['home_r_per']=number_format($over_under['home_r_avg']/sizeof($relative_match_result['data']), 1);
+
+        foreach($h2h_arr as $key=>$item):
+            $h2h_result['away_avg']+=$item->away_avg;
+            $h2h_result['home_avg']+=$item->home_avg;
+            $h2h_result['away_hr']+=$item->away_hr;
+            $h2h_result['home_hr']+=$item->home_hr;
+            if($key==sizeof($h2h_arr)-1):
+                $h2h_result['away_avg']=number_format($h2h_result['away_avg']/sizeof($h2h_arr), 3);
+                $h2h_result['home_avg']=number_format($h2h_result['home_avg']/sizeof($h2h_arr), 3);
+            endif;
+        endforeach;
+        $h2h_result['away_win_lose']=array_reverse($h2h_result['away_win_lose']);
+//      팀간비교->순위->홈경기/원정경기
+        $result=$this->baseball_model->get_where('KBO_result', array('away_score!='=>''));
+        $teams=array('SK','삼성','NC','두산','넥센','LG','한화','롯데','KIA','kt');
+        $result_arr=array();
+        foreach($teams as $team):
+            $team_arr=array('team'=>$team, 'home_win'=>0, 'away_win'=>0);
+            foreach($result as $item):
+                if($team==$item->home):
+                    if($item->home_score > $item->away_score): $team_arr['home_win']++; endif;
+                elseif($team==$item->away):
+                    if($item->home_score < $item->away_score): $team_arr['away_win']++; endif;
+                endif;
+            endforeach;
+            array_push($result_arr, $team_arr);
+        endforeach;
+        foreach($result_arr as $key=>$item):
+            $rank_home=1;
+            $rank_away=1;
+            foreach($result_arr as $items) if($item['home_win'] < $items['home_win']) $rank_home++;
+            foreach($result_arr as $items) if($item['away_win'] < $items['away_win']) $rank_away++;
+            $result_arr[$key]['home_rank']=$rank_home;
+            $result_arr[$key]['away_rank']=$rank_away;
+        endforeach;
+        $away_home_rank=0;
+        $away_away_rank=0;
+        $home_home_rank=0;
+        $home_away_rank=0;
+        foreach($result_arr as $item):
+            if($item['team']==$schedule->away):
+                $away_home_rank=$item['home_rank'];
+                $away_away_rank=$item['away_rank'];
+            elseif($item['team']==$schedule->home):
+                $home_home_rank=$item['home_rank'];
+                $home_away_rank=$item['away_rank'];
+            endif;
+        endforeach;
+//      팀간비교->순위->득점/실점/타율/홈런
+        $offense=$this->baseball_model->get('KBO_team_offense');
+        $defence=$this->baseball_model->get('KBO_team_defence');
+        $rank['away_plus']=$this->get_h2h_rank($offense, $schedule->away,'r');
+        $rank['home_plus']=$this->get_h2h_rank($offense, $schedule->home,'r');
+        $rank['away_minus']=$this->get_h2h_rank($defence, $schedule->away,'r');
+        $rank['home_minus']=$this->get_h2h_rank($defence, $schedule->home,'r');
+        $rank['away_avg']=$this->get_h2h_rank($offense, $schedule->away,'avg');
+        $rank['home_avg']=$this->get_h2h_rank($offense, $schedule->home,'avg');
+        $rank['away_hr']=$this->get_h2h_rank($offense, $schedule->away,'hr');
+        $rank['home_hr']=$this->get_h2h_rank($offense, $schedule->home,'hr');
+        $rank['away_homegame_win']=$away_home_rank;
+        $rank['away_awaygame_win']=$away_away_rank;
+        $rank['home_homegame_win']=$home_home_rank;
+        $rank['home_awaygame_win']=$home_away_rank;
+
+        $this->load->view("/baseball/team_detail/match_pub", array('league'=>$league,'schedule'=>$schedule,'scroll_top'=>$scroll_top,'over_under'=>$over_under,'h2h'=>$h2h_result,'rank'=>$rank,'h2h_last_six_game'=>$h2h_last_six_game));
         $this->load->view("/footer");
     }
 
@@ -547,7 +669,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/footer");
     }
 
-    function player_hitter(){
+    function player_hitter($league){
         $this->load->view("/head_up");
         $this->load->view("/head");
 
@@ -588,7 +710,7 @@ class Baseball extends MY_Controller{
 
         $this->load->library('pagination');
         $config['base_url'] = '/baseball/player_hitter';
-        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows('KBO_record_hitter', 0) : $this->baseball_model->get_num_rows_by_team('KBO_record_hitter', $team);
+        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows($league, 'KBO_record_hitter', 0) : $this->baseball_model->get_num_rows_by_team('KBO_record_hitter', $team);
         $config['per_page']=$per_page;
         $config['num_links'] = 3;
         $config['cur_tag_open'] = '<a class="on" href="" >';
@@ -603,7 +725,7 @@ class Baseball extends MY_Controller{
         $this->load->view("/footer");
     }
 
-    function player_pitcher(){
+    function player_pitcher($league){
         $this->load->view("/head_up");
         $this->load->view("/head");
 
@@ -614,6 +736,7 @@ class Baseball extends MY_Controller{
         $boldNum=($this->input->get('bold_num')!=null) ? $this->input->get('bold_num') : 0;
         $pitcher_sort=($this->input->get('pitcher_sort')!=null) ? $this->input->get('pitcher_sort') : '';
         $team=($this->input->get('team')!=null)? $this->input->get('team') : '';
+        $table=($league=='KBO')? 'KBO_record_pitcher': 'MLB_record_pitcher';
 
         $this->load->helper('cookie');
         if($this->uri->segment(3)==null):
@@ -642,7 +765,7 @@ class Baseball extends MY_Controller{
 
         $this->load->library('pagination');
         $config['base_url'] = '/baseball/player_pitcher';
-        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows_by_sort($pitcher_sort) : $this->baseball_model->get_num_rows_by_team('KBO_record_pitcher', $team);
+        $config['total_rows'] = ($team=='')? $this->baseball_model->get_num_rows_by_sort($table, $pitcher_sort) : $this->baseball_model->get_num_rows_by_team('KBO_record_pitcher', $team);
         $config['per_page'] = $per_page;
         $config['num_links'] = 3;
         $config['cur_tag_open'] = '<a class="on" href="" >';
@@ -1379,6 +1502,15 @@ class Baseball extends MY_Controller{
         return $resultSet;
     }
 
+    function get_h2h_rank($data, $team, $flag){
+        $rank=1;
+        $value=0;
+        foreach($data as $item) if($item->team==$team) $value=$item->$flag;
+        foreach($data as $item) if($value < $item->$flag) $rank++;
+
+        return $rank;
+    }
+
 /* ---------------------------------------------------- CRAWLING ---------------------------------------------------- */
 
 //  KBO
@@ -1454,11 +1586,12 @@ class Baseball extends MY_Controller{
 
         /* 팀 종합기록 */
         $total=$this->getRankBoard('KBO', 'all', 'all', 'all', 0, 0);
-        foreach($total as $item):
+        foreach($total as $key=>$item):
             unset($item->ou_home);
             unset($item->ou_away);
+            $total[$key]->date=date('Y-m-d');
+            $this->baseball_model->insert_update_before('KBO_team_total', $item, array('date'=>date('Y-m-d'),'team'=>$item->team));
         endforeach;
-        $this->baseball_model->insert_with_recent_game($total);
 
         /* KBO 공격력 순위 */
         $columns_batter1=array('rank','team','avg','g','pa','ab','r','h','second_b','third_b','hr','tb','rbi','sac','sf');
@@ -1614,8 +1747,129 @@ class Baseball extends MY_Controller{
         if($update_count!=0) echo 'total updated data count : '.$update_count;
     }
 
-    function crawlingKboMonth(){
-        $this->load->view('/baseball/crawling/month');
+    function crawlingKBOMonth(){
+        $client=Client::getInstance();
+        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+
+        for($i=3; $i<10; $i++):
+            $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/main?rows=20&order=TPCT&orderType=DESC&teamId=&defense_no=&year_from=2017&year_to=2017&split01=month&split02_1='.$i.'&split02_2='.$i, 'GET');
+            $response=$client->getMessageFactory()->createResponse();
+            $data=$client->send($request, $response);
+
+            $exp=explode('<tbody>', $data->content);
+            var_dump($exp);
+            if(sizeof($exp)==3):
+                $exp2=explode('</tr>', $exp[1]);
+
+                $result=array();
+                if(sizeof($exp2)==13):
+                    foreach($exp2 as $key=>$item):
+                        if($key!=0 && $key!=11 && $key!=12):
+                            $arr=array();
+                            $exp3=explode('</td>', $item);
+                            $arr['team']=preg_replace("/\s+/", "", strip_tags($exp3[1]));
+                            $arr['g']=preg_replace("/\s+/", "", strip_tags($exp3[2]));
+                            $arr['r']=preg_replace("/\s+/", "", strip_tags($exp3[9]));
+                            $arr['hr']=preg_replace("/\s+/", "", strip_tags($exp3[10]));
+                            $arr['avg']=preg_replace("/\s+/", "", strip_tags($exp3[15]));
+                            $arr['month']=$i;
+
+                            array_push($result, $arr);
+                        endif;
+                    endforeach;
+
+                    $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/standard?teamId=&defense_no=&year_from=2017&year_to=2017&split01=month&split02_1='.$i.'&split02_2='.$i, 'GET');
+                    $response=$client->getMessageFactory()->createResponse();
+                    $data2=$client->send($request, $response);
+
+                    $exp=explode('<tbody>', $data2->content);
+                    $exp2=explode('</tr>', $exp[1]);
+                    $result2=array();
+                    foreach($exp2 as $key=>$item):
+                        if($key!=0 && $key!=11 && $key!=12):
+                            $arr2=array();
+                            $exp3=explode('</td>', $item);
+                            $arr2['team']=preg_replace("/\s+/", "", strip_tags($exp3[1]));
+                            $arr2['h']=preg_replace("/\s+/", "", strip_tags($exp3[5]));
+
+                            array_push($result2, $arr2);
+                        endif;
+                    endforeach;
+                    foreach($result as $key=>$item) foreach($result2 as $items) if($item['team']==$items['team']) $result[$key]['h']=$items['h'];
+
+                    foreach($result as $item) if($item['team']!='') $this->baseball_model->insert_update_before('KBO_team_month', $item, array('month'=>$item['month'], 'team'=>$item['team']));
+                endif;
+            endif;
+        endfor;
+    }
+
+    function crawlingKBOTodayPitcher($schedule_no, $away, $home, $date){
+        $client=Client::getInstance();
+        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+
+        $team_initial=array('SK'=>'SK','넥센'=>'WO','두산'=>'OB','롯데'=>'LT','KIA'=>'HT','한화'=>'HH','LG'=>'LG','NC'=>'NC','kt'=>'KT','KT'=>'KT','삼성'=>'SS');
+        $away=$team_initial[$away];
+        $home=$team_initial[$home];
+        $url='http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate='.$date.'&gameId='.$date.$away.$home.'0&section=START_PIT';
+
+        $request=$client->getMessageFactory()->createRequest($url, 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $data=$client->send($request, $response);
+
+        $exp=explode('<span class="name">', $data->content);
+        if(sizeof($exp)==1):
+            $url='http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate='.$date.'&gameId='.$date.$away.$home.'0&section=REVIEW';
+            $request=$client->getMessageFactory()->createRequest($url, 'GET');
+            $response=$client->getMessageFactory()->createResponse();
+            $data=$client->send($request, $response);
+
+            $exp1=explode('<tbody><tr><td>', $data->content);
+            $away_pitcher=explode('</td>', $exp1[1]);
+            $home_pitcher=explode('</td>', $exp1[2]);
+
+            $this->baseball_model->insert_update_before('KBO_result', array('away_pitcher'=>$away_pitcher[0],'home_pitcher'=>$home_pitcher[0]), array('no'=>$schedule_no));
+        else:
+            $exp1=explode('</span>', $exp[1]);
+            $exp2=explode('</span>', $exp[2]);
+
+            $this->baseball_model->insert_update_before('KBO_result', array('away_pitcher'=>$away_pitcher=$exp1[0],'home_pitcher'=>$home_pitcher=$exp2[0]), array('no'=>$schedule_no));
+        endif;
+    }
+
+    function crawlingKBORelationHRAVG($schedule_no, $away, $home, $date){
+        $team_initial=array('SK'=>'SK','넥센'=>'WO','두산'=>'OB','롯데'=>'LT','KIA'=>'HT','한화'=>'HH','LG'=>'LG','NC'=>'NC','kt'=>'KT','KT'=>'KT','삼성'=>'SS');
+        $away=$team_initial[$away];
+        $home=$team_initial[$home];
+        $result=array();
+
+        $client=Client::getInstance();
+        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+        $url='http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate='.$date.'&gameId='.$date.$away.$home.'0& section=REVIEW';
+
+        $request=$client->getMessageFactory()->createRequest($url, 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $data=$client->send($request, $response);
+
+        $exp=explode('</td></tr></tfoot></table></div>', $data->content);
+        $exp1=explode('<td>', $exp[0]);
+        $away_avg=$exp1[sizeof($exp1)-1];
+
+        $exp2=explode('<td>', $exp[1]);
+        $home_avg=$exp2[sizeof($exp2)-1];
+
+        $result['schedule_no']=$schedule_no;
+        $result['away_avg']=$away_avg;
+        $result['home_avg']=$home_avg;
+
+        $exp3=explode('<td colspan="6">TOTAL</td>', $data->content);
+        $exp4=explode('</tr></tfoot>', $exp3[1]);
+        $exp5=explode('</td>', $exp4[0]);
+        $result['away_hr']=strip_tags($exp5[5]);
+        $exp6=explode('</tr></tfoot>', $exp3[2]);
+        $exp7=explode('</td>', $exp6[0]);
+        $result['home_hr']=strip_tags($exp7[5]);
+
+        $this->baseball_model->insert_update_before('KBO_h2h', $result, array('schedule_no'=>$result['schedule_no']));
     }
 
 //  MLB
@@ -1711,7 +1965,7 @@ class Baseball extends MY_Controller{
         endforeach;
     }
 
-    function crawlingOptaPlayers(){
+    function crawlingOptaPlayersDetail(){
         $this->load->library('curl');
 
         $teams=$this->baseball_model->get('MLB_teams');
@@ -1742,13 +1996,221 @@ class Baseball extends MY_Controller{
         endforeach;
     }
 
-    function crawlingMlbPlayersDetail($limit, $offset){
+    function crawlingMLBPlayers($limit, $offset){
 //      total : 1271
         $players=$this->baseball_model->get_limit('MLB_players', $limit, $offset);
-        $this->load->view('/baseball/crawling/players', array('players'=>$players));
+
+        $client=Client::getInstance();
+        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+
+        foreach($players as $player):
+            $request=$client->getMessageFactory()->createRequest('http://m.mlb.com/player/'.$player->player_id, 'GET');
+            $response=$client->getMessageFactory()->createResponse();
+            $client->send($request, $response);
+
+            $result=array();
+            $result2=array();
+            $exp=explode('<td class="col-0 row-0 td--highlighted" data-col="0" data-row="0">', $response->getContent());
+
+            if(sizeof($exp)==3):
+                $exp1=explode('</tbody>', $exp[1]);
+                $exp2=explode('</tr>', $exp1[0]);
+                for($i=0; $i<sizeof($exp2)-1; $i++):
+                    $arr=array();
+                    $column_set1=array('year','team','lg','g','ab','r','h','tb','second_b','third_b','hr','rbi','bb','ibb','so','sb','cs','avg','obp','slg','ops','goao');
+                    $exp3=explode('</span>', $exp2[$i]);
+                    foreach($exp3 as $item):
+                        $exp4=explode('<span>', $item);
+                        if(isset($exp4[1])) array_push($arr, $exp4[1]);
+                    endforeach;
+                    if(sizeof($column_set1)==sizeof($arr)) array_push($result, array_combine($column_set1, $arr));
+                endfor;
+                $exp5=explode('</tbody>', $exp[2]);
+                $exp6=explode('</tr>', $exp5[0]);
+                for($j=0; $j<sizeof($exp6)-1; $j++):
+                    $arr2=array();
+                    $column_set2=array('pa','xbh','hbp','sac','sf','babip','gdp','gidpo');
+                    $exp7=explode('</span>', $exp6[$j]);
+                    foreach($exp7 as $key=>$items):
+                        if($key==3 || $key==5 || $key==6 || $key==7 || $key==8 || $key==9 || $key==10 || $key==11):
+                            $exp8=explode('<span>', $items);
+                            if(isset($exp8[1])) array_push($arr2, $exp8[1]);
+                        endif;
+                    endforeach;
+                    if(sizeof($column_set2)==sizeof($arr2)) array_push($result2, array_combine($column_set2, $arr2));
+                endfor;
+
+//          규정타석
+                $team=$this->baseball_model->get_where('MLB_teams', array('name_short'=>$result[sizeof($result)-1]['team']));
+                echo $result[sizeof($result)-1]['team'];
+                if($team[0]->name=='Los Angeles Angels of Anaheim') $team[0]->name='Los Angeles Angels';
+                $team_offense=$this->baseball_model->get_where('MLB_team_offense', array('team'=>$team[0]->name));
+                foreach($result as $key=>$item):
+                    if($item['year']=='2017'):
+                        if($item['ab'] >= number_format($team_offense[0]->g*3.1, 1)) $result[$key]['req_yn']='Y';
+                        else $result[$key]['req_yn']='N';
+                    endif;
+                endforeach;
+
+                foreach($result as $key=>$entry) $this->baseball_model->insert_update_before('MLB_record_hitter', $entry+$result2[$key]+array('player_id'=>$player->player_id,'crawling_date'=>date('Y-m-d')), array('year'=>$entry['year'],'player_id'=>$player->player_id));
+                echo $players[0]->player_id.' is updated.<br>';
+            elseif(sizeof($exp)==4):
+                $exp1=explode('</tbody>', $exp[1]);
+                $exp2=explode('</tr>', $exp1[0]);
+                for($i=0; $i<sizeof($exp2)-1; $i++):
+                    $arr=array();
+                    $column_set1=array('year','team','lg','w','l','era','g','gs','cg','sho','sv','ip','h','r','er','hr','bb','ibb','so','avg','whip','goao');
+                    $exp3=explode('</span>', $exp2[$i]);
+                    foreach($exp3 as $key=>$item):
+                        if($key!=11 && $key!=17):
+                            $exp4=explode('<span>', $item);
+                            if(isset($exp4[1])) array_push($arr, $exp4[1]);
+                        endif;
+                    endforeach;
+                    if(sizeof($column_set1)==sizeof($arr)) array_push($result, array_combine($column_set1, $arr));
+                endfor;
+                $exp5=explode('</tbody>', $exp[2]);
+                $exp6=explode('</tr>', $exp5[0]);
+                for($j=0; $j<sizeof($exp6)-1; $j++):
+                    $arr2=array();
+                    $column_set2=array('qs','gf','hld','second_b','third_b','gidp','gidpo','wp','bk','sb','cs','pk','np','sp','pip','ppa');
+                    $exp7=explode('</span>', $exp6[$j]);
+                    foreach($exp7 as $key=>$items):
+                        if($key!=0 && $key!=1 && $key!=2):
+                            $exp8=explode('<span>', $items);
+                            if(isset($exp8[1])) array_push($arr2, $exp8[1]);
+                        endif;
+                    endforeach;
+                    if(sizeof($column_set2)==sizeof($arr2)) array_push($result2, array_combine($column_set2, $arr2));
+                endfor;
+
+//          규정이닝
+                $name_short=(isset($result[sizeof($result)-1]['team']))? $result[sizeof($result)-1]['team'] : $result[0]['team'];
+                $team=$this->baseball_model->get_where('MLB_teams', array('name_short'=>$result[sizeof($result)-1]['team']));
+                if($team!=null):
+                    if($team[0]->name=='Los Angeles Angels of Anaheim') $team[0]->name='Los Angeles Angels';
+                    $team_offense=$this->baseball_model->get_where('MLB_team_defence', array('team'=>$team[0]->name));
+                    foreach($result as $key=>$item):
+                        if($item['year']=='2017'):
+                            if($item['ip'] >= $team_offense[0]->g) $result[$key]['req_yn']='Y';
+                            else $result[$key]['req_yn']='N';
+                        endif;
+                    endforeach;
+
+                    foreach($result as $key=>$entry) $this->baseball_model->insert_update_before('MLB_record_pitcher', $entry+$result2[$key]+array('player_id'=>$player->player_id,'crawling_date'=>date('Y-m-d')), array('year'=>$entry['year'],'player_id'=>$player->player_id));
+                    echo $player->player_id.' is updated.<br>';
+                else: echo $player->player_id.' is passed2.<br>'; endif;
+            endif;
+        endforeach;
     }
 
     function crawlingOptaTeamDetail(){
-        $this->load->view('/baseball/crawling/teams');
+        $client=Client::getInstance();
+        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+
+        $request=$client->getMessageFactory()->createRequest('http://boston.redsox.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&tab_level=child&click_text=Sortable+Team+hitting&game_type=R&season=2017&season_type=ANY&league_code=MLB&sectionType=st&statType=hitting&page=1&ts=1500535197398', 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $client->send($request, $response);
+
+        $exp=explode('<tbody tabindex="-1">', $response->getContent());
+        $exp1=explode('</tbody>', $exp[1]);
+        $exp2=explode('</tr>', $exp1[0]);
+        array_pop($exp2);
+
+        foreach($exp2 as $item):
+            $exp3=explode('</td>', $item);
+            $arr=array(
+                'rank'=>strip_tags($exp3[0]),
+                'team'=>strip_tags($exp3[1]),
+                'lg'=>strip_tags($exp3[3]),
+                'g'=>strip_tags($exp3[4]),
+                'ab'=>strip_tags($exp3[5]),
+                'r'=>strip_tags($exp3[6]),
+                'h'=>strip_tags($exp3[7]),
+                'second_b'=>strip_tags($exp3[8]),
+                'third_b'=>strip_tags($exp3[9]),
+                'hr'=>strip_tags($exp3[10]),
+                'rbi'=>strip_tags($exp3[11]),
+                'bb'=>strip_tags($exp3[12]),
+                'so'=>strip_tags($exp3[13]),
+                'sb'=>strip_tags($exp3[14]),
+                'cs'=>strip_tags($exp3[15]),
+                'avg'=>strip_tags($exp3[16]),
+                'obp'=>strip_tags($exp3[17]),
+                'slg'=>strip_tags($exp3[18]),
+                'ops'=>strip_tags($exp3[19]),
+                'ibb'=>strip_tags($exp3[20]),
+                'hbp'=>strip_tags($exp3[21]),
+                'sac'=>strip_tags($exp3[22]),
+                'sf'=>strip_tags($exp3[23]),
+                'tb'=>strip_tags($exp3[24]),
+                'xbh'=>strip_tags($exp3[25]),
+                'gdp'=>strip_tags($exp3[26]),
+                'go'=>strip_tags($exp3[27]),
+                'ao'=>strip_tags($exp3[28]),
+                'go_ao'=>strip_tags($exp3[29]),
+                'np'=>strip_tags($exp3[30]),
+                'pa'=>strip_tags($exp3[31])
+            );
+            $this->baseball_model->insert_update_before('MLB_team_offense', $arr, array('team'=>$arr['team']));
+        endforeach;
+
+        $request=$client->getMessageFactory()->createRequest('http://boston.redsox.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&tab_level=child&click_text=Sortable+Team+pitching&game_type=R&season=2017&season_type=ANY&league_code=MLB&sectionType=st&statType=pitching&page=1&ts=1500540346868', 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $client->send($request, $response);
+
+        $exp=explode('<tbody tabindex="-1">', $response->getContent());
+        $exp1=explode('</tbody>', $exp[1]);
+        $exp2=explode('</tr>', $exp1[0]);
+        array_pop($exp2);
+
+        foreach($exp2 as $item):
+            $exp3=explode('</td>', $item);
+            array_pop($exp3);
+            $arr=array(
+                'rank'=>strip_tags($exp3[0]),
+                'team'=>strip_tags($exp3[1]),
+                'lg'=>strip_tags($exp3[3]),
+                'w'=>strip_tags($exp3[4]),
+                'l'=>strip_tags($exp3[5]),
+                'era'=>strip_tags($exp3[6]),
+                'g'=>strip_tags($exp3[7]),
+                'gs'=>strip_tags($exp3[8]),
+                'sv'=>strip_tags($exp3[9]),
+                'svo'=>strip_tags($exp3[10]),
+                'ip'=>strip_tags($exp3[11]),
+                'h'=>strip_tags($exp3[12]),
+                'r'=>strip_tags($exp3[13]),
+                'er'=>strip_tags($exp3[14]),
+                'hr'=>strip_tags($exp3[15]),
+                'bb'=>strip_tags($exp3[16]),
+                'so'=>strip_tags($exp3[17]),
+                'avg'=>strip_tags($exp3[18]),
+                'whip'=>strip_tags($exp3[19]),
+                'cg'=>strip_tags($exp3[20]),
+                'sho'=>strip_tags($exp3[21]),
+                'hb'=>strip_tags($exp3[22]),
+                'ibb'=>strip_tags($exp3[23]),
+                'gf'=>strip_tags($exp3[24]),
+                'hld'=>strip_tags($exp3[25]),
+                'gidp'=>strip_tags($exp3[26]),
+                'go'=>strip_tags($exp3[27]),
+                'ao'=>strip_tags($exp3[28]),
+                'wp'=>strip_tags($exp3[29]),
+                'bk'=>strip_tags($exp3[30]),
+                'sb'=>strip_tags($exp3[31]),
+                'cs'=>strip_tags($exp3[32]),
+                'pk'=>strip_tags($exp3[33]),
+                'tbf'=>strip_tags($exp3[34]),
+                'np'=>strip_tags($exp3[35]),
+                'wpct'=>strip_tags($exp3[36]),
+                'go_ao'=>strip_tags($exp3[37]),
+                'obp'=>strip_tags($exp3[38]),
+                'slg'=>strip_tags($exp3[39]),
+                'ops'=>strip_tags($exp3[40])
+            );
+
+            $this->baseball_model->insert_update_before('MLB_team_defence', $arr, array('team'=>$arr['team']));
+        endforeach;
     }
 }

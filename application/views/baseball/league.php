@@ -1,5 +1,6 @@
 ﻿<?php $full_name_team=array('SK'=>'SK 와이번즈','넥센'=>'넥센 히어로즈','두산'=>'두산 베어스','롯데'=>'롯데 자이언츠','KIA'=>'KIA 타이거즈','한화'=>'한화 이글스','LG'=>'LG 트윈스','NC'=>'NC 다이노스','kt'=>'kt 위즈','KT'=>'kt 위즈','삼성'=>'삼성 라이온즈'); ?>
 <?php $team_initial=array('SK'=>'SK','넥센'=>'WO','두산'=>'OB','롯데'=>'LT','KIA'=>'HT','한화'=>'HH','LG'=>'LG','NC'=>'NC','kt'=>'KT','KT'=>'KT','삼성'=>'SS'); ?>
+<?php $MLB_team_kor=array('Chicago Cubs'=>'시카고C','St. Louis Cardinals'=>'세인트루이스','Kansas City Royals'=>'캔자스시티','Colorado Rockies'=>'콜로라도','Minnesota Twins'=>'미네소타','Cleveland Indians'=>'클리브랜드','Tampa Bay Rays'=>'템파베이','Miami Marlins'=>'마이애미','Los Angeles Angels'=>'LAA','San Francisco Giants'=>'샌프란시스코','Philadelphia Phillies'=>'필라델피아','Boston Red Sox'=>'보스톤','New York Yankees'=>'뉴욕Y','Washington Nationals'=>'워싱턴','Texas Rangers'=>'텍사스','Milwaukee Brewers'=>'밀워키','Chicago White Sox'=>'시카고W','Los Angeles Dodgers'=>'LAD','New York Mets'=>'뉴욕M','Pittsburgh Pirates'=>'피츠버그','Arizona Diamondbacks'=>'에리조나','Oakland Athletics'=>'오클랜드','San Diego Padres'=>'샌디에이','Seattle Mariners'=>'시애틀','Houston Astros'=>'휴스턴','Baltimore Orioles'=>'볼티모어','Atlanta Braves'=>'애틀랜타','Detroit Tigers'=>'디트로이','Cincinnati Reds'=>'신시내티','Toronto Blue Jays'=>'토론토'); ?>
 
 <link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
 <div class="livescore game">
@@ -72,7 +73,7 @@
                                             </td>
                                             <?php if($item->away=='Los Angeles Angels of Anaheim'): $item->away='Los Angeles Angels'; ?>
                                             <?php elseif($item->home=='Los Angeles Angels of Anaheim'): $item->home='Los Angeles Angels'; endif; ?>
-                                            <td class="left pl20"><a href="/baseball/player_hitter?team=<?=$item->away;?>"><?=($league=='KBO')? $full_name_team[$item->away] : $item->away;?></a> vs <a href="/baseball/player_hitter?team=<?=$item->home;?>"><?=($league=='KBO')? $full_name_team[$item->home] : $item->home;?></a></td>
+                                            <td class="left pl20"><a href="/baseball/player_hitter?team=<?=$item->away;?>"><?=($league=='KBO')? $full_name_team[$item->away] : $MLB_team_kor[$item->away];?></a> vs <a href="/baseball/player_hitter?team=<?=$item->home;?>"><?=($league=='KBO')? $full_name_team[$item->home] : $MLB_team_kor[$item->home];?></a></td>
                                             <?php if($item->away=='Los Angeles Angels'): $item->away='Los Angeles Angels of Anaheim'; ?>
                                             <?php elseif($item->home=='Los Angeles Angels'): $item->home='Los Angeles Angels of Anaheim'; endif; ?>
                                             <?php if($selector=='handicap'): ?><td><span class="underline">-1.5</span></td>
@@ -80,7 +81,7 @@
                                             <td><span class="">1.93</span></td>
                                             <td>3.15</td>
                                             <td>51</td>
-                                            <td><span class="b_BTN5" style="margin-top: 9px;"><a href="javascript:location.replace('/baseball/match_information/<?=$item->no;?>/0')">매치정보</a></span></td>
+                                            <td><span class="b_BTN5" style="margin-top: 9px;"><a href="javascript:location.replace('/baseball/match/<?=$league;?>/<?=$item->no;?>/0')">매치정보</a></span></td>
                                         </tr>
                                     <?php endif; endforeach; ?>
                                 </table>
@@ -110,11 +111,11 @@
                                     <th colspan="8" class="br"><b>승패</b></th>
                                     <th colspan="6"><b>O/U</b></th>
                                 </tr>
-
+                                <?php $title=array('동부', '서부', '중부'); ?>
                                 <?php if($league=='MLB_A' || $league=='MLB_N'): ?>
-                                    <?php foreach($total as $item): ?>
+                                    <?php foreach($total as $key=>$item): ?>
                                         <tr>
-                                            <th>순위</th>
+                                            <th><?=$title[$key];?></th>
                                             <th class="left">팀명</th>
                                             <th>경기</th>
                                             <th>승</th>
@@ -133,7 +134,7 @@
                                             <tr>
                                                 <td><?=$entry->rank;?></td>
                                                 <?php if($entry->team=='Los Angeles Angels of Anaheim') $entry->team='Los Angeles Angels'; ?>
-                                                <td class="left"><span class=""></span> <?=$entry->team;?></td>
+                                                <td class="left"><span class=""></span> <?=$MLB_team_kor[$entry->team];?></td>
                                                 <?php if($entry->team=='Los Angeles Angels') $entry->team='Los Angeles Angels of Anaheim'; ?>
                                                 <td><?php if($duration=='all' && $home_away=='all') echo $entry->win+$entry->lose+$entry->tie; else echo $entry->g;?></td>
                                                 <td><?=$entry->win;?></td>
@@ -313,7 +314,7 @@
                             <?php foreach($recent as $items): ?>
                                 <tr>
                                     <?php if($items['team']=='Los Angeles Angels of Anaheim') $items['team']='Los Angeles Angels'; ?>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$items['team']] : '';?>_L"></span> <?=$items['team'];?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$items['team']] : '';?>_L"></span> <?=($league=='KBO')? $items['team'] : $MLB_team_kor[$items['team']];?></td>
                                     <td>
                                         <?php foreach($items['recent_game'] as $key=>$value):
                                             if($value=='win') echo '<a href="/baseball/match_information/'.$items['recent_detail'][9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_win.png" title="'.$items['recent_detail'][9-$key]["away"].' '.$items['recent_detail'][9-$key]["away_score"].":".$items['recent_detail'][9-$key]["home_score"].' '.$items['recent_detail'][9-$key]["home"].'"/></a>';
@@ -337,7 +338,7 @@
                             </tr>
                             <?php foreach($recent_over_under as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=$item['team'];?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item['team']] : '';?>_L"></span> <?=($league=='KBO')? $item['team'] : $MLB_team_kor[$item['team']];?></td>
                                     <td><?php foreach($item['str'] as $items): ?><span class="<?=$items;?>L"><?=$items;?></span><?php endforeach; ?></td>
                                     <td><span class="red"><?=$item['over'];?></span>/<?=$item['under'];?></td>
                                 </tr>
@@ -357,7 +358,7 @@
                             </tr>
                             <?php foreach($offense as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item->team] : '';?>_L"></span> <?=$item->team;?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item->team] : '';?>_L"></span> <?=($league=='KBO')? $item->team : $MLB_team_kor[$item->team];?></td>
                                     <td><?php
                                         $plus=0;
                                         if($league=='KBO'):
@@ -396,7 +397,7 @@
                             </tr>
                             <?php foreach($defence as $item): ?>
                                 <tr>
-                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item->team] : '';?>_L"></span> <?=$item->team;?></td>
+                                    <td class="left"><span class="<?=($league=='KBO')? $team_initial[$item->team] : '';?>_L"></span> <?=($league=='KBO')? $item->team : $MLB_team_kor[$item->team];?></td>
                                     <td><?php
                                         $minus=0;
                                         if($league=='KBO'):

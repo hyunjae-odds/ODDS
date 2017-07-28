@@ -2,9 +2,18 @@
 
 /* Reset */
 *{margin:0; padding:0;}
-body {font-size:12px; font-family:"맑은 고딕", Malgun Gothic, "돋움",Dotum,Helvetica,AppleGothic,Sans-serif; line-height:1.5em;color:#444;}
-@font-face {font-family:NanumGothic; src:url(font/NanumGothic.eot); src:local('☺'), src:url(font/NanumGothic.woff) format('woff')}
-h1,h2,h3,h4,h5,h6,address{font-weight:normal;}
+body {font-size:12px; font-family:"맑은 고딕", Malgun Gothic,"나눔바른고딕",Nanum Barun Gothic, "돋움",Dotum,Helvetica,AppleGothic,Sans-serif; line-height:1.5em;color:#444;}
+/*@font-face {font-family:NanumGothic; src:url(font/NanumGothic.eot); src:local('☺'), src:url(font/NanumGothic.woff) format('woff')}*/
+@font-face{
+	font-family:"나눔바른고딕";
+	src:url('/odds/font/NanumBarunGothic-Bold.eot');
+	src:url('/odds/font/NanumBarunGothic-Bold.eot?#iefix') format('embedded-opentype'),
+	url('/odds/font/NanumBarunGothic-Bold.woff') format('woff'),
+	url('/odds/font/NanumBarunGothic-Bold.ttf') format('truetype');
+	url('/odds/font/NanumBarunGothic-Bold.svg#NanumBarunGothic-Bold') format('svg')
+	src:local(※), url('/odds/font/NanumBarunGothic-Bold.woff') format('woff');
+}
+h1,h2,h3,h4,h5,h6,address{font-weight:normal;font-family:"나눔바른고딕",Nanum Barun Gothic;}
 img,fieldset{border:0; border-style:none;}
 ul,ol,li {list-style:none}
 caption,legend {visibility:hidden; height:0; font-size:0; line-height:0; width:0; overflow:hidden; text-align:left}
@@ -74,9 +83,9 @@ body{background:#eee;overflow-x:hidden; overflow-y:scroll;}
 .normal {font-weight:normal !important;}
 .underline {text-decoration:underline;}
 /* title */
-h2.tit02 {font-weight:bold;letter-spacing:-1px;color:#222;font-size:28px;height:59px;line-height:60px;margin:0 40px;border-bottom:1px solid #ccc;clear:both;display:block;content:"";}
+h2.tit02 {letter-spacing:-1px;color:#222;font-size:28px;height:59px;line-height:64px;margin:0 40px;border-bottom:1px solid #ccc;clear:both;display:block;content:"";}
 h2.tit02 a {vertical-align: inherit;margin:0;}
-h3 {font-size:20px;font-weight:bold;border-bottom:1px solid #ccc;line-height:1.8;margin-bottom:10px;clear:both;display:block;content:"";}
+h3 {font-size:20px;border-bottom:1px solid #ccc;line-height:1.8;margin-bottom:10px;clear:both;display:block;content:"";}
 .noBorder {border:none;margin-bottom:5px;}
 
 
@@ -885,6 +894,7 @@ span.all {background-image:none;}
 /* France 프랑스 */ span.country_20 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2102px;}
 /* Finland 핀란드 */ span.country_68 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2146px;}
 /* Hungary 헝가리 */ span.country_166 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2191px;}
+/* Hungary 호주 */ span.country_169 {font-size:0; vertical-align:middle;display:inline-block; width:16px; height:11px; background:url("../image/base/country.png") no-repeat -6px -2236px;}
 span.etc {font-size:0; vertical-align:middle;display:inline-block; width:24px; height:24px; background:url("../image/base/country.png") no-repeat -3px -4500px;}
 
 

@@ -163,7 +163,7 @@
                                         <td><span class="graybox">1.93</span></td>
                                         <td>3.15</td>
                                         <td>51</td>
-                                        <td><span class="b_BTN5" style="margin-top:9px;"><a href="/odds/game/league_base/match.php">매치정보</a></span></td>
+                                        <td><span class="b_BTN5" style="margin-top:9px;"><a href="/baseball/match/KBO/<?=$items->no;?>/0">매치정보</a></span></td>
                                     </tr>
                                 <?php endforeach; ?>
                             <?php endforeach; ?>
