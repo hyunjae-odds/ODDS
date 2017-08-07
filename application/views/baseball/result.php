@@ -12,10 +12,10 @@
     </div>
     <div class="game_w">
         <ul class="tab01 gameMain">
-            <li class=""><a href="/baseball/league/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">리그정보</a></li>
-            <li class="on"><a href="/baseball/result/<?=($league=='KBO')? 'KBO' : 'MLB';?>/all/<?=date('m');?>">경기 결과</a></li>
-            <li class=""><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">선수 기록</a></li>
-            <li class=""><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">상대 전적</a></li>
+            <li class=""><a href="/baseball/league/KBO">리그정보</a></li>
+            <li class="on"><a href="/baseball/result/KBO/all/<?=date('m');?>">경기 결과</a></li>
+            <li class=""><a href="/baseball/player_record_hitter/KBO">선수 기록</a></li>
+            <li class=""><a href="/baseball/score/KBO">상대 전적</a></li>
         </ul>
         <ul class="tab_view01 gameMain_view">
             <li class="result02 s2 active pb50">
@@ -139,7 +139,10 @@
                                 <col width="55px"/>
                                 <col width="65px"/>
                             </colgroup>
-                            <?php foreach($result as $item): ?>
+                            <?php if($result==null): ?>
+                                <tr><td>완료 된 경기가 없습니다.</td></tr>
+                            <?php endif; ?>
+                            <?php foreach($result['day'] as $item): ?>
                                 <tr>
                                     <th>날짜</th>
                                     <th class="left pl20"><b>매치명</b></th>
@@ -149,22 +152,24 @@
                                     <th>B’s</th>
                                     <th>DATA</th>
                                 </tr>
-                                <?php foreach($item as $items): ?>
-                                    <tr>
-                                        <td><?php $exp=explode('-', $items->date); echo $exp[1].'.'.$exp[2]?> | <?=$items->time;?></td>
-                                        <td class="left pl20">
-                                            <a href="javascript:void(0);">
-                                                <?php if($items->away_score!='' && $items->away_score>$items->home_score): ?><b><?php endif; ?><?=$full_name_team[$items->away];?><?php if($items->away_score!='' && $items->away_score>$items->home_score): ?></b><?php endif; ?>
-                                                vs
-                                                <?php if($items->away_score!='' && $items->away_score<$items->home_score): ?><b><?php endif; ?><?=$full_name_team[$items->home];?><?php if($items->away_score!='' && $items->away_score<$items->home_score): ?></b><?php endif; ?>
-                                            </a>
-                                        </td>
-                                        <td><b class="score red"><?=$items->away_score;?><span class="colon">:</span><?=$items->home_score;?></b></td>
-                                        <td><span class="graybox">1.93</span></td>
-                                        <td>3.15</td>
-                                        <td>51</td>
-                                        <td><span class="b_BTN5" style="margin-top:9px;"><a href="/baseball/match/KBO/<?=$items->no;?>/0">매치정보</a></span></td>
-                                    </tr>
+                                <?php foreach($result['result'] as $items): ?>
+                                    <?php if($items->date==$item->date): ?>
+                                        <tr>
+                                            <td><?php $exp=explode('-', $items->date); echo $exp[1].'.'.$exp[2]?> | <?=$items->time;?></td>
+                                            <td class="left pl20">
+                                                <a href="javascript:void(0);">
+                                                    <?php if($items->away_score!='' && $items->away_score>$items->home_score): ?><b><?php endif; ?><?=$full_name_team[$items->away].'('.$items->away_pitcher.')';?><?php if($items->away_score!='' && $items->away_score>$items->home_score): ?></b><?php endif; ?>
+                                                    vs
+                                                    <?php if($items->away_score!='' && $items->away_score<$items->home_score): ?><b><?php endif; ?><?=$full_name_team[$items->home].'('.$items->home_pitcher.')';?><?php if($items->away_score!='' && $items->away_score<$items->home_score): ?></b><?php endif; ?>
+                                                </a>
+                                            </td>
+                                            <td><b class="score red"><?=$items->away_score;?><span class="colon">:</span><?=$items->home_score;?></b></td>
+                                            <td><span class="graybox">1.93</span></td>
+                                            <td>3.15</td>
+                                            <td>51</td>
+                                            <td><span class="b_BTN5" style="margin-top:9px;"><a href="/baseball/match/KBO/<?=$items->no;?>/0">매치정보</a></span></td>
+                                        </tr>
+                                    <?php endif; ?>
                                 <?php endforeach; ?>
                             <?php endforeach; ?>
                         </table>

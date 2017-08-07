@@ -30,7 +30,9 @@ table.gametable td:nth-of-type(2) {text-align:left;padding-left:20px;}
 
 b.score {padding:0 10px;font-weight:normal;}
 b.score span.red {color:#ff386b;}
-b.score span.colon {display:inline-block;padding:0 5px;}
+b.score span.colon {display:inline-block;padding:0 2px;}
+b.score.red {color:#c00000 !important;}
+
 
 .r_view > li {display:none;}
 .r_view > li.active {display:block;}
@@ -108,8 +110,10 @@ div.barGraph01_W > div .grayBG > p {text-align:center;font-weight:bold;color:#bb
 span.teamLogo {margin:8px 5px 0 0;}*/
 
 table.league_table01 tr td {border:1px solid #ddd;border-top:none;}
+table.league_table01 tr td:nth-of-type(2) span {display:inline-block;margin-right:5px;}
 table.league_table01 tr td b {font-weight:normal;}
 table.league_table01_1 tr td b {font-weight:bold;}
+table.league_table01_1 tr td b.score {font-weight:normal;}
 
 
 .LastGame_view ul.tab02 {position:absolute;left:0;top:46px;z-index:1;}
@@ -117,11 +121,11 @@ table.league_table01_1 tr td b {font-weight:bold;}
 .league_Ltable tr td {border-right:none;border-left:none;}
 .league_Ltable tr td:nth-of-type(2) span {width:35px;height:35px;}
 .league_Ltable tr td:nth-of-type(1) {font-size:15px;}
-.league_Ltable tr td:nth-of-type(2),.league_Ltable tr td:nth-of-type(10) {border-right:1px solid #ddd;}/*
+/*.league_Ltable tr td:nth-of-type(2),.league_Ltable tr td:nth-of-type(10) {border-right:1px solid #ddd;}
 .league_Ltable tr th:nth-of-type(3),.league_Ltable tr td:nth-of-type(3),.league_Ltable tr th:nth-last-of-type(6),.league_Ltable tr td:nth-last-of-type(6) {padding-left:8px;}
-.league_Ltable tr th:nth-last-of-type(7),.league_Ltable tr td:nth-last-of-type(7),.league_Ltable tr th:nth-last-of-type(1),.league_Ltable tr td:nth-last-of-type(1) {padding-right:8px;}*/
+.league_Ltable tr th:nth-last-of-type(7),.league_Ltable tr td:nth-last-of-type(7),.league_Ltable tr th:nth-last-of-type(1),.league_Ltable tr td:nth-last-of-type(1) {padding-right:8px;}
 .league_Ltable tr th:nth-last-of-type(3),.league_Ltable tr td:nth-last-of-type(3) {text-decoration:underline;}
-.league_Ltable tr td:nth-of-type(9),.league_Ltable tr td:nth-last-of-type(4) {font-weight:bold;}
+.league_Ltable tr td:nth-of-type(9),.league_Ltable tr td:nth-last-of-type(4) {font-weight:bold;}*/
 .league_Ltable tr.th02 th {border:none;background:#fff;padding:0;text-align:center;color:#444;font-weight:normal;font-size:12px;}
 .league_Ltable tr.th02 th b {font-weight:bold;font-size:14px;}
 .league_Ltable tr.th02 th.br {border-right:1px solid #ddd;}
@@ -132,7 +136,23 @@ table.league_table01_1 tr td b {font-weight:bold;}
 .Ltable .redline.n5 {width:73px; left:486px;display:block;}
 .Ltable .redline.n6 {width:57px; left:562px;display:block;}
 .Ltable .redline.n7 {width:63px; left:624px;display:block;}*/
+table.league_Ltable th > span {cursor:pointer;}
+table.league_Ltable span.down {display:inline-block;background:url("../image/base/icon.png") 0 -698px no-repeat;width:11px;height:8px;margin-left:3px;vertical-align:middle;}
 
+table.table_default > tbody > tr > th > a {color:#fff;}
+
+.league_Ltable_OU td:nth-last-of-type(3) {font-weight:bold;}
+
+
+table th .select_w {height:100%;position:relative;}
+table th .select {top:8px;background:none;z-index:7;}
+table th .select p {height:18px;line-height:16px;border:none;padding:0 8px;}
+table th .select p span.pp,table th .select p span.pa {height:18px;line-height:16px;background:none;color:#fff;padding:0;min-width:0;margin:0;}
+table th .select p span.pa {background:url("../image/base/icon.png") 3px -692px no-repeat;width:18px;}
+table th .select ul li {font-weight:normal;height:22px;line-height:22px;font-weight:bold;border-bottom:1px solid #ccc;}
+table th .select ul li:nth-last-of-type(1) {border-bottom:none;}
+table th .select ul li a {color:#888;}
+table th .select ul li:hover a {color:#444;background:#eff1f2;}
 
 
 .tableNtable table {width:470px;float:left;margin-right:20px;margin-bottom:20px;}
@@ -153,14 +173,20 @@ div.TOP5 table th:nth-of-type(1),div.TOP5 table td:nth-of-type(1) {text-align:le
 
 
 .MLB_league_table {padding-bottom:50px;}
-.MLB_league_table .tab01_w {}
+.MLB_league_table .tab01_w {border:none;margin:0;height:auto;}
+.MLB_league_table .tab01_w .tab02 {margin:10px 0;}
 .MLB_league_table .tab01_w .tab01_2 {position:absolute;left:auto;right:0;}
 .MLB_league_table .tab01_w .tab01_2 li a {width:125px;padding-left:0;padding-right:0;}
 .MLB_league_table .LastGame_view {border-top:1px solid #ccc;}
-.MLB_league_table .LastGame_view ul.tab02 {top:70px;}
+.MLB_league_table .LastGame_view ul.tab02 {top:50px;}
 .MLB_league_table .LastGame_view > ul > li {display:none;}
 .MLB_league_table .LastGame_view > ul > li.active {display:block;}
 .MLB_league_table .tableNtable {border-top:none;}
+
+ul.g_check_tab {position:absolute;right:0;}
+ul.g_check_tab li {height:26px;float:left;width:100px;text-align:center;border:1px solid #fff;line-height:25px;border:1px solid #ccc;margin-left:5px;}
+ul.g_check_tab li.on {background:#f0f1f3;} 
+ul.g_check_tab li a {height:26px;display:block;}
 
 
 
@@ -177,8 +203,21 @@ table td span.black {display:inline-block; line-height:10px;height:12px;padding:
 .team_list li div p {font-weight:bold;font-size:12px;color:#555;}
 .team_list li.on div {border:3px solid red;}
 
+.team_list_MLB {border:1px solid #ddd;height:100px;padding-right:21px;}
+.team_list_MLB li {float:left;}
+.team_list_MLB li div {cursor:pointer;width:79px;height:94px;text-align:center;border:3px solid #fff;}
+.team_list01 li:nth-of-type(1) div {width:81px;}
+.team_list_MLB li div span {width:55px;height:55px;margin-top:7px;}
+.team_list_MLB li div p {font-weight:bold;/*font-size:11px;color:#555;line-height:1.2;vertical-align:middle;*/}
+.team_list_MLB li.on div {border:3px solid red;}
+span.pageBtn {display:none;position:absolute;right:1px;top:1px;width:21px;height:100px;background:#eee url("/odds/image/game/pageBtn.jpg") no-repeat center center;}
+span.pageBtn:hover {cursor:pointer;}
+span.pageBtn01 {display:block;}
+.team_list02,.team_list03 {display:none;border:none;position:absolute;left:88px;top:1px;background:#fff;}
+
+
 .result_veiw {}
-.result_veiw > li {display:none;}
+.result_veiw > li {display:none;position:relative;}
 .result_veiw > li.active {display:block;}
 
 .result_table01 {}
@@ -186,17 +225,19 @@ table td span.black {display:inline-block; line-height:10px;height:12px;padding:
 .result_table01 span.orangeBox {text-align:center;width:55px;height:25px;line-height:25px;color:#fff;display:inline-block;background:#ffa800;}
 .result_table01 span.skyBox {text-align:center;width:55px;height:25px;line-height:25px;color:#fff;display:inline-block;background:#8caedc;}
 .result_table01 span.grayBox {text-align:center;width:50px;height:25px;line-height:25px;color:#fff;display:inline-block;background:#ccc;}
-table.result_table01_1 td {text-align:left;}
-table.result_table01_1 td:nth-of-type(1) {border-left:1px solid #ddd;}
+.result_table01 td:nth-of-type(1) span {height: 35px;width: 35px;}
+/*table.result_table01_1 td {text-align:left;}*/
+table.result_table01_1 td:nth-of-type(1) {border-left:1px solid #ddd;text-align:left;}
 table.result_table01_1 td:nth-last-of-type(1) {border-right:1px solid #ddd;}
 
 
-.result_table01_1_onoff {position:absolute;margin:0 auto;left:0;right:0;bottom:-26px;width:190px;}
-.result_table01_1_onoff li {display:none;}
+.result_table01_1_onoff {border-top:1px solid #ddd;position:relative;top:-1px;}
+.result_table01_1_onoff li {position:absolute;margin:0 auto;left:0;right:0;bottom:-26px;width:190px;display:none;}
 .result_table01_1_onoff li a {display:block;background:url("/odds/image/game/bg_team_onoff.png") no-repeat;width:190px;height:27px;line-height:26px;text-align:center;font-size:14px;}
 .result_table01_1_onoff li a.up span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/close.jpg") no-repeat center center;vertical-align:middle;}
 .result_table01_1_onoff li a.down span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/open.jpg") no-repeat center center;vertical-align:middle;}
 .result_table01_1_onoff li.active {display:block;}
+
 /* 리그 통계 */
 
 .gameMain_view {}
@@ -525,6 +566,8 @@ div table.record_table01:nth-of-type(odd) {margin-right:20px;}
 .record_table01 p.graph {display:inline-block;width:230px;height:20px;background:#eee;position:relative;vertical-align:text-bottom;}
 .record_table01 p.graph span {display:inline-block;height:100%;background:#fe2e4e;position:absolute;left:0;top:0;}
 
+
+
 table.record_table02 th,table.record_table02 td {border-right:1px solid #ddd;}
 table.record_table02 th:nth-last-of-type(1),table.record_table02 td:nth-last-of-type(1) {border:none;}
 table.record_table02 td {border-bottom:none;}
@@ -634,7 +677,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .title_bar p {color:#fff;font-size:13px;padding-left:15px;float:left;}
 .title_bar p span,.title_bar > div span {font-weight:bold;border-bottom:1px solid #fff;display:inline-block;height:22px;}
 .title_bar p a,.title_bar > div > a {font-weight:bold;border-bottom:1px solid #fff;display:inline-block;height:24px;color:#fff;}
-.title_bar > div {display:inline-block;position:relative;padding-right:10px;float:left;}
+.title_bar > div {display:inline-block;position:relative;padding-right:10px;float:left;min-width:200px;}
 /*.title_bar ul {position:absolute;right:0;top:0;}
 .title_bar ul > li {float:left;margin:4px 4px 0 0;}*/
 .title_bar p a.other_btn {padding:0;}
@@ -648,8 +691,8 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 
 .title_bar .other {position:absolute;right:3px; top:33px;background:url("../image/base/bg_80B3.png") repeat;z-index:1;}
 .title_bar .other p {padding:4px 15px 4px 20px;}
-a.other_btn {color:#fff; background:url("../image/base/icon.png") no-repeat 133px -569px; padding-right:15px;}
-a.other_btn.close {background-position:133px -609px;}
+/*a.other_btn {color:#fff; background:url("../image/base/icon.png") no-repeat 133px -569px; padding-right:15px;}
+a.other_btn.close {background-position:133px -609px;}*/
 .other_view {padding-top:5px;margin:0px 21px 10px; border-top:1px solid #666;}
 .other_view li {line-height:20px;}
 .other_view li a {color:#fff;}
@@ -787,6 +830,7 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div div.left_g b {/*padding-right:34px;*/}
 .opinion .graph > div div.right_g {width:350px;text-align:left;} 
 .opinion .graph > div div.right_g b {/*padding-left:34px;*/}
+.opinion .graph div.result_btn_div > div > b {line-height:25px;}
 .opinion .graph > div div .result_btn {vertical-align:bottom;}
 .opinion .graph > div span.left_g {width:35px;text-align:right;color:#444;font-size:14px;font-weight:bold;float:left;display:block;padding-right:15px;}
 .opinion .graph > div span.right_g {width:35px;text-align:left;color:#444;font-size:14px;font-weight:bold;float:left;display:block;padding-left:15px;}
@@ -796,7 +840,8 @@ a.other_btn.close {background-position:133px -609px;}
 .opinion .graph > div > div.left_g span {color:#fff;font-weight:bold;line-height:17px;padding:0 15px;display:inline-block;position:absolute;right:0;top:0;}
 .opinion .graph > div > div.right_g span {color:#fff;padding:0 0 0 8px;font-weight:bold;line-height:19px;padding:0 15px;display:inline-block;position:absolute;left:0;top:0;}
 .opinion .graph > div > div span.aa {color:#aaa;position:relative;font-weight:normal;}
-.opinion .graph > div > div b.aa {font-size:13px;}
+.opinion .graph > div > div.left_g b.aa {font-size:13px;padding-right:15px;}
+.opinion .graph > div > div.right_g b.aa {font-size:13px;padding-left:15px;}
 .opinion .graph > div > div > div {width:350px; background:#f1f1f1;height:20px; position:relative;}
 /*.opinion .graph > div > div:nth-of-type(odd) > div {background:#f1f1f1 url("../image/game/bg_g_left_b.jpg") repeat-y;}*/
 .opinion .graph > div > div > div > div {position:absolute; top:0; height:20px;background:url("../image/game/bg_g_right.jpg") no-repeat;}
@@ -830,7 +875,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', end
 .opinion .graph > div.blueG > div.right_g > div > div {background:url("../image/game/bg_b_right.jpg") no-repeat left 0;}
 .opinion .graph > div.blueG > div.left_g > div > div {background:url("../image/game/bg_b_left.jpg") no-repeat right 0;}
 .opinion h4 {font-weight:bold;text-align:center;width:860px;margin-left:50px; font-size:16px;height:30px;line-height:30px;margin-bottom:10px;padding-top:10px;}
-.opinion .graph > div.yellowG.bb,.opinion .graph > div.blueG.bb,.opinion .graph > div.DblueG.bb {border-bottom:1px solid #f1f1f1;padding-bottom:20px;}
+.opinion .graph > div.bb,.opinion .graph > div.yellowG.bb,.opinion .graph > div.blueG.bb,.opinion .graph > div.DblueG.bb {border-bottom:1px solid #f1f1f1;padding-bottom:20px;}
 .opinion .graph > div.DblueG,.opinion .graph > div.DblueG > p,.opinion .graph > div.DblueG > div > div {height:30px;}
 .opinion .graph > div.DblueG.mt35 {margin-bottom:0;}
 .opinion .graph > div.DblueG > div > div > div {background:#f1f1f1;width:100%;height:30px;}
@@ -950,7 +995,7 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 .match_w h3 {font-size:22px;border:none;}
 .match_w table {margin-bottom:45px;}
 
-a.graybtn {background:#acacac;padding:0 3px;height:20px;line-height:20px;display:inline-block;text-align:center;border:1px solid #6c6c6c;color:#fff;font-weight:bold;vertical-align:text-top;}
+.graybtn {background:#acacac;padding:0 3px;height:20px;line-height:20px;display:inline-block;text-align:center;border:1px solid #6c6c6c;color:#fff;font-weight:bold;vertical-align:text-top;}
 
 
 .cheer {width:960px;margin-left:40px;content:"";display:block;clear:both;margin-top:60px;}
@@ -1078,19 +1123,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /*-----------------------------------------  match 끝 ---------------------------------------*/
 
-
-
-span.LG {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/LG_120120.png") no-repeat center center; background-size:contain;}
-span.SS {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/SS_120120.png") no-repeat center center; background-size:contain;}
-span.LT {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/LT_120120.png") no-repeat center center; background-size:contain;}
-span.WO {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/NS_120120.png") no-repeat center center; background-size:contain;}
-span.SK {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/SK_120120.png") no-repeat center center; background-size:contain;}
-span.KT {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/KT_120120.png") no-repeat center center; background-size:contain;}
-span.OB {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/DS_120120.png") no-repeat center center; background-size:contain;}
-span.NC {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
-span.HH {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
-span.HT {font-size:0; vertical-align:middle;display:inline-block; width:30px; height:30px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
-
+/*KBO*/span.KBO_L_B {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KBO2_120120.png") no-repeat center center; background-size:contain;}
 /*LG 트윈스*/span.LG_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LG_120120.png") no-repeat center center; background-size:contain;}
 /*삼성 라이온즈*/span.SS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SS_120120.png") no-repeat center center; background-size:contain;}
 /*롯데 자이언츠*/span.LT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LT_120120.png") no-repeat center center; background-size:contain;}
@@ -1101,4 +1134,35 @@ span.HT {font-size:0; vertical-align:middle;display:inline-block; width:30px; he
 /*NC 다이노스*/span.NC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
 /*한화 이글스*/span.HH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
 /*KIA 타이거즈*/span.HT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
-/*KBO*/span.KBO_L_B {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KBO2_120120.png") no-repeat center center; background-size:contain;}
+
+/*MLB*/span.MLB_L_B {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB.png") no-repeat center center; background-size:contain;}
+/*LA다져스*/span.LAD_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/LAD.png") no-repeat center center; background-size:contain;}
+/*LA에인절스*/span.LAA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/LAA.png") no-repeat center center; background-size:contain;}
+/*뉴욕 메츠*/span.NYM_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/NYM.png") no-repeat center center; background-size:contain;}
+/*뉴욕 양키스*/span.NYY_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/NYY.png") no-repeat center center; background-size:contain;}
+/*디트로이트 타이거스*/span.DET_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/DET.png") no-repeat center center; background-size:contain;}
+/*마이애미 말린스*/span.MIA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIA.png") no-repeat center center; background-size:contain;}
+/*미네소타 트윈스*/span.MIN_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIN.png") no-repeat center center; background-size:contain;}
+/*밀워키 브루어스*/span.MIL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIL.png") no-repeat center center; background-size:contain;}
+/*보스턴 레드삭스*/span.BOS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/BOS.png") no-repeat center center; background-size:contain;}
+/*볼티모어 오리올스*/span.BAL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/BAL.png") no-repeat center center; background-size:contain;}
+/*샌디에이고 파드리스*/span.SD_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SD.png") no-repeat center center; background-size:contain;}
+/*샌프란시스코 자이언츠*/span.SF_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SF.png") no-repeat center center; background-size:contain;}
+/*세인트루이스 카디널스*/span.STL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/STL.png") no-repeat center center; background-size:contain;}
+/*시애틀 매리너스*/span.SEA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SEA.png") no-repeat center center; background-size:contain;}
+/*시카고 컵스*/span.CUB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CUB.png") no-repeat center center; background-size:contain;}
+/*시카고 화이트삭스*/span.CWS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CWS.png") no-repeat center center; background-size:contain;}
+/*신시내티 레즈*/span.CIN_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CIN.png") no-repeat center center; background-size:contain;}
+/*애리조나 다이아몬드백스*/span.ARI_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/ARI.png") no-repeat center center; background-size:contain;}
+/*애틀랜타 브레이브스*/span.ATL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/ATL.png") no-repeat center center; background-size:contain;}
+/*오클랜드 애슬레틱스*/span.OAK_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/OAK.png") no-repeat center center; background-size:contain;}
+/*워싱턴 내셔널스*/span.WSH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/WSH.png") no-repeat center center; background-size:contain;}
+/*캔자스시티 로열스*/span.KC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/KC.png") no-repeat center center; background-size:contain;}
+/*콜로라도 로키스*/span.COL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/COL.png") no-repeat center center; background-size:contain;}
+/*클리블랜드 인디언스*/span.CLE_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CLE.png") no-repeat center center; background-size:contain;}
+/*탬파베이 레이스*/span.TB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TB.png") no-repeat center center; background-size:contain;}
+/*텍사스 레인저스*/span.TEX_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TEX.png") no-repeat center center; background-size:contain;}
+/*토론토 블루제이스*/span.TOR_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TOR.png") no-repeat center center; background-size:contain;}
+/*피츠버그 파이어리츠*/span.PIT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/PIT.png") no-repeat center center; background-size:contain;}
+/*필라델피아 필리스*/span.PHI_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/PHI.png") no-repeat center center; background-size:contain;}
+/*휴스턴 애스트로스*/span.HOU_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/HOU.png") no-repeat center center; background-size:contain;}

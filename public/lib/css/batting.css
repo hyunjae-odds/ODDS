@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+
+.batting_w {background:#fff; padding-bottom:50px;}
+.batting {padding:20px 40px 0;}
+.batting_top {margin-bottom:20px;}
+.batting_top .tab01_w {top:0px;position:absolute;width:100%;}
+.batting_top .tab01_w ul.tab01 {}
+/*.tab01_w {margin-bottom:20px;}
+ul.tab01 {right:auto;left:0;top:0;}*/
+
+span.arro01.up {display:inline-block;background:url("../image/batting/arro01.png") no-repeat;width:8px;height:5px;font-size:0;vertical-align:middle;}
+span.arro01.down {display:inline-block;background:url("../image/batting/arro01.png") no-repeat 0 -10px;width:8px;height:5px;font-size:0;vertical-align:middle;}
+
+span.one_soccer {display:inline-block;width:26px;height:26px;background:url("../image/base/sporticon.png") no-repeat 0px -37px;vertical-align:middle;}
+
+/* 배팅경연 메인 */
+/*.main_st {margin-top:20px;}
+.main_st > li {float:left;background:#f5f5f5;width:313px;margin-right:10px;position:relative;}
+.main_st > li:nth-last-of-type(1) {margin-right:0;width:314px;}
+.main_st > li h4 {font-size:14px;font-weight:bold;color:#888;height:40px;line-height:40px;border-bottom:1px solid #ccc;padding:0 17px;}
+.main_st table {text-align:center;color:#888;width:100%;margin:10px 0;}
+.main_st table td {text-align:left;}
+.main_st table th:nth-of-type(1) {font-size:16px;color:#888;height:60px;}
+.main_st table th:nth-of-type(4) {text-align:left;vertical-align:bottom;}
+.main_st table tr:nth-of-type(odd) td {vertical-align:bottom;}
+.main_st table tr:nth-of-type(even) td {vertical-align:top;}
+.main_st b.red {font-size:16px;}
+.main_st b.user {font-size:14px;color:#444;}
+.main_st span.red {font-size:13px;}
+.main_st span.red b {font-size:15px;}
+.main_st span.dgray {color:#888;}
+.main_st span.dgray b {font-size:14px;}
+.main_st .profile_image {width:48px;height:48px;overflow:hidden;border-radius:24px;margin:0 auto;}
+.main_st .center {background:#fff;padding-top:7px;padding-bottom:8px;}
+.main_st a.all_view {position:absolute;right:12px;top:11px;font-size:11px;color:#888;font-weight:bold;}
+.main_st a.all_view span {background:url("../image/batting/arrow_gray_right.png") no-repeat;display:inline-block;width:5px;height:8px;}
+
+.batting_list {}
+.batting_list > li {position:relative;border-bottom:1px solid #ccc;padding-bottom:15px;margin-top:10px;}
+.batting_list > li:nth-of-type(1) {margin-top:0;}
+.batting_list > li h4 {font-family:Dotum;margin-left:10px;}
+.batting_list > li h4 b {padding-left:10px;font-size:13px;}
+.batting_list > li h4 span.time {color:#999;padding-left:8px;}
+.batting_list > li h4 span.line {height:11px;border-left:1px solid #555;margin-left:12px;}
+.batting_list > li div.data_w {position:absolute;right:10px;top:0;}
+.batting_list > li > table {margin-left:45px;margin-top:5px;width:830px;}
+.batting_list > li > table th {font-weight:bold;font-size:14px;height:32px;}
+.batting_list > li > table td {height:32px;}
+.batting_list > li > table td > b {display:inline-block;width:25px;text-align:center;}
+.batting_list > li > table td label {display:inline-block;width:103px;height:25px;line-height:25px;padding:0 10px;border:1px solid #ccc;margin-right:3px;background:url("../image/base/bg_game_li.jpg") repeat-x 0 bottom;}
+.batting_list > li > table td label input {vertical-align:middle;}
+.batting_list > li > table td label > b {vertical-align:middle;text-align:center;display:inline-block;width:87px;font-size:14px;}
+.batting_list > li > table td label > b span {margin-left:3px;}
+.batting_list a.selec {position:absolute;right:10px;top:34px;display:block;width:59px;height:59px;background:url("../image/batting/btn_batting_list.jpg") no-repeat 0 0;}
+.batting_list a.selec.on {}
+*/
+.main_st {margin-top:20px;}
+.main_st li {float:left;width:310px;margin-right:15px;}
+.main_st li:nth-last-of-type(1) {margin-right:0;}
+.main_st table td:nth-of-type(1) {text-align:left;padding-left:10px;}
+.main_st table td:nth-of-type(2) {/*border-right:1px solid #ddd;*/text-align:right;padding-right:10px;}
+.main_st table td span.gray {font-size:12px;}
+.batting_list {}
+.batting_view > li {display:none;}
+.batting_view > li.active {display:block;}
+.batting_view p.graybox {text-align:center;font-weight:bold;height:30px;line-height:30px;font-size:14px;background:#eee;color:#666;margin:10px 0;}
+.batting_view table {}
+.batting_view table td {border-right:1px solid #ddd;border-left:1px solid #ddd;}
+.batting_view table td.lh {line-height:1.5;}
+.batting_view table th:nth-of-type(1) span:nth-of-type(1) {vertical-align:text-bottom;}
+.batting_view table div.data {line-height:22px;height:22px;position:relative;}
+.batting_view table div.data span {margin:0 2px;}
+.batting_view table td span.redline:hover {cursor:pointer;}
+.batting_view table td span.redline.on {display:block;border:3px solid #ff225b;height:34px;line-height:34px;}
+
+/*순위정보*/
+a.viewBtn {display:inline-block;height:21px;width:72px;line-height:21px;text-align:center;font-size:12px;font-weight:bold;border:1px solid #ccc;background:url("../image/base/bg_game_li2.jpg") repeat-x scroll 0 bottom;}
+.input_div {border:1px solid #ccc;display:inline-block;position:absolute;top:25px;right:0;}
+.input_div input[type="text"] {width:170px;height:28px;background:#fff;border:none;padding:0 5px 0 6px;color:#999;font-size:12px;vertical-align:middle;}
+.input_div input[type="submit"] {border:none;font-size:0;background:url("../image/batting/search.jpg") no-repeat;width:32px;height:28px;vertical-align:middle;cursor:pointer;}
+.rank_ul {height:170px;margin-bottom:20px;margin-top:20px;}
+.rank_ul li {float:left;line-height:20px;}
+.rank_ul li div {float:left;}
+.rank_ul li div.pic {width:138px;height:168px;border:1px solid #ccc;}
+.rank_ul li div:nth-of-type(2) {margin-left:10px;width:143px;margin-right:40px;}
+.rank_ul li:nth-last-of-type(1) div:nth-of-type(2) {margin-right:0;}
+.rank_ul li h4 {background:#ffd800;color:#fff;font-weight:bold; display:inline-block;width:78px;height:21px;line-height:18px;text-align:center;font-size:14px;}
+.rank_ul li h4 span {text-shadow:0px 0px 3px #c0a201;}
+.rank_ul li:nth-of-type(2) h4 span {text-shadow:0px 0px 3px #979696;}
+.rank_ul li:nth-of-type(3) h4 span {text-shadow:0px 0px 3px #b7724c;}
+.rank_ul li:nth-of-type(2) h4 {background:#dadada;}
+.rank_ul li:nth-of-type(3) h4 {background:#eab293;}
+.rank_ul li p {font-size:15px;margin-bottom:6px;}
+.rank_ul li p.id {font-weight:bold;margin-top:3px;}
+.rank_ul li > div > span {font-size:15px;}
+.rank_ul li a {margin-top:10px;display:inline-block;width:140px;height:23px;line-height:21px;text-align:center;font-weight:bold;border:1px solid #ccc;background:url("../image/base/bg_game_li2.jpg") repeat-x scroll 0 bottom;}
+
+
+/*룰안내*/
+.rule {padding-bottom:70px;}
+.rule h3 {margin-bottom:0;margin-top:20px;}
+.rule p {font-size:14px;color:#888;line-height:1.8;}
+
+
+/*배팅내역*/
+.present_1 {}
+/*.present_1 .left_div {float:left;}
+.present_1 .left_div img {border:1px solid #ccc;width:88px;margin-bottom:5px;}
+.present_1 .left_div a {display:block;height:23px;line-height:21px;text-align:center;font-weight:bold;border:1px solid #ccc;background:url("../image/base/bg_game_li2.jpg") repeat-x scroll 0 bottom;}
+.present_1 .right_div {float:right;margin-left:20px;width:850px;}*/
+.present_1 .right_div .tab01_w {margin-top:20px;}
+
+.present_2 {padding-top:40px;display:block;content:"";clear:both;}
+.present_2 > table th:nth-of-type(4),.present_2 .present_table_w > table td:nth-of-type(4) {padding-left:150px;}
+.present_2 > table th:nth-of-type(5),.present_2 .present_table_w > table td:nth-of-type(5) {padding-left:52px;}
+.present_2 .present_table_w {border-bottom:1px solid #ddd;}
+.present_2 .present_table_w > table td {border-bottom:0;}
+.present_2 .present_table_w > table td a {border: 1px solid #ccc;display: inline-block;font-size: 12px;height: 21px;line-height: 20px;padding: 0 7px;font-weight:bold;background:url("../image/base/bg_game_li.jpg") repeat-x scroll 0 bottom;}
+.present_2 .present_table_w > table td a span {background:url("../image/base/arro_rightGame.jpg") no-repeat scroll 0 -10px;display: inline-block;height: 10px;margin-left: 7px;vertical-align: baseline;width: 10px;}
+.present_2 .detail {display:none;}
+.present_2 .detail > table {width:930px;border:1px solid #ddd;margin:0 0 10px 15px;}
+.present_2 .detail > table th {border-bottom:1px solid #ddd;}
+.present_2 .detail > table th:nth-of-type(4),.present_2 .detail > table td:nth-of-type(4) {text-align:left;}
+.present_2 .detail > table th:nth-of-type(6),.present_2 .detail > table td:nth-of-type(6) {padding-left:45px;} 
+.present_2 .detail > table span {display:inline-block; width:73px;height:25px;line-height:23px;border:1px solid #ccc;text-align:center;font-size:12px;}
+.present_2_1 > table th:nth-of-type(4),.present_2_1 .present_table_w > table td:nth-of-type(4) {padding-left:0;}
+.present_2_1 .present_table_w > table td:nth-of-type(4) span {}
+.present_2_1 .detail > table th:nth-of-type(7),.present_2_1 .detail > table td:nth-of-type(7) {padding-right:20px;}
+.present_2_1 .detail > table th:nth-of-type(6),.present_2_1 .detail > table td:nth-of-type(6) {padding-left:0px;} 
+.present_2.present_2_1 span.r_box {display:inline-block;width:74px;height:21px;line-height:20px;border:1px solid #ff225b;color:#ff225b;font-weight:bold;font-size:12px;}
+.present_2.present_2_1 span.g_box {display:inline-block;width:74px;height:21px;line-height:20px;border:1px solid #ccc;font-size:12px;}
+.present_2_1 .detail > table td:nth-last-of-type(1) span.r_box,.present_2_1 .detail > table td:nth-last-of-type(1) span.g_box {width:85px;}
+
+
+
+
+
+
+
+
+
