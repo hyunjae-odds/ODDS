@@ -251,7 +251,7 @@
                         <?php foreach($h2h_last_six_game as $item): ?>
                             <tr>
                                 <td><?=$item->date;?></td>
-                                <td class="left pl20"><a href="javascript:void(0);"><?php if($item->away_score > $item->home_score) echo '<b>';?><?=$full_name_team[$item->away];?><?php if($item->away_score > $item->home_score) echo '</b>';?>  vs  <?php if($item->away_score < $item->home_score) echo '<b>';?><?=$full_name_team[$item->home];?><?php if($item->away_score < $item->home_score) echo '</b>';?></a></td>
+                                <td class="left pl20"><a href="javascript:void(0);"><?php if($item->away_score > $item->home_score) echo '<b>';?><?=$item->away.'('.$item->away_pitcher.')';?><?php if($item->away_score > $item->home_score) echo '</b>';?>  vs  <?php if($item->away_score < $item->home_score) echo '<b>';?><?=$item->home.'('.$item->home_pitcher.')';?><?php if($item->away_score < $item->home_score) echo '</b>';?></a></td>
                                 <td><b class="score red"><?=$item->away_score;?><span class="colon">:</span><?=$item->home_score;?></b></td>
                                 <td><span class="graybox">1.93</span></td>
                                 <td>3.15</td>
@@ -293,7 +293,7 @@
                                         <?php elseif($schedule->home==$item->home && $item->away_score < $item->home_score): $win_lose='win'; $total_win++; elseif($schedule->home==$item->home && $item->away_score > $item->home_score): $win_lose='lose'; $total_lose++; elseif($schedule->home==$item->home && $item->away_score == $item->home_score): $win_lose='dra'; endif;?>
                                         <img src="/public/lib/image/base/btn_<?=$win_lose;?>2.png" title="<?=$item->away;?> <?=$item->away_score;?>:<?=$item->home_score;?> <?=$item->home;?>">
                                     </a>
-                                    <a href="team_info.php"><b><?=$full_name_team[$item->away];?></b>  vs  <?=$full_name_team[$item->home];?></a></td>
+                                    <a href="team_info.php"><b><?=$item->away.'('.$item->away_pitcher.')';?></b>  vs  <?=$item->home.'('.$item->home_pitcher.')';?></a></td>
                                 <td><b class="score red"><?=$item->away_score;?><span class="colon">:</span><?=$item->home_score;?></b></td>
                                 <td><span class="graybox">1.93</span></td>
                                 <td>3.15</td>
@@ -309,7 +309,7 @@
                                         <a class="result_btn ml10 mr10" href="javascript:void(0);" onfocus="this.blur();"><img src="/public/lib/image/base/btn_lose2.png"></a><?=$total_lose;?>
                                         <a href="javascript:void(0);" class="graybtn ml10 mr10">득</a><?=$plus;?>
                                         <a href="javascript:void(0);" class="graybtn ml10 mr10">실</a><?=$minus;?>
-                                        <a href="javascript:void(0);" class="graybtn ml10 mr10">득/실</a><?=number_format(($plus+$minus)/2,1);?>
+                                        <a href="javascript:void(0);" class="graybtn ml10 mr10">득/실</a><?=number_format(($plus+$minus)/10,1);?>
                                     </span>
                                 </b>
                             </td>
@@ -348,7 +348,7 @@
                                         <?php elseif($schedule->away==$item->home && $item->away_score < $item->home_score): $win_lose='win'; $total_win++; elseif($schedule->away==$item->home && $item->away_score > $item->home_score): $win_lose='lose'; $total_lose++; elseif($schedule->away==$item->home && $item->away_score == $item->home_score): $win_lose='dra'; endif;?>
                                         <img src="/public/lib/image/base/btn_<?=$win_lose;?>2.png" title="<?=$item->away;?> <?=$item->away_score;?>:<?=$item->home_score;?> <?=$item->home;?>">
                                     </a>
-                                    <a href="team_info.php"><b><?=$full_name_team[$item->away];?></b>  vs  <?=$full_name_team[$item->home];?></a></td>
+                                    <a href="team_info.php"><b><?=$item->away.'('.$item->away_pitcher.')';?></b>  vs  <?=$item->home.'('.$item->home_pitcher.')';?></a></td>
                                 <td><b class="score red"><?=$item->away_score;?><span class="colon">:</span><?=$item->home_score;?></b></td>
                                 <td><span class="graybox">1.93</span></td>
                                 <td>3.15</td>
@@ -364,7 +364,7 @@
                                         <a class="result_btn ml10 mr10" href="javascript:void(0);" onfocus="this.blur();"><img src="/public/lib/image/base/btn_lose2.png"></a><?=$total_lose;?>
                                         <a href="javascript:void(0);" class="graybtn ml10 mr10">득</a><?=$plus;?>
                                         <a href="javascript:void(0);" class="graybtn ml10 mr10">실</a><?=$minus;?>
-                                        <a href="javascript:void(0);" class="graybtn ml10 mr10">득/실</a><?=number_format(($plus+$minus)/2,1);?>
+                                        <a href="javascript:void(0);" class="graybtn ml10 mr10">득/실</a><?=number_format(($plus+$minus)/10,1);?>
                                     </span>
                                 </b>
                             </td>
@@ -890,6 +890,7 @@
             </li>
         </ul>
     </div>
+
     <div class="cheer">
         <h3 class="noBorder">오늘의 승리팀 응원하기</h3>
         <div class="teams">

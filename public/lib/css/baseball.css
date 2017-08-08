@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-/*   ¾ß±¸ css  */
+/*   ï¿½ß±ï¿½ css  */
 
 
-/*--------------   °ÔÀÓ_¸®±× °øÅë ½ÃÀÛ  ------------*/
+/*--------------   ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½  ------------*/
 
 .game {background:#fff;}
 .game .live_visual {height:297px; }
@@ -56,7 +56,7 @@ h4.h4_02 span {display:inline-block; width:18px;height:100%;background:url("../i
 .r_tit3 li span {vertical-align:middle;}
 
 
-/* common º¯°æ */
+/* common ï¿½ï¿½ï¿½ï¿½ */
 h3.h3_01 {margin-top:-37px;}
 .select_p01 {top:40px;}
 
@@ -76,17 +76,17 @@ table tr th a {color:#999;}
 .redline span.bb {display:block; width:100%; height:0; border-bottom:3px solid #ff225b;position:absolute; left:0;bottom:0;}
 
 
-/*o/uÆÐÅÏ ¸»Ç³¼±*/
+/*o/uï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç³ï¿½ï¿½*/
 .pop_excl_mark {background:#fff;border:1px solid #ccc; position:absolute;right:-29px;top:-34px;color:#444;font-size:12px;font-weight:normal;height:30px;line-height:30px;width:100%;display:none;}
-.pop_excl_mark span {display:inline-block;width:14px;height:8px;background:url("/odds/image/base/arrow_h.png") no-repeat 0 -99px;position:absolute;right:0;left:0;bottom:-8px;margin:0 auto;}
+.pop_excl_mark span {display:inline-block;width:14px;height:8px;background:url("/public/lib/image/base/arrow_h.png") no-repeat 0 -99px;position:absolute;right:0;left:0;bottom:-8px;margin:0 auto;}
 
 
 
-/*--------------   °ÔÀÓ_¸®±× °øÅë ³¡  ------------*/
+/*--------------   ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½  ------------*/
 
 
 
-/* ¸®±×Á¤º¸ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 /*
 div.barGraph01_W {height:205px;}
 div.barGraph01_W > div {width:318px;margin-left:2px;float:left;padding-top:5px;}
@@ -191,7 +191,7 @@ ul.g_check_tab li a {height:26px;display:block;}
 
 
 
-/* °æ±â °á°ú */
+/* ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ */
 
 table td span.black {display:inline-block; line-height:10px;height:12px;padding:3px 7px;background:#eee;border-radius:4px;}
 
@@ -210,7 +210,7 @@ table td span.black {display:inline-block; line-height:10px;height:12px;padding:
 .team_list_MLB li div span {width:55px;height:55px;margin-top:7px;}
 .team_list_MLB li div p {font-weight:bold;/*font-size:11px;color:#555;line-height:1.2;vertical-align:middle;*/}
 .team_list_MLB li.on div {border:3px solid red;}
-span.pageBtn {display:none;position:absolute;right:1px;top:1px;width:21px;height:100px;background:#eee url("/odds/image/game/pageBtn.jpg") no-repeat center center;}
+span.pageBtn {display:none;position:absolute;right:1px;top:1px;width:21px;height:100px;background:#eee url("/public/lib/image/game/pageBtn.jpg") no-repeat center center;}
 span.pageBtn:hover {cursor:pointer;}
 span.pageBtn01 {display:block;}
 .team_list02,.team_list03 {display:none;border:none;position:absolute;left:88px;top:1px;background:#fff;}
@@ -233,12 +233,12 @@ table.result_table01_1 td:nth-last-of-type(1) {border-right:1px solid #ddd;}
 
 .result_table01_1_onoff {border-top:1px solid #ddd;position:relative;top:-1px;}
 .result_table01_1_onoff li {position:absolute;margin:0 auto;left:0;right:0;bottom:-26px;width:190px;display:none;}
-.result_table01_1_onoff li a {display:block;background:url("/odds/image/game/bg_team_onoff.png") no-repeat;width:190px;height:27px;line-height:26px;text-align:center;font-size:14px;}
-.result_table01_1_onoff li a.up span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/close.jpg") no-repeat center center;vertical-align:middle;}
-.result_table01_1_onoff li a.down span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/open.jpg") no-repeat center center;vertical-align:middle;}
+.result_table01_1_onoff li a {display:block;background:url("/public/lib/image/game/bg_team_onoff.png") no-repeat;width:190px;height:27px;line-height:26px;text-align:center;font-size:14px;}
+.result_table01_1_onoff li a.up span {display:inline-block;width:10px;height:6px;background:url("/public/lib/image/base/close.jpg") no-repeat center center;vertical-align:middle;}
+.result_table01_1_onoff li a.down span {display:inline-block;width:10px;height:6px;background:url("/public/lib/image/base/open.jpg") no-repeat center center;vertical-align:middle;}
 .result_table01_1_onoff li.active {display:block;}
 
-/* ¸®±× Åë°è */
+/* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ */
 
 .gameMain_view {}
 .gameMain_view > li {display:none;}
@@ -343,7 +343,7 @@ div.TOP5 ul li p.top_g5 {width:40px;text-align:center;padding-right:20px;}
 .top_s2 .result_btn {margin-top:7px;float:left;display:block;}
 
 
-/* ¸®±×-¼±¼ö±â·Ï  */
+/* ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  */
 
 .record_Ltable tr td:nth-of-type(3) {font-weight:bold;}
 .Ltable .redline.p1 {width:90px; left:436px;display:block;}
@@ -447,7 +447,7 @@ p.teammore {position:absolute;right:0;top:15px;}
 p.teammore a {padding-right:15px;background:url("../image/base/icon.png") no-repeat scroll 39px -148px;}
 
 
-/* »ó´ë ÀüÀû */
+/* ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 
 .gray_warp_w {position:relative;display:block;content:"";clear:both;height:42px;margin-bottom:20px;}
 .gray_warp_w .gray_warp {position:absolute;left:0;top:0;width:100%;}
@@ -471,7 +471,7 @@ ul.tab_view01 > li .s6_result h4:nth-of-type(1) {margin-top:0;}
 
 
 
-/* °æ±â°á°ú */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ */
 
 
 .Ltable .redline.a1 {width:60px; left:346px;display:block;}
@@ -504,9 +504,9 @@ ul.tab_view01 > li .s6_result h4:nth-of-type(1) {margin-top:0;}
 
 
 
-/*------------------------------------------------------------ ÆÀÁ¤º¸ ½ÃÀÛ ----------------------------------------------------------------*/
+/*------------------------------------------------------------ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ----------------------------------------------------------------*/
 
-/*½ÃÁð ±â·Ï*/
+/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½*/
 .team_top {position:relative;border-bottom:1px solid #ccc;margin-bottom:50px;}
 .team_top .team_logo {float:left;padding:20px 28px 30px;}
 .team_top .team_logo > img {}
@@ -580,13 +580,13 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .reco_icon.rc_3 {background-position:0 -40px;}
 .reco_icon.rc_4 {background-position:0 -60px;}
 
-/*°æ±â °á°ú*/
+/*ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½*/
 
 
 
 
 
-/* ÆÀÁ¤º¸ - ¼±¼ö±â·Ï */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .team_p_w {position:relative;/*margin-top:70px;*/}
 .team_p_w > h3 {position:absolute;left:0;right:0;margin:0 auto; top:-5px;width:auto;display:inline-block;font-size:22px;}
 .team_p {display:none;padding-top:5px;}
@@ -605,7 +605,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 
 
 
-/*¼±¼öÇöÈ²*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È²*/
 .situation {}
 .situation .coach {border-bottom: 3px solid #f1f1f1;}
 .situation .coach .pic {float:left;margin:0 4px 20px 4px;border:1px solid #ccc;padding:0;height:161px;width:139px;}
@@ -635,7 +635,7 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .situation_list .PL_REC ul li > p {margin-bottom:10px;}
 .situation_list .PL_REC ul li > p a img {width:139px;height:161px;}
 
-/*ÆÀ¼Ò°³*/
+/*ï¿½ï¿½ï¿½Ò°ï¿½*/
 .team {}
 .team > div:nth-of-type(1) {font-size:14px;padding:20px 0 30px;line-height:1.4;}
 .team > .graybox {background:#f1f1f1;padding:15px 20px;}
@@ -645,16 +645,16 @@ table.record_table02 tr:nth-last-of-type(1) td {border-bottom:1px solid #ddd;}
 .team a:hover {text-decoration:underline;}
 
 
-/*---------------------------------------------------------------------- ÆÀÁ¤º¸ ³¡ -----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ -----------------------------------------------------------------------*/
 
 
 
 
 
 
-/*-----------------------------------------  match ½ÃÀÛ ---------------------------------------*/
+/*-----------------------------------------  match ï¿½ï¿½ï¿½ï¿½ ---------------------------------------*/
 .Match_w {background:#fff;padding-bottom:1px;}
-/*¸ÅÄ¡»ó´Ü*/
+/*ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½*/
 /*.match {background:url("../image/game/v_match_KBO.jpg") no-repeat;}*/
 .match {}
 .match .livescore {content:"";display:block;clear:both;position:relative;padding-bottom:10px;padding:20px;}
@@ -808,7 +808,7 @@ a.other_btn.close {background-position:133px -609px;}*/
 .full_table02 span.fs10 {font-size:10px;}
 .full_table02 tr:nth-of-type(odd) td {background:#eee;}
 
-/*ÆÀ°£ºñ±³ ¸·´ë±×·¡ÇÁ*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½*/
 .opinion {clear:both;content:""; display:block; padding:30px 0 45px;position:relative;}
 .opi_team {margin:70px 70px 0;}
 .opi_team li {float:left;width:50%;}
@@ -890,7 +890,7 @@ span.excl_mark_w:hover .pop_excl_mark {display:block;}
 span.excl_mark_w .pop_excl_mark {width:338px;right:-105px;top:-37px;}
 
 
-/*¶óÀÎ¾÷*/
+/*ï¿½ï¿½ï¿½Î¾ï¿½*/
 .lineUP {padding-bottom:30px;margin-bottom:40px;}
 .lineUP > h3 {font-size:42px;color:#ccc;font-weight:bold;margin-top:15px;text-align:center;font-style:italic;line-height:1;padding-bottom:10px;border:none;}
 .KBO_lineup_t {position:relative;width:960px;}
@@ -947,7 +947,7 @@ span.excl_mark_w .pop_excl_mark {width:338px;right:-105px;top:-37px;}
 .highcharts-label .highcharts-tooltip-box {stroke:#fff;stroke-width:1;fill:#fff;}
 
 
-/*ÃÖ±Ù »ó´ëÀüÀû °á°ú*/
+/*ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½*/
 .opponent {position:relative;padding-bottom:55px;}
 .opponent > h3 {font-size:22px;}
 .opponent .opp01 > li {float:left;width:410px;}
@@ -990,7 +990,7 @@ table.opp03 th:nth-of-type(1), table.opp03 td:nth-of-type(1) {}
 
 
 
-/*ÃÖ±Ù °æ±â ¼ºÀû*/
+/*ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 .match_w {margin-bottom:50px;position:relative;}
 .match_w h3 {font-size:22px;border:none;}
 .match_w table {margin-bottom:45px;}
@@ -1064,7 +1064,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .textarea_box p {color:#f70000;padding:5px 7px 0;}
 
 
-/*¼±¹ßºñ±³ - ÃÖ±Ù»ó´ëÀüÀû*/
+/*ï¿½ï¿½ï¿½ßºï¿½ - ï¿½Ö±Ù»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .player_score_w {}
 .player_score_w > h3 {border:none;text-align:center;font-size:22px;margin-bottom:30px;}
 .player_score {margin-bottom:50px;}
@@ -1121,48 +1121,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
-/*-----------------------------------------  match ³¡ ---------------------------------------*/
+/*-----------------------------------------  match ï¿½ï¿½ ---------------------------------------*/
 
 /*KBO*/span.KBO_L_B {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KBO2_120120.png") no-repeat center center; background-size:contain;}
-/*LG Æ®À©½º*/span.LG_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LG_120120.png") no-repeat center center; background-size:contain;}
-/*»ï¼º ¶óÀÌ¿ÂÁî*/span.SS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SS_120120.png") no-repeat center center; background-size:contain;}
-/*·Ôµ¥ ÀÚÀÌ¾ðÃ÷*/span.LT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LT_120120.png") no-repeat center center; background-size:contain;}
-/*³Ø¼¾ È÷¾î·ÎÁî*/span.WO_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NS_120120.png") no-repeat center center; background-size:contain;}
-/*SK ¿ÍÀÌ¹øÁî*/span.SK_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SK_120120.png") no-repeat center center; background-size:contain;}
-/*KT À§Áî*/span.KT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KT_120120.png") no-repeat center center; background-size:contain;}
-/*µÎ»ê º£¾î½º*/span.OB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/DS_120120.png") no-repeat center center; background-size:contain;}
-/*NC ´ÙÀÌ³ë½º*/span.NC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
-/*ÇÑÈ­ ÀÌ±Û½º*/span.HH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
-/*KIA Å¸ÀÌ°ÅÁî*/span.HT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
+/*LG Æ®ï¿½ï¿½ï¿½ï¿½*/span.LG_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LG_120120.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¼º ï¿½ï¿½ï¿½Ì¿ï¿½ï¿½ï¿½*/span.SS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SS_120120.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ôµï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½*/span.LT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/LT_120120.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/span.WO_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NS_120120.png") no-repeat center center; background-size:contain;}
+/*SK ï¿½ï¿½ï¿½Ì¹ï¿½ï¿½ï¿½*/span.SK_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/SK_120120.png") no-repeat center center; background-size:contain;}
+/*KT ï¿½ï¿½ï¿½ï¿½*/span.KT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KT_120120.png") no-repeat center center; background-size:contain;}
+/*ï¿½Î»ï¿½ ï¿½ï¿½ï¿½î½º*/span.OB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/DS_120120.png") no-repeat center center; background-size:contain;}
+/*NC ï¿½ï¿½ï¿½Ì³ë½º*/span.NC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/NC_120120.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½È­ ï¿½Ì±Û½ï¿½*/span.HH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/HH_120120.png") no-repeat center center; background-size:contain;}
+/*KIA Å¸ï¿½Ì°ï¿½ï¿½ï¿½*/span.HT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/KI_120120.png") no-repeat center center; background-size:contain;}
 
 /*MLB*/span.MLB_L_B {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB.png") no-repeat center center; background-size:contain;}
-/*LA´ÙÁ®½º*/span.LAD_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/LAD.png") no-repeat center center; background-size:contain;}
-/*LA¿¡ÀÎÀý½º*/span.LAA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/LAA.png") no-repeat center center; background-size:contain;}
-/*´º¿å ¸ÞÃ÷*/span.NYM_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/NYM.png") no-repeat center center; background-size:contain;}
-/*´º¿å ¾çÅ°½º*/span.NYY_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/NYY.png") no-repeat center center; background-size:contain;}
-/*µðÆ®·ÎÀÌÆ® Å¸ÀÌ°Å½º*/span.DET_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/DET.png") no-repeat center center; background-size:contain;}
-/*¸¶ÀÌ¾Ö¹Ì ¸»¸°½º*/span.MIA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIA.png") no-repeat center center; background-size:contain;}
-/*¹Ì³×¼ÒÅ¸ Æ®À©½º*/span.MIN_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIN.png") no-repeat center center; background-size:contain;}
-/*¹Ð¿öÅ° ºê·ç¾î½º*/span.MIL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIL.png") no-repeat center center; background-size:contain;}
-/*º¸½ºÅÏ ·¹µå»è½º*/span.BOS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/BOS.png") no-repeat center center; background-size:contain;}
-/*º¼Æ¼¸ð¾î ¿À¸®¿Ã½º*/span.BAL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/BAL.png") no-repeat center center; background-size:contain;}
-/*»÷µð¿¡ÀÌ°í ÆÄµå¸®½º*/span.SD_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SD.png") no-repeat center center; background-size:contain;}
-/*»÷ÇÁ¶õ½Ã½ºÄÚ ÀÚÀÌ¾ðÃ÷*/span.SF_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SF.png") no-repeat center center; background-size:contain;}
-/*¼¼ÀÎÆ®·çÀÌ½º Ä«µð³Î½º*/span.STL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/STL.png") no-repeat center center; background-size:contain;}
-/*½Ã¾ÖÆ² ¸Å¸®³Ê½º*/span.SEA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SEA.png") no-repeat center center; background-size:contain;}
-/*½ÃÄ«°í ÄÅ½º*/span.CUB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CUB.png") no-repeat center center; background-size:contain;}
-/*½ÃÄ«°í È­ÀÌÆ®»è½º*/span.CWS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CWS.png") no-repeat center center; background-size:contain;}
-/*½Å½Ã³»Æ¼ ·¹Áî*/span.CIN_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CIN.png") no-repeat center center; background-size:contain;}
-/*¾Ö¸®Á¶³ª ´ÙÀÌ¾Æ¸óµå¹é½º*/span.ARI_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/ARI.png") no-repeat center center; background-size:contain;}
-/*¾ÖÆ²·£Å¸ ºê·¹ÀÌºê½º*/span.ATL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/ATL.png") no-repeat center center; background-size:contain;}
-/*¿ÀÅ¬·£µå ¾Ö½½·¹Æ½½º*/span.OAK_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/OAK.png") no-repeat center center; background-size:contain;}
-/*¿ö½ÌÅÏ ³»¼Å³Î½º*/span.WSH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/WSH.png") no-repeat center center; background-size:contain;}
-/*ÄµÀÚ½º½ÃÆ¼ ·Î¿­½º*/span.KC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/KC.png") no-repeat center center; background-size:contain;}
-/*ÄÝ·Î¶óµµ ·ÎÅ°½º*/span.COL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/COL.png") no-repeat center center; background-size:contain;}
-/*Å¬¸®ºí·£µå ÀÎµð¾ð½º*/span.CLE_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CLE.png") no-repeat center center; background-size:contain;}
-/*ÅÆÆÄº£ÀÌ ·¹ÀÌ½º*/span.TB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TB.png") no-repeat center center; background-size:contain;}
-/*ÅØ»ç½º ·¹ÀÎÀú½º*/span.TEX_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TEX.png") no-repeat center center; background-size:contain;}
-/*Åä·ÐÅä ºí·çÁ¦ÀÌ½º*/span.TOR_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TOR.png") no-repeat center center; background-size:contain;}
-/*ÇÇÃ÷¹ö±× ÆÄÀÌ¾î¸®Ã÷*/span.PIT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/PIT.png") no-repeat center center; background-size:contain;}
-/*ÇÊ¶óµ¨ÇÇ¾Æ ÇÊ¸®½º*/span.PHI_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/PHI.png") no-repeat center center; background-size:contain;}
-/*ÈÞ½ºÅÏ ¾Ö½ºÆ®·Î½º*/span.HOU_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/HOU.png") no-repeat center center; background-size:contain;}
+/*LAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/span.LAD_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/LAD.png") no-repeat center center; background-size:contain;}
+/*LAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/span.LAA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/LAA.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/span.NYM_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/NYM.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å°ï¿½ï¿½*/span.NYY_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/NYY.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ® Å¸ï¿½Ì°Å½ï¿½*/span.DET_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/DET.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½Ì¾Ö¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/span.MIA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIA.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ì³×¼ï¿½Å¸ Æ®ï¿½ï¿½ï¿½ï¿½*/span.MIN_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIN.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ð¿ï¿½Å° ï¿½ï¿½ï¿½î½º*/span.MIL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/MIL.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½è½º*/span.BOS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/BOS.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½Æ¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ã½ï¿½*/span.BAL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/BAL.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½Äµå¸®ï¿½ï¿½*/span.SD_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SD.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½*/span.SF_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SF.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½Ì½ï¿½ Ä«ï¿½ï¿½Î½ï¿½*/span.STL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/STL.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ã¾ï¿½Æ² ï¿½Å¸ï¿½ï¿½Ê½ï¿½*/span.SEA_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/SEA.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½Ä«ï¿½ï¿½ ï¿½Å½ï¿½*/span.CUB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CUB.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½Ä«ï¿½ï¿½ È­ï¿½ï¿½Æ®ï¿½è½º*/span.CWS_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CWS.png") no-repeat center center; background-size:contain;}
+/*ï¿½Å½Ã³ï¿½Æ¼ ï¿½ï¿½ï¿½ï¿½*/span.CIN_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CIN.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾Æ¸ï¿½ï¿½é½º*/span.ARI_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/ARI.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½Æ²ï¿½ï¿½Å¸ ï¿½ê·¹ï¿½Ìºê½º*/span.ATL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/ATL.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½*/span.OAK_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/OAK.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Å³Î½ï¿½*/span.WSH_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/WSH.png") no-repeat center center; background-size:contain;}
+/*Äµï¿½Ú½ï¿½ï¿½ï¿½Æ¼ ï¿½Î¿ï¿½ï¿½ï¿½*/span.KC_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/KC.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ý·Î¶ï¿½ ï¿½ï¿½Å°ï¿½ï¿½*/span.COL_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/COL.png") no-repeat center center; background-size:contain;}
+/*Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½*/span.CLE_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/CLE.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì½ï¿½*/span.TB_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TB.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ø»ç½º ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/span.TEX_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TEX.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½*/span.TOR_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/TOR.png") no-repeat center center; background-size:contain;}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾î¸®ï¿½ï¿½*/span.PIT_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/PIT.png") no-repeat center center; background-size:contain;}
+/*ï¿½Ê¶ï¿½ï¿½Ç¾ï¿½ ï¿½Ê¸ï¿½ï¿½ï¿½*/span.PHI_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/PHI.png") no-repeat center center; background-size:contain;}
+/*ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½Ö½ï¿½Æ®ï¿½Î½ï¿½*/span.HOU_L {font-size:0; vertical-align:middle;display:inline-block; width:110px; height:110px; background:url("../image/base/MLB/HOU.png") no-repeat center center; background-size:contain;}

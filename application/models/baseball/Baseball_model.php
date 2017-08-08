@@ -156,11 +156,9 @@
         $this->db->order_by('date', 'desc');
         $result['day']=$this->db->get_where($this_league.'_result', array('away_score!='=>''))->result();
 
-        if($team!='all') $this->db->where('team', $team);
-        $this->db->like('date', '2017-'.$month, 'after');
-        $this->db->order_by('date', 'desc');
-
-        $result['result']=$this->db->get_where($this_league.'_result', array('away_score!='=>''))->result();
+        $query=($team!='all')? 'SELECT * FROM '.$this_league.'_result WHERE away_score!="" AND (away="'.$team.'" OR home="'.$team.'") AND date LIKE "2017-'.$month.'%" ORDER BY date DESC'
+                             : 'SELECT * FROM '.$this_league.'_result WHERE away_score!="" AND date LIKE "2017-'.$month.'%" ORDER BY date DESC';
+        $result['result']=$this->db->query($query)->result();
 
         return $result;
     }
@@ -677,7 +675,6 @@
 
     function get_relative_match_result($away, $home, $over_under_reference_value){
         $total_game_count=0;
-        $game_count=0;
         $away_win_count=0;
         $away_lose_count=0;
         $away_win_lose_arr=array();
@@ -690,15 +687,9 @@
         $result_set=array();
 
         foreach($result as $item):
-            if($game_count<10):
-                if(($item->away==$away && $item->home==$home) || ($item->away==$home && $item->home==$away)):
-                    $game_count++;
-                    array_push($data_set, $item);
-                endif;
-            endif;
-
 //          승률/오버언더/승패
             if($item->away==$away && $item->home==$home):
+                array_push($data_set, $item);
                 $total_game_count++;
                 if($item->away_score > $item->home_score):
                     $away_win_count++;
@@ -717,6 +708,7 @@
                     array_push($over_under_arr,'plus');
                 else: array_push($over_under_arr,'minus'); endif;
             elseif($item->away==$home && $item->home==$away):
+                array_push($data_set, $item);
                 $total_game_count++;
                 if($item->away_score < $item->home_score):
                     $away_win_count++;
@@ -883,14 +875,14 @@
 
     function get_team_month($team){
         $result_set=array();
-        $value=$this->db->query('SELECT DISTINCT month FROM KBO_team_month ORDER BY month DESC LIMIT 1')->row();
-        $max_month=$value->month+1;
+        $max_month=$this->db->query('SELECT DISTINCT month FROM KBO_team_month ORDER BY month DESC LIMIT 1')->row();
+        $min_month=$this->db->query('SELECT DISTINCT month FROM KBO_team_month ORDER BY month ASC LIMIT 1')->row();
 
         if($team=='all'):
             $result=$this->db->get('KBO_team_month')->result();
 
-            for($i=3; $i<$max_month; $i++):
-                $result_arr=array('month'=>$i, 'g'=>0, 'r'=>0, 'hr'=>0, 'h'=>0, 'avg'=>0);
+            for($i=$max_month->month; $i>=$min_month->month; $i--):
+                $result_arr=array('month'=>$i, 'g'=>0, 'r'=>0, 'hr'=>0, 'h'=>0, 'avg'=>0, 'bb'=>0, 'so'=>0, 'whip'=>0);
                 foreach($result as $item):
                     if($item->month==$i):
                         $result_arr['g']+=$item->g/2;
@@ -898,32 +890,16 @@
                         $result_arr['hr']+=$item->hr;
                         $result_arr['h']+=$item->h;
                         $result_arr['avg']+=$item->avg;
+                        $result_arr['bb']+=$item->bb;
+                        $result_arr['so']+=$item->so;
+                        $result_arr['whip']+=$item->whip;
                     endif;
                 endforeach;
                 array_push($result_set, (object)$result_arr);
             endfor;
-            $result_over_under=$this->get_over_under_by_month($team);
-
-            foreach($result_set as $key=>$item):
-                foreach($result_over_under as $items):
-                    if($item->month==$items['month']):
-                        $result_set[$key]->over=$items['over'];
-                        $result_set[$key]->under=$items['under'];
-                    endif;
-                endforeach;
-            endforeach;
         else:
+            $this->db->order_by('month', 'DESC');
             $result_set=$this->db->get_where('KBO_team_month', array('team'=>urldecode($team)))->result();
-            $result_over_under=$this->get_over_under_by_month($team);
-
-            foreach($result_set as $key=>$item):
-                foreach($result_over_under as $items):
-                    if($item->month==$items['month']):
-                        $result_set[$key]->over=$items['over'];
-                        $result_set[$key]->under=$items['under'];
-                    endif;
-                endforeach;
-            endforeach;
         endif;
 
         return $result_set;
@@ -931,10 +907,13 @@
 
     function get_league_result(){
         $this->db->select_sum('g');
-        $this->db->select_avg('r');
-        $this->db->select_avg('hr');
-        $this->db->select_avg('h');
+        $this->db->select_sum('r');
+        $this->db->select_sum('hr');
+        $this->db->select_sum('h');
         $this->db->select_avg('avg');
+        $this->db->select_sum('bb');
+        $this->db->select_sum('so');
+        $this->db->select_avg('whip');
         $result=$this->db->get('KBO_team_month')->row();
 
         $over_under_reference_value=$this->baseball_model->get_over_under('KBO');

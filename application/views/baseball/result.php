@@ -23,7 +23,7 @@
                     <li class="tl001 <?php if($team=='all') echo 'on';?>">
                         <div>
                             <a href="/baseball/result/KBO/all/<?=$month;?>">
-                                <span class="LG_L"></span>
+                                <span class="KBO_L_B"></span>
                                 <p>전체구단</p>
                             </a>
                         </div>
@@ -47,26 +47,29 @@
                         <table class="table_default result_table01">
                             <caption></caption>
                             <colgroup>
-                                <col width="260px"/><col width="73px"/><col width="72px"/><col width="80px"/><col width="85px"/><col width="*"/><col width="133px"/><col width="133px"/>
+                                <col width="*"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/>
                             </colgroup>
                             <tr>
                                 <th class="pl20 left">팀명</th>
                                 <th>경기</th>
+                                <th>타율</th>
                                 <th>득점</th>
-                                <th>홈런</th>
                                 <th>안타</th>
-                                <th class="pr40">타율</th>
-                                <th colspan="2">오버/언더</th>
+                                <th>홈런</th>
+                                <th>볼넷</th>
+                                <th>삼진</th>
+                                <th>WHIP</th>
                             </tr>
                             <tr>
                                 <td class="pl20 left">리그기록(평균기록)</td>
-                                <td><?=number_format($league_result->g/2);?></td>
-                                <td><?=number_format($league_result->r,1);?></td>
-                                <td><?=number_format($league_result->hr,1);?></td>
-                                <td><?=number_format($league_result->h,1);?></td>
-                                <td class="pr40"><?=number_format($league_result->avg,3);?></td>
-                                <td class="left"><span class="orangeBox"><?=$over_under_reference_value;?> O</span><b><?=$league_result->over;?> / <?php $over_percent=number_format($league_result->over/($league_result->g/2)*100); echo $over_percent;?>%</b></td>
-                                <td class="left"><span class="skyBox"><?=$over_under_reference_value;?> U</span><b><?=$league_result->under;?> / <?=100-$over_percent;?>%</b></td>
+                                <td><?=number_format($league_result->g);?></td>
+                                <td><?=number_format($league_result->avg,3);?></td>
+                                <td><?=number_format($league_result->r/$league_result->g,1);?></td>
+                                <td><?=number_format($league_result->h/$league_result->g,1);?></td>
+                                <td><?=number_format($league_result->hr/$league_result->g,1);?></td>
+                                <td><?=number_format($league_result->bb/$league_result->g,1);?></td>
+                                <td><?=number_format($league_result->so/$league_result->g,1);?></td>
+                                <td><?=number_format($league_result->whip,2);?></td>
                             </tr>
                         </table>
                         <div class="relative">
@@ -74,18 +77,19 @@
                                 <table class="table_default result_table01 result_table01_1">
                                     <caption></caption>
                                     <colgroup>
-                                        <col width="175px"/><col width="110px"/><col width="70px"/><col width="77px"/><col width="105px"/><col width="*"/><col width="133px"/><col width="133px"/>
+                                        <col width="*"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/><col width="80px"/>
                                     </colgroup>
                                     <?php foreach($team_month as $item): ?>
                                         <tr>
                                             <td class="pl20"><b><?=$item->month;?>월</b></td>
-                                            <td><span class="grayBox">경기</span><b><?=$item->g;?></b></td>
-                                            <td><span class="DL">득</span><?=number_format($item->r/$item->g, 1);?></td>
-                                            <td><span class="AL">안</span><?=number_format($item->h/$item->g, 1);?></td>
-                                            <td><span class="grayBox">홈런</span><b><?=number_format($item->hr/$item->g, 1);?></b></td>
-                                            <td><span class="grayBox">타율</span><b><?=($team=='all')? number_format($item->avg/10,3) : number_format($item->avg,3);?></b></td>
-                                            <td><span class="orangeBox"><?=($team=='all')?$over_under_reference_value : $over_under_reference[$team];?> O</span><b><?=$item->over;?> / <?php $over_percent=number_format($item->over/$item->g*100); echo $over_percent;?>%</b></td>
-                                            <td><span class="skyBox"><?=($team=='all')?$over_under_reference_value : $over_under_reference[$team];?> U</span><b><?=$item->under;?> / <?=100-$over_percent;?>%</b></td>
+                                            <td><?=$item->g;?></td>
+                                            <td><?=($team=='all')? number_format($item->avg/10,3) : number_format($item->avg,3);?></td>
+                                            <td><?=number_format($item->r/$item->g, 1);?></td>
+                                            <td><?=number_format($item->h/$item->g, 1);?></td>
+                                            <td><?=number_format($item->hr/$item->g, 1);?></td>
+                                            <td><?=number_format($item->bb/$item->g,1);?></td>
+                                            <td><?=number_format($item->so/$item->g,1);?></td>
+                                            <td><?=number_format($item->whip,2);?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </table>
@@ -142,7 +146,38 @@
                             <?php if($result==null): ?>
                                 <tr><td>완료 된 경기가 없습니다.</td></tr>
                             <?php endif; ?>
-                            <?php foreach($result['day'] as $item): ?>
+                            <?php if($team=='all'): ?>
+                                <?php foreach($result['day'] as $item): ?>
+                                    <tr>
+                                        <th>날짜</th>
+                                        <th class="left pl20"><b>매치명</b></th>
+                                        <th>스코어</th>
+                                        <th>승</th>
+                                        <th>패</th>
+                                        <th>B’s</th>
+                                        <th>DATA</th>
+                                    </tr>
+                                    <?php foreach($result['result'] as $items): ?>
+                                        <?php if($items->date==$item->date): ?>
+                                            <tr>
+                                                <td><?php $exp=explode('-', $items->date); echo $exp[1].'.'.$exp[2]?> | <?=$items->time;?></td>
+                                                <td class="left pl20">
+                                                    <a href="javascript:void(0);">
+                                                        <?php if($items->away_score!='' && $items->away_score>$items->home_score): ?><b><?php endif; ?><?=$items->away.'('.$items->away_pitcher.')';?><?php if($items->away_score!='' && $items->away_score>$items->home_score): ?></b><?php endif; ?>
+                                                        vs
+                                                        <?php if($items->away_score!='' && $items->away_score<$items->home_score): ?><b><?php endif; ?><?=$items->home.'('.$items->home_pitcher.')';?><?php if($items->away_score!='' && $items->away_score<$items->home_score): ?></b><?php endif; ?>
+                                                    </a>
+                                                </td>
+                                                <td><b class="score red"><?=$items->away_score;?><span class="colon">:</span><?=$items->home_score;?></b></td>
+                                                <td><span class="graybox">1.93</span></td>
+                                                <td>3.15</td>
+                                                <td>51</td>
+                                                <td><span class="b_BTN5" style="margin-top:9px;"><a href="/baseball/match/KBO/<?=$items->no;?>/0">매치정보</a></span></td>
+                                            </tr>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                <?php endforeach; ?>
+                            <?php else: ?>
                                 <tr>
                                     <th>날짜</th>
                                     <th class="left pl20"><b>매치명</b></th>
@@ -153,25 +188,23 @@
                                     <th>DATA</th>
                                 </tr>
                                 <?php foreach($result['result'] as $items): ?>
-                                    <?php if($items->date==$item->date): ?>
-                                        <tr>
-                                            <td><?php $exp=explode('-', $items->date); echo $exp[1].'.'.$exp[2]?> | <?=$items->time;?></td>
-                                            <td class="left pl20">
-                                                <a href="javascript:void(0);">
-                                                    <?php if($items->away_score!='' && $items->away_score>$items->home_score): ?><b><?php endif; ?><?=$full_name_team[$items->away].'('.$items->away_pitcher.')';?><?php if($items->away_score!='' && $items->away_score>$items->home_score): ?></b><?php endif; ?>
-                                                    vs
-                                                    <?php if($items->away_score!='' && $items->away_score<$items->home_score): ?><b><?php endif; ?><?=$full_name_team[$items->home].'('.$items->home_pitcher.')';?><?php if($items->away_score!='' && $items->away_score<$items->home_score): ?></b><?php endif; ?>
-                                                </a>
-                                            </td>
-                                            <td><b class="score red"><?=$items->away_score;?><span class="colon">:</span><?=$items->home_score;?></b></td>
-                                            <td><span class="graybox">1.93</span></td>
-                                            <td>3.15</td>
-                                            <td>51</td>
-                                            <td><span class="b_BTN5" style="margin-top:9px;"><a href="/baseball/match/KBO/<?=$items->no;?>/0">매치정보</a></span></td>
-                                        </tr>
-                                    <?php endif; ?>
+                                    <tr>
+                                        <td><?php $exp=explode('-', $items->date); echo $exp[1].'.'.$exp[2]?> | <?=$items->time;?></td>
+                                        <td class="left pl20">
+                                            <a href="javascript:void(0);">
+                                                <?php if($items->away_score!='' && $items->away_score>$items->home_score): ?><b><?php endif; ?><?=$items->away.'('.$items->away_pitcher.')';?><?php if($items->away_score!='' && $items->away_score>$items->home_score): ?></b><?php endif; ?>
+                                                vs
+                                                <?php if($items->away_score!='' && $items->away_score<$items->home_score): ?><b><?php endif; ?><?=$items->home.'('.$items->home_pitcher.')';?><?php if($items->away_score!='' && $items->away_score<$items->home_score): ?></b><?php endif; ?>
+                                            </a>
+                                        </td>
+                                        <td><b class="score red"><?=$items->away_score;?><span class="colon">:</span><?=$items->home_score;?></b></td>
+                                        <td><span class="graybox">1.93</span></td>
+                                        <td>3.15</td>
+                                        <td>51</td>
+                                        <td><span class="b_BTN5" style="margin-top:9px;"><a href="/baseball/match/KBO/<?=$items->no;?>/0">매치정보</a></span></td>
+                                    </tr>
                                 <?php endforeach; ?>
-                            <?php endforeach; ?>
+                            <?php endif; ?>
                         </table>
                     </li>
                 </ul>
