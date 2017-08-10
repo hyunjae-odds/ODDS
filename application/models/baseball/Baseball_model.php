@@ -654,17 +654,17 @@
     }
 
     function get_result($table){
-        return ($table=='KBO_result')? $this->db->query('SELECT * FROM KBO_result WHERE away_score!="" AND home_score!="" ORDER BY date DESC')->result()
-                                     : $this->db->query('SELECT * FROM MLB_result WHERE away_score!="" AND home_score!="" AND (away_score!=0 OR home_Score!=0) AND date>='.date('Y-m-d').' ORDER BY date DESC')->result();
+        return ($table=='KBO_result')? $this->db->query('SELECT * FROM KBO_result WHERE away_score!="" AND home_score!="" AND away!="드림" ORDER BY date DESC')->result()
+                                     : $this->db->query('SELECT * FROM MLB_result WHERE away_score!="" AND home_score!="" AND away!="드림" AND (away_score!=0 OR home_Score!=0) AND date>='.date('Y-m-d').' ORDER BY date DESC')->result();
     }
 
     function get_result_by_team($table, $team){
-        return ($table=='KBO_result')? $this->db->query('SELECT * FROM KBO_result WHERE away_score!="" AND home_score!="" AND (away="'.$team.'" OR home="'.$team.'") ORDER BY date DESC')->result()
-                                     : $this->db->query('SELECT * FROM MLB_result WHERE away_score!="" AND home_score!="" AND (away_score!=0 OR home_Score!=0) AND (away="'.$team.'" OR home="'.$team.'") AND date>='.date('Y-m-d').' ORDER BY date DESC')->result();
+        return ($table=='KBO_result')? $this->db->query('SELECT * FROM KBO_result WHERE away_score!="" AND home_score!="" AND away!="드림" AND (away="'.$team.'" OR home="'.$team.'") ORDER BY date DESC')->result()
+                                     : $this->db->query('SELECT * FROM MLB_result WHERE away_score!="" AND home_score!="" AND away!="드림" AND (away_score!=0 OR home_Score!=0) AND (away="'.$team.'" OR home="'.$team.'") AND date>='.date('Y-m-d').' ORDER BY date DESC')->result();
     }
 
     function get_result_one($schedule_no){
-        return $this->db->get_where('KBO_result', array('no'=>$schedule_no))->row();
+        return $this->db->get_where('KBO_result', array('no'=>$schedule_no, 'away!='=>'드림'))->row();
     }
 
     function get_result_date_distinct($league){
@@ -819,6 +819,12 @@
         return $this->db->get_where('KBO_players', array('delete_yn'=>'N', 'year'=>date('Y')))->result();
     }
 
+    function get_player($team, $name){
+        $team_arr=array('SK'=>1,'kt'=>2,'KT'=>2,'삼성'=>3,'NC'=>4,'두산'=>5,'넥센'=>6,'LG'=>7,'한화'=>8,'롯데'=>9,'KIA'=>10);
+        $this->db->select('player_id');
+        return $this->db->get_where('KBO_players', array('team_no'=>$team_arr[$team], 'name'=>$name))->row();
+    }
+
     function get_top_player_in_team($league, $team, $pitcher_or_hitter, $sort){
         if($league=='KBO'): $this_league=$league;
         else:
@@ -951,5 +957,69 @@
     function get_player_name_by_id($player_id){
         $this->db->select('name');
         return $this->db->get_where('KBO_players', array('player_id'=>$player_id))->row();
+    }
+
+    function get_last_crawling_date($table, $column){
+        $this->db->select($column);
+        $this->db->order_by($column, 'desc');
+        return $this->db->get($table)->row()->$column;
+    }
+
+    function get_pitcher_rank($away_id, $home_id){
+        $task_array=array('w','wpct','qs','so','hr','avg','whip');
+        $last_date=$this->get_last_crawling_date('KBO_record_pitcher', 'crawling_date');
+        $record=$this->db->get_where('KBO_record_pitcher', array('crawling_date'=>$last_date))->result();
+
+        foreach($record as $item):
+            if($item->player_id==$away_id) $away=array('w'=>$item->w,'wpct'=>$item->wpct,'qs'=>$item->qs,'so'=>$item->so,'hr'=>$item->hr,'avg'=>$item->avg,'whip'=>$item->whip,'req'=>$item->req_yn);
+            if($item->player_id==$home_id) $home=array('w'=>$item->w,'wpct'=>$item->wpct,'qs'=>$item->qs,'so'=>$item->so,'hr'=>$item->hr,'avg'=>$item->avg,'whip'=>$item->whip,'req'=>$item->req_yn);
+        endforeach;
+
+        $result=array();
+        foreach($task_array as $item):
+            $this->db->select('player_id, req_yn, '.$item);
+            $this->db->where('crawling_date', $last_date);
+            if($item=='avg' || $item=='whip') $this->db->where('req_yn', 'Y');
+            $this->db->order_by($item, 'desc');
+            $data=$this->db->get('KBO_record_pitcher')->result();
+
+            $away_rank=1; $home_rank=1;
+            if($item=='whip'):
+                if($away['req']=='Y' || $home['req']=='Y'):
+                    foreach($data as $items):
+                        if($items->req_yn=='Y') if($items->$item < $away[$item]) $away_rank++;
+                        if($items->req_yn=='Y') if($items->$item < $home[$item]) $home_rank++;
+                    endforeach;
+                endif;
+                if($away['req']=='N'): $away_rank=''; endif;
+                if($home['req']=='N'): $home_rank=''; endif;
+            elseif($item=='avg'):
+                if($away['req']=='Y' || $home['req']=='Y'):
+                    foreach($data as $items):
+                        if($items->req_yn=='Y') if($items->$item > $away[$item]) $away_rank++;
+                        if($items->req_yn=='Y') if($items->$item > $home[$item]) $home_rank++;
+                    endforeach;
+                endif;
+                if($away['req']=='N'): $away_rank=''; endif;
+                if($home['req']=='N'): $home_rank=''; endif;
+            elseif($item=='wpct'):
+                foreach($data as $items):
+                    if($items->req_yn=='Y') if($items->$item > $away[$item]) $away_rank++;
+                    if($items->req_yn=='Y') if($items->$item > $home[$item]) $home_rank++;
+                endforeach;
+            else:
+
+                foreach($data as $items):
+                    if($items->$item > $away[$item]): $away_rank++; endif;
+                    if($items->$item > $home[$item]): $home_rank++; endif;
+                endforeach;
+            endif;
+
+            $result['g']=count($data);
+            $result['away_'.$item]=$away_rank;
+            $result['home_'.$item]=$home_rank;
+        endforeach;
+
+        return $result;
     }
 }

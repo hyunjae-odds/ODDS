@@ -14804,3 +14804,124 @@ DEBUG - 2017-08-08 09:00:31 --> Global POST, GET and COOKIE data sanitized
 INFO - 2017-08-08 09:00:31 --> Input Class Initialized
 INFO - 2017-08-08 09:00:31 --> Language Class Initialized
 ERROR - 2017-08-08 09:00:31 --> 404 Page Not Found: Odds/font
+INFO - 2017-08-08 23:59:25 --> Config Class Initialized
+INFO - 2017-08-08 23:59:25 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:25 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:25 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:25 --> URI Class Initialized
+DEBUG - 2017-08-08 23:59:25 --> No URI present. Default controller set.
+INFO - 2017-08-08 23:59:25 --> Router Class Initialized
+INFO - 2017-08-08 23:59:25 --> Output Class Initialized
+INFO - 2017-08-08 23:59:25 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:25 --> Input Class Initialized
+INFO - 2017-08-08 23:59:25 --> Language Class Initialized
+INFO - 2017-08-08 23:59:25 --> Loader Class Initialized
+INFO - 2017-08-08 23:59:25 --> Database Driver Class Initialized
+INFO - 2017-08-08 23:59:25 --> Session: Class initialized using 'database' driver.
+INFO - 2017-08-08 23:59:25 --> Controller Class Initialized
+INFO - 2017-08-08 23:59:25 --> Helper loaded: url_helper
+DEBUG - 2017-08-08 23:59:25 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-08-08 23:59:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/head_up.php
+INFO - 2017-08-08 23:59:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/head_main.php
+INFO - 2017-08-08 23:59:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/main.php
+INFO - 2017-08-08 23:59:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/footer.php
+INFO - 2017-08-08 23:59:25 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views/footer_down.php
+INFO - 2017-08-08 23:59:25 --> Final output sent to browser
+DEBUG - 2017-08-08 23:59:25 --> Total execution time: 0.0992
+INFO - 2017-08-08 23:59:26 --> Config Class Initialized
+INFO - 2017-08-08 23:59:26 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:26 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:26 --> URI Class Initialized
+INFO - 2017-08-08 23:59:26 --> Router Class Initialized
+INFO - 2017-08-08 23:59:26 --> Output Class Initialized
+INFO - 2017-08-08 23:59:26 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:26 --> Input Class Initialized
+INFO - 2017-08-08 23:59:26 --> Language Class Initialized
+ERROR - 2017-08-08 23:59:26 --> 404 Page Not Found: Odds/font
+INFO - 2017-08-08 23:59:26 --> Config Class Initialized
+INFO - 2017-08-08 23:59:26 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:26 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:26 --> URI Class Initialized
+INFO - 2017-08-08 23:59:26 --> Router Class Initialized
+INFO - 2017-08-08 23:59:26 --> Output Class Initialized
+INFO - 2017-08-08 23:59:26 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:26 --> Input Class Initialized
+INFO - 2017-08-08 23:59:26 --> Language Class Initialized
+ERROR - 2017-08-08 23:59:26 --> 404 Page Not Found: Public/lib
+INFO - 2017-08-08 23:59:26 --> Config Class Initialized
+INFO - 2017-08-08 23:59:26 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:26 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:26 --> URI Class Initialized
+INFO - 2017-08-08 23:59:26 --> Router Class Initialized
+INFO - 2017-08-08 23:59:26 --> Output Class Initialized
+INFO - 2017-08-08 23:59:26 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:26 --> Input Class Initialized
+INFO - 2017-08-08 23:59:26 --> Language Class Initialized
+ERROR - 2017-08-08 23:59:26 --> 404 Page Not Found: Public/lib
+INFO - 2017-08-08 23:59:26 --> Config Class Initialized
+INFO - 2017-08-08 23:59:26 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:26 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:26 --> URI Class Initialized
+INFO - 2017-08-08 23:59:26 --> Router Class Initialized
+INFO - 2017-08-08 23:59:26 --> Output Class Initialized
+INFO - 2017-08-08 23:59:26 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:26 --> Input Class Initialized
+INFO - 2017-08-08 23:59:26 --> Language Class Initialized
+ERROR - 2017-08-08 23:59:26 --> 404 Page Not Found: Odds/font
+INFO - 2017-08-08 23:59:44 --> Config Class Initialized
+INFO - 2017-08-08 23:59:44 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:44 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:44 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:44 --> URI Class Initialized
+INFO - 2017-08-08 23:59:44 --> Router Class Initialized
+INFO - 2017-08-08 23:59:44 --> Output Class Initialized
+INFO - 2017-08-08 23:59:44 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:44 --> Input Class Initialized
+INFO - 2017-08-08 23:59:44 --> Language Class Initialized
+INFO - 2017-08-08 23:59:44 --> Loader Class Initialized
+INFO - 2017-08-08 23:59:44 --> Database Driver Class Initialized
+INFO - 2017-08-08 23:59:44 --> Session: Class initialized using 'database' driver.
+INFO - 2017-08-08 23:59:44 --> Controller Class Initialized
+INFO - 2017-08-08 23:59:44 --> Helper loaded: url_helper
+DEBUG - 2017-08-08 23:59:44 --> Session class already loaded. Second attempt ignored.
+INFO - 2017-08-08 23:59:44 --> Model Class Initialized
+INFO - 2017-08-08 23:59:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head_up.php
+INFO - 2017-08-08 23:59:44 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//head.php
+INFO - 2017-08-08 23:59:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//baseball/league.php
+INFO - 2017-08-08 23:59:45 --> File loaded: /Users/hyunjae/Sites/ODDS/application/views//footer.php
+INFO - 2017-08-08 23:59:45 --> Final output sent to browser
+DEBUG - 2017-08-08 23:59:45 --> Total execution time: 0.4901
+INFO - 2017-08-08 23:59:45 --> Config Class Initialized
+INFO - 2017-08-08 23:59:45 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:45 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:45 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:45 --> URI Class Initialized
+INFO - 2017-08-08 23:59:45 --> Router Class Initialized
+INFO - 2017-08-08 23:59:45 --> Output Class Initialized
+INFO - 2017-08-08 23:59:45 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:45 --> Input Class Initialized
+INFO - 2017-08-08 23:59:45 --> Language Class Initialized
+ERROR - 2017-08-08 23:59:45 --> 404 Page Not Found: Odds/font
+INFO - 2017-08-08 23:59:45 --> Config Class Initialized
+INFO - 2017-08-08 23:59:45 --> Hooks Class Initialized
+DEBUG - 2017-08-08 23:59:45 --> UTF-8 Support Enabled
+INFO - 2017-08-08 23:59:45 --> Utf8 Class Initialized
+INFO - 2017-08-08 23:59:45 --> URI Class Initialized
+INFO - 2017-08-08 23:59:45 --> Router Class Initialized
+INFO - 2017-08-08 23:59:45 --> Output Class Initialized
+INFO - 2017-08-08 23:59:45 --> Security Class Initialized
+DEBUG - 2017-08-08 23:59:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-08-08 23:59:45 --> Input Class Initialized
+INFO - 2017-08-08 23:59:45 --> Language Class Initialized
+ERROR - 2017-08-08 23:59:45 --> 404 Page Not Found: Odds/font

@@ -66,7 +66,7 @@
                                             <td><span class="">1.93</span></td>
                                             <td>3.15</td>
                                             <td>51</td>
-                                            <td><span class="b_BTN5" style="margin-top: 9px;"><a href="javascript:location.replace('/baseball/match/<?=$league;?>/<?=$item->no;?>/0')">매치정보</a></span></td>
+                                            <td><span class="b_BTN5" style="margin-top: 9px;"><a href="javascript:location.replace('/baseball/match_team/<?=$league;?>/<?=$item->no;?>/0')">매치정보</a></span></td>
                                         </tr>
                                     <?php endif; endforeach; ?>
                                 </table>
@@ -135,7 +135,7 @@
                                                         <td><?=number_format($entry->win_rate,3);?></td>
                                                         <td><?=$entry->game_car;?></td>
                                                         <?php $win=0; $lose=0; $word=''; ?><?php $exp=explode(';', $entry->recent_game); ?>
-                                                        <td><?php foreach($exp as $key=>$item): ?><?php if($item=='승'): $word='win'; $win++; elseif($item=='무'): $word='dra'; else: $word='lose'; $lose++; ?><?php endif; ?><a class="result_btn" href="match.php" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$word;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
+                                                        <td><?php foreach($exp as $key=>$item): ?><?php if($item=='승'): $word='win'; $win++; elseif($item=='무'): $word='dra'; else: $word='lose'; $lose++; ?><?php endif; ?><a class="result_btn" href="/baseball/match_team/<?=$league;?>/<?=$entry->no;?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$word;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
                                                         <td><?=$win;?>/<?=$lose;?></td>
                                                     </tr>
                                                 <?php endforeach; ?>

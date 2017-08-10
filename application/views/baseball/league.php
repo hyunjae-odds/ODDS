@@ -61,7 +61,7 @@
                                             <td><span class="">1.93</span></td>
                                             <td>3.15</td>
                                             <td>51</td>
-                                            <td><span class="b_BTN5" style="margin-top: 9px;"><a href="javascript:location.replace('/baseball/match/KBO/<?=$item->no;?>/0')">매치정보</a></span></td>
+                                            <td><span class="b_BTN5" style="margin-top: 9px;"><a href="javascript:location.replace('/baseball/match_team/KBO/<?=$item->no;?>/0')">매치정보</a></span></td>
                                         </tr>
                                     <?php endif; endforeach; ?>
                                 </table>
@@ -126,7 +126,7 @@
                                             <td><?=number_format(($entry->plus+$entry->minus)/$entry->g, 1);?></td>
                                             <td><?=number_format($entry->win_rate,3);?></td>
                                             <td><?=($entry->game_car==0)? '-' : $entry->game_car;?></td>
-                                            <td><?php foreach($entry->recent_game as $key=>$item): ?><a class="result_btn" href="/baseball/match/KBO/<?=$entry->recent_detail[9-$key]['no'];?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$item;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
+                                            <td><?php foreach($entry->recent_game as $key=>$item): ?><a class="result_btn" href="/baseball/match_team/KBO/<?=$entry->recent_detail[9-$key]['no'];?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$item;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
                                             <td><?=$entry->recent_win;?>/<?=$entry->recent_lose;?></td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -174,7 +174,7 @@
                                             <td><?=$entry->minus;?></td>
                                             <td><?php if($entry->margin>0) echo '+';?><?=$entry->margin;?></td>
                                             <td><?=number_format($entry->win_rate,3);?></td>
-                                            <td><?php foreach($entry->recent_game as $key=>$item): ?><a class="result_btn" href="/baseball/match/KBO/<?=$entry->recent_detail[9-$key]['no'];?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$item;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
+                                            <td><?php foreach($entry->recent_game as $key=>$item): ?><a class="result_btn" href="/baseball/match_team/KBO/<?=$entry->recent_detail[9-$key]['no'];?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$item;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
                                             <td><?=$entry->recent_win;?>/<?=$entry->recent_lose;?></td>
                                         </tr>
                                     <?php endforeach; ?>

@@ -19,7 +19,6 @@ function get_team_initial($team_name){
 }
 ?>
 
-
 <link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css" />
 <div class="livescore game">
     <div class="topTitle">
@@ -140,15 +139,7 @@ function get_team_initial($team_name){
                                 <td><?=$item->tie;?></td>
                                 <td><?=$plus_minus[$team];?>:<?=$plus_minus[$team.'_lose'];?></td>
                                 <td><?php if($plus_minus[$team]-$plus_minus[$team.'_lose']>0): echo '+'; endif;?><?=$plus_minus[$team]-$plus_minus[$team.'_lose'];?></td>
-                                <td>
-                                    <?php $exp=explode(';', $item->recent_game);
-                                    foreach($exp as $key=>$value) :
-                                        if($value=='승'): echo '<a href="/baseball/match/'.$league.'/'.$item->recent_detail[9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_win.png" alt="" title="'.$item->recent_detail[9-$key]['away'].' '.$item->recent_detail[9-$key]['away_score'].':'.$item->recent_detail[9-$key]['home_score'].' '.$item->recent_detail[9-$key]['home'].'"/></a>';
-                                        elseif($value=='패'): echo '<a href="/baseball/match/'.$league.'/'.$item->recent_detail[9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_lose.png" alt="" title="'.$item->recent_detail[9-$key]['away'].' '.$item->recent_detail[9-$key]['away_score'].':'.$item->recent_detail[9-$key]['home_score'].' '.$item->recent_detail[9-$key]['home'].'"/></a>';
-                                        else: echo '<a href="/baseball/match/'.$league.'/'.$item->recent_detail[9-$key]["no"].'/0" class="result_btn"><img src="/public/lib/image/base/btn_dra.png" alt="" title="'.$item->recent_detail[9-$key]['away'].' '.$item->recent_detail[9-$key]['away_score'].':'.$item->recent_detail[9-$key]['home_score'].' '.$item->recent_detail[9-$key]['home'].'"/></a>';
-                                        endif;
-                                    endforeach; ?>
-                                </td>
+                                <td><?php foreach($item->recent_game as $key=>$items) : ?><a href="/baseball/match_team/<?=$league;?>/<?=$item->recent_detail[9-$key]["no"];?>/0" class="result_btn"><img src="/public/lib/image/base/btn_<?=$items;?>.png" alt="" title="<?=$item->recent_detail[9-$key]['away'].' '.$item->recent_detail[9-$key]['away_score'].':'.$item->recent_detail[9-$key]['home_score'].' '.$item->recent_detail[9-$key]['home'];?>"/></a><?php endforeach; ?></td>
                             </tr>
                         <?php endif; endforeach; ?>
                     </table>
@@ -171,32 +162,32 @@ function get_team_initial($team_name){
                         </tr>
                         <tr>
                             <td>타율</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->avg;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['avg'] : $get_rank_per[$team_detail_record['offense']['avg']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->avg;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['avg'].'0' : $get_rank_per[$team_detail_record['offense']['avg']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['avg'];?>위</td>
                         </tr>
                         <tr>
                             <td>득점</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->r;?>점</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['r'] : $get_rank_per[$team_detail_record['offense']['r']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->r;?>점</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['r'].'0' : $get_rank_per[$team_detail_record['offense']['r']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['r'];?>위</td>
                         </tr>
                         <tr>
                             <td>안타</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->h;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['h'] : $get_rank_per[$team_detail_record['offense']['h']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->h;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['h'].'0' : $get_rank_per[$team_detail_record['offense']['h']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['h'];?>위</td>
                         </tr>
                         <tr>
                             <td>홈런</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->hr;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['hr'] : $get_rank_per[$team_detail_record['offense']['hr']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->hr;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['hr'].'0' : $get_rank_per[$team_detail_record['offense']['hr']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['hr'];?>위</td>
                         </tr>
                         <tr>
                             <td>장타율</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->slg;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['slg'] : $get_rank_per[$team_detail_record['offense']['slg']];?>%"></span></p></td>
+                            <td><span class="graph"><?=number_format($team_detail_record['offense_data']->slg, 3);?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['slg'].'0' : $get_rank_per[$team_detail_record['offense']['slg']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['slg'];?>위</td>
                         </tr>
                         <tr>
                             <td>출루율</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->obp;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['obp'] : $get_rank_per[$team_detail_record['offense']['obp']];?>%"></span></p></td>
+                            <td><span class="graph"><?=number_format($team_detail_record['offense_data']->obp, 3);?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['obp'].'0' : $get_rank_per[$team_detail_record['offense']['obp']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['obp'];?>위</td>
                         </tr>
                         <tr>
@@ -206,17 +197,17 @@ function get_team_initial($team_name){
                         </tr>
                         <tr>
                             <td>볼넷</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->bb;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['bb'] : $get_rank_per[$team_detail_record['offense']['bb']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->bb;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['bb'].'0' : $get_rank_per[$team_detail_record['offense']['bb']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['bb'];?>위</td>
                         </tr>
                         <tr>
                             <td>삼진</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->so;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['so'] : $get_rank_per[$team_detail_record['offense']['so']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->so;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['so'].'0' : $get_rank_per[$team_detail_record['offense']['so']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['so'];?>위</td>
                         </tr>
                         <tr>
                             <td>병살타</td>
-                            <td><span class="graph"><?=$team_detail_record['offense_data']->gdp;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['gdp'] : $get_rank_per[$team_detail_record['offense']['gdp']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['offense_data']->gdp;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['offense']['gdp'].'0' : $get_rank_per[$team_detail_record['offense']['gdp']];?>%"></span></p></td>
                             <td><?=$team_detail_record['offense']['gdp'];?>위</td>
                         </tr>
                     </table>
@@ -238,27 +229,27 @@ function get_team_initial($team_name){
                         </tr>
                         <tr>
                             <td>방어율</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->era;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['era'] : $get_rank_per[$team_detail_record['defence']['era']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->era;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['era'].'0' : $get_rank_per[$team_detail_record['defence']['era']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['era'];?>위</td>
                         </tr>
                         <tr>
                             <td>실점</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->r;?>점</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['r'] : $get_rank_per[$team_detail_record['defence']['r']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->r;?>점</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['r'].'0' : $get_rank_per[$team_detail_record['defence']['r']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['r'];?>위</td>
                         </tr>
                         <tr>
                             <td>피안타</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->h;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['h'] : $get_rank_per[$team_detail_record['defence']['h']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->h;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['h'].'0' : $get_rank_per[$team_detail_record['defence']['h']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['h'];?>위</td>
                         </tr>
                         <tr>
                             <td>피안타율</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->avg;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['avg'] : $get_rank_per[$team_detail_record['defence']['avg']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->avg;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['avg'].'0' : $get_rank_per[$team_detail_record['defence']['avg']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['avg'];?>위</td>
                         </tr>
                         <tr>
                             <td>피홈런</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->hr;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['hr'] : $get_rank_per[$team_detail_record['defence']['hr']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->hr;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['hr'].'0' : $get_rank_per[$team_detail_record['defence']['hr']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['hr'];?>위</td>
                         </tr>
                         <tr>
@@ -268,22 +259,22 @@ function get_team_initial($team_name){
                         </tr>
                         <tr>
                             <td>볼넷</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->bb;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['bb'] : $get_rank_per[$team_detail_record['defence']['bb']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->bb;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['bb'].'0' : $get_rank_per[$team_detail_record['defence']['bb']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['bb'];?>위</td>
                         </tr>
                         <tr>
                             <td>삼진</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->so;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['so'] : $get_rank_per[$team_detail_record['defence']['so']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->so;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['so'].'0' : $get_rank_per[$team_detail_record['defence']['so']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['so'];?>위</td>
                         </tr>
                         <tr>
                             <td>실책</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->er;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['er'] : $get_rank_per[$team_detail_record['defence']['er']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->er;?>개</span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['er'].'0' : $get_rank_per[$team_detail_record['defence']['er']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['er'];?>위</td>
                         </tr>
                         <tr>
                             <td>WHIP</td>
-                            <td><span class="graph"><?=$team_detail_record['defence_data']->whip;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['whip'] : $get_rank_per[$team_detail_record['defence']['whip']];?>%"></span></p></td>
+                            <td><span class="graph"><?=$team_detail_record['defence_data']->whip;?></span><p class="graph"><span style="width:<?=($league=='KBO')? 11-$team_detail_record['defence']['whip'].'0' : $get_rank_per[$team_detail_record['defence']['whip']];?>%"></span></p></td>
                             <td><?=$team_detail_record['defence']['whip'];?>위</td>
                         </tr>
                     </table>
