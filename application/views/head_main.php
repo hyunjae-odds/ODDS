@@ -1,4 +1,3 @@
-<link href="/public/lib/css/main.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
     //bxSlider_slider _ 메인
     $(document).ready(function(){
@@ -43,6 +42,7 @@
     });
 </script>
 
+<link href="/public/lib/css/main.css" rel="stylesheet" type="text/css" />
  <body>
 	<div id="wrapper">
 		<div class="topmenu_w">
@@ -52,20 +52,20 @@
 				</div>
 				<div class="gnb_w">
 					<div class="gnb">
-						<div class="gnbMenu">
-							<ul>
-								<li><a href="/odds/game/main/game_main.php">경기정보</a><span></span></li>
-								<li class=""><a href="/odds/livescore/livescore_soccer.php">라이브 스코어</a><span></span></li>
-								<li><a href="/odds/expert/expert.php">전문가존</a><span></span></li>
-								<li><a href="/odds/batting/main.php">배팅경연</a><span></span></li>
-								<li><a href="">서바이벌게임</a><span></span></li>
-								<li><a href="">커넥트뉴스</a><span></span></li>
-								<li><a href="">커뮤니티</a><span></span></li>
-							</ul>
-						</div>
+                        <div class="gnbMenu">
+                            <ul>
+                                <li><a href="/odds/main">ODDS</a><span></span></li>
+                                <li><a href="/livescore/baseball">라이브 스코어</a><span></span></li>
+                                <li><a href="javascript:void(0);">재야의분석</a><span></span></li>
+                                <li><a href="javascript:void(0);">배팅경연</a><span></span></li>
+                                <li><a href="javascript:void(0);">서바이벌게임</a><span></span></li>
+                                <li><a href="javascript:void(0);">커넥트뉴스</a><span></span></li>
+                                <li><a href="javascript:void(0);">커뮤니티</a><span></span></li>
+                            </ul>
+                        </div>
 						<div class="login">
 							<a href="">Log in</a><!-- 클릭시 .loginWrap 오픈 -->
-							<div class="loginWrap"> 
+							<div class="loginWrap">
 								<div class="bg_b"></div>
 								<div class="loginBox">
 									<div class="logbox01" style="display:block;"><!-- 기본 로그인 -->
@@ -111,7 +111,7 @@
 												<input type="radio" name="cho" id="c1"/>
 												<label for="c1">이메일</label>
 												<input type="radio" name="cho" id="c2"/>
-												<label for="c2">휴대폰</label>										
+												<label for="c2">휴대폰</label>
 											</p>
 											<ul class="input_textbox">
 												<li><input class="" onfocus="this.value=''; return true" value="이름" type="text" /></li>
@@ -241,10 +241,10 @@
 								<h3>Realmadrid<br /><span>VS</span>FC Barcelona</h3>
 								<p class="b02">2016.07.22&nbsp;&nbsp;&nbsp;18:35</p>
 								<p class="b03">Santiago Bernabéu Stadium</p>
-								<div class="bg_graph">		
+								<div class="bg_graph">
 									<span class="graph_g">
 										<span class="bar_g" style="width:35.0%;"><span class="percent">35%</span>
-										</span>    
+										</span>
 										<span class="percent">65%</span>
 									</span>
 								</div>
@@ -260,10 +260,10 @@
 								<h3>LG Twins<br /><span>VS</span>NC Dinos</h3>
 								<p class="b02">2016.07.22&nbsp;&nbsp;&nbsp;18:35</p>
 								<p class="b03">Santiago Bernabéu Stadium</p>
-								<div class="bg_graph">		
+								<div class="bg_graph">
 									<span class="graph_g">
 										<span class="bar_g" style="width:35.0%;"><span class="percent">35%</span>
-										</span>    
+										</span>
 										<span class="percent">65%</span>
 									</span>
 								</div>
@@ -279,10 +279,10 @@
 								<h3>Realmadrid<br /><span>VS</span>FC Barcelona</h3>
 								<p class="b02">2016.07.22&nbsp;&nbsp;&nbsp;18:35</p>
 								<p class="b03">Santiago Bernabéu Stadium</p>
-								<div class="bg_graph">		
+								<div class="bg_graph">
 									<span class="graph_g">
 										<span class="bar_g" style="width:35.0%;"><span class="percent">35%</span>
-										</span>    
+										</span>
 										<span class="percent">65%</span>
 									</span>
 								</div>
@@ -298,10 +298,10 @@
 								<h3>LG Twins<br /><span>VS</span>NC Dinos</h3>
 								<p class="b02">2016.07.22&nbsp;&nbsp;&nbsp;18:35</p>
 								<p class="b03">Santiago Bernabéu Stadium</p>
-								<div class="bg_graph">		
+								<div class="bg_graph">
 									<span class="graph_g">
 										<span class="bar_g" style="width:35.0%;"><span class="percent">35%</span>
-										</span>    
+										</span>
 										<span class="percent">65%</span>
 									</span>
 								</div>
@@ -317,10 +317,10 @@
 								<h3>Realmadrid<br /><span>VS</span>FC Barcelona</h3>
 								<p class="b02">2016.07.22&nbsp;&nbsp;&nbsp;18:35</p>
 								<p class="b03">Santiago Bernabéu Stadium</p>
-								<div class="bg_graph">		
+								<div class="bg_graph">
 									<span class="graph_g">
 										<span class="bar_g" style="width:35.0%;"><span class="percent">35%</span>
-										</span>    
+										</span>
 										<span class="percent">65%</span>
 									</span>
 								</div>

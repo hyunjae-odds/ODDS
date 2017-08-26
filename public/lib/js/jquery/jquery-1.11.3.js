@@ -5478,7 +5478,7 @@ function fixCloneNodeIssues( src, dest ) {
 
 		// This path appears unavoidable for IE9. When cloning an object
 		// element in IE9, the outerHTML strategy above is not sufficient.
-		// If the src2 has innerHTML and the destination does not,
+		// If the src has innerHTML and the destination does not,
 		// copy the src2.innerHTML into the dest.innerHTML. #10324
 		if ( support.html5Clone && ( src.innerHTML && !jQuery.trim(dest.innerHTML) ) ) {
 			dest.innerHTML = src.innerHTML;

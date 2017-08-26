@@ -61,8 +61,9 @@
                                 <th>WHIP</th>
                             </tr>
                             <tr>
-                                <td class="pl20 left">리그기록(평균기록)</td>
-                                <td><?=number_format($league_result->g);?></td>
+                                <?php if($team=='all'): ?><td class="pl20 left">리그기록(평균기록)</td>
+                                <?php else: ?><td class="pl20 left"><span class="<?=$team_initial[$team];?>_L"></span><b><?=$full_name_team[$team];?></b> (평균수치)</td><?php endif; ?>
+                                <td><?=number_format($league_result->g/2);?></td>
                                 <td><?=number_format($league_result->avg,3);?></td>
                                 <td><?=number_format($league_result->r/$league_result->g,1);?></td>
                                 <td><?=number_format($league_result->h/$league_result->g,1);?></td>
@@ -102,7 +103,7 @@
                         <div class="relative">
                             <h3 class="noBorder center" style="margin-top:60px;">2017시즌 <?php if($team!='all') echo $full_name_team[$team];?> 경기결과</h3>
                             <div class="date" style="display:inline-block;position:absolute;top:5px;margin:0;">
-                                <a href="/baseball/result/KBO/<?=$team;?>/0<?php if($month>3) echo $month-1; else echo '3';?>" class="btn_prev" title="이전달">이전달</a>
+                                <a href="javascript:location.replace('/baseball/result/KBO/<?=$team;?>/0<?php if($month>3) echo $month-1; else echo '3';?>?scroll_top='+document.body.scrollTop)" class="btn_prev" title="이전달">이전달</a>
                                 <a href="" class="date_yr date_num">2017</a>
                                 <ul class="date_yr_select date_ul">
                                     <li><a href="">2008</a></li>
@@ -128,7 +129,7 @@
                                     <li><a href="">09</a></li>
                                     <li><a href="">10</a></li>
                                 </ul>
-                                <a href="/baseball/result/KBO/<?=$team;?>/0<?php if($month<date('n')) echo $month+1; else echo date('n');?>" class="btn_next" title="다음달">다음달</a>
+                                <a href="javascript:location.replace('/baseball/result/KBO/<?=$team;?>/0<?php if($month<date('n')) echo $month+1; else echo date('n');?>?scroll_top='+document.body.scrollTop)" class="btn_next" title="다음달">다음달</a>
                                 <div class="clear"></div>
                             </div>
                         </div>
@@ -143,13 +144,11 @@
                                 <col width="55px"/>
                                 <col width="65px"/>
                             </colgroup>
-                            <?php if($result==null): ?>
-                                <tr><td>완료 된 경기가 없습니다.</td></tr>
-                            <?php endif; ?>
-                            <?php if($team=='all'): ?>
+                            <?php if($team=='all'):?>
                                 <?php foreach($result['day'] as $item): ?>
+                                    <?php $exp=explode('-', $item->date);?>
                                     <tr>
-                                        <th>날짜</th>
+                                        <th><?=$exp[1].'/'.$exp[2];?></th>
                                         <th class="left pl20"><b>매치명</b></th>
                                         <th>스코어</th>
                                         <th>승</th>
@@ -160,9 +159,9 @@
                                     <?php foreach($result['result'] as $items): ?>
                                         <?php if($items->date==$item->date): ?>
                                             <tr>
-                                                <td><?php $exp=explode('-', $items->date); echo $exp[1].'.'.$exp[2]?> | <?=$items->time;?></td>
+                                                <td><?=$items->time;?></td>
                                                 <td class="left pl20">
-                                                    <a href="javascript:void(0);">
+                                                    <a href="/baseball/bet/">
                                                         <?php if($items->away_score!='' && $items->away_score>$items->home_score): ?><b><?php endif; ?><?=$items->away.'('.$items->away_pitcher.')';?><?php if($items->away_score!='' && $items->away_score>$items->home_score): ?></b><?php endif; ?>
                                                         vs
                                                         <?php if($items->away_score!='' && $items->away_score<$items->home_score): ?><b><?php endif; ?><?=$items->home.'('.$items->home_pitcher.')';?><?php if($items->away_score!='' && $items->away_score<$items->home_score): ?></b><?php endif; ?>
@@ -177,6 +176,7 @@
                                         <?php endif; ?>
                                     <?php endforeach; ?>
                                 <?php endforeach; ?>
+                            <?php elseif($result==null): ?><tr><td>완료 된 경기가 없습니다.</td></tr>
                             <?php else: ?>
                                 <tr>
                                     <th>날짜</th>
@@ -215,6 +215,8 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
+        document.body.scrollTop=<?=$scroll_top;?>;
+
         //date
         $(".date_num").click(function(){
             var state = $(this).next().css('display');

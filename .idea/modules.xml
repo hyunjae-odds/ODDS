@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BLOG/.idea/BLOG.iml" filepath="$PROJECT_DIR$/../BLOG/.idea/BLOG.iml" />
       <module fileurl="file://$PROJECT_DIR$/../MINING/.idea/MINING.iml" filepath="$PROJECT_DIR$/../MINING/.idea/MINING.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ODDS.iml" filepath="$PROJECT_DIR$/.idea/ODDS.iml" />
       <module fileurl="file://$PROJECT_DIR$/../RATCHET/.idea/RATCHET.iml" filepath="$PROJECT_DIR$/../RATCHET/.idea/RATCHET.iml" />

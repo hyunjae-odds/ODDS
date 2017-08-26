@@ -1,4 +1,6 @@
-﻿<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
+﻿<?php $MLB_team_kor=array('Chicago Cubs'=>'시카고C','St. Louis Cardinals'=>'세인트루이스','Kansas City Royals'=>'캔자스시티','Colorado Rockies'=>'콜로라도','Minnesota Twins'=>'미네소타','Cleveland Indians'=>'클리브랜드','Tampa Bay Rays'=>'템파베이','Miami Marlins'=>'마이애미','Los Angeles Angels'=>'LAA','San Francisco Giants'=>'샌프란시스코','Philadelphia Phillies'=>'필라델피아','Boston Red Sox'=>'보스톤','New York Yankees'=>'뉴욕Y','Washington Nationals'=>'워싱턴','Texas Rangers'=>'텍사스','Milwaukee Brewers'=>'밀워키','Chicago White Sox'=>'시카고W','Los Angeles Dodgers'=>'LAD','New York Mets'=>'뉴욕M','Pittsburgh Pirates'=>'피츠버그','Arizona Diamondbacks'=>'에리조나','Oakland Athletics'=>'오클랜드','San Diego Padres'=>'샌디에이','Seattle Mariners'=>'시애틀','Houston Astros'=>'휴스턴','Baltimore Orioles'=>'볼티모어','Atlanta Braves'=>'애틀랜타','Detroit Tigers'=>'디트로이','Cincinnati Reds'=>'신시내티','Toronto Blue Jays'=>'토론토','American League'=>'아메리칸 리그','National League'=>'네셔날 리그'); ?>
+
+<link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
 <div class="livescore game">
     <div class="topTitle">
         <p>
@@ -14,25 +16,29 @@
             <li class="on"><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">선수 기록</a></li>
             <li><a href="/baseball/score/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">상대 전적</a></li>
         </ul>
-        <ul class="tab_view01 gameMain_view">
+        <ul class="tab_view01 gameMain_view <?=($league!='KBO')? 'record_MLB':'';?>">
             <li class="s5 active">
-                <div class="date">
-                    <a href="" class="btn_prev" title="이전시즌">이전시즌</a>
-                    <a href="" class="date_yr date_num">2017<span class="date_t">시즌</span></a>
-                    <ul class="date_yr_select date_ul" style="display:none;">
-<!--                        <li><a href="">2013</a></li>-->
-<!--                        <li><a href="">2014</a></li>-->
-<!--                        <li><a href="">2015</a></li>-->
-                        <li><a href="">2017</a></li>
-                    </ul>
-<!--                <input value="이동" type="submit" class="btn_nv_mn">-->
-                    <a href="" class="btn_next" title="다음시즌">다음시즌</a>
-                </div>
                 <div class="relative">
-                    <ul class="blackTab r_tit" style="top:-33px;">
-                        <li class="on ls01_tab_1"><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">투수</a></li>
-                        <li class="ls01_tab_2"><a href="/baseball/player_record_hitter/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">타자</a></li>
-                    </ul>
+                    <?php if($league=='KBO'): ?>
+                        <div class="select " style="left:140px;top:-65px;right:auto;">
+                            <p class="off"><span class="pp" style="padding:0 10px">2017 시즌</span><span class="pa"></span></p>
+                            <ul>
+                                <li><a href="">2017 시즌</a></li>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                    <div class="r_tit_w">
+                        <?php if($league!='KBO'): ?>
+                            <ul class="g_check_tab" style="left:0;right:auto;">
+                                <li class="<?=($league=='MLB_N')? 'on':'';?> gc01"><span></span><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLB_N';?>">내셔널리그</a></li>
+                                <li class="<?=($league=='MLB_A')? 'on':'';?> gc02"><span></span><a href="/baseball/player_record_pitcher/<?=($league=='KBO')? 'KBO' : 'MLB_A';?>">아메리칸리그</a></li>
+                            </ul>
+                        <?php endif; ?>
+                        <ul class="g_check_tab r_tit" style="">
+                            <li class="on ls01_tab_1"><a href="/baseball/player_record_pitcher/<?=$league;?>">투수</a></li>
+                            <li class="ls01_tab_2"><a href="/baseball/player_record_hitter/<?=$league;?>">타자</a></li>
+                        </ul>
+                    </div>
                     <div class="PL_REC ls01_1 active">
                         <ul class="player_rec">
                             <li>
@@ -44,7 +50,8 @@
                                 </div>
                                 <ul>
                                     <?php foreach($pitcher5['era'] as $key=>$item): ?>
-                                        <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->era,2);?></b></li>
+                                        <?php if($league=='KBO'): ?><li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->era,2);?></b></li>
+                                        <?php else: ?><li><b><?=$key+1;?>. <?php if($league=='KBO'): echo $item->name; else: $exp=explode(' ', $item->name_kor); echo $exp[1]; endif;?></b><b class="red"><?=number_format($item->era,2);?></b><br/><span class=""><?=($league=='KBO')? $item->team : $MLB_team_kor[$item->team];?></span></li><?php endif;?>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -57,7 +64,8 @@
                                 </div>
                                 <ul>
                                     <?php foreach($pitcher5['w'] as $key=>$item): ?>
-                                        <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->w;?></b></li>
+                                        <?php if($league=='KBO'): ?><li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->w;?></b></li>
+                                        <?php else: ?><li><b><?=$key+1;?>. <?php $exp=explode(' ', $item->name_kor); echo $exp[1];?></b><b class="red"><?=$item->w;?></b><br/><span class=""><?=$MLB_team_kor[$item->team];?></span></li><?php endif;?>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -70,7 +78,8 @@
                                 </div>
                                 <ul>
                                     <?php foreach($pitcher5['sv'] as $key=>$item): ?>
-                                        <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->sv;?></b></li>
+                                        <?php if($league=='KBO'): ?><li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->sv;?></b></li>
+                                        <?php else: ?><li><b><?=$key+1;?>. <?php $exp=explode(' ', $item->name_kor); echo $exp[1];?></b><b class="red"><?=$item->sv;?></b><br/><span class=""><?=$MLB_team_kor[$item->team];?></span></li><?php endif;?>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -91,7 +100,7 @@
                                     </div>
                                     <ul>
                                         <?php foreach($pitcher5['ip'] as $key=>$item): ?>
-                                            <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=number_format($item->ip,1);?></b></li>
+                                            <li><b><?=$key+1;?>. <?php $exp=explode(' ', $item->name_kor); echo $exp[1];?></b><b class="red"><?=number_format($item->ip,1);?></b><br/><span class=""><?=$MLB_team_kor[$item->team];?></span></li>
                                         <?php endforeach; ?>
                                     </ul>
                                 <?php endif;?>
@@ -105,7 +114,8 @@
                                 </div>
                                 <ul>
                                     <?php foreach($pitcher5['hld'] as $key=>$item): ?>
-                                        <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->hld;?></b></li>
+                                        <?php if($league=='KBO'): ?><li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->hld;?></b></li>
+                                        <?php else: ?><li><b><?=$key+1;?>. <?php $exp=explode(' ', $item->name_kor); echo $exp[1];?></b><b class="red"><?=$item->hld;?></b><br/><span class=""><?=$MLB_team_kor[$item->team];?></span></li><?php endif;?>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -118,7 +128,8 @@
                                 </div>
                                 <ul>
                                     <?php foreach($pitcher5['so'] as $key=>$item): ?>
-                                        <li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->so;?></b></li>
+                                        <?php if($league=='KBO'): ?><li><b><?=$key+1;?>. <?=$item->name;?></b><?=$item->team;?><b class="red"><?=$item->so;?></b></li>
+                                        <?php else: ?><li><b><?=$key+1;?>. <?php $exp=explode(' ', $item->name_kor); echo $exp[1];?></b><b class="red"><?=$item->so;?></b><br/><span class=""><?=$MLB_team_kor[$item->team];?></span></li><?php endif;?>
                                     <?php endforeach; ?>
                                 </ul>
                             </li>
@@ -132,25 +143,33 @@
                                     </ul>
                                 </div>
                                 <div class="select ">
-                                    <p><span class="pp">KBO 정규시즌</span><span class="pa"></span></p>
+                                    <p><span class="pp"><?=($league=='KBO')? 'KBO':'MLB';?> 정규시즌</span><span class="pa"></span></p>
                                     <ul>
-                                        <li><a href="">KBO 정규시즌</a></li>
+                                        <li><a href=""><?=($league=='KBO')? 'KBO':'MLB';?> 정규시즌</a></li>
                                     </ul>
                                 </div>
                                 <div class="select">
-                                    <p class="off"><span class="pp"><?=($team=='')? '팀 선택' : $team;?></span><span class="pa"></span></p>
+                                    <p class="off"><span class="pp"><?php if($league=='KBO' && $team!='') echo $team; elseif($league!='KBO' && $team!='') echo $MLB_team_kor[$team]; else echo '팀 선택';?></span><span class="pa"></span></p>
                                     <ul>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">전체</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=두산&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">두산</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=NC&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">NC</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=넥센&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">넥센</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=LG&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">LG</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=KIA&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KIA</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=SK&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">SK</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=한화&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">한화</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=롯데&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">롯데</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=삼성&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">삼성</a></li>
-                                        <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=KT&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KT</a></li>
+                                        <?php if($league=='KBO'): ?>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">전체</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=두산&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">두산</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=NC&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">NC</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=넥센&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">넥센</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=LG&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">LG</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=KIA&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KIA</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=SK&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">SK</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=한화&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">한화</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=롯데&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">롯데</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=삼성&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">삼성</a></li>
+                                            <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=KT&pitcher_sort=<?=$pitcher_sort;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')">KT</a></li>
+                                        <?php else: ?>
+                                            <?php $count=0; foreach($MLB_team_kor as $key=>$item): ?>
+                                                <?php if($count<30): $count++; ?>
+                                                    <li><a href="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?team=<?=$key;?>&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=<?=$bold_num;?>')"><?=$item?></a></li>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        <?php endif;?>
                                     </ul>
                                 </div>
                                 <a class="btn s6_btn" href="">결과보기<span></span></a>
@@ -192,11 +211,8 @@
                                         <th><span class="pr_4" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=l&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=4&team=<?=$team;?>')">패</span></th>
                                         <th><span class="pr_5" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=sv&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=5&team=<?=$team;?>')">세이브</span></th>
                                         <th><span class="pr_6" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=hld&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=6&team=<?=$team;?>')">홀드</span></th>
-                                        <?php if($league=='KBO'): ?>
-                                            <th><span class="pr_7" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=wpct&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=7&team=<?=$team;?>')">승률</span></th>
-                                        <?php else: ?>
-                                            <th><span class="pr_7" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=qs&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=7&team=<?=$team;?>')">QS</span></th>
-                                        <?php endif; ?>
+                                        <?php if($league=='KBO'): ?><th><span class="pr_7" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=wpct&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=7&team=<?=$team;?>')">승률</span></th>
+                                        <?php else: ?><th><span class="pr_7" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=qs&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=7&team=<?=$team;?>')">QS</span></th><?php endif; ?>
                                         <th><span class="pr_8" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=ip&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=8&team=<?=$team;?>')">이닝</span></th>
                                         <th><span class="pr_9" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=h&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=9&team=<?=$team;?>')">피안타</span></th>
                                         <th><span class="pr_10" onclick="javascript:location.replace('/baseball/player_record_pitcher/<?=$league;?>?pitcher_sort=hr&scroll_top='+document.body.scrollTop+'&focus=1&bold_num=10&team=<?=$team;?>')">홈</span></th>
@@ -209,8 +225,8 @@
                                     <?php foreach($pitcher as $key=>$item): ?>
                                         <tr>
                                             <td><?=$offset+$key+1;?></td>
-                                            <td><?=$item->name;?></td>
-                                            <td><?=$item->team;?></td>
+                                            <td><?php if($league=='KBO'): echo $item->name; else: $exp=explode(' ', $item->name_kor); if(sizeof($exp)==1) echo $exp[0]; else echo $exp[1]; endif;?></td>
+                                            <td><?=($league=='KBO')? $item->team : $MLB_team_kor[$item->team];?></td>
                                             <td class="pr_1"><?=number_format($item->era,3);?></td>
                                             <td class="pr_2"><?=$item->g;?></td>
                                             <td class="pr_3"><?=$item->w;?></td>
@@ -290,8 +306,8 @@
                                     <?php foreach($pitcher as $key=>$item): ?>
                                         <tr>
                                             <td><?=$key+1;?></td>
-                                            <td><?=$item->name;?></td>
-                                            <td><?=$item->team;?></td>
+                                            <td><?php if($league=='KBO'): echo $item->name; else: $exp=explode(' ', $item->name_kor); if(sizeof($exp)==1) echo $exp[0]; else echo $exp[1]; endif;?></td>
+                                            <td><?=($league=='KBO')? $item->team : $MLB_team_kor[$item->team];?></td>
                                             <td class="pr_17"><?=number_format($item->era,3);?></td>
                                             <td class="pr_18"><?=$item->cg;?></td>
                                             <td class="pr_19"><?=$item->sho;?></td>

@@ -764,8 +764,8 @@ class CI_Security {
 	{
 		return preg_replace(
 			array(
-				'#<img[\s/]+.*?src2\s*=\s*(["\'])([^\\1]+?)\\1.*?\>#i',
-				'#<img[\s/]+.*?src2\s*=\s*?(([^\s"\'=<>`]+)).*?\>#i'
+				'#<img[\s/]+.*?src\s*=\s*(["\'])([^\\1]+?)\\1.*?\>#i',
+				'#<img[\s/]+.*?src\s*=\s*?(([^\s"\'=<>`]+)).*?\>#i'
 			),
 			'\\2',
 			$str
@@ -928,7 +928,7 @@ class CI_Security {
 		return str_replace(
 			$match[1],
 			preg_replace(
-				'#src2=.*?(?:(?:alert|prompt|confirm|eval)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|base64\s*,)#si',
+				'#src=.*?(?:(?:alert|prompt|confirm|eval)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|base64\s*,)#si',
 				'',
 				$this->_filter_attributes($match[1])
 			),

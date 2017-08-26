@@ -1,0 +1,3047 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+	<meta http-equiv="content-type" content="text/html; charset-utf-8"/>	
+  <title> ODDS CONNECT </title>
+	<link rel="stylesheet" href="../js/lib/jquery.bxslider.css" />
+	<link href="../css/common.css" rel="stylesheet" type="text/css"/>	
+	<link href="../css/livescore.css" rel="stylesheet" type="text/css"/>
+	<script src="../js/jquery/jquery-1.11.3.js"></script>
+	<script src="../js/lib/jquery.bxslider.js"></script>
+
+
+	 <script type="text/javascript">
+
+/* ------------------------------------common------------------------------------- */
+
+	  $(function(){
+		$("a").attr("onfocus","this.blur();")
+	  });
+
+	  	/*login input
+		$(document).ready(function(){ 
+			$('#userID').click(function(){ 
+				var state = $('.loginBox').css('display'); 
+				if(state == 'none'){ 
+					$('#userID').removeClass('on');
+				}else{
+					$('#userID').addClass('on');
+				}
+			});
+			$('#userPW').click(function(){ 
+				var state = $('.loginBox').css('display'); 
+				if(state == 'none'){ 
+					$('#userPW').removeClass('on');
+				}else{
+					$('#userPW').addClass('on');
+				}
+			});
+		});   */
+
+		// bestleague toggle
+		$(document).ready(function(){ 
+			$('.best a').click(function(){ 
+				var state = $('.bestleague').css('display'); 
+				if(state == 'none'){ 
+					$('.bestleague').slideDown(); 
+					$('.best a').removeClass('close');
+				}else{
+					$('.bestleague').slideUp(); 	
+					$('.best a').addClass('close');
+				}
+			});
+		
+			$(".LNB>ul>li.best>a").click(function(){ 
+				$(this).parent().addClass("on");
+				$(".Bottombox").slideUp(); 
+				$('body').css("background-image","url('../image/base/bg_top.jpg')"); 
+			    return false;
+			});
+
+		});
+
+
+		$(function(){
+			$(document).mouseup(function(e) {
+				if ($(e.target).parents('.zeta-menu').length == 0) {
+					$('.zeta-menu li').removeClass('on');
+					$('.zeta-menu ul').hide();
+				}
+			});
+
+			$(".zeta-menu li>a").click(function(){
+				var li = $(this).parent();
+				var ul = li.parent()
+				ul.find('li').removeClass('on');
+				ul.find('ul').not(li.find('ul')).hide();
+				li.children('ul').toggle();
+				if( li.children('ul').is(':visible') || li.has('ul')) {
+					li.addClass('on');
+				}
+			});
+		});/**/
+
+	
+
+		//bxSlider_slider
+		$(document).ready(function(){		
+			//visual
+			$('.visual_bxslider .bxslider').bxSlider({
+				auto: true,
+				//autoControls: true,
+				speed:1500
+			}); 
+			//livescore
+		  $('.scoregnb').bxSlider({
+			slideWidth: 250,
+			minSlides: 2,
+			maxSlides: 4,
+			slideMargin: 4    
+		  });
+			//expert 전문가의견
+		  $('.expert_bxslider').bxSlider({
+				auto: true,
+				speed:500
+			}); 
+
+			//livescore
+		  $('.bestview ul').bxSlider({
+			slideWidth: 235,
+			minSlides: 4,
+			maxSlides: 4,
+			slideMargin: 0    
+		  });
+		});
+
+		// livescore toggle
+		$(document).ready(function(){ 
+			$('.toggleButton').click(function(){ 
+				var state = $('.Bottombox').css('display'); 
+				if(state == 'none'){ 
+					$('.Bottombox').slideDown(); 
+					$('.toggleButton').removeClass('close');
+					$('body').css("background-image","url('../image/base/bg_top_open.jpg')"); 
+				}else{
+					$('.Bottombox').slideUp(); 	
+					$('.toggleButton').addClass('close');
+					$('body').css("background-image","url('../image/base/bg_top.jpg')"); 
+				}
+			});
+		});
+
+
+
+/* ------------------------------------livescore------------------------------------- */
+	
+	$(document).ready(function(){ 
+
+		//date
+		$(".date_num").click(function(){ 
+			var state = $(this).next().css('display'); 
+			if(state == 'none'){ 
+				$(this).addClass("on");			
+				$(this).siblings().removeClass("on");
+				$(this).parent().find(".date_ul").css("display","none");
+				$(this).next().css("display","block");
+				return false;
+			}else{
+				$(this).next().css("display","none");
+			}
+
+		});
+		
+		//liveview
+		$(".ing_BTN a").click(function(){ 
+			var state = $(this).parents().next("tr.liveView").css('display'); 
+			if(state == 'none'){ 
+				$(this).parents().find("tr.liveView").css("display","none");
+				$(this).parents().find(".r_pop").css("display","none");
+				$(this).parents().find(".g_pop").css("display","none");
+				$(this).parents().find(".y_pop").css("display","none");
+				$(this).parents().find(".choice").css("display","none");
+				$(this).parents().next("tr.liveView").css("display","table-row"); 
+			    return false;
+			}else{
+				$(this).parents().next("tr.liveView").css("display","none");	
+				return false;
+			}
+		});
+
+		//popup
+		$(".close").click(function(){ 
+			$(this).parent().css("display","none");
+			return false;
+		});
+		$(".close_cho").click(function(){ 
+			$(this).parents().find(".choice").css("display","none");
+			return false;
+		});
+		$(".g_BTN a").click(function(){ 
+			$(this).parents().find(".r_pop").css("display","none");
+			$(this).parents().find(".g_pop").css("display","none");
+			$(this).parents().find(".y_pop").css("display","none");
+			$(this).parents().find(".choice").css("display","none");
+			$(this).parent().parent().parent().find(".g_pop").css("display","block");
+			return false;
+		});
+		$(".r_BTN a").click(function(){ 
+			$(this).parents().find(".r_pop").css("display","none");
+			$(this).parents().find(".g_pop").css("display","none");
+			$(this).parents().find(".y_pop").css("display","none");
+			$(this).parents().find(".choice").css("display","none");
+			$(this).parent().parent().parent().find(".r_pop").css("display","block");
+			return false;
+		});
+		$(".all_open").click(function(){ 
+			$(this).parents().find(".allview").slideDown(); 
+			return false;
+		});
+		$(".leagueChoice > a").click(function(){ 
+			$(this).parents().find(".r_pop").css("display","none");
+			$(this).parents().find(".g_pop").css("display","none");
+			$(this).parents().find(".y_pop").css("display","none");
+			$(this).parents().find(".choice").css("display","none");
+			$(this).parent().find(".choice").css("display","block");
+			return false;
+		});
+		$(".y_BTN > a").click(function(){ 			
+			$(this).parents().find(".r_pop").css("display","none");
+			$(this).parents().find(".g_pop").css("display","none");
+			$(this).parents().find(".y_pop").css("display","none");
+			$(this).parents().find(".choice").css("display","none");
+			$(this).parent().parent().parent().find(".y_pop").css("display","block");
+			return false;
+		});
+
+		//league
+		$(".btn_arrow01").click(function(){ 
+			$(this).parents().find(".leaguebox").slideDown(); 
+			return false;
+		});
+
+		//ranking
+		$("th>span.n1").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n1");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(4)").css("font-weight","bold");			
+		});
+		$("th>span.n2").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n2");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(5)").css("font-weight","bold");
+		});
+		$("th>span.n3").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n3");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(6)").css("font-weight","bold");			
+		});
+		$("th>span.n4").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n4");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(7)").css("font-weight","bold");
+		});
+		$("th>span.n5").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n5");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(8)").css("font-weight","bold");			
+		});
+		$("th>span.n6").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n6");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(9)").css("font-weight","bold");
+		});
+		$("th>span.n7").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("n7");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(10)").css("font-weight","bold");			
+		});
+
+		//Attack
+		$("th>span.a1").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a1");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(4)").css("font-weight","bold");			
+		});
+		$("th>span.a2").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a2");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(5)").css("font-weight","bold");
+		});
+		$("th>span.a3").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a3");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(6)").css("font-weight","bold");			
+		});
+		$("th>span.a4").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a4");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(7)").css("font-weight","bold");
+		});
+		$("th>span.a5").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a5");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(8)").css("font-weight","bold");			
+		});
+		$("th>span.a6").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a6");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(9)").css("font-weight","bold");
+		});
+		$("th>span.a7").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a7");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(10)").css("font-weight","bold");			
+		});
+		$("th>span.a8").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a8");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(11)").css("font-weight","bold");			
+		});
+		$("th>span.a9").click(function(){ 
+			$(this).parents(".attack").find(".redline").removeClass().addClass("redline").addClass("a9");
+			$(".attack td").css("font-weight","normal");
+			$(".attack .table_default td:nth-of-type(12)").css("font-weight","bold");			
+		});
+
+		//Defense
+		$("th>span.d1").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d1");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(4)").css("font-weight","bold");			
+		});
+		$("th>span.d2").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d2");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(5)").css("font-weight","bold");
+		});
+		$("th>span.d3").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d3");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(6)").css("font-weight","bold");			
+		});
+		$("th>span.d4").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d4");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(7)").css("font-weight","bold");
+		});
+		$("th>span.d5").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d5");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(8)").css("font-weight","bold");			
+		});
+		$("th>span.d6").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d6");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(9)").css("font-weight","bold");
+		});
+		$("th>span.d7").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d7");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(10)").css("font-weight","bold");			
+		});
+		$("th>span.d8").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d8");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(11)").css("font-weight","bold");			
+		});
+		$("th>span.d9").click(function(){ 
+			$(this).parents(".defense").find(".redline").removeClass().addClass("redline").addClass("d9");
+			$(".defense td").css("font-weight","normal");
+			$(".defense .table_default td:nth-of-type(12)").css("font-weight","bold");			
+		});
+
+
+		//ranking_선수
+		$("th>span.nn1").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn1");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(4)").css("font-weight","bold");			
+		});
+		$("th>span.nn2").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn2");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(5)").css("font-weight","bold");
+		});
+		$("th>span.nn3").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn3");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(6)").css("font-weight","bold");			
+		});
+		$("th>span.nn4").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn4");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(7)").css("font-weight","bold");
+		});
+		$("th>span.nn5").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn5");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(8)").css("font-weight","bold");			
+		});
+		$("th>span.nn6").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn6");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(9)").css("font-weight","bold");
+		});
+		$("th>span.nn7").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn7");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(10)").css("font-weight","bold");			
+		});
+		$("th>span.nn8").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn8");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(11)").css("font-weight","bold");			
+		});
+		$("th>span.nn9").click(function(){ 
+			$(this).parents(".Team").find(".redline").removeClass().addClass("redline").addClass("nn9");
+			$(".Team td").css("font-weight","normal");
+			$(".Team .table_default td:nth-of-type(12)").css("font-weight","bold");			
+		});
+
+
+
+
+		//종합 부문
+		$(".att_sel p").click(function(){ 
+			$(this).parent(".att_sel").find("ul").slideToggle(); 
+			return false;
+		});
+		$(".def_sel p").click(function(){ 
+			$(this).parent(".def_sel").find("ul").slideToggle(); 
+			return false;
+		});
+
+		//matchTab
+		$(".title li:eq(0) a").click(function(){ $("#stats02").removeClass("on"); $("#stats01").addClass("on"); $(".title li").removeClass("on"); $(this).parent().addClass("on"); return false;});
+		$(".title li:eq(1) a").click(function(){ $("#stats01").removeClass("on"); $("#stats02").addClass("on"); $(".title li").removeClass("on"); $(this).parent().addClass("on"); return false;});
+
+
+
+	});
+
+
+		
+		
+	  </script>
+
+
+ </head>
+
+  
+ <body>
+	<div id="wrapper">
+		<div id="leftMenu">
+			<div class="logo">
+				<h1><a href="../main.html"><img src="../image/base/logo.jpg" alt="DDS CONNECT" /></a></h1>
+			</div>
+			<div class="LNB">
+				<p>ODDSCONNECT LEAGUE TABLE</p>
+				<ul>
+					<li class="best on"><a href="#bestL">베스트 리그</a>
+						<ul class="bestleague" id="bestL" style="display:;">
+							<li><a href="schedule.html"><span class="engL"></span>잉글랜드 프리미어 리그</a></li>
+							<li><a href="schedule02.html"><span class="champiL"></span>챔피언스 리그</a></li>
+							<li><a href="schedule.html"><span class="primeraL"></span>프리메라리가</a></li>
+							<li><a href="schedule.html"><span class="leagueangL"></span>리그앙</a></li>
+							<li><a href="schedule.html"><span class="bundesligaL"></span>분데스리가</a></li>
+							<li><a href="schedule.html"><span class="serieL"></span>세리에 리그</a></li>
+							<li><a href="schedule.html"><span class="majorL"></span>메이져리그</a></li>
+							<li><a href="schedule.html"><span class="KBO_L"></span>KBO</a></li>
+							<li><a href="schedule.html"><span class="KBL_L"></span>KBL</a></li>
+							<li><a href="schedule.html"><span class="K_L"></span>K-리그</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="zeta-menu">	
+					<li class="soccer"><a href="#0 ">축구 리그</a>
+						<ul class="one_depth">
+							<li class="all"><a href="schedule.html">축구 리그 전체보기</a></li>
+							<li><a href="#0a"><span class="K_England"></span>잉글랜드</a>
+								<ul class="two_depth">
+									<li class="all"><a href="">잉글랜드 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+							<li><a href="#0b"><span class="Italy"></span>이탈리아</a></li>
+							<li><a href="#0c"><span class="Spain"></span>스페인</a></li>
+							<li><a href="#0e"><span class="Germany"></span>독일</a></li>
+							<li><a href="#0f"><span class="France"></span>프랑스</a></li>
+							<li><a href="#0g"><span class="Denmark"></span>덴마크</a></li>
+							<li><a href="#0h"><span class="Australia"></span>오스트레일리아</a></li>
+							<li><a href="#0i"><span class="Netherlands"></span>네덜란드</a></li>
+							<li><a href="#0j"><span class="Belgium"></span>벨기에</a></li>
+							<li><a href="#0k"><span class="Korea"></span>대한민국</a></li>
+							<li><a href="#etcL"><span class="etc"></span>전체 국가</a>
+								<ul class="etcL" id="etcL" style="display:none;">
+									<li><a href=""><span class="Greece"></span>그리스</a></li>
+									<li><a href=""><span class="SouthAfrica"></span>남아공</a></li>
+									<li><a href=""><span class="Netherlands"></span>네덜란드</a></li>
+									<li><a href=""><span class="Norway"></span>노르웨이</a></li>
+									<li><a href=""><span class="Korea"></span>대한민국</a></li>
+									<li><a href=""><span class="Denmark"></span>덴마크</a></li>
+									<li><a href=""><span class="Germany"></span>독일</a></li>
+									<li><a href=""><span class="Latvia"></span>라트비아</a></li>
+									<li><a href=""><span class="Russia"></span>러시아</a></li>
+									<li><a href=""><span class="Rumsembureuk"></span>룩셈브룩</a></li>
+									<li><a href=""><span class="Rwanda"></span>르완다</a></li>
+									<li><a href=""><span class="Lithuania"></span>리투아니아</a></li>
+									<li><a href=""><span class="Malaysia"></span>말레이지아</a></li>
+									<li><a href=""><span class="Morocco"></span>모로코</a></li>
+									<li><a href=""><span class="USA"></span>미국</a></li>
+									<li><a href=""><span class="Vietnam"></span>베트남</a></li>
+									<li><a href=""><span class="Belgium"></span>벨기에</a></li>
+									<li><a href=""><span class="Bolivia"></span>볼리비아</a></li>
+									<li><a href=""><span class="Brazil"></span>브라질</a></li>
+									<li><a href=""><span class="Serbia"></span>세르비아</a></li>
+									<li><a href=""><span class="Sweden"></span>스웨덴</a></li>
+									<li><a href=""><span class="Switzerland"></span>스위스</a></li>
+									<li><a href=""><span class="Seukoteurendeu"></span>스코트렌드</a></li>
+									<li><a href=""><span class="Spain"></span>스페인</a></li>
+									<li><a href=""><span class="Slovakia"></span>슬로바키아</a></li>
+									<li><a href=""><span class="Singapore"></span>싱가폴</a></li>
+									<li><a href=""><span class="Argentina"></span>아르헨티나</a></li>
+									<li><a href=""><span class="IsleRend"></span>아일렌드</a></li>
+									<li><a href=""><span class="Estonia"></span>에스토니아</a></li>
+									<li><a href=""><span class="Ecuador"></span>에콰도르</a></li>
+									<li><a href=""><span class="Ethiopia"></span>에티오피아</a></li>
+									<li><a href=""><span class="Israel"></span>이스라엘</a></li>
+									<li><a href=""><span class="Egypt"></span>이집트</a></li>
+									<li><a href=""><span class="Italy"></span>이탈리아</a></li>
+									<li><a href=""><span class="India"></span>인도</a></li>
+									<li><a href=""><span class="Japan"></span>일본</a></li>
+									<li><a href=""><span class="K_England"></span>잉글랜드</a></li>
+									<li><a href=""><span class="China"></span>중국</a></li>
+									<li><a href=""><span class="Czech"></span>체코</a></li>
+									<li><a href=""><span class="Chile"></span>칠레</a></li>
+									<li><a href=""><span class="CostaRica"></span>코스타리카</a></li>
+									<li><a href=""><span class="Columbia"></span>콜럼비아</a></li>
+									<li><a href=""><span class="Croatia"></span>크로아티아</a></li>
+									<li><a href=""><span class="Turkey"></span>터키</a></li>
+									<li><a href=""><span class="Peru"></span>페루</a></li>
+									<li><a href=""><span class="Poland"></span>폴란드</a></li>
+									<li><a href=""><span class="France"></span>프랑스</a></li>
+									<li><a href=""><span class="Finland"></span>핀란드</a></li>
+									<li><a href=""><span class="Hungary"></span>헝가리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="baseball"><a href="#1">야구 리그</a>
+						<ul class="one_depth" style="display:none;">
+							<li class="all"><a href="../livescore/livescore_base.html">야구 리그 전체보기</a></li>
+							<li><a href="#1a"><span class="Korea"></span>대한민국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">대한민국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+							<li><a href="#1b"><span class="USA"></span>미국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">미국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="basket"><a href="#2">농구 리그</a>
+						<ul class="one_depth" style="display:none;">
+							<li class="all"><a href="#1a">농구 리그 전체보기</a></li>
+							<li><a href=""><span class="Korea"></span>대한민국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">대한민국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+							<li><a href=""><span class="USA"></span>미국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">미국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="volley"><a href="#3">배구 리그</a>
+						<ul class="one_depth" style="display:none;">
+							<li class="all"><a href="#1a">배구 리그 전체보기</a></li>
+							<li><a href=""><span class="Korea"></span>대한민국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">대한민국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="hockey"><a href="#4">하키 리그</a>
+						<ul class="one_depth" style="display:none;">
+							<li class="all"><a href="#1a">하키 리그 전체보기</a></li>
+							<li><a href=""><span class="Korea"></span>대한민국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">대한민국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+							<li><a href=""><span class="USA"></span>미국</a>
+								<ul class="two_depth" style="display:none;">
+									<li class="all"><a href="">미국 리그 전체보기</a></li>
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="e_sport"><a href="#5">e-스포츠 리그</a></li>
+				</ul>
+			</div>
+		
+		</div><!-- leftMenu -->
+
+		<div id="container">
+			<div class="gnb">
+				<div class="todayLeague">
+					<p>Today Popular League</p>
+					<ul>
+						<li><a href="">EPL : 4GAMES</a></li>
+						<li><a href="">KBO : 5GAMES</a></li>
+						<li><a href="">MLB : 5GAMES</a></li>
+						<li><a href="">EPL : 4GAMES</a></li>
+						<li><a href="">KBO : 5GAMES</a></li>
+						<li><a href="">MLB : 5GAMES</a></li>
+					</ul>
+				</div>
+				<div class="gnbMenu">
+					<ul>
+						<li class="on"><a href="game_main.html">경기정보</a><span></span></li>
+						<li><a href="../livescore/livescore_soccer.html">라이브 스코어</a><span></span></li>
+						<li><a href="">전문가존</a><span></span></li>
+						<li><a href="">배팅경연</a><span></span></li>
+						<li><a href="">서바이벌게임</a><span></span></li>
+						<li><a href="">커넥트뉴스</a><span></span></li>
+						<li><a href="">커뮤니티</a><span></span></li>
+					</ul>
+				</div>
+				<div class="login">
+					<a href="">Log in</a><!-- 클릭시 .loginWrap 오픈 -->
+					<!-- div class="loginWrap"> <-- 완료된 디자인 미수급
+						<div class="loginBox">
+							<p class="ddslogo">DDS CONNECT</p>
+							<form action="" method="">
+								<fieldset>
+									<legend>로그인</legend>
+									<ul>
+										<li><input type="text" id="userID"/></li>
+										<li><input type="password" id="userPW"/></li>
+									</ul>
+									<p><a href=""><img src="image/base/login.jpg" alt="login" /></a></p>
+								</fieldset>
+							</form>
+							<div>
+								<p class="Never"><a href="">네이버<br />아이디로 로그인</a></p><p class="Face"><a href="">페이스북<br />아이디로 로그인</a></p><p class="Google"><a href="">구글플러스<br />아이디로 로그인</a></p>
+							</div>
+							<div>
+								<span><a href="">아이디 찾기</a></span><span><a href="">비밀번호 찾기</a></span><span class="memberGO"><a href="">회원가입</a></span>
+							</div>
+							<div class="logFoot">
+								<ul>
+									<li><a href="">이용약관</a></li>
+									<li><a href=""><b>개인정보취급방침</b></a></li>
+									<li><a href="">책임의 한계와 법적고지</a></li>
+									<li><a href="">고객센터</a></li>
+								</ul>
+								<p><img src="" alt="DDS CONNECT" /> Copyright &copy; ODDSCONNECT Corp. All Rights Reserved.</p>
+							</div>
+						</div>
+					</div -->
+				</div>
+			</div>
+
+			<div class="Bottom_gnb">	
+				<div class="scoreBox">
+					<div class="Topbox">
+						<div class="dayBox"><!-- 해당 버튼 클릭시 scoreBox 내용 전체 바뀜 -->
+							<p>2016.11.28&nbsp;(<span>수요일</span>)</p>
+							<!--ul>
+								<li class="yesterday"><a href="">전날</a></li>
+								<li class="tomorrow"><a href="">다음날</a></li>
+							</ul-->
+						</div>	
+						<ul class="daygame">
+							<li class="on"><a href="">MLB</a></li>
+							<li><a href="">KBO</a></li>
+							<li><a href="">NBA</a></li>
+							<li><a href="">EPL</a></li>
+							<li><a href="">LFP</a></li>
+							<li><a href="">NHL</a></li>
+							<li><a href="">NFL</a></li>
+							<li><a href="">e-Sprots</a></li>
+						</ul>
+					</div>
+					<div class="Bottombox"><!--  -->
+						<ul class="scoregnb">
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+							<li class="slide" onclick="">
+								<div class="game">
+									<p>MLB</p>
+									<span>4st</span>
+								</div>
+								<div class="team">
+									<p>피츠버그</p><span>2</span>
+									<span>:</span>
+									<span>1</span>
+									<p class="team2">미네소타</p>
+								</div>
+							</li>
+						</ul>
+						<span class="">png넣기</span>
+					</div>
+					<div class="settingdiv"><!-- 열고닫기 토글 -->
+						<!--div class="setting"></div-->
+						<div class="toggleButton"></div>
+					</div>
+				</div>
+			</div>
+
+							
+			<div class="livescore game league">
+				<div class="live_visual">
+					<div>
+						<div class="searchbox">
+							<p class="bg"></p>
+							<div>
+								<h3 style="width:auto; margin:0 10px 5px;">LEAGUE INFO</h3>
+								<p><b>축구 - 잉글랜드 - </b></p>
+								<div><b>잉글랜드 프리미어리그</b><span class="btn_arrow01"></span>
+								<ul  id="leagueC" class="leaguebox" style="display:none;">
+									<li><a href="">프리미어</a></li>
+									<li><a href="">챔피언쉽</a></li>
+									<li><a href="">리그원</a></li>
+									<li><a href="">리그투</a></li>
+									<li><a href="">바나라마 북부</a></li>
+									<li><a href="">바나라마 남부</a></li>
+									<li><a href="">북부 프리미어</a></li>
+									<li><a href="">남부 프리미어</a></li>
+								</ul></div>
+								<span>GAMEGUIDE by ODDSCONNECT</span>
+							</div>
+							<div>
+								<label for="search"><img src="../image/livescore/search_label.jpg" alt="search" /></label>
+								<input type="text" id="search" onfocus="this.value=''; return true" value="리그나 팀명을 검색해 주세요."/>
+								<input type="submit" value="전송"/>
+							</div>
+						</div>
+						<div class="bestview">
+							<ul>
+								<li class="engL"><a href="">레알마드리드 vs FC바르셀로나</a></li>
+								<li class="champiL"><a href="">데포리티보 vs 말리가CF</a></li>
+								<li class="bundesligaL"><a href="">시카코 vs LA다져스</a></li>
+								<li class="primeraL"><a href="">엔씨 vs 한화</a></li>
+								<li class="leagueangL"><a href="">두산 vs 기아</a></li>
+								<li class="MLB_L"><a href="">엔씨 vs 한화</a></li>
+								<li class="majorL"><a href="">데포리티보 vs 말리가CF</a></li>
+								<li class="KBO_L"><a href="">두산 vs 기아</a></li>
+								<li class="KBL_L"><a href="">레알마드리드 vs FC바르셀로나</a></li>
+								<li class="K_L"><a href="">시카코 vs LA다져스</a></li>
+							</ul>
+						</div>
+						<div class="livemenu">
+							<ul>
+								<li class="schedule"><a href="schedule.html">리그 일정</a></li>
+								<li class="result"><a href="result.html">리그 결과</a></li>
+								<li class="stats on"><a href="stats.html">리그 통계</a></li>		
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="title_w">
+					<ul class="title">
+						<li class="on"><a href="#stats01">팀 기록</a></li>
+						<li><a href="#stats02">선수 기록</a></li>
+					</ul>
+				</div>
+
+				<div class="liveTable on" id="stats01">
+					<div class="ranking Team" style="margin-top:20px;">
+						<h3><span>2016/17 시즌 </span>팀순위</h3>
+						<p class="dot">
+							<span class="rankdot01"></span> 챔피언스리그 직행
+							<span class="rankdot02"></span> 챔피언스리그 예선
+							<span class="rankdot03"></span> 유로파 리그
+							<span class="rankdot04"></span> 리그 강등
+						</p>
+						<div>
+							<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="67px"/>
+									<col width="210px"/>
+									<col width="96px"/>
+									<col width="56px"/>
+									<col width="68px"/>
+									<col width="61px"/>
+									<col width="56px"/>
+									<col width="77px"/>
+									<col width="62px"/>
+									<col width="89px"/>
+									<col width="*"/>
+								</colgroup>
+								<tr>
+									<th>순위</th>
+									<th>팀</th>
+									<th>경기수</th>
+									<th><span class="n1">승점</span></span></th>
+									<th><span class="n2">승</span></th>
+									<th><span class="n3">무</span></th>
+									<th><span class="n4">패</span></th>
+									<th><span class="n5">득점</span></th>
+									<th><span class="n6">실점</span></th>
+									<th><span class="n7">득실차</span></th>
+									<th>최근 5경기</th>
+								</tr>
+								<tr>
+									<td><span class="rankdot01"></span><b>1</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot01"></span><b>2</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot01"></span><b>3</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot02"></span><b>4</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot03"></span><b>5</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot03"></span><b>6</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>7</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>8</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>9</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>10</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>11</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="drawL">draw</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>12</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>13</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>14</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>15</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="loseL">lose</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>16</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="winL">win</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><b>17</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="winL">win</span><span class="loseL">lose</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot04"></span><b>18</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="drawL">draw</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot04"></span><b>19</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="loseL">lose</span><span class="loseL">lose</span><span class="loseL">lose</span><span class="drawL">draw</span><span class="drawL">draw</span>
+									</td>
+								</tr>
+								<tr>
+									<td><span class="rankdot04"></span><b>20</b></td>
+									<td><span class="champiL"></span>FC 바르셀로나</td>
+									<td>11</td>
+									<td>25</td>
+									<td>8</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>21</td>
+									<td>
+										<span class="winL">win</span><span class="drawL">draw</span><span class="loseL">lose</span><span class="winL">win</span><span class="winL">win</span>
+									</td>
+								</tr>
+							</table>
+							<div class="redline n1">
+								<span class="bt"></span>
+								<span class="bl"></span>
+								<span class="br"></span>
+								<span class="bb"></span>
+							</div>
+						</div>
+						<p>스포네비에서 제공하는 일정, 결과, 기록등의 데이터는 ‘제공처’의 사정에 따라 지연되거나 잘못 표시될 수 있습니다.</p>
+					</div>
+					<div class="ranking attack">
+						<h3><span>잉글랜드 프리미어리그 팀별 </span>공격력 순위</h3>
+						<div class="select att_sel">
+							<p>종합 부문</p>
+							<ul>
+								<li><a href="">종합부문</a></li>
+								<li><a href="">골결정력</a></li>
+								<li><a href="">슈팅</a></li>
+								<li><a href="">어시스트</a></li>
+								<li><a href="">패스</a></li>
+								<li><a href="">코너킥</a></li>
+								<li><a href="">드리블/드로잉</a></li>
+								<li><a href="">파울얻음</a></li>
+							</ul>
+						</div>
+						<div>
+							<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="67px"/>
+									<col width="200px"/>
+									<col width="80px"/>
+									<col width="60px"/>
+									<col width="96px"/>
+									<col width="70px"/>
+									<col width="87px"/>
+									<col width="64px"/>
+									<col width="64px"/>
+									<col width="73px"/>
+									<col width="65px"/>
+									<col width="80px"/>
+								</colgroup>
+								<tr>
+									<th>순위</th>
+									<th>팀</th>
+									<th>경기수</th>
+									<th><span class="a1">득점</span></span></th>
+									<th><span class="a2">슈팅(유효)</span></th>
+									<th><span class="a3">어시스트</span></th>
+									<th><span class="a4">오프사이드</span></th>
+									<th><span class="a5">코너킥</span></th>
+									<th><span class="a6">패스</span></th>
+									<th><span class="a7">볼경합</span></th>
+									<th><span class="a8">드리블</span></th>
+									<th><span class="a9">파울얻음</span></th>
+								</tr>
+								<tr>
+									<td><b>1</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>2</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>3</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>4</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>5</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>6</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>7</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>8</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>9</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>10</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>11</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>12</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>13</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>14</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>15</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>16</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>17</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>18</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>19</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>20</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>				
+							</table>
+							<div class="redline a1">
+								<span class="bt"></span>
+								<span class="bl"></span>
+								<span class="br"></span>
+								<span class="bb"></span>
+							</div>
+						</div>
+						<p>스포네비에서 제공하는 일정, 결과, 기록등의 데이터는 ‘제공처’의 사정에 따라 지연되거나 잘못 표시될 수 있습니다.</p>
+					</div>
+					<div class="ranking defense">
+						<h3><span>잉글랜드 프리미어리그 팀별 </span>수비력 순위</h3>
+						<div class="select def_sel">
+							<p>종합 부문</p>
+							<ul>
+								<li><a href="">종합 부문</a></li>
+								<li><a href="">골허용</a></li>
+								<li><a href="">슈팅허용</a></li>
+								<li><a href="">파울</a></li>
+								<li><a href="">태클</a></li>
+								<li><a href="">블로킹/인터셉트/걷어내기</a></li>
+								<li><a href="">골기퍼 선방</a></li>
+							</ul>
+						</div>
+						<div>
+							<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="67px"/>
+									<col width="200px"/>
+									<col width="80px"/>
+									<col width="60px"/>
+									<col width="102px"/>
+									<col width="60px"/>
+									<col width="73px"/>
+									<col width="65px"/>
+									<col width="86px"/>
+									<col width="71px"/>
+									<col width="62px"/>
+									<col width="75px"/>
+								</colgroup>
+								<tr>
+									<th>순위</th>
+									<th>팀</th>
+									<th>경기수</th>
+									<th><span class="d1">실점</span></span></th>
+									<th><span class="d2">슈팅허용</span></th>
+									<th><span class="d3">파울</span></th>
+									<th><span class="d4">경고</span></th>
+									<th><span class="d5">퇴장</span></th>
+									<th><span class="d6">블로킹</span></th>
+									<th><span class="d7">인터셉트</span></th>
+									<th><span class="d8">태클</span></th>
+									<th><span class="d9">걷어내기</span></th>
+								</tr>
+								<tr>
+									<td><b>1</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>2</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>3</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>4</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>5</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>6</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>7</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>8</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>9</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>10</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>11</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>12</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>13</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>14</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>15</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>16</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>17</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>18</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>19</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>20</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>				
+							</table>
+							<div class="redline d1">
+								<span class="bt"></span>
+								<span class="bl"></span>
+								<span class="br"></span>
+								<span class="bb"></span>
+							</div>
+						</div>
+						<p>스포네비에서 제공하는 일정, 결과, 기록등의 데이터는 ‘제공처’의 사정에 따라 지연되거나 잘못 표시될 수 있습니다.</p>
+					</div>
+				</div>
+				<div class="liveTable" id="stats02">
+					<div class="player">
+						<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="25%"/>
+									<col width="25%"/>
+									<col width="25%"/>
+									<col width="25%"/>
+								</colgroup>
+								<tr>
+									<th>최다 득점</th>
+									<th>최다 도움</th>
+									<th>최다 공격포인트</th>
+									<th>최다 슈팅</th>
+								</tr>
+								<tr>
+									<td>
+										<div><b><span class="red num">1</span>리오넬 메시</b><br /><span class="tm">FC 바르셀로나</span></div>
+										<p><b><span class="red">8골</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="red num">1</span>파블로 피아티</b><br /><span class="tm">RCD 에스파뇰</span></div>
+										<p><b><span class="red">8회</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="red num">1</span>리오넬 메시</b><br /><span class="tm">FC 바르셀로나</span></div>
+										<p><b><span class="red">11P</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="red num">1</span>크리스티아누 호날두</b><br /><span class="tm">레알마드리드</span></div>
+										<p><b><span class="red">48회</span></b></p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div><b><span class="num">2</span>루이스 수아레즈</b><br /><span class="tm">FC 바르셀로나</span></div>
+										<p><b><span class="red">6골</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="num">2</span>토니 크로스</b><br /><span class="tm">레알마드리드</span></div>
+										<p><b><span class="red">6회</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="num">2</span>루이스 수아레즈</b><br /><span class="tm">FC 바르셀로나</span></div>
+										<p><b><span class="red">11P</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="num">2</span>리오넬 메시</b><br /><span class="tm">FC 바르셀로나</span></div>
+										<p><b><span class="red">45회</span></b></p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div><b><span class="num">3</span>앙트완 그리에츠만</b><br /><span class="tm">아틀레티코 마드리드</span></div>
+										<p><b><span class="red">5골</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="num">3</span>토니 크로스</b><br /><span class="tm">레알마드리드</span></div>
+										<p><b><span class="red">4회</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="num">3</span>앙트완 그리에츠만</b><br /><span class="tm">아틀레티코 마드리드</span></div>
+										<p><b><span class="red">10P</span></b></p>
+									</td>
+									<td>
+										<div><b><span class="num">3</span>가레스 베일</b><br /><span class="tm">레알마드리드</span></div>
+										<p><b><span class="red">41회</span></b></p>
+									</td>
+
+								</tr>
+						</table>
+					</div>
+					<div class="ranking Team" style="margin-top:20px;">
+						<h3><span>잉글랜드 프리미어리그</span> 선수 종합기록</h3>
+						<div class="select att_sel">
+							<p>종합 부문</p>
+							<ul>
+								<li><a href="">종합부문</a></li>
+								<li><a href="">골결정력</a></li>
+								<li><a href="">슈팅</a></li>
+								<li><a href="">어시스트</a></li>
+								<li><a href="">패스</a></li>
+								<li><a href="">코너킥</a></li>
+								<li><a href="">드리블/드로잉</a></li>
+								<li><a href="">파울얻음</a></li>
+							</ul>
+						</div>
+						<div>
+							<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="67px"/>
+									<col width="200px"/>
+									<col width="80px"/>
+									<col width="60px"/>
+									<col width="104px"/>
+									<col width="64px"/>
+									<col width="68px"/>
+									<col width="85px"/>
+									<col width="55px"/>
+									<col width="53px"/>
+									<col width="90px"/>
+									<col width="75px"/>
+								</colgroup>
+								<tr>
+									<th>순위</th>
+									<th>팀</th>
+									<th>경기수</th>
+									<th><span class="nn1">선발</span></span></th>
+									<th><span class="nn2">교체 (OUT)</span></th>
+									<th><span class="nn3">경기시간</span></th>
+									<th><span class="nn4">득점</span></th>
+									<th><span class="nn5">어시스트</span></th>
+									<th><span class="nn6">경고</span></th>
+									<th><span class="nn7">퇴장</span></th>
+									<th><span class="nn8">패스성공률</span></th>
+									<th><span class="nn9">볼터치</span></th>
+								</tr>
+								<tr>
+									<td><b>1</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>2</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>3</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>4</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>5</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>6</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>7</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>8</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>9</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>10</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>11</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>12</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>13</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>14</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>15</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>16</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>17</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>18</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>19</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>20</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>			
+								
+							</table>
+							<div class="redline nn1">
+								<span class="bt"></span>
+								<span class="bl"></span>
+								<span class="br"></span>
+								<span class="bb"></span>
+							</div>
+						</div>
+						<p>스포네비에서 제공하는 일정, 결과, 기록등의 데이터는 ‘제공처’의 사정에 따라 지연되거나 잘못 표시될 수 있습니다.</p>
+					</div>
+					<div class="ranking attack">
+						<h3><span>잉글랜드 프리미어리그 팀별 </span>공격력 순위</h3>
+						<div class="select att_sel">
+							<p>종합 부문</p>
+							<ul>
+								<li><a href="">종합부문</a></li>
+								<li><a href="">골결정력</a></li>
+								<li><a href="">슈팅</a></li>
+								<li><a href="">어시스트</a></li>
+								<li><a href="">패스</a></li>
+								<li><a href="">코너킥</a></li>
+								<li><a href="">드리블/드로잉</a></li>
+								<li><a href="">파울얻음</a></li>
+							</ul>
+						</div>
+						<div>
+							<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="67px"/>
+									<col width="200px"/>
+									<col width="80px"/>
+									<col width="60px"/>
+									<col width="96px"/>
+									<col width="70px"/>
+									<col width="87px"/>
+									<col width="64px"/>
+									<col width="64px"/>
+									<col width="73px"/>
+									<col width="65px"/>
+									<col width="80px"/>
+								</colgroup>
+								<tr>
+									<th>순위</th>
+									<th>팀</th>
+									<th>경기수</th>
+									<th><span class="a1">득점</span></span></th>
+									<th><span class="a2">슈팅(유효)</span></th>
+									<th><span class="a3">어시스트</span></th>
+									<th><span class="a4">오프사이드</span></th>
+									<th><span class="a5">코너킥</span></th>
+									<th><span class="a6">패스</span></th>
+									<th><span class="a7">볼경합</span></th>
+									<th><span class="a8">드리블</span></th>
+									<th><span class="a9">파울얻음</span></th>
+								</tr>
+								<tr>
+									<td><b>1</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>2</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>3</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>4</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>5</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>6</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>7</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>8</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>9</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>10</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>11</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>12</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>13</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>14</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>15</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>16</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>17</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>18</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>19</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>20</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742 (426)</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>				
+							</table>
+							<div class="redline a1">
+								<span class="bt"></span>
+								<span class="bl"></span>
+								<span class="br"></span>
+								<span class="bb"></span>
+							</div>
+						</div>
+						<p>스포네비에서 제공하는 일정, 결과, 기록등의 데이터는 ‘제공처’의 사정에 따라 지연되거나 잘못 표시될 수 있습니다.</p>
+					</div>
+					<div class="ranking defense">
+						<h3><span>잉글랜드 프리미어리그 팀별 </span>수비력 순위</h3>
+						<div class="select def_sel">
+							<p>종합 부문</p>
+							<ul>
+								<li><a href="">종합 부문</a></li>
+								<li><a href="">골허용</a></li>
+								<li><a href="">슈팅허용</a></li>
+								<li><a href="">파울</a></li>
+								<li><a href="">태클</a></li>
+								<li><a href="">블로킹/인터셉트/걷어내기</a></li>
+								<li><a href="">골기퍼 선방</a></li>
+							</ul>
+						</div>
+						<div>
+							<table class="table_default">
+								<caption></caption>
+								<colgroup>
+									<col width="67px"/>
+									<col width="200px"/>
+									<col width="80px"/>
+									<col width="60px"/>
+									<col width="102px"/>
+									<col width="60px"/>
+									<col width="73px"/>
+									<col width="65px"/>
+									<col width="86px"/>
+									<col width="71px"/>
+									<col width="62px"/>
+									<col width="75px"/>
+								</colgroup>
+								<tr>
+									<th>순위</th>
+									<th>팀</th>
+									<th>경기수</th>
+									<th><span class="d1">실점</span></span></th>
+									<th><span class="d2">슈팅허용</span></th>
+									<th><span class="d3">파울</span></th>
+									<th><span class="d4">경고</span></th>
+									<th><span class="d5">퇴장</span></th>
+									<th><span class="d6">블로킹</span></th>
+									<th><span class="d7">인터셉트</span></th>
+									<th><span class="d8">태클</span></th>
+									<th><span class="d9">걷어내기</span></th>
+								</tr>
+								<tr>
+									<td><b>1</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>2</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>3</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>4</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>5</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>6</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>7</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>8</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>9</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>10</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>11</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>12</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>13</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>14</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>15</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>16</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>17</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>18</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>19</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td><b>20</b></td>
+									<td><span class="champiL"></span>레알 마드리드</td>
+									<td>11</td>
+									<td>27</td>
+									<td>1742</td>
+									<td>3</td>
+									<td>3</td>
+									<td>0</td>
+									<td>31</td>
+									<td>10</td>
+									<td>3</td>
+									<td>2</td>
+								</tr>				
+							</table>
+							<div class="redline d1">
+								<span class="bt"></span>
+								<span class="bl"></span>
+								<span class="br"></span>
+								<span class="bb"></span>
+							</div>
+						</div>
+						<p>스포네비에서 제공하는 일정, 결과, 기록등의 데이터는 ‘제공처’의 사정에 따라 지연되거나 잘못 표시될 수 있습니다.</p>
+					</div>
+				</div>
+			</div>
+
+
+			
+			<div id="footer">
+				<div class="logo_f"><img src="../image/base/f_logo.jpg" alt="" /></div>
+				<div>
+					<ul>
+						<li><a href="">회사소개</a></li>
+						<li><a href="">제휴문의</a></li>
+						<li><a href="">이용약관</a></li>
+						<li><a href=""><b>개인정보보호정책</b></a></li>
+						<li><a href="">청소년보호정책</a></li>
+						<li class="none"><a href="">고객센터</a></li>
+					</ul>
+					<ul>
+						<li>TEL.  031-0000-0000</li>
+						<li>사업자등록번호 : 211- 82-14075</li>
+						<li class="none">Copyright 2017 ODDSCONNECT. All rights reserved</li>
+					</ul>
+				</div>
+			</div><!-- footer -->
+		</div><!-- container -->
+
+		
+	</div><!-- wrapper -->
+
+
+
+		
+
+
+
+
+
+	<script>
+
+		$( "." ).tabs();
+
+
+	</script>
+
+
+
+ </body>
+</html>

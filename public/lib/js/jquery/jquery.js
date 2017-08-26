@@ -8731,7 +8731,7 @@ jQuery.extend( {
 // http://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
 if ( !support.hrefNormalized ) {
 
-	// href/src2 property should get the full normalized URL (#10299/#12915)
+	// href/src property should get the full normalized URL (#10299/#12915)
 	jQuery.each( [ "href", "src" ], function( i, name ) {
 		jQuery.propHooks[ name ] = {
 			get: function( elem ) {

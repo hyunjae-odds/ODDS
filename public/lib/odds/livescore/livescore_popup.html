@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+	<meta http-equiv="content-type" content="text/html; charset-utf-8"/>	
+  <title> ODDS CONNECT </title>
+	<link rel="stylesheet" href="../js/lib/jquery.bxslider.css" />
+	<link href="../css/common.css" rel="stylesheet" type="text/css"/>	
+	<script src="../js/jquery/jquery-1.11.3.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+	
+	$(document).ready(function(){ 
+
+		//리그선택하기 버튼
+		$(".leagueChoice > a").click(function(){ 
+			$(this).parent().find(".choice_w").slideDown();
+			$(this).parent().find(".choice").slideDown();
+			return false;
+		});
+		$(".popup_w2").click(function(){ 
+			$(this).parent().slideUp();
+			return false;
+		});
+
+		//liveview
+		$(".ing_BTN a").click(function(){ 
+			var state = $(this).parents().next(".liveView").css('display'); 
+			if(state == 'none'){ 
+				$(this).parents().find(".liveView").slideUp();
+				$(this).parents(".soccer_table").find(".redbox").addClass("open");
+				$(".popup").slideUp();
+				$(".choice").slideUp();
+				$(this).parents(".soccer_table_w").find(".liveView").slideDown(); 
+			    return false;
+			}else{
+				$(this).parents(".soccer_table_w").find(".liveView").slideUp();
+				$(this).parents().find(".redbox").removeClass("open");
+				$(".popup").slideUp();
+				$(".choice").slideUp();
+				return false;
+			}
+		});
+
+	
+		//leagueChoice_메뉴
+		$(".leagueC1 > a").click(function(){ 
+			var state = $(this).siblings(".leagueC1_v").css("display"); 
+			if(state == "none"){ 
+				$(".leagueC1_v").slideUp(); 
+				$(this).siblings(".leagueC1_v").slideDown(); 
+				$(this).addClass("close");
+				return false;
+			}else{
+				$(this).siblings(".leagueC1_v").slideUp(); 	
+				$(this).removeClass("close");
+				return false;
+			}
+		});
+		$(".leagueC2 > a").click(function(){ 
+			var state = $(this).siblings(".leagueC2_v").css("display"); 
+			if(state == "none"){ 
+				$(".leagueC2_v").slideUp(); 
+				$(this).siblings(".leagueC2_v").slideDown(); 
+				$(this).addClass("close");
+				return false;
+			}else{
+				$(this).siblings(".leagueC2_v").slideUp(); 	
+				$(this).removeClass("close");
+				return false;
+			}
+		});
+		$(".list_close").click(function(){ 
+			$(this).parent().slideUp();
+			return false;
+		});
+		
+
+
+	});
+
+
+		
+</script>
+
+<style type="text/css">
+.choice {position:relative;right:0; top:0; border:2px solid #4b515b;background:#fff; width:730px;z-index:8;}
+.choice h3 {background:#4b515b; font-weight:bold; color:#fff; font-size:13px; line-height:27px; height:30px; text-indent:10px;text-align:left;margin:0;}
+.choice > div {float:left;height:574px;}
+.choice > div h4 {height:40px;line-height:40px;font-weight:bold;border-bottom:1px solid #ccc;font-size:14px;text-align:center;}
+.choice > div.cho1 {border-right:1px solid #ccc;}
+.choice > div.cho1 > div {height:533px;overflow-y:scroll;width:401px;text-align:left;}
+.choice > div.cho2 > div {height:480px;overflow-y:scroll;width:328px;}
+.choice > div ul.list li > a {height:40px;line-height:39px;border-bottom:1px solid #ccc;font-size:14px;display:block;color:#555;position:relative;background:rgba(0, 0, 0, 0) url("../image/base/icon.png") repeat scroll 356px -682px;}
+.choice > div ul.list li a span {margin:0 10px;vertical-align:middle;}
+.choice > div ul.list li.leagueC2 > a {background:#f5f5f5 url("../image/base/icon.png") repeat scroll 356px -682px;padding-left:38px;}
+.choice > div ul.list ul.leagueC2_v li {height:40px;line-height:39px;border-bottom:1px solid #ccc;font-size:14px;background:#ececec;padding-left:74px;color:#555;position:relative;}
+.choice > div ul.list ul.leagueC2_v li input {margin-right:10px;}
+.choice > div ul.list span.Nm {position:absolute;right:43px;top:0;margin:0;font-size:12px;text-align:right;}
+.choice > div.cho2 {position:relative;}
+.choice > div.cho2 ul.list li {position:relative;height:40px;line-height:39px;border-bottom:1px solid #ccc;font-size:14px;text-align:left;padding-left:10px;}
+.choice > div.cho2 ul.list li span {margin-right:10px;}
+.choice > div.cho2 ul.list a.list_close {position:absolute;background:url("../image/base/btn_game_li_close.jpg") no-repeat;width:12px;height:12px;right:15px;top:15px;border:none;}
+.choice > div.cho2 div.btn_div {position:absolute;right:0;bottom :0;border-top:1px solid #ccc;}
+.choice > div.cho2 div.btn_div a {display:inline-block;height:33px;line-height:32px;border:1px solid #ccc;text-align:center;width:90px;color:#888;background:url("../image/base/bg_game_li.jpg") repeat-x scroll 0 bottom;margin:2px;font-weight:bold;}
+.choice > div.cho2 div.btn_div .apply {width:228px;color:#fff;background:url("../image/base/bg_point_btn.jpg") repeat-x;margin-left:0;}
+.choice .close_cho {position:absolute;right:7px;top:9px;}
+.choice .close_cho a {width:11px;height:10px;background:url("../image/base/icon.png") no-repeat -158px -68px;display:block;}
+</style>
+
+ </head>
+
+  
+ <body>
+
+	<div class="choice">
+		<h3>라이브 스코어 리그 선택하기</h3>
+		<div class="cho1">
+			<h4>Today Match League</h4>
+			<div>
+				<ul class="list">
+					<li class="leagueC1"><a href=""><span class="popularityL"></span>인기 리그<span class="Nm">1234</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_148"></span>에스토니아<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_14"></span>체코<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_20"></span>프랑스<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_166"></span>헝가리<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_155"></span>볼리비아<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="leagueC1"><a href=""><span class="Russia2018L"></span>2018 러시아 월드컵<span class="Nm">12</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="leagueC1"><a href=""><span class="AsiaL"></span>아시아<span class="Nm">6</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="leagueC1"><a href=""><span class="AfricaL"></span>아프리카<span class="Nm">125</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="leagueC1"><a href=""><span class="EuropeL"></span>유럽<span class="Nm">6</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="leagueC1"><a href=""><span class="NorthAmericaL"></span>북중미<span class="Nm">45</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="leagueC1"><a href=""><span class="SouthAmericaL"></span>남미<span class="Nm">4</span></a>
+						<ul class="leagueC1_v " style="display:none;">
+							<li class="leagueC2"><a href=""><span class="country_32"></span>스페인<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+							<li class="leagueC2"><a href=""><span class="country_18"></span>잉글랜드<span class="Nm">6</span></a>
+								<ul class="leagueC2_v" style="display:none;">
+									<li><label for=""><input type="checkbox" id=""/>프리미어 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>챔피언쉽 리그</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그1</label><span class="Nm">6</span></li>
+									<li><label for=""><input type="checkbox" id=""/>리그2</label><span class="Nm">6</span></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cho2">
+			<h4>선택된 리그</h4>
+			<div>
+				<ul class="list">
+					<li><span class="country_32"></span>스페인 - <b>라리가</b><a href="" class="list_close"></a></li>
+					<li><span class="country_32"></span>잉글랜드 - <b>프리미어 리그</b><a href="" class="list_close"></a></li>
+					<li><span class="country_32"></span>프랑스 - <b>리그앙</b><a href="" class="list_close"></a></li>
+					<li><span class="country_32"></span>이탈리아 - <b>세리에A</b><a href="" class="list_close"></a></li>
+					<li><span class="country_32"></span>잉글랜드 - <b>챔피언쉽 리그</b><a href="" class="list_close"></a></li>
+				</ul>
+				<div class="btn_div">
+					<a href="" class="cancel">취소</a><a href="" class="apply">적용 하기</a>
+				</div>
+			</div>
+		</div>
+		<span class="clear"></span>
+		<div class="close_cho"><a href=""></a></div>
+	</div>		
+						
+
+ </body>
+</html>

@@ -179,7 +179,7 @@ if ( ! function_exists('img'))
 	{
 		if ( ! is_array($src) )
 		{
-			$src = array('src2' => $src);
+			$src = array('src' => $src);
 		}
 
 		// If there is no alt attribute defined, set it to an empty string
@@ -192,15 +192,15 @@ if ( ! function_exists('img'))
 
 		foreach ($src as $k => $v)
 		{
-			if ($k === 'src2' && ! preg_match('#^([a-z]+:)?//#i', $v))
+			if ($k === 'src' && ! preg_match('#^([a-z]+:)?//#i', $v))
 			{
 				if ($index_page === TRUE)
 				{
-					$img .= ' src2="'.get_instance()->config->site_url($v).'"';
+					$img .= ' src="'.get_instance()->config->site_url($v).'"';
 				}
 				else
 				{
-					$img .= ' src2="'.get_instance()->config->slash_item('base_url').$v.'"';
+					$img .= ' src="'.get_instance()->config->slash_item('base_url').$v.'"';
 				}
 			}
 			else

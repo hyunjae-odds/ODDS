@@ -1,4 +1,4 @@
-﻿<?php $MLB_team_kor=array('Chicago Cubs'=>'시카고C','St. Louis Cardinals'=>'세인트루이스','Kansas City Royals'=>'캔자스시티','Colorado Rockies'=>'콜로라도','Minnesota Twins'=>'미네소타','Cleveland Indians'=>'클리브랜드','Tampa Bay Rays'=>'템파베이','Miami Marlins'=>'마이애미','Los Angeles Angels'=>'LAA','San Francisco Giants'=>'샌프란시스코','Philadelphia Phillies'=>'필라델피아','Boston Red Sox'=>'보스톤','New York Yankees'=>'뉴욕Y','Washington Nationals'=>'워싱턴','Texas Rangers'=>'텍사스','Milwaukee Brewers'=>'밀워키','Chicago White Sox'=>'시카고W','Los Angeles Dodgers'=>'LAD','New York Mets'=>'뉴욕M','Pittsburgh Pirates'=>'피츠버그','Arizona Diamondbacks'=>'에리조나','Oakland Athletics'=>'오클랜드','San Diego Padres'=>'샌디에이','Seattle Mariners'=>'시애틀','Houston Astros'=>'휴스턴','Baltimore Orioles'=>'볼티모어','Atlanta Braves'=>'애틀랜타','Detroit Tigers'=>'디트로이','Cincinnati Reds'=>'신시내티','Toronto Blue Jays'=>'토론토'); ?>
+﻿<?php $MLB_team_kor=array('Chicago Cubs'=>'시카고C','St. Louis Cardinals'=>'세인트루이스','Kansas City Royals'=>'캔자스시티','Colorado Rockies'=>'콜로라도','Minnesota Twins'=>'미네소타','Cleveland Indians'=>'클리브랜드','Tampa Bay Rays'=>'템파베이','Miami Marlins'=>'마이애미','Los Angeles Angels'=>'LAA','Los Angeles Angels of Anaheim'=>'LAA','San Francisco Giants'=>'샌프란시스코','Philadelphia Phillies'=>'필라델피아','Boston Red Sox'=>'보스톤','New York Yankees'=>'뉴욕Y','Washington Nationals'=>'워싱턴','Texas Rangers'=>'텍사스','Milwaukee Brewers'=>'밀워키','Chicago White Sox'=>'시카고W','Los Angeles Dodgers'=>'LAD','New York Mets'=>'뉴욕M','Pittsburgh Pirates'=>'피츠버그','Arizona Diamondbacks'=>'에리조나','Oakland Athletics'=>'오클랜드','San Diego Padres'=>'샌디에이고','Seattle Mariners'=>'시애틀','Houston Astros'=>'휴스턴','Baltimore Orioles'=>'볼티모어','Atlanta Braves'=>'애틀랜타','Detroit Tigers'=>'디트로이','Cincinnati Reds'=>'신시내티','Toronto Blue Jays'=>'토론토'); ?>
 <?php $MLB_team_initial=array('Chicago Cubs'=>'CUB','St. Louis Cardinals'=>'STL','Kansas City Royals'=>'KC','Colorado Rockies'=>'COL','Minnesota Twins'=>'MIN','Cleveland Indians'=>'CLE','Tampa Bay Rays'=>'TB','Miami Marlins'=>'MIA','Los Angeles Angels of Anaheim'=>'LAA','Los Angeles Angels'=>'LAA','San Francisco Giants'=>'SF','Philadelphia Phillies'=>'PHI','Boston Red Sox'=>'BOS','New York Yankees'=>'NYY','Washington Nationals'=>'WSH','Texas Rangers'=>'TEX','Milwaukee Brewers'=>'MIL','Chicago White Sox'=>'CWS','Los Angeles Dodgers'=>'LAD','New York Mets'=>'NYM','Pittsburgh Pirates'=>'PIT','Arizona Diamondbacks'=>'ARI','Oakland Athletics'=>'OAK','San Diego Padres'=>'SD','Seattle Mariners'=>'SEA','Houston Astros'=>'HOU','Baltimore Orioles'=>'BAL','Atlanta Braves'=>'ATL','Detroit Tigers'=>'DET','Cincinnati Reds'=>'CIN','Toronto Blue Jays'=>'TOR');?>
 
 <link href="/public/lib/css/baseball.css" rel="stylesheet" type="text/css"/>
@@ -21,9 +21,9 @@
             <li class="active s1">
                 <div class="tab01_w">
                     <ul class="tab01_2 expert_menu">
-                        <li class="ls01 <?php if($selector=='win_lose') echo 'on';?>" ><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&selector=win_lose')">승패</a></li>
-                        <li class="ls02 <?php if($selector=='handicap') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&selector=handicap')">핸디캡</a></li>
-                        <li class="ls03 <?php if($selector=='over_under') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&selector=over_under')">O/U</a></li>
+                        <li class="ls01 <?php if($top_selector=='win_lose') echo 'on';?>" ><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&top_selector=win_lose&board_selector=win_lose')">승패</a></li>
+                        <li class="ls02 <?php if($top_selector=='handicap') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&top_selector=handicap&board_selector=handicap&handicap=-1.5')">핸디캡</a></li>
+                        <li class="ls03 <?php if($top_selector=='over_under') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&top_selector=over_under&board_selector=over_under')">O/U</a></li>
                     </ul>
                 </div>
                 <ul class="expert_menu_view">
@@ -33,12 +33,12 @@
                                 <table class="table_default league_table01">
                                     <caption></caption>
                                     <colgroup>
-                                        <col width="80px"/>
-                                        <col width="*"/>
-                                        <col width="90px"/>
-                                        <col width="80px"/>
-                                        <col width="55px"/>
-                                        <col width="65px"/>
+                                        <col width="150px">
+                                        <col width="*">
+                                        <col width="90px">
+                                        <col width="80px">
+                                        <col width="55px">
+                                        <col width="65px">
                                     </colgroup>
                                     <tr>
                                         <th>
@@ -46,10 +46,10 @@
                                             echo $exp[1].'.'.$exp[2].'('.strftime('%a', strtotime($schedule['date'][$i]->date)).')'; ?>
                                         </th>
                                         <th class="left pl20"><span class="country_173"></span> 미국 // MLB</th>
-                                        <?php if($selector=='handicap'): ?><th><span class="underline">핸디캡</span></th>
-                                        <?php elseif($selector=='over_under'): ?><th><span class="underline">O/U</span></th><?php endif;?>
-                                        <th>승</th>
-                                        <th>패</th>
+                                        <?php if($top_selector=='handicap'): ?><th><span class="underline">핸디캡</span></th>
+                                        <?php elseif($top_selector=='over_under'): ?><th><span class="underline">O/U</span></th><?php endif;?>
+                                        <th><?=($top_selector=='over_under')? 'OVER' : '승';?></th>
+                                        <th><?=($top_selector=='over_under')? 'UNDER' : '패';?></th>
                                         <th>B’s</th>
                                         <th>DATA</th>
                                     </tr>
@@ -61,8 +61,8 @@
                                             <td class="left pl20"><a href="/baseball/bet"><?=$MLB_team_kor[$item->away];?> vs <?=$MLB_team_kor[$item->home];?></a></td>
                                             <?php if($item->away=='Los Angeles Angels'): $item->away='Los Angeles Angels of Anaheim'; ?>
                                             <?php elseif($item->home=='Los Angeles Angels'): $item->home='Los Angeles Angels of Anaheim'; endif; ?>
-                                            <?php if($selector=='handicap'): ?><td><span class="underline">-1.5</span></td>
-                                            <?php elseif($selector=='over_under'): ?><td><span class="underline"><?=number_format(($over_under_reference[$item->away]+$over_under_reference[$item->home])/2).'.5';?></span></td><?php endif;?>
+                                            <?php if($top_selector=='handicap'): ?><td><span class="underline">-1.5</span></td>
+                                            <?php elseif($top_selector=='over_under'): ?><td><span class="underline"><?=number_format(($over_under_reference[$item->away]+$over_under_reference[$item->home])/2).'.5';?></span></td><?php endif;?>
                                             <td><span class="">1.93</span></td>
                                             <td>3.15</td>
                                             <td>51</td>
@@ -81,66 +81,161 @@
                             <h3 class="center gc01_v" style="margin:0;">2016 MLB 리그 통계</h3>
                             <h3 class="center gc02_v" style="margin:0;display:none;">2016 MLB 아메리칸리그 통계</h3>
                             <ul class="tab02">
-                                <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=all&selector=<?=$selector;?>&mlb_selector=<?=$mlb_selector;?>')">전체</a></li>
-                                <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=home&selector=<?=$selector;?>&mlb_selector=<?=$mlb_selector;?>')">홈</a></li>
-                                <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=away&selector=<?=$selector;?>&mlb_selector=<?=$mlb_selector;?>')">원정</a></li>
+                                <li class="<?php if($home_away=='all') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=all&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">전체</a></li>
+                                <li class="<?php if($home_away=='home') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=home&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">홈</a></li>
+                                <li class="<?php if($home_away=='away') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=away&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">원정</a></li>
                             </ul>
-                            <ul class="g_check_tab" style="bottom:-6px;">
-                                <li class="gc01 <?php if($league=='MLB_N') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/MLB_N?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&selector=<?=$selector;?>&mlb_selector=<?=$mlb_selector;?>')">내셔널리그</a></li>
-                                <li class="gc02 <?php if($league=='MLB_A') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/MLB_A?scroll_top='+document.body.scrollTop+'&duration=<?=$duration;?>&home_away=<?=$home_away;?>&selector=<?=$selector;?>&mlb_selector=<?=$mlb_selector;?>')">아메리칸리그</a></li>
+                            <ul class="g_check_tab" style="top:3px;">
+                                <li class="<?php if($league=='MLB_N') echo 'on';?> gc01"><a href="javascript:location.replace('/baseball/league/MLB_N?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&home_away=<?=$home_away;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">내셔널리그</a></li>
+                                <li class="<?php if($league=='MLB_A') echo 'on';?> gc02"><a href="javascript:location.replace('/baseball/league/MLB_A?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&home_away=<?=$home_away;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">아메리칸리그</a></li>
                             </ul>
+                            <div class="select" style="top:39px;">
+                                <p class="off"><span class="pp"><?php if($board_selector=='win_lose') echo '승패'; elseif($board_selector=='handicap') echo '핸디캡'; else echo 'O/U'; ?></span><span class="pa"></span></p>
+                                <ul>
+                                    <li><a href="javascript:location.replace('/baseball/league/MLB_A?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&home_away=<?=$home_away;?>&board_selector=win_lose&top_selector=win_lose')">승패</a></li>
+                                    <li><a href="javascript:location.replace('/baseball/league/MLB_A?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&home_away=<?=$home_away;?>&board_selector=handicap&handicap=-1.5&top_selector=handicap')">핸디캡</a></li>
+                                    <li><a href="javascript:location.replace('/baseball/league/MLB_A?mlb_selector=<?=$mlb_selector;?>&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&home_away=<?=$home_away;?>&board_selector=over_under&top_selector=over_under')">O/U</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="LastGame_view">
                             <ul class="LastGame_view_ul">
                                 <li class="active">
                                     <div class="Ltable relative">
                                         <?php $MLB_local=array('동부', '서부', '중부'); ?>
-                                        <?php foreach($total as $key=>$item): ?>
-                                            <table class="table_default league_Ltable" <?php if($key!=0) echo 'style="margin-top:35px;"';?>>
-                                                <caption></caption>
-                                                <colgroup>
-                                                    <col width="55px"/>
-                                                    <col width="190px"/>
-                                                    <col width="45px"/><col width="40px"/><col width="40px"/><col width="30px"/><col width="40px"/><col width="40px"/><col width="40px"/><col width="45px"/><col width="55px"/><col width="40px"/><col width="260px"/><col width="40px"/>
-                                                </colgroup>
-                                                <tr>
-                                                    <th><?=$MLB_local[$key];?></th>
-                                                    <th class="left">팀명</th>
-                                                    <th>경기</th>
-                                                    <th>승</th>
-                                                    <th>패</th>
-                                                    <th>무</th>
-                                                    <th>득</th>
-                                                    <th>실</th>
-                                                    <th>마진</th>
-                                                    <th>득/실</th>
-                                                    <th>승률%</th>
-                                                    <th>승차</th>
-                                                    <th colspan="2">최근 10경기</th>
-                                                </tr>
-                                                <?php foreach($item as $entry): ?>
+                                        <?php if($board_selector=='win_lose'): ?>
+                                            <?php foreach($total as $key=>$item): ?>
+                                                <table class="table_default league_Ltable" <?php if($key!=0) echo 'style="margin-top:35px;"';?>>
+                                                    <caption></caption>
+                                                    <colgroup>
+                                                        <col width="55px"/>
+                                                        <col width="190px"/>
+                                                        <col width="45px"/><col width="40px"/><col width="40px"/><col width="30px"/><col width="40px"/><col width="40px"/><col width="40px"/><col width="45px"/><col width="55px"/><col width="40px"/><col width="260px"/><col width="40px"/>
+                                                    </colgroup>
                                                     <tr>
-                                                        <td><?=$entry->rank;?></td>
-                                                        <?php if($entry->team=='Los Angeles Angels of Anaheim') $entry->team='Los Angeles Angels'; ?>
-                                                        <td class="left"><a href="/baseball/team_info/<?=$league;?>?team=<?=$entry->team;?>"><span class=""></span> <?=$MLB_team_kor[$entry->team];?></a></td>
-                                                        <?php if($entry->team=='Los Angeles Angels') $entry->team='Los Angeles Angels of Anaheim'; ?>
-                                                        <td><?=$entry->g;?></td>
-                                                        <td><?=$entry->win;?></td>
-                                                        <td><?=$entry->lose;?></td>
-                                                        <td><?=$entry->tie;?></td>
-                                                        <td><?=$entry->plus;?></td>
-                                                        <td><?=$entry->minus;?></td>
-                                                        <td><?php if($entry->plus-$entry->minus>0) echo '+';?><?=$entry->plus-$entry->minus;?></td>
-                                                        <td><?=number_format(($entry->plus+$entry->minus)/$entry->g, 1);?></td>
-                                                        <td><?=number_format($entry->win_rate,3);?></td>
-                                                        <td><?=$entry->game_car;?></td>
-                                                        <?php $win=0; $lose=0; $word=''; ?><?php $exp=explode(';', $entry->recent_game); ?>
-                                                        <td><?php foreach($exp as $key=>$item): ?><?php if($item=='승'): $word='win'; $win++; elseif($item=='무'): $word='dra'; else: $word='lose'; $lose++; ?><?php endif; ?><a class="result_btn" href="/baseball/match_team/<?=$league;?>/<?=$entry->no;?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$word;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
-                                                        <td><?=$win;?>/<?=$lose;?></td>
+                                                        <th><?=$MLB_local[$key];?></th>
+                                                        <th class="left">팀명</th>
+                                                        <th>경기</th>
+                                                        <th><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&sort=win')"><span>승<span class="down"></span></span></a></th>
+                                                        <th><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&sort=lose')"><span>패<span class="down"></span></span></a></th>
+                                                        <th>무</th>
+                                                        <th>득</th>
+                                                        <th>실</th>
+                                                        <th>마진</th>
+                                                        <th>득/실</th>
+                                                        <th>승률%</th>
+                                                        <th>승차</th>
+                                                        <th colspan="2">최근 10경기</th>
                                                     </tr>
-                                                <?php endforeach; ?>
-                                            </table>
-                                        <?php endforeach; ?>
+                                                    <?php foreach($item as $entry): ?>
+                                                        <tr>
+                                                            <td><?=$entry->rank;?></td>
+                                                            <?php if($entry->team=='Los Angeles Angels of Anaheim') $entry->team='Los Angeles Angels'; ?>
+                                                            <td class="left"><span class="<?=$MLB_team_initial[$entry->team];?>_L"></span><span class=""></span> <?=$MLB_team_kor[$entry->team];?></td>
+                                                            <?php if($entry->team=='Los Angeles Angels') $entry->team='Los Angeles Angels of Anaheim'; ?>
+                                                            <td><?=$entry->g;?></td>
+                                                            <td><?=$entry->win;?></td>
+                                                            <td><?=$entry->lose;?></td>
+                                                            <td><?=$entry->tie;?></td>
+                                                            <td><?=$entry->plus;?></td>
+                                                            <td><?=$entry->minus;?></td>
+                                                            <td><?php if($entry->plus-$entry->minus>0) echo '+';?><?=$entry->plus-$entry->minus;?></td>
+                                                            <td><?=number_format(($entry->plus+$entry->minus)/$entry->g, 1);?></td>
+                                                            <td><?=number_format($entry->win_rate,3);?></td>
+                                                            <td><?=$entry->game_car;?></td>
+                                                            <td><?php foreach($entry->recent_game as $key=>$items): ?><a class="result_btn" href="/baseball/match_team/<?=$league;?>/<?=$entry->recent_detail[9-$key]['no'];?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$items;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
+                                                            <td><?=$entry->recent_win;?>/<?=$entry->recent_lose;?></td>
+                                                        </tr>
+                                                    <?php endforeach; ?>
+                                                </table>
+                                            <?php endforeach; ?>
+                                        <?php elseif($board_selector=='handicap'): ?>
+                                            <?php foreach($total as $key=>$item): ?>
+                                                <table class="table_default league_Ltable">
+                                                    <caption></caption>
+                                                    <colgroup>
+                                                        <col width="55px"/>
+                                                        <col width="190px"/>
+                                                        <col width=""/><col width="66px"/><col width=""/><col width=""/><col width=""/><col width=""/><col width=""/><col width=""/><col width="260px"/><col width="40px"/>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th><?=$MLB_local[$key];?></th>
+                                                        <th class="left">팀명</th>
+                                                        <th>경기</th>
+                                                        <th>
+                                                            <div class="select_w">
+                                                                <div class="select" style="right:0px;">
+                                                                    <p class="off"><span class="pp"><?=$handicap;?></span><span class="pa"></span></p>
+                                                                    <ul>
+                                                                        <li><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=-1.5')">-1.5</a></li>
+                                                                        <li><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=1.5')">+1.5</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </th>
+                                                        <th><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>&sort=win')"><span>승<span class="down"></span></span></a></th>
+                                                        <th><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>&sort=lose')"><span>패<span class="down"></span></span></a></th>
+                                                        <th>득</th>
+                                                        <th>실</th>
+                                                        <th>계차</th>
+                                                        <th>승률</th>
+                                                        <th colspan="2">핸디캡 최근 10경기</th>
+                                                    </tr>
+                                                    <?php foreach($item as $entry): ?>
+                                                        <tr>
+                                                            <td><?=$entry->rank;?></td>
+                                                            <td class="left"><span class="<?=$MLB_team_initial[$entry->team];?>_L"></span> <?=$MLB_team_kor[$entry->team];?></td>
+                                                            <td><?=$entry->g;?></td>
+                                                            <td><span class="underline"><?php if($handicap>0) echo '+';?><?=$handicap;?></span></td>
+                                                            <td><?=$entry->win;?></td>
+                                                            <td><?=$entry->lose;?></td>
+                                                            <td><?=$entry->plus;?></td>
+                                                            <td><?=$entry->minus;?></td>
+                                                            <td><?php if($entry->margin>0) echo '+';?><?=$entry->margin;?></td>
+                                                            <td><?=number_format($entry->win_rate,3);?></td>
+                                                            <td><?php foreach($entry->recent_game as $key=>$item): ?><a class="result_btn" href="/baseball/match_team/<?=$league;?>/<?=$entry->recent_detail[9-$key]['no'];?>/0" onfocus="this.blur();"><img src="/public/lib/image/base/btn_<?=$item;?>.png" title="<?=$entry->recent_detail[9-$key]['away'].' '.$entry->recent_detail[9-$key]['away_score'].':'.$entry->recent_detail[9-$key]['home_score'].' '.$entry->recent_detail[9-$key]['home'];?>"></a><?php endforeach; ?></td>
+                                                            <td><?=$entry->recent_win;?>/<?=$entry->recent_lose;?></td>
+                                                        </tr>
+                                                    <?php endforeach; ?>
+                                                </table>
+                                            <?php endforeach; ?>
+                                        <?php elseif($board_selector=='over_under'): ?>
+                                            <?php foreach($total as $key=>$item): ?>
+                                                <table class="table_default league_Ltable league_Ltable_OU">
+                                                    <caption></caption>
+                                                    <colgroup>
+                                                        <col width="55px"/>
+                                                        <col width="190px"/>
+                                                        <col width=""/><col width=""/><col width=""/><col width=""/><col width=""/><col width=""/><col width="260px"/><col width="40px"/>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>순위</th>
+                                                        <th class="left">팀명</th>
+                                                        <th>경기</th>
+                                                        <th>기준점</th>
+                                                        <th><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=over_under&handicap=<?=$handicap;?>&sort=over')"><span>오버<span class="down"></span></span></a></th>
+                                                        <th><a href="javascript:location.replace('/baseball/league/<?=$league;?>?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=over_under&handicap=<?=$handicap;?>&sort=under')"><span>언더<span class="down"></span></span></a></th>
+                                                        <th>득/실</th>
+                                                        <th>오버%</th>
+                                                        <th colspan="2">O/U 최근 10경기</th>
+                                                    </tr>
+                                                    <?php foreach($item as $entry): ?>
+                                                        <tr>
+                                                            <td><?=$entry->rank;?></td>
+                                                            <td class="left"><span class="<?=$MLB_team_initial[$entry->team];?>_L"></span> <?=$MLB_team_kor[$entry->team];?></td>
+                                                            <td><?=$entry->g;?></td>
+                                                            <td><span class="underline"><?=$over_under_reference[$entry->team];?></span></td>
+                                                            <td><?=$entry->over;?></td>
+                                                            <td><?=$entry->g-$entry->over;?></td>
+                                                            <td><?=number_format(($entry->plus+$entry->minus)/$entry->g, 1);?></td>
+                                                            <td><?=number_format($entry->over/$entry->g*100, 1);?>%</td>
+                                                            <td><?php foreach($entry->recent_ou as $item): ?><span class="<?=$item;?>L"><?=$item;?></span><?php endforeach; ?></td>
+                                                            <td><?=$entry->recent_over;?>/<?=10-$entry->recent_over;?></td>
+                                                        </tr>
+                                                    <?php endforeach; ?>
+                                                </table>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
                                     </div>
                                 </li>
                             </ul>
@@ -152,8 +247,8 @@
                             <h3 class="noBorder gc01_v" style="margin:0;">2017 MLB 리그요약</h3>
                             <h3 class="noBorder gc02_v" style="margin:0;display:none;">2017 MLB 아메리칸 리그요약</h3>
                             <ul class="g_check_tab" style="bottom:5px;">
-                                <li class="<?php if($mlb_selector=='MLB_N') echo 'on';?> gc01"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=MLB_N&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=<?=$selector;?>')">내셔널리그</a></li>
-                                <li class="<?php if($mlb_selector=='MLB_A') echo 'on';?> gc02"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=MLB_A&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=<?=$selector;?>')">아메리칸리그</a></li>
+                                <li class="<?php if($mlb_selector=='MLB_N') echo 'on';?> gc01"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=MLB_N&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>')">내셔널리그</a></li>
+                                <li class="<?php if($mlb_selector=='MLB_A') echo 'on';?> gc02"><a href="javascript:location.replace('/baseball/league/<?=$league;?>?mlb_selector=MLB_A&scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>')">아메리칸리그</a></li>
                             </ul>
                         </div>
                         <div class="LastGame_view tableNtable">
@@ -338,6 +433,4 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function(){document.body.scrollTop=<?=$scroll_top;?>;});
-</script>
+<script type="text/javascript">$(document).ready(function(){document.body.scrollTop=<?=$scroll_top;?>;});</script>

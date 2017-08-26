@@ -1,0 +1,1025 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>오즈커넥트 IA</title> 
+<script type="text/javascript">
+/* Tab Content */
+<!--
+function initTabMenu(tabContainerID) {
+	var tabContainer = document.getElementById(tabContainerID);
+	var tabAnchor = tabContainer.getElementsByTagName("a");
+	var i = 0;
+
+	for(i=0; i<tabAnchor.length; i++) {
+		if (tabAnchor.item(i).className == "tab")
+			thismenu = tabAnchor.item(i);
+		else
+			continue;
+
+		thismenu.container = tabContainer;
+		thismenu.targetEl = document.getElementById(tabAnchor.item(i).href.split("#")[1]);
+		thismenu.targetEl.style.display = "none";
+		thismenu.imgEl = thismenu.getElementsByTagName("img").item(0);
+		thismenu.onclick = function tabMenuClick() {
+			currentmenu = this.container.current;
+			if (currentmenu == this)
+				return;
+
+			if (currentmenu) {
+				currentmenu.targetEl.style.display = "none";
+				if (currentmenu.imgEl) {
+					currentmenu.imgEl.src = currentmenu.imgEl.src.replace("_on.gif", "_off.gif");
+				} else {
+					currentmenu.className = currentmenu.className.replace("on", "");
+				}
+			}
+
+			this.targetEl.style.display = "block";
+			if (this.imgEl) {
+				this.imgEl.src = this.imgEl.src.replace("_off.gif", "_on.gif");
+			} else {
+				this.className += " on";
+			}
+			this.container.current = this;
+
+			return false;
+		};
+
+		if (!thismenu.container.first)
+			thismenu.container.first = thismenu;
+	}
+	if (tabContainer.first)
+		tabContainer.first.onclick();
+}
+//-->
+</script>
+<style type="text/css">
+body {font-size:11px;font-family:돋움,dotum;verdana;color:#444;overflow-y:scroll;}
+div.wrap {margin:0 auto;width:98%;}
+div.wrap h1 {font-family:verdana;text-align:center;}
+div.wrap h2 {height:25px;margin:5px 0;padding:0;font-family:verdana;}
+div.wrap ul {margin:0;padding:0 0 20px;}
+div.wrap ul li {float:left;margin:0 5px 0 0;height:25px;line-height:25px;list-style:none;border:1px solid #ddd;}
+div.wrap ul li a {float:left;padding:0 5px;font-weight:bold;}
+div.wrap ul li a.on {background:#eeeded;}
+div.wrap ul.ia-menu {padding:0;border-bottom:1px solid #dddddd;overflow:hidden;zoom:1;}
+div.wrap ul.ia-menu li {margin-bottom:-1px;}
+div.ia-menu {clear:both;margin:10px 0 0 0;}
+div.wrap table {width:100%;}
+a:link {text-decoration:none;color:#444;}
+a:active {text-decoration:none;color:#444;}
+a:visited {text-decoration:none;color:#444;}
+a:hover {text-decoration:underline;color:#444;}
+table {border:1px solid #ddd;border-collapse:collapse;}
+table thead th,table tbody th,table tbody td {padding:8px 10px 5px;border:1px solid #ddd;}
+table thead th {background:#999/*#f1ebcb*/;color:#fff;}
+table tbody th {background:#eeeded;}
+table tbody tr.line th,table tbody tr.line td {border-top:3px solid #ddd;}
+table tbody tr td.section {width:120px;}
+table tbody tr td.depth1,table tbody tr td.depth2,table tbody tr td.depth3,table tbody tr td.depth4,table tbody tr td.depth5 {font-family:verdana;width:180px;}
+table tbody tr td.page {width:200px;}
+table tbody tr td.url {background:#ffe6e6/*#ffe4e4*/;}
+table tbody tr td.html {background:#f49ac1;}
+table tbody tr td.space {height:0px;padding:0;font-size:0px;background-color:#dddddd;}
+table tbody tr td.alam {font-size:12px;text-align:center;white-space:nowrap;}
+table tbody tr td.none a {color:#ccc;}
+table tbody tr td.ing a {color:#ff225b;}
+table tbody tr td.fix a {color:#0063d6;}
+span.square {display:inline-block;width:10px;height:10px;}
+span.none {background:#ccc;}
+span.ing {background:#ff225b;}
+span.fix {background:#0063d6;}
+em{color:blue;}
+xmp{display:block;overflow:hidden;white-space:normal;margin:0;padding:10px;border:#0383c6 solid 1px;background:#0383c6;color:#fff;}
+</style>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" class="wrap">
+<h1>
+	오즈커넥트
+	<abbr title="Information Architecture">IA</abbr>
+</h1>
+<ul class="ia-menu">
+	<li><a href="#ia-menu00" class="tab">Index</a></li>
+	<li><a href="#ia-menu01" class="tab">ODDS</a></li>
+	<li><a href="#ia-menu02" class="tab">라이브 스코어</a></li>
+	<li><a href="#ia-menu03" class="tab">재야의분석</a></li>
+	<li><a href="#ia-menu04" class="tab">배팅경연</a></li>
+	<li><a href="#ia-menu05" class="tab">서바이벌게임</a></li>
+	<li><a href="#ia-menu06" class="tab">커넥트뉴스</a></li>
+	<li><a href="#ia-menu07" class="tab">커뮤니티</a></li>
+	<li><a href="#ia-menu08" class="tab">북마크</a></li>
+	<li><a href="#ia-menu09" class="tab">마이페이지</a></li>
+	<li><a href="#ia-menu10" class="tab">블로그</a></li>
+</ul>
+<p style="position:absolute;right:2%;top:50px;">
+	<strong style="">완료 페이지 : <span class="square fix"></span></strong>&nbsp;&nbsp;
+	<strong style="">비완성 페이지 : <span class="square none"></span></strong>&nbsp;&nbsp;
+	<strong style="">진행중인 페이지 : <span class="square ing"></span></strong>
+</p>
+
+<!-- 탭 0 -->
+<div id="ia-menu00" class="ia-menu">
+	<h2>Index</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">Main</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/main.php" target="_blank">/main.php</a><br />
+			</td>
+			<td class="stat">
+				로그인/비밀번호/회원가입 적용됨 - 수정중
+				핫매치 완료
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">고객센터</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/customer_service.php" target="_blank">/customer_service.php</a><br />
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 0 -->
+
+<!-- 탭 1 -->
+<div id="ia-menu01" class="ia-menu">
+	<h2>ODDS</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">ODDS</td>
+			<td class="depth1">ODDS 메인</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/main/game_main.php" target="_blank">/game/main/game_main.php</a>
+			</td>
+			<td class="stat">
+				야구작업완료
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">매치 리스트</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/main/TodayMatches.php" target="_blank">/game/main/TodayMatches.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">배당률</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/main/dividend.php" target="_blank">/game/main/dividend.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">배당률팝업창</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/main/pop_dividend.php" onclick="window.open(this.href, '', 'width=1060, height=900 , scrollbars=yes'); return false;">/game/main/pop_dividend.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">축구리그</td>
+			<td class="depth2">리그정보</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/league.php" target="_blank">/game/league_soccer/league.php</a>
+			</td>
+			<td class="stat">
+				잉글랜드 프리미어리그
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">경기 결과</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/result.php" target="_blank">/game/league_soccer/result.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">리그 통계</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/stats.php" target="_blank">/game/league_soccer/stats.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">팀 기록</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/team_record.php" target="_blank">/game/league_soccer/team_record.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">선수 기록</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/record.php" target="_blank">/game/league_soccer/record.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">상대 전적</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/score.php" target="_blank">/game/league_soccer/score.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">매치정보</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/match.php" target="_blank">/game/league_soccer/match.php</a>
+			</td>
+			<td class="stat">게임 before/ing
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">매치정보 결과</td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/match_full.php" target="_blank">/game/league_soccer/match_full.php</a>
+			</td>
+			<td class="stat">게임 end
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">팀정보</td>
+			<td class="depth3">시즌 기록</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/team_info.php" target="_blank" style="text-decoration:line-through;">/game/league_soccer/team_info.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">경기 결과</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/schedule.php" target="_blank" style="text-decoration:line-through;">/game/league_soccer/schedule.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수 기록</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/player.php" target="_blank" style="text-decoration:line-through;">/game/league_soccer/player.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수 정보</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/player_info.php" target="_blank" style="text-decoration:line-through;">/game/league_soccer/player_info.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수 현황</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/situation.php" target="_blank" style="text-decoration:line-through;">/game/league_soccer/situation.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">팀소개</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_soccer/team.php" target="_blank" style="text-decoration:line-through;">/game/league_soccer/team.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">야구리그</td>
+			<td class="depth2">리그정보</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/league.php" target="_blank">/game/league_base/league.php</a>
+			</td>
+			<td class="stat">
+				KBO
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">리그정보_MLB</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/league_MLB.php" target="_blank">/game/league_base/league_MLB.php</a>
+			</td>
+			<td class="stat">
+				MLB
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">경기 결과</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/result.php" target="_blank">/game/league_base/result.php</a>
+			</td>
+			<td class="stat">
+				KBO
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">경기 결과_MLB</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/result_MLB.php" target="_blank">/game/league_base/result_MLB.php</a>
+			</td>
+			<td class="stat">
+				MLB
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">리그 통계</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="" target="_blank" style="text-decoration:line-through;">/game/league_base/stats.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">팀 기록</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="" target="_blank" style="text-decoration:line-through;">/game/league_base/team_record.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">선수 기록</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/record.php" target="_blank">/game/league_base/record.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">선수 기록_MLB</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/record.php" target="_blank">/game/league_base/record.php</a>
+			</td>
+			<td class="stat">MLB
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">상대 전적</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/score.php" target="_blank">/game/league_base/score.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">상대 전적_MLB</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/score.php" target="_blank">/game/league_base/score.php</a>
+			</td>
+			<td class="stat">MLB
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">매치정보</td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/match.php" target="_blank">/game/league_base/match.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">매치정보 결과</td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/match_full.php" target="_blank">/game/league_base/match_full.php</a>
+			</td>
+			<td class="stat">게임 end
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2">팀정보</td>
+			<td class="depth3">시즌 기록</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/team_info.php" target="_blank" style="text-decoration:line-through;">/game/league_base/team_info.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">경기 결과</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/schedule.php" target="_blank" style="text-decoration:line-through;">/game/league_base/schedule.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수 기록</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/player.php" target="_blank" style="text-decoration:line-through;">/game/league_base/player.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수정보 - 투수</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/player_info_pitcher.php" target="_blank" style="text-decoration:line-through;">/game/league_base/player_info_pitcher.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수정보 - 타자</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/player_info_hitter.php" target="_blank" style="text-decoration:line-through;">/game/league_base/player_info_hitter.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">선수현황</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/situation.php" target="_blank" style="text-decoration:line-through;">/game/league_base/situation.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3">팀소개</td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/game/league_base/team.php" target="_blank" style="text-decoration:line-through;">/game/league_base/team.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 1 -->
+
+<!-- 탭 2 -->
+<div id="ia-menu02" class="ia-menu">
+	<h2>라이브 스코어</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">라이브스코어</td>
+			<td class="depth1">축구</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/livescore/livescore_soccer.php" target="_blank">/livescore/livescore_soccer.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">야구</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/livescore/livescore_base.php" target="_blank">/livescore/livescore_base.php</a>
+			</td>
+			<td class="stat">
+			</td>
+		</tr>
+
+		</tbody>
+	</table>
+</div>
+<!-- //탭 2 -->
+
+<!-- 탭 3 -->
+<div id="ia-menu03" class="ia-menu">
+	<h2>재야의분석</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">재야의분석</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/expert/expert.php" target="_blank">/expert/expert.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 3 -->
+
+<!-- 탭 4 -->
+<div id="ia-menu04" class="ia-menu">
+	<h2>배팅경연</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">배팅경연</td>
+			<td class="depth1">메인/배팅경연</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/batting/main.php" target="_blank">/batting/main.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">순위정보</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/batting/ranking.php" target="_blank">/batting/ranking.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">룰 안내</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/batting/ranking.php" target="_blank">/batting/ranking.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">배팅내역</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/batting/present.php" target="_blank">/batting/present.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 4 -->
+
+<!-- 탭 5 -->
+<div id="ia-menu05" class="ia-menu">
+	<h2>서바이벌게임</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">서바이벌게임</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url">
+				<a href="" target="_blank"></a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 5 -->
+
+<!-- 탭 6 -->
+<div id="ia-menu06" class="ia-menu">
+	<h2>커넥트뉴스</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">커넥트뉴스</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/connect/connect.php" target="_blank">/odds/connect/connect.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 6 -->
+
+<!-- 탭 7 -->
+<div id="ia-menu07" class="ia-menu">
+	<h2>커뮤니티</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr> 
+			<td class="section">커뮤니티</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/community/community.php" target="_blank">/odds/community/community.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 7 -->
+
+<!-- 탭 8 -->
+<div id="ia-menu08" class="ia-menu">
+	<h2>북마크</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">북마크</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/bookmark.php" target="_blank">/bookmark.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 8 -->
+
+<!-- 탭 9 -->
+<div id="ia-menu09" class="ia-menu">
+	<h2>마이페이지</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">마이페이지</td>
+			<td class="depth1">마이홈</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/mypage/home.php" target="_blank">/mypage/home.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">결제관리</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/payment.php" target="_blank">/mypage/payment.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">참여내역</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/join.php" target="_blank">/mypage/join.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">블로그관리</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/blog.php" target="_blank">/mypage/blog.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">마이리그관리</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/league.php" target="_blank">/mypage/league.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">쪽지관리</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/message.php" target="_blank">/mypage/message.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">로그인관리</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/login.php" target="_blank">/mypage/login.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		<tr>
+			<td class="section"></td>
+			<td class="depth1">회원탈퇴</td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url ing">
+				<a href="http://test.sbportal.co.kr/odds/mypage/exit.php" target="_blank">/mypage/exit.php</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 9 -->
+
+
+<!-- 탭 10 -->
+<div id="ia-menu10" class="ia-menu">
+	<h2>블로그</h2>
+	<table>
+		<thead>
+		<tr>
+			<th rowspan="2">분류항목</th>
+			<th colspan="6">MENU &amp; Depth</th>
+		</tr>
+		<tr>
+			<th>1Depth</th>
+			<th>2Depth</th>
+			<th>3Depth</th>
+			<th>URL</th>
+			<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td class="section">블로그</td>
+			<td class="depth1"></td>
+			<td class="depth2"></td>
+			<td class="depth3"></td>
+			<td class="url fix">
+				<a href="http://test.sbportal.co.kr/odds/blog/main.html" target="_blank">/blog/main.html</a>
+			</td>
+			<td class="stat"></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<!-- //탭 10 -->
+
+
+
+</div><!-- //wrap -->
+<script type="text/javascript">
+	initTabMenu("wrap");
+</script>
+</body>
+</html>

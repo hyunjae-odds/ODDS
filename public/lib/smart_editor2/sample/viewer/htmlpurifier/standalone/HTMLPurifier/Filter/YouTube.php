@@ -54,7 +54,7 @@ class HTMLPurifier_Filter_YouTube extends HTMLPurifier_Filter
         'data="//www.youtube.com/' . $url . '">' .
         '<param name="movie" value="//www.youtube.com/' . $url . '"></param>' .
         '<!--[if IE]>' .
-        '<embed src2="//www.youtube.com/' . $url . '"' .
+        '<embed src="//www.youtube.com/' . $url . '"' .
         'type="application/x-shockwave-flash"' .
         'wmode="transparent" width="425" height="350" />' .
         '<![endif]-->' .

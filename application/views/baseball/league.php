@@ -21,9 +21,9 @@
             <li class="active s1">
                 <div class="tab01_w">
                     <ul class="tab01_2 expert_menu">
-                        <li class="ls01 <?php if($top_selector=='win_lose') echo 'on';?>" ><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=win_lose')">승패</a></li>
-                        <li class="ls02 <?php if($top_selector=='handicap') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=handicap')">핸디캡</a></li>
-                        <li class="ls03 <?php if($top_selector=='over_under') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=over_under')">O/U</a></li>
+                        <li class="ls01 <?php if($top_selector=='win_lose') echo 'on';?>" ><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=win_lose&board_selector=win_lose')">승패</a></li>
+                        <li class="ls02 <?php if($top_selector=='handicap') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=handicap&board_selector=handicap&handicap=-1.5')">핸디캡</a></li>
+                        <li class="ls03 <?php if($top_selector=='over_under') echo 'on';?>"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=over_under&board_selector=over_under&sort=over')">O/U</a></li>
                     </ul>
                 </div>
                 <ul class="expert_menu_view">
@@ -75,16 +75,16 @@
                     <div class="">
                         <div class="relative">
                             <ul class="tab02" style="margin-bottom:10px;">
-                                <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=all&selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">전체</a></li>
-                                <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=home&selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">홈</a></li>
-                                <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=away&selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>')">원정</a></li>
+                                <li class="<?php if($home_away=='all' || $home_away==null) echo 'on';?> ls_all"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=all&selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>&top_selector=<?=$top_selector;?>')">전체</a></li>
+                                <li class="<?php if($home_away=='home') echo 'on';?> ls_home"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=home&selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>&top_selector=<?=$top_selector;?>')">홈</a></li>
+                                <li class="<?php if($home_away=='away') echo 'on';?> ls_team"><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=away&selector=<?=$top_selector;?>&board_selector=<?=$board_selector;?>&handicap=<?=$handicap;?>&top_selector=<?=$top_selector;?>')">원정</a></li>
                             </ul>
                             <div class="select" style="top:-8px;">
-                                <p class="off"><span class="pp"><?php if($board_selector=='win_lose') echo '승패'; elseif($board_selector=='handicap') echo '핸디캡'; elseif($board_selector=='ou') echo 'O/U';?></span><span class="pa"></span></p>
+                                <p class="off"><span class="pp"><?php if($board_selector=='win_lose') echo '승패'; elseif($board_selector=='handicap') echo '핸디캡'; elseif($board_selector=='over_under') echo 'O/U';?></span><span class="pa"></span></p>
                                 <ul>
-                                    <li><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=<?=$top_selector;?>&board_selector=win_lose')">승패</a></li>
-                                    <li><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=<?=$top_selector;?>&board_selector=handicap&handicap=-1.5')">핸디캡</a></li>
-                                    <li><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&selector=<?=$top_selector;?>&board_selector=ou&sort=over')">O/U</a></li>
+                                    <li><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=win_lose&top_selector=win_lose')">승패</a></li>
+                                    <li><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=handicap&handicap=-1.5&top_selector=handicap')">핸디캡</a></li>
+                                    <li><a href="javascript:location.replace('/baseball/league/KBO?scroll_top='+document.body.scrollTop+'&home_away=<?=$home_away;?>&top_selector=<?=$top_selector;?>&board_selector=over_under&sort=over&top_selector=over_under')">O/U</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                                     <?php foreach($total as $entry): ?>
                                         <tr>
                                             <td><?=$entry->rank;?></td>
-                                            <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span><a href="/baseball/team_info/KBO?team=<?=$entry->team;?>"> <?=$full_name_team[$entry->team];?></td>
+                                            <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span> <?=$full_name_team[$entry->team];?></td>
                                             <td><?=$entry->g;?></td>
                                             <td><?=$entry->win;?></td>
                                             <td><?=$entry->lose;?></td>
@@ -165,7 +165,7 @@
                                     <?php foreach($total as $entry): ?>
                                         <tr>
                                             <td><?=$entry->rank;?></td>
-                                            <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span><a href="/baseball/team_info/KBO?team=<?=$entry->team;?>"> <?=$full_name_team[$entry->team];?></td>
+                                            <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span> <?=$full_name_team[$entry->team];?></td>
                                             <td><?=$entry->g;?></td>
                                             <td><span class="underline"><?php if($handicap>0) echo '+';?><?=$handicap;?></span></td>
                                             <td><?=$entry->win;?></td>
@@ -179,7 +179,7 @@
                                         </tr>
                                     <?php endforeach; ?>
                                 </table>
-                            <?php elseif($board_selector=='ou'): ?>
+                            <?php elseif($board_selector=='over_under'): ?>
                             <table class="table_default league_Ltable league_Ltable_OU">
                                 <caption></caption>
                                 <colgroup>
@@ -201,7 +201,7 @@
                                 <?php foreach($total as $entry): ?>
                                     <tr>
                                         <td><?=$entry->rank;?></td>
-                                        <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span><a href="/baseball/team_info/KBO?team=<?=$entry->team;?>"> <?=$full_name_team[$entry->team];?></td>
+                                        <td class="left"><span class="<?=$team_initial[$entry->team];?>_L"></span> <?=$full_name_team[$entry->team];?></td>
                                         <td><?=$entry->g;?></td>
                                         <td><span class="underline"><?=$over_under_reference[$entry->team];?></span></td>
                                         <td><?=$entry->over;?></td>

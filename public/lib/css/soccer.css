@@ -25,6 +25,7 @@ table.gametable tr th:nth-of-type(1),table.gametable tr td:nth-of-type(1) {text-
 table.gametable tr td:nth-of-type(1) {padding-right:5px;}
 table.gametable th:nth-of-type(2) {text-align:left;padding-left:30px;}
 table.gametable td:nth-of-type(2) {text-align:left;padding-left:20px;}
+table.table_default tr:hover td.result_td {background:none;}
 
 span.graybox  {background: #a5a5a5;display: inline-block;font-size: 12px;height: 23px;line-height: 22px;width:49px;text-align:center;font-weight:bold;color:#fff;}
 span.redbox  {background: #ff386b;display: inline-block;font-size: 14px;height: 23px;line-height: 22px;width:32px;text-align:center;color:#fff;}
@@ -75,7 +76,9 @@ p.more {position:absolute; top:13px;left:263px;color:#888;font-family:Dotum;}
 /*투데이 매치 리스트*/
 .today_graybox {height:40px;background:#eee;margin-bottom:10px;}
 table.today_table td {border-right:1px solid #ddd;}
-table.today_table td.red_bg {background:#c00000;color:#fff;}
+table.today_table td.red_bg {background:#c00000 !important;color:#fff;}
+table.today_table tr:hover td,table.game_main_table tr:hover td {background:#f1f1f1;}
+
 
 /* odds 메인 */
 .game_main {}
@@ -212,8 +215,8 @@ table.result_table01_1 td:nth-of-type(1) {border-left:1px solid #ddd;border-righ
 table.result_table01_1 td:nth-last-of-type(1) {border-right:1px solid #ddd;}
 
 .result_table01_1_onoff {border-top:1px solid #ddd;position:relative;top:-1px;}
-.result_table01_1_onoff li {position:absolute;margin:0 auto;left:0;right:0;bottom:-26px;width:190px;display:none;}
-.result_table01_1_onoff li a {display:block;background:url("/odds/image/game/bg_team_onoff.png") no-repeat;width:190px;height:27px;line-height:26px;text-align:center;font-size:14px;}
+.result_table01_1_onoff li {position:absolute;margin:0 auto;left:0;right:0;bottom:-26px;width:140px;display:none;}
+.result_table01_1_onoff li a {display:block;background:url("/odds/image/game/bg_team_onoff.png") no-repeat;width:140px;height:27px;line-height:26px;text-align:center;font-size:14px;}
 .result_table01_1_onoff li a.up span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/close.jpg") no-repeat center center;vertical-align:middle;}
 .result_table01_1_onoff li a.down span {display:inline-block;width:10px;height:6px;background:url("/odds/image/base/open.jpg") no-repeat center center;vertical-align:middle;}
 .result_table01_1_onoff li.active {display:block;}
@@ -1360,7 +1363,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bc9ff', end
 .opinion .graph > div .right_g > span,.opinion .graph > div .right_g > div {float:left;}
 .opinion .graph > div > p {width:160px;text-align:center; font-size:14px;}
 .opinion .graph > div > div.select_p {float:left;width:160px;position:relative;height:18px;}
-.opinion .graph > div > div.select_p .select {width:100px;height:28px;right:auto;left:30px;top:-6px;}
+.opinion .graph > div > div.select_p .select {width:86px;height:28px;right:auto;left:30px;top:-6px;}
 .opinion .graph > div > div > span {display:block; width:19px; font-size:16px; font-weight:bold; padding:0 15px 0 0;text-align:center;}
 .opinion .graph > div .left_g span {padding:0 0 0 15px;}
 .opinion .graph > div.yellowG > div.right_g > div > div {background:url("../image/game/bg_y_right.jpg") no-repeat left 0;}
@@ -1441,11 +1444,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .comment ul li div p {display:inline-block; }
 .comment ul li div p a {display:inline-block;border:1px solid #cacaca; color:#444; height:19px; padding:0 5px 0 20px; line-height:19px;}
 .comment ul li div p.like a {background:url("../image/game/likebed.jpg") no-repeat ;}
-.comment ul li div p.bed a {background:url("../image/game/likebed.jpg") no-repeat 0 -30px;}
+.comment ul li div p.bad a {background:url("../image/game/likebed.jpg") no-repeat 0 -30px;}
 
 .page {text-align:center; padding:12px 0;}
-/*.page a {display:inline-block; border-right:1px solid #a9a9a9;padding:0 10px 0 5px; line-height:11px; height:11px; color:#777;}*/
-.page a:nth-last-of-type(1) {border:none;}
+/*.page a {display:inline-block; border-right:1px solid #a9a9a9;padding:0 10px 0 5px; line-height:11px; height:11px; color:#777;}
+.page a:nth-last-of-type(1) {border:none;}*/
 .page a:hover {font-weight:bold;}
 .page a.on {font-weight:bold; color:#222;}
 .page02 a {font-family:Dotum;border:1px solid #ccc;height:21px;line-height:21px;text-align:center;width:17px;padding:0;}
