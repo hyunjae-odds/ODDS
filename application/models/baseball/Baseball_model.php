@@ -1042,4 +1042,15 @@
 
         endif;
     }
+
+    function insert_update($table, $data, $where){
+        $beforeData=$this->db->get_where($table, $where)->row();
+
+        $this->db->set('insert_dt', 'NOW()', false);
+        if(sizeof($beforeData)==0): $this->db->insert($table, $data);
+        else:
+            $this->db->where('id', $beforeData->id);
+            $this->db->update($table, $data);
+        endif;
+    }
 }

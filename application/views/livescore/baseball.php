@@ -1,3 +1,4 @@
+<?php $MLB_team_kor=array('Chicago Cubs'=>'시카고C','St. Louis Cardinals'=>'세인트루이스','Kansas City Royals'=>'캔자스시티','Colorado Rockies'=>'콜로라도','Minnesota Twins'=>'미네소타','Cleveland Indians'=>'클리브랜드','Tampa Bay Rays'=>'템파베이','Miami Marlins'=>'마이애미','Los Angeles Angels'=>'LAA','Los Angeles Angels of Anaheim'=>'LAA','San Francisco Giants'=>'샌프란시스코','Philadelphia Phillies'=>'필라델피아','Boston Red Sox'=>'보스톤','New York Yankees'=>'뉴욕Y','Washington Nationals'=>'워싱턴','Texas Rangers'=>'텍사스','Milwaukee Brewers'=>'밀워키','Chicago White Sox'=>'시카고W','Los Angeles Dodgers'=>'LAD','New York Mets'=>'뉴욕M','Pittsburgh Pirates'=>'피츠버그','Arizona Diamondbacks'=>'에리조나','Oakland Athletics'=>'오클랜드','San Diego Padres'=>'샌디에이고','Seattle Mariners'=>'시애틀','Houston Astros'=>'휴스턴','Baltimore Orioles'=>'볼티모어','Atlanta Braves'=>'애틀랜타','Detroit Tigers'=>'디트로이','Cincinnati Reds'=>'신시내티','Toronto Blue Jays'=>'토론토',''=>''); ?>
 <link href="/public/lib/css/livescore.css" rel="stylesheet" type="text/css"/>
 
 <div class="livescore">
@@ -56,55 +57,6 @@
                     <a href="/livescore/baseball?date=<?=date('Y-m-d', strtotime($date.'+1day'));?>&selector=all" class="btn_next" title="다음달">다음달</a>
                 </div>
             </div>
-            <div class="leagueChoice">
-                <a href="">리그 선택하기 <span></span></a>
-                <div class="choice_w">
-                    <div class="choice">
-                        <div class="cho1">
-                            <h4>지역</h4>
-                            <div>
-                                <ul class="list">
-                                    <li><span class="popularityL"></span>전체<span class="Nm">1234</span></li>
-                                    <li><span class="AsiaL"></span>아시아<span class="Nm">6</span></li>
-                                    <li><span class="EuropeL"></span>유럽<span class="Nm">7</span></li>
-                                    <li><span class="NorthAmericaL"></span>북중미<span class="Nm">6</span></li>
-                                    <li><span class="SouthAmericaL"></span>남미<span class="Nm">7</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cho2">
-                            <h4>국가</h4>
-                            <div>
-                                <ul class="list">
-                                    <li><input type="checkbox" id="c001"/><label for="c001"><span class="country_32"></span>스페인</label></li>
-                                    <li><input type="checkbox" id="c002"/><label for="c002"><span class="country_18"></span>잉글랜드</label></li>
-                                    <li><input type="checkbox" id="c003"/><label for="c003"><span class="country_20"></span>프랑스</label></li>
-                                    <li><input type="checkbox" id="c004"/><label for="c004"><span class="country_32"></span>스페인</label></li>
-                                    <li><input type="checkbox" id="c005"/><label for="c005"><span class="country_18"></span>잉글랜드</label></li>
-                                    <li><input type="checkbox" id="c006"/><label for="c006"><span class="country_20"></span>프랑스</label></li>
-                                </ul>
-                                <div class="btn_div">
-                                    <a href="" class="cancel">취소</a><a href="" class="apply">적용 하기</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cho3">
-                            <h4>리그</h4>
-                            <div>
-                                <ul class="list">
-                                    <li><input type="checkbox" id="c101"/><label for="c101"><b>라리가</b></label></li>
-                                    <li><input type="checkbox" id="c102"/><label for="c102"><b>프리미어 리그</b></label></li>
-                                    <li><input type="checkbox" id="c103"/><label for="c103"><b>리그앙</b></label></li>
-                                </ul>
-                                <div class="btn_div">
-                                    <a href="" class="cancel">취소</a><a href="" class="apply">적용 하기</a>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="clear"></span>
-                    </div>
-                </div>
-            </div>
             <div class="pb50">
                 <div class="livetable base">
                     <div>
@@ -122,7 +74,7 @@
                             </tr>
                         </table>
 
-                        <?php if(isset($schedule)): ?>
+                        <?php if(sizeof($schedule)!=0): ?>
                             <?php foreach($schedule as $key=>$item): ?>
                                 <table class="table_default base_table">
                                     <caption></caption>
@@ -144,13 +96,13 @@
                                         <col width="30px" />
                                         <col width="30px" />
                                         <col width="30px" />
-                                        <col width="30px" />
+                                        <?php if($item->league=='KBO'): ?><col width="30px" /><?php endif;?>
                                         <col width="150px" />
                                         <col width="120px" />
                                     </colgroup>
                                     <tr>
-                                        <td class="first"><input type="checkbox" id="KBO_0<?=$key;?>" value="<?=$item->no;?>"/></td>
-                                        <td class="left"><label for="KBO_0<?=$key;?>"><b>KBO</b></label><span><?=date('m.d', strtotime($date));?> | <?=date('g.i', strtotime($date));?></span></td>
+                                        <td class="first"><input type="checkbox" id="<?=$item->league;?>_0<?=$key;?>" value="<?=$item->no;?>" class="<?=$item->league;?>"></td>
+                                        <td class="left"><label for="<?=$item->league;?>_0<?=$key;?>"><b><?=$item->league;?></b></label><span><?=date('m.d', strtotime($item->game_time));?> | <?=date('H:i', strtotime($item->game_time));?></span></td>
                                         <td class="bg_gray">1</td>
                                         <td class="bg_gray">2</td>
                                         <td class="bg_gray">3</td>
@@ -166,7 +118,7 @@
                                         <td class="bg_gray"><b>R</b></td>
                                         <td class="bg_gray"><b>H</b></td>
                                         <td class="bg_gray"><b>E</b></td>
-                                        <td class="bg_gray"><b>B</b></td>
+                                        <?php if($item->league=='KBO'): ?><td class="bg_gray"><b>B</b></td><?php endif;?>
                                         <td rowspan="2" class="bn">
                                             <ul class="BSO">
                                                 <li><b>B</b><span class="n<?=$score_board[$key]['b'];?>" id="<?=$item->no;?>_bso_b"></span></li>
@@ -190,12 +142,12 @@
                                     </tr>
                                     <tr id="<?=$item->no;?>_away_score">
                                         <td class="first"><span class="LGT"></span></td>
-                                        <td class="left"><b><?=$item->away_name;?></b>[<?=$item->away_starter;?>]<span class="red">[1.24]</span></td>
+                                        <td class="left"><b><?=($item->league=='KBO')? $item->away_name : $MLB_team_kor[$item->away_name];?></b><?=($item->away_starter=='')?'':'['.$item->away_starter.']';?><span class="red">[1.24]</span></td>
                                         <?php foreach($score_board[$key]['away_score_board'] as $items): ?><td><?=$items;?></td><?php endforeach; ?>
                                     </tr>
                                     <tr>
                                         <td class="first"><span class="eagles"></span></td>
-                                        <td class="left"><b><?=$item->home_name;?></b>&nbsp;[<?=$item->home_starter;?>]<span class="home_icon"></span><span class="blue">[1.14]</span></td>
+                                        <td class="left"><b><?=($item->league=='KBO')? $item->home_name : $MLB_team_kor[$item->home_name];?></b><?=($item->home_starter=='')?'':'['.$item->home_starter.']';?><span class="home_icon"></span><span class="blue">[1.14]</span></td>
                                         <?php foreach($score_board[$key]['home_score_board'] as $keys=>$items): ?><td id="<?=$item->no;?>_home_score_<?=$keys;?>"><?=$items;?></td><?php endforeach; ?>
                                         <td class="last left" colspan="2">
                                             <div class="relay">
@@ -321,7 +273,8 @@
     function selectGame(){
         var checked_game='';
         for(var i=0; i<$('.first > input:checked').size(); i++){
-            checked_game=checked_game+$('.first > input:checked')[i].value;
+            var league=$('.first > input:checked')[i].className;
+            checked_game=checked_game+league+'_'+$('.first > input:checked')[i].value;
             if(i!=$('.first > input:checked').size()-1) checked_game=checked_game+' '
         }
 

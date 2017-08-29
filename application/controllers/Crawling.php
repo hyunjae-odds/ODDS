@@ -477,11 +477,11 @@ class Crawling extends MY_Controller{
 
 //  MLB
     function optaResult(){
-        $mlb_teams=array('Los Angeles Angels of Anaheim'=>1,'Houston Astros'=>2,'Oakland Athletics'=>3,'Toronto Blue Jays'=>4,'Atlanta Braves'=>5,'Milwaukee Brewers'=>6,'St. Louis Cardinals'=>7,'Chicago Cubs'=>8,'Arizona Diamondbacks'=>9,'Los Angeles Dodgers'=>10,'San Francisco Giants'=>11,'Cleveland Indians'=>12,'Miami Marlins'=>13,'Seattle Mariners'=>14,'New York Mets'=>15,'Washington Nationals'=>16,'Baltimore Orioles'=>17,'San Diego Padres'=>18,'Philadelphia Phillies'=>19,'Pittsburgh Pirates'=>20,'Texas Rangers'=>21,'Tampa Bay Rays'=>22,'Boston Red Sox'=>23,'Cincinnati Reds'=>24,'Colorado Rockies'=>25,'Kansas City Royals'=>26,'Detroit Tigers'=>27,'Minnesota Twins'=>28,'Chicago White Sox'=>29,'New York Yankees'=>30);
+        $mlb_teams=array('Los Angeles Angels of Anaheim'=>1,'Houston Astros'=>2,'Oakland Athletics'=>3,'Toronto Blue Jays'=>4,'Atlanta Braves'=>5,'Milwaukee Brewers'=>6,'St. Louis Cardinals'=>7,'Chicago Cubs'=>8,'Arizona Diamondbacks'=>9,'Los Angeles Dodgers'=>10,'San Francisco Giants'=>11,'Cleveland Indians'=>12,'Miami Marlins'=>13,'Seattle Mariners'=>14,'New York Mets'=>15,'Washington Nationals'=>16,'Baltimore Orioles'=>17,'San Diego Padres'=>18,'Philadelphia Phillies'=>19,'Pittsburgh Pirates'=>20,'Texas Rangers'=>21,'Tampa Bay Rays'=>22,'Boston Red Sox'=>23,'Cincinnati Reds'=>24,'Colorado Rockies'=>25,'Kansas City Royals'=>26,'Detroit Tigers'=>27,'Minnesota Twins'=>28,'Chicago White Sox'=>29,'New York Yankees'=>30,'American League'=>31,'National League'=>32);
 
 //      오늘 날짜까지 크롤링 : 2331
-        for($i=1; $i<31; $i++):
-            $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/match/d10jn0i4i5a81s7l0k6qz2i38?tmcl=5m0znw5wpznp7iizf135jz9bd&live=yes&status=played&_pgSz=100&_fmt=json&_pgNm='.$i));
+        for($i=1; $i<5; $i++):
+            $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/match/d10jn0i4i5a81s7l0k6qz2i38?tmcl=5m0znw5wpznp7iizf135jz9bd&live=yes&status=played&_pgSz=1000&_fmt=json&_pgNm='.$i));
             if(isset($opta_data)):
                 foreach($opta_data->match as $items):
                     $result=array();
@@ -490,8 +490,9 @@ class Crawling extends MY_Controller{
                             $opta_data_score=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/matchstats/d10jn0i4i5a81s7l0k6qz2i38/'.$items->matchInfo->id.'?&_fmt=json'));
 
                             $result['id']=$items->matchInfo->id;
-                            $result['date']=date("Y-m-d H:i:s", strtotime($items->matchInfo->date));
-                            $result['time']=(isset($items->matchInfo->time))? $items->matchInfo->time : '00:00:00';
+                            $date=date('Y-m-d H:i:s', strtotime($items->matchInfo->date.' '.$items->matchInfo->time));
+                            $result['date']=date('Y-m-d', strtotime($date));
+                            $result['time']=date('H:i', strtotime($date));
                             $result['home']=$items->matchInfo->contestant[0]->name;
                             $result['home_score']=($opta_data_score==null)? '' : $opta_data_score->matchStats->liveData->matchDetails->scores->total->home;
                             $result['away']=$items->matchInfo->contestant[1]->name;
@@ -499,12 +500,12 @@ class Crawling extends MY_Controller{
                             $result['stadium']=$items->matchInfo->venue->name;
 
                             $away_eng=(isset($items->liveData->matchDetails->playStatus->probableAwayPitcher))? $items->liveData->matchDetails->playStatus->probableAwayPitcher : '';
-                            $away_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$away_eng, 'team'=>$mlb_teams[$result['away']]));
+                            $away_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$away_eng, 'team_no'=>$mlb_teams[$result['away']]));
                             $away_pitcher_kor=($away_kor==null)? $away_eng : $away_kor->name_kor;
                             $result['away_pitcher']=$away_eng;
                             $result['away_pitcher_kor']=$away_pitcher_kor;
                             $home_eng=(isset($items->liveData->matchDetails->playStatus->probableHomePitcher))? $items->liveData->matchDetails->playStatus->probableHomePitcher : '';
-                            $home_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$home_eng, 'team'=>$mlb_teams[$result['home']]));
+                            $home_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$home_eng, 'team_no'=>$mlb_teams[$result['home']]));
                             $home_pitcher_kor=($home_kor==null)? $home_eng : $home_kor->name_kor;
                             $result['home_pitcher']=$home_eng;
                             $result['home_pitcher_kor']=$home_pitcher_kor;
@@ -517,35 +518,35 @@ class Crawling extends MY_Controller{
         endfor;
 
 //      전체 크롤링 : 2982
-        /*for($i=1; $i<4; $i++):
-            $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/match/d10jn0i4i5a81s7l0k6qz2i38?tmcl=5m0znw5wpznp7iizf135jz9bd&_pgSz=1000&_fmt=json&_pgNm='.$i));
-
-            foreach($opta_data->match as $items):
-                if(date('Y-m-d', strtotime($items->matchInfo->date)) >= date('Y-m-d')):
-                    $result['id']=$items->matchInfo->id;
-                    $result['date']=date("Y-m-d H:i:s", strtotime($items->matchInfo->date));
-                    $result['time']=(isset($items->matchInfo->time))? $items->matchInfo->time : '00:00:00';
-                    $result['home']=$items->matchInfo->contestant[0]->name;
-                    $result['home_score']='';
-                    $result['away']=$items->matchInfo->contestant[1]->name;
-                    $result['away_score']='';
-                    $result['stadium']=$items->matchInfo->venue->name;
-
-                    $away_eng=(isset($items->liveData->matchDetails->playStatus->probableAwayPitcher))? $items->liveData->matchDetails->playStatus->probableAwayPitcher : '';
-                    $away_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$away_eng, 'team'=>$mlb_teams[$result['away']]));
-                    $away_pitcher_kor=($away_kor==null)? $away_eng : $away_kor->name_kor;
-                    $result['away_pitcher']=$away_eng;
-                    $result['away_pitcher_kor']=$away_pitcher_kor;
-                    $home_eng=(isset($items->liveData->matchDetails->playStatus->probableHomePitcher))? $items->liveData->matchDetails->playStatus->probableHomePitcher : '';
-                    $home_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$home_eng, 'team'=>$mlb_teams[$result['home']]));
-                    $home_pitcher_kor=($home_kor==null)? $home_eng : $home_kor->name_kor;
-                    $result['home_pitcher']=$home_eng;
-                    $result['home_pitcher_kor']=$home_pitcher_kor;
-
-                    $this->baseball_model->insert_update_before('MLB_result', $result, array('id'=>$result['id']));
-                endif;
-            endforeach;
-        endfor;*/
+//        for($i=1; $i<4; $i++):
+//            $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/match/d10jn0i4i5a81s7l0k6qz2i38?tmcl=5m0znw5wpznp7iizf135jz9bd&_pgSz=1000&_fmt=json&_pgNm='.$i));
+//
+//            foreach($opta_data->match as $items):
+//                $result['id']=$items->matchInfo->id;
+//                if($items->matchInfo->id=='93v3ltt612tis5en3zszjce09') $time='08:10'; elseif(isset($items->matchInfo->time)) $time=$items->matchInfo->time; else $time='00:00';
+//                $date=date('Y-m-d H:i:s', strtotime($items->matchInfo->date.' '.$time));
+//                $result['date']=date('Y-m-d', strtotime($date));
+//                $result['time']=date('H:i', strtotime($date));
+//                $result['home']=$items->matchInfo->contestant[0]->name;
+//                $result['home_score']='';
+//                $result['away']=$items->matchInfo->contestant[1]->name;
+//                $result['away_score']='';
+//                $result['stadium']=$items->matchInfo->venue->name;
+//
+//                $away_eng=(isset($items->liveData->matchDetails->playStatus->probableAwayPitcher))? $items->liveData->matchDetails->playStatus->probableAwayPitcher : '';
+//                $away_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$away_eng, 'team_no'=>$mlb_teams[$result['away']]));
+//                $away_pitcher_kor=($away_kor==null)? $away_eng : $away_kor->name_kor;
+//                $result['away_pitcher']=$away_eng;
+//                $result['away_pitcher_kor']=$away_pitcher_kor;
+//                $home_eng=(isset($items->liveData->matchDetails->playStatus->probableHomePitcher))? $items->liveData->matchDetails->playStatus->probableHomePitcher : '';
+//                $home_kor=$this->baseball_model->get_where_row('MLB_players', array('name'=>$home_eng, 'team_no'=>$mlb_teams[$result['home']]));
+//                $home_pitcher_kor=($home_kor==null)? $home_eng : $home_kor->name_kor;
+//                $result['home_pitcher']=$home_eng;
+//                $result['home_pitcher_kor']=$home_pitcher_kor;
+//
+//                $this->baseball_model->insert_update_before('MLB_result', $result, array('id'=>$result['id']));
+//            endforeach;
+//        endfor;
     }
 
     function optaTeamRecord(){
@@ -979,6 +980,66 @@ class Crawling extends MY_Controller{
                     endif;
                 endforeach;
             endif;
+        endforeach;
+    }
+
+    function mlbScoreBoard(){
+        $schedule=$this->baseball_model->get_where('MLB_result', array('away_score!='=>''));
+
+        foreach($schedule as $items):
+            $this->load->library('curl');
+            $opta_data=json_decode($this->curl->simple_get('http://api.performfeeds.com/baseballdata/matchstats/d10jn0i4i5a81s7l0k6qz2i38/'.$items->id.'?_fmt=json'));
+
+            $away_score_board=array();
+            $home_score_board=array();
+            $away_rhe=array('away_r'=>0, 'away_h'=>0, 'away_e'=>0);
+            $home_rhe=array('home_r'=>0, 'home_h'=>0, 'home_e'=>0);
+            $inning=0;
+            foreach($opta_data->matchStats->liveData->matchDetails->scores as $key=>$item):
+                $home=($item->home==null)? '':$item->home;
+                if($key=='total'):
+                    $away_rhe['away_r']=$item->away;
+                    $home_rhe['home_r']=$home;
+                elseif($key=='totalHits'):
+                    $away_rhe['away_h']=$item->away;
+                    $home_rhe['home_h']=$home;
+                elseif($key=='totalErrors'):
+                    $away_rhe['away_e']=$item->away;
+                    $home_rhe['home_e']=$home;
+                else:
+                    $inning++;
+                    array_push($away_score_board, $item->away);
+                    array_push($home_score_board, $item->home);
+                endif;
+            endforeach;
+            for($i=sizeof($away_score_board); $i<13; $i++):
+                $away_score_board[$i]='';
+                $home_score_board[$i]='';
+            endfor;
+            $away_str='';
+            $home_str='';
+            foreach($away_score_board as $key=>$item) $away_str.=($key==0)? $item:';'.$item;
+            foreach($away_rhe as $key=>$item) $away_str.=($key=='away_r')? $item:';'.$item;
+            foreach($home_score_board as $key=>$item) $home_str.=($key==0)? $item:';'.$item;
+            foreach($home_rhe as $key=>$item) $home_str.=($key=='home_r')? $item:';'.$item;
+
+            $result['schedule_no']=$items->no;
+            $result['id']=$items->id;
+            $result['status']='set';
+            $result['inning']=$inning.';0';
+            $result['last_pitcher']='';
+            $result['away_score_board']=$away_str;
+            $result['home_score_board']=$home_str;
+            $result['b']='0';
+            $result['s']='0';
+            $result['o']='0';
+            $result['f']='x';
+            $result['d']='x';
+            $result['t']='x';
+            $result['p']='';
+            $result['last_hitter']='';
+
+            $this->baseball_model->insert_update_before('MLB_score_board', $result, array('schedule_no'=>$result['schedule_no']));
         endforeach;
     }
 

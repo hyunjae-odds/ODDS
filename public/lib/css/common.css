@@ -217,7 +217,7 @@ h3 {font-size:20px;border-bottom:1px solid #ccc;line-height:1.8;margin-bottom:10
 .loginBox > div.logbox03 .log_b > div {padding-top:15px;}
 .loginBox > div.logbox03 .log_b > div.border_bottom {border-bottom:1px solid #ccc;padding-bottom:10px;}
 .loginBox > div.logbox03 .log_b > div .cho_p .red {font-size:12px;font-weight:normal;margin-left:5px;}
-.loginBox > div.logbox03 .log_b > div:nth-of-type(1) .cho_p .red {border-bottom:1px solid #ff225b;font-size:16px;font-weight:bold; }
+.loginBox > div.logbox03 .log_b > div:nth-of-type(1) .cho_p .red {border-bottom:1px solid #c00000;font-size:16px;font-weight:bold; }
 .loginBox > div.logbox03 .log_b span.check {margin-left:10px;float:left;display:inline-block;width:24px;height:24px;background:url("../image/base/cho_p.jpg") no-repeat;}
 .loginBox > div.logbox03 .log_b span.check.on {margin-left:10px;float:left;display:inline-block;width:24px;height:24px;background:url("../image/base/cho_p.jpg") no-repeat -24px 0;}
 .loginBox > div.logbox03 .log_b p.cho_p {float:left;line-height:24px;margin-left:20px;letter-spacing:-0.02em;}
@@ -621,7 +621,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 table.table_default {width:100%;}
 table.table_default th {background:#5b616f; height:34px; line-height:34px; font-size:12px;color:#fff;text-align:center;}
-/*table.table_default th a {color:#999;}*/
+table.table_default th a {color:#fff;}
 table.table_default td {background:#fff;height:40px; line-height:40px; text-align:center; font-size:13px; border-bottom:1px solid #ddd;}
 table.table_default td:nth-of-type(1) {border-left:none;}
 table.table_default td:nth-last-of-type(1) {border-right:none;}

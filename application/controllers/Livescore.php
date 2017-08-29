@@ -19,8 +19,14 @@ class Livescore extends MY_Controller{
 
         /*schedule*/
         $schedule=array();
-        if($selector=='check'): foreach(explode(' ', $checked) as $item) array_push($schedule, $this->livescore_model->get_where_row_from_mining('schedule', array('no'=>$item)));
+        if($selector=='check'):
+            foreach(explode(' ', $checked) as $item):
+                $exp_league=explode('_', $item);
+                if($exp_league[0]=='MLB') array_push($schedule, $this->livescore_model->get_mlb_result_with_status('MLB_result', $exp_league[1]));
+                else array_push($schedule, $this->livescore_model->get_where_row_from_mining('schedule', array('no'=>$exp_league[1])));
+            endforeach;
         else: $schedule=$this->livescore_model->get_schedule_by_date($date, $selector); endif;
+
         /*schedule > top*/
         if($top!=''):
             $no=''; $it='';
@@ -51,14 +57,17 @@ class Livescore extends MY_Controller{
 	function get_schedule($schedule, $selector){
         $result=array();
         foreach($schedule as $item):
-            $score_board=$this->livescore_model->get_mining_score_board(date('Y-m-d', strtotime($item->game_time)), $item->away_name, $item->home_name);
+            $score_board=($item->league=='KBO')? $this->livescore_model->get_kbo_score_board(date('Y-m-d', strtotime($item->game_time)), $item->away_name, $item->home_name)
+                                               : $this->livescore_model->get_mlb_score_board($item->no);
 
-            if($selector=='all' && $score_board['status']!='rain') array_push($result, $score_board);
+            if($selector=='all' && ($score_board['status']!='rain')) array_push($result, $score_board);
             elseif($selector=='live' && $score_board['status']=='live') array_push($result, $score_board);
             elseif($selector=='set' && $score_board['status']=='set') array_push($result, $score_board);
             elseif($selector=='check' && $score_board['status']=='all') array_push($result, $score_board);
             elseif($selector=='check' && $score_board['status']=='live') array_push($result, $score_board);
             elseif($selector=='check' && $score_board['status']=='set') array_push($result, $score_board);
+            elseif($selector=='check' && $score_board['status']=='') array_push($result, $score_board);
+            elseif($selector=='check' && $score_board['status']=='yet') array_push($result, $score_board);
         endforeach;
 
         return $result;
