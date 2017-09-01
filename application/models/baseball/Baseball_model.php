@@ -1,6 +1,7 @@
 <?php class Baseball_model extends CI_Model{
 	function __construct(){
 		parent::__construct();
+        date_default_timezone_set('Asia/Seoul');
 	}
 
 	/* INSERT */
@@ -28,17 +29,6 @@
 			$this->db->set('insert_dt', 'NOW()', false);
 			$this->db->insert($table, $entry);
 		endforeach;
-	}
-
-	function insert_by_month($result_arr){
-        foreach($result_arr as $item):
-            $this->db->set('insert_dt', 'NOW()', false);
-            $this->db->where('date', $item['date']);
-            $this->db->where('home', $item['home']);
-            $this->db->where('home_score', '');
-
-            $this->db->update('KBO_result', $item);
-        endforeach;
 	}
 
     function insert_result($table, $data){

@@ -1,5 +1,5 @@
 <?php
-require '/Users/hyunjae/Sites/ODDS/application/vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 use Ratchet\Server\IoServer;
 use Ratchet\Http\HttpServer;

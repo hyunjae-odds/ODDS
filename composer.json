@@ -1,0 +1,15 @@
+{
+    "name": "hyunjae/odds",
+    "autoload":
+    {
+        "psr-0":
+        {
+            "MyApp": "vendor/cboden/ratchet/src"
+        }
+    },
+    "require":
+    {
+        "cboden/ratchet": "^0.3.6",
+        "jonnyw/php-phantomjs": "^4.6"
+    }
+}

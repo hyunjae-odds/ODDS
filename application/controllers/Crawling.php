@@ -1,4 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 use JonnyW\PhantomJs\Client;
 
 class Crawling extends MY_Controller{
@@ -10,10 +12,7 @@ class Crawling extends MY_Controller{
     }
 
 //  KBO
-    function result(){
-        $month_array=array('03','04','05','06','07','08','09');
-        $result=array();
-        foreach($month_array as $month):
+    function result($month){
             $source=json_decode($this->curl->simple_get('http://www.koreabaseball.com/ws/Schedule.asmx/GetScheduleList?leId=1&srIdList=0%2C9&seasonId=2017&gameMonth='.$month.'&teamId='));
 
             $date='';
@@ -68,11 +67,9 @@ class Crawling extends MY_Controller{
                         endif;
                     endif;
                 endforeach;
-                array_push($result, $resultSet);
-            endforeach;
-        endforeach;
 
-        $this->baseball_model->insert_by_month($result);
+                $this->baseball_model->insert_update_before('KBO_result', $resultSet, array('date'=>$resultSet['date'],'time'=>$resultSet['time'],'away'=>$resultSet['away'],'home'=>$resultSet['home']));
+            endforeach;
     }
 
     function teamRecord(){
@@ -216,189 +213,178 @@ class Crawling extends MY_Controller{
         endforeach;
     }
 
-    function kboMonth(){
+    function kboMonth($month){
         $client=Client::getInstance();
-        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+        $client->getEngine()->setPath($_SERVER['DOCUMENT_ROOT'] . '/public/lib/js/phantomjs');
 
-        for($i=3; $i<10; $i++):
-            $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/main?rows=20&order=TPCT&orderType=DESC&teamId=&defense_no=&year_from=2017&year_to=2017&split01=month&split02_1='.$i.'&split02_2='.$i, 'GET');
-            $response=$client->getMessageFactory()->createResponse();
-            $data=$client->send($request, $response);
+        $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/main?rows=20&order=TPCT&orderType=DESC&teamId=&defense_no=&year_from=2017&year_to=2017&split01=month&split02_1='.$month.'&split02_2='.$month, 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $data=$client->send($request, $response);
 
-            $exp=explode('<tbody>', $data->content);
-            if(sizeof($exp)==3):
+        $exp=explode('<tbody>', $data->content);
+        if(sizeof($exp)==3):
+            $exp2=explode('</tr>', $exp[1]);
+
+            $result=array();
+            if(sizeof($exp2)==13):
+                foreach($exp2 as $key=>$item):
+                    if($key!=0 && $key!=11 && $key!=12):
+                        $arr=array();
+                        $exp3=explode('</td>', $item);
+                        $arr['team']=preg_replace("/\s+/", "", strip_tags($exp3[1]));
+                        $arr['g']=preg_replace("/\s+/", "", strip_tags($exp3[2]));
+                        $arr['r']=preg_replace("/\s+/", "", strip_tags($exp3[9]));
+                        $arr['hr']=preg_replace("/\s+/", "", strip_tags($exp3[10]));
+                        $arr['avg']=preg_replace("/\s+/", "", strip_tags($exp3[15]));
+                        $arr['month']=$month;
+
+                        array_push($result, $arr);
+                    endif;
+                endforeach;
+
+                $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/standard?teamId=&defense_no=&year_from=2017&year_to=2017&split01=month&split02_1='.$month.'&split02_2='.$month, 'GET');
+                $response=$client->getMessageFactory()->createResponse();
+                $data2=$client->send($request, $response);
+
+                $exp=explode('<tbody>', $data2->content);
                 $exp2=explode('</tr>', $exp[1]);
+                $result2=array();
+                foreach($exp2 as $key=>$item):
+                    if($key!=0 && $key!=11 && $key!=12):
+                        $arr2=array();
+                        $exp3=explode('</td>', $item);
+                        $arr2['team']=preg_replace("/\s+/", "", strip_tags($exp3[1]));
+                        $arr2['h']=preg_replace("/\s+/", "", strip_tags($exp3[5]));
 
-                $result=array();
-                if(sizeof($exp2)==13):
-                    foreach($exp2 as $key=>$item):
-                        if($key!=0 && $key!=11 && $key!=12):
-                            $arr=array();
-                            $exp3=explode('</td>', $item);
-                            $arr['team']=preg_replace("/\s+/", "", strip_tags($exp3[1]));
-                            $arr['g']=preg_replace("/\s+/", "", strip_tags($exp3[2]));
-                            $arr['r']=preg_replace("/\s+/", "", strip_tags($exp3[9]));
-                            $arr['hr']=preg_replace("/\s+/", "", strip_tags($exp3[10]));
-                            $arr['avg']=preg_replace("/\s+/", "", strip_tags($exp3[15]));
-                            $arr['month']=$i;
+                        array_push($result2, $arr2);
+                    endif;
+                endforeach;
+                foreach($result as $key=>$item) foreach($result2 as $items) if($item['team']==$items['team']) $result[$key]['h']=$items['h'];
 
-                            array_push($result, $arr);
-                        endif;
-                    endforeach;
-
-                    $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/standard?teamId=&defense_no=&year_from=2017&year_to=2017&split01=month&split02_1='.$i.'&split02_2='.$i, 'GET');
-                    $response=$client->getMessageFactory()->createResponse();
-                    $data2=$client->send($request, $response);
-
-                    $exp=explode('<tbody>', $data2->content);
-                    $exp2=explode('</tr>', $exp[1]);
-                    $result2=array();
-                    foreach($exp2 as $key=>$item):
-                        if($key!=0 && $key!=11 && $key!=12):
-                            $arr2=array();
-                            $exp3=explode('</td>', $item);
-                            $arr2['team']=preg_replace("/\s+/", "", strip_tags($exp3[1]));
-                            $arr2['h']=preg_replace("/\s+/", "", strip_tags($exp3[5]));
-
-                            array_push($result2, $arr2);
-                        endif;
-                    endforeach;
-                    foreach($result as $key=>$item) foreach($result2 as $items) if($item['team']==$items['team']) $result[$key]['h']=$items['h'];
-
-                    foreach($result as $item) if($item['team']!='') $this->baseball_model->insert_update_before('KBO_team_month', $item, array('month'=>$item['month'], 'team'=>$item['team']));
-                endif;
+                foreach($result as $item) if($item['team']!='') $this->baseball_model->insert_update_before('KBO_team_month', $item, array('month'=>$item['month'], 'team'=>$item['team']));
             endif;
-        endfor;
+        endif;
 
 //      볼넷, 삼진
-        for($i=3; $i<10; $i++):
-            $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/pitcher/standard?teamId=&pitcher_type=&year_from=2017&year_to=2017&split01=month&split02_1='.$i.'&split02_2='.$i, 'GET');
-            $response=$client->getMessageFactory()->createResponse();
-            $data3=$client->send($request, $response);
+        $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/pitcher/standard?teamId=&pitcher_type=&year_from=2017&year_to=2017&split01=month&split02_1='.$month.'&split02_2='.$month, 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $data3=$client->send($request, $response);
 
-            $exp3=explode('<tbody>', $data3->content);
-            $exp4=explode('</tbody>', $exp3[1]);
-            $data=array();
-            foreach($exp4 as $key=>$item):
-                if($key%2==0):
-                    array_push($data, $item);
+        $exp3=explode('<tbody>', $data3->content);
+        $exp4=explode('</tbody>', $exp3[1]);
+        $data=array();
+        foreach($exp4 as $key=>$item):
+            if($key%2==0):
+                array_push($data, $item);
+            endif;
+        endforeach;
+
+        $result_set1=array();
+        foreach($data as $item):
+            $exp5=explode('</tr>', $item);
+            foreach($exp5 as $key=>$items):
+                if($key!=0 && $key!=count($exp5)-1):
+                    $result=array();
+                    $exp6=explode('</td>', $items);
+
+                    $result['month']=$month;
+                    $result['team']=preg_replace("/\s+/", "", strip_tags($exp6[1]));
+                    $result['bb']=preg_replace("/\s+/", "", strip_tags($exp6[17]));
+                    $result['so']=preg_replace("/\s+/", "", strip_tags($exp6[18]));
+
+                    array_push($result_set1, $result);
                 endif;
             endforeach;
+        endforeach;
 
-            $result_set1=array();
-            foreach($data as $item):
-                $exp5=explode('</tr>', $item);
-                foreach($exp5 as $key=>$items):
-                    if($key!=0 && $key!=count($exp5)-1):
-                        $result=array();
-                        $exp6=explode('</td>', $items);
+        $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/pitcher/advanced?teamId=&pitcher_type=&year_from=2017&year_to=2017&split01=month&split02_1='.$month.'&split02_2='.$month, 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $data4=$client->send($request, $response);
 
-                        $result['month']=$i;
-                        $result['team']=preg_replace("/\s+/", "", strip_tags($exp6[1]));
-                        $result['bb']=preg_replace("/\s+/", "", strip_tags($exp6[17]));
-                        $result['so']=preg_replace("/\s+/", "", strip_tags($exp6[18]));
+        $exp3=explode('<tbody>', $data4->content);
+        $exp4=explode('</tbody>', $exp3[1]);
+        $data=array();
+        foreach($exp4 as $key=>$item):
+            if($key%2==0):
+                array_push($data, $item);
+            endif;
+        endforeach;
 
-                        array_push($result_set1, $result);
-                    endif;
-                endforeach;
-            endforeach;
+        $result_set2=array();
+        foreach($data as $item):
+            $exp5=explode('</tr>', $item);
+            foreach($exp5 as $key=>$items):
+                if($key!=0 && $key!=count($exp5)-1):
+                    $result=array();
+                    $exp6=explode('</td>', $items);
 
-            $request=$client->getMessageFactory()->createRequest('http://www.kbreport.com/teams/pitcher/advanced?teamId=&pitcher_type=&year_from=2017&year_to=2017&split01=month&split02_1='.$i.'&split02_2='.$i, 'GET');
-            $response=$client->getMessageFactory()->createResponse();
-            $data4=$client->send($request, $response);
+                    $result['month']=$month;
+                    $result['team']=preg_replace("/\s+/", "", strip_tags($exp6[1]));
+                    $result['whip']=preg_replace("/\s+/", "", strip_tags($exp6[14]));
 
-            $exp3=explode('<tbody>', $data4->content);
-            $exp4=explode('</tbody>', $exp3[1]);
-            $data=array();
-            foreach($exp4 as $key=>$item):
-                if($key%2==0):
-                    array_push($data, $item);
+                    array_push($result_set2, $result);
                 endif;
             endforeach;
+        endforeach;
 
-            $result_set2=array();
-            foreach($data as $item):
-                $exp5=explode('</tr>', $item);
-                foreach($exp5 as $key=>$items):
-                    if($key!=0 && $key!=count($exp5)-1):
-                        $result=array();
-                        $exp6=explode('</td>', $items);
-
-                        $result['month']=$i;
-                        $result['team']=preg_replace("/\s+/", "", strip_tags($exp6[1]));
-                        $result['whip']=preg_replace("/\s+/", "", strip_tags($exp6[14]));
-
-                        array_push($result_set2, $result);
-                    endif;
-                endforeach;
+        foreach($result_set2 as $item):
+            foreach($result_set1 as $items):
+                if($item['team']==$items['team'] && $items['bb']!='' && $items['team']!='전체') $this->baseball_model->insert_update_before('KBO_team_month', array('month'=>$items['month'],'team'=>$items['team'],'bb'=>$items['bb'],'so'=>$items['so'],'whip'=>$item['whip']), array('month'=>$items['month'],'team'=>$items['team']));
             endforeach;
-
-            foreach($result_set2 as $item):
-                foreach($result_set1 as $items):
-                    if($item['team']==$items['team'] && $items['bb']!='' && $items['team']!='전체') $this->baseball_model->insert_update_before('KBO_team_month', array('month'=>$items['month'],'team'=>$items['team'],'bb'=>$items['bb'],'so'=>$items['so'],'whip'=>$item['whip']), array('month'=>$items['month'],'team'=>$items['team']));
-                endforeach;
-            endforeach;
-        endfor;
+        endforeach;
     }
 
-    function kboStartPitcher(){
+    function kboStartPitcher($date){
         $team=array('SK'=>1,'kt'=>2,'KT'=>2,'삼성'=>3,'NC'=>4,'두산'=>5,'넥센'=>6,'LG'=>7,'한화'=>8,'롯데'=>9,'KIA'=>10);
 
         $client=Client::getInstance();
-        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+        $client->getEngine()->setPath($_SERVER['DOCUMENT_ROOT'] . '/public/lib/js/phantomjs');
 
-        $result=$this->baseball_model->get_result_date_distinct('KBO_result');
+        $request=$client->getMessageFactory()->createRequest('http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate='.$date, 'GET');
+        $response=$client->getMessageFactory()->createResponse();
+        $client->send($request, $response);
 
-        foreach($result as $item):
-            $result_set['date']=$item->date;
-            $url='http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate='.$item->date;
+        $exp=explode('away_nm="', $response->getContent());
 
-            $request=$client->getMessageFactory()->createRequest($url, 'GET');
-            $response=$client->getMessageFactory()->createResponse();
-            $client->send($request, $response);
+        for($i=1; $i<6; $i++):
+            $exp1=explode('"', $exp[$i]);
+            $result_set['away']=$exp1[0];
+            $result_set['home']=$exp1[2];
+            $away_pitcher=$this->baseball_model->get_player_name_by_id($exp1[4]);
+            $home_pitcher=$this->baseball_model->get_player_name_by_id($exp1[6]);
 
-            $exp=explode('away_nm="', $response->getContent());
+            if(!isset($away_pitcher)):
+                $url='http://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId='.$exp1[4];
+                $request=$client->getMessageFactory()->createRequest($url, 'GET');
+                $response=$client->getMessageFactory()->createResponse();
+                $client->send($request, $response);
 
-            for($i=1; $i<6; $i++):
-                $exp1=explode('"', $exp[$i]);
-                $result_set['away']=$exp1[0];
-                $result_set['home']=$exp1[2];
-                $away_pitcher=$this->baseball_model->get_player_name_by_id($exp1[4]);
-                $home_pitcher=$this->baseball_model->get_player_name_by_id($exp1[6]);
+                $exp2=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblName">', $response->getContent());
+                $exp3=explode('</span>', $exp2[1]);
+                $result_set['away_pitcher']=$exp3[0];
 
-                if(!isset($away_pitcher)):
-                    $url='http://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId='.$exp1[4];
-                    $request=$client->getMessageFactory()->createRequest($url, 'GET');
-                    $response=$client->getMessageFactory()->createResponse();
-                    $client->send($request, $response);
+                $this->baseball_model->insert_update_before('KBO_players', array('year'=>date('Y'),'team_no'=>$team[$result_set['away']],'player_id'=>$exp1[4],'name'=>$exp3[0],'delete_yn'=>'N'), array('team_no'=>$team[$result_set['away']],'name'=>$exp3[0]));
+            else:
+                $result_set['away_pitcher']=$away_pitcher->name;
+            endif;
 
-                    $exp2=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblName">', $response->getContent());
-                    $exp3=explode('</span>', $exp2[1]);
-                    $result_set['away_pitcher']=$exp3[0];
+            if(!isset($home_pitcher)):
+                $url='http://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId='.$exp1[6];
+                $request=$client->getMessageFactory()->createRequest($url, 'GET');
+                $response=$client->getMessageFactory()->createResponse();
+                $client->send($request, $response);
 
-                    $this->baseball_model->insert_update_before('KBO_players', array('year'=>date('Y'),'team_no'=>$team[$result_set['away']],'player_id'=>$exp1[4],'name'=>$exp3[0],'delete_yn'=>'N'), array('team_no'=>$team[$result_set['away']],'name'=>$exp3[0]));
-                else:
-                    $result_set['away_pitcher']=$away_pitcher->name;
-                endif;
+                $exp2=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblName">', $response->getContent());
+                $exp3=explode('</span>', $exp2[1]);
+                $result_set['home_pitcher']=$exp3[0];
 
-                if(!isset($home_pitcher)):
-                    $url='http://www.koreabaseball.com/Record/Player/PitcherDetail/Basic.aspx?playerId='.$exp1[6];
-                    $request=$client->getMessageFactory()->createRequest($url, 'GET');
-                    $response=$client->getMessageFactory()->createResponse();
-                    $client->send($request, $response);
+                $this->baseball_model->insert_update_before('KBO_players', array('year'=>date('Y'),'team_no'=>$team[$result_set['home']],'player_id'=>$exp1[4],'name'=>$exp3[0],'delete_yn'=>'N'), array('team_no'=>$team[$result_set['home']],'name'=>$exp3[0]));
+            else:
+                $result_set['home_pitcher']=$home_pitcher->name;
+            endif;
 
-                    $exp2=explode('<span id="cphContents_cphContents_cphContents_playerProfile_lblName">', $response->getContent());
-                    $exp3=explode('</span>', $exp2[1]);
-                    $result_set['home_pitcher']=$exp3[0];
-
-                    $this->baseball_model->insert_update_before('KBO_players', array('year'=>date('Y'),'team_no'=>$team[$result_set['home']],'player_id'=>$exp1[4],'name'=>$exp3[0],'delete_yn'=>'N'), array('team_no'=>$team[$result_set['home']],'name'=>$exp3[0]));
-                else:
-                    $result_set['home_pitcher']=$home_pitcher->name;
-                endif;
-
-                $this->baseball_model->insert_update_before('KBO_result', $result_set, array('date'=>$result_set['date'], 'away'=>$result_set['away']=$exp1[0]));
-            endfor;
-        endforeach;
+            $this->baseball_model->insert_update_before('KBO_result', $result_set, array('date'=>$result_set['date'], 'away'=>$result_set['away']=$exp1[0]));
+        endfor;
     }
 
     function kboPitcherVsTeam(){
@@ -445,7 +431,7 @@ class Crawling extends MY_Controller{
 
             $result=array();
             $client=Client::getInstance();
-            $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+            $client->getEngine()->setPath($_SERVER['DOCUMENT_ROOT'] . '/public/lib/js/phantomjs');
             $url='http://www.koreabaseball.com/Schedule/GameCenter/Main.aspx?gameDate='.$date.'&gameId='.$date.$away.$home.'0& section=REVIEW';
 
             $request=$client->getMessageFactory()->createRequest($url, 'GET');
@@ -473,6 +459,16 @@ class Crawling extends MY_Controller{
 
             $this->baseball_model->insert_update_before('KBO_h2h', $result, array('schedule_no'=>$result['schedule_no']));
         endforeach;
+    }
+
+    function cronDaily(){
+        $this->result(date('m'));
+        $this->teamRecord();
+        $this->playerRecord();
+        $this->kboMonth(date('n'));
+        $this->kboStartPitcher(date('Y-m-d'));
+        $this->kboPitcherVsTeam();
+        $this->kboRelationHrAvg();
     }
 
 //  MLB
@@ -749,7 +745,7 @@ class Crawling extends MY_Controller{
 
     function optaTeamDetail(){
         $client=Client::getInstance();
-        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+        $client->getEngine()->setPath($_SERVER['DOCUMENT_ROOT'] . '/public/lib/js/phantomjs');
 
         $request=$client->getMessageFactory()->createRequest('http://boston.redsox.mlb.com/stats/sortable.jsp#elem=%5Bobject+Object%5D&tab_level=child&click_text=Sortable+Team+hitting&game_type=R&season=2017&season_type=ANY&league_code=MLB&sectionType=st&statType=hitting&page=1&ts=1500535197398', 'GET');
         $response=$client->getMessageFactory()->createResponse();
@@ -879,7 +875,7 @@ class Crawling extends MY_Controller{
 
     function mlbPlayersKorNameAndPosition(){
         $client=Client::getInstance();
-        $client->getEngine()->setPath('/Users/hyunjae/Sites/ODDS/public/lib/js/phantomjs');
+        $client->getEngine()->setPath($_SERVER['DOCUMENT_ROOT'] . '/public/lib/js/phantomjs');
 
         $team_array=array(108,119,121,147,116,146,142,158,111,110,135,137,138,136,112,145,113,120,118,115,114,139,140,141,134,143,117,144,109,133);
         foreach($team_array as $item):
